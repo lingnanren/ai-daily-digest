@@ -1,6 +1,8 @@
 import { writeFile, mkdir } from 'node:fs/promises';
+import net from 'node:net';
 import { dirname } from 'node:path';
 import process from 'node:process';
+import tls from 'node:tls';
 
 // ============================================================================
 // Constants
@@ -170,6 +172,17 @@ interface GeminiSummaryResult {
 
 interface AIClient {
   call(prompt: string): Promise<string>;
+}
+
+interface MailConfig {
+  host: string;
+  port: number;
+  secure: boolean;
+  startTls: boolean;
+  user: string;
+  pass: string;
+  from: string;
+  to: string;
 }
 
 // ============================================================================
@@ -499,6 +512,187 @@ function parseJsonResponse<T>(text: string): T {
     jsonText = jsonText.replace(/^```(?:json)?\n?/, '').replace(/\n?```$/, '');
   }
   return JSON.parse(jsonText) as T;
+}
+
+// ============================================================================
+// Email Delivery
+// ============================================================================
+
+function getRequiredEnv(name: string): string {
+  const value = process.env[name]?.trim();
+  if (!value) {
+    throw new Error(`Missing required environment variable: ${name}`);
+  }
+  return value;
+}
+
+function getMailConfig(): MailConfig | null {
+  const to = process.env.MAIL_TO?.trim();
+  if (!to) return null;
+
+  const port = parseInt(process.env.SMTP_PORT || '465', 10);
+  const user = getRequiredEnv('SMTP_USER');
+  const secure = process.env.SMTP_SECURE
+    ? process.env.SMTP_SECURE.toLowerCase() !== 'false'
+    : port === 465;
+  const startTls = process.env.SMTP_STARTTLS
+    ? process.env.SMTP_STARTTLS.toLowerCase() !== 'false'
+    : !secure;
+
+  return {
+    host: getRequiredEnv('SMTP_HOST'),
+    port,
+    secure,
+    startTls,
+    user,
+    pass: getRequiredEnv('SMTP_PASS'),
+    from: process.env.MAIL_FROM?.trim() || process.env.SMTP_FROM?.trim() || user,
+    to,
+  };
+}
+
+function encodeBase64(text: string): string {
+  return Buffer.from(text, 'utf8').toString('base64');
+}
+
+function encodeHeader(text: string): string {
+  return `=?UTF-8?B?${encodeBase64(text)}?=`;
+}
+
+function normalizeAddress(value: string): string {
+  const trimmed = value.trim();
+  const match = trimmed.match(/<([^>]+)>/);
+  return match?.[1]?.trim() || trimmed;
+}
+
+function escapeHtml(text: string): string {
+  return text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+}
+
+function markdownToEmailHtml(markdown: string): string {
+  const escaped = escapeHtml(markdown);
+  const linked = escaped.replace(
+    /\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g,
+    '<a href="$2">$1</a>'
+  );
+  return `<html><body><pre style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; white-space: pre-wrap; line-height: 1.55;">${linked}</pre></body></html>`;
+}
+
+function createEmailMessage(config: MailConfig, subject: string, markdown: string): string {
+  const boundary = `ai-daily-digest-${Date.now()}`;
+  const textPart = encodeBase64(markdown).replace(/(.{76})/g, '$1\r\n');
+  const htmlPart = encodeBase64(markdownToEmailHtml(markdown)).replace(/(.{76})/g, '$1\r\n');
+
+  return [
+    `From: ${config.from}`,
+    `To: ${config.to}`,
+    `Subject: ${encodeHeader(subject)}`,
+    `Date: ${new Date().toUTCString()}`,
+    'MIME-Version: 1.0',
+    `Content-Type: multipart/alternative; boundary="${boundary}"`,
+    '',
+    `--${boundary}`,
+    'Content-Type: text/plain; charset=UTF-8',
+    'Content-Transfer-Encoding: base64',
+    '',
+    textPart,
+    `--${boundary}`,
+    'Content-Type: text/html; charset=UTF-8',
+    'Content-Transfer-Encoding: base64',
+    '',
+    htmlPart,
+    `--${boundary}--`,
+    '',
+  ].join('\r\n');
+}
+
+async function sendSmtpCommand(
+  socket: net.Socket | tls.TLSSocket,
+  command: string,
+  expectedCodes: number[]
+): Promise<string> {
+  if (command) {
+    socket.write(`${command}\r\n`);
+  }
+
+  return new Promise((resolve, reject) => {
+    let buffer = '';
+    const onData = (chunk: Buffer) => {
+      buffer += chunk.toString('utf8');
+      const lines = buffer.split(/\r?\n/).filter(Boolean);
+      const last = lines[lines.length - 1];
+      if (!last || !/^\d{3} /.test(last)) return;
+
+      socket.off('data', onData);
+      socket.off('error', onError);
+      const code = parseInt(last.slice(0, 3), 10);
+      if (expectedCodes.includes(code)) {
+        resolve(buffer);
+      } else {
+        reject(new Error(`SMTP command failed: ${command || '<greeting>'} -> ${buffer.trim()}`));
+      }
+    };
+    const onError = (error: Error) => {
+      socket.off('data', onData);
+      reject(error);
+    };
+    socket.on('data', onData);
+    socket.on('error', onError);
+  });
+}
+
+async function createSmtpSocket(config: MailConfig): Promise<net.Socket | tls.TLSSocket> {
+  const socket = config.secure
+    ? tls.connect({ host: config.host, port: config.port, servername: config.host })
+    : net.connect({ host: config.host, port: config.port });
+
+  await new Promise<void>((resolve, reject) => {
+    socket.once(config.secure ? 'secureConnect' : 'connect', resolve);
+    socket.once('error', reject);
+  });
+
+  return socket;
+}
+
+async function upgradeToTls(socket: net.Socket, config: MailConfig): Promise<tls.TLSSocket> {
+  const tlsSocket = tls.connect({
+    socket,
+    host: config.host,
+    servername: config.host,
+  });
+
+  await new Promise<void>((resolve, reject) => {
+    tlsSocket.once('secureConnect', resolve);
+    tlsSocket.once('error', reject);
+  });
+
+  return tlsSocket;
+}
+
+async function sendEmail(config: MailConfig, subject: string, markdown: string): Promise<void> {
+  let socket = await createSmtpSocket(config);
+  try {
+    await sendSmtpCommand(socket, '', [220]);
+    await sendSmtpCommand(socket, `EHLO ${config.host}`, [250]);
+    if (config.startTls && !config.secure) {
+      await sendSmtpCommand(socket, 'STARTTLS', [220]);
+      socket = await upgradeToTls(socket as net.Socket, config);
+      await sendSmtpCommand(socket, `EHLO ${config.host}`, [250]);
+    }
+    await sendSmtpCommand(socket, 'AUTH LOGIN', [334]);
+    await sendSmtpCommand(socket, encodeBase64(config.user), [334]);
+    await sendSmtpCommand(socket, encodeBase64(config.pass), [235]);
+    await sendSmtpCommand(socket, `MAIL FROM:<${normalizeAddress(config.from)}>`, [250]);
+    await sendSmtpCommand(socket, `RCPT TO:<${normalizeAddress(config.to)}>`, [250, 251]);
+    await sendSmtpCommand(socket, 'DATA', [354]);
+    await sendSmtpCommand(socket, `${createEmailMessage(config, subject, markdown)}\r\n.`, [250]);
+    await sendSmtpCommand(socket, 'QUIT', [221]);
+  } finally {
+    socket.end();
+  }
 }
 
 // ============================================================================
@@ -1016,6 +1210,13 @@ Environment:
   OPENAI_API_KEY   Optional fallback key for OpenAI-compatible APIs
   OPENAI_API_BASE  Optional fallback base URL (default: https://api.openai.com/v1)
   OPENAI_MODEL     Optional fallback model (default: deepseek-chat for DeepSeek base, else gpt-4o-mini)
+  MAIL_TO          Optional email recipient. Enables SMTP delivery when set
+  SMTP_HOST        SMTP server host, required when MAIL_TO is set
+  SMTP_PORT        SMTP server port (default: 465)
+  SMTP_SECURE      Use TLS: true or false (default: true)
+  SMTP_USER        SMTP username, required when MAIL_TO is set
+  SMTP_PASS        SMTP password or app authorization code, required when MAIL_TO is set
+  MAIL_FROM        Optional sender address (default: SMTP_USER)
 
 Examples:
   bun scripts/digest.ts --hours 24 --top-n 10 --lang zh
@@ -1162,6 +1363,14 @@ async function main(): Promise<void> {
   
   await mkdir(dirname(outputPath), { recursive: true });
   await writeFile(outputPath, report);
+
+  const mailConfig = getMailConfig();
+  if (mailConfig) {
+    const subject = `AI 博客每日精选 - ${new Date().toISOString().slice(0, 10)}`;
+    console.log(`[digest] Sending email to ${mailConfig.to}...`);
+    await sendEmail(mailConfig, subject, report);
+    console.log(`[digest] ✉️ Email sent to ${mailConfig.to}`);
+  }
   
   console.log('');
   console.log(`[digest] ✅ Done!`);
