@@ -572,13 +572,230 @@ function escapeHtml(text: string): string {
     .replace(/>/g, '&gt;');
 }
 
+function escapeAttr(text: string): string {
+  return escapeHtml(text).replace(/"/g, '&quot;');
+}
+
+function renderInlineMarkdown(text: string): string {
+  return escapeHtml(text)
+    .replace(/`([^`]+)`/g, '<code>$1</code>')
+    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+    .replace(
+      /\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g,
+      (_match, label: string, url: string) => `<a href="${escapeAttr(url)}">${label}</a>`
+    );
+}
+
+function isTableSeparator(line: string): boolean {
+  return /^\s*\|?\s*:?-{3,}:?\s*(\|\s*:?-{3,}:?\s*)+\|?\s*$/.test(line);
+}
+
+function splitTableRow(line: string): string[] {
+  return line
+    .trim()
+    .replace(/^\|/, '')
+    .replace(/\|$/, '')
+    .split('|')
+    .map(cell => cell.trim());
+}
+
+function renderMarkdownTable(lines: string[]): string {
+  const header = splitTableRow(lines[0] || '');
+  const rows = lines.slice(2).map(splitTableRow);
+
+  let html = '<table>';
+  html += '<thead><tr>';
+  for (const cell of header) {
+    html += `<th>${renderInlineMarkdown(cell)}</th>`;
+  }
+  html += '</tr></thead>';
+
+  if (rows.length > 0) {
+    html += '<tbody>';
+    for (const row of rows) {
+      html += '<tr>';
+      for (const cell of row) {
+        html += `<td>${renderInlineMarkdown(cell)}</td>`;
+      }
+      html += '</tr>';
+    }
+    html += '</tbody>';
+  }
+
+  html += '</table>';
+  return html;
+}
+
 function markdownToEmailHtml(markdown: string): string {
-  const escaped = escapeHtml(markdown);
-  const linked = escaped.replace(
-    /\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g,
-    '<a href="$2">$1</a>'
-  );
-  return `<html><body><pre style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; white-space: pre-wrap; line-height: 1.55;">${linked}</pre></body></html>`;
+  const lines = markdown.replace(/\r\n/g, '\n').split('\n');
+  const html: string[] = [];
+  let paragraph: string[] = [];
+  let codeBlock: string[] | null = null;
+  let codeLang = '';
+  let tableBlock: string[] | null = null;
+  let inDetails = false;
+
+  const flushParagraph = () => {
+    if (paragraph.length === 0) return;
+    html.push(`<p>${renderInlineMarkdown(paragraph.join(' '))}</p>`);
+    paragraph = [];
+  };
+
+  const flushTable = () => {
+    if (!tableBlock) return;
+    html.push(renderMarkdownTable(tableBlock));
+    tableBlock = null;
+  };
+
+  for (let lineIndex = 0; lineIndex < lines.length; lineIndex++) {
+    const line = lines[lineIndex]!;
+    const trimmed = line.trim();
+
+    if (codeBlock) {
+      if (trimmed === '```') {
+        const title = codeLang ? `<div class="code-title">${escapeHtml(codeLang)}</div>` : '';
+        html.push(`<div class="code-wrap">${title}<pre><code>${escapeHtml(codeBlock.join('\n'))}</code></pre></div>`);
+        codeBlock = null;
+        codeLang = '';
+      } else {
+        codeBlock.push(line);
+      }
+      continue;
+    }
+
+    if (trimmed.startsWith('```')) {
+      flushParagraph();
+      flushTable();
+      codeLang = trimmed.replace(/^```/, '').trim();
+      codeBlock = [];
+      continue;
+    }
+
+    if (trimmed === '') {
+      flushParagraph();
+      flushTable();
+      continue;
+    }
+
+    if (tableBlock) {
+      if (trimmed.includes('|')) {
+        tableBlock.push(line);
+        continue;
+      }
+      flushTable();
+    }
+
+    if (trimmed.startsWith('<details>')) {
+      flushParagraph();
+      flushTable();
+      inDetails = true;
+      html.push('<div class="details">');
+      continue;
+    }
+
+    if (trimmed.startsWith('</details>')) {
+      flushParagraph();
+      flushTable();
+      inDetails = false;
+      html.push('</div>');
+      continue;
+    }
+
+    const summaryMatch = trimmed.match(/^<summary>(.*)<\/summary>$/);
+    if (summaryMatch) {
+      flushParagraph();
+      html.push(`<p class="summary">${renderInlineMarkdown(summaryMatch[1] || '')}</p>`);
+      continue;
+    }
+
+    if (trimmed.includes('|') && lines[lineIndex + 1] && isTableSeparator(lines[lineIndex + 1]!)) {
+      flushParagraph();
+      tableBlock = [line];
+      continue;
+    }
+
+    if (/^---+$/.test(trimmed)) {
+      flushParagraph();
+      flushTable();
+      html.push('<hr>');
+      continue;
+    }
+
+    const heading = trimmed.match(/^(#{1,3})\s+(.+)$/);
+    if (heading) {
+      flushParagraph();
+      flushTable();
+      const level = heading[1]!.length;
+      html.push(`<h${level}>${renderInlineMarkdown(heading[2]!)}</h${level}>`);
+      continue;
+    }
+
+    if (trimmed.startsWith('> ')) {
+      flushParagraph();
+      flushTable();
+      html.push(`<blockquote>${renderInlineMarkdown(trimmed.slice(2))}</blockquote>`);
+      continue;
+    }
+
+    paragraph.push(trimmed);
+  }
+
+  flushParagraph();
+  flushTable();
+
+  if (codeBlock) {
+    html.push(`<div class="code-wrap"><pre><code>${escapeHtml(codeBlock.join('\n'))}</code></pre></div>`);
+  }
+  if (inDetails) {
+    html.push('</div>');
+  }
+
+  return `<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { margin: 0; padding: 0; background: #f4f6f8; color: #17212b; }
+    .page { max-width: 760px; margin: 0 auto; padding: 24px 14px; }
+    .card { background: #ffffff; border: 1px solid #dfe5ec; border-radius: 10px; padding: 28px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, "PingFang SC", "Microsoft YaHei", sans-serif; line-height: 1.68; }
+    h1 { margin: 0 0 18px; padding-bottom: 16px; border-bottom: 2px solid #1f7a5c; font-size: 26px; line-height: 1.28; color: #10231d; }
+    h2 { margin: 30px 0 14px; font-size: 20px; line-height: 1.35; color: #123f32; }
+    h3 { margin: 24px 0 10px; font-size: 17px; line-height: 1.4; color: #17212b; }
+    p { margin: 10px 0 14px; font-size: 15px; }
+    a { color: #0b66c3; text-decoration: none; border-bottom: 1px solid #b8d7f4; }
+    strong { color: #0f241f; }
+    code { background: #eef3f7; border: 1px solid #d9e2ea; border-radius: 4px; padding: 1px 5px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.92em; }
+    blockquote { margin: 12px 0 18px; padding: 12px 16px; border-left: 4px solid #1f7a5c; background: #f2f8f5; color: #253c34; border-radius: 0 6px 6px 0; }
+    hr { border: 0; border-top: 1px solid #e3e8ef; margin: 26px 0; }
+    table { width: 100%; border-collapse: collapse; margin: 14px 0 22px; font-size: 14px; }
+    th, td { border: 1px solid #dfe5ec; padding: 9px 10px; text-align: left; vertical-align: top; }
+    th { background: #f0f5f3; color: #123f32; font-weight: 700; }
+    tr:nth-child(even) td { background: #fafbfc; }
+    .code-wrap { margin: 12px 0 20px; border: 1px solid #dfe5ec; border-radius: 8px; overflow: hidden; background: #f8fafc; }
+    .code-title { padding: 8px 12px; background: #edf3f0; color: #345348; font-size: 13px; font-weight: 700; border-bottom: 1px solid #dfe5ec; }
+    pre { margin: 0; padding: 14px; overflow-x: auto; white-space: pre-wrap; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12px; line-height: 1.5; color: #26313d; }
+    pre code { background: transparent; border: 0; padding: 0; }
+    .details { margin: 12px 0 20px; padding: 12px 14px; border: 1px solid #dfe5ec; border-radius: 8px; background: #fbfcfd; }
+    .summary { margin-top: 0; font-weight: 700; color: #123f32; }
+    @media (max-width: 620px) {
+      .card { padding: 20px 16px; border-radius: 0; }
+      .page { padding: 0; }
+      h1 { font-size: 22px; }
+      h2 { font-size: 18px; }
+      table { font-size: 13px; }
+      th, td { padding: 7px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="card">
+      ${html.join('\n')}
+    </div>
+  </div>
+</body>
+</html>`;
 }
 
 function createEmailMessage(config: MailConfig, subject: string, markdown: string): string {
