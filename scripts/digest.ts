@@ -520,6 +520,91 @@ function parseJsonResponse<T>(text: string): T {
   return JSON.parse(jsonText) as T;
 }
 
+function stripModelHtml(text: string): string {
+  return text
+    .replace(/```(?:html|markdown|md)?/gi, '')
+    .replace(/```/g, '')
+    .replace(/<br\s*\/?>/gi, '\n')
+    .replace(/<\/(p|div|section|article|li|h[1-6])>/gi, '\n')
+    .replace(/<[^>]+>/g, '')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/\s+\n/g, '\n')
+    .replace(/\n{3,}/g, '\n\n')
+    .replace(/[ \t]{2,}/g, ' ')
+    .trim();
+}
+
+function hasChinese(text: string): boolean {
+  return /[\u3400-\u9fff]/.test(text);
+}
+
+function hasVisibleHtmlTag(text: string): boolean {
+  return /<\/?(p|strong|em|div|span|ul|ol|li|br|h[1-6]|blockquote|a)(\s[^>]*)?>/i.test(text);
+}
+
+function cleanSummaryResult(result: {
+  titleZh?: string;
+  summaryZh?: string;
+  summaryEn?: string;
+  reasonZh?: string;
+  reasonEn?: string;
+}): { titleZh: string; summaryZh: string; summaryEn: string; reasonZh: string; reasonEn: string } {
+  return {
+    titleZh: stripModelHtml(result.titleZh || ''),
+    summaryZh: stripModelHtml(result.summaryZh || ''),
+    summaryEn: stripModelHtml(result.summaryEn || ''),
+    reasonZh: stripModelHtml(result.reasonZh || ''),
+    reasonEn: stripModelHtml(result.reasonEn || ''),
+  };
+}
+
+function validateArticleSummaries(articles: ScoredArticle[]): void {
+  const errors: string[] = [];
+
+  for (const [index, article] of articles.entries()) {
+    const label = `${index + 1}. ${article.title}`;
+    if (!article.summaryZh || !hasChinese(article.summaryZh)) {
+      errors.push(`${label}: summaryZh is missing or not Chinese`);
+    }
+    if (!article.summaryEn || hasChinese(article.summaryEn)) {
+      errors.push(`${label}: summaryEn is missing or appears to contain Chinese`);
+    }
+    for (const [fieldName, value] of [
+      ['titleZh', article.titleZh],
+      ['summaryZh', article.summaryZh],
+      ['summaryEn', article.summaryEn],
+      ['reasonZh', article.reasonZh],
+      ['reasonEn', article.reasonEn],
+    ] as const) {
+      if (hasVisibleHtmlTag(value)) {
+        errors.push(`${label}: ${fieldName} contains visible HTML tags`);
+      }
+    }
+  }
+
+  if (errors.length > 0) {
+    throw new Error(`Digest quality validation failed:\n${errors.slice(0, 20).join('\n')}`);
+  }
+}
+
+function validateEmailHtml(html: string): void {
+  const visibleTagPatterns = [
+    /&lt;\/?p(\s|&gt;)/i,
+    /&lt;\/?strong(\s|&gt;)/i,
+    /&lt;\/?div(\s|&gt;)/i,
+    /&lt;br\s*\/?&gt;/i,
+  ];
+  const badPattern = visibleTagPatterns.find(pattern => pattern.test(html));
+  if (badPattern) {
+    throw new Error(`Email HTML validation failed: visible escaped tag matched ${badPattern}`);
+  }
+}
+
 // ============================================================================
 // Email Delivery
 // ============================================================================
@@ -1120,12 +1205,13 @@ async function summarizeArticles(
         
         if (parsed.results && Array.isArray(parsed.results)) {
           for (const result of parsed.results) {
+            const cleaned = cleanSummaryResult(result);
             summaries.set(result.index, {
-              titleZh: result.titleZh || '',
-              summaryZh: result.summaryZh || '',
-              summaryEn: result.summaryEn || '',
-              reasonZh: result.reasonZh || '',
-              reasonEn: result.reasonEn || '',
+              titleZh: cleaned.titleZh,
+              summaryZh: cleaned.summaryZh,
+              summaryEn: cleaned.summaryEn,
+              reasonZh: cleaned.reasonZh,
+              reasonEn: cleaned.reasonEn,
             });
           }
         }
@@ -1434,6 +1520,91 @@ function generateDigestReport(articles: ScoredArticle[], highlights: string, sta
 // CLI
 // ============================================================================
 
+function assertSelfTest(condition: boolean, message: string): void {
+  if (!condition) {
+    throw new Error(message);
+  }
+}
+
+function createTestArticle(overrides: Partial<ScoredArticle> = {}): ScoredArticle {
+  return {
+    title: 'Original English Title',
+    link: 'https://example.com/article',
+    pubDate: new Date(),
+    description: 'description',
+    sourceName: 'example.com',
+    sourceUrl: 'https://example.com',
+    score: 27,
+    scoreBreakdown: { relevance: 9, quality: 9, timeliness: 9 },
+    category: 'engineering',
+    keywords: ['test'],
+    titleZh: '中文标题',
+    summary: '这是一段中文摘要，包含足够的信息。',
+    summaryZh: '这是一段中文摘要，包含足够的信息。',
+    summaryEn: 'This is an English summary with enough detail.',
+    reason: '值得读。',
+    reasonZh: '值得读。',
+    reasonEn: 'It is worth reading.',
+    ...overrides,
+  };
+}
+
+function runSelfTests(): void {
+  const cleaned = cleanSummaryResult({
+    titleZh: '<strong>中文标题</strong>',
+    summaryZh: '<p>这是中文摘要，应该去掉 HTML 标签。</p>',
+    summaryEn: '<p>This English summary should be plain text.</p>',
+    reasonZh: '<strong>值得读。</strong>',
+    reasonEn: '<em>Worth reading.</em>',
+  });
+
+  assertSelfTest(cleaned.titleZh === '中文标题', 'cleanSummaryResult strips title HTML');
+  assertSelfTest(cleaned.summaryZh === '这是中文摘要，应该去掉 HTML 标签。', 'cleanSummaryResult strips Chinese summary HTML');
+  assertSelfTest(cleaned.summaryEn === 'This English summary should be plain text.', 'cleanSummaryResult strips English summary HTML');
+  assertSelfTest(!hasVisibleHtmlTag(cleaned.reasonZh), 'cleanSummaryResult strips reason HTML');
+
+  validateArticleSummaries([createTestArticle()]);
+
+  let caughtEnglishChineseSummary = false;
+  try {
+    validateArticleSummaries([createTestArticle({ summaryZh: 'This is not translated into Chinese.' })]);
+  } catch {
+    caughtEnglishChineseSummary = true;
+  }
+  assertSelfTest(caughtEnglishChineseSummary, 'validateArticleSummaries rejects non-Chinese summaryZh');
+
+  let caughtVisibleTag = false;
+  try {
+    validateArticleSummaries([createTestArticle({ summaryZh: '<p>这是带标签的中文摘要。</p>' })]);
+  } catch {
+    caughtVisibleTag = true;
+  }
+  assertSelfTest(caughtVisibleTag, 'validateArticleSummaries rejects visible HTML tags');
+
+  const html = markdownToEmailHtml([
+    '# 标题',
+    '',
+    '**中文摘要**',
+    '',
+    '> 这是中文摘要。',
+    '',
+    '**English Summary**',
+    '',
+    '> This is an English summary.',
+    '',
+    '| 扫描源 | 精选 |',
+    '|:---:|:---:|',
+    '| 90 | **15** |',
+  ].join('\n'));
+
+  validateEmailHtml(html);
+  assertSelfTest(html.includes('<strong>中文摘要</strong>'), 'markdownToEmailHtml renders strong tags');
+  assertSelfTest(!html.includes('&lt;strong&gt;中文摘要&lt;/strong&gt;'), 'markdownToEmailHtml does not leak escaped strong tags');
+  assertSelfTest(html.includes('<table>'), 'markdownToEmailHtml renders tables');
+
+  console.log('[digest] Self-tests passed');
+}
+
 function printUsage(): never {
   console.log(`AI Daily Digest - AI-powered RSS digest from 90 top tech blogs
 
@@ -1445,6 +1616,7 @@ Options:
   --top-n <n>     Number of top articles to include (default: 15)
   --lang <lang>   Summary language: zh or en (default: zh)
   --output <path> Output file path (default: ./digest-YYYYMMDD.md)
+  --self-test     Run email rendering and quality gate regression tests
   --help          Show this help
 
 Environment:
@@ -1470,6 +1642,10 @@ Examples:
 async function main(): Promise<void> {
   const args = process.argv.slice(2);
   if (args.includes('--help') || args.includes('-h')) printUsage();
+  if (args.includes('--self-test')) {
+    runSelfTests();
+    return;
+  }
   
   let hours = 48;
   let topN = 15;
@@ -1601,6 +1777,7 @@ async function main(): Promise<void> {
   });
   
   console.log(`[digest] Step 5/5: Generating today's highlights...`);
+  validateArticleSummaries(finalArticles);
   const highlights = await generateHighlights(finalArticles, aiClient, lang);
   
   const successfulSources = new Set(allArticles.map(a => a.sourceName));
@@ -1620,6 +1797,7 @@ async function main(): Promise<void> {
   const mailConfig = getMailConfig();
   if (mailConfig) {
     const subject = `AI 博客每日精选 - ${new Date().toISOString().slice(0, 10)}`;
+    validateEmailHtml(markdownToEmailHtml(report));
     console.log(`[digest] Sending email to ${mailConfig.to}...`);
     await sendEmail(mailConfig, subject, report);
     console.log(`[digest] ✉️ Email sent to ${mailConfig.to}`);

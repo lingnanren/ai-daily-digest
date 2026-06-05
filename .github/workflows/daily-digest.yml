@@ -20,6 +20,9 @@ jobs:
         with:
           bun-version: latest
 
+      - name: Run self-tests
+        run: bun scripts/digest.ts --self-test
+
       - name: Generate and email digest
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
