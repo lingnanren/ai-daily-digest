@@ -8,13 +8,14 @@ import tls from 'node:tls';
 // Constants
 // ============================================================================
 
-const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent';
+const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent';
 const OPENAI_DEFAULT_API_BASE = 'https://api.openai.com/v1';
 const OPENAI_DEFAULT_MODEL = 'gpt-4o-mini';
 const FEED_FETCH_TIMEOUT_MS = 15_000;
 const FEED_CONCURRENCY = 10;
 const GEMINI_BATCH_SIZE = 10;
-const MAX_CONCURRENT_GEMINI = 2;
+const MAX_CONCURRENT_GEMINI = 1;
+const AI_MAX_RETRIES = 3;
 
 // 90 RSS feeds from Hacker News Popularity Contest 2025 (curated by Karpathy)
 const RSS_FEEDS: Array<{ name: string; xmlUrl: string; htmlUrl: string }> = [
@@ -219,7 +220,7 @@ function getTagContent(xml: string, tagName: string): string {
     new RegExp(`<${tagName}[^>]*>([\\s\\S]*?)</${tagName}>`, 'i'),
     new RegExp(`<${tagName}[^>]*/>`, 'i'), // self-closing
   ];
-  
+
   for (const pattern of patterns) {
     const match = xml.match(pattern);
     if (match?.[1]) {
@@ -237,10 +238,10 @@ function getAttrValue(xml: string, tagName: string, attrName: string): string {
 
 function parseDate(dateStr: string): Date | null {
   if (!dateStr) return null;
-  
+
   const d = new Date(dateStr);
   if (!isNaN(d.getTime())) return d;
-  
+
   // Try common RSS date formats
   // RFC 822: "Mon, 01 Jan 2024 00:00:00 GMT"
   const rfc822 = dateStr.match(/(\d{1,2})\s+(\w{3})\s+(\d{4})\s+(\d{2}):(\d{2}):(\d{2})/);
@@ -248,16 +249,16 @@ function parseDate(dateStr: string): Date | null {
     const parsed = new Date(dateStr);
     if (!isNaN(parsed.getTime())) return parsed;
   }
-  
+
   return null;
 }
 
 function parseRSSItems(xml: string): Array<{ title: string; link: string; pubDate: string; description: string }> {
   const items: Array<{ title: string; link: string; pubDate: string; description: string }> = [];
-  
+
   // Detect format: Atom vs RSS
   const isAtom = xml.includes('<feed') && xml.includes('xmlns="http://www.w3.org/2005/Atom"') || xml.includes('<feed ');
-  
+
   if (isAtom) {
     // Atom format: <entry>
     const entryPattern = /<entry[\s>]([\s\S]*?)<\/entry>/gi;
@@ -265,21 +266,21 @@ function parseRSSItems(xml: string): Array<{ title: string; link: string; pubDat
     while ((entryMatch = entryPattern.exec(xml)) !== null) {
       const entryXml = entryMatch[1];
       const title = stripHtml(getTagContent(entryXml, 'title'));
-      
+
       // Atom link: <link href="..." rel="alternate"/>
       let link = getAttrValue(entryXml, 'link[^>]*rel="alternate"', 'href');
       if (!link) {
         link = getAttrValue(entryXml, 'link', 'href');
       }
-      
-      const pubDate = getTagContent(entryXml, 'published') 
+
+      const pubDate = getTagContent(entryXml, 'published')
         || getTagContent(entryXml, 'updated');
-      
+
       const description = stripHtml(
-        getTagContent(entryXml, 'summary') 
+        getTagContent(entryXml, 'summary')
         || getTagContent(entryXml, 'content')
       );
-      
+
       if (title || link) {
         items.push({ title, link, pubDate, description: description.slice(0, 500) });
       }
@@ -292,20 +293,20 @@ function parseRSSItems(xml: string): Array<{ title: string; link: string; pubDat
       const itemXml = itemMatch[1];
       const title = stripHtml(getTagContent(itemXml, 'title'));
       const link = getTagContent(itemXml, 'link') || getTagContent(itemXml, 'guid');
-      const pubDate = getTagContent(itemXml, 'pubDate') 
+      const pubDate = getTagContent(itemXml, 'pubDate')
         || getTagContent(itemXml, 'dc:date')
         || getTagContent(itemXml, 'date');
       const description = stripHtml(
-        getTagContent(itemXml, 'description') 
+        getTagContent(itemXml, 'description')
         || getTagContent(itemXml, 'content:encoded')
       );
-      
+
       if (title || link) {
         items.push({ title, link, pubDate, description: description.slice(0, 500) });
       }
     }
   }
-  
+
   return items;
 }
 
@@ -317,7 +318,7 @@ async function fetchFeed(feed: { name: string; xmlUrl: string; htmlUrl: string }
   try {
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), FEED_FETCH_TIMEOUT_MS);
-    
+
     const response = await fetch(feed.xmlUrl, {
       signal: controller.signal,
       headers: {
@@ -325,16 +326,16 @@ async function fetchFeed(feed: { name: string; xmlUrl: string; htmlUrl: string }
         'Accept': 'application/rss+xml, application/atom+xml, application/xml, text/xml, */*',
       },
     });
-    
+
     clearTimeout(timeout);
-    
+
     if (!response.ok) {
       throw new Error(`HTTP ${response.status}`);
     }
-    
+
     const xml = await response.text();
     const items = parseRSSItems(xml);
-    
+
     return items.map(item => ({
       title: item.title,
       link: item.link,
@@ -359,11 +360,11 @@ async function fetchAllFeeds(feeds: typeof RSS_FEEDS): Promise<Article[]> {
   const allArticles: Article[] = [];
   let successCount = 0;
   let failCount = 0;
-  
+
   for (let i = 0; i < feeds.length; i += FEED_CONCURRENCY) {
     const batch = feeds.slice(i, i + FEED_CONCURRENCY);
     const results = await Promise.allSettled(batch.map(fetchFeed));
-    
+
     for (const result of results) {
       if (result.status === 'fulfilled' && result.value.length > 0) {
         allArticles.push(...result.value);
@@ -372,11 +373,11 @@ async function fetchAllFeeds(feeds: typeof RSS_FEEDS): Promise<Article[]> {
         failCount++;
       }
     }
-    
+
     const progress = Math.min(i + FEED_CONCURRENCY, feeds.length);
     console.log(`[digest] Progress: ${progress}/${feeds.length} feeds processed (${successCount} ok, ${failCount} failed)`);
   }
-  
+
   console.log(`[digest] Fetched ${allArticles.length} articles from ${successCount} feeds (${failCount} failed)`);
   return allArticles;
 }
@@ -385,32 +386,54 @@ async function fetchAllFeeds(feeds: typeof RSS_FEEDS): Promise<Article[]> {
 // AI Providers (Gemini + OpenAI-compatible fallback)
 // ============================================================================
 
-async function callGemini(prompt: string, apiKey: string): Promise<string> {
-  const response = await fetch(`${GEMINI_API_URL}?key=${apiKey}`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      contents: [{ parts: [{ text: prompt }] }],
-      generationConfig: {
-        temperature: 0.3,
-        topP: 0.8,
-        topK: 40,
-      },
-    }),
-  });
-  
-  if (!response.ok) {
-    const errorText = await response.text().catch(() => 'Unknown error');
-    throw new Error(`Gemini API error (${response.status}): ${errorText}`);
+function sleep(ms: number): Promise<void> {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function getRetryDelayMs(errorText: string, attempt: number): number {
+  const retryMatch = errorText.match(/"retryDelay"\s*:\s*"(\d+)s"/);
+  if (retryMatch?.[1]) {
+    return (parseInt(retryMatch[1], 10) + 1) * 1000;
   }
-  
-  const data = await response.json() as {
-    candidates?: Array<{
-      content?: { parts?: Array<{ text?: string }> };
-    }>;
-  };
-  
-  return data.candidates?.[0]?.content?.parts?.[0]?.text || '';
+  return Math.min(60_000, 2 ** attempt * 5_000);
+}
+
+async function callGemini(prompt: string, apiKey: string): Promise<string> {
+  for (let attempt = 0; attempt <= AI_MAX_RETRIES; attempt++) {
+    const response = await fetch(`${GEMINI_API_URL}?key=${apiKey}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        contents: [{ parts: [{ text: prompt }] }],
+        generationConfig: {
+          temperature: 0.3,
+          topP: 0.8,
+          topK: 40,
+        },
+      }),
+    });
+
+    if (!response.ok) {
+      const errorText = await response.text().catch(() => 'Unknown error');
+      if ((response.status === 429 || response.status >= 500) && attempt < AI_MAX_RETRIES) {
+        const delayMs = getRetryDelayMs(errorText, attempt);
+        console.warn(`[digest] Gemini API ${response.status}; retrying in ${Math.round(delayMs / 1000)}s (${attempt + 1}/${AI_MAX_RETRIES})`);
+        await sleep(delayMs);
+        continue;
+      }
+      throw new Error(`Gemini API error (${response.status}): ${errorText}`);
+    }
+
+    const data = await response.json() as {
+      candidates?: Array<{
+        content?: { parts?: Array<{ text?: string }> };
+      }>;
+    };
+
+    return data.candidates?.[0]?.content?.parts?.[0]?.text || '';
+  }
+
+  throw new Error('Gemini API failed after retries.');
 }
 
 async function callOpenAICompatible(
@@ -1071,23 +1094,23 @@ async function scoreArticlesWithAI(
   aiClient: AIClient
 ): Promise<Map<number, { relevance: number; quality: number; timeliness: number; category: CategoryId; keywords: string[] }>> {
   const allScores = new Map<number, { relevance: number; quality: number; timeliness: number; category: CategoryId; keywords: string[] }>();
-  
+
   const indexed = articles.map((article, index) => ({
     index,
     title: article.title,
     description: article.description,
     sourceName: article.sourceName,
   }));
-  
+
   const batches: typeof indexed[] = [];
   for (let i = 0; i < indexed.length; i += GEMINI_BATCH_SIZE) {
     batches.push(indexed.slice(i, i + GEMINI_BATCH_SIZE));
   }
-  
+
   console.log(`[digest] AI scoring: ${articles.length} articles in ${batches.length} batches`);
-  
+
   const validCategories = new Set<string>(['ai-ml', 'security', 'engineering', 'tools', 'opinion', 'other']);
-  
+
   for (let i = 0; i < batches.length; i += MAX_CONCURRENT_GEMINI) {
     const batchGroup = batches.slice(i, i + MAX_CONCURRENT_GEMINI);
     const promises = batchGroup.map(async (batch) => {
@@ -1095,7 +1118,7 @@ async function scoreArticlesWithAI(
         const prompt = buildScoringPrompt(batch);
         const responseText = await aiClient.call(prompt);
         const parsed = parseJsonResponse<GeminiScoringResult>(responseText);
-        
+
         if (parsed.results && Array.isArray(parsed.results)) {
           for (const result of parsed.results) {
             const clamp = (v: number) => Math.min(10, Math.max(1, Math.round(v)));
@@ -1116,11 +1139,11 @@ async function scoreArticlesWithAI(
         }
       }
     });
-    
+
     await Promise.all(promises);
     console.log(`[digest] Scoring progress: ${Math.min(i + MAX_CONCURRENT_GEMINI, batches.length)}/${batches.length} batches`);
   }
-  
+
   return allScores;
 }
 
@@ -1179,7 +1202,7 @@ async function summarizeArticles(
   lang: 'zh' | 'en'
 ): Promise<Map<number, { titleZh: string; summaryZh: string; summaryEn: string; reasonZh: string; reasonEn: string }>> {
   const summaries = new Map<number, { titleZh: string; summaryZh: string; summaryEn: string; reasonZh: string; reasonEn: string }>();
-  
+
   const indexed = articles.map(a => ({
     index: a.index,
     title: a.title,
@@ -1187,14 +1210,14 @@ async function summarizeArticles(
     sourceName: a.sourceName,
     link: a.link,
   }));
-  
+
   const batches: typeof indexed[] = [];
   for (let i = 0; i < indexed.length; i += GEMINI_BATCH_SIZE) {
     batches.push(indexed.slice(i, i + GEMINI_BATCH_SIZE));
   }
-  
+
   console.log(`[digest] Generating summaries for ${articles.length} articles in ${batches.length} batches`);
-  
+
   for (let i = 0; i < batches.length; i += MAX_CONCURRENT_GEMINI) {
     const batchGroup = batches.slice(i, i + MAX_CONCURRENT_GEMINI);
     const promises = batchGroup.map(async (batch) => {
@@ -1202,7 +1225,7 @@ async function summarizeArticles(
         const prompt = buildSummaryPrompt(batch);
         const responseText = await aiClient.call(prompt);
         const parsed = parseJsonResponse<GeminiSummaryResult>(responseText);
-        
+
         if (parsed.results && Array.isArray(parsed.results)) {
           for (const result of parsed.results) {
             const cleaned = cleanSummaryResult(result);
@@ -1217,22 +1240,14 @@ async function summarizeArticles(
         }
       } catch (error) {
         console.warn(`[digest] Summary batch failed: ${error instanceof Error ? error.message : String(error)}`);
-        for (const item of batch) {
-          summaries.set(item.index, {
-            titleZh: item.title,
-            summaryZh: item.description || item.title,
-            summaryEn: item.description || item.title,
-            reasonZh: '',
-            reasonEn: '',
-          });
-        }
+        throw error;
       }
     });
-    
+
     await Promise.all(promises);
     console.log(`[digest] Summary progress: ${Math.min(i + MAX_CONCURRENT_GEMINI, batches.length)}/${batches.length} batches`);
   }
-  
+
   return summaries;
 }
 
@@ -1404,7 +1419,7 @@ function generateDigestReport(articles: ScoredArticle[], highlights: string, sta
 }): string {
   const now = new Date();
   const dateStr = now.toISOString().split('T')[0];
-  
+
   let report = `# 📰 AI 博客每日精选 — ${dateStr}\n\n`;
   report += `> 来自 Karpathy 推荐的 ${stats.totalFeeds} 个顶级技术博客，AI 精选 Top ${articles.length}\n\n`;
 
@@ -1422,7 +1437,7 @@ function generateDigestReport(articles: ScoredArticle[], highlights: string, sta
       const a = articles[i];
       const medal = ['🥇', '🥈', '🥉'][i];
       const catMeta = CATEGORY_META[a.category];
-      
+
       report += `${medal} **${a.titleZh || a.title}**\n\n`;
       report += `[${a.title}](${a.link}) — ${a.sourceName} · ${humanizeTime(a.pubDate)} · ${catMeta.emoji} ${catMeta.label}\n\n`;
       if (a.summaryZh) {
@@ -1646,12 +1661,12 @@ async function main(): Promise<void> {
     runSelfTests();
     return;
   }
-  
+
   let hours = 48;
   let topN = 15;
   let lang: 'zh' | 'en' = 'zh';
   let outputPath = '';
-  
+
   for (let i = 0; i < args.length; i++) {
     const arg = args[i]!;
     if (arg === '--hours' && args[i + 1]) {
@@ -1664,7 +1679,7 @@ async function main(): Promise<void> {
       outputPath = args[++i]!;
     }
   }
-  
+
   const geminiApiKey = process.env.GEMINI_API_KEY;
   const openaiApiKey = process.env.OPENAI_API_KEY;
   const openaiApiBase = process.env.OPENAI_API_BASE;
@@ -1682,12 +1697,12 @@ async function main(): Promise<void> {
     openaiApiBase,
     openaiModel,
   });
-  
+
   if (!outputPath) {
     const dateStr = new Date().toISOString().slice(0, 10).replace(/-/g, '');
     outputPath = `./digest-${dateStr}.md`;
   }
-  
+
   console.log(`[digest] === AI Daily Digest ===`);
   console.log(`[digest] Time range: ${hours} hours`);
   console.log(`[digest] Top N: ${topN}`);
@@ -1700,30 +1715,30 @@ async function main(): Promise<void> {
     console.log(`[digest] Fallback: ${resolvedBase} (model=${resolvedModel})`);
   }
   console.log('');
-  
+
   console.log(`[digest] Step 1/5: Fetching ${RSS_FEEDS.length} RSS feeds...`);
   const allArticles = await fetchAllFeeds(RSS_FEEDS);
-  
+
   if (allArticles.length === 0) {
     console.error('[digest] Error: No articles fetched from any feed. Check network connection.');
     process.exit(1);
   }
-  
+
   console.log(`[digest] Step 2/5: Filtering by time range (${hours} hours)...`);
   const cutoffTime = new Date(Date.now() - hours * 60 * 60 * 1000);
   const recentArticles = allArticles.filter(a => a.pubDate.getTime() > cutoffTime.getTime());
-  
+
   console.log(`[digest] Found ${recentArticles.length} articles within last ${hours} hours`);
-  
+
   if (recentArticles.length === 0) {
     console.error(`[digest] Error: No articles found within the last ${hours} hours.`);
     console.error(`[digest] Try increasing --hours (e.g., --hours 168 for one week)`);
     process.exit(1);
   }
-  
+
   console.log(`[digest] Step 3/5: AI scoring ${recentArticles.length} articles...`);
   const scores = await scoreArticlesWithAI(recentArticles, aiClient);
-  
+
   const scoredArticles = recentArticles.map((article, index) => {
     const score = scores.get(index) || { relevance: 5, quality: 5, timeliness: 5, category: 'other' as CategoryId, keywords: [] };
     return {
@@ -1732,16 +1747,16 @@ async function main(): Promise<void> {
       breakdown: score,
     };
   });
-  
+
   scoredArticles.sort((a, b) => b.totalScore - a.totalScore);
   const topArticles = scoredArticles.slice(0, topN);
-  
+
   console.log(`[digest] Top ${topN} articles selected (score range: ${topArticles[topArticles.length - 1]?.totalScore || 0} - ${topArticles[0]?.totalScore || 0})`);
-  
+
   console.log(`[digest] Step 4/5: Generating AI summaries...`);
   const indexedTopArticles = topArticles.map((a, i) => ({ ...a, index: i }));
   const summaries = await summarizeArticles(indexedTopArticles, aiClient, lang);
-  
+
   const finalArticles: ScoredArticle[] = topArticles.map((a, i) => {
     const fallbackSummary = a.description.slice(0, 200);
     const sm = summaries.get(i) || {
@@ -1775,13 +1790,13 @@ async function main(): Promise<void> {
       reasonEn: sm.reasonEn,
     };
   });
-  
+
   console.log(`[digest] Step 5/5: Generating today's highlights...`);
   validateArticleSummaries(finalArticles);
   const highlights = await generateHighlights(finalArticles, aiClient, lang);
-  
+
   const successfulSources = new Set(allArticles.map(a => a.sourceName));
-  
+
   const report = generateDigestReport(finalArticles, highlights, {
     totalFeeds: RSS_FEEDS.length,
     successFeeds: successfulSources.size,
@@ -1790,7 +1805,7 @@ async function main(): Promise<void> {
     hours,
     lang,
   });
-  
+
   await mkdir(dirname(outputPath), { recursive: true });
   await writeFile(outputPath, report);
 
@@ -1802,12 +1817,12 @@ async function main(): Promise<void> {
     await sendEmail(mailConfig, subject, report);
     console.log(`[digest] ✉️ Email sent to ${mailConfig.to}`);
   }
-  
+
   console.log('');
   console.log(`[digest] ✅ Done!`);
   console.log(`[digest] 📁 Report: ${outputPath}`);
   console.log(`[digest] 📊 Stats: ${successfulSources.size} sources → ${allArticles.length} articles → ${recentArticles.length} recent → ${finalArticles.length} selected`);
-  
+
   if (finalArticles.length > 0) {
     console.log('');
     console.log(`[digest] 🏆 Top 3 Preview:`);
