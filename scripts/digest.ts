@@ -192,6 +192,11 @@ interface MailConfig {
   to: string;
 }
 
+interface ListenPageConfig {
+  url: string;
+  outputPath: string;
+}
+
 // ============================================================================
 // RSS/Atom Parsing (using Bun's built-in HTMLRewriter or manual XML parsing)
 // ============================================================================
@@ -634,6 +639,156 @@ function validateEmailHtml(html: string): void {
   }
 }
 
+function markdownToSpeechText(markdown: string): string {
+  return stripModelHtml(markdown)
+    .replace(/```[\s\S]*?```/g, ' ')
+    .replace(/!\[[^\]]*]\([^)]*\)/g, ' ')
+    .replace(/\[([^\]]+)]\([^)]*\)/g, '$1')
+    .replace(/^#{1,6}\s+/gm, '')
+    .replace(/^>\s?/gm, '')
+    .replace(/^\|.*\|$/gm, ' ')
+    .replace(/^\s*\|?\s*:?-{3,}:?\s*(\|\s*:?-{3,}:?\s*)+\|?\s*$/gm, ' ')
+    .replace(/[*_~`#]/g, '')
+    .replace(/-{3,}/g, ' ')
+    .replace(/[ \t]{2,}/g, ' ')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim();
+}
+
+function buildListenPageHtml(markdown: string): string {
+  const articleHtml = markdownToEmailHtml(markdown)
+    .replace(/^[\s\S]*<div class="card">\s*/, '')
+    .replace(/\s*<\/div>\s*<\/div>\s*<\/body>\s*<\/html>\s*$/, '');
+  const speechText = markdownToSpeechText(markdown);
+
+  return `<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 博客每日精选朗读</title>
+  <style>
+    body { margin: 0; background: #f4f6f8; color: #17212b; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, "PingFang SC", "Microsoft YaHei", sans-serif; line-height: 1.68; }
+    .shell { max-width: 820px; margin: 0 auto; padding: 18px 14px 40px; }
+    .player { position: sticky; top: 0; z-index: 10; margin: 0 -14px 18px; padding: 12px 14px; background: rgba(255,255,255,0.96); border-bottom: 1px solid #dfe5ec; box-shadow: 0 2px 10px rgba(16, 35, 29, 0.08); }
+    .controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; max-width: 820px; margin: 0 auto; }
+    button, select { min-height: 38px; border: 1px solid #cbd7df; border-radius: 6px; background: #fff; color: #10231d; font-size: 15px; padding: 0 12px; }
+    button.primary { background: #1f7a5c; color: #fff; border-color: #1f7a5c; }
+    button:disabled { opacity: 0.48; }
+    .status { flex: 1 1 180px; min-width: 180px; font-size: 13px; color: #52636f; }
+    .card { background: #ffffff; border: 1px solid #dfe5ec; border-radius: 10px; padding: 28px; }
+    h1 { margin: 0 0 18px; padding-bottom: 16px; border-bottom: 2px solid #1f7a5c; font-size: 26px; line-height: 1.28; color: #10231d; }
+    h2 { margin: 30px 0 14px; font-size: 20px; line-height: 1.35; color: #123f32; }
+    h3 { margin: 24px 0 10px; font-size: 17px; line-height: 1.4; color: #17212b; }
+    p { margin: 10px 0 14px; font-size: 15px; }
+    a { color: #0b66c3; text-decoration: none; border-bottom: 1px solid #b8d7f4; }
+    blockquote { margin: 12px 0 18px; padding: 12px 16px; border-left: 4px solid #1f7a5c; background: #f2f8f5; color: #253c34; border-radius: 0 6px 6px 0; }
+    hr { border: 0; border-top: 1px solid #e3e8ef; margin: 26px 0; }
+    table { width: 100%; border-collapse: collapse; margin: 14px 0 22px; font-size: 14px; }
+    th, td { border: 1px solid #dfe5ec; padding: 9px 10px; text-align: left; vertical-align: top; }
+    th { background: #f0f5f3; color: #123f32; font-weight: 700; }
+    pre { white-space: pre-wrap; overflow-x: auto; background: #f8fafc; border: 1px solid #dfe5ec; border-radius: 8px; padding: 14px; }
+    @media (max-width: 620px) {
+      .card { padding: 20px 16px; border-radius: 0; }
+      .shell { padding-left: 0; padding-right: 0; }
+      h1 { font-size: 22px; }
+      .player { margin-left: 0; margin-right: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="player">
+    <div class="controls">
+      <button class="primary" id="play">播放</button>
+      <button id="pause">暂停</button>
+      <button id="resume">继续</button>
+      <button id="stop">停止</button>
+      <select id="rate" aria-label="朗读速度">
+        <option value="0.85">0.85x</option>
+        <option value="1" selected>1x</option>
+        <option value="1.15">1.15x</option>
+        <option value="1.3">1.3x</option>
+      </select>
+      <span class="status" id="status">准备朗读。手机浏览器可能需要先点击播放。</span>
+    </div>
+  </div>
+  <main class="shell">
+    <article class="card">
+      ${articleHtml}
+    </article>
+  </main>
+  <script id="speech-text" type="application/json">${JSON.stringify(speechText).replace(/</g, '\\u003c')}</script>
+  <script>
+    const text = JSON.parse(document.getElementById('speech-text').textContent);
+    const statusEl = document.getElementById('status');
+    const rateEl = document.getElementById('rate');
+    const synth = window.speechSynthesis;
+    let chunks = [];
+    let index = 0;
+
+    function splitText(value) {
+      return value
+        .split(/(?<=[。！？.!?])\\s+|\\n{2,}/)
+        .map(part => part.trim())
+        .filter(Boolean)
+        .flatMap(part => part.length > 240 ? part.match(/.{1,220}(?:\\s|$)/g).map(s => s.trim()).filter(Boolean) : [part]);
+    }
+
+    function pickVoice() {
+      const voices = synth.getVoices();
+      return voices.find(v => /zh|cmn|Chinese/i.test(v.lang + ' ' + v.name))
+        || voices.find(v => /en/i.test(v.lang))
+        || voices[0]
+        || null;
+    }
+
+    function speakNext() {
+      if (index >= chunks.length) {
+        statusEl.textContent = '朗读完成。';
+        return;
+      }
+      const utterance = new SpeechSynthesisUtterance(chunks[index]);
+      const voice = pickVoice();
+      if (voice) utterance.voice = voice;
+      utterance.lang = voice?.lang || 'zh-CN';
+      utterance.rate = Number(rateEl.value || '1');
+      utterance.onend = () => {
+        index += 1;
+        speakNext();
+      };
+      utterance.onerror = () => {
+        statusEl.textContent = '朗读中断，请重新点击播放。';
+      };
+      statusEl.textContent = '正在朗读 ' + (index + 1) + ' / ' + chunks.length;
+      synth.speak(utterance);
+    }
+
+    document.getElementById('play').addEventListener('click', () => {
+      synth.cancel();
+      chunks = splitText(text);
+      index = 0;
+      speakNext();
+    });
+    document.getElementById('pause').addEventListener('click', () => {
+      synth.pause();
+      statusEl.textContent = '已暂停。';
+    });
+    document.getElementById('resume').addEventListener('click', () => {
+      synth.resume();
+      statusEl.textContent = '继续朗读。';
+    });
+    document.getElementById('stop').addEventListener('click', () => {
+      synth.cancel();
+      statusEl.textContent = '已停止。';
+    });
+    if (synth.onvoiceschanged !== undefined) {
+      synth.onvoiceschanged = () => pickVoice();
+    }
+  </script>
+</body>
+</html>`;
+}
+
 // ============================================================================
 // Email Delivery
 // ============================================================================
@@ -669,6 +824,13 @@ function getMailConfig(): MailConfig | null {
     from: process.env.MAIL_FROM?.trim() || process.env.SMTP_FROM?.trim() || user,
     to,
   };
+}
+
+function getListenPageConfig(): ListenPageConfig | null {
+  const url = process.env.LISTEN_PAGE_URL?.trim();
+  const outputPath = process.env.LISTEN_PAGE_OUTPUT?.trim();
+  if (!url || !outputPath) return null;
+  return { url, outputPath };
 }
 
 function encodeBase64(text: string): string {
@@ -1704,6 +1866,20 @@ function runSelfTests(): void {
   assertSelfTest(!html.includes('&lt;strong&gt;中文摘要&lt;/strong&gt;'), 'markdownToEmailHtml does not leak escaped strong tags');
   assertSelfTest(html.includes('<table>'), 'markdownToEmailHtml renders tables');
 
+  const listenHtml = buildListenPageHtml([
+    '🎧 [点这里朗读今日日报](https://example.com/listen.html)',
+    '',
+    '# 标题',
+    '',
+    '**中文摘要**',
+    '',
+    '> 这是中文摘要。',
+  ].join('\n'));
+  validateEmailHtml(listenHtml);
+  assertSelfTest(listenHtml.includes('id="play"'), 'buildListenPageHtml includes player controls');
+  assertSelfTest(listenHtml.includes('speechSynthesis'), 'buildListenPageHtml includes speech synthesis');
+  assertSelfTest(!listenHtml.includes('&lt;p&gt;'), 'buildListenPageHtml does not leak escaped paragraph tags');
+
   console.log('[digest] Self-tests passed');
 }
 
@@ -1895,15 +2071,26 @@ async function main(): Promise<void> {
     lang,
   });
 
+  const listenPageConfig = getListenPageConfig();
+  const reportForEmail = listenPageConfig
+    ? `🎧 [点这里朗读今日日报](${listenPageConfig.url})\n\n${report}`
+    : report;
+
+  if (listenPageConfig) {
+    await mkdir(dirname(listenPageConfig.outputPath), { recursive: true });
+    await writeFile(listenPageConfig.outputPath, buildListenPageHtml(reportForEmail));
+    console.log(`[digest] 🎧 Listen page: ${listenPageConfig.outputPath}`);
+  }
+
   await mkdir(dirname(outputPath), { recursive: true });
-  await writeFile(outputPath, report);
+  await writeFile(outputPath, reportForEmail);
 
   const mailConfig = getMailConfig();
   if (mailConfig) {
     const subject = `AI 博客每日精选 - ${new Date().toISOString().slice(0, 10)}`;
-    validateEmailHtml(markdownToEmailHtml(report));
+    validateEmailHtml(markdownToEmailHtml(reportForEmail));
     console.log(`[digest] Sending email to ${mailConfig.to}...`);
-    await sendEmail(mailConfig, subject, report);
+    await sendEmail(mailConfig, subject, reportForEmail);
     console.log(`[digest] ✉️ Email sent to ${mailConfig.to}`);
   }
 
