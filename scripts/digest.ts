@@ -586,7 +586,7 @@ function cleanSummaryResult(result: {
   };
 }
 
-function validateArticleSummaries(articles: ScoredArticle[]): void {
+function getArticleSummaryErrors(articles: ScoredArticle[]): string[] {
   const errors: string[] = [];
 
   for (const [index, article] of articles.entries()) {
@@ -609,6 +609,12 @@ function validateArticleSummaries(articles: ScoredArticle[]): void {
       }
     }
   }
+
+  return errors;
+}
+
+function validateArticleSummaries(articles: ScoredArticle[]): void {
+  const errors = getArticleSummaryErrors(articles);
 
   if (errors.length > 0) {
     throw new Error(`Digest quality validation failed:\n${errors.slice(0, 20).join('\n')}`);
@@ -1251,6 +1257,84 @@ async function summarizeArticles(
   return summaries;
 }
 
+function buildRepairSummaryPrompt(articles: ScoredArticle[]): string {
+  const articlesList = articles.map((a, index) => [
+    `Index ${index}:`,
+    `Original title: ${a.title}`,
+    `Current Chinese title: ${a.titleZh}`,
+    `Current Chinese summary: ${a.summaryZh}`,
+    `Current English summary: ${a.summaryEn}`,
+    `Description: ${a.description.slice(0, 800)}`,
+  ].join('\n')).join('\n\n---\n\n');
+
+  return `你是一个严格的双语日报质量修复器。以下文章的中文摘要可能缺失、仍是英文、或含 HTML 标签。
+
+请为每篇文章重新输出干净的双语字段：
+- titleZh: 自然中文标题
+- summaryZh: 4-6 句自然中文摘要，必须包含中文汉字，不能整段英文，不能包含 HTML 标签
+- summaryEn: 3-5 English sentences, no HTML tags
+- reasonZh: 1 句中文推荐理由，必须包含中文汉字
+- reasonEn: 1 English sentence
+
+要求：
+- 只返回 JSON
+- 不要 markdown 代码块
+- 不要 <p>、<strong>、<br> 或任何 HTML 标签
+- summaryZh 必须是中文，不要只复述英文原句
+
+待修复文章：
+
+${articlesList}
+
+请严格按 JSON 格式返回：
+{
+  "results": [
+    {
+      "index": 0,
+      "titleZh": "中文标题",
+      "summaryZh": "中文摘要...",
+      "summaryEn": "English summary...",
+      "reasonZh": "中文推荐理由...",
+      "reasonEn": "English reason..."
+    }
+  ]
+}`;
+}
+
+async function repairInvalidSummaries(articles: ScoredArticle[], aiClient: AIClient): Promise<void> {
+  const invalidArticles = articles.filter(article => getArticleSummaryErrors([article]).length > 0);
+  if (invalidArticles.length === 0) return;
+
+  console.warn(`[digest] Repairing ${invalidArticles.length} article summaries that failed quality checks...`);
+
+  for (let i = 0; i < invalidArticles.length; i += 5) {
+    const batch = invalidArticles.slice(i, i + 5);
+    const prompt = buildRepairSummaryPrompt(batch);
+    const responseText = await aiClient.call(prompt);
+    const parsed = parseJsonResponse<GeminiSummaryResult>(responseText);
+
+    if (!parsed.results || !Array.isArray(parsed.results)) {
+      throw new Error('Summary repair failed: model returned no results.');
+    }
+
+    for (const result of parsed.results) {
+      const article = batch[result.index];
+      if (!article) continue;
+
+      const cleaned = cleanSummaryResult(result);
+      article.titleZh = cleaned.titleZh || article.titleZh;
+      article.summaryZh = cleaned.summaryZh || article.summaryZh;
+      article.summaryEn = cleaned.summaryEn || article.summaryEn;
+      article.reasonZh = cleaned.reasonZh || article.reasonZh;
+      article.reasonEn = cleaned.reasonEn || article.reasonEn;
+      article.summary = article.summaryZh || article.summaryEn || article.summary;
+      article.reason = article.reasonZh || article.reasonEn || article.reason;
+    }
+
+    console.log(`[digest] Summary repair progress: ${Math.min(i + 5, invalidArticles.length)}/${invalidArticles.length}`);
+  }
+}
+
 // ============================================================================
 // AI Highlights (Today's Trends)
 // ============================================================================
@@ -1581,6 +1665,10 @@ function runSelfTests(): void {
   validateArticleSummaries([createTestArticle()]);
 
   let caughtEnglishChineseSummary = false;
+  assertSelfTest(
+    getArticleSummaryErrors([createTestArticle({ summaryZh: 'This is not translated into Chinese.' })]).length > 0,
+    'getArticleSummaryErrors reports non-Chinese summaryZh'
+  );
   try {
     validateArticleSummaries([createTestArticle({ summaryZh: 'This is not translated into Chinese.' })]);
   } catch {
@@ -1791,8 +1879,10 @@ async function main(): Promise<void> {
     };
   });
 
-  console.log(`[digest] Step 5/5: Generating today's highlights...`);
+  await repairInvalidSummaries(finalArticles, aiClient);
   validateArticleSummaries(finalArticles);
+
+  console.log(`[digest] Step 5/5: Generating today's highlights...`);
   const highlights = await generateHighlights(finalArticles, aiClient, lang);
 
   const successfulSources = new Set(allArticles.map(a => a.sourceName));
