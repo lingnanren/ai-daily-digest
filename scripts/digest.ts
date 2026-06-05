@@ -147,7 +147,11 @@ interface ScoredArticle extends Article {
   keywords: string[];
   titleZh: string;
   summary: string;
+  summaryZh: string;
+  summaryEn: string;
   reason: string;
+  reasonZh: string;
+  reasonEn: string;
 }
 
 interface GeminiScoringResult {
@@ -165,8 +169,10 @@ interface GeminiSummaryResult {
   results: Array<{
     index: number;
     titleZh: string;
-    summary: string;
-    reason: string;
+    summaryZh: string;
+    summaryEn: string;
+    reasonZh: string;
+    reasonEn: string;
   }>;
 }
 
@@ -1038,27 +1044,22 @@ async function scoreArticlesWithAI(
 // ============================================================================
 
 function buildSummaryPrompt(
-  articles: Array<{ index: number; title: string; description: string; sourceName: string; link: string }>,
-  lang: 'zh' | 'en'
+  articles: Array<{ index: number; title: string; description: string; sourceName: string; link: string }>
 ): string {
   const articlesList = articles.map(a =>
     `Index ${a.index}: [${a.sourceName}] ${a.title}\nURL: ${a.link}\n${a.description.slice(0, 800)}`
   ).join('\n\n---\n\n');
 
-  const langInstruction = lang === 'zh'
-    ? '请用中文撰写摘要和推荐理由。如果原文是英文，请翻译为中文。标题翻译也用中文。'
-    : 'Write summaries, reasons, and title translations in English.';
-
-  return `你是一个技术内容摘要专家。请为以下文章完成三件事：
+  return `你是一个双语技术内容摘要专家。请为以下文章完成五件事：
 
 1. **中文标题** (titleZh): 将英文标题翻译成自然的中文。如果原标题已经是中文则保持不变。
-2. **摘要** (summary): 4-6 句话的结构化摘要，让读者不点进原文也能了解核心内容。包含：
+2. **中文摘要** (summaryZh): 4-6 句话的中文结构化摘要，让读者不点进原文也能了解核心内容。包含：
    - 文章讨论的核心问题或主题（1 句）
    - 关键论点、技术方案或发现（2-3 句）
    - 结论或作者的核心观点（1 句）
-3. **推荐理由** (reason): 1 句话说明"为什么值得读"，区别于摘要（摘要说"是什么"，推荐理由说"为什么"）。
-
-${langInstruction}
+3. **英文摘要** (summaryEn): 3-5 sentences in English. Preserve the original nuance and technical terms.
+4. **中文推荐理由** (reasonZh): 1 句中文说明"为什么值得读"，区别于摘要。
+5. **英文推荐理由** (reasonEn): 1 English sentence explaining why it is worth reading.
 
 摘要要求：
 - 直接说重点，不要用"本文讨论了..."、"这篇文章介绍了..."这种开头
@@ -1066,6 +1067,7 @@ ${langInstruction}
 - 保留关键数字和指标（如性能提升百分比、用户数、版本号等）
 - 如果文章涉及对比或选型，要点出比较对象和结论
 - 目标：读者花 30 秒读完摘要，就能决定是否值得花 10 分钟读原文
+- 即使原文是英文，也必须提供自然中文摘要；即使原文不是英文，也必须提供英文摘要
 
 ## 待摘要文章
 
@@ -1077,8 +1079,10 @@ ${articlesList}
     {
       "index": 0,
       "titleZh": "中文翻译的标题",
-      "summary": "摘要内容...",
-      "reason": "推荐理由..."
+      "summaryZh": "中文摘要内容...",
+      "summaryEn": "English summary...",
+      "reasonZh": "中文推荐理由...",
+      "reasonEn": "English reason..."
     }
   ]
 }`;
@@ -1088,8 +1092,8 @@ async function summarizeArticles(
   articles: Array<Article & { index: number }>,
   aiClient: AIClient,
   lang: 'zh' | 'en'
-): Promise<Map<number, { titleZh: string; summary: string; reason: string }>> {
-  const summaries = new Map<number, { titleZh: string; summary: string; reason: string }>();
+): Promise<Map<number, { titleZh: string; summaryZh: string; summaryEn: string; reasonZh: string; reasonEn: string }>> {
+  const summaries = new Map<number, { titleZh: string; summaryZh: string; summaryEn: string; reasonZh: string; reasonEn: string }>();
   
   const indexed = articles.map(a => ({
     index: a.index,
@@ -1110,7 +1114,7 @@ async function summarizeArticles(
     const batchGroup = batches.slice(i, i + MAX_CONCURRENT_GEMINI);
     const promises = batchGroup.map(async (batch) => {
       try {
-        const prompt = buildSummaryPrompt(batch, lang);
+        const prompt = buildSummaryPrompt(batch);
         const responseText = await aiClient.call(prompt);
         const parsed = parseJsonResponse<GeminiSummaryResult>(responseText);
         
@@ -1118,15 +1122,23 @@ async function summarizeArticles(
           for (const result of parsed.results) {
             summaries.set(result.index, {
               titleZh: result.titleZh || '',
-              summary: result.summary || '',
-              reason: result.reason || '',
+              summaryZh: result.summaryZh || '',
+              summaryEn: result.summaryEn || '',
+              reasonZh: result.reasonZh || '',
+              reasonEn: result.reasonEn || '',
             });
           }
         }
       } catch (error) {
         console.warn(`[digest] Summary batch failed: ${error instanceof Error ? error.message : String(error)}`);
         for (const item of batch) {
-          summaries.set(item.index, { titleZh: item.title, summary: item.title, reason: '' });
+          summaries.set(item.index, {
+            titleZh: item.title,
+            summaryZh: item.description || item.title,
+            summaryEn: item.description || item.title,
+            reasonZh: '',
+            reasonEn: '',
+          });
         }
       }
     });
@@ -1327,9 +1339,17 @@ function generateDigestReport(articles: ScoredArticle[], highlights: string, sta
       
       report += `${medal} **${a.titleZh || a.title}**\n\n`;
       report += `[${a.title}](${a.link}) — ${a.sourceName} · ${humanizeTime(a.pubDate)} · ${catMeta.emoji} ${catMeta.label}\n\n`;
-      report += `> ${a.summary}\n\n`;
-      if (a.reason) {
-        report += `💡 **为什么值得读**: ${a.reason}\n\n`;
+      if (a.summaryZh) {
+        report += `**中文摘要**\n\n> ${a.summaryZh}\n\n`;
+      }
+      if (a.summaryEn) {
+        report += `**English Summary**\n\n> ${a.summaryEn}\n\n`;
+      }
+      if (a.reasonZh) {
+        report += `💡 **为什么值得读**: ${a.reasonZh}\n\n`;
+      }
+      if (a.reasonEn) {
+        report += `💡 **Why read it**: ${a.reasonEn}\n\n`;
       }
       if (a.keywords.length > 0) {
         report += `🏷️ ${a.keywords.join(', ')}\n\n`;
@@ -1389,7 +1409,12 @@ function generateDigestReport(articles: ScoredArticle[], highlights: string, sta
 
       report += `### ${globalIndex}. ${a.titleZh || a.title}\n\n`;
       report += `[${a.title}](${a.link}) — **${a.sourceName}** · ${humanizeTime(a.pubDate)} · ⭐ ${scoreTotal}/30\n\n`;
-      report += `> ${a.summary}\n\n`;
+      if (a.summaryZh) {
+        report += `**中文摘要**\n\n> ${a.summaryZh}\n\n`;
+      }
+      if (a.summaryEn) {
+        report += `**English Summary**\n\n> ${a.summaryEn}\n\n`;
+      }
       if (a.keywords.length > 0) {
         report += `🏷️ ${a.keywords.join(', ')}\n\n`;
       }
@@ -1542,7 +1567,14 @@ async function main(): Promise<void> {
   const summaries = await summarizeArticles(indexedTopArticles, aiClient, lang);
   
   const finalArticles: ScoredArticle[] = topArticles.map((a, i) => {
-    const sm = summaries.get(i) || { titleZh: a.title, summary: a.description.slice(0, 200), reason: '' };
+    const fallbackSummary = a.description.slice(0, 200);
+    const sm = summaries.get(i) || {
+      titleZh: a.title,
+      summaryZh: fallbackSummary,
+      summaryEn: fallbackSummary,
+      reasonZh: '',
+      reasonEn: '',
+    };
     return {
       title: a.title,
       link: a.link,
@@ -1559,8 +1591,12 @@ async function main(): Promise<void> {
       category: a.breakdown.category,
       keywords: a.breakdown.keywords,
       titleZh: sm.titleZh,
-      summary: sm.summary,
-      reason: sm.reason,
+      summary: sm.summaryZh || sm.summaryEn || fallbackSummary,
+      summaryZh: sm.summaryZh,
+      summaryEn: sm.summaryEn,
+      reason: sm.reasonZh || sm.reasonEn,
+      reasonZh: sm.reasonZh,
+      reasonEn: sm.reasonEn,
     };
   });
   
