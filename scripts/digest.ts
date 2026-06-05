@@ -16,6 +16,7 @@ const FEED_CONCURRENCY = 10;
 const GEMINI_BATCH_SIZE = 10;
 const MAX_CONCURRENT_GEMINI = 1;
 const AI_MAX_RETRIES = 3;
+const MAX_AI_SCORING_CANDIDATES = 30;
 
 // 90 RSS feeds from Hacker News Popularity Contest 2025 (curated by Karpathy)
 const RSS_FEEDS: Array<{ name: string; xmlUrl: string; htmlUrl: string }> = [
@@ -403,6 +404,10 @@ function getRetryDelayMs(errorText: string, attempt: number): number {
   return Math.min(60_000, 2 ** attempt * 5_000);
 }
 
+function isDailyQuotaExceeded(errorText: string): boolean {
+  return /GenerateRequestsPerDay|requests per day|PerDay/i.test(errorText);
+}
+
 async function callGemini(prompt: string, apiKey: string): Promise<string> {
   for (let attempt = 0; attempt <= AI_MAX_RETRIES; attempt++) {
     const response = await fetch(`${GEMINI_API_URL}?key=${apiKey}`, {
@@ -420,6 +425,9 @@ async function callGemini(prompt: string, apiKey: string): Promise<string> {
 
     if (!response.ok) {
       const errorText = await response.text().catch(() => 'Unknown error');
+      if (response.status === 429 && isDailyQuotaExceeded(errorText)) {
+        throw new Error(`Gemini API daily quota exhausted: ${errorText}`);
+      }
       if ((response.status === 429 || response.status >= 500) && attempt < AI_MAX_RETRIES) {
         const delayMs = getRetryDelayMs(errorText, attempt);
         console.warn(`[digest] Gemini API ${response.status}; retrying in ${Math.round(delayMs / 1000)}s (${attempt + 1}/${AI_MAX_RETRIES})`);
@@ -1999,10 +2007,14 @@ async function main(): Promise<void> {
     process.exit(1);
   }
 
-  console.log(`[digest] Step 3/5: AI scoring ${recentArticles.length} articles...`);
-  const scores = await scoreArticlesWithAI(recentArticles, aiClient);
+  const scoringCandidates = recentArticles
+    .sort((a, b) => b.pubDate.getTime() - a.pubDate.getTime())
+    .slice(0, Math.max(topN, MAX_AI_SCORING_CANDIDATES));
 
-  const scoredArticles = recentArticles.map((article, index) => {
+  console.log(`[digest] Step 3/5: AI scoring ${scoringCandidates.length}/${recentArticles.length} candidate articles...`);
+  const scores = await scoreArticlesWithAI(scoringCandidates, aiClient);
+
+  const scoredArticles = scoringCandidates.map((article, index) => {
     const score = scores.get(index) || { relevance: 5, quality: 5, timeliness: 5, category: 'other' as CategoryId, keywords: [] };
     return {
       ...article,
