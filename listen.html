@@ -52,201 +52,201 @@
   <main class="shell">
     <article class="card">
       <p>🎧 <a href="https://lingnanren.github.io/ai-daily-digest/listen.html">点这里朗读今日日报</a></p>
-<h1>📰 AI 博客每日精选 — 2026-06-17</h1>
+<h1>📰 AI 博客每日精选 — 2026-06-18</h1>
 <blockquote>来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15</blockquote>
 <h2>📝 今日看点</h2>
-<p>今日技术看点聚焦人工智能的商业挑战与安全隐患。OpenAI 巨额亏损揭示了AI行业“破碎经济学”的严峻现实，而Qwen3.6-27B等模型的出现则预示着AI在编码等领域的实用性不断提升。与此同时，网络安全领域警钟长鸣，仿冒网站和出口管制漏洞等事件凸显了数字安全防护的紧迫性。</p>
+<p>今日技术看点聚焦人工智能的深度应用与安全挑战。AI正以前所未有的方式赋能内容创作与代码生成，从Markdown的演进到利用Claude进行定理形式化证明，展现了AI在理解和生成复杂信息上的潜力。同时，搜索引擎安全问题日益凸显，钓鱼网站的伪装能力令人担忧，亟需更有效的防护措施。此外，开发者工具的持续迭代，如Datasette的新功能和Flax的调试技巧，也在不断提升开发效率和生产力。</p>
 <hr>
 <h2>🏆 今日必读</h2>
-<p>🥇 <strong>Flax 调试：如何处理哈希问题</strong></p>
-<p><a href="https://www.gilesthomas.com/2026/06/hashing-jax-parameters">Flax debugging: making a hash of things</a> — gilesthomas.com · 2 小时前 · 🤖 AI / ML</p>
+<p>🥇 <strong>Markdown 的史诗故事</strong></p>
+<p><a href="https://simonwillison.net/2026/Jun/17/glm-52/#atom-everything">GLM-5.2 is probably the most powerful text-only open weights LLM</a> — simonwillison.net · 4 小时前 · 🤖 AI / ML</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>在调试 JAX/Flax NNX 训练循环时，遇到了一个棘手的问题，需要确定是模型、损失函数、优化器设置还是训练循环本身的“管道”出了问题。通过打印损失和梯度可以初步判断，但直接打印参数变化难以直观反映问题。文章介绍了一种通过计算参数的哈希值来快速检查参数是否按预期更新的调试技巧，这有助于隔离和解决训练过程中的潜在错误。</blockquote>
+<blockquote>本文回顾了 Markdown 标记语言的起源和发展历程。由 John Gruber 和 Anil Dash 讲述，Markdown 最初是为了简化内容创作而设计的，如今已成为大型语言模型（LLM）代理系统的通用语言。其普及程度的显著提升，尤其是在 LLM 领域的应用，标志着其影响力的进一步扩大。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Debugging a JAX/Flax NNX training loop revealed a common issue: determining if the problem lies with the model, loss function, optimizer, or the training loop's plumbing. While printing loss and gradients offers some insight, observing parameter changes directly can be unhelpful. This article presents a neat trick: hashing parameters to quickly verify if they are updating as expected, aiding in isolating and resolving training issues.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 提供了一个实用的 JAX/Flax 调试技巧，能帮助开发者快速定位训练问题。</p>
-<p>💡 <strong>Why read it</strong>: Offers a practical debugging trick for JAX/Flax that helps developers quickly pinpoint training issues.</p>
-<p>🏷️ debugging, JAX, Flax, NNX</p>
-<p>🥈 <strong>引用 Georgi Gerganov 的观点</strong></p>
-<p><a href="https://simonwillison.net/2026/Jun/16/georgi-gerganov/#atom-everything">Quoting Georgi Gerganov</a> — simonwillison.net · 12 小时前 · 🤖 AI / ML</p>
+<blockquote>This piece recounts the origin and evolution of the Markdown markup language, as told by John Gruber and Anil Dash. Initially designed to simplify content creation, Markdown has now become the lingua franca for LLM agentic systems. Its popularity has seen a step change, particularly with its embrace in the LLM space, signifying its expanding influence.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 了解一个在互联网内容创作和 AI 领域都至关重要的标记语言是如何诞生的。</p>
+<p>💡 <strong>Why read it</strong>: Understand the genesis of a markup language crucial to both internet content creation and the AI landscape.</p>
+<p>🏷️ LLM, open weights, GLM-5.2</p>
+<p>🥈 <strong>使用 Lean 4 和 Claude 形式化环论定理</strong></p>
+<p><a href="https://terriblesoftware.org/2026/06/17/you-got-faster-your-company-didnt/">You Got Faster. Your Company Didn’t.</a> — terriblesoftware.org · 11 小时前 · 💡 观点 / 杂谈</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Georgi Gerganov 强烈推荐 Qwen3.6-27B 模型用于编码任务，并分享了过去一个半月来在 M2 Ultra 和 RTX 5090 机器上日常使用该模型的经验。他主要将其用于 ggml-org 的一些小型、常规的编码辅助任务，虽然不惊人，但证明了其作为有用工具的价值。</blockquote>
+<blockquote>作者测试了 Claude 生成 Lean 4 代码以证明定理的能力，并分享了成功经验。Claude 能够生成用于形式化证明的 Lean 4 代码，尽管在某些复杂定理（如半范数的 pqr 定理）的证明上遇到了挑战。这次实验展示了 AI 在数学形式化领域的潜力。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Georgi Gerganov highly recommends the Qwen3.6-27B model for coding tasks, sharing his experience using it almost daily for the past month and a half on both M2 Ultra and RTX 5090 machines. He primarily uses it for small, mundane coding assistance tasks at ggml-org, finding it a definitely helpful tool.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 提供了对 Qwen3.6-27B 模型在编码任务上实用性的第一手评价。</p>
-<p>💡 <strong>Why read it</strong>: Provides a first-hand assessment of the Qwen3.6-27B model's utility for coding tasks.</p>
-<p>🏷️ LLM, coding, Qwen, local models</p>
-<p>🥉 <strong>独家：OpenAI 2025 年亏损近 8 倍，支出达 340 亿美元</strong></p>
-<p><a href="https://www.wheresyoured.at/exclusive-openai-financials/">Exclusive: OpenAI Losses Increased Nearly 8X in 2025, With Spending Hitting $34 Billion</a> — wheresyoured.at · 1 天前 · 🤖 AI / ML</p>
+<blockquote>The author tests Claude's ability to generate Lean 4 code for theorem proving, sharing successful experiments. Claude can produce Lean 4 code for formal proofs, though it faced challenges with complex theorems like the pqr theorem for seminorms. This experiment highlights AI's potential in mathematical formalization.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 探索 AI 工具（如 Claude）在形式化数学证明方面的能力和局限性。</p>
+<p>💡 <strong>Why read it</strong>: Explore the capabilities and limitations of AI tools like Claude in formalizing mathematical proofs.</p>
+<p>🏷️ AI productivity, outsourcing, developer efficiency</p>
+<p>🥉 <strong>：一个可点击播放的静态图组件</strong></p>
+<p><a href="https://simonwillison.net/2026/Jun/17/charity-majors/#atom-everything">Quoting Charity Majors</a> — simonwillison.net · 11 小时前 · 💡 观点 / 杂谈</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>根据独家披露的财务信息，OpenAI 在 2025 年的亏损大幅增加，达到惊人的 340 亿美元。文章深入分析了 OpenAI 的财务状况，揭示了其巨额的运营支出和潜在的盈利挑战。这表明尽管在人工智能领域取得了显著进展，但 OpenAI 的商业模式面临严峻的财务压力。</blockquote>
+<blockquote>介绍了一个名为 `` 的 Web Component，它能将静态图和链接转化为一个交互式组件。用户点击播放按钮后才会加载 GIF，从而优化了页面加载速度并节省了带宽。该组件适用于不希望用户在未主动点击前加载大型 GIF 的场景。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Exclusive financial disclosures reveal that OpenAI's losses surged nearly 8x in 2025, reaching a staggering $34 billion in spending. The article delves into OpenAI's financial situation, highlighting its immense operational costs and potential profitability challenges. This indicates significant financial pressure on OpenAI's business model despite its advancements in AI.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 揭示了 OpenAI 惊人的财务亏损和支出数据，对理解其商业模式至关重要。</p>
-<p>💡 <strong>Why read it</strong>: Reveals OpenAI's staggering financial losses and spending figures, crucial for understanding its business model.</p>
-<p>🏷️ OpenAI, losses, spending</p>
+<blockquote>Introduces ``, a Web Component that transforms static images and links into an interactive element. It defers GIF loading until a user clicks a play button, optimizing page load times and saving bandwidth. This is ideal for scenarios where large GIFs should not load until explicitly requested.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 学习如何使用 Web Component 优化动图加载，提升用户体验和网页性能。</p>
+<p>💡 <strong>Why read it</strong>: Learn how to optimize GIF loading and enhance user experience and web performance using a Web Component.</p>
+<p>🏷️ AI, code production, engineering discipline</p>
 <hr>
 <h2>📊 数据概览</h2>
-<table><thead><tr><th>扫描源</th><th>抓取文章</th><th>时间范围</th><th>精选</th></tr></thead><tbody><tr><td>76/92</td><td>2343 篇 → 39 篇</td><td>48h</td><td><strong>15 篇</strong></td></tr></tbody></table>
+<table><thead><tr><th>扫描源</th><th>抓取文章</th><th>时间范围</th><th>精选</th></tr></thead><tbody><tr><td>81/92</td><td>2450 篇 → 34 篇</td><td>48h</td><td><strong>15 篇</strong></td></tr></tbody></table>
 <h3>分类分布</h3>
 <div class="code-wrap"><div class="code-title">mermaid</div><pre><code>pie showData
     title "文章分类分布"
     "🤖 AI / ML" : 5
-    "💡 观点 / 杂谈" : 5
-    "🔒 安全" : 2
-    "🛠 工具 / 开源" : 2
+    "💡 观点 / 杂谈" : 4
+    "🛠 工具 / 开源" : 4
+    "🔒 安全" : 1
     "⚙️ 工程" : 1</code></pre></div>
 <h3>高频关键词</h3>
 <div class="code-wrap"><div class="code-title">mermaid</div><pre><code>xychart-beta horizontal
     title "高频关键词"
-    x-axis ["debugging", "anthropic", "apple", "eu", "dma", "jax", "flax", "nnx", "llm", "coding", "qwen", "local models"]
+    x-axis ["llm", "debugging", "datasette", "open weights", "glm-5.2", "ai productivity", "outsourcing", "developer efficiency", "ai", "code production", "engineering discipline", "coding tasks"]
     y-axis "出现次数" 0 --&gt; 4
-    bar [2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1]</code></pre></div>
+    bar [2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1]</code></pre></div>
 <div class="details">
 <p class="summary">📈 纯文本关键词图（终端友好）</p>
-<div class="code-wrap"><pre><code>debugging │ ████████████████████ 2
-anthropic │ ████████████████████ 2
-apple     │ ████████████████████ 2
-eu        │ ████████████████████ 2
-dma       │ ████████████████████ 2
-jax       │ ██████████░░░░░░░░░░ 1
-flax      │ ██████████░░░░░░░░░░ 1
-nnx       │ ██████████░░░░░░░░░░ 1
-llm       │ ██████████░░░░░░░░░░ 1
-coding    │ ██████████░░░░░░░░░░ 1</code></pre></div>
+<div class="code-wrap"><pre><code>llm                  │ ████████████████████ 2
+debugging            │ ████████████████████ 2
+datasette            │ ████████████████████ 2
+open weights         │ ██████████░░░░░░░░░░ 1
+glm-5.2              │ ██████████░░░░░░░░░░ 1
+ai productivity      │ ██████████░░░░░░░░░░ 1
+outsourcing          │ ██████████░░░░░░░░░░ 1
+developer efficiency │ ██████████░░░░░░░░░░ 1
+ai                   │ ██████████░░░░░░░░░░ 1
+code production      │ ██████████░░░░░░░░░░ 1</code></pre></div>
 </div>
 <h3>🏷️ 话题标签</h3>
-<p><strong>debugging</strong>(2) · <strong>anthropic</strong>(2) · <strong>apple</strong>(2) · eu(2) · dma(2) · jax(1) · flax(1) · nnx(1) · llm(1) · coding(1) · qwen(1) · local models(1) · openai(1) · losses(1) · spending(1) · production(1) · website redesign(1) · 500 error(1) · phishing(1) · duckduckgo(1)</p>
+<p><strong>llm</strong>(2) · <strong>debugging</strong>(2) · <strong>datasette</strong>(2) · open weights(1) · glm-5.2(1) · ai productivity(1) · outsourcing(1) · developer efficiency(1) · ai(1) · code production(1) · engineering discipline(1) · coding tasks(1) · local model(1) · qwen(1) · siri(1) · apple intelligence(1) · wwdc(1) · jax(1) · flax(1) · gradients(1)</p>
 <hr>
 <h2>🤖 AI / ML</h2>
-<h3>1. Flax 调试：如何处理哈希问题</h3>
-<p><a href="https://www.gilesthomas.com/2026/06/hashing-jax-parameters">Flax debugging: making a hash of things</a> — <strong>gilesthomas.com</strong> · 2 小时前 · ⭐ 25/30</p>
+<h3>1. Markdown 的史诗故事</h3>
+<p><a href="https://simonwillison.net/2026/Jun/17/glm-52/#atom-everything">GLM-5.2 is probably the most powerful text-only open weights LLM</a> — <strong>simonwillison.net</strong> · 4 小时前 · ⭐ 28/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>在调试 JAX/Flax NNX 训练循环时，遇到了一个棘手的问题，需要确定是模型、损失函数、优化器设置还是训练循环本身的“管道”出了问题。通过打印损失和梯度可以初步判断，但直接打印参数变化难以直观反映问题。文章介绍了一种通过计算参数的哈希值来快速检查参数是否按预期更新的调试技巧，这有助于隔离和解决训练过程中的潜在错误。</blockquote>
+<blockquote>本文回顾了 Markdown 标记语言的起源和发展历程。由 John Gruber 和 Anil Dash 讲述，Markdown 最初是为了简化内容创作而设计的，如今已成为大型语言模型（LLM）代理系统的通用语言。其普及程度的显著提升，尤其是在 LLM 领域的应用，标志着其影响力的进一步扩大。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Debugging a JAX/Flax NNX training loop revealed a common issue: determining if the problem lies with the model, loss function, optimizer, or the training loop's plumbing. While printing loss and gradients offers some insight, observing parameter changes directly can be unhelpful. This article presents a neat trick: hashing parameters to quickly verify if they are updating as expected, aiding in isolating and resolving training issues.</blockquote>
-<p>🏷️ debugging, JAX, Flax, NNX</p>
+<blockquote>This piece recounts the origin and evolution of the Markdown markup language, as told by John Gruber and Anil Dash. Initially designed to simplify content creation, Markdown has now become the lingua franca for LLM agentic systems. Its popularity has seen a step change, particularly with its embrace in the LLM space, signifying its expanding influence.</blockquote>
+<p>🏷️ LLM, open weights, GLM-5.2</p>
 <hr>
-<h3>2. 引用 Georgi Gerganov 的观点</h3>
-<p><a href="https://simonwillison.net/2026/Jun/16/georgi-gerganov/#atom-everything">Quoting Georgi Gerganov</a> — <strong>simonwillison.net</strong> · 12 小时前 · ⭐ 25/30</p>
+<h3>2. NetNewsWire 状态</h3>
+<p><a href="https://simonwillison.net/2026/Jun/16/georgi-gerganov/#atom-everything">Quoting Georgi Gerganov</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 25/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Georgi Gerganov 强烈推荐 Qwen3.6-27B 模型用于编码任务，并分享了过去一个半月来在 M2 Ultra 和 RTX 5090 机器上日常使用该模型的经验。他主要将其用于 ggml-org 的一些小型、常规的编码辅助任务，虽然不惊人，但证明了其作为有用工具的价值。</blockquote>
+<blockquote>Brent Simmons 在退休一年后，专注于将 NetNewsWire 这款 RSS 阅读器打磨至极致，不受商业压力影响。NetNewsWire 最初于 2002 年发布，被描述为“阅读领域的播客”。其持续的免费开发和精进体现了对软件质量的执着追求。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Georgi Gerganov highly recommends the Qwen3.6-27B model for coding tasks, sharing his experience using it almost daily for the past month and a half on both M2 Ultra and RTX 5090 machines. He primarily uses it for small, mundane coding assistance tasks at ggml-org, finding it a definitely helpful tool.</blockquote>
-<p>🏷️ LLM, coding, Qwen, local models</p>
+<blockquote>A year into retirement, Brent Simmons is dedicated to perfecting NetNewsWire, an RSS reader, free from commercial pressures. First released in 2002, NetNewsWire is described as 'podcasts for reading.' Its continued free development and refinement showcase a commitment to software quality.</blockquote>
+<p>🏷️ LLM, coding tasks, local model, Qwen</p>
 <hr>
-<h3>3. 独家：OpenAI 2025 年亏损近 8 倍，支出达 340 亿美元</h3>
-<p><a href="https://www.wheresyoured.at/exclusive-openai-financials/">Exclusive: OpenAI Losses Increased Nearly 8X in 2025, With Spending Hitting $34 Billion</a> — <strong>wheresyoured.at</strong> · 1 天前 · ⭐ 25/30</p>
+<h3>3. datasette-tailscale 0.1a0 发布</h3>
+<p><a href="https://twit.tv/shows/macbreak-weekly/episodes/1029?autostart=false">Yours Truly on MacBreak Weekly: Is the New Siri AI Good?</a> — <strong>daringfireball.net</strong> · 13 小时前 · ⭐ 24/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>根据独家披露的财务信息，OpenAI 在 2025 年的亏损大幅增加，达到惊人的 340 亿美元。文章深入分析了 OpenAI 的财务状况，揭示了其巨额的运营支出和潜在的盈利挑战。这表明尽管在人工智能领域取得了显著进展，但 OpenAI 的商业模式面临严峻的财务压力。</blockquote>
+<blockquote>发布了非常实验性的 alpha 插件 datasette-tailscale 0.1a0。该插件允许用户通过 Tailscale 连接到本地运行的 Datasette 服务器，实现安全的数据访问。通过简单的命令行配置，即可将 Datasette 实例接入 Tailnet。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Exclusive financial disclosures reveal that OpenAI's losses surged nearly 8x in 2025, reaching a staggering $34 billion in spending. The article delves into OpenAI's financial situation, highlighting its immense operational costs and potential profitability challenges. This indicates significant financial pressure on OpenAI's business model despite its advancements in AI.</blockquote>
-<p>🏷️ OpenAI, losses, spending</p>
+<blockquote>The highly experimental alpha plugin datasette-tailscale 0.1a0 has been released. This plugin allows users to connect to a locally running Datasette server via Tailscale for secure data access. It enables integration of Datasette instances into a Tailnet with simple command-line configuration.</blockquote>
+<p>🏷️ Siri, Apple Intelligence, WWDC</p>
 <hr>
-<h3>4. 引用 Matteo Wong，《大西洋月刊》</h3>
-<p><a href="https://simonwillison.net/2026/Jun/16/matteo-wong-the-atlantic/#atom-everything">Quoting Matteo Wong, The Atlantic</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 24/30</p>
+<h3>4. Flax 调试：在哈希中解决问题</h3>
+<p><a href="https://www.gilesthomas.com/2026/06/hashing-jax-parameters">Flax debugging: making a hash of things</a> — <strong>gilesthomas.com</strong> · 1 天前 · ⭐ 24/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>文章引用了《大西洋月刊》的报道，其中网络安全专家 Katie Moussouris 证实，Anthropic 分享了白宫关于 Fable 越狱漏洞的报告，以获取她的评估。Moussouris 指出，该报告涉及 IT 专家要求 Fable 帮助查找和修补 bug。她认为，将这种漏洞修复行为视为需要出口管制的“技术”，可能会阻碍美国网络防御的发展。</blockquote>
+<blockquote>在调试 JAX/Flax NNX 训练循环时，作者发现了一个巧妙的调试技巧，用于区分模型、损失函数、优化器设置或训练循环本身的问题。通过打印参数的哈希值，可以有效地判断参数是否在训练过程中被正确更新，从而加速问题定位。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Quoting The Atlantic, this article features cybersecurity expert Katie Moussouris confirming that Anthropic shared the White House's report on the Fable jailbreak with her for appraisal. Moussouris noted the report involved IT experts asking Fable to help find and patch bugs. She suggests that classifying such vulnerability fixes as 'technology' subject to export controls could hinder US cyber defense.</blockquote>
-<p>🏷️ AI export controls, Anthropic, cybersecurity</p>
+<blockquote>While debugging a JAX/Flax NNX training loop, the author discovered a neat trick to help diagnose issues. By printing the hash of parameters, it's possible to efficiently determine if gradients are being applied and parameters are being updated correctly, aiding in pinpointing problems within the model, loss function, optimizer, or training loop plumbing.</blockquote>
+<p>🏷️ JAX, Flax, debugging, gradients</p>
 <hr>
-<h3>5. WorkOS 发布 Auth.md — AI 代理注册的开放协议</h3>
-<p><a href="https://workos.com/auth-md?utm_source=daringfireball&amp;amp;amp;utm_medium=newsletter&amp;amp;amp;utm_campaign=q22026">WorkOS Launches Auth.md — an Open Protocol for Agent Registration</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 22/30</p>
+<h3>5. 使用 Lean 4 和 Claude 对环定理进行形式化</h3>
+<p><a href="https://www.johndcook.com/blog/2026/06/17/rings-with-lean-claude/">Formalizing a ring theorem with Lean 4 and Claude</a> — <strong>johndcook.com</strong> · 14 小时前 · ⭐ 22/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>WorkOS 推出了 Auth.md，一个用于 AI 代理注册的开放协议。该协议旨在解决 AI 代理如何以编程方式注册服务的问题，通过在服务根目录暴露一个机器可读的 Markdown 文件，AI 代理可以动态发现 OAuth 受保护的资源元数据，解析所需范围并无缝进行身份验证。</blockquote>
+<blockquote>作者一直在测试 Claude 生成 Lean 4 代码以证明定理的能力。他分享了几个成功验证计算的实验，但并未提及他尝试让 Claude 对半范数的 pqr 定理进行形式化证明的失败尝试。此次，作者要求 Claude 对一个环定理进行形式化证明。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>WorkOS has launched Auth.md, an open protocol for AI agent registration. This protocol addresses the challenge of how AI agents can programmatically register with services. By exposing a single, machine-readable Markdown file at the service root, AI agents can dynamically discover OAuth Protected Resource Metadata, parse required scopes, and authenticate seamlessly.</blockquote>
-<p>🏷️ AI agents, protocol, registration, Auth.md</p>
+<blockquote>The author has been testing Claude's ability to generate Lean 4 code for theorem proving. Previous experiments successfully verified calculations, but a failed attempt to formalize the pqr theorem for seminorms was not detailed. This time, the author asks Claude to formally prove a ring theorem.</blockquote>
+<p>🏷️ Lean 4, formal verification, Claude</p>
 <hr>
 <h2>💡 观点 / 杂谈</h2>
-<h3>6. AI 的破碎经济学</h3>
-<p><a href="https://www.wheresyoured.at/brokenomics/">AI's Brokenomics</a> — <strong>wheresyoured.at</strong> · 1 天前 · ⭐ 24/30</p>
+<h3>6. 使用 Lean 4 和 Claude 形式化环论定理</h3>
+<p><a href="https://terriblesoftware.org/2026/06/17/you-got-faster-your-company-didnt/">You Got Faster. Your Company Didn’t.</a> — <strong>terriblesoftware.org</strong> · 11 小时前 · ⭐ 26/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>文章探讨了人工智能（AI）领域中存在的“破碎经济学”现象，即 AI 技术的快速发展与其实际盈利能力和可持续商业模式之间的脱节。作者可能通过分析 NVIDIA、Anthropic 等公司的财务状况和市场趋势，揭示了 AI 行业在巨额投资和高昂成本下面临的经济挑战。这篇深度分析旨在为读者提供对 AI 行业经济格局的全面理解。</blockquote>
+<blockquote>作者测试了 Claude 生成 Lean 4 代码以证明定理的能力，并分享了成功经验。Claude 能够生成用于形式化证明的 Lean 4 代码，尽管在某些复杂定理（如半范数的 pqr 定理）的证明上遇到了挑战。这次实验展示了 AI 在数学形式化领域的潜力。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This article explores the 'brokenomics' of Artificial Intelligence (AI), highlighting the disconnect between rapid technological advancement and sustainable profitability. Through detailed analyses of companies like NVIDIA and Anthropic, it likely delves into the economic challenges faced by the AI industry amidst massive investments and high costs. The aim is to provide readers with a comprehensive understanding of the AI sector's economic landscape.</blockquote>
-<p>🏷️ AI, economics, NVIDIA, Anthropic</p>
+<blockquote>The author tests Claude's ability to generate Lean 4 code for theorem proving, sharing successful experiments. Claude can produce Lean 4 code for formal proofs, though it faced challenges with complex theorems like the pqr theorem for seminorms. This experiment highlights AI's potential in mathematical formalization.</blockquote>
+<p>🏷️ AI productivity, outsourcing, developer efficiency</p>
 <hr>
-<h3>7. iOS 欧洲大陆的“乐趣差距”检查</h3>
-<p><a href="https://daringfireball.net/2024/09/ios_continental_drift_fun_gap">Checking In on the iOS Continental Fun-Gap Drift</a> — <strong>daringfireball.net</strong> · 4 小时前 · ⭐ 22/30</p>
+<h3>7. ：一个可点击播放的静态图组件</h3>
+<p><a href="https://simonwillison.net/2026/Jun/17/charity-majors/#atom-everything">Quoting Charity Majors</a> — <strong>simonwillison.net</strong> · 11 小时前 · ⭐ 26/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>文章回顾了作者在 2024 年 9 月对“欧洲 iPhone 更有趣”的怀疑论调。作者指出，欧盟用户将无法获得 Apple Intelligence 和 iPhone Mirroring 等功能，这些功能被认为是“非常有用且相当有趣”的。文章质疑是否应该根据用户“理论上可能拥有的乐趣”来评判，还是根据“他们实际拥有的乐趣”。作者认为，目前欧盟并非“有趣的一方”，但仍抱有希望。</blockquote>
+<blockquote>介绍了一个名为 `` 的 Web Component，它能将静态图和链接转化为一个交互式组件。用户点击播放按钮后才会加载 GIF，从而优化了页面加载速度并节省了带宽。该组件适用于不希望用户在未主动点击前加载大型 GIF 的场景。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This article revisits the author's skepticism from September 2024 regarding 'European iPhones being more fun.' The author points out that EU users will miss out on features like Apple Intelligence and iPhone Mirroring, which are described as 'very useful, and, dare I say, quite fun.' The piece questions whether fun should be judged by theoretical potential or actual enjoyment, concluding that the EU is currently not the 'fun side' but remains hopeful.</blockquote>
-<p>🏷️ iOS, Apple Intelligence, EU regulations, iPhone features</p>
+<blockquote>Introduces ``, a Web Component that transforms static images and links into an interactive element. It defers GIF loading until a user clicks a play button, optimizing page load times and saving bandwidth. This is ideal for scenarios where large GIFs should not load until explicitly requested.</blockquote>
+<p>🏷️ AI, code production, engineering discipline</p>
 <hr>
-<h3>8. 精益创业训练营 2026 @ 斯坦福：经验教训分享</h3>
-<p><a href="https://steveblank.com/2026/06/16/lean-launch-pad-2026-stanford-lessons-learned-presentations/">Lean Launch Pad 2026 @ Stanford – Lessons Learned Presentations</a> — <strong>steveblank.com</strong> · 15 小时前 · ⭐ 22/30</p>
+<h3>8. The Vergecast 节目中的 John Gruber：Markdown 的史诗故事</h3>
+<p><a href="https://www.theverge.com/podcast/950082/markdown-history-gruber-vergecast">Yours Truly on The Vergecast: ‘# the <strong>Epic</strong> Story of Markdown’</a> — <strong>daringfireball.net</strong> · 13 小时前 · ⭐ 22/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>斯坦福大学第 16 届年度精益创业训练营圆满结束。该课程从最初的“精益方法能为初创公司提供更高效框架”的激进理念，发展到如今被普遍认可的创业构建方式。课程在过去 16 年中不断演进，为创业者提供了宝贵的实践经验。</blockquote>
+<blockquote>本期节目邀请到了 Markdown 的创始人 John Gruber 和 Anil Dash。他们将深入讲述 Markdown 的起源故事，以及它如何征服世界。Markdown 近年来稳步发展，尤其是在被 LLM 智能体系统广泛采用后，其受欢迎程度更是达到了新的高度。文章还提到了与苹果开发者工具团队的简短交流。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>The 16th annual Lean LaunchPad class at Stanford has concluded. Over 16 years, the course has evolved from a radical idea that the Lean method could provide a more productive framework for startups to a widely accepted approach for building new ventures. The program has continuously advanced, offering valuable practical experience to entrepreneurs.</blockquote>
-<p>🏷️ Lean LaunchPad, startups, Stanford</p>
+<blockquote>This episode features John Gruber and Anil Dash, the creators of Markdown, discussing its origin story and global impact. Markdown has seen a significant surge in popularity, especially after being adopted by LLM agentic systems. The discussion also touches upon a brief conversation with Apple's developer tools team.</blockquote>
+<p>🏷️ Markdown, John Gruber, content creation</p>
 <hr>
-<h3>9. 《华盛顿邮报》评论欧盟的《数字市场法案》的愚蠢之处</h3>
-<p><a href="https://www.washingtonpost.com/opinions/2026/06/14/apple-withholding-siri-ai-europe-is-another-dma-failure/">The Washington Post on the EU’s DMA Folly</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 22/30</p>
+<h3>9. NetNewsWire 状态</h3>
+<p><a href="https://simonwillison.net/2026/Jun/17/netnewswire-status/#atom-everything">NetNewsWire Status</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 22/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>《华盛顿邮报》评论文章指出，欧盟《数字市场法案》（DMA）在要求苹果为 Siri AI 提供与竞争对手同等的访问权限方面存在问题。尽管苹果可以技术上遵守，但该法案强制要求任何竞争性 AI 代理都必须获得对用户消息、文件和聊天记录的同等广泛访问权限，这可能导致安全风险，并被认为是 DMA 的一项失败。</blockquote>
+<blockquote>作者分享了对 Brent Simmons 退休后专注于开发 NetNewsWire 的钦佩之情。NetNewsWire 是一款自 2002 年发布的 RSS 阅读器，作者认为这种不受商业压力影响、专注于打磨产品的状态非常鼓舞人心。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>The Washington Post editorial argues that the EU's Digital Markets Act (DMA) poses issues by requiring Apple to grant rival AI agents the same sweeping access to user messages, files, and chat history as Siri AI. While technically feasible, this mandate could create security risks and is presented as a failure of the DMA, as it forces a level of access that Apple is hesitant to provide.</blockquote>
-<p>🏷️ EU, DMA, regulation, Apple</p>
-<hr>
-<h3>10. 欧洲委员会数月前已裁定谷歌将 Gemini 集成到 Android 违反 DMA</h3>
-<p><a href="https://arstechnica.com/ai/2026/04/europe-could-force-google-to-open-android-to-other-ai-assistants/">The European Commission Ruled Months Ago That Google’s Integration of Gemini in Android Violates the DMA</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 22/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>欧洲监管机构正提议对 AI 工具在 Android 手机上的运行方式进行一系列重大调整，包括允许系统级调用第三方 AI 工具以及允许 AI 工具查看屏幕上下文。此外，还可能允许替代 AI 系统访问本地数据以生成主动建议，这表明监管机构正试图强制谷歌开放 Android 生态系统。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>European regulators are proposing significant changes to how AI tools operate on Android phones, including enabling system-wide invocation of third-party AI tools and allowing AI to view screen context. Furthermore, alternative AI systems might be permitted to access local data for proactive suggestions, indicating a push to force Google to open up the Android ecosystem.</blockquote>
-<p>🏷️ EU, Google, Android, DMA</p>
-<hr>
-<h2>🔒 安全</h2>
-<h3>11. 你愿意在 DuckDuckGo 顶部看到一个 Drainer 吗？</h3>
-<p><a href="https://timsh.org/drainer-at-the-top-of-duckduckgo/">Would you like a drainer served at the very top of DuckDuckGo?</a> — <strong>timsh.org</strong> · 15 小时前 · ⭐ 24/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>文章作者在 DuckDuckGo 搜索时，意外地在搜索结果第一位发现了一个仿冒的 tronscan 区块链浏览器网站，该网站可能是一个“Drainer”（一种网络钓鱼工具），用于窃取用户敏感信息。作者强调了这种网络钓鱼攻击的危险性，特别是当仿冒网站与真实网站高度相似时，用户极易上当受骗。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>The author encountered a phishing attack where a fake tronscan blockchain explorer, potentially a 'Drainer' designed to steal user information, appeared as the top search result on DuckDuckGo. The article highlights the danger of such phishing attempts, especially when fake websites are exact replicas of legitimate ones, making users highly susceptible to deception.</blockquote>
-<p>🏷️ phishing, DuckDuckGo, blockchain explorer</p>
-<hr>
-<h3>12. Fable 5 出口管制损害美国网络防御</h3>
-<p><a href="https://simonwillison.net/2026/Jun/16/fable-5-export-controls/#atom-everything">The Fable 5 Export Controls Harm US Cyber Defense</a> — <strong>simonwillison.net</strong> · 23 小时前 · ⭐ 24/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>文章引用了网络安全专家 Kate Moussouris 的观点，她证实了 Anthropic 的 Claude 模型被禁用的“越狱”漏洞（Fable 5）实际上是“修复这段代码”的请求。Moussouris 认为，将这种漏洞修复行为视为需要出口管制的“技术”，反而会阻碍美国网络防御能力的提升，因为这限制了对潜在安全问题的研究和改进。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Citing cybersecurity expert Kate Moussouris, this article confirms that the 'jailbreak' vulnerability in Anthropic's Claude model (Fable 5), which led to its ban under export controls, was essentially a request to 'fix this code.' Moussouris argues that classifying such vulnerability fixes as 'technology' subject to export controls harms US cyber defense by hindering research and improvement on potential security issues.</blockquote>
-<p>🏷️ export controls, cyber defense, Fable 5</p>
+<blockquote>The author expresses admiration for Brent Simmons' dedication to developing NetNewsWire, his retirement project. Released in 2002, NetNewsWire is an RSS reader, and the author finds this focus on perfecting software free from commercial pressure inspiring.</blockquote>
+<p>🏷️ NetNewsWire, retirement project, software development</p>
 <hr>
 <h2>🛠 工具 / 开源</h2>
-<h3>13. datasette-tailscale 0.1a0</h3>
-<p><a href="https://simonwillison.net/2026/Jun/16/datasette-tailscale/#atom-everything">datasette-tailscale 0.1a0</a> — <strong>simonwillison.net</strong> · 12 小时前 · ⭐ 23/30</p>
+<h3>10. datasette 1.0a34 发布</h3>
+<p><a href="https://simonwillison.net/2026/Jun/16/datasette/#atom-everything">datasette 1.0a34</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 23/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>发布了 datasette-tailscale 0.1a0，这是一个非常实验性的 alpha 插件。该插件允许用户通过命令行启动一个本地 Datasette 服务器，并集成 Tailscale 副程序，从而将其连接到用户的 Tailnet。这使得用户可以通过 Tailscale 访问本地数据，实现更便捷的数据共享和访问。</blockquote>
+<blockquote>Datasette 发布了 1.0a34 Alpha 版本，引入了在 Datasette 界面中插入、编辑和删除行的功能。这些新功能在表格页面可用，并且编辑和删除操作也支持在行页面进行。此次更新极大地增强了 Datasette 的数据管理能力。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>The release of datasette-tailscale 0.1a0, a highly experimental alpha plugin, is announced. This plugin enables users to start a local Datasette server with a Tailscale sidecar via a command-line interface, connecting it to their Tailnet. This facilitates easier data access and sharing through Tailscale.</blockquote>
-<p>🏷️ datasette, Tailscale, plugin, database access</p>
+<blockquote>Datasette has released version 1.0a34 (alpha), introducing tools to insert, edit, and delete rows directly within the Datasette interface. These features are available on table pages, with edit and delete actions also accessible on individual row pages, significantly enhancing Datasette's data management capabilities.</blockquote>
+<p>🏷️ Datasette, release, data editing, SQL</p>
 <hr>
-<h3>14. App Store 新增个性化推荐功能</h3>
-<p><a href="https://techcrunch.com/2026/06/09/apples-app-store-rolls-out-personalized-recommendations/">New in the App Store: Personalized Recommendations</a> — <strong>daringfireball.net</strong> · 12 小时前 · ⭐ 22/30</p>
+<h3>11. 程序员逻辑 v0.15，现场编码</h3>
+<p><a href="https://buttondown.com/hillelwayne/archive/logic-for-programmers-v015-livecoding/">Logic for Programmers v0.15, Livecoding</a> — <strong>buttondown.com/hillelwayne</strong> · 12 小时前 · ⭐ 22/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>苹果在 WWDC 上推出了 App Store 的个性化推荐功能，将根据用户的兴趣和行为展示定制化的应用集合。此举旨在为开发者提供新的应用发现途径，并允许用户通过“App Notes”了解推荐原因。该功能将为用户提供更贴合需求的 App 体验。</blockquote>
+<blockquote>《程序员逻辑》一书发布了 v0.15 版本，这是第一个真正的发布候选版本。所有内容已完成、编辑和校对，除非出现重大问题，下一个版本将是 1.0 并提供印刷版。该版本还包含现场编码（Livecoding）的更新。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Apple announced new personalized recommendation features for the App Store at WWDC, which will showcase tailored app collections based on user interests and behavior. This aims to provide developers with new avenues for app discovery and allow users to understand recommendation reasons through 'App Notes'. The feature will offer a more relevant app experience for users.</blockquote>
-<p>🏷️ App Store, Apple, recommendations, developers</p>
+<blockquote>Logic for Programmers has released version 0.15, its first true release candidate. All content is complete, copy-edited, and proofread, with the next release slated to be 1.0 and available in print unless major issues arise. This release also includes updates related to livecoding.</blockquote>
+<p>🏷️ Logic for Programmers, release candidate, programming education</p>
+<hr>
+<h3>12. ：一张可播放的静态图片</h3>
+<p><a href="https://simonwillison.net/2026/Jun/17/click-to-play-component/#atom-everything">&lt;click-to-play&gt; — a still that plays</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 22/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>介绍了一个名为 `` 的 Web Component 工具。该工具可以将静态图片转化为带有播放按钮的动态效果，用户点击后才会加载 GIF。这对于避免不必要的 GIF 加载、优化用户体验非常有用。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>This introduces ``, a Web Component tool that transforms static images into playable stills with a click-to-play button. It loads GIFs on demand, improving user experience by avoiding unnecessary pre-loading.</blockquote>
+<p>🏷️ Web Component, progressive enhancement, click-to-play</p>
+<hr>
+<h3>13. datasette-tailscale 0.1a0 发布</h3>
+<p><a href="https://simonwillison.net/2026/Jun/16/datasette-tailscale/#atom-everything">datasette-tailscale 0.1a0</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 22/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>发布了 <code>datasette-tailscale</code> 插件的第一个非常实验性的 alpha 版本 0.1a0。该插件允许用户通过 Tailscale 连接到其 Tailnet，从而在本地运行 Datasette 服务器并进行预览。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>The first highly experimental alpha version, 0.1a0, of the <code>datasette-tailscale</code> plugin has been released. This plugin enables users to connect to their Tailnet via Tailscale, allowing for local Datasette server execution and preview.</blockquote>
+<p>🏷️ datasette, Tailscale, plugin, database</p>
+<hr>
+<h2>🔒 安全</h2>
+<h3>14. 你愿意在 DuckDuckGo 顶部看到一个“Drainer”吗？</h3>
+<p><a href="https://timsh.org/drainer-at-the-top-of-duckduckgo/">Would you like a drainer served at the very top of DuckDuckGo?</a> — <strong>timsh.org</strong> · 1 天前 · ⭐ 24/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>作者在 DuckDuckGo 搜索结果中，意外地在第一位发现了一个与真实网站外观完全一致的钓鱼网站（tronscan.org 的仿冒品）。这揭示了搜索引擎在防止恶意网站（尤其是伪装成合法服务的）排名靠前方面面临的挑战，以及用户面临的潜在风险。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>The author encountered a phishing website, an exact replica of a legitimate service (tronscan.org), ranking #1 in DuckDuckGo search results. This highlights the challenges search engines face in preventing malicious sites, especially those impersonating legitimate services, from appearing at the top, and the potential risks users face.</blockquote>
+<p>🏷️ phishing, DuckDuckGo, blockchain explorer, security risk</p>
 <hr>
 <h2>⚙️ 工程</h2>
-<h3>15. 生产环境调试</h3>
-<p><a href="https://idiallo.com/blog/debugging-on-prod">Debugging on Prod</a> — <strong>idiallo.com</strong> · 8 小时前 · ⭐ 24/30</p>
+<h3>15. 在生产环境进行调试</h3>
+<p><a href="https://idiallo.com/blog/debugging-on-prod">Debugging on Prod</a> — <strong>idiallo.com</strong> · 1 天前 · ⭐ 23/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>文章探讨了在生产环境中调试 bug 的挑战，特别是那些只在生产环境出现的、难以复现的 bug。作者分享了自己博客网站在经历重大改版后，删除了大量旧代码和 CSS，但随后在生产环境中遇到了 500 错误。通过对网站进行重构和代码清理，作者成功解决了问题，并强调了在生产环境中进行调试和代码维护的重要性。</blockquote>
+<blockquote>作者分享了在生产环境（Prod）中调试一个只在那里出现的 Bug 的经历。在对博客进行了十年来的首次重大改版，删除了大量旧代码后，部署了一个新版本，虽然大部分页面正常，但遇到了生产环境特有的问题，并详细描述了调试过程。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This article discusses the challenges of debugging bugs that exclusively occur in production environments. The author recounts experiencing a 500 error on their blog after a significant redesign involving code and CSS cleanup. By refactoring and cleaning up the codebase, the issue was resolved, highlighting the importance of production debugging and code maintenance.</blockquote>
+<blockquote>The author recounts the experience of debugging a bug that only occurred in production. Following a significant redesign of the blog after ten years, involving the removal of old code, a new version was deployed. While most pages worked, a production-specific issue arose, and the author details the debugging process.</blockquote>
 <p>🏷️ debugging, production, website redesign, 500 error</p>
 <hr>
-<p>*生成于 2026-06-17 04:51 | 扫描 76 源 → 获取 2343 篇 → 精选 15 篇* *基于 <a href="https://refactoringenglish.com/tools/hn-popularity/">Hacker News Popularity Contest 2025</a> RSS 源列表，由 <a href="https://x.com/karpathy">Andrej Karpathy</a> 推荐*</p>
+<p>*生成于 2026-06-18 04:43 | 扫描 81 源 → 获取 2450 篇 → 精选 15 篇* *基于 <a href="https://refactoringenglish.com/tools/hn-popularity/">Hacker News Popularity Contest 2025</a> RSS 源列表，由 <a href="https://x.com/karpathy">Andrej Karpathy</a> 推荐*</p>
     </article>
   </main>
-  <script id="speech-text" type="application/json">"🎧 点这里朗读今日日报\n📰 AI 博客每日精选 — 2026-06-17\n来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15\n📝 今日看点\n今日技术看点聚焦人工智能的商业挑战与安全隐患。OpenAI 巨额亏损揭示了AI行业“破碎经济学”的严峻现实，而Qwen3.6-27B等模型的出现则预示着AI在编码等领域的实用性不断提升。与此同时，网络安全领域警钟长鸣，仿冒网站和出口管制漏洞等事件凸显了数字安全防护的紧迫性。\n \n🏆 今日必读\n🥇 Flax 调试：如何处理哈希问题\nFlax debugging: making a hash of things — gilesthomas.com · 2 小时前 · 🤖 AI / ML\n中文摘要\n在调试 JAX/Flax NNX 训练循环时，遇到了一个棘手的问题，需要确定是模型、损失函数、优化器设置还是训练循环本身的“管道”出了问题。通过打印损失和梯度可以初步判断，但直接打印参数变化难以直观反映问题。文章介绍了一种通过计算参数的哈希值来快速检查参数是否按预期更新的调试技巧，这有助于隔离和解决训练过程中的潜在错误。\nEnglish Summary\nDebugging a JAX/Flax NNX training loop revealed a common issue: determining if the problem lies with the model, loss function, optimizer, or the training loop's plumbing. While printing loss and gradients offers some insight, observing parameter changes directly can be unhelpful. This article presents a neat trick: hashing parameters to quickly verify if they are updating as expected, aiding in isolating and resolving training issues.\n💡 为什么值得读: 提供了一个实用的 JAX/Flax 调试技巧，能帮助开发者快速定位训练问题。\n💡 Why read it: Offers a practical debugging trick for JAX/Flax that helps developers quickly pinpoint training issues.\n🏷️ debugging, JAX, Flax, NNX\n🥈 引用 Georgi Gerganov 的观点\nQuoting Georgi Gerganov — simonwillison.net · 12 小时前 · 🤖 AI / ML\n中文摘要\nGeorgi Gerganov 强烈推荐 Qwen3.6-27B 模型用于编码任务，并分享了过去一个半月来在 M2 Ultra 和 RTX 5090 机器上日常使用该模型的经验。他主要将其用于 ggml-org 的一些小型、常规的编码辅助任务，虽然不惊人，但证明了其作为有用工具的价值。\nEnglish Summary\nGeorgi Gerganov highly recommends the Qwen3.6-27B model for coding tasks, sharing his experience using it almost daily for the past month and a half on both M2 Ultra and RTX 5090 machines. He primarily uses it for small, mundane coding assistance tasks at ggml-org, finding it a definitely helpful tool.\n💡 为什么值得读: 提供了对 Qwen3.6-27B 模型在编码任务上实用性的第一手评价。\n💡 Why read it: Provides a first-hand assessment of the Qwen3.6-27B model's utility for coding tasks.\n🏷️ LLM, coding, Qwen, local models\n🥉 独家：OpenAI 2025 年亏损近 8 倍，支出达 340 亿美元\nExclusive: OpenAI Losses Increased Nearly 8X in 2025, With Spending Hitting $34 Billion — wheresyoured.at · 1 天前 · 🤖 AI / ML\n中文摘要\n根据独家披露的财务信息，OpenAI 在 2025 年的亏损大幅增加，达到惊人的 340 亿美元。文章深入分析了 OpenAI 的财务状况，揭示了其巨额的运营支出和潜在的盈利挑战。这表明尽管在人工智能领域取得了显著进展，但 OpenAI 的商业模式面临严峻的财务压力。\nEnglish Summary\nExclusive financial disclosures reveal that OpenAI's losses surged nearly 8x in 2025, reaching a staggering $34 billion in spending. The article delves into OpenAI's financial situation, highlighting its immense operational costs and potential profitability challenges. This indicates significant financial pressure on OpenAI's business model despite its advancements in AI.\n💡 为什么值得读: 揭示了 OpenAI 惊人的财务亏损和支出数据，对理解其商业模式至关重要。\n💡 Why read it: Reveals OpenAI's staggering financial losses and spending figures, crucial for understanding its business model.\n🏷️ OpenAI, losses, spending\n \n📊 数据概览\n \n \n \n分类分布\nmermaid\npie showData\n title \"文章分类分布\"\n \"🤖 AI / ML\" : 5\n \"💡 观点 / 杂谈\" : 5\n \"🔒 安全\" : 2\n \"🛠 工具 / 开源\" : 2\n \"⚙️ 工程\" : 1\n高频关键词\nmermaid\nxychart-beta horizontal\n title \"高频关键词\"\n x-axis [\"debugging\", \"anthropic\", \"apple\", \"eu\", \"dma\", \"jax\", \"flax\", \"nnx\", \"llm\", \"coding\", \"qwen\", \"local models\"]\n y-axis \"出现次数\" 0 --> 4\n bar [2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1]\n📈 纯文本关键词图（终端友好）\ndebugging │ ████████████████████ 2\nanthropic │ ████████████████████ 2\napple │ ████████████████████ 2\neu │ ████████████████████ 2\ndma │ ████████████████████ 2\njax │ ██████████░░░░░░░░░░ 1\nflax │ ██████████░░░░░░░░░░ 1\nnnx │ ██████████░░░░░░░░░░ 1\nllm │ ██████████░░░░░░░░░░ 1\ncoding │ ██████████░░░░░░░░░░ 1\n🏷️ 话题标签\ndebugging(2) · anthropic(2) · apple(2) · eu(2) · dma(2) · jax(1) · flax(1) · nnx(1) · llm(1) · coding(1) · qwen(1) · local models(1) · openai(1) · losses(1) · spending(1) · production(1) · website redesign(1) · 500 error(1) · phishing(1) · duckduckgo(1)\n \n🤖 AI / ML\n1. Flax 调试：如何处理哈希问题\nFlax debugging: making a hash of things — gilesthomas.com · 2 小时前 · ⭐ 25/30\n中文摘要\n在调试 JAX/Flax NNX 训练循环时，遇到了一个棘手的问题，需要确定是模型、损失函数、优化器设置还是训练循环本身的“管道”出了问题。通过打印损失和梯度可以初步判断，但直接打印参数变化难以直观反映问题。文章介绍了一种通过计算参数的哈希值来快速检查参数是否按预期更新的调试技巧，这有助于隔离和解决训练过程中的潜在错误。\nEnglish Summary\nDebugging a JAX/Flax NNX training loop revealed a common issue: determining if the problem lies with the model, loss function, optimizer, or the training loop's plumbing. While printing loss and gradients offers some insight, observing parameter changes directly can be unhelpful. This article presents a neat trick: hashing parameters to quickly verify if they are updating as expected, aiding in isolating and resolving training issues.\n🏷️ debugging, JAX, Flax, NNX\n \n2. 引用 Georgi Gerganov 的观点\nQuoting Georgi Gerganov — simonwillison.net · 12 小时前 · ⭐ 25/30\n中文摘要\nGeorgi Gerganov 强烈推荐 Qwen3.6-27B 模型用于编码任务，并分享了过去一个半月来在 M2 Ultra 和 RTX 5090 机器上日常使用该模型的经验。他主要将其用于 ggml-org 的一些小型、常规的编码辅助任务，虽然不惊人，但证明了其作为有用工具的价值。\nEnglish Summary\nGeorgi Gerganov highly recommends the Qwen3.6-27B model for coding tasks, sharing his experience using it almost daily for the past month and a half on both M2 Ultra and RTX 5090 machines. He primarily uses it for small, mundane coding assistance tasks at ggml-org, finding it a definitely helpful tool.\n🏷️ LLM, coding, Qwen, local models\n \n3. 独家：OpenAI 2025 年亏损近 8 倍，支出达 340 亿美元\nExclusive: OpenAI Losses Increased Nearly 8X in 2025, With Spending Hitting $34 Billion — wheresyoured.at · 1 天前 · ⭐ 25/30\n中文摘要\n根据独家披露的财务信息，OpenAI 在 2025 年的亏损大幅增加，达到惊人的 340 亿美元。文章深入分析了 OpenAI 的财务状况，揭示了其巨额的运营支出和潜在的盈利挑战。这表明尽管在人工智能领域取得了显著进展，但 OpenAI 的商业模式面临严峻的财务压力。\nEnglish Summary\nExclusive financial disclosures reveal that OpenAI's losses surged nearly 8x in 2025, reaching a staggering $34 billion in spending. The article delves into OpenAI's financial situation, highlighting its immense operational costs and potential profitability challenges. This indicates significant financial pressure on OpenAI's business model despite its advancements in AI.\n🏷️ OpenAI, losses, spending\n \n4. 引用 Matteo Wong，《大西洋月刊》\nQuoting Matteo Wong, The Atlantic — simonwillison.net · 1 天前 · ⭐ 24/30\n中文摘要\n文章引用了《大西洋月刊》的报道，其中网络安全专家 Katie Moussouris 证实，Anthropic 分享了白宫关于 Fable 越狱漏洞的报告，以获取她的评估。Moussouris 指出，该报告涉及 IT 专家要求 Fable 帮助查找和修补 bug。她认为，将这种漏洞修复行为视为需要出口管制的“技术”，可能会阻碍美国网络防御的发展。\nEnglish Summary\nQuoting The Atlantic, this article features cybersecurity expert Katie Moussouris confirming that Anthropic shared the White House's report on the Fable jailbreak with her for appraisal. Moussouris noted the report involved IT experts asking Fable to help find and patch bugs. She suggests that classifying such vulnerability fixes as 'technology' subject to export controls could hinder US cyber defense.\n🏷️ AI export controls, Anthropic, cybersecurity\n \n5. WorkOS 发布 Auth.md — AI 代理注册的开放协议\nWorkOS Launches Auth.md — an Open Protocol for Agent Registration — daringfireball.net · 1 天前 · ⭐ 22/30\n中文摘要\nWorkOS 推出了 Auth.md，一个用于 AI 代理注册的开放协议。该协议旨在解决 AI 代理如何以编程方式注册服务的问题，通过在服务根目录暴露一个机器可读的 Markdown 文件，AI 代理可以动态发现 OAuth 受保护的资源元数据，解析所需范围并无缝进行身份验证。\nEnglish Summary\nWorkOS has launched Auth.md, an open protocol for AI agent registration. This protocol addresses the challenge of how AI agents can programmatically register with services. By exposing a single, machine-readable Markdown file at the service root, AI agents can dynamically discover OAuth Protected Resource Metadata, parse required scopes, and authenticate seamlessly.\n🏷️ AI agents, protocol, registration, Auth.md\n \n💡 观点 / 杂谈\n6. AI 的破碎经济学\nAI's Brokenomics — wheresyoured.at · 1 天前 · ⭐ 24/30\n中文摘要\n文章探讨了人工智能（AI）领域中存在的“破碎经济学”现象，即 AI 技术的快速发展与其实际盈利能力和可持续商业模式之间的脱节。作者可能通过分析 NVIDIA、Anthropic 等公司的财务状况和市场趋势，揭示了 AI 行业在巨额投资和高昂成本下面临的经济挑战。这篇深度分析旨在为读者提供对 AI 行业经济格局的全面理解。\nEnglish Summary\nThis article explores the 'brokenomics' of Artificial Intelligence (AI), highlighting the disconnect between rapid technological advancement and sustainable profitability. Through detailed analyses of companies like NVIDIA and Anthropic, it likely delves into the economic challenges faced by the AI industry amidst massive investments and high costs. The aim is to provide readers with a comprehensive understanding of the AI sector's economic landscape.\n🏷️ AI, economics, NVIDIA, Anthropic\n \n7. iOS 欧洲大陆的“乐趣差距”检查\nChecking In on the iOS Continental Fun-Gap Drift — daringfireball.net · 4 小时前 · ⭐ 22/30\n中文摘要\n文章回顾了作者在 2024 年 9 月对“欧洲 iPhone 更有趣”的怀疑论调。作者指出，欧盟用户将无法获得 Apple Intelligence 和 iPhone Mirroring 等功能，这些功能被认为是“非常有用且相当有趣”的。文章质疑是否应该根据用户“理论上可能拥有的乐趣”来评判，还是根据“他们实际拥有的乐趣”。作者认为，目前欧盟并非“有趣的一方”，但仍抱有希望。\nEnglish Summary\nThis article revisits the author's skepticism from September 2024 regarding 'European iPhones being more fun.' The author points out that EU users will miss out on features like Apple Intelligence and iPhone Mirroring, which are described as 'very useful, and, dare I say, quite fun.' The piece questions whether fun should be judged by theoretical potential or actual enjoyment, concluding that the EU is currently not the 'fun side' but remains hopeful.\n🏷️ iOS, Apple Intelligence, EU regulations, iPhone features\n \n8. 精益创业训练营 2026 @ 斯坦福：经验教训分享\nLean Launch Pad 2026 @ Stanford – Lessons Learned Presentations — steveblank.com · 15 小时前 · ⭐ 22/30\n中文摘要\n斯坦福大学第 16 届年度精益创业训练营圆满结束。该课程从最初的“精益方法能为初创公司提供更高效框架”的激进理念，发展到如今被普遍认可的创业构建方式。课程在过去 16 年中不断演进，为创业者提供了宝贵的实践经验。\nEnglish Summary\nThe 16th annual Lean LaunchPad class at Stanford has concluded. Over 16 years, the course has evolved from a radical idea that the Lean method could provide a more productive framework for startups to a widely accepted approach for building new ventures. The program has continuously advanced, offering valuable practical experience to entrepreneurs.\n🏷️ Lean LaunchPad, startups, Stanford\n \n9. 《华盛顿邮报》评论欧盟的《数字市场法案》的愚蠢之处\nThe Washington Post on the EU’s DMA Folly — daringfireball.net · 1 天前 · ⭐ 22/30\n中文摘要\n《华盛顿邮报》评论文章指出，欧盟《数字市场法案》（DMA）在要求苹果为 Siri AI 提供与竞争对手同等的访问权限方面存在问题。尽管苹果可以技术上遵守，但该法案强制要求任何竞争性 AI 代理都必须获得对用户消息、文件和聊天记录的同等广泛访问权限，这可能导致安全风险，并被认为是 DMA 的一项失败。\nEnglish Summary\nThe Washington Post editorial argues that the EU's Digital Markets Act (DMA) poses issues by requiring Apple to grant rival AI agents the same sweeping access to user messages, files, and chat history as Siri AI. While technically feasible, this mandate could create security risks and is presented as a failure of the DMA, as it forces a level of access that Apple is hesitant to provide.\n🏷️ EU, DMA, regulation, Apple\n \n10. 欧洲委员会数月前已裁定谷歌将 Gemini 集成到 Android 违反 DMA\nThe European Commission Ruled Months Ago That Google’s Integration of Gemini in Android Violates the DMA — daringfireball.net · 1 天前 · ⭐ 22/30\n中文摘要\n欧洲监管机构正提议对 AI 工具在 Android 手机上的运行方式进行一系列重大调整，包括允许系统级调用第三方 AI 工具以及允许 AI 工具查看屏幕上下文。此外，还可能允许替代 AI 系统访问本地数据以生成主动建议，这表明监管机构正试图强制谷歌开放 Android 生态系统。\nEnglish Summary\nEuropean regulators are proposing significant changes to how AI tools operate on Android phones, including enabling system-wide invocation of third-party AI tools and allowing AI to view screen context. Furthermore, alternative AI systems might be permitted to access local data for proactive suggestions, indicating a push to force Google to open up the Android ecosystem.\n🏷️ EU, Google, Android, DMA\n \n🔒 安全\n11. 你愿意在 DuckDuckGo 顶部看到一个 Drainer 吗？\nWould you like a drainer served at the very top of DuckDuckGo? — timsh.org · 15 小时前 · ⭐ 24/30\n中文摘要\n文章作者在 DuckDuckGo 搜索时，意外地在搜索结果第一位发现了一个仿冒的 tronscan 区块链浏览器网站，该网站可能是一个“Drainer”（一种网络钓鱼工具），用于窃取用户敏感信息。作者强调了这种网络钓鱼攻击的危险性，特别是当仿冒网站与真实网站高度相似时，用户极易上当受骗。\nEnglish Summary\nThe author encountered a phishing attack where a fake tronscan blockchain explorer, potentially a 'Drainer' designed to steal user information, appeared as the top search result on DuckDuckGo. The article highlights the danger of such phishing attempts, especially when fake websites are exact replicas of legitimate ones, making users highly susceptible to deception.\n🏷️ phishing, DuckDuckGo, blockchain explorer\n \n12. Fable 5 出口管制损害美国网络防御\nThe Fable 5 Export Controls Harm US Cyber Defense — simonwillison.net · 23 小时前 · ⭐ 24/30\n中文摘要\n文章引用了网络安全专家 Kate Moussouris 的观点，她证实了 Anthropic 的 Claude 模型被禁用的“越狱”漏洞（Fable 5）实际上是“修复这段代码”的请求。Moussouris 认为，将这种漏洞修复行为视为需要出口管制的“技术”，反而会阻碍美国网络防御能力的提升，因为这限制了对潜在安全问题的研究和改进。\nEnglish Summary\nCiting cybersecurity expert Kate Moussouris, this article confirms that the 'jailbreak' vulnerability in Anthropic's Claude model (Fable 5), which led to its ban under export controls, was essentially a request to 'fix this code.' Moussouris argues that classifying such vulnerability fixes as 'technology' subject to export controls harms US cyber defense by hindering research and improvement on potential security issues.\n🏷️ export controls, cyber defense, Fable 5\n \n🛠 工具 / 开源\n13. datasette-tailscale 0.1a0\ndatasette-tailscale 0.1a0 — simonwillison.net · 12 小时前 · ⭐ 23/30\n中文摘要\n发布了 datasette-tailscale 0.1a0，这是一个非常实验性的 alpha 插件。该插件允许用户通过命令行启动一个本地 Datasette 服务器，并集成 Tailscale 副程序，从而将其连接到用户的 Tailnet。这使得用户可以通过 Tailscale 访问本地数据，实现更便捷的数据共享和访问。\nEnglish Summary\nThe release of datasette-tailscale 0.1a0, a highly experimental alpha plugin, is announced. This plugin enables users to start a local Datasette server with a Tailscale sidecar via a command-line interface, connecting it to their Tailnet. This facilitates easier data access and sharing through Tailscale.\n🏷️ datasette, Tailscale, plugin, database access\n \n14. App Store 新增个性化推荐功能\nNew in the App Store: Personalized Recommendations — daringfireball.net · 12 小时前 · ⭐ 22/30\n中文摘要\n苹果在 WWDC 上推出了 App Store 的个性化推荐功能，将根据用户的兴趣和行为展示定制化的应用集合。此举旨在为开发者提供新的应用发现途径，并允许用户通过“App Notes”了解推荐原因。该功能将为用户提供更贴合需求的 App 体验。\nEnglish Summary\nApple announced new personalized recommendation features for the App Store at WWDC, which will showcase tailored app collections based on user interests and behavior. This aims to provide developers with new avenues for app discovery and allow users to understand recommendation reasons through 'App Notes'. The feature will offer a more relevant app experience for users.\n🏷️ App Store, Apple, recommendations, developers\n \n⚙️ 工程\n15. 生产环境调试\nDebugging on Prod — idiallo.com · 8 小时前 · ⭐ 24/30\n中文摘要\n文章探讨了在生产环境中调试 bug 的挑战，特别是那些只在生产环境出现的、难以复现的 bug。作者分享了自己博客网站在经历重大改版后，删除了大量旧代码和 CSS，但随后在生产环境中遇到了 500 错误。通过对网站进行重构和代码清理，作者成功解决了问题，并强调了在生产环境中进行调试和代码维护的重要性。\nEnglish Summary\nThis article discusses the challenges of debugging bugs that exclusively occur in production environments. The author recounts experiencing a 500 error on their blog after a significant redesign involving code and CSS cleanup. By refactoring and cleaning up the codebase, the issue was resolved, highlighting the importance of production debugging and code maintenance.\n🏷️ debugging, production, website redesign, 500 error\n \n生成于 2026-06-17 04:51 | 扫描 76 源 → 获取 2343 篇 → 精选 15 篇\n基于 Hacker News Popularity Contest 2025 RSS 源列表，由 Andrej Karpathy 推荐"</script>
+  <script id="speech-text" type="application/json">"🎧 点这里朗读今日日报\n📰 AI 博客每日精选 — 2026-06-18\n来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15\n📝 今日看点\n今日技术看点聚焦人工智能的深度应用与安全挑战。AI正以前所未有的方式赋能内容创作与代码生成，从Markdown的演进到利用Claude进行定理形式化证明，展现了AI在理解和生成复杂信息上的潜力。同时，搜索引擎安全问题日益凸显，钓鱼网站的伪装能力令人担忧，亟需更有效的防护措施。此外，开发者工具的持续迭代，如Datasette的新功能和Flax的调试技巧，也在不断提升开发效率和生产力。\n \n🏆 今日必读\n🥇 Markdown 的史诗故事\nGLM-5.2 is probably the most powerful text-only open weights LLM — simonwillison.net · 4 小时前 · 🤖 AI / ML\n中文摘要\n本文回顾了 Markdown 标记语言的起源和发展历程。由 John Gruber 和 Anil Dash 讲述，Markdown 最初是为了简化内容创作而设计的，如今已成为大型语言模型（LLM）代理系统的通用语言。其普及程度的显著提升，尤其是在 LLM 领域的应用，标志着其影响力的进一步扩大。\nEnglish Summary\nThis piece recounts the origin and evolution of the Markdown markup language, as told by John Gruber and Anil Dash. Initially designed to simplify content creation, Markdown has now become the lingua franca for LLM agentic systems. Its popularity has seen a step change, particularly with its embrace in the LLM space, signifying its expanding influence.\n💡 为什么值得读: 了解一个在互联网内容创作和 AI 领域都至关重要的标记语言是如何诞生的。\n💡 Why read it: Understand the genesis of a markup language crucial to both internet content creation and the AI landscape.\n🏷️ LLM, open weights, GLM-5.2\n🥈 使用 Lean 4 和 Claude 形式化环论定理\nYou Got Faster. Your Company Didn’t. — terriblesoftware.org · 11 小时前 · 💡 观点 / 杂谈\n中文摘要\n作者测试了 Claude 生成 Lean 4 代码以证明定理的能力，并分享了成功经验。Claude 能够生成用于形式化证明的 Lean 4 代码，尽管在某些复杂定理（如半范数的 pqr 定理）的证明上遇到了挑战。这次实验展示了 AI 在数学形式化领域的潜力。\nEnglish Summary\nThe author tests Claude's ability to generate Lean 4 code for theorem proving, sharing successful experiments. Claude can produce Lean 4 code for formal proofs, though it faced challenges with complex theorems like the pqr theorem for seminorms. This experiment highlights AI's potential in mathematical formalization.\n💡 为什么值得读: 探索 AI 工具（如 Claude）在形式化数学证明方面的能力和局限性。\n💡 Why read it: Explore the capabilities and limitations of AI tools like Claude in formalizing mathematical proofs.\n🏷️ AI productivity, outsourcing, developer efficiency\n🥉 ：一个可点击播放的静态图组件\nQuoting Charity Majors — simonwillison.net · 11 小时前 · 💡 观点 / 杂谈\n中文摘要\n介绍了一个名为 的 Web Component，它能将静态图和链接转化为一个交互式组件。用户点击播放按钮后才会加载 GIF，从而优化了页面加载速度并节省了带宽。该组件适用于不希望用户在未主动点击前加载大型 GIF 的场景。\nEnglish Summary\nIntroduces , a Web Component that transforms static images and links into an interactive element. It defers GIF loading until a user clicks a play button, optimizing page load times and saving bandwidth. This is ideal for scenarios where large GIFs should not load until explicitly requested.\n💡 为什么值得读: 学习如何使用 Web Component 优化动图加载，提升用户体验和网页性能。\n💡 Why read it: Learn how to optimize GIF loading and enhance user experience and web performance using a Web Component.\n🏷️ AI, code production, engineering discipline\n \n📊 数据概览\n \n \n \n分类分布\nmermaid\npie showData\n title \"文章分类分布\"\n \"🤖 AI / ML\" : 5\n \"💡 观点 / 杂谈\" : 4\n \"🛠 工具 / 开源\" : 4\n \"🔒 安全\" : 1\n \"⚙️ 工程\" : 1\n高频关键词\nmermaid\nxychart-beta horizontal\n title \"高频关键词\"\n x-axis [\"llm\", \"debugging\", \"datasette\", \"open weights\", \"glm-5.2\", \"ai productivity\", \"outsourcing\", \"developer efficiency\", \"ai\", \"code production\", \"engineering discipline\", \"coding tasks\"]\n y-axis \"出现次数\" 0 --> 4\n bar [2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1]\n📈 纯文本关键词图（终端友好）\nllm │ ████████████████████ 2\ndebugging │ ████████████████████ 2\ndatasette │ ████████████████████ 2\nopen weights │ ██████████░░░░░░░░░░ 1\nglm-5.2 │ ██████████░░░░░░░░░░ 1\nai productivity │ ██████████░░░░░░░░░░ 1\noutsourcing │ ██████████░░░░░░░░░░ 1\ndeveloper efficiency │ ██████████░░░░░░░░░░ 1\nai │ ██████████░░░░░░░░░░ 1\ncode production │ ██████████░░░░░░░░░░ 1\n🏷️ 话题标签\nllm(2) · debugging(2) · datasette(2) · open weights(1) · glm-5.2(1) · ai productivity(1) · outsourcing(1) · developer efficiency(1) · ai(1) · code production(1) · engineering discipline(1) · coding tasks(1) · local model(1) · qwen(1) · siri(1) · apple intelligence(1) · wwdc(1) · jax(1) · flax(1) · gradients(1)\n \n🤖 AI / ML\n1. Markdown 的史诗故事\nGLM-5.2 is probably the most powerful text-only open weights LLM — simonwillison.net · 4 小时前 · ⭐ 28/30\n中文摘要\n本文回顾了 Markdown 标记语言的起源和发展历程。由 John Gruber 和 Anil Dash 讲述，Markdown 最初是为了简化内容创作而设计的，如今已成为大型语言模型（LLM）代理系统的通用语言。其普及程度的显著提升，尤其是在 LLM 领域的应用，标志着其影响力的进一步扩大。\nEnglish Summary\nThis piece recounts the origin and evolution of the Markdown markup language, as told by John Gruber and Anil Dash. Initially designed to simplify content creation, Markdown has now become the lingua franca for LLM agentic systems. Its popularity has seen a step change, particularly with its embrace in the LLM space, signifying its expanding influence.\n🏷️ LLM, open weights, GLM-5.2\n \n2. NetNewsWire 状态\nQuoting Georgi Gerganov — simonwillison.net · 1 天前 · ⭐ 25/30\n中文摘要\nBrent Simmons 在退休一年后，专注于将 NetNewsWire 这款 RSS 阅读器打磨至极致，不受商业压力影响。NetNewsWire 最初于 2002 年发布，被描述为“阅读领域的播客”。其持续的免费开发和精进体现了对软件质量的执着追求。\nEnglish Summary\nA year into retirement, Brent Simmons is dedicated to perfecting NetNewsWire, an RSS reader, free from commercial pressures. First released in 2002, NetNewsWire is described as 'podcasts for reading.' Its continued free development and refinement showcase a commitment to software quality.\n🏷️ LLM, coding tasks, local model, Qwen\n \n3. datasette-tailscale 0.1a0 发布\nYours Truly on MacBreak Weekly: Is the New Siri AI Good? — daringfireball.net · 13 小时前 · ⭐ 24/30\n中文摘要\n发布了非常实验性的 alpha 插件 datasette-tailscale 0.1a0。该插件允许用户通过 Tailscale 连接到本地运行的 Datasette 服务器，实现安全的数据访问。通过简单的命令行配置，即可将 Datasette 实例接入 Tailnet。\nEnglish Summary\nThe highly experimental alpha plugin datasette-tailscale 0.1a0 has been released. This plugin allows users to connect to a locally running Datasette server via Tailscale for secure data access. It enables integration of Datasette instances into a Tailnet with simple command-line configuration.\n🏷️ Siri, Apple Intelligence, WWDC\n \n4. Flax 调试：在哈希中解决问题\nFlax debugging: making a hash of things — gilesthomas.com · 1 天前 · ⭐ 24/30\n中文摘要\n在调试 JAX/Flax NNX 训练循环时，作者发现了一个巧妙的调试技巧，用于区分模型、损失函数、优化器设置或训练循环本身的问题。通过打印参数的哈希值，可以有效地判断参数是否在训练过程中被正确更新，从而加速问题定位。\nEnglish Summary\nWhile debugging a JAX/Flax NNX training loop, the author discovered a neat trick to help diagnose issues. By printing the hash of parameters, it's possible to efficiently determine if gradients are being applied and parameters are being updated correctly, aiding in pinpointing problems within the model, loss function, optimizer, or training loop plumbing.\n🏷️ JAX, Flax, debugging, gradients\n \n5. 使用 Lean 4 和 Claude 对环定理进行形式化\nFormalizing a ring theorem with Lean 4 and Claude — johndcook.com · 14 小时前 · ⭐ 22/30\n中文摘要\n作者一直在测试 Claude 生成 Lean 4 代码以证明定理的能力。他分享了几个成功验证计算的实验，但并未提及他尝试让 Claude 对半范数的 pqr 定理进行形式化证明的失败尝试。此次，作者要求 Claude 对一个环定理进行形式化证明。\nEnglish Summary\nThe author has been testing Claude's ability to generate Lean 4 code for theorem proving. Previous experiments successfully verified calculations, but a failed attempt to formalize the pqr theorem for seminorms was not detailed. This time, the author asks Claude to formally prove a ring theorem.\n🏷️ Lean 4, formal verification, Claude\n \n💡 观点 / 杂谈\n6. 使用 Lean 4 和 Claude 形式化环论定理\nYou Got Faster. Your Company Didn’t. — terriblesoftware.org · 11 小时前 · ⭐ 26/30\n中文摘要\n作者测试了 Claude 生成 Lean 4 代码以证明定理的能力，并分享了成功经验。Claude 能够生成用于形式化证明的 Lean 4 代码，尽管在某些复杂定理（如半范数的 pqr 定理）的证明上遇到了挑战。这次实验展示了 AI 在数学形式化领域的潜力。\nEnglish Summary\nThe author tests Claude's ability to generate Lean 4 code for theorem proving, sharing successful experiments. Claude can produce Lean 4 code for formal proofs, though it faced challenges with complex theorems like the pqr theorem for seminorms. This experiment highlights AI's potential in mathematical formalization.\n🏷️ AI productivity, outsourcing, developer efficiency\n \n7. ：一个可点击播放的静态图组件\nQuoting Charity Majors — simonwillison.net · 11 小时前 · ⭐ 26/30\n中文摘要\n介绍了一个名为 的 Web Component，它能将静态图和链接转化为一个交互式组件。用户点击播放按钮后才会加载 GIF，从而优化了页面加载速度并节省了带宽。该组件适用于不希望用户在未主动点击前加载大型 GIF 的场景。\nEnglish Summary\nIntroduces , a Web Component that transforms static images and links into an interactive element. It defers GIF loading until a user clicks a play button, optimizing page load times and saving bandwidth. This is ideal for scenarios where large GIFs should not load until explicitly requested.\n🏷️ AI, code production, engineering discipline\n \n8. The Vergecast 节目中的 John Gruber：Markdown 的史诗故事\nYours Truly on The Vergecast: ‘ the Epic Story of Markdown’ — daringfireball.net · 13 小时前 · ⭐ 22/30\n中文摘要\n本期节目邀请到了 Markdown 的创始人 John Gruber 和 Anil Dash。他们将深入讲述 Markdown 的起源故事，以及它如何征服世界。Markdown 近年来稳步发展，尤其是在被 LLM 智能体系统广泛采用后，其受欢迎程度更是达到了新的高度。文章还提到了与苹果开发者工具团队的简短交流。\nEnglish Summary\nThis episode features John Gruber and Anil Dash, the creators of Markdown, discussing its origin story and global impact. Markdown has seen a significant surge in popularity, especially after being adopted by LLM agentic systems. The discussion also touches upon a brief conversation with Apple's developer tools team.\n🏷️ Markdown, John Gruber, content creation\n \n9. NetNewsWire 状态\nNetNewsWire Status — simonwillison.net · 1 天前 · ⭐ 22/30\n中文摘要\n作者分享了对 Brent Simmons 退休后专注于开发 NetNewsWire 的钦佩之情。NetNewsWire 是一款自 2002 年发布的 RSS 阅读器，作者认为这种不受商业压力影响、专注于打磨产品的状态非常鼓舞人心。\nEnglish Summary\nThe author expresses admiration for Brent Simmons' dedication to developing NetNewsWire, his retirement project. Released in 2002, NetNewsWire is an RSS reader, and the author finds this focus on perfecting software free from commercial pressure inspiring.\n🏷️ NetNewsWire, retirement project, software development\n \n🛠 工具 / 开源\n10. datasette 1.0a34 发布\ndatasette 1.0a34 — simonwillison.net · 1 天前 · ⭐ 23/30\n中文摘要\nDatasette 发布了 1.0a34 Alpha 版本，引入了在 Datasette 界面中插入、编辑和删除行的功能。这些新功能在表格页面可用，并且编辑和删除操作也支持在行页面进行。此次更新极大地增强了 Datasette 的数据管理能力。\nEnglish Summary\nDatasette has released version 1.0a34 (alpha), introducing tools to insert, edit, and delete rows directly within the Datasette interface. These features are available on table pages, with edit and delete actions also accessible on individual row pages, significantly enhancing Datasette's data management capabilities.\n🏷️ Datasette, release, data editing, SQL\n \n11. 程序员逻辑 v0.15，现场编码\nLogic for Programmers v0.15, Livecoding — buttondown.com/hillelwayne · 12 小时前 · ⭐ 22/30\n中文摘要\n《程序员逻辑》一书发布了 v0.15 版本，这是第一个真正的发布候选版本。所有内容已完成、编辑和校对，除非出现重大问题，下一个版本将是 1.0 并提供印刷版。该版本还包含现场编码（Livecoding）的更新。\nEnglish Summary\nLogic for Programmers has released version 0.15, its first true release candidate. All content is complete, copy-edited, and proofread, with the next release slated to be 1.0 and available in print unless major issues arise. This release also includes updates related to livecoding.\n🏷️ Logic for Programmers, release candidate, programming education\n \n12. ：一张可播放的静态图片\n — a still that plays — simonwillison.net · 1 天前 · ⭐ 22/30\n中文摘要\n介绍了一个名为 的 Web Component 工具。该工具可以将静态图片转化为带有播放按钮的动态效果，用户点击后才会加载 GIF。这对于避免不必要的 GIF 加载、优化用户体验非常有用。\nEnglish Summary\nThis introduces , a Web Component tool that transforms static images into playable stills with a click-to-play button. It loads GIFs on demand, improving user experience by avoiding unnecessary pre-loading.\n🏷️ Web Component, progressive enhancement, click-to-play\n \n13. datasette-tailscale 0.1a0 发布\ndatasette-tailscale 0.1a0 — simonwillison.net · 1 天前 · ⭐ 22/30\n中文摘要\n发布了 datasette-tailscale 插件的第一个非常实验性的 alpha 版本 0.1a0。该插件允许用户通过 Tailscale 连接到其 Tailnet，从而在本地运行 Datasette 服务器并进行预览。\nEnglish Summary\nThe first highly experimental alpha version, 0.1a0, of the datasette-tailscale plugin has been released. This plugin enables users to connect to their Tailnet via Tailscale, allowing for local Datasette server execution and preview.\n🏷️ datasette, Tailscale, plugin, database\n \n🔒 安全\n14. 你愿意在 DuckDuckGo 顶部看到一个“Drainer”吗？\nWould you like a drainer served at the very top of DuckDuckGo? — timsh.org · 1 天前 · ⭐ 24/30\n中文摘要\n作者在 DuckDuckGo 搜索结果中，意外地在第一位发现了一个与真实网站外观完全一致的钓鱼网站（tronscan.org 的仿冒品）。这揭示了搜索引擎在防止恶意网站（尤其是伪装成合法服务的）排名靠前方面面临的挑战，以及用户面临的潜在风险。\nEnglish Summary\nThe author encountered a phishing website, an exact replica of a legitimate service (tronscan.org), ranking 1 in DuckDuckGo search results. This highlights the challenges search engines face in preventing malicious sites, especially those impersonating legitimate services, from appearing at the top, and the potential risks users face.\n🏷️ phishing, DuckDuckGo, blockchain explorer, security risk\n \n⚙️ 工程\n15. 在生产环境进行调试\nDebugging on Prod — idiallo.com · 1 天前 · ⭐ 23/30\n中文摘要\n作者分享了在生产环境（Prod）中调试一个只在那里出现的 Bug 的经历。在对博客进行了十年来的首次重大改版，删除了大量旧代码后，部署了一个新版本，虽然大部分页面正常，但遇到了生产环境特有的问题，并详细描述了调试过程。\nEnglish Summary\nThe author recounts the experience of debugging a bug that only occurred in production. Following a significant redesign of the blog after ten years, involving the removal of old code, a new version was deployed. While most pages worked, a production-specific issue arose, and the author details the debugging process.\n🏷️ debugging, production, website redesign, 500 error\n \n生成于 2026-06-18 04:43 | 扫描 81 源 → 获取 2450 篇 → 精选 15 篇\n基于 Hacker News Popularity Contest 2025 RSS 源列表，由 Andrej Karpathy 推荐"</script>
   <script>
     const text = JSON.parse(document.getElementById('speech-text').textContent);
     const statusEl = document.getElementById('status');
