@@ -52,201 +52,199 @@
   <main class="shell">
     <article class="card">
       <p>🎧 <a href="https://lingnanren.github.io/ai-daily-digest/listen.html">点这里朗读今日日报</a></p>
-<h1>📰 AI 博客每日精选 — 2026-07-09</h1>
+<h1>📰 AI 博客每日精选 — 2026-07-10</h1>
 <blockquote>来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15</blockquote>
 <h2>📝 今日看点</h2>
-<p>今日技术看点聚焦AI的实际应用与挑战，以及开发者工具的演进。一方面，AI在代码生成、产品集成等方面展现潜力，但同时也引发了关于AI生成内容质量和审查的争议。另一方面，开发者工具正朝着更简化的集成和更强大的功能发展，例如Web Component嵌入GitHub代码，以及数据库迁移工具的更新换代。此外，macOS应用图标设计趋势和网络安全领域的欺诈乱象也值得关注。</p>
+<p>今日技术圈热点聚焦人工智能的飞速发展与工程技术的持续演进。OpenAI 持续推出新款 GPT 模型并升级 ChatGPT 功能，但其 Mac 应用更新却引发争议。与此同时，Meta 在 AI 领域也动作频频，发布新模型并调整 Instagram 内容使用策略。工程领域则见证了 Bun 项目向 Rust 的重写，预示着对性能与安全性的不懈追求。</p>
 <hr>
 <h2>🏆 今日必读</h2>
-<p>🥇 <strong>sqlite-migrate 0.2 版本发布：弃用库并转向 sqlite-utils 4.0 兼容层</strong></p>
-<p><a href="https://simonwillison.net/2026/Jul/8/rewriting-bun-in-rust/#atom-everything">Rewriting Bun in Rust</a> — simonwillison.net · 3 小时前 · ⚙️ 工程</p>
+<p>🥇 <strong>Bun 重写为 Rust</strong></p>
+<p><a href="https://simonwillison.net/2026/Jul/8/rewriting-bun-in-rust/#atom-everything">Rewriting Bun in Rust</a> — simonwillison.net · 1 天前 · ⚙️ 工程</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>sqlite-migrate 库发布了 0.2 版本，标志着该库的退役。新版本不再独立实现功能，而是通过兼容层依赖于 sqlite-utils 4.0。这一变化意味着用户需要迁移到新的依赖关系，以继续使用 sqlite-migrate 的功能。</blockquote>
+<blockquote>Bun 项目宣布将其核心从 Zig 重写为 Rust，以实现显著的性能和安全性提升。此次重写涉及复杂的工程工作，包括动态工作流和试运行，旨在解决原先 Zig 实现中的挑战。最终目标是构建一个更强大、更可靠的 JavaScript 运行时。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>The release of sqlite-migrate 0.2 marks the retirement of the library. Instead of maintaining its own functionality, it now implements a compatibility shim that depends on sqlite-utils 4.0. This change requires users to adapt to the new dependency structure to continue using the features previously provided by sqlite-migrate.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 了解 sqlite-migrate 的版本更新和依赖变化，有助于开发者平稳迁移项目。</p>
-<p>💡 <strong>Why read it</strong>: Understand the version update and dependency changes for sqlite-migrate to ensure a smooth project migration.</p>
-<p>🏷️ Bun, Rust, JavaScript runtime</p>
-<p>🥈 <strong>macOS 图标的丰富性：为何 iOS 的“好”不一定适用于 Mac</strong></p>
-<p><a href="https://simonwillison.net/2026/Jul/8/introducing-gptlive/#atom-everything">Introducing GPT‑Live</a> — simonwillison.net · 4 小时前 · 🤖 AI / ML</p>
+<blockquote>Bun is undergoing a significant rewrite from Zig to Rust, aiming for substantial performance and security improvements. This complex engineering effort involves dynamic workflows and trial runs to address challenges in the original Zig implementation. The goal is to create a more robust and reliable JavaScript runtime.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 了解一个流行的 JavaScript 运行时如何通过语言重写来提升性能和安全性，以及其背后的工程考量。</p>
+<p>💡 <strong>Why read it</strong>: Understand how a popular JavaScript runtime is being rewritten in Rust for performance and security gains, and the engineering considerations behind it.</p>
+<p>🏷️ Bun, Rust, rewrite, performance</p>
+<p>🥈 <strong>从零开始编写 LLM，第三十四部分 b -- 从 Bigrams 到 GPT-2，一次一个组件（使用 JAX）</strong></p>
+<p><a href="https://www.gilesthomas.com/2026/07/llm-from-scratch-34b-building-and-training-gpt-2-small-in-jax">Writing an LLM from scratch, part 34b -- from bigrams to GPT-2, one component at a time (in JAX)</a> — gilesthomas.com · 1 天前 · 🤖 AI / ML</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>macOS 的应用程序图标不仅仅是启动按钮，它们是可交互的富对象，支持拖放、移动和选择等操作。与 iOS 简洁的图标不同，macOS 的图标需要更丰富的视觉表现力来体现其多功能性。文章探讨了这种设计差异的根源。</blockquote>
+<blockquote>本文是作者“从零开始编写 LLM”系列文章的收官之作，详细介绍了如何使用 JAX 框架从头开始构建和训练一个 GPT-2 Small 模型。作者借鉴了 Sebastian Raschka 的书籍，逐步分解了 LLM 的各个组件，从基础的 Bigrams 模型演进到更复杂的 GPT-2 架构。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>macOS app icons are more than just launch buttons; they are rich, interactive objects supporting drag-and-drop, movement, and selection. Unlike iOS's simpler icons, macOS icons require a richer visual vocabulary to reflect their multifaceted nature. The article explores the reasons behind this design divergence.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 深入理解 macOS 图标设计理念，有助于开发者设计更符合平台特性的应用图标。</p>
-<p>💡 <strong>Why read it</strong>: Gain a deeper understanding of macOS icon design principles to help developers create app icons that better suit the platform's characteristics.</p>
-<p>🏷️ ChatGPT, voice mode, OpenAI</p>
-<p>🥉 <strong>macOS 应用图标逃离“Squircle 牢笼”：App Store 外的解决方案</strong></p>
-<p><a href="https://www.gilesthomas.com/2026/07/llm-from-scratch-34b-building-and-training-gpt-2-small-in-jax">Writing an LLM from scratch, part 34b -- from bigrams to GPT-2, one component at a time (in JAX)</a> — gilesthomas.com · 9 小时前 · 🤖 AI / ML</p>
+<blockquote>This post concludes the author's 'LLM from Scratch' series, detailing the step-by-step construction and training of a GPT-2 Small model using the JAX framework. Drawing from Sebastian Raschka's book, it breaks down LLM components, evolving from basic Bigrams to the more complex GPT-2 architecture.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 深入了解使用 JAX 框架从零开始构建和训练 GPT-2 模型的技术细节和演进过程。</p>
+<p>💡 <strong>Why read it</strong>: Gain in-depth technical details and the evolutionary process of building and training a GPT-2 model from scratch using the JAX framework.</p>
+<p>🏷️ LLM from scratch, GPT-2, JAX, deep learning</p>
+<p>🥉 <strong>新的 GPT-5.6 系列：Luna、Terra、Sol</strong></p>
+<p><a href="https://simonwillison.net/2026/Jul/9/gpt-5-6/#atom-everything">The new GPT-5.6 family: Luna, Terra, Sol</a> — simonwillison.net · 8 小时前 · 🤖 AI / ML</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>macOS Tahoe 的应用程序图标被限制在“Squircle”形状内，给第三方开发者带来不便。然而，不在 Mac App Store 分发的应用可以通过使用 <code>NSDockTilePlugIn</code> API 来绕过这一限制，尽管这并非该 API 的预期用途，且不适用于 App Store 内的应用。Iris 应用已通过此方法增加了自定义图标选项。</blockquote>
+<blockquote>OpenAI 发布了最新的 GPT-5.6 系列模型，包括 Luna、Terra 和 Sol 三个不同规模的版本。新模型的价格为 Luna $1/$6，Terra $2.50/$15，Sol $5/$30（每百万输入/输出 token）。与 Claude Opus 系列（$5/$25）和 Claude Fable 5（$10/$50）相比，GPT-5.6 系列在定价上具有竞争力，但 token 数量的差异可能影响实际成本。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>macOS Tahoe's app icons are confined to a 'squircle' shape, posing challenges for third-party developers. However, apps distributed outside the Mac App Store can escape this 'squircle jail' using the <code>NSDockTilePlugIn</code> API. While not the intended use of this API and disallowed in the App Store, it offers a solution, as demonstrated by Iris adding custom icon choices.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 为不在 Mac App Store 分发的 macOS 应用提供绕过图标限制的实用技术方案。</p>
-<p>💡 <strong>Why read it</strong>: Provides a practical technical solution for macOS apps not distributed via the Mac App Store to bypass icon restrictions.</p>
-<p>🏷️ LLM, GPT-2, JAX, from scratch</p>
+<blockquote>OpenAI has released its latest GPT-5.6 model family, featuring three sizes: Luna, Terra, and Sol. Pricing is set at Luna $1/$6, Terra $2.50/$15, and Sol $5/$30 per 1M input/output tokens. Compared to Claude Opus ($5/$25) and Claude Fable 5 ($10/$50), the GPT-5.6 series offers competitive pricing, though varying reasoning token counts may affect overall cost.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 快速了解 OpenAI 最新发布的 GPT-5.6 系列模型及其定价策略，并与竞品进行初步对比。</p>
+<p>💡 <strong>Why read it</strong>: Quickly grasp OpenAI's latest GPT-5.6 model family, its pricing strategy, and a preliminary comparison with competitors.</p>
+<p>🏷️ OpenAI, GPT-5.6, Luna, Terra</p>
 <hr>
 <h2>📊 数据概览</h2>
-<table><thead><tr><th>扫描源</th><th>抓取文章</th><th>时间范围</th><th>精选</th></tr></thead><tbody><tr><td>83/92</td><td>2498 篇 → 37 篇</td><td>48h</td><td><strong>15 篇</strong></td></tr></tbody></table>
+<table><thead><tr><th>扫描源</th><th>抓取文章</th><th>时间范围</th><th>精选</th></tr></thead><tbody><tr><td>83/92</td><td>2491 篇 → 39 篇</td><td>48h</td><td><strong>15 篇</strong></td></tr></tbody></table>
 <h3>分类分布</h3>
 <div class="code-wrap"><div class="code-title">mermaid</div><pre><code>pie showData
     title "文章分类分布"
-    "🛠 工具 / 开源" : 5
+    "🤖 AI / ML" : 6
     "⚙️ 工程" : 3
-    "🤖 AI / ML" : 3
-    "💡 观点 / 杂谈" : 2
-    "🔒 安全" : 2</code></pre></div>
+    "💡 观点 / 杂谈" : 3
+    "🛠 工具 / 开源" : 3</code></pre></div>
 <h3>高频关键词</h3>
 <div class="code-wrap"><div class="code-title">mermaid</div><pre><code>xychart-beta horizontal
     title "高频关键词"
-    x-axis ["sqlite-utils", "database", "migrations", "macos", "bun", "rust", "javascript runtime", "chatgpt", "voice mode", "openai", "llm", "gpt-2"]
-    y-axis "出现次数" 0 --&gt; 5
-    bar [3, 3, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1]</code></pre></div>
+    x-axis ["openai", "llm", "chatgpt", "meta", "muse spark", "api", "bun", "rust", "rewrite", "performance", "llm from scratch", "gpt-2"]
+    y-axis "出现次数" 0 --&gt; 7
+    bar [5, 3, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1]</code></pre></div>
 <div class="details">
 <p class="summary">📈 纯文本关键词图（终端友好）</p>
-<div class="code-wrap"><pre><code>sqlite-utils       │ ████████████████████ 3
-database           │ ████████████████████ 3
-migrations         │ █████████████░░░░░░░ 2
-macos              │ █████████████░░░░░░░ 2
-bun                │ ███████░░░░░░░░░░░░░ 1
-rust               │ ███████░░░░░░░░░░░░░ 1
-javascript runtime │ ███████░░░░░░░░░░░░░ 1
-chatgpt            │ ███████░░░░░░░░░░░░░ 1
-voice mode         │ ███████░░░░░░░░░░░░░ 1
-openai             │ ███████░░░░░░░░░░░░░ 1</code></pre></div>
+<div class="code-wrap"><pre><code>openai      │ ████████████████████ 5
+llm         │ ████████████░░░░░░░░ 3
+chatgpt     │ ████████░░░░░░░░░░░░ 2
+meta        │ ████████░░░░░░░░░░░░ 2
+muse spark  │ ████████░░░░░░░░░░░░ 2
+api         │ ████████░░░░░░░░░░░░ 2
+bun         │ ████░░░░░░░░░░░░░░░░ 1
+rust        │ ████░░░░░░░░░░░░░░░░ 1
+rewrite     │ ████░░░░░░░░░░░░░░░░ 1
+performance │ ████░░░░░░░░░░░░░░░░ 1</code></pre></div>
 </div>
 <h3>🏷️ 话题标签</h3>
-<p><strong>sqlite-utils</strong>(3) · <strong>database</strong>(3) · <strong>migrations</strong>(2) · macos(2) · bun(1) · rust(1) · javascript runtime(1) · chatgpt(1) · voice mode(1) · openai(1) · llm(1) · gpt-2(1) · jax(1) · from scratch(1) · ai-generated code(1) · developer workflow(1) · code reviews(1) · ai(1) · nvidia(1) · anthropic(1)</p>
-<hr>
-<h2>🛠 工具 / 开源</h2>
-<h3>1. WorkOS Pipes：通过集成上下文简化产品开发</h3>
-<p><a href="https://simonwillison.net/2026/Jul/7/sqlite-utils-4/#atom-everything">sqlite-utils 4.0, now with database schema migrations</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 25/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>用户期望应用和代理能够无缝集成到他们现有的工作流程中，但每次集成都需要处理复杂的 OAuth 流程和生命周期管理。WorkOS Pipes 提供了一个统一的 API 调用，预置了 GitHub、Slack、Salesforce 等 100 多个提供商的连接器，并负责处理 OAuth、令牌刷新和凭据存储，从而简化了产品开发。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Users expect apps and agents to integrate seamlessly into their existing workflows, but each integration involves complex OAuth flows and lifecycle management. WorkOS Pipes simplifies this with a single API call, offering pre-built connectors for over 100 providers like GitHub, Slack, and Salesforce, and handling OAuth, token refresh, and credential storage.</blockquote>
-<p>🏷️ sqlite-utils, database, migrations</p>
-<hr>
-<h3>2. Troy Hunt 的每周更新 511：马拉喀什的周报与数据泄露事件</h3>
-<p><a href="https://simonwillison.net/2026/Jul/7/sqlite-utils/#atom-everything">sqlite-utils 4.0</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 25/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>Troy Hunt 在马拉喀什的旅途中发布了本周的更新（第 511 期），内容涵盖了数据泄露事件。他用“试图从泳池中去除尿液”的比喻来形容处理某些数据安全问题的徒劳，并暗示本周将讨论相关话题。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Troy Hunt's Weekly Update 511, broadcast live from his riad in Marrakech, covers data breaches. He uses the analogy of 'trying to remove piss from a pool' to describe the futility of certain data security efforts, hinting at discussions on related topics for the week.</blockquote>
-<p>🏷️ sqlite-utils, database, migrations</p>
-<hr>
-<h3>3. github-code Web Component</h3>
-<p><a href="https://simonwillison.net/2026/Jul/7/github-code-component/#atom-everything">github-code Web Component</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 24/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>一个实验性的 Web Component，使用 GPT-5.5 和特定提示词构建，用于嵌入 GitHub 代码片段。该组件允许开发者轻松地在网页中展示来自 GitHub 的代码，并可能通过 AI 增强其功能。文章提供了该组件的链接和示例用法。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>An experimental Web Component, built using GPT-5.5 and a specific prompt, is introduced for embedding GitHub code snippets. This component allows developers to easily display code from GitHub on web pages, potentially with AI-enhanced features. The article provides a link to the tool and an example of its usage.</blockquote>
-<p>🏷️ Web Component, github-code, GPT</p>
-<hr>
-<h3>4. sqlite-migrate 0.2 版本发布</h3>
-<p><a href="https://simonwillison.net/2026/Jul/7/sqlite-migrate/#atom-everything">sqlite-migrate 0.2</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 23/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>sqlite-migrate 库发布了 0.2 版本，该版本标志着该库的退役。为了应对新的 sqlite-utils 4.0 依赖，它实现了一个兼容性兼容层。此更新主要关注与新版本的集成和兼容性。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>sqlite-migrate has released version 0.2, marking the retirement of the library. This version implements a compatibility shim against the new sqlite-utils 4.0 dependency. The update focuses on integration and compatibility with the newer version.</blockquote>
-<p>🏷️ sqlite-migrate, sqlite-utils, database</p>
-<hr>
-<h3>5. [赞助] WorkOS Pipes：更多上下文带来更智能的产品</h3>
-<p>[[Sponsor] WorkOS Pipes: More Context Makes for Smarter Products](https://workos.com/pipes?utm_source=daringfireball&amp;amp;utm_medium=newsletter&amp;amp;utm_campaign=q32026) — <strong>daringfireball.net</strong> · 13 小时前 · ⭐ 22/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>用户期望应用程序和代理能够集成到他们已有的工作流程中。然而，每次集成都需要不同的 OAuth 流程、令牌生命周期管理，以及在编写产品代码前投入数周的基础设施工作。WorkOS Pipes 通过一个 API 调用解决了这一痛点，并提供预构建的连接器，处理 OAuth、令牌刷新和凭证存储。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Users expect apps and agents to integrate with their existing workflows, but each integration involves complex OAuth flows and infrastructure setup. WorkOS Pipes simplifies this with a single API call and pre-built connectors, handling OAuth, token refresh, and credential storage for seamless integration.</blockquote>
-<p>🏷️ WorkOS Pipes, integration, API, developer tools</p>
-<hr>
-<h2>⚙️ 工程</h2>
-<h3>6. sqlite-migrate 0.2 版本发布：弃用库并转向 sqlite-utils 4.0 兼容层</h3>
-<p><a href="https://simonwillison.net/2026/Jul/8/rewriting-bun-in-rust/#atom-everything">Rewriting Bun in Rust</a> — <strong>simonwillison.net</strong> · 3 小时前 · ⭐ 26/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>sqlite-migrate 库发布了 0.2 版本，标志着该库的退役。新版本不再独立实现功能，而是通过兼容层依赖于 sqlite-utils 4.0。这一变化意味着用户需要迁移到新的依赖关系，以继续使用 sqlite-migrate 的功能。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>The release of sqlite-migrate 0.2 marks the retirement of the library. Instead of maintaining its own functionality, it now implements a compatibility shim that depends on sqlite-utils 4.0. This change requires users to adapt to the new dependency structure to continue using the features previously provided by sqlite-migrate.</blockquote>
-<p>🏷️ Bun, Rust, JavaScript runtime</p>
-<hr>
-<h3>7. macOS 和 iOS 应用图标设计的差异</h3>
-<p><a href="https://daringfireball.net/2026/07/whats_good_for_the_ios_goose_is_often_not_good_for_the_macos_gander">★ What’s Good for the iOS Goose Is Often Not Good for the MacOS Gander</a> — <strong>daringfireball.net</strong> · 2 小时前 · ⭐ 22/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>macOS 上的应用图标不仅仅是启动器按钮，它们具有更丰富的交互性和视觉表现力。用户可以拖动、移动它们，甚至将文件拖放到图标上。与 iOS 不同，macOS 的图标需要更丰富的视觉语言来体现其多功能性。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>App icons on macOS are more than just launch buttons; they are richer objects with greater interactivity. Users can drag, move, and drop items onto them. Unlike iOS, macOS icons deserve a more sophisticated visual vocabulary to reflect their enhanced capabilities.</blockquote>
-<p>🏷️ macOS, app icons, UI design</p>
-<hr>
-<h3>8. macOS 应用图标逃离“圆角方形”限制</h3>
-<p><a href="https://tyler.io/2026/07/05/escape-from-squircle-jail/">Mac Apps Can Escape From Squircle Jail If They’re Not in the Mac App Store</a> — <strong>daringfireball.net</strong> · 6 小时前 · ⭐ 22/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>Tyler Hall 指出，macOS Tahoe 的应用图标设计存在问题，导致第三方开发者被限制在“圆角方形”的囹圄中。然而，如果应用不在 Mac App Store 中分发，开发者可以通过使用 <code>NSDockTilePlugIn</code> API 来打破这一限制。虽然这不是该 API 的预期用途，也未被 Mac App Store 允许，但它能有效解决图标设计问题。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Tyler Hall discusses the limitations of macOS Tahoe's app icons, confining developers to a 'squircle jail.' However, apps distributed outside the Mac App Store can escape this by using the <code>NSDockTilePlugIn</code> API. While not the intended use and disallowed in the App Store, it offers a solution.</blockquote>
-<p>🏷️ macOS, App Store, NSDockTilePlugIn</p>
+<p><strong>openai</strong>(5) · <strong>llm</strong>(3) · <strong>chatgpt</strong>(2) · meta(2) · muse spark(2) · api(2) · bun(1) · rust(1) · rewrite(1) · performance(1) · llm from scratch(1) · gpt-2(1) · jax(1) · deep learning(1) · gpt-5.6(1) · luna(1) · terra(1) · gpt-live(1) · voice mode(1) · mac app(1)</p>
 <hr>
 <h2>🤖 AI / ML</h2>
-<h3>9. macOS 图标的丰富性：为何 iOS 的“好”不一定适用于 Mac</h3>
-<p><a href="https://simonwillison.net/2026/Jul/8/introducing-gptlive/#atom-everything">Introducing GPT‑Live</a> — <strong>simonwillison.net</strong> · 4 小时前 · ⭐ 25/30</p>
+<h3>1. 从零开始编写 LLM，第三十四部分 b -- 从 Bigrams 到 GPT-2，一次一个组件（使用 JAX）</h3>
+<p><a href="https://www.gilesthomas.com/2026/07/llm-from-scratch-34b-building-and-training-gpt-2-small-in-jax">Writing an LLM from scratch, part 34b -- from bigrams to GPT-2, one component at a time (in JAX)</a> — <strong>gilesthomas.com</strong> · 1 天前 · ⭐ 26/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>macOS 的应用程序图标不仅仅是启动按钮，它们是可交互的富对象，支持拖放、移动和选择等操作。与 iOS 简洁的图标不同，macOS 的图标需要更丰富的视觉表现力来体现其多功能性。文章探讨了这种设计差异的根源。</blockquote>
+<blockquote>本文是作者“从零开始编写 LLM”系列文章的收官之作，详细介绍了如何使用 JAX 框架从头开始构建和训练一个 GPT-2 Small 模型。作者借鉴了 Sebastian Raschka 的书籍，逐步分解了 LLM 的各个组件，从基础的 Bigrams 模型演进到更复杂的 GPT-2 架构。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>macOS app icons are more than just launch buttons; they are rich, interactive objects supporting drag-and-drop, movement, and selection. Unlike iOS's simpler icons, macOS icons require a richer visual vocabulary to reflect their multifaceted nature. The article explores the reasons behind this design divergence.</blockquote>
-<p>🏷️ ChatGPT, voice mode, OpenAI</p>
+<blockquote>This post concludes the author's 'LLM from Scratch' series, detailing the step-by-step construction and training of a GPT-2 Small model using the JAX framework. Drawing from Sebastian Raschka's book, it breaks down LLM components, evolving from basic Bigrams to the more complex GPT-2 architecture.</blockquote>
+<p>🏷️ LLM from scratch, GPT-2, JAX, deep learning</p>
 <hr>
-<h3>10. macOS 应用图标逃离“Squircle 牢笼”：App Store 外的解决方案</h3>
-<p><a href="https://www.gilesthomas.com/2026/07/llm-from-scratch-34b-building-and-training-gpt-2-small-in-jax">Writing an LLM from scratch, part 34b -- from bigrams to GPT-2, one component at a time (in JAX)</a> — <strong>gilesthomas.com</strong> · 9 小时前 · ⭐ 25/30</p>
+<h3>2. 新的 GPT-5.6 系列：Luna、Terra、Sol</h3>
+<p><a href="https://simonwillison.net/2026/Jul/9/gpt-5-6/#atom-everything">The new GPT-5.6 family: Luna, Terra, Sol</a> — <strong>simonwillison.net</strong> · 8 小时前 · ⭐ 25/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>macOS Tahoe 的应用程序图标被限制在“Squircle”形状内，给第三方开发者带来不便。然而，不在 Mac App Store 分发的应用可以通过使用 <code>NSDockTilePlugIn</code> API 来绕过这一限制，尽管这并非该 API 的预期用途，且不适用于 App Store 内的应用。Iris 应用已通过此方法增加了自定义图标选项。</blockquote>
+<blockquote>OpenAI 发布了最新的 GPT-5.6 系列模型，包括 Luna、Terra 和 Sol 三个不同规模的版本。新模型的价格为 Luna $1/$6，Terra $2.50/$15，Sol $5/$30（每百万输入/输出 token）。与 Claude Opus 系列（$5/$25）和 Claude Fable 5（$10/$50）相比，GPT-5.6 系列在定价上具有竞争力，但 token 数量的差异可能影响实际成本。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>macOS Tahoe's app icons are confined to a 'squircle' shape, posing challenges for third-party developers. However, apps distributed outside the Mac App Store can escape this 'squircle jail' using the <code>NSDockTilePlugIn</code> API. While not the intended use of this API and disallowed in the App Store, it offers a solution, as demonstrated by Iris adding custom icon choices.</blockquote>
-<p>🏷️ LLM, GPT-2, JAX, from scratch</p>
+<blockquote>OpenAI has released its latest GPT-5.6 model family, featuring three sizes: Luna, Terra, and Sol. Pricing is set at Luna $1/$6, Terra $2.50/$15, and Sol $5/$30 per 1M input/output tokens. Compared to Claude Opus ($5/$25) and Claude Fable 5 ($10/$50), the GPT-5.6 series offers competitive pricing, though varying reasoning token counts may affect overall cost.</blockquote>
+<p>🏷️ OpenAI, GPT-5.6, Luna, Terra</p>
 <hr>
-<h3>11. Poppy 训练盒，第一部分：开端</h3>
-<p><a href="https://www.gilesthomas.com/2026/07/poppy-the-training-box-1-the-beginnings">poppy the training box, part 1: the beginnings</a> — <strong>gilesthomas.com</strong> · 2 小时前 · ⭐ 23/30</p>
+<h3>3. 推出 GPT‑Live</h3>
+<p><a href="https://simonwillison.net/2026/Jul/8/introducing-gptlive/#atom-everything">Introducing GPT‑Live</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 25/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>作者计划组建一台独立的机器用于本地 LLM 训练，以解决当前使用日常驱动 PC 进行训练时遇到的问题。尽管其 RTX 3090 显卡能够完成训练任务（如训练一个 163M 参数的 GPT-2 小型 LLM），但本地训练会影响日常使用。新机器将专注于训练任务，避免与日常工作冲突。</blockquote>
+<blockquote>OpenAI 终于升级了 ChatGPT 语音模式使用的模型，推出了 GPT-Live。新模型在 iPhone 应用中表现出色，能够将更复杂的任务（如需要网络搜索或深度推理的任务）委托给更强大的 GPT-5.5 模型进行处理。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>The author plans to assemble a dedicated machine for local LLM training to address issues encountered when using their daily driver PC. While their RTX 3090 can handle training tasks (like a 163M parameter GPT-2 small LLM), local training interferes with daily use. The new machine will be solely for training, avoiding conflicts with regular work.</blockquote>
-<p>🏷️ LLM training, GPU, hardware</p>
+<blockquote>OpenAI has finally upgraded the model powering ChatGPT's voice mode with the introduction of GPT-Live. This new model, available in the iPhone app, demonstrates impressive capabilities and can delegate complex tasks, such as those requiring web search or deep reasoning, to the more advanced GPT-5.5 model.</blockquote>
+<p>🏷️ GPT-Live, ChatGPT, voice mode, OpenAI</p>
+<hr>
+<h3>4. 推出 Muse Spark 1.1</h3>
+<p><a href="https://simonwillison.net/2026/Jul/9/muse-spark-1-1/#atom-everything">Introducing Muse Spark 1.1</a> — <strong>simonwillison.net</strong> · 11 小时前 · ⭐ 24/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Meta 发布了 Muse Spark 1.1，这是首个提供 API 的 Spark 模型，在智能体工具调用和计算机使用方面有显著改进。此更新基于四月份发布的 Muse Spark，旨在增强模型的自主性和交互能力。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Meta has released Muse Spark 1.1, the first Spark model to offer an API, boasting significant improvements in agentic tool calling and computer use. This update builds upon the initial Muse Spark release from April, aiming to enhance the model's autonomy and interaction capabilities.</blockquote>
+<p>🏷️ Meta, Muse Spark, API, model</p>
+<hr>
+<h3>5. Poppy 训练盒，第一部分：开端</h3>
+<p><a href="https://www.gilesthomas.com/2026/07/poppy-the-training-box-1-the-beginnings">poppy the training box, part 1: the beginnings</a> — <strong>gilesthomas.com</strong> · 1 天前 · ⭐ 24/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>作者正在组建一台专用于本地 LLM 训练的独立机器，以解决当前使用日常驱动 PC 进行训练时遇到的问题。尽管 RTX 3090 显卡能够完成训练任务，但将其用于日常工作和训练会产生冲突，因此需要一台独立的训练环境。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>The author is building a dedicated machine for local LLM training to overcome issues encountered when using their daily driver PC. While the RTX 3090 can handle training, its use for daily tasks conflicts with training runs, necessitating a separate training environment.</blockquote>
+<p>🏷️ LLM, local training, hardware, GPU</p>
+<hr>
+<h3>6. Meta 将 Instagram 账户的默认设置设为允许 AI 重用内容</h3>
+<p><a href="https://www.nytimes.com/2026/07/08/technology/meta-instagram-ai.html?unlocked_article_code=1.wVA.Q5Do.Uvg5yPwCEB5H">Meta Sets Default for Instagram Accounts to Permit Content Reuse by AI</a> — <strong>daringfireball.net</strong> · 13 小时前 · ⭐ 23/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Meta 推出的 AI 图像生成器 Muse Image 允许用户基于公开的 Instagram 照片生成 AI 图像，并且默认情况下，所有拥有公开账户的成年用户都会被自动加入。用户可以通过 Meta AI 应用使用此功能，该应用还集成了公司其他 AI 服务。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Meta's new AI image generator, Muse Image, allows users to create AI images based on public Instagram photos. By default, all adult users with public accounts are automatically opted in. This feature is accessible through the Meta AI app, which also integrates other company AI services.</blockquote>
+<p>🏷️ AI, Instagram, data usage, Meta</p>
+<hr>
+<h2>⚙️ 工程</h2>
+<h3>7. Bun 重写为 Rust</h3>
+<p><a href="https://simonwillison.net/2026/Jul/8/rewriting-bun-in-rust/#atom-everything">Rewriting Bun in Rust</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 26/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Bun 项目宣布将其核心从 Zig 重写为 Rust，以实现显著的性能和安全性提升。此次重写涉及复杂的工程工作，包括动态工作流和试运行，旨在解决原先 Zig 实现中的挑战。最终目标是构建一个更强大、更可靠的 JavaScript 运行时。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Bun is undergoing a significant rewrite from Zig to Rust, aiming for substantial performance and security improvements. This complex engineering effort involves dynamic workflows and trial runs to address challenges in the original Zig implementation. The goal is to create a more robust and reliable JavaScript runtime.</blockquote>
+<p>🏷️ Bun, Rust, rewrite, performance</p>
+<hr>
+<h3>8. 今天 OpenAI 搞砸了 ChatGPT Mac 应用</h3>
+<p><a href="https://9to5mac.com/2026/07/09/openai-announcing-the-next-chapter-for-chatgpt-today-watch-here/">Today’s the Day OpenAI Fucked Up the ChatGPT Mac App</a> — <strong>daringfireball.net</strong> · 7 小时前 · ⭐ 24/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>OpenAI 今日发布了一系列产品更新，导致 ChatGPT Mac 应用出现混乱。原有的 ChatGPT 应用被重命名为 ChatGPT Classic，而新的 ChatGPT 桌面应用（原 Codex 应用）则集成了 ChatGPT Work 和 ChatGPT Codex 模式，后者提供更多技术细节。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>OpenAI's recent product announcements have led to confusion regarding the ChatGPT Mac app. The existing app is now 'ChatGPT Classic,' while the new desktop app (formerly Codex) integrates 'ChatGPT Work' and 'ChatGPT Codex' modes, with the latter exposing more technical details.</blockquote>
+<p>🏷️ OpenAI, ChatGPT, Mac app, Codex</p>
+<hr>
+<h3>9. 深入剖析：Zig 的包管理器</h3>
+<p><a href="https://nesbitt.io/2026/07/09/unboxed-zig.html">Unboxed: Zig</a> — <strong>nesbitt.io</strong> · 17 小时前 · ⭐ 22/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>文章深入探讨了 Zig 编程语言的包管理器。内容涵盖了其核心机制、分类方式、治理模型以及潜在的安全威胁模型。旨在为开发者提供对 Zig 包管理生态系统的全面理解。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>This article provides an in-depth examination of the Zig programming language's package manager. It covers its core mechanics, categorization, governance model, and threat model, aiming to offer developers a comprehensive understanding of Zig's package management ecosystem.</blockquote>
+<p>🏷️ Zig, package manager, governance, security</p>
 <hr>
 <h2>💡 观点 / 杂谈</h2>
-<h3>12. 引用 Kenton Varda 的观点</h3>
-<p><a href="https://simonwillison.net/2026/Jul/8/kenton-varda/#atom-everything">Quoting Kenton Varda</a> — <strong>simonwillison.net</strong> · 7 小时前 · ⭐ 24/30</p>
+<h3>10. 引用 Kenton Varda</h3>
+<p><a href="https://simonwillison.net/2026/Jul/8/kenton-varda/#atom-everything">Quoting Kenton Varda</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 24/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Kenton Varda 宣布对 AI 生成的变更描述（如 PR 和 commit 消息）实施禁令。他认为 AI 生成的描述往往只关注代码细节，而忽略了理解代码高层框架的关键信息，这使得代码审查变得低效且“比无用还糟糕”。此举旨在提高代码审查的质量和效率。</blockquote>
+<blockquote>Kenton Varda 宣布对团队实施一项禁令，禁止使用 AI 撰写变更描述（如 PR 和 commit 消息）。他认为 AI 生成的描述往往不如人工编写的有价值，它们会列出代码细节但忽略了理解代码整体目的所需的高层框架。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Kenton Varda has declared a moratorium on AI-written change descriptions (e.g., PR and commit messages). He argues that AI-generated descriptions focus on code minutiae, omitting the higher-level framing necessary for understanding the code's broad purpose, making code reviews inefficient and 'worse than useless'. This decision aims to improve the quality and efficiency of code reviews.</blockquote>
-<p>🏷️ AI-generated code, developer workflow, code reviews</p>
+<blockquote>Kenton Varda has declared a moratorium on AI-generated change descriptions (e.g., PR and commit messages) from his team. He argues that AI-written descriptions are less useful than human ones, often detailing code specifics without providing the high-level framing needed for broad understanding.</blockquote>
+<p>🏷️ AI-written code, commit messages, Kenton Varda, moratorium</p>
 <hr>
-<h3>13. 让 AI 燃烧</h3>
-<p><a href="https://www.wheresyoured.at/let-ai-burn/">Let AI Burn</a> — <strong>wheresyoured.at</strong> · 1 天前 · ⭐ 24/30</p>
+<h3>11. 约翰·特努斯应扭转苹果在广告滑坡上的颓势</h3>
+<p><a href="https://daringfireball.net/2026/07/ternus_apple_slippery_slope">★ John Ternus Should Reverse Apple’s Slide Down the Advertising Slippery Slope</a> — <strong>daringfireball.net</strong> · 8 小时前 · ⭐ 23/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>本文作者提供了一个付费订阅的邮件列表，内容通常包含 5,000 到 18,000 字的深度分析，例如对 NVIDIA 和 Anthropic 等公司的详尽研究。作者鼓励读者订阅以获取更深入的技术和市场洞察。</blockquote>
+<blockquote>文章批评苹果公司在广告业务上的滑坡，并呼吁 John Ternus 扭转这一趋势。作者回顾了 2014 年 Tim Cook 的隐私声明，强调了当时苹果因不展示广告而获得的公信力，暗示当前苹果在广告领域的做法与其隐私承诺相悖。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This author offers a premium newsletter subscription, typically featuring in-depth analyses ranging from 5,000 to 18,000 words, including detailed studies on companies like NVIDIA and Anthropic. The author encourages subscriptions for deeper technical and market insights.</blockquote>
-<p>🏷️ AI, NVIDIA, Anthropic</p>
+<blockquote>The article criticizes Apple's slide in advertising and calls for John Ternus to reverse this trend. It references Tim Cook's 2014 privacy letter, highlighting the credibility Apple gained by not showing ads then, implying current advertising practices contradict its privacy commitments.</blockquote>
+<p>🏷️ Apple, advertising, privacy, Tim Cook</p>
 <hr>
-<h2>🔒 安全</h2>
-<h3>14. 罪犯、欺诈者兜售进攻性网络安全初创公司</h3>
-<p><a href="https://krebsonsecurity.com/2026/07/felons-fraudsters-flog-offensive-cybersecurity-startup/">Felons, Fraudsters Flog Offensive Cybersecurity Startup</a> — <strong>krebsonsecurity.com</strong> · 15 小时前 · ⭐ 23/30</p>
+<h3>12. 令人震惊的是，OpenAI 的潜在接班人 Fidji Simo 离职</h3>
+<p><a href="https://www.wsj.com/tech/openai-top-executive-fidji-simo-to-step-down-c3daca47?st=NfBZTe">Shocking No One, Fidji Simo, Would-Be Usurper, Is Out at OpenAI</a> — <strong>daringfireball.net</strong> · 3 小时前 · ⭐ 22/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>一家以数百万美元悬赏零日漏洞的网络安全初创公司，其运营者竟是极右翼阴谋论者和被定罪的重罪犯。他们最近的活动包括虚假情报公司和使用假名运营的已倒闭的 AI 游说平台。该报道揭露了该公司背后隐藏的欺诈和不法行为。</blockquote>
+<blockquote>OpenAI 的二号人物 Fidji Simo 在经历长时间的医疗休假后，计划辞去全职职务，并将转为公司兼职顾问。她向员工透露，由于病情加重，康复之路比预期要长。Simo 的离职正值 OpenAI 战略重心转向构建 AI 驱动的编码能力之际，她的离开无疑是公司内部的一次重要人事变动。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>A cybersecurity startup dangling millions of dollars for zero-day vulnerabilities is run by far-right conspiracy theorists and convicted felons. Their recent ventures included fake intelligence companies and a defunct AI-based lobbying platform operated under assumed names. The report exposes the fraudulent and illicit activities behind the company.</blockquote>
-<p>🏷️ cybersecurity startup, zero-day, fraud, vulnerabilities</p>
+<blockquote>Fidji Simo, OpenAI's second-in-command, plans to step down from her full-time role after an extended medical leave, transitioning to a part-time advisor position. She informed staff that her medical condition has worsened, requiring a longer recovery than anticipated. This departure occurs as OpenAI pivots its strategic focus towards developing AI-powered coding capabilities.</blockquote>
+<p>🏷️ OpenAI, Fidji Simo, executive, departure</p>
 <hr>
-<h3>15. 每周更新 511：来自马拉喀什里亚德的直播</h3>
-<p><a href="https://www.troyhunt.com/weekly-update-511/">Weekly Update 511: Live from my Riad in Marrakech</a> — <strong>troyhunt.com</strong> · 13 小时前 · ⭐ 22/30</p>
+<h2>🛠 工具 / 开源</h2>
+<h3>13. 主机战争已输：Valve 坐收渔翁之利</h3>
+<p><a href="https://xeiaso.net/notes/2026/console-wars-lost/">The console wars have been lost</a> — <strong>xeiaso.net</strong> · 1 天前 · ⭐ 23/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>本周的更新来自摩洛哥马拉喀什的里亚德，作者分享了令人惊叹的地理位置。尽管上周在马略卡岛的体验也很不错，但马拉喀什的景色令人震撼。本期内容还将讨论数据泄露的徒劳性，并以一个生动的比喻来形容尝试从泳池中清除污渍的困难。</blockquote>
+<blockquote>文章认为，尽管主机市场竞争激烈，但 Valve 通过其 Steam Deck 和 SteamOS 策略，实际上已经赢得了这场“主机战争”。Steam Deck 的成功并非依赖于与索尼或微软的直接对抗，而是通过提供一个开放的 PC 游戏平台，让用户可以在掌上设备上畅玩 PC 游戏库。这种“无为而治”的策略，使得 Valve 在不直接参与传统主机市场竞争的情况下，巩固了其在游戏分发和硬件领域的领导地位。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This weekly update comes live from a Riad in Marrakech, Morocco, with the author sharing breathtaking views. Following a pleasant week in Mallorca, Marrakech offers a stunning backdrop. The update also touches upon the futility of addressing data breaches, using a vivid analogy.</blockquote>
-<p>🏷️ data breaches, cybersecurity, Troy Hunt, weekly update</p>
+<blockquote>The article argues that Valve has effectively won the 'console war' not by direct competition, but by leveraging its Steam Deck and SteamOS. By offering an open platform for PC gaming on a handheld device, Valve allows users to access their existing PC game libraries, bypassing the need to choose between traditional consoles. This strategy of 'doing nothing' in the traditional console market has solidified Valve's dominance in game distribution and hardware.</blockquote>
+<p>🏷️ Steam Deck, gaming, PC gaming, Valve</p>
 <hr>
-<p>*生成于 2026-07-09 03:54 | 扫描 83 源 → 获取 2498 篇 → 精选 15 篇* *基于 <a href="https://refactoringenglish.com/tools/hn-popularity/">Hacker News Popularity Contest 2025</a> RSS 源列表，由 <a href="https://x.com/karpathy">Andrej Karpathy</a> 推荐*</p>
+<h3>14. llm-meta-ai 0.1 发布：使用 LLM 运行 Meta 的 Muse-Spark-1.1 模型</h3>
+<p><a href="https://simonwillison.net/2026/Jul/9/llm-meta-ai/#atom-everything">llm-meta-ai 0.1</a> — <strong>simonwillison.net</strong> · 11 小时前 · ⭐ 22/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Simon Willison 发布了 llm-meta-ai 工具的 0.1 版本。该工具允许用户使用大型语言模型（LLM）来运行针对 Meta 新发布的 muse-spark-1.1 模型的提示（prompts）。这标志着一个新工具的出现，旨在简化与 Meta 最新的 AI 模型进行交互和测试的过程。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Simon Willison has released version 0.1 of llm-meta-ai. This tool enables users to run prompts against Meta's newly released muse-spark-1.1 model using LLMs. This release introduces a new utility designed to streamline the process of interacting with and testing Meta's latest AI model.</blockquote>
+<p>🏷️ LLM, Meta AI, Muse Spark, API</p>
+<hr>
+<h3>15. llm 0.31.1 发布：修复 OpenAI Chat Completion 工具调用错误</h3>
+<p><a href="https://simonwillison.net/2026/Jul/9/llm/#atom-everything">llm 0.31.1</a> — <strong>simonwillison.net</strong> · 11 小时前 · ⭐ 22/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Simon Willison 发布了 llm 工具的 0.31.1 版本。此次更新主要修复了一个在 OpenAI Chat Completion 接口中存在的 bug，该 bug 可能导致当工具调用包含空参数时，某些提供商返回 JSON 错误。此修复是在测试 llm-meta-ai 工具时发现并解决的。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Simon Willison has released version 0.31.1 of the llm tool. This update primarily addresses a bug in OpenAI Chat Completion endpoints where a tool call with empty arguments could result in a JSON error from some providers. This fix was identified and resolved during testing of the llm-meta-ai tool.</blockquote>
+<p>🏷️ LLM, OpenAI, tool call, bug fix</p>
+<hr>
+<p>*生成于 2026-07-10 03:56 | 扫描 83 源 → 获取 2491 篇 → 精选 15 篇* *基于 <a href="https://refactoringenglish.com/tools/hn-popularity/">Hacker News Popularity Contest 2025</a> RSS 源列表，由 <a href="https://x.com/karpathy">Andrej Karpathy</a> 推荐*</p>
     </article>
   </main>
-  <script id="speech-text" type="application/json">"🎧 点这里朗读今日日报\n📰 AI 博客每日精选 — 2026-07-09\n来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15\n📝 今日看点\n今日技术看点聚焦AI的实际应用与挑战，以及开发者工具的演进。一方面，AI在代码生成、产品集成等方面展现潜力，但同时也引发了关于AI生成内容质量和审查的争议。另一方面，开发者工具正朝着更简化的集成和更强大的功能发展，例如Web Component嵌入GitHub代码，以及数据库迁移工具的更新换代。此外，macOS应用图标设计趋势和网络安全领域的欺诈乱象也值得关注。\n \n🏆 今日必读\n🥇 sqlite-migrate 0.2 版本发布：弃用库并转向 sqlite-utils 4.0 兼容层\nRewriting Bun in Rust — simonwillison.net · 3 小时前 · ⚙️ 工程\n中文摘要\nsqlite-migrate 库发布了 0.2 版本，标志着该库的退役。新版本不再独立实现功能，而是通过兼容层依赖于 sqlite-utils 4.0。这一变化意味着用户需要迁移到新的依赖关系，以继续使用 sqlite-migrate 的功能。\nEnglish Summary\nThe release of sqlite-migrate 0.2 marks the retirement of the library. Instead of maintaining its own functionality, it now implements a compatibility shim that depends on sqlite-utils 4.0. This change requires users to adapt to the new dependency structure to continue using the features previously provided by sqlite-migrate.\n💡 为什么值得读: 了解 sqlite-migrate 的版本更新和依赖变化，有助于开发者平稳迁移项目。\n💡 Why read it: Understand the version update and dependency changes for sqlite-migrate to ensure a smooth project migration.\n🏷️ Bun, Rust, JavaScript runtime\n🥈 macOS 图标的丰富性：为何 iOS 的“好”不一定适用于 Mac\nIntroducing GPT‑Live — simonwillison.net · 4 小时前 · 🤖 AI / ML\n中文摘要\nmacOS 的应用程序图标不仅仅是启动按钮，它们是可交互的富对象，支持拖放、移动和选择等操作。与 iOS 简洁的图标不同，macOS 的图标需要更丰富的视觉表现力来体现其多功能性。文章探讨了这种设计差异的根源。\nEnglish Summary\nmacOS app icons are more than just launch buttons; they are rich, interactive objects supporting drag-and-drop, movement, and selection. Unlike iOS's simpler icons, macOS icons require a richer visual vocabulary to reflect their multifaceted nature. The article explores the reasons behind this design divergence.\n💡 为什么值得读: 深入理解 macOS 图标设计理念，有助于开发者设计更符合平台特性的应用图标。\n💡 Why read it: Gain a deeper understanding of macOS icon design principles to help developers create app icons that better suit the platform's characteristics.\n🏷️ ChatGPT, voice mode, OpenAI\n🥉 macOS 应用图标逃离“Squircle 牢笼”：App Store 外的解决方案\nWriting an LLM from scratch, part 34b -- from bigrams to GPT-2, one component at a time (in JAX) — gilesthomas.com · 9 小时前 · 🤖 AI / ML\n中文摘要\nmacOS Tahoe 的应用程序图标被限制在“Squircle”形状内，给第三方开发者带来不便。然而，不在 Mac App Store 分发的应用可以通过使用 NSDockTilePlugIn API 来绕过这一限制，尽管这并非该 API 的预期用途，且不适用于 App Store 内的应用。Iris 应用已通过此方法增加了自定义图标选项。\nEnglish Summary\nmacOS Tahoe's app icons are confined to a 'squircle' shape, posing challenges for third-party developers. However, apps distributed outside the Mac App Store can escape this 'squircle jail' using the NSDockTilePlugIn API. While not the intended use of this API and disallowed in the App Store, it offers a solution, as demonstrated by Iris adding custom icon choices.\n💡 为什么值得读: 为不在 Mac App Store 分发的 macOS 应用提供绕过图标限制的实用技术方案。\n💡 Why read it: Provides a practical technical solution for macOS apps not distributed via the Mac App Store to bypass icon restrictions.\n🏷️ LLM, GPT-2, JAX, from scratch\n \n📊 数据概览\n \n \n \n分类分布\nmermaid\npie showData\n title \"文章分类分布\"\n \"🛠 工具 / 开源\" : 5\n \"⚙️ 工程\" : 3\n \"🤖 AI / ML\" : 3\n \"💡 观点 / 杂谈\" : 2\n \"🔒 安全\" : 2\n高频关键词\nmermaid\nxychart-beta horizontal\n title \"高频关键词\"\n x-axis [\"sqlite-utils\", \"database\", \"migrations\", \"macos\", \"bun\", \"rust\", \"javascript runtime\", \"chatgpt\", \"voice mode\", \"openai\", \"llm\", \"gpt-2\"]\n y-axis \"出现次数\" 0 --> 5\n bar [3, 3, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1]\n📈 纯文本关键词图（终端友好）\nsqlite-utils │ ████████████████████ 3\ndatabase │ ████████████████████ 3\nmigrations │ █████████████░░░░░░░ 2\nmacos │ █████████████░░░░░░░ 2\nbun │ ███████░░░░░░░░░░░░░ 1\nrust │ ███████░░░░░░░░░░░░░ 1\njavascript runtime │ ███████░░░░░░░░░░░░░ 1\nchatgpt │ ███████░░░░░░░░░░░░░ 1\nvoice mode │ ███████░░░░░░░░░░░░░ 1\nopenai │ ███████░░░░░░░░░░░░░ 1\n🏷️ 话题标签\nsqlite-utils(3) · database(3) · migrations(2) · macos(2) · bun(1) · rust(1) · javascript runtime(1) · chatgpt(1) · voice mode(1) · openai(1) · llm(1) · gpt-2(1) · jax(1) · from scratch(1) · ai-generated code(1) · developer workflow(1) · code reviews(1) · ai(1) · nvidia(1) · anthropic(1)\n \n🛠 工具 / 开源\n1. WorkOS Pipes：通过集成上下文简化产品开发\nsqlite-utils 4.0, now with database schema migrations — simonwillison.net · 1 天前 · ⭐ 25/30\n中文摘要\n用户期望应用和代理能够无缝集成到他们现有的工作流程中，但每次集成都需要处理复杂的 OAuth 流程和生命周期管理。WorkOS Pipes 提供了一个统一的 API 调用，预置了 GitHub、Slack、Salesforce 等 100 多个提供商的连接器，并负责处理 OAuth、令牌刷新和凭据存储，从而简化了产品开发。\nEnglish Summary\nUsers expect apps and agents to integrate seamlessly into their existing workflows, but each integration involves complex OAuth flows and lifecycle management. WorkOS Pipes simplifies this with a single API call, offering pre-built connectors for over 100 providers like GitHub, Slack, and Salesforce, and handling OAuth, token refresh, and credential storage.\n🏷️ sqlite-utils, database, migrations\n \n2. Troy Hunt 的每周更新 511：马拉喀什的周报与数据泄露事件\nsqlite-utils 4.0 — simonwillison.net · 1 天前 · ⭐ 25/30\n中文摘要\nTroy Hunt 在马拉喀什的旅途中发布了本周的更新（第 511 期），内容涵盖了数据泄露事件。他用“试图从泳池中去除尿液”的比喻来形容处理某些数据安全问题的徒劳，并暗示本周将讨论相关话题。\nEnglish Summary\nTroy Hunt's Weekly Update 511, broadcast live from his riad in Marrakech, covers data breaches. He uses the analogy of 'trying to remove piss from a pool' to describe the futility of certain data security efforts, hinting at discussions on related topics for the week.\n🏷️ sqlite-utils, database, migrations\n \n3. github-code Web Component\ngithub-code Web Component — simonwillison.net · 1 天前 · ⭐ 24/30\n中文摘要\n一个实验性的 Web Component，使用 GPT-5.5 和特定提示词构建，用于嵌入 GitHub 代码片段。该组件允许开发者轻松地在网页中展示来自 GitHub 的代码，并可能通过 AI 增强其功能。文章提供了该组件的链接和示例用法。\nEnglish Summary\nAn experimental Web Component, built using GPT-5.5 and a specific prompt, is introduced for embedding GitHub code snippets. This component allows developers to easily display code from GitHub on web pages, potentially with AI-enhanced features. The article provides a link to the tool and an example of its usage.\n🏷️ Web Component, github-code, GPT\n \n4. sqlite-migrate 0.2 版本发布\nsqlite-migrate 0.2 — simonwillison.net · 1 天前 · ⭐ 23/30\n中文摘要\nsqlite-migrate 库发布了 0.2 版本，该版本标志着该库的退役。为了应对新的 sqlite-utils 4.0 依赖，它实现了一个兼容性兼容层。此更新主要关注与新版本的集成和兼容性。\nEnglish Summary\nsqlite-migrate has released version 0.2, marking the retirement of the library. This version implements a compatibility shim against the new sqlite-utils 4.0 dependency. The update focuses on integration and compatibility with the newer version.\n🏷️ sqlite-migrate, sqlite-utils, database\n \n5. [赞助] WorkOS Pipes：更多上下文带来更智能的产品\n[[Sponsor] WorkOS Pipes: More Context Makes for Smarter Products](https://workos.com/pipes?utmsource=daringfireball&utmmedium=newsletter&utmcampaign=q32026) — daringfireball.net · 13 小时前 · ⭐ 22/30\n中文摘要\n用户期望应用程序和代理能够集成到他们已有的工作流程中。然而，每次集成都需要不同的 OAuth 流程、令牌生命周期管理，以及在编写产品代码前投入数周的基础设施工作。WorkOS Pipes 通过一个 API 调用解决了这一痛点，并提供预构建的连接器，处理 OAuth、令牌刷新和凭证存储。\nEnglish Summary\nUsers expect apps and agents to integrate with their existing workflows, but each integration involves complex OAuth flows and infrastructure setup. WorkOS Pipes simplifies this with a single API call and pre-built connectors, handling OAuth, token refresh, and credential storage for seamless integration.\n🏷️ WorkOS Pipes, integration, API, developer tools\n \n⚙️ 工程\n6. sqlite-migrate 0.2 版本发布：弃用库并转向 sqlite-utils 4.0 兼容层\nRewriting Bun in Rust — simonwillison.net · 3 小时前 · ⭐ 26/30\n中文摘要\nsqlite-migrate 库发布了 0.2 版本，标志着该库的退役。新版本不再独立实现功能，而是通过兼容层依赖于 sqlite-utils 4.0。这一变化意味着用户需要迁移到新的依赖关系，以继续使用 sqlite-migrate 的功能。\nEnglish Summary\nThe release of sqlite-migrate 0.2 marks the retirement of the library. Instead of maintaining its own functionality, it now implements a compatibility shim that depends on sqlite-utils 4.0. This change requires users to adapt to the new dependency structure to continue using the features previously provided by sqlite-migrate.\n🏷️ Bun, Rust, JavaScript runtime\n \n7. macOS 和 iOS 应用图标设计的差异\n★ What’s Good for the iOS Goose Is Often Not Good for the MacOS Gander — daringfireball.net · 2 小时前 · ⭐ 22/30\n中文摘要\nmacOS 上的应用图标不仅仅是启动器按钮，它们具有更丰富的交互性和视觉表现力。用户可以拖动、移动它们，甚至将文件拖放到图标上。与 iOS 不同，macOS 的图标需要更丰富的视觉语言来体现其多功能性。\nEnglish Summary\nApp icons on macOS are more than just launch buttons; they are richer objects with greater interactivity. Users can drag, move, and drop items onto them. Unlike iOS, macOS icons deserve a more sophisticated visual vocabulary to reflect their enhanced capabilities.\n🏷️ macOS, app icons, UI design\n \n8. macOS 应用图标逃离“圆角方形”限制\nMac Apps Can Escape From Squircle Jail If They’re Not in the Mac App Store — daringfireball.net · 6 小时前 · ⭐ 22/30\n中文摘要\nTyler Hall 指出，macOS Tahoe 的应用图标设计存在问题，导致第三方开发者被限制在“圆角方形”的囹圄中。然而，如果应用不在 Mac App Store 中分发，开发者可以通过使用 NSDockTilePlugIn API 来打破这一限制。虽然这不是该 API 的预期用途，也未被 Mac App Store 允许，但它能有效解决图标设计问题。\nEnglish Summary\nTyler Hall discusses the limitations of macOS Tahoe's app icons, confining developers to a 'squircle jail.' However, apps distributed outside the Mac App Store can escape this by using the NSDockTilePlugIn API. While not the intended use and disallowed in the App Store, it offers a solution.\n🏷️ macOS, App Store, NSDockTilePlugIn\n \n🤖 AI / ML\n9. macOS 图标的丰富性：为何 iOS 的“好”不一定适用于 Mac\nIntroducing GPT‑Live — simonwillison.net · 4 小时前 · ⭐ 25/30\n中文摘要\nmacOS 的应用程序图标不仅仅是启动按钮，它们是可交互的富对象，支持拖放、移动和选择等操作。与 iOS 简洁的图标不同，macOS 的图标需要更丰富的视觉表现力来体现其多功能性。文章探讨了这种设计差异的根源。\nEnglish Summary\nmacOS app icons are more than just launch buttons; they are rich, interactive objects supporting drag-and-drop, movement, and selection. Unlike iOS's simpler icons, macOS icons require a richer visual vocabulary to reflect their multifaceted nature. The article explores the reasons behind this design divergence.\n🏷️ ChatGPT, voice mode, OpenAI\n \n10. macOS 应用图标逃离“Squircle 牢笼”：App Store 外的解决方案\nWriting an LLM from scratch, part 34b -- from bigrams to GPT-2, one component at a time (in JAX) — gilesthomas.com · 9 小时前 · ⭐ 25/30\n中文摘要\nmacOS Tahoe 的应用程序图标被限制在“Squircle”形状内，给第三方开发者带来不便。然而，不在 Mac App Store 分发的应用可以通过使用 NSDockTilePlugIn API 来绕过这一限制，尽管这并非该 API 的预期用途，且不适用于 App Store 内的应用。Iris 应用已通过此方法增加了自定义图标选项。\nEnglish Summary\nmacOS Tahoe's app icons are confined to a 'squircle' shape, posing challenges for third-party developers. However, apps distributed outside the Mac App Store can escape this 'squircle jail' using the NSDockTilePlugIn API. While not the intended use of this API and disallowed in the App Store, it offers a solution, as demonstrated by Iris adding custom icon choices.\n🏷️ LLM, GPT-2, JAX, from scratch\n \n11. Poppy 训练盒，第一部分：开端\npoppy the training box, part 1: the beginnings — gilesthomas.com · 2 小时前 · ⭐ 23/30\n中文摘要\n作者计划组建一台独立的机器用于本地 LLM 训练，以解决当前使用日常驱动 PC 进行训练时遇到的问题。尽管其 RTX 3090 显卡能够完成训练任务（如训练一个 163M 参数的 GPT-2 小型 LLM），但本地训练会影响日常使用。新机器将专注于训练任务，避免与日常工作冲突。\nEnglish Summary\nThe author plans to assemble a dedicated machine for local LLM training to address issues encountered when using their daily driver PC. While their RTX 3090 can handle training tasks (like a 163M parameter GPT-2 small LLM), local training interferes with daily use. The new machine will be solely for training, avoiding conflicts with regular work.\n🏷️ LLM training, GPU, hardware\n \n💡 观点 / 杂谈\n12. 引用 Kenton Varda 的观点\nQuoting Kenton Varda — simonwillison.net · 7 小时前 · ⭐ 24/30\n中文摘要\nKenton Varda 宣布对 AI 生成的变更描述（如 PR 和 commit 消息）实施禁令。他认为 AI 生成的描述往往只关注代码细节，而忽略了理解代码高层框架的关键信息，这使得代码审查变得低效且“比无用还糟糕”。此举旨在提高代码审查的质量和效率。\nEnglish Summary\nKenton Varda has declared a moratorium on AI-written change descriptions (e.g., PR and commit messages). He argues that AI-generated descriptions focus on code minutiae, omitting the higher-level framing necessary for understanding the code's broad purpose, making code reviews inefficient and 'worse than useless'. This decision aims to improve the quality and efficiency of code reviews.\n🏷️ AI-generated code, developer workflow, code reviews\n \n13. 让 AI 燃烧\nLet AI Burn — wheresyoured.at · 1 天前 · ⭐ 24/30\n中文摘要\n本文作者提供了一个付费订阅的邮件列表，内容通常包含 5,000 到 18,000 字的深度分析，例如对 NVIDIA 和 Anthropic 等公司的详尽研究。作者鼓励读者订阅以获取更深入的技术和市场洞察。\nEnglish Summary\nThis author offers a premium newsletter subscription, typically featuring in-depth analyses ranging from 5,000 to 18,000 words, including detailed studies on companies like NVIDIA and Anthropic. The author encourages subscriptions for deeper technical and market insights.\n🏷️ AI, NVIDIA, Anthropic\n \n🔒 安全\n14. 罪犯、欺诈者兜售进攻性网络安全初创公司\nFelons, Fraudsters Flog Offensive Cybersecurity Startup — krebsonsecurity.com · 15 小时前 · ⭐ 23/30\n中文摘要\n一家以数百万美元悬赏零日漏洞的网络安全初创公司，其运营者竟是极右翼阴谋论者和被定罪的重罪犯。他们最近的活动包括虚假情报公司和使用假名运营的已倒闭的 AI 游说平台。该报道揭露了该公司背后隐藏的欺诈和不法行为。\nEnglish Summary\nA cybersecurity startup dangling millions of dollars for zero-day vulnerabilities is run by far-right conspiracy theorists and convicted felons. Their recent ventures included fake intelligence companies and a defunct AI-based lobbying platform operated under assumed names. The report exposes the fraudulent and illicit activities behind the company.\n🏷️ cybersecurity startup, zero-day, fraud, vulnerabilities\n \n15. 每周更新 511：来自马拉喀什里亚德的直播\nWeekly Update 511: Live from my Riad in Marrakech — troyhunt.com · 13 小时前 · ⭐ 22/30\n中文摘要\n本周的更新来自摩洛哥马拉喀什的里亚德，作者分享了令人惊叹的地理位置。尽管上周在马略卡岛的体验也很不错，但马拉喀什的景色令人震撼。本期内容还将讨论数据泄露的徒劳性，并以一个生动的比喻来形容尝试从泳池中清除污渍的困难。\nEnglish Summary\nThis weekly update comes live from a Riad in Marrakech, Morocco, with the author sharing breathtaking views. Following a pleasant week in Mallorca, Marrakech offers a stunning backdrop. The update also touches upon the futility of addressing data breaches, using a vivid analogy.\n🏷️ data breaches, cybersecurity, Troy Hunt, weekly update\n \n生成于 2026-07-09 03:54 | 扫描 83 源 → 获取 2498 篇 → 精选 15 篇\n基于 Hacker News Popularity Contest 2025 RSS 源列表，由 Andrej Karpathy 推荐"</script>
+  <script id="speech-text" type="application/json">"🎧 点这里朗读今日日报\n📰 AI 博客每日精选 — 2026-07-10\n来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15\n📝 今日看点\n今日技术圈热点聚焦人工智能的飞速发展与工程技术的持续演进。OpenAI 持续推出新款 GPT 模型并升级 ChatGPT 功能，但其 Mac 应用更新却引发争议。与此同时，Meta 在 AI 领域也动作频频，发布新模型并调整 Instagram 内容使用策略。工程领域则见证了 Bun 项目向 Rust 的重写，预示着对性能与安全性的不懈追求。\n \n🏆 今日必读\n🥇 Bun 重写为 Rust\nRewriting Bun in Rust — simonwillison.net · 1 天前 · ⚙️ 工程\n中文摘要\nBun 项目宣布将其核心从 Zig 重写为 Rust，以实现显著的性能和安全性提升。此次重写涉及复杂的工程工作，包括动态工作流和试运行，旨在解决原先 Zig 实现中的挑战。最终目标是构建一个更强大、更可靠的 JavaScript 运行时。\nEnglish Summary\nBun is undergoing a significant rewrite from Zig to Rust, aiming for substantial performance and security improvements. This complex engineering effort involves dynamic workflows and trial runs to address challenges in the original Zig implementation. The goal is to create a more robust and reliable JavaScript runtime.\n💡 为什么值得读: 了解一个流行的 JavaScript 运行时如何通过语言重写来提升性能和安全性，以及其背后的工程考量。\n💡 Why read it: Understand how a popular JavaScript runtime is being rewritten in Rust for performance and security gains, and the engineering considerations behind it.\n🏷️ Bun, Rust, rewrite, performance\n🥈 从零开始编写 LLM，第三十四部分 b -- 从 Bigrams 到 GPT-2，一次一个组件（使用 JAX）\nWriting an LLM from scratch, part 34b -- from bigrams to GPT-2, one component at a time (in JAX) — gilesthomas.com · 1 天前 · 🤖 AI / ML\n中文摘要\n本文是作者“从零开始编写 LLM”系列文章的收官之作，详细介绍了如何使用 JAX 框架从头开始构建和训练一个 GPT-2 Small 模型。作者借鉴了 Sebastian Raschka 的书籍，逐步分解了 LLM 的各个组件，从基础的 Bigrams 模型演进到更复杂的 GPT-2 架构。\nEnglish Summary\nThis post concludes the author's 'LLM from Scratch' series, detailing the step-by-step construction and training of a GPT-2 Small model using the JAX framework. Drawing from Sebastian Raschka's book, it breaks down LLM components, evolving from basic Bigrams to the more complex GPT-2 architecture.\n💡 为什么值得读: 深入了解使用 JAX 框架从零开始构建和训练 GPT-2 模型的技术细节和演进过程。\n💡 Why read it: Gain in-depth technical details and the evolutionary process of building and training a GPT-2 model from scratch using the JAX framework.\n🏷️ LLM from scratch, GPT-2, JAX, deep learning\n🥉 新的 GPT-5.6 系列：Luna、Terra、Sol\nThe new GPT-5.6 family: Luna, Terra, Sol — simonwillison.net · 8 小时前 · 🤖 AI / ML\n中文摘要\nOpenAI 发布了最新的 GPT-5.6 系列模型，包括 Luna、Terra 和 Sol 三个不同规模的版本。新模型的价格为 Luna $1/$6，Terra $2.50/$15，Sol $5/$30（每百万输入/输出 token）。与 Claude Opus 系列（$5/$25）和 Claude Fable 5（$10/$50）相比，GPT-5.6 系列在定价上具有竞争力，但 token 数量的差异可能影响实际成本。\nEnglish Summary\nOpenAI has released its latest GPT-5.6 model family, featuring three sizes: Luna, Terra, and Sol. Pricing is set at Luna $1/$6, Terra $2.50/$15, and Sol $5/$30 per 1M input/output tokens. Compared to Claude Opus ($5/$25) and Claude Fable 5 ($10/$50), the GPT-5.6 series offers competitive pricing, though varying reasoning token counts may affect overall cost.\n💡 为什么值得读: 快速了解 OpenAI 最新发布的 GPT-5.6 系列模型及其定价策略，并与竞品进行初步对比。\n💡 Why read it: Quickly grasp OpenAI's latest GPT-5.6 model family, its pricing strategy, and a preliminary comparison with competitors.\n🏷️ OpenAI, GPT-5.6, Luna, Terra\n \n📊 数据概览\n \n \n \n分类分布\nmermaid\npie showData\n title \"文章分类分布\"\n \"🤖 AI / ML\" : 6\n \"⚙️ 工程\" : 3\n \"💡 观点 / 杂谈\" : 3\n \"🛠 工具 / 开源\" : 3\n高频关键词\nmermaid\nxychart-beta horizontal\n title \"高频关键词\"\n x-axis [\"openai\", \"llm\", \"chatgpt\", \"meta\", \"muse spark\", \"api\", \"bun\", \"rust\", \"rewrite\", \"performance\", \"llm from scratch\", \"gpt-2\"]\n y-axis \"出现次数\" 0 --> 7\n bar [5, 3, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1]\n📈 纯文本关键词图（终端友好）\nopenai │ ████████████████████ 5\nllm │ ████████████░░░░░░░░ 3\nchatgpt │ ████████░░░░░░░░░░░░ 2\nmeta │ ████████░░░░░░░░░░░░ 2\nmuse spark │ ████████░░░░░░░░░░░░ 2\napi │ ████████░░░░░░░░░░░░ 2\nbun │ ████░░░░░░░░░░░░░░░░ 1\nrust │ ████░░░░░░░░░░░░░░░░ 1\nrewrite │ ████░░░░░░░░░░░░░░░░ 1\nperformance │ ████░░░░░░░░░░░░░░░░ 1\n🏷️ 话题标签\nopenai(5) · llm(3) · chatgpt(2) · meta(2) · muse spark(2) · api(2) · bun(1) · rust(1) · rewrite(1) · performance(1) · llm from scratch(1) · gpt-2(1) · jax(1) · deep learning(1) · gpt-5.6(1) · luna(1) · terra(1) · gpt-live(1) · voice mode(1) · mac app(1)\n \n🤖 AI / ML\n1. 从零开始编写 LLM，第三十四部分 b -- 从 Bigrams 到 GPT-2，一次一个组件（使用 JAX）\nWriting an LLM from scratch, part 34b -- from bigrams to GPT-2, one component at a time (in JAX) — gilesthomas.com · 1 天前 · ⭐ 26/30\n中文摘要\n本文是作者“从零开始编写 LLM”系列文章的收官之作，详细介绍了如何使用 JAX 框架从头开始构建和训练一个 GPT-2 Small 模型。作者借鉴了 Sebastian Raschka 的书籍，逐步分解了 LLM 的各个组件，从基础的 Bigrams 模型演进到更复杂的 GPT-2 架构。\nEnglish Summary\nThis post concludes the author's 'LLM from Scratch' series, detailing the step-by-step construction and training of a GPT-2 Small model using the JAX framework. Drawing from Sebastian Raschka's book, it breaks down LLM components, evolving from basic Bigrams to the more complex GPT-2 architecture.\n🏷️ LLM from scratch, GPT-2, JAX, deep learning\n \n2. 新的 GPT-5.6 系列：Luna、Terra、Sol\nThe new GPT-5.6 family: Luna, Terra, Sol — simonwillison.net · 8 小时前 · ⭐ 25/30\n中文摘要\nOpenAI 发布了最新的 GPT-5.6 系列模型，包括 Luna、Terra 和 Sol 三个不同规模的版本。新模型的价格为 Luna $1/$6，Terra $2.50/$15，Sol $5/$30（每百万输入/输出 token）。与 Claude Opus 系列（$5/$25）和 Claude Fable 5（$10/$50）相比，GPT-5.6 系列在定价上具有竞争力，但 token 数量的差异可能影响实际成本。\nEnglish Summary\nOpenAI has released its latest GPT-5.6 model family, featuring three sizes: Luna, Terra, and Sol. Pricing is set at Luna $1/$6, Terra $2.50/$15, and Sol $5/$30 per 1M input/output tokens. Compared to Claude Opus ($5/$25) and Claude Fable 5 ($10/$50), the GPT-5.6 series offers competitive pricing, though varying reasoning token counts may affect overall cost.\n🏷️ OpenAI, GPT-5.6, Luna, Terra\n \n3. 推出 GPT‑Live\nIntroducing GPT‑Live — simonwillison.net · 1 天前 · ⭐ 25/30\n中文摘要\nOpenAI 终于升级了 ChatGPT 语音模式使用的模型，推出了 GPT-Live。新模型在 iPhone 应用中表现出色，能够将更复杂的任务（如需要网络搜索或深度推理的任务）委托给更强大的 GPT-5.5 模型进行处理。\nEnglish Summary\nOpenAI has finally upgraded the model powering ChatGPT's voice mode with the introduction of GPT-Live. This new model, available in the iPhone app, demonstrates impressive capabilities and can delegate complex tasks, such as those requiring web search or deep reasoning, to the more advanced GPT-5.5 model.\n🏷️ GPT-Live, ChatGPT, voice mode, OpenAI\n \n4. 推出 Muse Spark 1.1\nIntroducing Muse Spark 1.1 — simonwillison.net · 11 小时前 · ⭐ 24/30\n中文摘要\nMeta 发布了 Muse Spark 1.1，这是首个提供 API 的 Spark 模型，在智能体工具调用和计算机使用方面有显著改进。此更新基于四月份发布的 Muse Spark，旨在增强模型的自主性和交互能力。\nEnglish Summary\nMeta has released Muse Spark 1.1, the first Spark model to offer an API, boasting significant improvements in agentic tool calling and computer use. This update builds upon the initial Muse Spark release from April, aiming to enhance the model's autonomy and interaction capabilities.\n🏷️ Meta, Muse Spark, API, model\n \n5. Poppy 训练盒，第一部分：开端\npoppy the training box, part 1: the beginnings — gilesthomas.com · 1 天前 · ⭐ 24/30\n中文摘要\n作者正在组建一台专用于本地 LLM 训练的独立机器，以解决当前使用日常驱动 PC 进行训练时遇到的问题。尽管 RTX 3090 显卡能够完成训练任务，但将其用于日常工作和训练会产生冲突，因此需要一台独立的训练环境。\nEnglish Summary\nThe author is building a dedicated machine for local LLM training to overcome issues encountered when using their daily driver PC. While the RTX 3090 can handle training, its use for daily tasks conflicts with training runs, necessitating a separate training environment.\n🏷️ LLM, local training, hardware, GPU\n \n6. Meta 将 Instagram 账户的默认设置设为允许 AI 重用内容\nMeta Sets Default for Instagram Accounts to Permit Content Reuse by AI — daringfireball.net · 13 小时前 · ⭐ 23/30\n中文摘要\nMeta 推出的 AI 图像生成器 Muse Image 允许用户基于公开的 Instagram 照片生成 AI 图像，并且默认情况下，所有拥有公开账户的成年用户都会被自动加入。用户可以通过 Meta AI 应用使用此功能，该应用还集成了公司其他 AI 服务。\nEnglish Summary\nMeta's new AI image generator, Muse Image, allows users to create AI images based on public Instagram photos. By default, all adult users with public accounts are automatically opted in. This feature is accessible through the Meta AI app, which also integrates other company AI services.\n🏷️ AI, Instagram, data usage, Meta\n \n⚙️ 工程\n7. Bun 重写为 Rust\nRewriting Bun in Rust — simonwillison.net · 1 天前 · ⭐ 26/30\n中文摘要\nBun 项目宣布将其核心从 Zig 重写为 Rust，以实现显著的性能和安全性提升。此次重写涉及复杂的工程工作，包括动态工作流和试运行，旨在解决原先 Zig 实现中的挑战。最终目标是构建一个更强大、更可靠的 JavaScript 运行时。\nEnglish Summary\nBun is undergoing a significant rewrite from Zig to Rust, aiming for substantial performance and security improvements. This complex engineering effort involves dynamic workflows and trial runs to address challenges in the original Zig implementation. The goal is to create a more robust and reliable JavaScript runtime.\n🏷️ Bun, Rust, rewrite, performance\n \n8. 今天 OpenAI 搞砸了 ChatGPT Mac 应用\nToday’s the Day OpenAI Fucked Up the ChatGPT Mac App — daringfireball.net · 7 小时前 · ⭐ 24/30\n中文摘要\nOpenAI 今日发布了一系列产品更新，导致 ChatGPT Mac 应用出现混乱。原有的 ChatGPT 应用被重命名为 ChatGPT Classic，而新的 ChatGPT 桌面应用（原 Codex 应用）则集成了 ChatGPT Work 和 ChatGPT Codex 模式，后者提供更多技术细节。\nEnglish Summary\nOpenAI's recent product announcements have led to confusion regarding the ChatGPT Mac app. The existing app is now 'ChatGPT Classic,' while the new desktop app (formerly Codex) integrates 'ChatGPT Work' and 'ChatGPT Codex' modes, with the latter exposing more technical details.\n🏷️ OpenAI, ChatGPT, Mac app, Codex\n \n9. 深入剖析：Zig 的包管理器\nUnboxed: Zig — nesbitt.io · 17 小时前 · ⭐ 22/30\n中文摘要\n文章深入探讨了 Zig 编程语言的包管理器。内容涵盖了其核心机制、分类方式、治理模型以及潜在的安全威胁模型。旨在为开发者提供对 Zig 包管理生态系统的全面理解。\nEnglish Summary\nThis article provides an in-depth examination of the Zig programming language's package manager. It covers its core mechanics, categorization, governance model, and threat model, aiming to offer developers a comprehensive understanding of Zig's package management ecosystem.\n🏷️ Zig, package manager, governance, security\n \n💡 观点 / 杂谈\n10. 引用 Kenton Varda\nQuoting Kenton Varda — simonwillison.net · 1 天前 · ⭐ 24/30\n中文摘要\nKenton Varda 宣布对团队实施一项禁令，禁止使用 AI 撰写变更描述（如 PR 和 commit 消息）。他认为 AI 生成的描述往往不如人工编写的有价值，它们会列出代码细节但忽略了理解代码整体目的所需的高层框架。\nEnglish Summary\nKenton Varda has declared a moratorium on AI-generated change descriptions (e.g., PR and commit messages) from his team. He argues that AI-written descriptions are less useful than human ones, often detailing code specifics without providing the high-level framing needed for broad understanding.\n🏷️ AI-written code, commit messages, Kenton Varda, moratorium\n \n11. 约翰·特努斯应扭转苹果在广告滑坡上的颓势\n★ John Ternus Should Reverse Apple’s Slide Down the Advertising Slippery Slope — daringfireball.net · 8 小时前 · ⭐ 23/30\n中文摘要\n文章批评苹果公司在广告业务上的滑坡，并呼吁 John Ternus 扭转这一趋势。作者回顾了 2014 年 Tim Cook 的隐私声明，强调了当时苹果因不展示广告而获得的公信力，暗示当前苹果在广告领域的做法与其隐私承诺相悖。\nEnglish Summary\nThe article criticizes Apple's slide in advertising and calls for John Ternus to reverse this trend. It references Tim Cook's 2014 privacy letter, highlighting the credibility Apple gained by not showing ads then, implying current advertising practices contradict its privacy commitments.\n🏷️ Apple, advertising, privacy, Tim Cook\n \n12. 令人震惊的是，OpenAI 的潜在接班人 Fidji Simo 离职\nShocking No One, Fidji Simo, Would-Be Usurper, Is Out at OpenAI — daringfireball.net · 3 小时前 · ⭐ 22/30\n中文摘要\nOpenAI 的二号人物 Fidji Simo 在经历长时间的医疗休假后，计划辞去全职职务，并将转为公司兼职顾问。她向员工透露，由于病情加重，康复之路比预期要长。Simo 的离职正值 OpenAI 战略重心转向构建 AI 驱动的编码能力之际，她的离开无疑是公司内部的一次重要人事变动。\nEnglish Summary\nFidji Simo, OpenAI's second-in-command, plans to step down from her full-time role after an extended medical leave, transitioning to a part-time advisor position. She informed staff that her medical condition has worsened, requiring a longer recovery than anticipated. This departure occurs as OpenAI pivots its strategic focus towards developing AI-powered coding capabilities.\n🏷️ OpenAI, Fidji Simo, executive, departure\n \n🛠 工具 / 开源\n13. 主机战争已输：Valve 坐收渔翁之利\nThe console wars have been lost — xeiaso.net · 1 天前 · ⭐ 23/30\n中文摘要\n文章认为，尽管主机市场竞争激烈，但 Valve 通过其 Steam Deck 和 SteamOS 策略，实际上已经赢得了这场“主机战争”。Steam Deck 的成功并非依赖于与索尼或微软的直接对抗，而是通过提供一个开放的 PC 游戏平台，让用户可以在掌上设备上畅玩 PC 游戏库。这种“无为而治”的策略，使得 Valve 在不直接参与传统主机市场竞争的情况下，巩固了其在游戏分发和硬件领域的领导地位。\nEnglish Summary\nThe article argues that Valve has effectively won the 'console war' not by direct competition, but by leveraging its Steam Deck and SteamOS. By offering an open platform for PC gaming on a handheld device, Valve allows users to access their existing PC game libraries, bypassing the need to choose between traditional consoles. This strategy of 'doing nothing' in the traditional console market has solidified Valve's dominance in game distribution and hardware.\n🏷️ Steam Deck, gaming, PC gaming, Valve\n \n14. llm-meta-ai 0.1 发布：使用 LLM 运行 Meta 的 Muse-Spark-1.1 模型\nllm-meta-ai 0.1 — simonwillison.net · 11 小时前 · ⭐ 22/30\n中文摘要\nSimon Willison 发布了 llm-meta-ai 工具的 0.1 版本。该工具允许用户使用大型语言模型（LLM）来运行针对 Meta 新发布的 muse-spark-1.1 模型的提示（prompts）。这标志着一个新工具的出现，旨在简化与 Meta 最新的 AI 模型进行交互和测试的过程。\nEnglish Summary\nSimon Willison has released version 0.1 of llm-meta-ai. This tool enables users to run prompts against Meta's newly released muse-spark-1.1 model using LLMs. This release introduces a new utility designed to streamline the process of interacting with and testing Meta's latest AI model.\n🏷️ LLM, Meta AI, Muse Spark, API\n \n15. llm 0.31.1 发布：修复 OpenAI Chat Completion 工具调用错误\nllm 0.31.1 — simonwillison.net · 11 小时前 · ⭐ 22/30\n中文摘要\nSimon Willison 发布了 llm 工具的 0.31.1 版本。此次更新主要修复了一个在 OpenAI Chat Completion 接口中存在的 bug，该 bug 可能导致当工具调用包含空参数时，某些提供商返回 JSON 错误。此修复是在测试 llm-meta-ai 工具时发现并解决的。\nEnglish Summary\nSimon Willison has released version 0.31.1 of the llm tool. This update primarily addresses a bug in OpenAI Chat Completion endpoints where a tool call with empty arguments could result in a JSON error from some providers. This fix was identified and resolved during testing of the llm-meta-ai tool.\n🏷️ LLM, OpenAI, tool call, bug fix\n \n生成于 2026-07-10 03:56 | 扫描 83 源 → 获取 2491 篇 → 精选 15 篇\n基于 Hacker News Popularity Contest 2025 RSS 源列表，由 Andrej Karpathy 推荐"</script>
   <script>
     const text = JSON.parse(document.getElementById('speech-text').textContent);
     const statusEl = document.getElementById('status');
