@@ -52,199 +52,201 @@
   <main class="shell">
     <article class="card">
       <p>🎧 <a href="https://lingnanren.github.io/ai-daily-digest/listen.html">点这里朗读今日日报</a></p>
-<h1>📰 AI 博客每日精选 — 2026-07-11</h1>
+<h1>📰 AI 博客每日精选 — 2026-07-12</h1>
 <blockquote>来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15</blockquote>
 <h2>📝 今日看点</h2>
-<p>今日技术看点聚焦AI领域的新进展与争议。OpenAI更新ChatGPT Mac应用，并发布了基于Codex的新桌面版，同时LLM工具也迎来版本更新，进一步优化了模型调用和集成。然而，AI伦理的讨论仍在继续，关于“机器人权利”的幻想被批判，苹果也对OpenAI提起诉讼，指控其窃取商业机密，显示出AI技术发展与法律、伦理的复杂交织。</p>
+<p>今日技术看点聚焦人工智能的快速演进与安全边界的探索。ChatGPT 的“超级应用”模式引发热议，其功能整合与用户体验设计褒贬不一，同时 OpenAI 的人才挖角事件也揭示了科技巨头间激烈的竞争态势。此外，增强现实眼镜的落地挑战与数字自主性的政策转向，预示着技术发展正面临新的伦理与实践考量。</p>
 <hr>
 <h2>🏆 今日必读</h2>
-<p>🥇 <strong>llm 0.31.1 版本发布：修复工具调用中的 JSON 错误</strong></p>
-<p><a href="https://simonwillison.net/2026/Jul/9/gpt-5-6/#atom-everything">The new GPT-5.6 family: Luna, Terra, Sol</a> — simonwillison.net · 1 天前 · 🤖 AI / ML</p>
+<p>🥇 <strong>OpenAI 帮助中心解释 ChatGPT 新功能的问题</strong></p>
+<p><a href="https://www.threads.com/@alexheath/post/DaoI2jaEioX">Ice Cold</a> — daringfireball.net · 1 天前 · 🔒 安全</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>llm 命令行工具发布了 0.31.1 版本，主要修复了一个影响 OpenAI Chat Completion API 的 bug。该 bug 表现为当工具调用包含空参数时，部分提供商会返回 JSON 错误。此修复是在测试 llm-meta-ai 项目时发现并解决的。</blockquote>
+<blockquote>OpenAI 帮助中心发布了关于 ChatGPT 新功能“Work”和“Codex”的说明。Work 功能可在 ChatGPT 网页、移动端及桌面应用中使用，桌面应用版本支持本地文件访问。文章指出，云端 Work 对话不会出现在桌面应用中，且桌面应用的线程和本地文件将保留在本地。Codex 功能的可用性也得到了提及。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>The llm command-line tool has released version 0.31.1, primarily addressing a bug with OpenAI Chat Completion endpoints. This bug caused JSON errors from some providers when a tool call included empty arguments. The fix was identified and implemented during testing of the llm-meta-ai project.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 了解 llm 工具的最新修复，特别是针对 OpenAI API 集成的改进。</p>
-<p>💡 <strong>Why read it</strong>: Stay updated on the latest llm tool fixes, particularly improvements for OpenAI API integrations.</p>
-<p>🏷️ GPT-5.6, OpenAI, LLM, pricing</p>
-<p>🥈 <strong>整数变化的神秘案例：代码生成无影响</strong></p>
-<p><a href="https://simonwillison.net/2026/Jul/9/muse-spark-1-1/#atom-everything">Introducing Muse Spark 1.1</a> — simonwillison.net · 1 天前 · 🤖 AI / ML</p>
+<blockquote>OpenAI's Help Center clarifies the functionality of its new ChatGPT features, 'Work' and 'Codex'. The 'Work' feature is available on the ChatGPT web, mobile, and desktop apps, with the desktop version supporting local file access. The article notes that cloud Work conversations do not appear in the desktop app, and desktop threads and local files remain on the local machine. The availability of Codex is also mentioned.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 了解 OpenAI ChatGPT 新功能的工作方式和限制，特别是“Work”和“Codex”的部署细节。</p>
+<p>💡 <strong>Why read it</strong>: Understand the operational details and limitations of OpenAI's new ChatGPT features, 'Work' and 'Codex'.</p>
+<p>🏷️ Apple, OpenAI, trade secrets, lawsuit</p>
+<p>🥈 <strong>“Squircle Jail”与触屏 Mac 无关</strong></p>
+<p><a href="https://x.com/drewpusateri/status/2075708238650089981">‘No Interest’</a> — daringfireball.net · 23 小时前 · 🔒 安全</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>本文探讨了一个关于整数值在代码生成过程中出现神秘变化的案例。尽管代码表面上没有直接修改整数的逻辑，但观察到的变化引发了对底层编译器优化或运行时行为的疑问。文章旨在揭示这些看似微小的变化背后的原因。</blockquote>
+<blockquote>关于 macOS 中“Squircle Jail”的讨论，作者明确指出这并非为即将推出的触屏 MacBook 做准备。图标的视觉形状与其可点击或可触碰的区域无关。即使图标呈现为 Squircle（圆角方形），其周围的可交互区域形状也不会改变。文章回顾了过去 macOS 允许自定义应用图标的时代。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This post investigates a peculiar case of mysterious integer value changes during code generation. Despite no apparent direct modification of integer logic in the code, the observed alterations raise questions about underlying compiler optimizations or runtime behavior. The article aims to uncover the reasons behind these seemingly minor discrepancies.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 深入了解编译器行为和代码优化的细微之处，以及它们如何影响看似简单的整数操作。</p>
-<p>💡 <strong>Why read it</strong>: Delve into the intricacies of compiler behavior and code optimization, and how they can subtly affect seemingly straightforward integer operations.</p>
-<p>🏷️ Muse Spark, Meta AI, API, LLM</p>
-<p>🥉 <strong>包管理如同组织架构图</strong></p>
-<p><a href="https://www.nytimes.com/2026/07/08/technology/meta-instagram-ai.html?unlocked_article_code=1.wVA.Q5Do.Uvg5yPwCEB5H">Meta Sets Default for Instagram Accounts to Permit Content Reuse by AI</a> — daringfireball.net · 1 天前 · 🤖 AI / ML</p>
+<blockquote>Addressing the 'Squircle Jail' on macOS, the author clarifies that it is unrelated to rumored upcoming touchscreen MacBooks. The visual shape of an app icon is distinct from its clickable or tappable area. Rendering an icon as a squircle does not alter the shape of its interactive target region. The piece also briefly touches upon macOS's past allowance for custom app icons.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 澄清 macOS 中图标形状变化（Squircle）与触屏 Mac 传闻之间的误解。</p>
+<p>💡 <strong>Why read it</strong>: Clarifies the misconception linking macOS icon shape changes (Squircle) to rumors of touchscreen Macs.</p>
+<p>🏷️ OpenAI, trade secrets, lawsuit, innovation</p>
+<p>🥉 <strong>引用 Nilay Patel：增强现实眼镜的挑战</strong></p>
+<p><a href="https://www.gilesthomas.com/2026/07/llm-parameter-counts">Building intuition about LLM parameter counts</a> — gilesthomas.com · 1 天前 · 🤖 AI / ML</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>文章将包管理的设计类比为组织架构图，并应用了康威定律。康威定律指出，系统设计会反映组织沟通结构。在包管理领域，这意味着依赖关系和模块划分的设计会受到开发团队结构的影响。这种视角有助于理解和优化包管理系统的设计。</blockquote>
+<blockquote>Nilay Patel 指出，制作增强现实（AR）眼镜的核心挑战在于需要将摄像头置于用户眼前，持续记录并处理所见内容以叠加信息。他强调目前没有其他替代方案，也缺乏足够强大且节能的芯片能集成在眼镜镜腿中实时完成此任务。因此，数据必须发送到云端进行处理。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This article draws an analogy between package management design and organizational charts, applying Conway's Law. Conway's Law states that system design mirrors the communication structure of the organization. In package management, this implies that the design of dependency relationships and module divisions is influenced by the development team's structure, offering a new perspective for understanding and optimizing these systems.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 从组织结构的角度理解包管理的设计原则，为构建更有效的依赖管理系统提供新思路。</p>
-<p>💡 <strong>Why read it</strong>: Understand package management design principles through the lens of organizational structure, offering new insights for building more effective dependency management systems.</p>
-<p>🏷️ Meta, Instagram, AI, content reuse</p>
+<blockquote>Nilay Patel highlights that creating augmented reality (AR) glasses necessitates placing a camera next to the user's eyes to continuously record and process visual input for overlaying information. He asserts there's no alternative and no sufficiently powerful yet power-efficient chip can fit in the glasses' stem for real-time processing. Consequently, data must be sent to the cloud.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 深入理解构建真正 AR 眼镜的技术瓶颈和数据处理需求。</p>
+<p>💡 <strong>Why read it</strong>: Gain insight into the technical bottlenecks and data processing requirements for building true AR glasses.</p>
+<p>🏷️ LLM, parameter counts, intuition</p>
 <hr>
 <h2>📊 数据概览</h2>
-<table><thead><tr><th>扫描源</th><th>抓取文章</th><th>时间范围</th><th>精选</th></tr></thead><tbody><tr><td>82/92</td><td>2468 篇 → 34 篇</td><td>48h</td><td><strong>15 篇</strong></td></tr></tbody></table>
+<table><thead><tr><th>扫描源</th><th>抓取文章</th><th>时间范围</th><th>精选</th></tr></thead><tbody><tr><td>84/92</td><td>2518 篇 → 35 篇</td><td>48h</td><td><strong>15 篇</strong></td></tr></tbody></table>
 <h3>分类分布</h3>
 <div class="code-wrap"><div class="code-title">mermaid</div><pre><code>pie showData
     title "文章分类分布"
-    "🤖 AI / ML" : 5
-    "⚙️ 工程" : 5
-    "🛠 工具 / 开源" : 4
-    "💡 观点 / 杂谈" : 1</code></pre></div>
+    "🤖 AI / ML" : 4
+    "💡 观点 / 杂谈" : 4
+    "🔒 安全" : 3
+    "🛠 工具 / 开源" : 3
+    "⚙️ 工程" : 1</code></pre></div>
 <h3>高频关键词</h3>
 <div class="code-wrap"><div class="code-title">mermaid</div><pre><code>xychart-beta horizontal
     title "高频关键词"
-    x-axis ["openai", "llm", "apple", "meta ai", "lawsuit", "trade secrets", "gpt-5.6", "pricing", "muse spark", "api", "meta", "instagram"]
-    y-axis "出现次数" 0 --&gt; 7
-    bar [5, 5, 3, 2, 2, 2, 1, 1, 1, 1, 1, 1]</code></pre></div>
+    x-axis ["openai", "apple", "trade secrets", "lawsuit", "chatgpt", "innovation", "llm", "parameter counts", "intuition", "ai", "intelligence", "reality"]
+    y-axis "出现次数" 0 --&gt; 6
+    bar [4, 3, 3, 3, 3, 1, 1, 1, 1, 1, 1, 1]</code></pre></div>
 <div class="details">
 <p class="summary">📈 纯文本关键词图（终端友好）</p>
-<div class="code-wrap"><pre><code>openai        │ ████████████████████ 5
-llm           │ ████████████████████ 5
-apple         │ ████████████░░░░░░░░ 3
-meta ai       │ ████████░░░░░░░░░░░░ 2
-lawsuit       │ ████████░░░░░░░░░░░░ 2
-trade secrets │ ████████░░░░░░░░░░░░ 2
-gpt-5.6       │ ████░░░░░░░░░░░░░░░░ 1
-pricing       │ ████░░░░░░░░░░░░░░░░ 1
-muse spark    │ ████░░░░░░░░░░░░░░░░ 1
-api           │ ████░░░░░░░░░░░░░░░░ 1</code></pre></div>
+<div class="code-wrap"><pre><code>openai           │ ████████████████████ 4
+apple            │ ███████████████░░░░░ 3
+trade secrets    │ ███████████████░░░░░ 3
+lawsuit          │ ███████████████░░░░░ 3
+chatgpt          │ ███████████████░░░░░ 3
+innovation       │ █████░░░░░░░░░░░░░░░ 1
+llm              │ █████░░░░░░░░░░░░░░░ 1
+parameter counts │ █████░░░░░░░░░░░░░░░ 1
+intuition        │ █████░░░░░░░░░░░░░░░ 1
+ai               │ █████░░░░░░░░░░░░░░░ 1</code></pre></div>
 </div>
 <h3>🏷️ 话题标签</h3>
-<p><strong>openai</strong>(5) · <strong>llm</strong>(5) · <strong>apple</strong>(3) · meta ai(2) · lawsuit(2) · trade secrets(2) · gpt-5.6(1) · pricing(1) · muse spark(1) · api(1) · meta(1) · instagram(1) · ai(1) · content reuse(1) · parameter counts(1) · gpt-2(1) · intuition(1) · drones(1) · wifi(1) · rf sensing(1)</p>
+<p><strong>openai</strong>(4) · <strong>apple</strong>(3) · <strong>trade secrets</strong>(3) · lawsuit(3) · chatgpt(3) · innovation(1) · llm(1) · parameter counts(1) · intuition(1) · ai(1) · intelligence(1) · reality(1) · hard takeoff(1) · sqlite-utils(1) · release(1) · python(1) · super app(1) · user experience(1) · recruiting(1) · package management(1)</p>
 <hr>
 <h2>🤖 AI / ML</h2>
-<h3>1. llm 0.31.1 版本发布：修复工具调用中的 JSON 错误</h3>
-<p><a href="https://simonwillison.net/2026/Jul/9/gpt-5-6/#atom-everything">The new GPT-5.6 family: Luna, Terra, Sol</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 27/30</p>
+<h3>1. 引用 Nilay Patel：增强现实眼镜的挑战</h3>
+<p><a href="https://www.gilesthomas.com/2026/07/llm-parameter-counts">Building intuition about LLM parameter counts</a> — <strong>gilesthomas.com</strong> · 1 天前 · ⭐ 26/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>llm 命令行工具发布了 0.31.1 版本，主要修复了一个影响 OpenAI Chat Completion API 的 bug。该 bug 表现为当工具调用包含空参数时，部分提供商会返回 JSON 错误。此修复是在测试 llm-meta-ai 项目时发现并解决的。</blockquote>
+<blockquote>Nilay Patel 指出，制作增强现实（AR）眼镜的核心挑战在于需要将摄像头置于用户眼前，持续记录并处理所见内容以叠加信息。他强调目前没有其他替代方案，也缺乏足够强大且节能的芯片能集成在眼镜镜腿中实时完成此任务。因此，数据必须发送到云端进行处理。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>The llm command-line tool has released version 0.31.1, primarily addressing a bug with OpenAI Chat Completion endpoints. This bug caused JSON errors from some providers when a tool call included empty arguments. The fix was identified and implemented during testing of the llm-meta-ai project.</blockquote>
-<p>🏷️ GPT-5.6, OpenAI, LLM, pricing</p>
+<blockquote>Nilay Patel highlights that creating augmented reality (AR) glasses necessitates placing a camera next to the user's eyes to continuously record and process visual input for overlaying information. He asserts there's no alternative and no sufficiently powerful yet power-efficient chip can fit in the glasses' stem for real-time processing. Consequently, data must be sent to the cloud.</blockquote>
+<p>🏷️ LLM, parameter counts, intuition</p>
 <hr>
-<h3>2. 整数变化的神秘案例：代码生成无影响</h3>
-<p><a href="https://simonwillison.net/2026/Jul/9/muse-spark-1-1/#atom-everything">Introducing Muse Spark 1.1</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 25/30</p>
+<h3>2. 如何获取“ChatGPT Classic”</h3>
+<p><a href="https://geohot.github.io//blog/jekyll/update/2026/07/11/ai-2040.html">AI 2040 and the Cult of Intelligence</a> — <strong>geohot.github.io</strong> · 20 小时前 · ⭐ 25/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>本文探讨了一个关于整数值在代码生成过程中出现神秘变化的案例。尽管代码表面上没有直接修改整数的逻辑，但观察到的变化引发了对底层编译器优化或运行时行为的疑问。文章旨在揭示这些看似微小的变化背后的原因。</blockquote>
+<blockquote>OpenAI 帮助中心提供了关于如何从旧版 Mac 应用升级到新版“超级”应用（包含 Chat、Work 和 Codex 功能）的说明。用户只需按照应用内的提示下载新版 ChatGPT 桌面应用并登录同一账户。新应用可能与旧应用并行安装，届时用户可同时使用“ChatGPT”（新版）和“ChatGPT Classic”（旧版）。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This post investigates a peculiar case of mysterious integer value changes during code generation. Despite no apparent direct modification of integer logic in the code, the observed alterations raise questions about underlying compiler optimizations or runtime behavior. The article aims to uncover the reasons behind these seemingly minor discrepancies.</blockquote>
-<p>🏷️ Muse Spark, Meta AI, API, LLM</p>
+<blockquote>OpenAI's Help Center explains how to upgrade from the older Mac app to the new 'super' app version, which includes Chat, Work, and Codex. Users are prompted within the app to download the new ChatGPT desktop app and sign in with their existing account. The new app may install alongside the current one, allowing users to access both 'ChatGPT' (new) and 'ChatGPT Classic' (old) if both remain installed.</blockquote>
+<p>🏷️ AI, intelligence, reality, hard takeoff</p>
 <hr>
-<h3>3. 包管理如同组织架构图</h3>
-<p><a href="https://www.nytimes.com/2026/07/08/technology/meta-instagram-ai.html?unlocked_article_code=1.wVA.Q5Do.Uvg5yPwCEB5H">Meta Sets Default for Instagram Accounts to Permit Content Reuse by AI</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 25/30</p>
+<h3>3. OpenAI 帮助中心介绍新版 ChatGPT 的“Work”功能</h3>
+<p><a href="https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex">OpenAI Help Center Describes What Is Wrong With the New ChatGPT</a> — <strong>daringfireball.net</strong> · 5 小时前 · ⭐ 22/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>文章将包管理的设计类比为组织架构图，并应用了康威定律。康威定律指出，系统设计会反映组织沟通结构。在包管理领域，这意味着依赖关系和模块划分的设计会受到开发团队结构的影响。这种视角有助于理解和优化包管理系统的设计。</blockquote>
+<blockquote>OpenAI 帮助中心详细介绍了其新版 ChatGPT 中新增的“Work”功能。该功能可在 ChatGPT 的网页版、移动版以及桌面应用中使用，适用于符合条件的付费用户。桌面应用中的“Work”功能还可以访问本地文件和桌面应用，但需要用户授权。目前，云端和桌面端的“Work”对话记录不互通。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This article draws an analogy between package management design and organizational charts, applying Conway's Law. Conway's Law states that system design mirrors the communication structure of the organization. In package management, this implies that the design of dependency relationships and module divisions is influenced by the development team's structure, offering a new perspective for understanding and optimizing these systems.</blockquote>
-<p>🏷️ Meta, Instagram, AI, content reuse</p>
+<blockquote>The OpenAI Help Center details the new 'Work' feature in ChatGPT, available on web, mobile, and desktop for eligible paid plans. The desktop version allows access to local files and apps with user permission. Currently, cloud and desktop 'Work' conversations are not synchronized.</blockquote>
+<p>🏷️ ChatGPT, Work, features</p>
 <hr>
-<h3>4. 圆角图标（Squircle）的强制使用并非针对触屏Mac</h3>
-<p><a href="https://www.gilesthomas.com/2026/07/llm-parameter-counts">Building intuition about LLM parameter counts</a> — <strong>gilesthomas.com</strong> · 5 小时前 · ⭐ 24/30</p>
+<h3>4. 如何获取“ChatGPT Classic”版本</h3>
+<p><a href="https://help.openai.com/en/articles/20001276-moving-to-the-new-chatgpt-desktop-app">Can Someone Explain to Me How to Get ‘ChatGPT Classic’?</a> — <strong>daringfireball.net</strong> · 4 小时前 · ⭐ 21/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>文章反驳了将macOS强制使用圆角图标（Squircle）与传闻中的触屏MacBook联系起来的观点。作者强调，图标的可见形状与其可点击区域无关，渲染圆角并不会改变图标周围的可交互目标区域。因此，强制使用圆角图标并非为触屏操作做准备，而是独立的UI设计决策。</blockquote>
+<blockquote>OpenAI 帮助中心提供了一个指南，解释如何从旧版 Mac 应用升级到新的“超级”应用版本。用户只需按照应用内的提示下载新的 ChatGPT 桌面应用，并使用相同的 ChatGPT 账户登录即可。新应用可能与旧应用并存，届时用户将看到“ChatGPT”（新版）和“ChatGPT Classic”（旧版）。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This article refutes the notion that macOS's mandatory use of squircle icons is a concession to rumored touchscreen MacBooks. The author emphasizes that an icon's visible shape is distinct from its clickable area, and rendering a squircle does not alter the interactive target region around it. Therefore, the mandate for squircle icons is an independent UI design decision, not a preparation for touch interaction.</blockquote>
-<p>🏷️ LLM, parameter counts, GPT-2, intuition</p>
-<hr>
-<h3>5. Pluralistic：关于“机器人权利”和人工智能奴隶制的幻想（2026年7月10日）</h3>
-<p><a href="https://pluralistic.net/2026/07/10/posthuman-as-in-no-humans/">Pluralistic: "Rights for robots" and the AI slavery fantasy (10 Jul 2026)</a> — <strong>pluralistic.net</strong> · 17 小时前 · ⭐ 22/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>这篇链接合集探讨了“机器人权利”以及人工智能奴隶制的幻想话题。文章引用了“当我们是埃及的机器人时…”等内容，并包含“令人愉悦的享受”、“物体恒存性”以及“娱乐行业的尴尬问题”。此外，还涉及了 ISP 与唱片公司之间的“死刑”争议、迪士尼乐园“Splash Mountain”的“出柜”事件、负利率的瑞士债券以及“我们现在玩得开心吗？”等多个议题。作者还预告了即将到来的伦敦、爱丁堡等地的演讲活动。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>This collection of links explores the topics of "robot rights" and the fantasy of AI slavery. It references phrases like "When we were robots in Egypt..." and includes sections on "Delights to delectate" and "Object permanence: Awkward questions for the entertainment industry." Additionally, it touches upon the ISP vs. record label "death penalty" debate, "coming out" on Splash Mountain, negative Swiss bond yields, and "Are We Having Fun Yet?". The author also announces upcoming appearances in London, Edinburgh, and other cities.</blockquote>
-<p>🏷️ AI rights, robot ethics, AI slavery</p>
-<hr>
-<h2>⚙️ 工程</h2>
-<h3>6. “机器人权利”与AI奴役幻想</h3>
-<p><a href="https://www.threads.com/@alexheath/post/DaoI2jaEioX">Ice Cold</a> — <strong>daringfireball.net</strong> · 7 分钟前 · ⭐ 24/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>文章批判了“机器人权利”的讨论，认为其背后隐藏着对AI奴役的幻想。作者认为，将AI类比为需要权利的实体，忽视了AI的本质是工具，并且这种讨论可能转移了对当前AI伦理问题（如数据偏见、失业）的关注。文章还提及了其他一些链接内容，涵盖了娱乐产业、ISP与唱片公司、以及作者的近期活动。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>This article critiques the discourse around 'robot rights,' arguing it masks a fantasy of AI enslavement. The author contends that likening AI to entities requiring rights overlooks AI's nature as a tool and potentially distracts from pressing AI ethical issues like data bias and job displacement. The post also includes various other links covering the entertainment industry, ISPs versus record labels, and the author's recent activities.</blockquote>
-<p>🏷️ Apple, OpenAI, lawsuit, trade secrets</p>
-<hr>
-<h3>7. 苹果起诉 OpenAI 及前员工，指控窃取商业机密</h3>
-<p><a href="https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/">Apple Sues OpenAI, io, and Former Employees, Alleging Theft of Trade Secrets</a> — <strong>daringfireball.net</strong> · 6 小时前 · ⭐ 24/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>苹果公司已提起诉讼，指控 OpenAI 和 io Products 窃取商业机密，并列出了包括前苹果高管 Tang Tan 和 Chang Liu 在内的多名被告。Tang Tan 曾是 iPhone 和 Apple Watch 产品设计的领导者，而 Chang Liu 是前高级系统电气工程师，两人均已离职加入 OpenAI。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Apple has filed a lawsuit accusing OpenAI and io Products of trade secret theft, naming former Apple executives Tang Tan and Chang Liu as defendants. Tan led iPhone and Apple Watch design, while Liu was a senior systems electrical engineer before joining OpenAI.</blockquote>
-<p>🏷️ Apple, OpenAI, lawsuit, trade secrets</p>
-<hr>
-<h3>8. 整数的神秘变化：代码生成无影响的案例</h3>
-<p><a href="https://devblogs.microsoft.com/oldnewthing/20260710-00/?p=112514">The case of the mysterious changes to integers when there shouldn’t have been any code generation effect</a> — <strong>devblogs.microsoft.com/oldnewthing</strong> · 13 小时前 · ⭐ 22/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>本文深入探讨了一个令人费解的编程问题，即在没有代码生成的情况下，整数值为何会发生神秘变化。作者旨在揭示这些整数的来源，并分析其背后的根本原因。文章详细阐述了这一现象的发生过程，并提供了相关的技术解释。这是一个关于软件开发中细微但重要问题的案例研究。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>This article delves into a perplexing programming issue where integers mysteriously change without any apparent code generation effect. The author aims to uncover the origin of these integer shifts and analyze the underlying causes. It details the phenomenon and provides technical explanations. This serves as a case study on subtle yet significant aspects of software development.</blockquote>
-<p>🏷️ compiler, integers, code generation</p>
-<hr>
-<h3>9. 包管理如同组织结构图</h3>
-<p><a href="https://nesbitt.io/2026/07/10/package-management-as-org-chart.html">Package Management as Org Chart</a> — <strong>nesbitt.io</strong> · 17 小时前 · ⭐ 22/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>本文将康威定律应用于依赖管理的设计。文章通过类比组织结构图的方式，阐述了包管理系统内部的结构如何反映其开发团队的沟通结构。它探讨了如何通过优化包管理的设计来改善开发流程和团队协作。理解这种联系有助于构建更高效、更易于维护的软件系统。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>This article applies Conway's Law to dependency management designs. It uses an analogy of an organizational chart to explain how the internal structure of package management systems reflects their development team's communication structure. It explores how optimizing package management design can improve development processes and team collaboration. Understanding this connection helps in building more efficient and maintainable software systems.</blockquote>
-<p>🏷️ package management, Conway's Law, dependencies</p>
-<hr>
-<h3>10. Squircle 边框并非（或至少不应是）关于即将推出的触屏 Mac</h3>
-<p><a href="https://daringfireball.net/2026/07/whats_good_for_the_ios_goose_is_often_not_good_for_the_macos_gander">Squircle Jail Isn’t (Or at Least Shouldn’t Be) About Upcoming Touchscreen Macs</a> — <strong>daringfireball.net</strong> · 1 小时前 · ⭐ 21/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>本文是对 macOS 中 squircle 边框的进一步探讨。作者指出，读者最常问的问题是：强制使用 squircle 是否是为了迎合传闻中的新款触屏 MacBook？答案是否定的。文章解释说，应用程序图标的可见形状与其可点击或可触碰的区域无关。渲染 squircle 形状并不会改变图标周围可交互区域的形状。作者还回顾了 macOS 过去允许自定义图标的时代。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>This article provides further follow-up on the squircle jail on macOS. The most frequently asked question from readers is whether mandating the squircle is a concession to the rumored upcoming touchscreen MacBooks. The answer is no. The article explains that the visible shape of an app icon is unrelated to its clickable or tappable area. Rendering a squircle does not change the shape of the clickable/tappable target area around an icon. It also references the past when macOS allowed custom app icons.</blockquote>
-<p>🏷️ macOS, app icons, UI design, touchscreen Mac</p>
-<hr>
-<h2>🛠 工具 / 开源</h2>
-<h3>11. QuadRF：一款能穿墙探测无人机和 WiFi 的雷达设备</h3>
-<p><a href="https://www.jeffgeerling.com/blog/2026/quadrf-can-spot-drones-and-see-wifi-through-my-wall/">QuadRF can spot drones and see WiFi through my wall</a> — <strong>jeffgeerling.com</strong> · 13 小时前 · ⭐ 24/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>QuadRF 是一款基于 Raspberry Pi 5 和 FPGA 板的相控阵雷达，具备皮秒级时间精度，可进行高级信号处理和波束成形。该设备能够穿透墙壁探测 WiFi 信号，并追踪无人机，展示了其在无线信号侦测和分析方面的强大能力。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>The QuadRF is a phased-array radar built around a Raspberry Pi 5 and an FPGA board with picosecond-level timing, capable of advanced signal processing and beamforming. It can detect WiFi through walls and track drones, showcasing powerful capabilities in radio signal detection and analysis.</blockquote>
-<p>🏷️ drones, WiFi, RF sensing</p>
-<hr>
-<h3>12. OpenAI 更新 ChatGPT Mac 应用，引入 Codex 作为新桌面版</h3>
-<p><a href="https://9to5mac.com/2026/07/09/openai-announcing-the-next-chapter-for-chatgpt-today-watch-here/">Today’s the Day OpenAI Fucked Up the ChatGPT Mac App</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 24/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>OpenAI 今日更新了 ChatGPT Mac 应用，将现有应用重命名为 ChatGPT Classic。新的 ChatGPT 桌面应用基于 Codex 构建，并命名为 ChatGPT，同时提供 ChatGPT Work 和 ChatGPT Codex 两种模式，后者能显示更多技术细节。新应用与 Codex 共享插件功能。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>OpenAI has updated its ChatGPT Mac app, renaming the existing version to ChatGPT Classic. The new ChatGPT desktop app is built on Codex and is now called ChatGPT, featuring both ChatGPT Work and ChatGPT Codex modes, with the latter offering more technical details. The new app shares plugin functionality with Codex.</blockquote>
-<p>🏷️ ChatGPT, Mac App, OpenAI, Codex</p>
-<hr>
-<h3>13. 发布 llm-meta-ai 0.1：使用 LLM 对 Muse Spark 1.1 模型运行提示</h3>
-<p><a href="https://simonwillison.net/2026/Jul/9/llm-meta-ai/#atom-everything">llm-meta-ai 0.1</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 23/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>发布了 llm-meta-ai 0.1 版本，该工具允许用户使用 LLM 对 Meta 新发布的 muse-spark-1.1 模型运行提示。这为开发者提供了一个便捷的接口，以测试和利用 Muse Spark 1.1 的能力。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>The release of llm-meta-ai 0.1 allows users to run prompts against Meta's newly released muse-spark-1.1 model using LLMs. This provides a convenient interface for developers to test and leverage the capabilities of Muse Spark 1.1.</blockquote>
-<p>🏷️ llm-meta-ai, Meta AI, LLM, Python</p>
-<hr>
-<h3>14. llm 0.31.1 版本发布</h3>
-<p><a href="https://simonwillison.net/2026/Jul/9/llm/#atom-everything">llm 0.31.1</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 23/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>本次 llm 版本更新至 0.31.1。主要修复了 OpenAI Chat Completion 接口的一个 bug。该 bug 导致当工具调用包含空参数时，部分提供商可能会返回 JSON 错误。此问题在测试 llm-meta-ai 时被发现并解决。这次更新确保了工具调用参数的正确处理，提升了 llm 的稳定性。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>This release updates llm to version 0.31.1. It primarily fixes a bug with OpenAI Chat Completion endpoints. The issue caused JSON errors from some providers when a tool call had empty arguments. This bug was discovered and resolved during testing of llm-meta-ai. The update ensures correct handling of tool call arguments, improving llm's stability.</blockquote>
-<p>🏷️ llm, OpenAI, tool call, bug fix</p>
+<blockquote>OpenAI's Help Center provides instructions on upgrading from the old Mac app to the new 'super' app version. Users are guided to download the new ChatGPT desktop app and sign in with their existing account. The new app may install alongside the old one, allowing users to access both 'ChatGPT' (new) and 'ChatGPT Classic' (old).</blockquote>
+<p>🏷️ ChatGPT, desktop app, upgrade</p>
 <hr>
 <h2>💡 观点 / 杂谈</h2>
-<h3>15. 约翰·特努斯应扭转苹果在广告领域的下滑趋势</h3>
-<p><a href="https://daringfireball.net/2026/07/ternus_apple_slippery_slope">★ John Ternus Should Reverse Apple’s Slide Down the Advertising Slippery Slope</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 23/30</p>
+<h3>5. Benedict Evans 评论新的“超级应用”ChatGPT</h3>
+<p><a href="https://www.threads.com/@benedictevans/post/Dano_uvDr8F">Benedict Evans on the New ‘Super App’ ChatGPT</a> — <strong>daringfireball.net</strong> · 5 小时前 · ⭐ 24/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>文章认为，苹果在 2014 年发布的隐私信函之所以具有说服力，不仅在于其清晰的语言，更在于当时苹果并未通过广告盈利，用户无需对其隐私承诺产生怀疑。作者呼吁现任高管约翰·特努斯（John Ternus）应阻止苹果在广告业务上越滑越远。</blockquote>
+<blockquote>Benedict Evans 认为新的 ChatGPT 应用是一个“彻底的混乱”。他指出了界面设计上的诸多问题，如项目、任务和聊天之间的界限不清，以及不一致的 UI 元素（如聊天窗口的浮动设计）。他还批评了插件和模板的混淆以及设置流程的强制性要求。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>The author argues that Apple's 2014 privacy letter was credible not just for its clear language, but because Apple did not profit from ads then, making its privacy promises trustworthy. The piece calls on current executive John Ternus to reverse Apple's slide down the advertising slippery slope.</blockquote>
-<p>🏷️ Apple, advertising, privacy, Tim Cook</p>
+<blockquote>Benedict Evans describes the new ChatGPT 'Super App' as a "total mess," highlighting significant UI/UX issues. He questions the unclear distinctions between projects, tasks, and chats, the inconsistent design of floating windows for chats, and the confusing integration of plugins and templates. The setup process's mandatory requirements are also criticized.</blockquote>
+<p>🏷️ ChatGPT, super app, user experience</p>
 <hr>
-<p>*生成于 2026-07-11 03:21 | 扫描 82 源 → 获取 2468 篇 → 精选 15 篇* *基于 <a href="https://refactoringenglish.com/tools/hn-popularity/">Hacker News Popularity Contest 2025</a> RSS 源列表，由 <a href="https://x.com/karpathy">Andrej Karpathy</a> 推荐*</p>
+<h3>6. Gurman 报道苹果与 OpenAI 的法律纠纷细节</h3>
+<p><a href="https://www.bloomberg.com/news/articles/2026-07-11/openai-engineer-s-lol-moment-set-stage-for-legal-fight-with-apple">Gurman on Tang Tan and Paul Meade</a> — <strong>daringfireball.net</strong> · 9 小时前 · ⭐ 24/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Mark Gurman 报道称，苹果对 OpenAI 挖角其硬件和设计领导者感到震惊，这种行为持续到 2026 年 6 月，甚至挖走了苹果的智能眼镜负责人。该负责人被迅速解雇，未获得过渡期。此举被认为是导致苹果起诉 OpenAI 的导火索之一。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Mark Gurman reports that Apple was alarmed by OpenAI's recruitment of its hardware and design leaders, a practice that continued as recently as June 2026, including poaching Apple's smart glasses chief. This executive was quickly dismissed without a transition period, reportedly contributing to Apple's decision to sue OpenAI.</blockquote>
+<p>🏷️ Apple, OpenAI, recruiting</p>
+<hr>
+<h3>7. Nilay Patel 关于增强现实眼镜的引述</h3>
+<p><a href="https://simonwillison.net/2026/Jul/10/nilay-patel/#atom-everything">Quoting Nilay Patel</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 22/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Nilay Patel 在引述中指出，制造增强现实眼镜的关键在于在用户眼前放置一个持续记录一切的摄像头。他强调，目前没有其他方法可以实现这一功能，并且没有足够强大且节能的芯片能够集成到眼镜腿中实时处理数据。因此，数据必须发送到云端进行处理。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Nilay Patel's quote highlights that creating augmented reality glasses requires a camera placed in front of the user's eyes to continuously record everything. He emphasizes that there is no alternative method and no chip powerful and energy-efficient enough to fit in the glasses' stem for real-time processing, necessitating cloud data transfer.</blockquote>
+<p>🏷️ AR glasses, privacy, cameras</p>
+<hr>
+<h3>8. 关于数字自主性的积极进展</h3>
+<p><a href="https://berthub.eu/articles/posts/goede-geluiden-over-digitale-autonomie/">Goede geluiden over digitale autonomie</a> — <strong>berthub.eu</strong> · 17 小时前 · ⭐ 21/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>尽管荷兰议会正处于休会期，政府的自动回复邮件却令人印象深刻，显示出其在数字自主性方面的积极态度。文章指出，近期有大量关于数字自主性的正面讨论和出版物出现，这标志着一种明显的转变。政府部门开始发布关于数字自主性的重要文本，并对其给予高度重视。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Despite the Dutch Parliament being in recess, government out-of-office replies are impressively robust, reflecting a positive stance on digital autonomy. The article notes a significant shift with recent publications and discussions highlighting digital autonomy. Government bodies are now issuing prominent texts on the subject, giving it considerable attention.</blockquote>
+<p>🏷️ digital autonomy, government, Netherlands</p>
+<hr>
+<h2>🔒 安全</h2>
+<h3>9. OpenAI 帮助中心解释 ChatGPT 新功能的问题</h3>
+<p><a href="https://www.threads.com/@alexheath/post/DaoI2jaEioX">Ice Cold</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 27/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>OpenAI 帮助中心发布了关于 ChatGPT 新功能“Work”和“Codex”的说明。Work 功能可在 ChatGPT 网页、移动端及桌面应用中使用，桌面应用版本支持本地文件访问。文章指出，云端 Work 对话不会出现在桌面应用中，且桌面应用的线程和本地文件将保留在本地。Codex 功能的可用性也得到了提及。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>OpenAI's Help Center clarifies the functionality of its new ChatGPT features, 'Work' and 'Codex'. The 'Work' feature is available on the ChatGPT web, mobile, and desktop apps, with the desktop version supporting local file access. The article notes that cloud Work conversations do not appear in the desktop app, and desktop threads and local files remain on the local machine. The availability of Codex is also mentioned.</blockquote>
+<p>🏷️ Apple, OpenAI, trade secrets, lawsuit</p>
+<hr>
+<h3>10. “Squircle Jail”与触屏 Mac 无关</h3>
+<p><a href="https://x.com/drewpusateri/status/2075708238650089981">‘No Interest’</a> — <strong>daringfireball.net</strong> · 23 小时前 · ⭐ 26/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>关于 macOS 中“Squircle Jail”的讨论，作者明确指出这并非为即将推出的触屏 MacBook 做准备。图标的视觉形状与其可点击或可触碰的区域无关。即使图标呈现为 Squircle（圆角方形），其周围的可交互区域形状也不会改变。文章回顾了过去 macOS 允许自定义应用图标的时代。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Addressing the 'Squircle Jail' on macOS, the author clarifies that it is unrelated to rumored upcoming touchscreen MacBooks. The visual shape of an app icon is distinct from its clickable or tappable area. Rendering an icon as a squircle does not alter the shape of its interactive target region. The piece also briefly touches upon macOS's past allowance for custom app icons.</blockquote>
+<p>🏷️ OpenAI, trade secrets, lawsuit, innovation</p>
+<hr>
+<h3>11. 关于数字自主性的积极信号</h3>
+<p><a href="https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/">Apple Sues OpenAI, io, and Former Employees, Alleging Theft of Trade Secrets</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 25/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>尽管荷兰议会正值休会期，但政府部门发布的官方自动回复中，关于数字自主性的积极表述引人注目。文章指出，在经历了十年的忽视后，政府出版物中出现了大量关于数字自主性的正面论述，显示出明显的政策转向。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Despite the Dutch Parliament being in recess, official out-of-office replies from government bodies are notably positive regarding digital autonomy. The article observes a significant shift, with government publications now featuring strong statements on digital autonomy after a decade of neglect, indicating a clear policy change.</blockquote>
+<p>🏷️ Apple, OpenAI, lawsuit, trade secrets</p>
+<hr>
+<h2>🛠 工具 / 开源</h2>
+<h3>12. sqlite-utils 4.1 发布</h3>
+<p><a href="https://simonwillison.net/2026/Jul/11/sqlite-utils/#atom-everything">sqlite-utils 4.1</a> — <strong>simonwillison.net</strong> · 3 小时前 · ⭐ 24/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>sqlite-utils 发布了 4.1 版本，这是继 4.0 版本几天后的首次小版本更新。新版本引入了多项小型新功能，包括 <code>sqlite-utils insert</code> 和 <code>sqlite-utils upsert</code> 命令现在支持 <code>--code</code> 选项，允许通过 Python 代码处理数据插入和更新。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>sqlite-utils has released version 4.1, a minor update following version 4.0 released a few days prior. This release introduces several small new features, notably the <code>--code</code> option for <code>sqlite-utils insert</code> and <code>sqlite-utils upsert</code> commands, enabling data insertion and updates via Python code.</blockquote>
+<p>🏷️ sqlite-utils, release, Python</p>
+<hr>
+<h3>13. 本周包管理动态：2026年7月11日</h3>
+<p><a href="https://nesbitt.io/2026/07/11/this-week-in-package-management.html">This Week in Package Management: 11 July 2026</a> — <strong>nesbitt.io</strong> · 17 小时前 · ⭐ 24/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>本周包管理领域发布了新的版本、安全公告和相关文章。内容涵盖了从各种包管理器生态系统中收集的最新动态。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>This week in package management features new releases, advisories, and articles from across the package management world, compiling the latest updates from various ecosystem.</blockquote>
+<p>🏷️ package management, releases, advisories</p>
+<hr>
+<h3>14. QuadRF：能够探测无人机并穿墙探测 WiFi</h3>
+<p><a href="https://www.jeffgeerling.com/blog/2026/quadrf-can-spot-drones-and-see-wifi-through-my-wall/">QuadRF can spot drones and see WiFi through my wall</a> — <strong>jeffgeerling.com</strong> · 1 天前 · ⭐ 23/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>QuadRF 是一款基于 Raspberry Pi 5 和 FPGA 板的相控阵雷达，能够进行高级信号处理和波束成形。该设备能够穿墙探测 WiFi 信号，并追踪无人机。其核心技术包括皮秒级的时间精度。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>The QuadRF is a phased-array radio built around a Raspberry Pi 5 and an FPGA board, capable of advanced signal processing and beamforming with picosecond-level timing. It can detect WiFi signals through walls and track drones.</blockquote>
+<p>🏷️ drones, WiFi, detection, QuadRF</p>
+<hr>
+<h2>⚙️ 工程</h2>
+<h3>15. Squircle 界面元素与触屏 Mac 的关系</h3>
+<p><a href="https://daringfireball.net/2026/07/whats_good_for_the_ios_goose_is_often_not_good_for_the_macos_gander">Squircle Jail Isn’t (Or at Least Shouldn’t Be) About Upcoming Touchscreen Macs</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 22/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>文章探讨了 macOS 中引入的“Squircle”界面元素，并澄清了其与传闻中即将推出的触屏 MacBook 的关系。作者指出，应用程序图标的视觉形状（如 Squircle）与其可点击或可触碰的区域是相互独立的。渲染成 Squircle 形状并不会改变图标周围可交互区域的大小。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>This article discusses the introduction of the 'Squircle' interface element in macOS and clarifies its relationship with rumored upcoming touchscreen MacBooks. The author explains that the visual shape of an app icon, like a Squircle, is independent of its clickable or tappable area, and rendering it as a Squircle does not alter the interactive region around the icon.</blockquote>
+<p>🏷️ macOS, squircle, app icons, touchscreen Mac</p>
+<hr>
+<p>*生成于 2026-07-12 03:33 | 扫描 84 源 → 获取 2518 篇 → 精选 15 篇* *基于 <a href="https://refactoringenglish.com/tools/hn-popularity/">Hacker News Popularity Contest 2025</a> RSS 源列表，由 <a href="https://x.com/karpathy">Andrej Karpathy</a> 推荐*</p>
     </article>
   </main>
-  <script id="speech-text" type="application/json">"🎧 点这里朗读今日日报\n📰 AI 博客每日精选 — 2026-07-11\n来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15\n📝 今日看点\n今日技术看点聚焦AI领域的新进展与争议。OpenAI更新ChatGPT Mac应用，并发布了基于Codex的新桌面版，同时LLM工具也迎来版本更新，进一步优化了模型调用和集成。然而，AI伦理的讨论仍在继续，关于“机器人权利”的幻想被批判，苹果也对OpenAI提起诉讼，指控其窃取商业机密，显示出AI技术发展与法律、伦理的复杂交织。\n \n🏆 今日必读\n🥇 llm 0.31.1 版本发布：修复工具调用中的 JSON 错误\nThe new GPT-5.6 family: Luna, Terra, Sol — simonwillison.net · 1 天前 · 🤖 AI / ML\n中文摘要\nllm 命令行工具发布了 0.31.1 版本，主要修复了一个影响 OpenAI Chat Completion API 的 bug。该 bug 表现为当工具调用包含空参数时，部分提供商会返回 JSON 错误。此修复是在测试 llm-meta-ai 项目时发现并解决的。\nEnglish Summary\nThe llm command-line tool has released version 0.31.1, primarily addressing a bug with OpenAI Chat Completion endpoints. This bug caused JSON errors from some providers when a tool call included empty arguments. The fix was identified and implemented during testing of the llm-meta-ai project.\n💡 为什么值得读: 了解 llm 工具的最新修复，特别是针对 OpenAI API 集成的改进。\n💡 Why read it: Stay updated on the latest llm tool fixes, particularly improvements for OpenAI API integrations.\n🏷️ GPT-5.6, OpenAI, LLM, pricing\n🥈 整数变化的神秘案例：代码生成无影响\nIntroducing Muse Spark 1.1 — simonwillison.net · 1 天前 · 🤖 AI / ML\n中文摘要\n本文探讨了一个关于整数值在代码生成过程中出现神秘变化的案例。尽管代码表面上没有直接修改整数的逻辑，但观察到的变化引发了对底层编译器优化或运行时行为的疑问。文章旨在揭示这些看似微小的变化背后的原因。\nEnglish Summary\nThis post investigates a peculiar case of mysterious integer value changes during code generation. Despite no apparent direct modification of integer logic in the code, the observed alterations raise questions about underlying compiler optimizations or runtime behavior. The article aims to uncover the reasons behind these seemingly minor discrepancies.\n💡 为什么值得读: 深入了解编译器行为和代码优化的细微之处，以及它们如何影响看似简单的整数操作。\n💡 Why read it: Delve into the intricacies of compiler behavior and code optimization, and how they can subtly affect seemingly straightforward integer operations.\n🏷️ Muse Spark, Meta AI, API, LLM\n🥉 包管理如同组织架构图\nMeta Sets Default for Instagram Accounts to Permit Content Reuse by AI — daringfireball.net · 1 天前 · 🤖 AI / ML\n中文摘要\n文章将包管理的设计类比为组织架构图，并应用了康威定律。康威定律指出，系统设计会反映组织沟通结构。在包管理领域，这意味着依赖关系和模块划分的设计会受到开发团队结构的影响。这种视角有助于理解和优化包管理系统的设计。\nEnglish Summary\nThis article draws an analogy between package management design and organizational charts, applying Conway's Law. Conway's Law states that system design mirrors the communication structure of the organization. In package management, this implies that the design of dependency relationships and module divisions is influenced by the development team's structure, offering a new perspective for understanding and optimizing these systems.\n💡 为什么值得读: 从组织结构的角度理解包管理的设计原则，为构建更有效的依赖管理系统提供新思路。\n💡 Why read it: Understand package management design principles through the lens of organizational structure, offering new insights for building more effective dependency management systems.\n🏷️ Meta, Instagram, AI, content reuse\n \n📊 数据概览\n \n \n \n分类分布\nmermaid\npie showData\n title \"文章分类分布\"\n \"🤖 AI / ML\" : 5\n \"⚙️ 工程\" : 5\n \"🛠 工具 / 开源\" : 4\n \"💡 观点 / 杂谈\" : 1\n高频关键词\nmermaid\nxychart-beta horizontal\n title \"高频关键词\"\n x-axis [\"openai\", \"llm\", \"apple\", \"meta ai\", \"lawsuit\", \"trade secrets\", \"gpt-5.6\", \"pricing\", \"muse spark\", \"api\", \"meta\", \"instagram\"]\n y-axis \"出现次数\" 0 --> 7\n bar [5, 5, 3, 2, 2, 2, 1, 1, 1, 1, 1, 1]\n📈 纯文本关键词图（终端友好）\nopenai │ ████████████████████ 5\nllm │ ████████████████████ 5\napple │ ████████████░░░░░░░░ 3\nmeta ai │ ████████░░░░░░░░░░░░ 2\nlawsuit │ ████████░░░░░░░░░░░░ 2\ntrade secrets │ ████████░░░░░░░░░░░░ 2\ngpt-5.6 │ ████░░░░░░░░░░░░░░░░ 1\npricing │ ████░░░░░░░░░░░░░░░░ 1\nmuse spark │ ████░░░░░░░░░░░░░░░░ 1\napi │ ████░░░░░░░░░░░░░░░░ 1\n🏷️ 话题标签\nopenai(5) · llm(5) · apple(3) · meta ai(2) · lawsuit(2) · trade secrets(2) · gpt-5.6(1) · pricing(1) · muse spark(1) · api(1) · meta(1) · instagram(1) · ai(1) · content reuse(1) · parameter counts(1) · gpt-2(1) · intuition(1) · drones(1) · wifi(1) · rf sensing(1)\n \n🤖 AI / ML\n1. llm 0.31.1 版本发布：修复工具调用中的 JSON 错误\nThe new GPT-5.6 family: Luna, Terra, Sol — simonwillison.net · 1 天前 · ⭐ 27/30\n中文摘要\nllm 命令行工具发布了 0.31.1 版本，主要修复了一个影响 OpenAI Chat Completion API 的 bug。该 bug 表现为当工具调用包含空参数时，部分提供商会返回 JSON 错误。此修复是在测试 llm-meta-ai 项目时发现并解决的。\nEnglish Summary\nThe llm command-line tool has released version 0.31.1, primarily addressing a bug with OpenAI Chat Completion endpoints. This bug caused JSON errors from some providers when a tool call included empty arguments. The fix was identified and implemented during testing of the llm-meta-ai project.\n🏷️ GPT-5.6, OpenAI, LLM, pricing\n \n2. 整数变化的神秘案例：代码生成无影响\nIntroducing Muse Spark 1.1 — simonwillison.net · 1 天前 · ⭐ 25/30\n中文摘要\n本文探讨了一个关于整数值在代码生成过程中出现神秘变化的案例。尽管代码表面上没有直接修改整数的逻辑，但观察到的变化引发了对底层编译器优化或运行时行为的疑问。文章旨在揭示这些看似微小的变化背后的原因。\nEnglish Summary\nThis post investigates a peculiar case of mysterious integer value changes during code generation. Despite no apparent direct modification of integer logic in the code, the observed alterations raise questions about underlying compiler optimizations or runtime behavior. The article aims to uncover the reasons behind these seemingly minor discrepancies.\n🏷️ Muse Spark, Meta AI, API, LLM\n \n3. 包管理如同组织架构图\nMeta Sets Default for Instagram Accounts to Permit Content Reuse by AI — daringfireball.net · 1 天前 · ⭐ 25/30\n中文摘要\n文章将包管理的设计类比为组织架构图，并应用了康威定律。康威定律指出，系统设计会反映组织沟通结构。在包管理领域，这意味着依赖关系和模块划分的设计会受到开发团队结构的影响。这种视角有助于理解和优化包管理系统的设计。\nEnglish Summary\nThis article draws an analogy between package management design and organizational charts, applying Conway's Law. Conway's Law states that system design mirrors the communication structure of the organization. In package management, this implies that the design of dependency relationships and module divisions is influenced by the development team's structure, offering a new perspective for understanding and optimizing these systems.\n🏷️ Meta, Instagram, AI, content reuse\n \n4. 圆角图标（Squircle）的强制使用并非针对触屏Mac\nBuilding intuition about LLM parameter counts — gilesthomas.com · 5 小时前 · ⭐ 24/30\n中文摘要\n文章反驳了将macOS强制使用圆角图标（Squircle）与传闻中的触屏MacBook联系起来的观点。作者强调，图标的可见形状与其可点击区域无关，渲染圆角并不会改变图标周围的可交互目标区域。因此，强制使用圆角图标并非为触屏操作做准备，而是独立的UI设计决策。\nEnglish Summary\nThis article refutes the notion that macOS's mandatory use of squircle icons is a concession to rumored touchscreen MacBooks. The author emphasizes that an icon's visible shape is distinct from its clickable area, and rendering a squircle does not alter the interactive target region around it. Therefore, the mandate for squircle icons is an independent UI design decision, not a preparation for touch interaction.\n🏷️ LLM, parameter counts, GPT-2, intuition\n \n5. Pluralistic：关于“机器人权利”和人工智能奴隶制的幻想（2026年7月10日）\nPluralistic: \"Rights for robots\" and the AI slavery fantasy (10 Jul 2026) — pluralistic.net · 17 小时前 · ⭐ 22/30\n中文摘要\n这篇链接合集探讨了“机器人权利”以及人工智能奴隶制的幻想话题。文章引用了“当我们是埃及的机器人时…”等内容，并包含“令人愉悦的享受”、“物体恒存性”以及“娱乐行业的尴尬问题”。此外，还涉及了 ISP 与唱片公司之间的“死刑”争议、迪士尼乐园“Splash Mountain”的“出柜”事件、负利率的瑞士债券以及“我们现在玩得开心吗？”等多个议题。作者还预告了即将到来的伦敦、爱丁堡等地的演讲活动。\nEnglish Summary\nThis collection of links explores the topics of \"robot rights\" and the fantasy of AI slavery. It references phrases like \"When we were robots in Egypt...\" and includes sections on \"Delights to delectate\" and \"Object permanence: Awkward questions for the entertainment industry.\" Additionally, it touches upon the ISP vs. record label \"death penalty\" debate, \"coming out\" on Splash Mountain, negative Swiss bond yields, and \"Are We Having Fun Yet?\". The author also announces upcoming appearances in London, Edinburgh, and other cities.\n🏷️ AI rights, robot ethics, AI slavery\n \n⚙️ 工程\n6. “机器人权利”与AI奴役幻想\nIce Cold — daringfireball.net · 7 分钟前 · ⭐ 24/30\n中文摘要\n文章批判了“机器人权利”的讨论，认为其背后隐藏着对AI奴役的幻想。作者认为，将AI类比为需要权利的实体，忽视了AI的本质是工具，并且这种讨论可能转移了对当前AI伦理问题（如数据偏见、失业）的关注。文章还提及了其他一些链接内容，涵盖了娱乐产业、ISP与唱片公司、以及作者的近期活动。\nEnglish Summary\nThis article critiques the discourse around 'robot rights,' arguing it masks a fantasy of AI enslavement. The author contends that likening AI to entities requiring rights overlooks AI's nature as a tool and potentially distracts from pressing AI ethical issues like data bias and job displacement. The post also includes various other links covering the entertainment industry, ISPs versus record labels, and the author's recent activities.\n🏷️ Apple, OpenAI, lawsuit, trade secrets\n \n7. 苹果起诉 OpenAI 及前员工，指控窃取商业机密\nApple Sues OpenAI, io, and Former Employees, Alleging Theft of Trade Secrets — daringfireball.net · 6 小时前 · ⭐ 24/30\n中文摘要\n苹果公司已提起诉讼，指控 OpenAI 和 io Products 窃取商业机密，并列出了包括前苹果高管 Tang Tan 和 Chang Liu 在内的多名被告。Tang Tan 曾是 iPhone 和 Apple Watch 产品设计的领导者，而 Chang Liu 是前高级系统电气工程师，两人均已离职加入 OpenAI。\nEnglish Summary\nApple has filed a lawsuit accusing OpenAI and io Products of trade secret theft, naming former Apple executives Tang Tan and Chang Liu as defendants. Tan led iPhone and Apple Watch design, while Liu was a senior systems electrical engineer before joining OpenAI.\n🏷️ Apple, OpenAI, lawsuit, trade secrets\n \n8. 整数的神秘变化：代码生成无影响的案例\nThe case of the mysterious changes to integers when there shouldn’t have been any code generation effect — devblogs.microsoft.com/oldnewthing · 13 小时前 · ⭐ 22/30\n中文摘要\n本文深入探讨了一个令人费解的编程问题，即在没有代码生成的情况下，整数值为何会发生神秘变化。作者旨在揭示这些整数的来源，并分析其背后的根本原因。文章详细阐述了这一现象的发生过程，并提供了相关的技术解释。这是一个关于软件开发中细微但重要问题的案例研究。\nEnglish Summary\nThis article delves into a perplexing programming issue where integers mysteriously change without any apparent code generation effect. The author aims to uncover the origin of these integer shifts and analyze the underlying causes. It details the phenomenon and provides technical explanations. This serves as a case study on subtle yet significant aspects of software development.\n🏷️ compiler, integers, code generation\n \n9. 包管理如同组织结构图\nPackage Management as Org Chart — nesbitt.io · 17 小时前 · ⭐ 22/30\n中文摘要\n本文将康威定律应用于依赖管理的设计。文章通过类比组织结构图的方式，阐述了包管理系统内部的结构如何反映其开发团队的沟通结构。它探讨了如何通过优化包管理的设计来改善开发流程和团队协作。理解这种联系有助于构建更高效、更易于维护的软件系统。\nEnglish Summary\nThis article applies Conway's Law to dependency management designs. It uses an analogy of an organizational chart to explain how the internal structure of package management systems reflects their development team's communication structure. It explores how optimizing package management design can improve development processes and team collaboration. Understanding this connection helps in building more efficient and maintainable software systems.\n🏷️ package management, Conway's Law, dependencies\n \n10. Squircle 边框并非（或至少不应是）关于即将推出的触屏 Mac\nSquircle Jail Isn’t (Or at Least Shouldn’t Be) About Upcoming Touchscreen Macs — daringfireball.net · 1 小时前 · ⭐ 21/30\n中文摘要\n本文是对 macOS 中 squircle 边框的进一步探讨。作者指出，读者最常问的问题是：强制使用 squircle 是否是为了迎合传闻中的新款触屏 MacBook？答案是否定的。文章解释说，应用程序图标的可见形状与其可点击或可触碰的区域无关。渲染 squircle 形状并不会改变图标周围可交互区域的形状。作者还回顾了 macOS 过去允许自定义图标的时代。\nEnglish Summary\nThis article provides further follow-up on the squircle jail on macOS. The most frequently asked question from readers is whether mandating the squircle is a concession to the rumored upcoming touchscreen MacBooks. The answer is no. The article explains that the visible shape of an app icon is unrelated to its clickable or tappable area. Rendering a squircle does not change the shape of the clickable/tappable target area around an icon. It also references the past when macOS allowed custom app icons.\n🏷️ macOS, app icons, UI design, touchscreen Mac\n \n🛠 工具 / 开源\n11. QuadRF：一款能穿墙探测无人机和 WiFi 的雷达设备\nQuadRF can spot drones and see WiFi through my wall — jeffgeerling.com · 13 小时前 · ⭐ 24/30\n中文摘要\nQuadRF 是一款基于 Raspberry Pi 5 和 FPGA 板的相控阵雷达，具备皮秒级时间精度，可进行高级信号处理和波束成形。该设备能够穿透墙壁探测 WiFi 信号，并追踪无人机，展示了其在无线信号侦测和分析方面的强大能力。\nEnglish Summary\nThe QuadRF is a phased-array radar built around a Raspberry Pi 5 and an FPGA board with picosecond-level timing, capable of advanced signal processing and beamforming. It can detect WiFi through walls and track drones, showcasing powerful capabilities in radio signal detection and analysis.\n🏷️ drones, WiFi, RF sensing\n \n12. OpenAI 更新 ChatGPT Mac 应用，引入 Codex 作为新桌面版\nToday’s the Day OpenAI Fucked Up the ChatGPT Mac App — daringfireball.net · 1 天前 · ⭐ 24/30\n中文摘要\nOpenAI 今日更新了 ChatGPT Mac 应用，将现有应用重命名为 ChatGPT Classic。新的 ChatGPT 桌面应用基于 Codex 构建，并命名为 ChatGPT，同时提供 ChatGPT Work 和 ChatGPT Codex 两种模式，后者能显示更多技术细节。新应用与 Codex 共享插件功能。\nEnglish Summary\nOpenAI has updated its ChatGPT Mac app, renaming the existing version to ChatGPT Classic. The new ChatGPT desktop app is built on Codex and is now called ChatGPT, featuring both ChatGPT Work and ChatGPT Codex modes, with the latter offering more technical details. The new app shares plugin functionality with Codex.\n🏷️ ChatGPT, Mac App, OpenAI, Codex\n \n13. 发布 llm-meta-ai 0.1：使用 LLM 对 Muse Spark 1.1 模型运行提示\nllm-meta-ai 0.1 — simonwillison.net · 1 天前 · ⭐ 23/30\n中文摘要\n发布了 llm-meta-ai 0.1 版本，该工具允许用户使用 LLM 对 Meta 新发布的 muse-spark-1.1 模型运行提示。这为开发者提供了一个便捷的接口，以测试和利用 Muse Spark 1.1 的能力。\nEnglish Summary\nThe release of llm-meta-ai 0.1 allows users to run prompts against Meta's newly released muse-spark-1.1 model using LLMs. This provides a convenient interface for developers to test and leverage the capabilities of Muse Spark 1.1.\n🏷️ llm-meta-ai, Meta AI, LLM, Python\n \n14. llm 0.31.1 版本发布\nllm 0.31.1 — simonwillison.net · 1 天前 · ⭐ 23/30\n中文摘要\n本次 llm 版本更新至 0.31.1。主要修复了 OpenAI Chat Completion 接口的一个 bug。该 bug 导致当工具调用包含空参数时，部分提供商可能会返回 JSON 错误。此问题在测试 llm-meta-ai 时被发现并解决。这次更新确保了工具调用参数的正确处理，提升了 llm 的稳定性。\nEnglish Summary\nThis release updates llm to version 0.31.1. It primarily fixes a bug with OpenAI Chat Completion endpoints. The issue caused JSON errors from some providers when a tool call had empty arguments. This bug was discovered and resolved during testing of llm-meta-ai. The update ensures correct handling of tool call arguments, improving llm's stability.\n🏷️ llm, OpenAI, tool call, bug fix\n \n💡 观点 / 杂谈\n15. 约翰·特努斯应扭转苹果在广告领域的下滑趋势\n★ John Ternus Should Reverse Apple’s Slide Down the Advertising Slippery Slope — daringfireball.net · 1 天前 · ⭐ 23/30\n中文摘要\n文章认为，苹果在 2014 年发布的隐私信函之所以具有说服力，不仅在于其清晰的语言，更在于当时苹果并未通过广告盈利，用户无需对其隐私承诺产生怀疑。作者呼吁现任高管约翰·特努斯（John Ternus）应阻止苹果在广告业务上越滑越远。\nEnglish Summary\nThe author argues that Apple's 2014 privacy letter was credible not just for its clear language, but because Apple did not profit from ads then, making its privacy promises trustworthy. The piece calls on current executive John Ternus to reverse Apple's slide down the advertising slippery slope.\n🏷️ Apple, advertising, privacy, Tim Cook\n \n生成于 2026-07-11 03:21 | 扫描 82 源 → 获取 2468 篇 → 精选 15 篇\n基于 Hacker News Popularity Contest 2025 RSS 源列表，由 Andrej Karpathy 推荐"</script>
+  <script id="speech-text" type="application/json">"🎧 点这里朗读今日日报\n📰 AI 博客每日精选 — 2026-07-12\n来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15\n📝 今日看点\n今日技术看点聚焦人工智能的快速演进与安全边界的探索。ChatGPT 的“超级应用”模式引发热议，其功能整合与用户体验设计褒贬不一，同时 OpenAI 的人才挖角事件也揭示了科技巨头间激烈的竞争态势。此外，增强现实眼镜的落地挑战与数字自主性的政策转向，预示着技术发展正面临新的伦理与实践考量。\n \n🏆 今日必读\n🥇 OpenAI 帮助中心解释 ChatGPT 新功能的问题\nIce Cold — daringfireball.net · 1 天前 · 🔒 安全\n中文摘要\nOpenAI 帮助中心发布了关于 ChatGPT 新功能“Work”和“Codex”的说明。Work 功能可在 ChatGPT 网页、移动端及桌面应用中使用，桌面应用版本支持本地文件访问。文章指出，云端 Work 对话不会出现在桌面应用中，且桌面应用的线程和本地文件将保留在本地。Codex 功能的可用性也得到了提及。\nEnglish Summary\nOpenAI's Help Center clarifies the functionality of its new ChatGPT features, 'Work' and 'Codex'. The 'Work' feature is available on the ChatGPT web, mobile, and desktop apps, with the desktop version supporting local file access. The article notes that cloud Work conversations do not appear in the desktop app, and desktop threads and local files remain on the local machine. The availability of Codex is also mentioned.\n💡 为什么值得读: 了解 OpenAI ChatGPT 新功能的工作方式和限制，特别是“Work”和“Codex”的部署细节。\n💡 Why read it: Understand the operational details and limitations of OpenAI's new ChatGPT features, 'Work' and 'Codex'.\n🏷️ Apple, OpenAI, trade secrets, lawsuit\n🥈 “Squircle Jail”与触屏 Mac 无关\n‘No Interest’ — daringfireball.net · 23 小时前 · 🔒 安全\n中文摘要\n关于 macOS 中“Squircle Jail”的讨论，作者明确指出这并非为即将推出的触屏 MacBook 做准备。图标的视觉形状与其可点击或可触碰的区域无关。即使图标呈现为 Squircle（圆角方形），其周围的可交互区域形状也不会改变。文章回顾了过去 macOS 允许自定义应用图标的时代。\nEnglish Summary\nAddressing the 'Squircle Jail' on macOS, the author clarifies that it is unrelated to rumored upcoming touchscreen MacBooks. The visual shape of an app icon is distinct from its clickable or tappable area. Rendering an icon as a squircle does not alter the shape of its interactive target region. The piece also briefly touches upon macOS's past allowance for custom app icons.\n💡 为什么值得读: 澄清 macOS 中图标形状变化（Squircle）与触屏 Mac 传闻之间的误解。\n💡 Why read it: Clarifies the misconception linking macOS icon shape changes (Squircle) to rumors of touchscreen Macs.\n🏷️ OpenAI, trade secrets, lawsuit, innovation\n🥉 引用 Nilay Patel：增强现实眼镜的挑战\nBuilding intuition about LLM parameter counts — gilesthomas.com · 1 天前 · 🤖 AI / ML\n中文摘要\nNilay Patel 指出，制作增强现实（AR）眼镜的核心挑战在于需要将摄像头置于用户眼前，持续记录并处理所见内容以叠加信息。他强调目前没有其他替代方案，也缺乏足够强大且节能的芯片能集成在眼镜镜腿中实时完成此任务。因此，数据必须发送到云端进行处理。\nEnglish Summary\nNilay Patel highlights that creating augmented reality (AR) glasses necessitates placing a camera next to the user's eyes to continuously record and process visual input for overlaying information. He asserts there's no alternative and no sufficiently powerful yet power-efficient chip can fit in the glasses' stem for real-time processing. Consequently, data must be sent to the cloud.\n💡 为什么值得读: 深入理解构建真正 AR 眼镜的技术瓶颈和数据处理需求。\n💡 Why read it: Gain insight into the technical bottlenecks and data processing requirements for building true AR glasses.\n🏷️ LLM, parameter counts, intuition\n \n📊 数据概览\n \n \n \n分类分布\nmermaid\npie showData\n title \"文章分类分布\"\n \"🤖 AI / ML\" : 4\n \"💡 观点 / 杂谈\" : 4\n \"🔒 安全\" : 3\n \"🛠 工具 / 开源\" : 3\n \"⚙️ 工程\" : 1\n高频关键词\nmermaid\nxychart-beta horizontal\n title \"高频关键词\"\n x-axis [\"openai\", \"apple\", \"trade secrets\", \"lawsuit\", \"chatgpt\", \"innovation\", \"llm\", \"parameter counts\", \"intuition\", \"ai\", \"intelligence\", \"reality\"]\n y-axis \"出现次数\" 0 --> 6\n bar [4, 3, 3, 3, 3, 1, 1, 1, 1, 1, 1, 1]\n📈 纯文本关键词图（终端友好）\nopenai │ ████████████████████ 4\napple │ ███████████████░░░░░ 3\ntrade secrets │ ███████████████░░░░░ 3\nlawsuit │ ███████████████░░░░░ 3\nchatgpt │ ███████████████░░░░░ 3\ninnovation │ █████░░░░░░░░░░░░░░░ 1\nllm │ █████░░░░░░░░░░░░░░░ 1\nparameter counts │ █████░░░░░░░░░░░░░░░ 1\nintuition │ █████░░░░░░░░░░░░░░░ 1\nai │ █████░░░░░░░░░░░░░░░ 1\n🏷️ 话题标签\nopenai(4) · apple(3) · trade secrets(3) · lawsuit(3) · chatgpt(3) · innovation(1) · llm(1) · parameter counts(1) · intuition(1) · ai(1) · intelligence(1) · reality(1) · hard takeoff(1) · sqlite-utils(1) · release(1) · python(1) · super app(1) · user experience(1) · recruiting(1) · package management(1)\n \n🤖 AI / ML\n1. 引用 Nilay Patel：增强现实眼镜的挑战\nBuilding intuition about LLM parameter counts — gilesthomas.com · 1 天前 · ⭐ 26/30\n中文摘要\nNilay Patel 指出，制作增强现实（AR）眼镜的核心挑战在于需要将摄像头置于用户眼前，持续记录并处理所见内容以叠加信息。他强调目前没有其他替代方案，也缺乏足够强大且节能的芯片能集成在眼镜镜腿中实时完成此任务。因此，数据必须发送到云端进行处理。\nEnglish Summary\nNilay Patel highlights that creating augmented reality (AR) glasses necessitates placing a camera next to the user's eyes to continuously record and process visual input for overlaying information. He asserts there's no alternative and no sufficiently powerful yet power-efficient chip can fit in the glasses' stem for real-time processing. Consequently, data must be sent to the cloud.\n🏷️ LLM, parameter counts, intuition\n \n2. 如何获取“ChatGPT Classic”\nAI 2040 and the Cult of Intelligence — geohot.github.io · 20 小时前 · ⭐ 25/30\n中文摘要\nOpenAI 帮助中心提供了关于如何从旧版 Mac 应用升级到新版“超级”应用（包含 Chat、Work 和 Codex 功能）的说明。用户只需按照应用内的提示下载新版 ChatGPT 桌面应用并登录同一账户。新应用可能与旧应用并行安装，届时用户可同时使用“ChatGPT”（新版）和“ChatGPT Classic”（旧版）。\nEnglish Summary\nOpenAI's Help Center explains how to upgrade from the older Mac app to the new 'super' app version, which includes Chat, Work, and Codex. Users are prompted within the app to download the new ChatGPT desktop app and sign in with their existing account. The new app may install alongside the current one, allowing users to access both 'ChatGPT' (new) and 'ChatGPT Classic' (old) if both remain installed.\n🏷️ AI, intelligence, reality, hard takeoff\n \n3. OpenAI 帮助中心介绍新版 ChatGPT 的“Work”功能\nOpenAI Help Center Describes What Is Wrong With the New ChatGPT — daringfireball.net · 5 小时前 · ⭐ 22/30\n中文摘要\nOpenAI 帮助中心详细介绍了其新版 ChatGPT 中新增的“Work”功能。该功能可在 ChatGPT 的网页版、移动版以及桌面应用中使用，适用于符合条件的付费用户。桌面应用中的“Work”功能还可以访问本地文件和桌面应用，但需要用户授权。目前，云端和桌面端的“Work”对话记录不互通。\nEnglish Summary\nThe OpenAI Help Center details the new 'Work' feature in ChatGPT, available on web, mobile, and desktop for eligible paid plans. The desktop version allows access to local files and apps with user permission. Currently, cloud and desktop 'Work' conversations are not synchronized.\n🏷️ ChatGPT, Work, features\n \n4. 如何获取“ChatGPT Classic”版本\nCan Someone Explain to Me How to Get ‘ChatGPT Classic’? — daringfireball.net · 4 小时前 · ⭐ 21/30\n中文摘要\nOpenAI 帮助中心提供了一个指南，解释如何从旧版 Mac 应用升级到新的“超级”应用版本。用户只需按照应用内的提示下载新的 ChatGPT 桌面应用，并使用相同的 ChatGPT 账户登录即可。新应用可能与旧应用并存，届时用户将看到“ChatGPT”（新版）和“ChatGPT Classic”（旧版）。\nEnglish Summary\nOpenAI's Help Center provides instructions on upgrading from the old Mac app to the new 'super' app version. Users are guided to download the new ChatGPT desktop app and sign in with their existing account. The new app may install alongside the old one, allowing users to access both 'ChatGPT' (new) and 'ChatGPT Classic' (old).\n🏷️ ChatGPT, desktop app, upgrade\n \n💡 观点 / 杂谈\n5. Benedict Evans 评论新的“超级应用”ChatGPT\nBenedict Evans on the New ‘Super App’ ChatGPT — daringfireball.net · 5 小时前 · ⭐ 24/30\n中文摘要\nBenedict Evans 认为新的 ChatGPT 应用是一个“彻底的混乱”。他指出了界面设计上的诸多问题，如项目、任务和聊天之间的界限不清，以及不一致的 UI 元素（如聊天窗口的浮动设计）。他还批评了插件和模板的混淆以及设置流程的强制性要求。\nEnglish Summary\nBenedict Evans describes the new ChatGPT 'Super App' as a \"total mess,\" highlighting significant UI/UX issues. He questions the unclear distinctions between projects, tasks, and chats, the inconsistent design of floating windows for chats, and the confusing integration of plugins and templates. The setup process's mandatory requirements are also criticized.\n🏷️ ChatGPT, super app, user experience\n \n6. Gurman 报道苹果与 OpenAI 的法律纠纷细节\nGurman on Tang Tan and Paul Meade — daringfireball.net · 9 小时前 · ⭐ 24/30\n中文摘要\nMark Gurman 报道称，苹果对 OpenAI 挖角其硬件和设计领导者感到震惊，这种行为持续到 2026 年 6 月，甚至挖走了苹果的智能眼镜负责人。该负责人被迅速解雇，未获得过渡期。此举被认为是导致苹果起诉 OpenAI 的导火索之一。\nEnglish Summary\nMark Gurman reports that Apple was alarmed by OpenAI's recruitment of its hardware and design leaders, a practice that continued as recently as June 2026, including poaching Apple's smart glasses chief. This executive was quickly dismissed without a transition period, reportedly contributing to Apple's decision to sue OpenAI.\n🏷️ Apple, OpenAI, recruiting\n \n7. Nilay Patel 关于增强现实眼镜的引述\nQuoting Nilay Patel — simonwillison.net · 1 天前 · ⭐ 22/30\n中文摘要\nNilay Patel 在引述中指出，制造增强现实眼镜的关键在于在用户眼前放置一个持续记录一切的摄像头。他强调，目前没有其他方法可以实现这一功能，并且没有足够强大且节能的芯片能够集成到眼镜腿中实时处理数据。因此，数据必须发送到云端进行处理。\nEnglish Summary\nNilay Patel's quote highlights that creating augmented reality glasses requires a camera placed in front of the user's eyes to continuously record everything. He emphasizes that there is no alternative method and no chip powerful and energy-efficient enough to fit in the glasses' stem for real-time processing, necessitating cloud data transfer.\n🏷️ AR glasses, privacy, cameras\n \n8. 关于数字自主性的积极进展\nGoede geluiden over digitale autonomie — berthub.eu · 17 小时前 · ⭐ 21/30\n中文摘要\n尽管荷兰议会正处于休会期，政府的自动回复邮件却令人印象深刻，显示出其在数字自主性方面的积极态度。文章指出，近期有大量关于数字自主性的正面讨论和出版物出现，这标志着一种明显的转变。政府部门开始发布关于数字自主性的重要文本，并对其给予高度重视。\nEnglish Summary\nDespite the Dutch Parliament being in recess, government out-of-office replies are impressively robust, reflecting a positive stance on digital autonomy. The article notes a significant shift with recent publications and discussions highlighting digital autonomy. Government bodies are now issuing prominent texts on the subject, giving it considerable attention.\n🏷️ digital autonomy, government, Netherlands\n \n🔒 安全\n9. OpenAI 帮助中心解释 ChatGPT 新功能的问题\nIce Cold — daringfireball.net · 1 天前 · ⭐ 27/30\n中文摘要\nOpenAI 帮助中心发布了关于 ChatGPT 新功能“Work”和“Codex”的说明。Work 功能可在 ChatGPT 网页、移动端及桌面应用中使用，桌面应用版本支持本地文件访问。文章指出，云端 Work 对话不会出现在桌面应用中，且桌面应用的线程和本地文件将保留在本地。Codex 功能的可用性也得到了提及。\nEnglish Summary\nOpenAI's Help Center clarifies the functionality of its new ChatGPT features, 'Work' and 'Codex'. The 'Work' feature is available on the ChatGPT web, mobile, and desktop apps, with the desktop version supporting local file access. The article notes that cloud Work conversations do not appear in the desktop app, and desktop threads and local files remain on the local machine. The availability of Codex is also mentioned.\n🏷️ Apple, OpenAI, trade secrets, lawsuit\n \n10. “Squircle Jail”与触屏 Mac 无关\n‘No Interest’ — daringfireball.net · 23 小时前 · ⭐ 26/30\n中文摘要\n关于 macOS 中“Squircle Jail”的讨论，作者明确指出这并非为即将推出的触屏 MacBook 做准备。图标的视觉形状与其可点击或可触碰的区域无关。即使图标呈现为 Squircle（圆角方形），其周围的可交互区域形状也不会改变。文章回顾了过去 macOS 允许自定义应用图标的时代。\nEnglish Summary\nAddressing the 'Squircle Jail' on macOS, the author clarifies that it is unrelated to rumored upcoming touchscreen MacBooks. The visual shape of an app icon is distinct from its clickable or tappable area. Rendering an icon as a squircle does not alter the shape of its interactive target region. The piece also briefly touches upon macOS's past allowance for custom app icons.\n🏷️ OpenAI, trade secrets, lawsuit, innovation\n \n11. 关于数字自主性的积极信号\nApple Sues OpenAI, io, and Former Employees, Alleging Theft of Trade Secrets — daringfireball.net · 1 天前 · ⭐ 25/30\n中文摘要\n尽管荷兰议会正值休会期，但政府部门发布的官方自动回复中，关于数字自主性的积极表述引人注目。文章指出，在经历了十年的忽视后，政府出版物中出现了大量关于数字自主性的正面论述，显示出明显的政策转向。\nEnglish Summary\nDespite the Dutch Parliament being in recess, official out-of-office replies from government bodies are notably positive regarding digital autonomy. The article observes a significant shift, with government publications now featuring strong statements on digital autonomy after a decade of neglect, indicating a clear policy change.\n🏷️ Apple, OpenAI, lawsuit, trade secrets\n \n🛠 工具 / 开源\n12. sqlite-utils 4.1 发布\nsqlite-utils 4.1 — simonwillison.net · 3 小时前 · ⭐ 24/30\n中文摘要\nsqlite-utils 发布了 4.1 版本，这是继 4.0 版本几天后的首次小版本更新。新版本引入了多项小型新功能，包括 sqlite-utils insert 和 sqlite-utils upsert 命令现在支持 --code 选项，允许通过 Python 代码处理数据插入和更新。\nEnglish Summary\nsqlite-utils has released version 4.1, a minor update following version 4.0 released a few days prior. This release introduces several small new features, notably the --code option for sqlite-utils insert and sqlite-utils upsert commands, enabling data insertion and updates via Python code.\n🏷️ sqlite-utils, release, Python\n \n13. 本周包管理动态：2026年7月11日\nThis Week in Package Management: 11 July 2026 — nesbitt.io · 17 小时前 · ⭐ 24/30\n中文摘要\n本周包管理领域发布了新的版本、安全公告和相关文章。内容涵盖了从各种包管理器生态系统中收集的最新动态。\nEnglish Summary\nThis week in package management features new releases, advisories, and articles from across the package management world, compiling the latest updates from various ecosystem.\n🏷️ package management, releases, advisories\n \n14. QuadRF：能够探测无人机并穿墙探测 WiFi\nQuadRF can spot drones and see WiFi through my wall — jeffgeerling.com · 1 天前 · ⭐ 23/30\n中文摘要\nQuadRF 是一款基于 Raspberry Pi 5 和 FPGA 板的相控阵雷达，能够进行高级信号处理和波束成形。该设备能够穿墙探测 WiFi 信号，并追踪无人机。其核心技术包括皮秒级的时间精度。\nEnglish Summary\nThe QuadRF is a phased-array radio built around a Raspberry Pi 5 and an FPGA board, capable of advanced signal processing and beamforming with picosecond-level timing. It can detect WiFi signals through walls and track drones.\n🏷️ drones, WiFi, detection, QuadRF\n \n⚙️ 工程\n15. Squircle 界面元素与触屏 Mac 的关系\nSquircle Jail Isn’t (Or at Least Shouldn’t Be) About Upcoming Touchscreen Macs — daringfireball.net · 1 天前 · ⭐ 22/30\n中文摘要\n文章探讨了 macOS 中引入的“Squircle”界面元素，并澄清了其与传闻中即将推出的触屏 MacBook 的关系。作者指出，应用程序图标的视觉形状（如 Squircle）与其可点击或可触碰的区域是相互独立的。渲染成 Squircle 形状并不会改变图标周围可交互区域的大小。\nEnglish Summary\nThis article discusses the introduction of the 'Squircle' interface element in macOS and clarifies its relationship with rumored upcoming touchscreen MacBooks. The author explains that the visual shape of an app icon, like a Squircle, is independent of its clickable or tappable area, and rendering it as a Squircle does not alter the interactive region around the icon.\n🏷️ macOS, squircle, app icons, touchscreen Mac\n \n生成于 2026-07-12 03:33 | 扫描 84 源 → 获取 2518 篇 → 精选 15 篇\n基于 Hacker News Popularity Contest 2025 RSS 源列表，由 Andrej Karpathy 推荐"</script>
   <script>
     const text = JSON.parse(document.getElementById('speech-text').textContent);
     const statusEl = document.getElementById('status');
