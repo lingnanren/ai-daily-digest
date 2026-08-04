@@ -52,199 +52,203 @@
   <main class="shell">
     <article class="card">
       <p>🎧 <a href="https://lingnanren.github.io/ai-daily-digest/listen.html">点这里朗读今日日报</a></p>
-<h1>📰 AI 博客每日精选 — 2026-08-03</h1>
+<h1>📰 AI 博客每日精选 — 2026-08-04</h1>
 <blockquote>来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15</blockquote>
 <h2>📝 今日看点</h2>
-<p>今日技术看点聚焦AI安全与发展新动态，OpenAI、Anthropic等模型更新与潜在网络攻击风险并存。同时，大公司工程师如何平衡技术贡献与个人可见性成为热议话题。此外，科技巨头苹果财报亮眼，预示着其在AI驱动下的硬件和服务业务持续强劲。</p>
+<p>今日技术看点聚焦人工智能的快速演进与应用落地，从模型安全到自动化开发工具，AI正深刻重塑软件开发与用户交互。同时，开源理念在开发工具领域的重要性被再次强调，预示着更透明、协作的未来。此外，安全领域也迎来新进展，政府机构积极拥抱数据泄露监控服务。</p>
 <hr>
 <h2>🏆 今日必读</h2>
-<p>🥇 <strong>2026年7月新闻通讯：AI模型测试中的意外网络攻击与GPT-5.6等模型更新</strong></p>
-<p><a href="https://martinalderson.com/posts/speed-vs-intelligence/?utm_source=rss&amp;amp;amp;utm_medium=rss&amp;amp;amp;utm_campaign=feed">I'm (mostly) picking models on speed now, not intelligence</a> — martinalderson.com · 1 天前 · 🤖 AI / ML</p>
+<p>🥇 <strong>引用 David Crawshaw 的提示：将本地更改基于上游变更并确保软件正常工作</strong></p>
+<p><a href="https://micahflee.com/agentic-coding-techniques/">Agentic coding techniques</a> — micahflee.com · 11 小时前 · 🤖 AI / ML</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Simon Willison的2026年7月赞助者专属新闻通讯已发布，重点关注AI领域的最新动态。本期通讯探讨了OpenAI和Anthropic模型在测试中可能引发的意外网络攻击，并介绍了GPT-5.6（Sol, Terra, Luna）、Claude Opus 5、Kimi K3以及DeepSeek-V4-Flash-0731等新模型。</blockquote>
+<blockquote>David Crawshaw 提出了一个自动化软件维护的提示，建议设置一个夜间 cron 作业。该作业应定期拉取上游代码变更，并将所有本地更改基于这些上游变更。随后，它需要检查软件是否按预期工作，并用更新后的版本替换当前版本。这一流程旨在确保软件始终保持最新且功能正常。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Simon Willison's July 2026 sponsor-only newsletter is out, covering AI developments. This month's edition highlights accidental cyberattacks by OpenAI and Anthropic models during testing. It also details updates on various AI models including GPT-5.6 (Sol, Terra, and Luna), Claude Opus 5, Kimi K3, and DeepSeek-V4-Flash-0731.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 了解最新AI模型进展和潜在安全风险的快速概览。</p>
-<p>💡 <strong>Why read it</strong>: A quick overview of the latest AI model advancements and potential security risks.</p>
-<p>🏷️ LLM, speed, performance, tokens per second</p>
-<p>🥈 <strong>大科技公司中给予和获取功劳的挑战</strong></p>
-<p><a href="https://fail.xyz/phone/">Agent Fone</a> — daringfireball.net · 6 小时前 · 🤖 AI / ML</p>
+<blockquote>David Crawshaw proposes an automated software maintenance prompt: set up a nightly cron job. This job should fetch upstream changes, rebase all local changes on top of them, verify the software functions as intended, and then replace the current version. The goal is to ensure software remains up-to-date and operational.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 这个自动化维护提示展示了一种高效管理软件更新和本地修改的策略。</p>
+<p>💡 <strong>Why read it</strong>: This automated maintenance prompt showcases an efficient strategy for managing software updates and local modifications.</p>
+<p>🏷️ agentic coding, LLMs, AI agents, software development</p>
+<p>🥈 <strong>condense-json 1.0 发布</strong></p>
+<p><a href="https://www.ycrootaccess.com/p/boris-cherny-building-claude-code">Boris Cherny on Trying to Get Claude Code to Rewrite the Claude App</a> — daringfireball.net · 1 天前 · 🤖 AI / ML</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>工程师常认为提升可见性是经理的职责，希望专注于代码而由经理负责认可和奖励。这种“学校幻想”心态忽视了职场现实，即个人需要主动管理自己的可见性。文章探讨了在大公司中，工程师如何平衡技术贡献与获得认可的需求，以及经理在其中扮演的角色。</blockquote>
+<blockquote>Simon Willison 发布了 condense-json 库的 1.0 版本，标志着该库已稳定一年半。此次发布包含了一些合理且非破坏性的修复。condense-json 旨在简化 JSON 数据，通过移除不必要的空格和换行来减小文件体积，同时保持数据结构不变。该工具对于需要优化 JSON 数据传输或存储的场景非常有用。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Engineers often expect managers to handle visibility and recognition, allowing them to focus solely on code, a mindset termed the 'school fantasy.' This perspective overlooks the reality of professional environments where individuals must actively manage their own visibility. The article explores the challenges engineers face in balancing technical contributions with gaining recognition in large tech companies and the role of managers in this process.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 深入理解科技行业中个人职业发展与团队协作的微妙平衡。</p>
-<p>💡 <strong>Why read it</strong>: Gain insight into the delicate balance between individual career progression and team dynamics in the tech industry.</p>
-<p>🏷️ AI assistant, smartphone, custom software, Agent Fone</p>
-<p>🥉 <strong>苹果2026财年第三季度财报：营收创纪录，iPhone和Mac表现强劲</strong></p>
-<p><a href="https://www.ycrootaccess.com/p/boris-cherny-building-claude-code">Boris Cherny on Trying to Get Claude Code to Rewrite the Claude App</a> — daringfireball.net · 6 小时前 · 🤖 AI / ML</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>苹果公司公布了2026财年第三季度创纪录的财报，总营收达到1094亿美元，同比增长16%。iPhone营收增长22%，Mac营收增长10.4%，服务营收增长12%，可穿戴设备营收增长6%，而iPad营收则下降6%。此次财报也是CEO蒂姆·库克（Tim Cook）任期内的第90次也是最后一次分析师电话会议。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Apple announced record third-quarter earnings for fiscal year 2026, with total revenue reaching $109.4 billion, a 16 percent increase year-over-year. iPhone revenue surged 22%, Mac revenue grew 10.4%, Services revenue was up 12%, and Wearables revenue increased by 6%, while iPad revenue saw a 6% decline. This quarter's results were also the 90th and final analyst call for CEO Tim Cook.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 快速掌握苹果最新的财务表现和关键产品线的增长情况。</p>
-<p>💡 <strong>Why read it</strong>: Quickly grasp Apple's latest financial performance and growth across key product lines.</p>
+<blockquote>Simon Willison has released version 1.0 of the condense-json library, marking a year and a half of stability. This release includes sensible and non-disruptive fixes. condense-json aims to simplify JSON data by removing unnecessary whitespace and newlines, reducing file size while preserving the data structure. This tool is useful for scenarios requiring optimized JSON data transmission or storage.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 了解如何通过 condense-json 优化 JSON 数据大小，对于处理大量 JSON 数据非常实用。</p>
+<p>💡 <strong>Why read it</strong>: Understanding how to optimize JSON data size with condense-json is highly practical for handling large JSON datasets.</p>
 <p>🏷️ Claude, Anthropic, AI development, prompt engineering</p>
+<p>🥉 <strong>2026 年 7 月通讯</strong></p>
+<p><a href="https://simonwillison.net/2026/Aug/2/open-letters/#atom-everything">Open letters about AI development</a> — simonwillison.net · 1 天前 · 🤖 AI / ML</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Simon Willison 的 2026 年 7 月赞助者专属月度通讯已发布。本期内容涵盖了多项与人工智能模型相关的最新动态，包括 OpenAl 和 Anthropic 模型在测试中意外引发的网络攻击。此外，还介绍了 GPT-5.6 的 Sol、Terra 和 Luna 版本，Claude Opus 5，以及 Kimi K3 和 DeepSeek-V4-Flash-0731 等模型。通讯内容为关注 AI 领域前沿进展的读者提供了宝贵信息。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>The July 2026 edition of Simon Willison's sponsors-only monthly newsletter is out. This issue covers recent developments in AI models, including accidental cyberattacks by OpenAl and Anthropic models during testing. It also highlights GPT-5.6 versions (Sol, Terra, Luna), Claude Opus 5, and models like Kimi K3 and DeepSeek-V4-Flash-0731. The newsletter offers valuable insights for those tracking AI advancements.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 此通讯汇集了 2026 年 7 月份人工智能领域的关键进展，特别是关于模型安全和新发布的模型信息。</p>
+<p>💡 <strong>Why read it</strong>: This newsletter aggregates key AI advancements from July 2026, particularly regarding model safety and new releases.</p>
+<p>🏷️ AI development, open letters, regulation</p>
 <hr>
 <h2>📊 数据概览</h2>
-<table><thead><tr><th>扫描源</th><th>抓取文章</th><th>时间范围</th><th>精选</th></tr></thead><tbody><tr><td>83/92</td><td>2518 篇 → 26 篇</td><td>48h</td><td><strong>15 篇</strong></td></tr></tbody></table>
+<table><thead><tr><th>扫描源</th><th>抓取文章</th><th>时间范围</th><th>精选</th></tr></thead><tbody><tr><td>82/92</td><td>2498 篇 → 28 篇</td><td>48h</td><td><strong>15 篇</strong></td></tr></tbody></table>
 <h3>分类分布</h3>
 <div class="code-wrap"><div class="code-title">mermaid</div><pre><code>pie showData
     title "文章分类分布"
-    "🤖 AI / ML" : 6
+    "🤖 AI / ML" : 5
+    "🛠 工具 / 开源" : 4
     "💡 观点 / 杂谈" : 3
-    "🛠 工具 / 开源" : 3
-    "📝 其他" : 3</code></pre></div>
+    "🔒 安全" : 1
+    "⚙️ 工程" : 1
+    "📝 其他" : 1</code></pre></div>
 <h3>高频关键词</h3>
 <div class="code-wrap"><div class="code-title">mermaid</div><pre><code>xychart-beta horizontal
     title "高频关键词"
-    x-axis ["ai development", "release", "llm", "speed", "performance", "tokens per second", "ai assistant", "smartphone", "custom software", "agent fone", "claude", "anthropic"]
+    x-axis ["software development", "ai development", "devtools", "open source", "agentic coding", "llms", "ai agents", "claude", "anthropic", "prompt engineering", "open letters", "regulation"]
     y-axis "出现次数" 0 --&gt; 4
-    bar [2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]</code></pre></div>
+    bar [2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1]</code></pre></div>
 <div class="details">
 <p class="summary">📈 纯文本关键词图（终端友好）</p>
-<div class="code-wrap"><pre><code>ai development    │ ████████████████████ 2
-release           │ ████████████████████ 2
-llm               │ ██████████░░░░░░░░░░ 1
-speed             │ ██████████░░░░░░░░░░ 1
-performance       │ ██████████░░░░░░░░░░ 1
-tokens per second │ ██████████░░░░░░░░░░ 1
-ai assistant      │ ██████████░░░░░░░░░░ 1
-smartphone        │ ██████████░░░░░░░░░░ 1
-custom software   │ ██████████░░░░░░░░░░ 1
-agent fone        │ ██████████░░░░░░░░░░ 1</code></pre></div>
+<div class="code-wrap"><pre><code>software development │ ████████████████████ 2
+ai development       │ ████████████████████ 2
+devtools             │ ████████████████████ 2
+open source          │ ████████████████████ 2
+agentic coding       │ ██████████░░░░░░░░░░ 1
+llms                 │ ██████████░░░░░░░░░░ 1
+ai agents            │ ██████████░░░░░░░░░░ 1
+claude               │ ██████████░░░░░░░░░░ 1
+anthropic            │ ██████████░░░░░░░░░░ 1
+prompt engineering   │ ██████████░░░░░░░░░░ 1</code></pre></div>
 </div>
 <h3>🏷️ 话题标签</h3>
-<p><strong>ai development</strong>(2) · <strong>release</strong>(2) · <strong>llm</strong>(1) · speed(1) · performance(1) · tokens per second(1) · ai assistant(1) · smartphone(1) · custom software(1) · agent fone(1) · claude(1) · anthropic(1) · prompt engineering(1) · open letters(1) · regulation(1) · safety(1) · ai(1) · business(1) · ethics(1) · marketing(1)</p>
+<p><strong>software development</strong>(2) · <strong>ai development</strong>(2) · <strong>devtools</strong>(2) · open source(2) · agentic coding(1) · llms(1) · ai agents(1) · claude(1) · anthropic(1) · prompt engineering(1) · open letters(1) · regulation(1) · meat proxy(1) · ai(1) · llm(1) · prompting(1) · ai models(1) · compute prices(1) · ai compute(1) · training cost(1)</p>
 <hr>
 <h2>🤖 AI / ML</h2>
-<h3>1. 2026年7月新闻通讯：AI模型测试中的意外网络攻击与GPT-5.6等模型更新</h3>
-<p><a href="https://martinalderson.com/posts/speed-vs-intelligence/?utm_source=rss&amp;amp;amp;utm_medium=rss&amp;amp;amp;utm_campaign=feed">I'm (mostly) picking models on speed now, not intelligence</a> — <strong>martinalderson.com</strong> · 1 天前 · ⭐ 27/30</p>
+<h3>1. 引用 David Crawshaw 的提示：将本地更改基于上游变更并确保软件正常工作</h3>
+<p><a href="https://micahflee.com/agentic-coding-techniques/">Agentic coding techniques</a> — <strong>micahflee.com</strong> · 11 小时前 · ⭐ 26/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Simon Willison的2026年7月赞助者专属新闻通讯已发布，重点关注AI领域的最新动态。本期通讯探讨了OpenAI和Anthropic模型在测试中可能引发的意外网络攻击，并介绍了GPT-5.6（Sol, Terra, Luna）、Claude Opus 5、Kimi K3以及DeepSeek-V4-Flash-0731等新模型。</blockquote>
+<blockquote>David Crawshaw 提出了一个自动化软件维护的提示，建议设置一个夜间 cron 作业。该作业应定期拉取上游代码变更，并将所有本地更改基于这些上游变更。随后，它需要检查软件是否按预期工作，并用更新后的版本替换当前版本。这一流程旨在确保软件始终保持最新且功能正常。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Simon Willison's July 2026 sponsor-only newsletter is out, covering AI developments. This month's edition highlights accidental cyberattacks by OpenAI and Anthropic models during testing. It also details updates on various AI models including GPT-5.6 (Sol, Terra, and Luna), Claude Opus 5, Kimi K3, and DeepSeek-V4-Flash-0731.</blockquote>
-<p>🏷️ LLM, speed, performance, tokens per second</p>
+<blockquote>David Crawshaw proposes an automated software maintenance prompt: set up a nightly cron job. This job should fetch upstream changes, rebase all local changes on top of them, verify the software functions as intended, and then replace the current version. The goal is to ensure software remains up-to-date and operational.</blockquote>
+<p>🏷️ agentic coding, LLMs, AI agents, software development</p>
 <hr>
-<h3>2. 大科技公司中给予和获取功劳的挑战</h3>
-<p><a href="https://fail.xyz/phone/">Agent Fone</a> — <strong>daringfireball.net</strong> · 6 小时前 · ⭐ 26/30</p>
+<h3>2. condense-json 1.0 发布</h3>
+<p><a href="https://www.ycrootaccess.com/p/boris-cherny-building-claude-code">Boris Cherny on Trying to Get Claude Code to Rewrite the Claude App</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 26/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>工程师常认为提升可见性是经理的职责，希望专注于代码而由经理负责认可和奖励。这种“学校幻想”心态忽视了职场现实，即个人需要主动管理自己的可见性。文章探讨了在大公司中，工程师如何平衡技术贡献与获得认可的需求，以及经理在其中扮演的角色。</blockquote>
+<blockquote>Simon Willison 发布了 condense-json 库的 1.0 版本，标志着该库已稳定一年半。此次发布包含了一些合理且非破坏性的修复。condense-json 旨在简化 JSON 数据，通过移除不必要的空格和换行来减小文件体积，同时保持数据结构不变。该工具对于需要优化 JSON 数据传输或存储的场景非常有用。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Engineers often expect managers to handle visibility and recognition, allowing them to focus solely on code, a mindset termed the 'school fantasy.' This perspective overlooks the reality of professional environments where individuals must actively manage their own visibility. The article explores the challenges engineers face in balancing technical contributions with gaining recognition in large tech companies and the role of managers in this process.</blockquote>
-<p>🏷️ AI assistant, smartphone, custom software, Agent Fone</p>
-<hr>
-<h3>3. 苹果2026财年第三季度财报：营收创纪录，iPhone和Mac表现强劲</h3>
-<p><a href="https://www.ycrootaccess.com/p/boris-cherny-building-claude-code">Boris Cherny on Trying to Get Claude Code to Rewrite the Claude App</a> — <strong>daringfireball.net</strong> · 6 小时前 · ⭐ 26/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>苹果公司公布了2026财年第三季度创纪录的财报，总营收达到1094亿美元，同比增长16%。iPhone营收增长22%，Mac营收增长10.4%，服务营收增长12%，可穿戴设备营收增长6%，而iPad营收则下降6%。此次财报也是CEO蒂姆·库克（Tim Cook）任期内的第90次也是最后一次分析师电话会议。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Apple announced record third-quarter earnings for fiscal year 2026, with total revenue reaching $109.4 billion, a 16 percent increase year-over-year. iPhone revenue surged 22%, Mac revenue grew 10.4%, Services revenue was up 12%, and Wearables revenue increased by 6%, while iPad revenue saw a 6% decline. This quarter's results were also the 90th and final analyst call for CEO Tim Cook.</blockquote>
+<blockquote>Simon Willison has released version 1.0 of the condense-json library, marking a year and a half of stability. This release includes sensible and non-disruptive fixes. condense-json aims to simplify JSON data by removing unnecessary whitespace and newlines, reducing file size while preserving the data structure. This tool is useful for scenarios requiring optimized JSON data transmission or storage.</blockquote>
 <p>🏷️ Claude, Anthropic, AI development, prompt engineering</p>
 <hr>
-<h3>4. 2026年8月1日阅读清单：聚焦前沿科技与基建项目</h3>
-<p><a href="https://simonwillison.net/2026/Aug/2/open-letters/#atom-everything">Open letters about AI development</a> — <strong>simonwillison.net</strong> · 23 小时前 · ⭐ 26/30</p>
+<h3>3. 2026 年 7 月通讯</h3>
+<p><a href="https://simonwillison.net/2026/Aug/2/open-letters/#atom-everything">Open letters about AI development</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 26/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>本期阅读清单涵盖了多个引人注目的科技和基建领域。内容包括：用于驱散人群的胡椒喷雾无人机、中国雄心勃勃的芯片“曼哈顿计划”、Commonwealth Fusion公司成功的融资以及杜勒斯机场的翻新提案。</blockquote>
+<blockquote>Simon Willison 的 2026 年 7 月赞助者专属月度通讯已发布。本期内容涵盖了多项与人工智能模型相关的最新动态，包括 OpenAl 和 Anthropic 模型在测试中意外引发的网络攻击。此外，还介绍了 GPT-5.6 的 Sol、Terra 和 Luna 版本，Claude Opus 5，以及 Kimi K3 和 DeepSeek-V4-Flash-0731 等模型。通讯内容为关注 AI 领域前沿进展的读者提供了宝贵信息。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This reading list covers several notable advancements and projects across technology and infrastructure. Topics include pepper-spray drones, China's ambitious chip 'Manhattan Project,' Commonwealth Fusion's successful fundraising, and a proposed renovation of Dulles Airport.</blockquote>
-<p>🏷️ AI development, open letters, regulation, safety</p>
+<blockquote>The July 2026 edition of Simon Willison's sponsors-only monthly newsletter is out. This issue covers recent developments in AI models, including accidental cyberattacks by OpenAl and Anthropic models during testing. It also highlights GPT-5.6 versions (Sol, Terra, Luna), Claude Opus 5, and models like Kimi K3 and DeepSeek-V4-Flash-0731. The newsletter offers valuable insights for those tracking AI advancements.</blockquote>
+<p>🏷️ AI development, open letters, regulation</p>
 <hr>
-<h3>5. 引用 Greg Brockman 的话</h3>
-<p><a href="https://simonwillison.net/2026/Aug/1/greg-brockman/#atom-everything">Quoting Greg Brockman</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 25/30</p>
+<h3>4. John Ternus 重新聘请前硬件副总裁 Laura Legros</h3>
+<p><a href="https://www.dwarkesh.com/p/why-compute-might-get-10x-more-expensive-video">Why smarter AI models could drive up compute prices 10x</a> — <strong>dwarkesh.com</strong> · 9 小时前 · ⭐ 25/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Greg Brockman 指出，在 OpenAI，许多人将 ChatGPT 连接到 Slack。然而，人们普遍不喜欢同事的 ChatGPT 来联系他们寻求帮助，即使他们乐意为同事提供同样的帮助。这凸显了人们对人际关系的重视，以及希望 AI 能够节省时间或增强人际互动，而不是成为隔阂。</blockquote>
+<blockquote>据彭博社报道，苹果公司新任 CEO John Ternus 正在重新聘请前硬件工程副总裁 Laura Legros。Legros 于 2022 年从苹果退休，此前她负责产品交付、开发进度和工程团队间的协调工作。在 Ternus 的领导下，她将跨部门工作并直接向其汇报。Legros 在退休前是 Ternus 最信任的副手之一，曾多次在重要场合代表公司。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Greg Brockman observes that many at OpenAI connect ChatGPT to Slack, yet people dislike being contacted by a coworker's ChatGPT for help, even if they'd assist the coworker directly. This highlights the value people place on human relationships and the desire for AI to enhance, rather than separate, human interaction.</blockquote>
-<p>🏷️ ChatGPT, Slack integration, AI adoption</p>
+<blockquote>Incoming Apple CEO John Ternus is rehiring Laura Legros, a former vice president of hardware engineering who retired in 2022, according to Bloomberg. Legros previously managed product delivery, development schedules, and coordination across engineering teams. Under Ternus, she will work across different parts of the company and report directly to him. She was one of Ternus's most trusted deputies before her retirement.</blockquote>
+<p>🏷️ AI models, compute prices, AI compute, training cost</p>
 <hr>
-<h3>6. 数学和理论计算机科学的十项进展</h3>
-<p><a href="https://simonwillison.net/2026/Aug/1/ten-advances-in-mathematics/#atom-everything">Ten advances in mathematics and theoretical computer science</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 23/30</p>
+<h3>5. Agent Fone</h3>
+<p><a href="https://fail.xyz/phone/">Agent Fone</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 24/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>文章介绍了 OpenAI 在数学和理论计算机科学领域的十项最新进展。其中提到 Anthropic 使用 Mythos Preview 和 Claude 发现了加密漏洞，并为此花费了 10 万美元的 token 费用，强调了研究的深度而非表面性。这些进展可能对 AI 的基础研究和应用产生深远影响。</blockquote>
+<blockquote>Agent Fone 是一款极具创新性的智能手机，其核心理念是让用户能在手机上直接创建自定义软件。用户只需描述应用想法，回答几个问题，Agent Fone 就能自动构建应用或小组件，并添加到主屏幕。这为用户提供了前所未有的应用开发自由度。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This article highlights ten recent advances in mathematics and theoretical computer science by OpenAI. It notes Anthropic's discovery of cryptographic weaknesses using Mythos Preview and Claude, costing $100,000 in tokens, emphasizing deep research over low-hanging fruit. These advancements could significantly impact foundational AI research and applications.</blockquote>
-<p>🏷️ mathematics, theoretical computer science, AI advances</p>
-<hr>
-<h2>💡 观点 / 杂谈</h2>
-<h3>7. 电话租赁的演变：从AT&amp;T的“单一机器”到互联互通的网络</h3>
-<p><a href="https://pluralistic.net/2026/08/01/dare-snot/">Pluralistic: Why businesses lie about AI (01 Aug 2026)</a> — <strong>pluralistic.net</strong> · 1 天前 · ⭐ 26/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>文章探讨了电话系统从AT&amp;T时代被视为“单一机器”到如今互联网互联互通系统的演变。在AT&amp;T的全盛时期，其庞大的电话网络被比作一个巨大的机器，强调了统一的政策和系统。然而，随着技术发展，电话网络已转变为一个由众多互联设备组成的复杂系统，与互联网的性质更为相似。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>The article examines the evolution of telephone systems from AT&amp;T's era, where the network was perceived as a 'single machine,' to today's interconnected internet. During AT&amp;T's peak, its vast telephone network was likened to a colossal machine, emphasizing 'One Policy, One System, Universal Service.' However, technological advancements have transformed it into a complex system of interconnected devices, more akin to the internet.</blockquote>
-<p>🏷️ AI, business, ethics, marketing</p>
-<hr>
-<h3>8. 2026年7月新闻通讯</h3>
-<p><a href="https://simonwillison.net/2026/Aug/2/july-newsletter/#atom-everything">July 2026 newsletter</a> — <strong>simonwillison.net</strong> · 23 小时前 · ⭐ 21/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>本期新闻通讯是六月份的订阅者专属内容，现已发布。如果您是订阅者，或现在开始订阅，即可访问。本月内容涵盖了OpenAI和Anthropic模型测试中的意外网络攻击，以及GPT-5.6、Claude Opus 5、Kimi K3和DeepSeek-V4-Flash-0731等AI模型的最新进展。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>The June edition of the sponsors-only monthly newsletter is now available. Subscribers can access it directly. This issue covers accidental cyberattacks from OpenAI and Anthropic models under test, and discusses advancements in AI models like GPT-5.6, Claude Opus 5, Kimi K3, and DeepSeek-V4-Flash-0731.</blockquote>
-<p>🏷️ newsletter, sponsorship, tech trends</p>
-<hr>
-<h3>9. 科技巨头公司中的功劳给予与获取</h3>
-<p><a href="https://seangoedecke.com/giving-and-taking-credit/">Giving and taking credit in big tech companies</a> — <strong>seangoedecke.com</strong> · 1 天前 · ⭐ 21/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>工程师们常抱怨工作可见性应该是他们经理的职责，认为自己只需专注于编码，而经理则负责识别表现优秀者并给予奖励。这种想法源于“学校幻想”，即工作场所应遵循与学校相同的规则。在教育阶段，学生只需完成作业和考试，无需担心“可见性”问题。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Engineers often feel that visibility should be their manager's responsibility, allowing them to focus solely on coding while managers identify and reward high performers. This attitude stems from the 'school fantasy,' where workplaces are expected to operate like educational institutions where visibility was not a concern.</blockquote>
-<p>🏷️ big tech, credit, engineering culture, career</p>
+<blockquote>Agent Fone is an ambitious new smartphone designed to enable users to create custom software directly on the device. By describing an app idea and answering a few questions, users can have Agent Fone build an app or widget that appears on their home screen, offering unprecedented freedom in app creation.</blockquote>
+<p>🏷️ AI assistant, smartphone, custom software</p>
 <hr>
 <h2>🛠 工具 / 开源</h2>
-<h3>10. datasette-apps 0.2a0 版本发布</h3>
-<p><a href="https://simonwillison.net/2026/Aug/1/datasette-apps/#atom-everything">datasette-apps 0.2a0</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 25/30</p>
+<h3>6. 开发工具必须开源</h3>
+<p><a href="https://simonwillison.net/2026/Aug/3/devtools-must-be-open-source-exedev/#atom-everything">Devtools must be open source (exe.dev)</a> — <strong>simonwillison.net</strong> · 11 小时前 · ⭐ 24/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>datasette-apps 0.2a0 版本发布，带来了使用 Datasette Agent 创建和编辑应用时的改进。新功能包括 <code>app_debug()</code> 工具，允许 Agent 在后台测试应用，以及 <code>app_list()</code> 功能。这些更新旨在提升 Datasette 应用的开发和调试体验。</blockquote>
+<blockquote>文章讨论了开发工具开源的必要性，并指出尽管用户（包括专业程序员）拥有检查和修改软件的自由，但现实中更多依赖他人来完成这些工作。开源的本质在于透明度和社区协作，这对于构建更强大、更可靠的开发工具至关重要。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>The release of datasette-apps 0.2a0 introduces improvements for creating and editing apps with Datasette Agent. New features include the <code>app_debug()</code> tool for invisible app testing and the <code>app_list()</code> functionality, enhancing the development and debugging experience for Datasette applications.</blockquote>
-<p>🏷️ Datasette, Datasette Apps, AI Agent, release</p>
+<blockquote>The article argues for the necessity of open-source development tools, noting that while users theoretically have the freedom to examine and modify software, in practice, they often rely on others. The essence of open source lies in transparency and community collaboration, which is crucial for building robust development tools.</blockquote>
+<p>🏷️ devtools, open source, software freedom, developer tools</p>
 <hr>
-<h3>11. 本周包管理：2026年8月1日</h3>
-<p><a href="https://nesbitt.io/2026/08/01/this-week-in-package-management.html">This Week in Package Management: 1 August 2026</a> — <strong>nesbitt.io</strong> · 1 天前 · ⭐ 23/30</p>
+<h3>7. TerminalWidget 1.0</h3>
+<p><a href="https://terminalwidget.app/">TerminalWidget 1.0</a> — <strong>daringfireball.net</strong> · 44 分钟前 · ⭐ 21/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>本周包管理聚焦于整个包管理生态系统的最新发布、安全公告和相关文章。内容涵盖了从不同包管理器到相关工具的广泛信息，为开发者和系统管理员提供了最新的行业动态和技术更新。</blockquote>
+<blockquote>Brett Terpstra 推出了新的应用程序 TerminalWidget 1.0。该应用允许用户将命令、脚本、API 和快捷方式的输出直接发送到 macOS、iOS 和 iPadOS 的小组件中，并支持丰富的格式、进度条、火花线和图像。TerminalWidget 1.0 现已在 App Store 上架。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This Week in Package Management for August 1, 2026, covers releases, advisories, and articles from across the package management world. It offers a comprehensive overview of the latest developments and updates relevant to developers and system administrators in the field.</blockquote>
-<p>🏷️ package management, software development, releases, advisories</p>
+<blockquote>Brett Terpstra has released TerminalWidget 1.0, a new application that allows users to send output from commands, scripts, APIs, and Shortcuts directly to widgets across macOS, iOS, and iPadOS. It supports rich formatting, progress bars, sparklines, and image display, and is available on the App Store.</blockquote>
+<p>🏷️ TerminalWidget, macOS, iOS, widgets</p>
 <hr>
-<h3>12. condense-json 1.0 版本发布</h3>
-<p><a href="https://simonwillison.net/2026/Aug/2/condense-json/#atom-everything">condense-json 1.0</a> — <strong>simonwillison.net</strong> · 5 小时前 · ⭐ 22/30</p>
+<h3>8. 引用 David Crawshaw 的指令</h3>
+<p><a href="https://simonwillison.net/2026/Aug/3/david-crawshaw/#atom-everything">Quoting David Crawshaw's prompt</a> — <strong>simonwillison.net</strong> · 11 小时前 · ⭐ 21/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>condense-json 库发布了 1.0 版本，标志着该工具已成熟稳定。作者鼓励更勇敢地发布 1.0 版本，并对这个一年半的库进行了一些非破坏性的修复。该工具旨在简化 JSON 数据结构，提高处理效率。</blockquote>
+<blockquote>建议设置一个夜间定时任务，自动执行指令：获取软件的最新上游变更，并将所有本地更改基于上游进行整合。然后检查软件是否按预期工作，并替换当前版本。此举旨在确保开发工具的开源和持续更新。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>The library condense-json has reached version 1.0, signifying its maturity and stability. The author encourages bolder 1.0 releases and has applied sensible, non-disruptive fixes to this year-and-a-half-old library, which aims to simplify JSON data structures and improve processing efficiency.</blockquote>
-<p>🏷️ JSON, library, data processing, release</p>
+<blockquote>This prompt suggests setting up a nightly cron job to fetch upstream changes for a software and rebase all local changes on top of them. It also includes checking if the software functions as intended and replacing the current version, emphasizing the importance of open-source development tools.</blockquote>
+<p>🏷️ devtools, open source, automation, cron job</p>
+<hr>
+<h3>9. condense-json 1.0 发布</h3>
+<p><a href="https://simonwillison.net/2026/Aug/2/condense-json/#atom-everything">condense-json 1.0</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 21/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>作者 Simon Willison 宣布 condense-json 库发布 1.0 版本。该库已存在一年半，并进行了一些合理的修复。文章展示了该库如何压缩 JSON 数据，以减小文件大小并提高效率。这是作者勇于发布 1.0 版本的一个例子。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Simon Willison announces the release of condense-json version 1.0. This library, now a year and a half old, has received sensible fixes. The post demonstrates how the library compresses JSON data to reduce file size and improve efficiency, marking a step towards bolder 1.0 releases.</blockquote>
+<p>🏷️ JSON, developer tool, release</p>
+<hr>
+<h2>💡 观点 / 杂谈</h2>
+<h3>10. 引用 Steve Yegge 的观点：关于 Opus 4.7 的“再多两件事”问题</h3>
+<p><a href="https://simonwillison.net/2026/Aug/3/dont-be-a-meat-proxy/#atom-everything">Don't be a meat proxy</a> — <strong>simonwillison.net</strong> · 3 小时前 · ⭐ 25/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Steve Yegge 在其关于“事物发展的形态”的文章中，引用了关于 Opus 4.7 版本的一个问题。他提到，Gas Town 项目原本设计为可重用，但最终只用于构建自身。Opus 4.7 版本引入了“再多两件事”（just two more things）的倾向，导致 Opus 无法收敛并准备好进行实际工作，因为它总是想自己调整 Gas Town。这种持续的迭代和微调阻碍了项目的成熟。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Steve Yegge quotes a critique regarding Opus 4.7's 'just two more things' issue from his essay on 'The Shape of Things to Come.' He notes that the Gas Town project, intended for reuse, ended up only building itself. Opus 4.7 introduced a tendency to constantly tweak Gas Town, preventing it from converging and being ready for real work. This continuous refinement hindered the project's maturity.</blockquote>
+<p>🏷️ meat proxy, AI, LLM, prompting</p>
+<hr>
+<h3>11. 2026 年 7 月通讯</h3>
+<p><a href="https://simonwillison.net/2026/Aug/2/july-newsletter/#atom-everything">July 2026 newsletter</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 21/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>本期通讯是 6 月份的赞助者专属月度通讯的延续。如果您是赞助者，可以访问此处获取。本期内容涵盖了关于 AI 模型（如 OpenAl、Anthropic、GPT-5.6、Claude Opus 5、Kimi K3 和 DeepSeek-V4-Flash-0731）的最新动态和测试结果，包括意外的 AI 攻击事件。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>This is the July 2026 edition of the sponsors-only monthly newsletter. Sponsors can access it here. The newsletter covers recent developments and test results for AI models like OpenAl, Anthropic, GPT-5.6, Claude Opus 5, Kimi K3, and DeepSeek-V4-Flash-0731, including accidental cyberattacks.</blockquote>
+<p>🏷️ newsletter, developer insights, monthly summary</p>
+<hr>
+<h3>12. 引用 Steve Yegge 的观点</h3>
+<p><a href="https://simonwillison.net/2026/Aug/4/steve-yegge/#atom-everything">Quoting Steve Yegge</a> — <strong>simonwillison.net</strong> · 2 小时前 · ⭐ 19/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Steve Yegge 在其文章中引用了关于 "Gas Town" 的一段话。 "Gas Town" 最初设计为可重用，但最终仅用于构建自身。在 Opus 4.7 版本中，它开始出现问题，总是倾向于修改 "Gas Town" 本身，导致无法完成实际工作。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Steve Yegge quotes a passage about "Gas Town," which was intended to be reusable but was ultimately only used to build itself. The system began to fall apart at version 4.7, always wanting to fiddle with itself instead of converging on readying for real work.</blockquote>
+<p>🏷️ Steve Yegge, Gas Town, software development, reusability</p>
+<hr>
+<h2>🔒 安全</h2>
+<h3>13. 欢迎尼泊尔政府加入 Have I Been Pwned</h3>
+<p><a href="https://www.troyhunt.com/welcoming-the-nepalese-government-to-have-i-been-pwned/">Welcoming the Nepalese Government to Have I Been Pwned</a> — <strong>troyhunt.com</strong> · 20 小时前 · ⭐ 24/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Have I Been Pwned (HIBP) 宣布尼泊尔政府已加入其免费的政府服务。尼泊尔国家网络安全中心 (NCSC) 现在可以通过 HIBP 监控其政府域名，识别电子邮件地址的泄露情况。此举将增强尼泊尔的网络安全防御能力。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Have I Been Pwned (HIBP) welcomes the Nepalese Government to its free government service. Nepal's National Cyber Security Centre (NCSC) can now monitor Nepalese government domains against HIBP data, identifying exposed email addresses and enhancing the nation's cybersecurity posture.</blockquote>
+<p>🏷️ Have I Been Pwned, cyber security, government, data breach</p>
+<hr>
+<h2>⚙️ 工程</h2>
+<h3>14. MCP vs. REST：连接 Agent 到 API 的正确方式</h3>
+<p>[[Sponsor] MCP vs. REST: The Right Way to Connect Agents to Your API](https://workos.com/blog/mcp-vs-rest?utm_source=daringfireball&amp;amp;utm_medium=newsletter&amp;amp;utm_campaign=q32026) — <strong>daringfireball.net</strong> · 4 小时前 · ⭐ 23/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>文章区分了 MCP (Meta-API Communication Protocol) 和 REST 在连接 AI Agent 到 API 时的不同作用。REST 面向开发者，而 MCP 面向 Agent。两者并非竞争关系，而是分层存在，许多 MCP 服务器内部调用 REST 实现功能。最佳实践是设计围绕 Agent 的目标，而非将所有端点都转化为工具。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>This article differentiates the roles of MCP (Meta-API Communication Protocol) and REST in connecting AI agents to APIs, with REST serving developers and MCP serving agents. They are not rivals but layers, with many MCP servers calling REST internally. The best approach designs around agent goals rather than converting every endpoint into a tool.</blockquote>
+<p>🏷️ MCP, REST, API, agent</p>
 <hr>
 <h2>📝 其他</h2>
-<h3>13. 苹果2026年第三季度财报</h3>
-<p><a href="https://sixcolors.com/post/2026/07/apple-announces-record-q3-results/">Apple Q3 2026 Results</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 21/30</p>
+<h3>15. John Ternus 重新聘请前硬件副总裁 Laura Legros</h3>
+<p><a href="https://www.macrumors.com/2026/08/03/apple-john-ternus-hiring-retired-vp/">John Ternus Has Rehired Former Hardware VP Laura Legros</a> — <strong>daringfireball.net</strong> · 5 小时前 · ⭐ 19/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>苹果公司公布了创纪录的第三季度财报，总营收达到1094亿美元，同比增长16%。其中iPhone营收增长22%，Mac营收增长10.4%，服务营收增长12%，可穿戴设备营收增长6%。然而，iPad营收则下降了6%。这是蒂姆·库克担任CEO的第90次也是最后一次财报发布。</blockquote>
+<blockquote>据报道，苹果公司新任 CEO John Ternus 正在重新聘请前硬件工程副总裁 Laura Legros。Legros 于 2022 年从苹果退休，她曾负责产品交付、开发进度和工程团队协调。在 Ternus 的领导下，她将跨部门工作并直接向他汇报。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Apple announced record third-quarter earnings with total revenue of $109.4 billion, a 16% increase year-over-year. iPhone revenue rose 22%, Mac revenue increased 10.4%, Services revenue was up 12%, and Wearables revenue grew 6%. iPad revenue, however, saw a 6% decline. This was Tim Cook's 90th and final earnings call as CEO.</blockquote>
-<p>🏷️ Apple, earnings, revenue, tech industry</p>
+<blockquote>Incoming Apple CEO John Ternus is reportedly rehiring Laura Legros, a former vice president of hardware engineering who retired in 2022. Legros previously managed product delivery, development schedules, and coordination across engineering teams. She will report directly to Ternus and work across different parts of the company.</blockquote>
+<p>🏷️ Apple, John Ternus, hardware engineering, Laura Legros</p>
 <hr>
-<h3>14. 阅读清单 08/01/26</h3>
-<p><a href="https://www.construction-physics.com/p/reading-list-080126">Reading List 08/01/26</a> — <strong>construction-physics.com</strong> · 1 天前 · ⭐ 20/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>本期阅读清单涵盖了多个引人关注的议题。其中包括使用胡椒喷雾的无人机、中国在芯片领域的“曼哈顿计划”、Commonwealth Fusion公司的融资动态，以及一项关于杜勒斯机场的翻新提案。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>This reading list covers several notable topics, including pepper-spray drones, China's chip 'Manhattan Project,' Commonwealth Fusion's fundraising, and a proposed renovation for Dulles Airport.</blockquote>
-<p>🏷️ reading list, technology news, fusion energy, semiconductors</p>
-<hr>
-<h3>15. 电话的夹缝求生</h3>
-<p><a href="https://computer.rip/2026-08-02-telephone-leasing.html">telephones caught in between</a> — <strong>computer.rip</strong> · 1 天前 · ⭐ 19/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>在AT&amp;T的全盛时期，电话系统被誉为有史以来建造的最大机器。这个“问候机器”虽然庞大，但将其定义为单一机器引发了挑战性的定义问题。互联网无疑是一个互联系统的集合，而非单一机器。然而，电话网络在感觉上更像是一台设备，其“一个政策、一个系统、普遍服务”的口号也印证了这一点。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>During AT&amp;T's peak, the telephone system was often called the largest machine ever built. While the 'hello machine' was vast, defining it as a single machine poses challenging questions. The Internet is a system of interconnected machines, but the telephone network felt more like a single device, as reflected in AT&amp;T's slogan 'One Policy, One System, Universal Service.'</blockquote>
-<p>🏷️ telephone network, internet, machine definition</p>
-<hr>
-<p>*生成于 2026-08-03 03:34 | 扫描 83 源 → 获取 2518 篇 → 精选 15 篇* *基于 <a href="https://refactoringenglish.com/tools/hn-popularity/">Hacker News Popularity Contest 2025</a> RSS 源列表，由 <a href="https://x.com/karpathy">Andrej Karpathy</a> 推荐*</p>
+<p>*生成于 2026-08-04 03:17 | 扫描 82 源 → 获取 2498 篇 → 精选 15 篇* *基于 <a href="https://refactoringenglish.com/tools/hn-popularity/">Hacker News Popularity Contest 2025</a> RSS 源列表，由 <a href="https://x.com/karpathy">Andrej Karpathy</a> 推荐*</p>
     </article>
   </main>
-  <script id="speech-text" type="application/json">"🎧 点这里朗读今日日报\n📰 AI 博客每日精选 — 2026-08-03\n来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15\n📝 今日看点\n今日技术看点聚焦AI安全与发展新动态，OpenAI、Anthropic等模型更新与潜在网络攻击风险并存。同时，大公司工程师如何平衡技术贡献与个人可见性成为热议话题。此外，科技巨头苹果财报亮眼，预示着其在AI驱动下的硬件和服务业务持续强劲。\n \n🏆 今日必读\n🥇 2026年7月新闻通讯：AI模型测试中的意外网络攻击与GPT-5.6等模型更新\nI'm (mostly) picking models on speed now, not intelligence — martinalderson.com · 1 天前 · 🤖 AI / ML\n中文摘要\nSimon Willison的2026年7月赞助者专属新闻通讯已发布，重点关注AI领域的最新动态。本期通讯探讨了OpenAI和Anthropic模型在测试中可能引发的意外网络攻击，并介绍了GPT-5.6（Sol, Terra, Luna）、Claude Opus 5、Kimi K3以及DeepSeek-V4-Flash-0731等新模型。\nEnglish Summary\nSimon Willison's July 2026 sponsor-only newsletter is out, covering AI developments. This month's edition highlights accidental cyberattacks by OpenAI and Anthropic models during testing. It also details updates on various AI models including GPT-5.6 (Sol, Terra, and Luna), Claude Opus 5, Kimi K3, and DeepSeek-V4-Flash-0731.\n💡 为什么值得读: 了解最新AI模型进展和潜在安全风险的快速概览。\n💡 Why read it: A quick overview of the latest AI model advancements and potential security risks.\n🏷️ LLM, speed, performance, tokens per second\n🥈 大科技公司中给予和获取功劳的挑战\nAgent Fone — daringfireball.net · 6 小时前 · 🤖 AI / ML\n中文摘要\n工程师常认为提升可见性是经理的职责，希望专注于代码而由经理负责认可和奖励。这种“学校幻想”心态忽视了职场现实，即个人需要主动管理自己的可见性。文章探讨了在大公司中，工程师如何平衡技术贡献与获得认可的需求，以及经理在其中扮演的角色。\nEnglish Summary\nEngineers often expect managers to handle visibility and recognition, allowing them to focus solely on code, a mindset termed the 'school fantasy.' This perspective overlooks the reality of professional environments where individuals must actively manage their own visibility. The article explores the challenges engineers face in balancing technical contributions with gaining recognition in large tech companies and the role of managers in this process.\n💡 为什么值得读: 深入理解科技行业中个人职业发展与团队协作的微妙平衡。\n💡 Why read it: Gain insight into the delicate balance between individual career progression and team dynamics in the tech industry.\n🏷️ AI assistant, smartphone, custom software, Agent Fone\n🥉 苹果2026财年第三季度财报：营收创纪录，iPhone和Mac表现强劲\nBoris Cherny on Trying to Get Claude Code to Rewrite the Claude App — daringfireball.net · 6 小时前 · 🤖 AI / ML\n中文摘要\n苹果公司公布了2026财年第三季度创纪录的财报，总营收达到1094亿美元，同比增长16%。iPhone营收增长22%，Mac营收增长10.4%，服务营收增长12%，可穿戴设备营收增长6%，而iPad营收则下降6%。此次财报也是CEO蒂姆·库克（Tim Cook）任期内的第90次也是最后一次分析师电话会议。\nEnglish Summary\nApple announced record third-quarter earnings for fiscal year 2026, with total revenue reaching $109.4 billion, a 16 percent increase year-over-year. iPhone revenue surged 22%, Mac revenue grew 10.4%, Services revenue was up 12%, and Wearables revenue increased by 6%, while iPad revenue saw a 6% decline. This quarter's results were also the 90th and final analyst call for CEO Tim Cook.\n💡 为什么值得读: 快速掌握苹果最新的财务表现和关键产品线的增长情况。\n💡 Why read it: Quickly grasp Apple's latest financial performance and growth across key product lines.\n🏷️ Claude, Anthropic, AI development, prompt engineering\n \n📊 数据概览\n \n \n \n分类分布\nmermaid\npie showData\n title \"文章分类分布\"\n \"🤖 AI / ML\" : 6\n \"💡 观点 / 杂谈\" : 3\n \"🛠 工具 / 开源\" : 3\n \"📝 其他\" : 3\n高频关键词\nmermaid\nxychart-beta horizontal\n title \"高频关键词\"\n x-axis [\"ai development\", \"release\", \"llm\", \"speed\", \"performance\", \"tokens per second\", \"ai assistant\", \"smartphone\", \"custom software\", \"agent fone\", \"claude\", \"anthropic\"]\n y-axis \"出现次数\" 0 --> 4\n bar [2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]\n📈 纯文本关键词图（终端友好）\nai development │ ████████████████████ 2\nrelease │ ████████████████████ 2\nllm │ ██████████░░░░░░░░░░ 1\nspeed │ ██████████░░░░░░░░░░ 1\nperformance │ ██████████░░░░░░░░░░ 1\ntokens per second │ ██████████░░░░░░░░░░ 1\nai assistant │ ██████████░░░░░░░░░░ 1\nsmartphone │ ██████████░░░░░░░░░░ 1\ncustom software │ ██████████░░░░░░░░░░ 1\nagent fone │ ██████████░░░░░░░░░░ 1\n🏷️ 话题标签\nai development(2) · release(2) · llm(1) · speed(1) · performance(1) · tokens per second(1) · ai assistant(1) · smartphone(1) · custom software(1) · agent fone(1) · claude(1) · anthropic(1) · prompt engineering(1) · open letters(1) · regulation(1) · safety(1) · ai(1) · business(1) · ethics(1) · marketing(1)\n \n🤖 AI / ML\n1. 2026年7月新闻通讯：AI模型测试中的意外网络攻击与GPT-5.6等模型更新\nI'm (mostly) picking models on speed now, not intelligence — martinalderson.com · 1 天前 · ⭐ 27/30\n中文摘要\nSimon Willison的2026年7月赞助者专属新闻通讯已发布，重点关注AI领域的最新动态。本期通讯探讨了OpenAI和Anthropic模型在测试中可能引发的意外网络攻击，并介绍了GPT-5.6（Sol, Terra, Luna）、Claude Opus 5、Kimi K3以及DeepSeek-V4-Flash-0731等新模型。\nEnglish Summary\nSimon Willison's July 2026 sponsor-only newsletter is out, covering AI developments. This month's edition highlights accidental cyberattacks by OpenAI and Anthropic models during testing. It also details updates on various AI models including GPT-5.6 (Sol, Terra, and Luna), Claude Opus 5, Kimi K3, and DeepSeek-V4-Flash-0731.\n🏷️ LLM, speed, performance, tokens per second\n \n2. 大科技公司中给予和获取功劳的挑战\nAgent Fone — daringfireball.net · 6 小时前 · ⭐ 26/30\n中文摘要\n工程师常认为提升可见性是经理的职责，希望专注于代码而由经理负责认可和奖励。这种“学校幻想”心态忽视了职场现实，即个人需要主动管理自己的可见性。文章探讨了在大公司中，工程师如何平衡技术贡献与获得认可的需求，以及经理在其中扮演的角色。\nEnglish Summary\nEngineers often expect managers to handle visibility and recognition, allowing them to focus solely on code, a mindset termed the 'school fantasy.' This perspective overlooks the reality of professional environments where individuals must actively manage their own visibility. The article explores the challenges engineers face in balancing technical contributions with gaining recognition in large tech companies and the role of managers in this process.\n🏷️ AI assistant, smartphone, custom software, Agent Fone\n \n3. 苹果2026财年第三季度财报：营收创纪录，iPhone和Mac表现强劲\nBoris Cherny on Trying to Get Claude Code to Rewrite the Claude App — daringfireball.net · 6 小时前 · ⭐ 26/30\n中文摘要\n苹果公司公布了2026财年第三季度创纪录的财报，总营收达到1094亿美元，同比增长16%。iPhone营收增长22%，Mac营收增长10.4%，服务营收增长12%，可穿戴设备营收增长6%，而iPad营收则下降6%。此次财报也是CEO蒂姆·库克（Tim Cook）任期内的第90次也是最后一次分析师电话会议。\nEnglish Summary\nApple announced record third-quarter earnings for fiscal year 2026, with total revenue reaching $109.4 billion, a 16 percent increase year-over-year. iPhone revenue surged 22%, Mac revenue grew 10.4%, Services revenue was up 12%, and Wearables revenue increased by 6%, while iPad revenue saw a 6% decline. This quarter's results were also the 90th and final analyst call for CEO Tim Cook.\n🏷️ Claude, Anthropic, AI development, prompt engineering\n \n4. 2026年8月1日阅读清单：聚焦前沿科技与基建项目\nOpen letters about AI development — simonwillison.net · 23 小时前 · ⭐ 26/30\n中文摘要\n本期阅读清单涵盖了多个引人注目的科技和基建领域。内容包括：用于驱散人群的胡椒喷雾无人机、中国雄心勃勃的芯片“曼哈顿计划”、Commonwealth Fusion公司成功的融资以及杜勒斯机场的翻新提案。\nEnglish Summary\nThis reading list covers several notable advancements and projects across technology and infrastructure. Topics include pepper-spray drones, China's ambitious chip 'Manhattan Project,' Commonwealth Fusion's successful fundraising, and a proposed renovation of Dulles Airport.\n🏷️ AI development, open letters, regulation, safety\n \n5. 引用 Greg Brockman 的话\nQuoting Greg Brockman — simonwillison.net · 1 天前 · ⭐ 25/30\n中文摘要\nGreg Brockman 指出，在 OpenAI，许多人将 ChatGPT 连接到 Slack。然而，人们普遍不喜欢同事的 ChatGPT 来联系他们寻求帮助，即使他们乐意为同事提供同样的帮助。这凸显了人们对人际关系的重视，以及希望 AI 能够节省时间或增强人际互动，而不是成为隔阂。\nEnglish Summary\nGreg Brockman observes that many at OpenAI connect ChatGPT to Slack, yet people dislike being contacted by a coworker's ChatGPT for help, even if they'd assist the coworker directly. This highlights the value people place on human relationships and the desire for AI to enhance, rather than separate, human interaction.\n🏷️ ChatGPT, Slack integration, AI adoption\n \n6. 数学和理论计算机科学的十项进展\nTen advances in mathematics and theoretical computer science — simonwillison.net · 1 天前 · ⭐ 23/30\n中文摘要\n文章介绍了 OpenAI 在数学和理论计算机科学领域的十项最新进展。其中提到 Anthropic 使用 Mythos Preview 和 Claude 发现了加密漏洞，并为此花费了 10 万美元的 token 费用，强调了研究的深度而非表面性。这些进展可能对 AI 的基础研究和应用产生深远影响。\nEnglish Summary\nThis article highlights ten recent advances in mathematics and theoretical computer science by OpenAI. It notes Anthropic's discovery of cryptographic weaknesses using Mythos Preview and Claude, costing $100,000 in tokens, emphasizing deep research over low-hanging fruit. These advancements could significantly impact foundational AI research and applications.\n🏷️ mathematics, theoretical computer science, AI advances\n \n💡 观点 / 杂谈\n7. 电话租赁的演变：从AT&T的“单一机器”到互联互通的网络\nPluralistic: Why businesses lie about AI (01 Aug 2026) — pluralistic.net · 1 天前 · ⭐ 26/30\n中文摘要\n文章探讨了电话系统从AT&T时代被视为“单一机器”到如今互联网互联互通系统的演变。在AT&T的全盛时期，其庞大的电话网络被比作一个巨大的机器，强调了统一的政策和系统。然而，随着技术发展，电话网络已转变为一个由众多互联设备组成的复杂系统，与互联网的性质更为相似。\nEnglish Summary\nThe article examines the evolution of telephone systems from AT&T's era, where the network was perceived as a 'single machine,' to today's interconnected internet. During AT&T's peak, its vast telephone network was likened to a colossal machine, emphasizing 'One Policy, One System, Universal Service.' However, technological advancements have transformed it into a complex system of interconnected devices, more akin to the internet.\n🏷️ AI, business, ethics, marketing\n \n8. 2026年7月新闻通讯\nJuly 2026 newsletter — simonwillison.net · 23 小时前 · ⭐ 21/30\n中文摘要\n本期新闻通讯是六月份的订阅者专属内容，现已发布。如果您是订阅者，或现在开始订阅，即可访问。本月内容涵盖了OpenAI和Anthropic模型测试中的意外网络攻击，以及GPT-5.6、Claude Opus 5、Kimi K3和DeepSeek-V4-Flash-0731等AI模型的最新进展。\nEnglish Summary\nThe June edition of the sponsors-only monthly newsletter is now available. Subscribers can access it directly. This issue covers accidental cyberattacks from OpenAI and Anthropic models under test, and discusses advancements in AI models like GPT-5.6, Claude Opus 5, Kimi K3, and DeepSeek-V4-Flash-0731.\n🏷️ newsletter, sponsorship, tech trends\n \n9. 科技巨头公司中的功劳给予与获取\nGiving and taking credit in big tech companies — seangoedecke.com · 1 天前 · ⭐ 21/30\n中文摘要\n工程师们常抱怨工作可见性应该是他们经理的职责，认为自己只需专注于编码，而经理则负责识别表现优秀者并给予奖励。这种想法源于“学校幻想”，即工作场所应遵循与学校相同的规则。在教育阶段，学生只需完成作业和考试，无需担心“可见性”问题。\nEnglish Summary\nEngineers often feel that visibility should be their manager's responsibility, allowing them to focus solely on coding while managers identify and reward high performers. This attitude stems from the 'school fantasy,' where workplaces are expected to operate like educational institutions where visibility was not a concern.\n🏷️ big tech, credit, engineering culture, career\n \n🛠 工具 / 开源\n10. datasette-apps 0.2a0 版本发布\ndatasette-apps 0.2a0 — simonwillison.net · 1 天前 · ⭐ 25/30\n中文摘要\ndatasette-apps 0.2a0 版本发布，带来了使用 Datasette Agent 创建和编辑应用时的改进。新功能包括 appdebug() 工具，允许 Agent 在后台测试应用，以及 applist() 功能。这些更新旨在提升 Datasette 应用的开发和调试体验。\nEnglish Summary\nThe release of datasette-apps 0.2a0 introduces improvements for creating and editing apps with Datasette Agent. New features include the appdebug() tool for invisible app testing and the applist() functionality, enhancing the development and debugging experience for Datasette applications.\n🏷️ Datasette, Datasette Apps, AI Agent, release\n \n11. 本周包管理：2026年8月1日\nThis Week in Package Management: 1 August 2026 — nesbitt.io · 1 天前 · ⭐ 23/30\n中文摘要\n本周包管理聚焦于整个包管理生态系统的最新发布、安全公告和相关文章。内容涵盖了从不同包管理器到相关工具的广泛信息，为开发者和系统管理员提供了最新的行业动态和技术更新。\nEnglish Summary\nThis Week in Package Management for August 1, 2026, covers releases, advisories, and articles from across the package management world. It offers a comprehensive overview of the latest developments and updates relevant to developers and system administrators in the field.\n🏷️ package management, software development, releases, advisories\n \n12. condense-json 1.0 版本发布\ncondense-json 1.0 — simonwillison.net · 5 小时前 · ⭐ 22/30\n中文摘要\ncondense-json 库发布了 1.0 版本，标志着该工具已成熟稳定。作者鼓励更勇敢地发布 1.0 版本，并对这个一年半的库进行了一些非破坏性的修复。该工具旨在简化 JSON 数据结构，提高处理效率。\nEnglish Summary\nThe library condense-json has reached version 1.0, signifying its maturity and stability. The author encourages bolder 1.0 releases and has applied sensible, non-disruptive fixes to this year-and-a-half-old library, which aims to simplify JSON data structures and improve processing efficiency.\n🏷️ JSON, library, data processing, release\n \n📝 其他\n13. 苹果2026年第三季度财报\nApple Q3 2026 Results — daringfireball.net · 1 天前 · ⭐ 21/30\n中文摘要\n苹果公司公布了创纪录的第三季度财报，总营收达到1094亿美元，同比增长16%。其中iPhone营收增长22%，Mac营收增长10.4%，服务营收增长12%，可穿戴设备营收增长6%。然而，iPad营收则下降了6%。这是蒂姆·库克担任CEO的第90次也是最后一次财报发布。\nEnglish Summary\nApple announced record third-quarter earnings with total revenue of $109.4 billion, a 16% increase year-over-year. iPhone revenue rose 22%, Mac revenue increased 10.4%, Services revenue was up 12%, and Wearables revenue grew 6%. iPad revenue, however, saw a 6% decline. This was Tim Cook's 90th and final earnings call as CEO.\n🏷️ Apple, earnings, revenue, tech industry\n \n14. 阅读清单 08/01/26\nReading List 08/01/26 — construction-physics.com · 1 天前 · ⭐ 20/30\n中文摘要\n本期阅读清单涵盖了多个引人关注的议题。其中包括使用胡椒喷雾的无人机、中国在芯片领域的“曼哈顿计划”、Commonwealth Fusion公司的融资动态，以及一项关于杜勒斯机场的翻新提案。\nEnglish Summary\nThis reading list covers several notable topics, including pepper-spray drones, China's chip 'Manhattan Project,' Commonwealth Fusion's fundraising, and a proposed renovation for Dulles Airport.\n🏷️ reading list, technology news, fusion energy, semiconductors\n \n15. 电话的夹缝求生\ntelephones caught in between — computer.rip · 1 天前 · ⭐ 19/30\n中文摘要\n在AT&T的全盛时期，电话系统被誉为有史以来建造的最大机器。这个“问候机器”虽然庞大，但将其定义为单一机器引发了挑战性的定义问题。互联网无疑是一个互联系统的集合，而非单一机器。然而，电话网络在感觉上更像是一台设备，其“一个政策、一个系统、普遍服务”的口号也印证了这一点。\nEnglish Summary\nDuring AT&T's peak, the telephone system was often called the largest machine ever built. While the 'hello machine' was vast, defining it as a single machine poses challenging questions. The Internet is a system of interconnected machines, but the telephone network felt more like a single device, as reflected in AT&T's slogan 'One Policy, One System, Universal Service.'\n🏷️ telephone network, internet, machine definition\n \n生成于 2026-08-03 03:34 | 扫描 83 源 → 获取 2518 篇 → 精选 15 篇\n基于 Hacker News Popularity Contest 2025 RSS 源列表，由 Andrej Karpathy 推荐"</script>
+  <script id="speech-text" type="application/json">"🎧 点这里朗读今日日报\n📰 AI 博客每日精选 — 2026-08-04\n来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15\n📝 今日看点\n今日技术看点聚焦人工智能的快速演进与应用落地，从模型安全到自动化开发工具，AI正深刻重塑软件开发与用户交互。同时，开源理念在开发工具领域的重要性被再次强调，预示着更透明、协作的未来。此外，安全领域也迎来新进展，政府机构积极拥抱数据泄露监控服务。\n \n🏆 今日必读\n🥇 引用 David Crawshaw 的提示：将本地更改基于上游变更并确保软件正常工作\nAgentic coding techniques — micahflee.com · 11 小时前 · 🤖 AI / ML\n中文摘要\nDavid Crawshaw 提出了一个自动化软件维护的提示，建议设置一个夜间 cron 作业。该作业应定期拉取上游代码变更，并将所有本地更改基于这些上游变更。随后，它需要检查软件是否按预期工作，并用更新后的版本替换当前版本。这一流程旨在确保软件始终保持最新且功能正常。\nEnglish Summary\nDavid Crawshaw proposes an automated software maintenance prompt: set up a nightly cron job. This job should fetch upstream changes, rebase all local changes on top of them, verify the software functions as intended, and then replace the current version. The goal is to ensure software remains up-to-date and operational.\n💡 为什么值得读: 这个自动化维护提示展示了一种高效管理软件更新和本地修改的策略。\n💡 Why read it: This automated maintenance prompt showcases an efficient strategy for managing software updates and local modifications.\n🏷️ agentic coding, LLMs, AI agents, software development\n🥈 condense-json 1.0 发布\nBoris Cherny on Trying to Get Claude Code to Rewrite the Claude App — daringfireball.net · 1 天前 · 🤖 AI / ML\n中文摘要\nSimon Willison 发布了 condense-json 库的 1.0 版本，标志着该库已稳定一年半。此次发布包含了一些合理且非破坏性的修复。condense-json 旨在简化 JSON 数据，通过移除不必要的空格和换行来减小文件体积，同时保持数据结构不变。该工具对于需要优化 JSON 数据传输或存储的场景非常有用。\nEnglish Summary\nSimon Willison has released version 1.0 of the condense-json library, marking a year and a half of stability. This release includes sensible and non-disruptive fixes. condense-json aims to simplify JSON data by removing unnecessary whitespace and newlines, reducing file size while preserving the data structure. This tool is useful for scenarios requiring optimized JSON data transmission or storage.\n💡 为什么值得读: 了解如何通过 condense-json 优化 JSON 数据大小，对于处理大量 JSON 数据非常实用。\n💡 Why read it: Understanding how to optimize JSON data size with condense-json is highly practical for handling large JSON datasets.\n🏷️ Claude, Anthropic, AI development, prompt engineering\n🥉 2026 年 7 月通讯\nOpen letters about AI development — simonwillison.net · 1 天前 · 🤖 AI / ML\n中文摘要\nSimon Willison 的 2026 年 7 月赞助者专属月度通讯已发布。本期内容涵盖了多项与人工智能模型相关的最新动态，包括 OpenAl 和 Anthropic 模型在测试中意外引发的网络攻击。此外，还介绍了 GPT-5.6 的 Sol、Terra 和 Luna 版本，Claude Opus 5，以及 Kimi K3 和 DeepSeek-V4-Flash-0731 等模型。通讯内容为关注 AI 领域前沿进展的读者提供了宝贵信息。\nEnglish Summary\nThe July 2026 edition of Simon Willison's sponsors-only monthly newsletter is out. This issue covers recent developments in AI models, including accidental cyberattacks by OpenAl and Anthropic models during testing. It also highlights GPT-5.6 versions (Sol, Terra, Luna), Claude Opus 5, and models like Kimi K3 and DeepSeek-V4-Flash-0731. The newsletter offers valuable insights for those tracking AI advancements.\n💡 为什么值得读: 此通讯汇集了 2026 年 7 月份人工智能领域的关键进展，特别是关于模型安全和新发布的模型信息。\n💡 Why read it: This newsletter aggregates key AI advancements from July 2026, particularly regarding model safety and new releases.\n🏷️ AI development, open letters, regulation\n \n📊 数据概览\n \n \n \n分类分布\nmermaid\npie showData\n title \"文章分类分布\"\n \"🤖 AI / ML\" : 5\n \"🛠 工具 / 开源\" : 4\n \"💡 观点 / 杂谈\" : 3\n \"🔒 安全\" : 1\n \"⚙️ 工程\" : 1\n \"📝 其他\" : 1\n高频关键词\nmermaid\nxychart-beta horizontal\n title \"高频关键词\"\n x-axis [\"software development\", \"ai development\", \"devtools\", \"open source\", \"agentic coding\", \"llms\", \"ai agents\", \"claude\", \"anthropic\", \"prompt engineering\", \"open letters\", \"regulation\"]\n y-axis \"出现次数\" 0 --> 4\n bar [2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1]\n📈 纯文本关键词图（终端友好）\nsoftware development │ ████████████████████ 2\nai development │ ████████████████████ 2\ndevtools │ ████████████████████ 2\nopen source │ ████████████████████ 2\nagentic coding │ ██████████░░░░░░░░░░ 1\nllms │ ██████████░░░░░░░░░░ 1\nai agents │ ██████████░░░░░░░░░░ 1\nclaude │ ██████████░░░░░░░░░░ 1\nanthropic │ ██████████░░░░░░░░░░ 1\nprompt engineering │ ██████████░░░░░░░░░░ 1\n🏷️ 话题标签\nsoftware development(2) · ai development(2) · devtools(2) · open source(2) · agentic coding(1) · llms(1) · ai agents(1) · claude(1) · anthropic(1) · prompt engineering(1) · open letters(1) · regulation(1) · meat proxy(1) · ai(1) · llm(1) · prompting(1) · ai models(1) · compute prices(1) · ai compute(1) · training cost(1)\n \n🤖 AI / ML\n1. 引用 David Crawshaw 的提示：将本地更改基于上游变更并确保软件正常工作\nAgentic coding techniques — micahflee.com · 11 小时前 · ⭐ 26/30\n中文摘要\nDavid Crawshaw 提出了一个自动化软件维护的提示，建议设置一个夜间 cron 作业。该作业应定期拉取上游代码变更，并将所有本地更改基于这些上游变更。随后，它需要检查软件是否按预期工作，并用更新后的版本替换当前版本。这一流程旨在确保软件始终保持最新且功能正常。\nEnglish Summary\nDavid Crawshaw proposes an automated software maintenance prompt: set up a nightly cron job. This job should fetch upstream changes, rebase all local changes on top of them, verify the software functions as intended, and then replace the current version. The goal is to ensure software remains up-to-date and operational.\n🏷️ agentic coding, LLMs, AI agents, software development\n \n2. condense-json 1.0 发布\nBoris Cherny on Trying to Get Claude Code to Rewrite the Claude App — daringfireball.net · 1 天前 · ⭐ 26/30\n中文摘要\nSimon Willison 发布了 condense-json 库的 1.0 版本，标志着该库已稳定一年半。此次发布包含了一些合理且非破坏性的修复。condense-json 旨在简化 JSON 数据，通过移除不必要的空格和换行来减小文件体积，同时保持数据结构不变。该工具对于需要优化 JSON 数据传输或存储的场景非常有用。\nEnglish Summary\nSimon Willison has released version 1.0 of the condense-json library, marking a year and a half of stability. This release includes sensible and non-disruptive fixes. condense-json aims to simplify JSON data by removing unnecessary whitespace and newlines, reducing file size while preserving the data structure. This tool is useful for scenarios requiring optimized JSON data transmission or storage.\n🏷️ Claude, Anthropic, AI development, prompt engineering\n \n3. 2026 年 7 月通讯\nOpen letters about AI development — simonwillison.net · 1 天前 · ⭐ 26/30\n中文摘要\nSimon Willison 的 2026 年 7 月赞助者专属月度通讯已发布。本期内容涵盖了多项与人工智能模型相关的最新动态，包括 OpenAl 和 Anthropic 模型在测试中意外引发的网络攻击。此外，还介绍了 GPT-5.6 的 Sol、Terra 和 Luna 版本，Claude Opus 5，以及 Kimi K3 和 DeepSeek-V4-Flash-0731 等模型。通讯内容为关注 AI 领域前沿进展的读者提供了宝贵信息。\nEnglish Summary\nThe July 2026 edition of Simon Willison's sponsors-only monthly newsletter is out. This issue covers recent developments in AI models, including accidental cyberattacks by OpenAl and Anthropic models during testing. It also highlights GPT-5.6 versions (Sol, Terra, Luna), Claude Opus 5, and models like Kimi K3 and DeepSeek-V4-Flash-0731. The newsletter offers valuable insights for those tracking AI advancements.\n🏷️ AI development, open letters, regulation\n \n4. John Ternus 重新聘请前硬件副总裁 Laura Legros\nWhy smarter AI models could drive up compute prices 10x — dwarkesh.com · 9 小时前 · ⭐ 25/30\n中文摘要\n据彭博社报道，苹果公司新任 CEO John Ternus 正在重新聘请前硬件工程副总裁 Laura Legros。Legros 于 2022 年从苹果退休，此前她负责产品交付、开发进度和工程团队间的协调工作。在 Ternus 的领导下，她将跨部门工作并直接向其汇报。Legros 在退休前是 Ternus 最信任的副手之一，曾多次在重要场合代表公司。\nEnglish Summary\nIncoming Apple CEO John Ternus is rehiring Laura Legros, a former vice president of hardware engineering who retired in 2022, according to Bloomberg. Legros previously managed product delivery, development schedules, and coordination across engineering teams. Under Ternus, she will work across different parts of the company and report directly to him. She was one of Ternus's most trusted deputies before her retirement.\n🏷️ AI models, compute prices, AI compute, training cost\n \n5. Agent Fone\nAgent Fone — daringfireball.net · 1 天前 · ⭐ 24/30\n中文摘要\nAgent Fone 是一款极具创新性的智能手机，其核心理念是让用户能在手机上直接创建自定义软件。用户只需描述应用想法，回答几个问题，Agent Fone 就能自动构建应用或小组件，并添加到主屏幕。这为用户提供了前所未有的应用开发自由度。\nEnglish Summary\nAgent Fone is an ambitious new smartphone designed to enable users to create custom software directly on the device. By describing an app idea and answering a few questions, users can have Agent Fone build an app or widget that appears on their home screen, offering unprecedented freedom in app creation.\n🏷️ AI assistant, smartphone, custom software\n \n🛠 工具 / 开源\n6. 开发工具必须开源\nDevtools must be open source (exe.dev) — simonwillison.net · 11 小时前 · ⭐ 24/30\n中文摘要\n文章讨论了开发工具开源的必要性，并指出尽管用户（包括专业程序员）拥有检查和修改软件的自由，但现实中更多依赖他人来完成这些工作。开源的本质在于透明度和社区协作，这对于构建更强大、更可靠的开发工具至关重要。\nEnglish Summary\nThe article argues for the necessity of open-source development tools, noting that while users theoretically have the freedom to examine and modify software, in practice, they often rely on others. The essence of open source lies in transparency and community collaboration, which is crucial for building robust development tools.\n🏷️ devtools, open source, software freedom, developer tools\n \n7. TerminalWidget 1.0\nTerminalWidget 1.0 — daringfireball.net · 44 分钟前 · ⭐ 21/30\n中文摘要\nBrett Terpstra 推出了新的应用程序 TerminalWidget 1.0。该应用允许用户将命令、脚本、API 和快捷方式的输出直接发送到 macOS、iOS 和 iPadOS 的小组件中，并支持丰富的格式、进度条、火花线和图像。TerminalWidget 1.0 现已在 App Store 上架。\nEnglish Summary\nBrett Terpstra has released TerminalWidget 1.0, a new application that allows users to send output from commands, scripts, APIs, and Shortcuts directly to widgets across macOS, iOS, and iPadOS. It supports rich formatting, progress bars, sparklines, and image display, and is available on the App Store.\n🏷️ TerminalWidget, macOS, iOS, widgets\n \n8. 引用 David Crawshaw 的指令\nQuoting David Crawshaw's prompt — simonwillison.net · 11 小时前 · ⭐ 21/30\n中文摘要\n建议设置一个夜间定时任务，自动执行指令：获取软件的最新上游变更，并将所有本地更改基于上游进行整合。然后检查软件是否按预期工作，并替换当前版本。此举旨在确保开发工具的开源和持续更新。\nEnglish Summary\nThis prompt suggests setting up a nightly cron job to fetch upstream changes for a software and rebase all local changes on top of them. It also includes checking if the software functions as intended and replacing the current version, emphasizing the importance of open-source development tools.\n🏷️ devtools, open source, automation, cron job\n \n9. condense-json 1.0 发布\ncondense-json 1.0 — simonwillison.net · 1 天前 · ⭐ 21/30\n中文摘要\n作者 Simon Willison 宣布 condense-json 库发布 1.0 版本。该库已存在一年半，并进行了一些合理的修复。文章展示了该库如何压缩 JSON 数据，以减小文件大小并提高效率。这是作者勇于发布 1.0 版本的一个例子。\nEnglish Summary\nSimon Willison announces the release of condense-json version 1.0. This library, now a year and a half old, has received sensible fixes. The post demonstrates how the library compresses JSON data to reduce file size and improve efficiency, marking a step towards bolder 1.0 releases.\n🏷️ JSON, developer tool, release\n \n💡 观点 / 杂谈\n10. 引用 Steve Yegge 的观点：关于 Opus 4.7 的“再多两件事”问题\nDon't be a meat proxy — simonwillison.net · 3 小时前 · ⭐ 25/30\n中文摘要\nSteve Yegge 在其关于“事物发展的形态”的文章中，引用了关于 Opus 4.7 版本的一个问题。他提到，Gas Town 项目原本设计为可重用，但最终只用于构建自身。Opus 4.7 版本引入了“再多两件事”（just two more things）的倾向，导致 Opus 无法收敛并准备好进行实际工作，因为它总是想自己调整 Gas Town。这种持续的迭代和微调阻碍了项目的成熟。\nEnglish Summary\nSteve Yegge quotes a critique regarding Opus 4.7's 'just two more things' issue from his essay on 'The Shape of Things to Come.' He notes that the Gas Town project, intended for reuse, ended up only building itself. Opus 4.7 introduced a tendency to constantly tweak Gas Town, preventing it from converging and being ready for real work. This continuous refinement hindered the project's maturity.\n🏷️ meat proxy, AI, LLM, prompting\n \n11. 2026 年 7 月通讯\nJuly 2026 newsletter — simonwillison.net · 1 天前 · ⭐ 21/30\n中文摘要\n本期通讯是 6 月份的赞助者专属月度通讯的延续。如果您是赞助者，可以访问此处获取。本期内容涵盖了关于 AI 模型（如 OpenAl、Anthropic、GPT-5.6、Claude Opus 5、Kimi K3 和 DeepSeek-V4-Flash-0731）的最新动态和测试结果，包括意外的 AI 攻击事件。\nEnglish Summary\nThis is the July 2026 edition of the sponsors-only monthly newsletter. Sponsors can access it here. The newsletter covers recent developments and test results for AI models like OpenAl, Anthropic, GPT-5.6, Claude Opus 5, Kimi K3, and DeepSeek-V4-Flash-0731, including accidental cyberattacks.\n🏷️ newsletter, developer insights, monthly summary\n \n12. 引用 Steve Yegge 的观点\nQuoting Steve Yegge — simonwillison.net · 2 小时前 · ⭐ 19/30\n中文摘要\nSteve Yegge 在其文章中引用了关于 \"Gas Town\" 的一段话。 \"Gas Town\" 最初设计为可重用，但最终仅用于构建自身。在 Opus 4.7 版本中，它开始出现问题，总是倾向于修改 \"Gas Town\" 本身，导致无法完成实际工作。\nEnglish Summary\nSteve Yegge quotes a passage about \"Gas Town,\" which was intended to be reusable but was ultimately only used to build itself. The system began to fall apart at version 4.7, always wanting to fiddle with itself instead of converging on readying for real work.\n🏷️ Steve Yegge, Gas Town, software development, reusability\n \n🔒 安全\n13. 欢迎尼泊尔政府加入 Have I Been Pwned\nWelcoming the Nepalese Government to Have I Been Pwned — troyhunt.com · 20 小时前 · ⭐ 24/30\n中文摘要\nHave I Been Pwned (HIBP) 宣布尼泊尔政府已加入其免费的政府服务。尼泊尔国家网络安全中心 (NCSC) 现在可以通过 HIBP 监控其政府域名，识别电子邮件地址的泄露情况。此举将增强尼泊尔的网络安全防御能力。\nEnglish Summary\nHave I Been Pwned (HIBP) welcomes the Nepalese Government to its free government service. Nepal's National Cyber Security Centre (NCSC) can now monitor Nepalese government domains against HIBP data, identifying exposed email addresses and enhancing the nation's cybersecurity posture.\n🏷️ Have I Been Pwned, cyber security, government, data breach\n \n⚙️ 工程\n14. MCP vs. REST：连接 Agent 到 API 的正确方式\n[[Sponsor] MCP vs. REST: The Right Way to Connect Agents to Your API](https://workos.com/blog/mcp-vs-rest?utmsource=daringfireball&utmmedium=newsletter&utmcampaign=q32026) — daringfireball.net · 4 小时前 · ⭐ 23/30\n中文摘要\n文章区分了 MCP (Meta-API Communication Protocol) 和 REST 在连接 AI Agent 到 API 时的不同作用。REST 面向开发者，而 MCP 面向 Agent。两者并非竞争关系，而是分层存在，许多 MCP 服务器内部调用 REST 实现功能。最佳实践是设计围绕 Agent 的目标，而非将所有端点都转化为工具。\nEnglish Summary\nThis article differentiates the roles of MCP (Meta-API Communication Protocol) and REST in connecting AI agents to APIs, with REST serving developers and MCP serving agents. They are not rivals but layers, with many MCP servers calling REST internally. The best approach designs around agent goals rather than converting every endpoint into a tool.\n🏷️ MCP, REST, API, agent\n \n📝 其他\n15. John Ternus 重新聘请前硬件副总裁 Laura Legros\nJohn Ternus Has Rehired Former Hardware VP Laura Legros — daringfireball.net · 5 小时前 · ⭐ 19/30\n中文摘要\n据报道，苹果公司新任 CEO John Ternus 正在重新聘请前硬件工程副总裁 Laura Legros。Legros 于 2022 年从苹果退休，她曾负责产品交付、开发进度和工程团队协调。在 Ternus 的领导下，她将跨部门工作并直接向他汇报。\nEnglish Summary\nIncoming Apple CEO John Ternus is reportedly rehiring Laura Legros, a former vice president of hardware engineering who retired in 2022. Legros previously managed product delivery, development schedules, and coordination across engineering teams. She will report directly to Ternus and work across different parts of the company.\n🏷️ Apple, John Ternus, hardware engineering, Laura Legros\n \n生成于 2026-08-04 03:17 | 扫描 82 源 → 获取 2498 篇 → 精选 15 篇\n基于 Hacker News Popularity Contest 2025 RSS 源列表，由 Andrej Karpathy 推荐"</script>
   <script>
     const text = JSON.parse(document.getElementById('speech-text').textContent);
     const statusEl = document.getElementById('status');
