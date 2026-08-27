@@ -52,201 +52,203 @@
   <main class="shell">
     <article class="card">
       <p>🎧 <a href="https://lingnanren.github.io/ai-daily-digest/listen.html">点这里朗读今日日报</a></p>
-<h1>📰 AI 博客每日精选 — 2026-08-26</h1>
+<h1>📰 AI 博客每日精选 — 2026-08-27</h1>
 <blockquote>来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15</blockquote>
 <h2>📝 今日看点</h2>
-<p>今日看点：苹果新品发布引领硬件性能新标杆，AI 算力持续升级；开发者工具链日趋智能化，语言服务器等技术提升开发效率；同时，数据安全与隐私保护依然是技术圈关注的焦点。</p>
+<p>今日技术看点聚焦两大趋势：AI 争议与开发者工具的演进。一方面，AI 发展引发了“AI 仇恨者”的批判性声音，同时开发者工具领域，VS Code 的更新问题与 UI 偏好引发讨论，而 Forgejo 等自托管方案则在探索简化之道。此外，老牌游戏《EVE Online》的 Python 3 迁移以及数据安全警示也值得关注。</p>
 <hr>
 <h2>🏆 今日必读</h2>
-<p>🥇 <strong>Apple 发布 M6 和 M5 Ultra 芯片，为新款 Mac mini 和 Mac Studio 带来性能飞跃</strong></p>
-<p><a href="https://simonwillison.net/2026/Aug/25/eve-online-move-to-python-3/">EVE Online: The Move to Python 3 Begins!</a> — simonwillison.net · 2 小时前 · ⚙️ 工程</p>
+<p>🥇 <strong>VS Code 远程连接失效？降级至 v1.124.x 版本解决</strong></p>
+<p><a href="https://www.dwarkesh.com/p/dylan-patel-3">Dylan Patel – Anthropic &amp; OpenAI will have most of the world’s compute by 2028</a> — dwarkesh.com · 1 天前 · 🤖 AI / ML</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Apple 发布了新款 Mac mini 的 M6 芯片和新款 Mac Studio 的 M5 Ultra 芯片，实现了性能和 AI 计算能力的巨大飞跃。M6 作为 Apple 首款 2 纳米芯片，在每个计算模块上都有提升，提供了更强的性能。该芯片配备了更大的 12 核 CPU、12 核 GPU（含 Neural Accelerators）、双 16 核神经网络引擎，以及高达 170GB/s 的统一内存。</blockquote>
+<blockquote>近期 VS Code 的远程连接功能出现问题，导致用户无法正常使用。文章指出，问题根源在于 VS Code 的某个更新版本，并提供了具体的解决方案：将 VS Code 降级至 v1.124.x 版本即可恢复远程连接的正常工作。作者暗示，解决此类问题的“变通方案”可能面临被移除的风险。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Apple has unveiled the M6 chip for the new Mac mini and M5 Ultra for the new Mac Studio, delivering an extraordinary leap in performance and AI capabilities. The M6, Apple's first 2-nanometer chip, advances every compute block, offering significant performance gains. It features a larger 12-core CPU, a 12-core GPU with Neural Accelerators, a Dual 16-core Neural Engine, and up to 170GB/s of unified memory.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 了解 Apple 最新芯片 M6 和 M5 Ultra 的技术规格和性能提升，以及它们如何驱动新款 Mac 产品线。</p>
-<p>💡 <strong>Why read it</strong>: Understand the technical specifications and performance improvements of Apple's latest M6 and M5 Ultra chips and how they power the new Mac lineup.</p>
-<p>🏷️ Python 3, EVE Online, large-scale</p>
-<p>🥈 <strong>Apple 调整计划，将‘隐藏我的邮箱’域名与‘通过 Apple 登录’分开</strong></p>
-<p><a href="https://www.wheresyoured.at/the-ai-haters-manifesto/">The AI Hater's Manifesto</a> — wheresyoured.at · 8 小时前 · 💡 观点 / 杂谈</p>
+<blockquote>Recent updates to VS Code have caused issues with its remote connection functionality. The article identifies a specific version as the culprit and offers a workaround: downgrading to version v1.124.x resolves the problem. The author humorously notes the potential for such workarounds to be removed in future updates.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 如果你也遇到了 VS Code 远程连接问题，这篇文章提供了直接有效的降级解决方案。</p>
+<p>💡 <strong>Why read it</strong>: Provides a direct and effective downgrade solution for users experiencing VS Code remote connection issues.</p>
+<p>🏷️ AI compute, centralization, OpenAI, Anthropic</p>
+<p>🥈 <strong>如何将 VS Code UI 恢复到旧版本</strong></p>
+<p><a href="https://simonwillison.net/2026/Aug/26/qwen38-flash-next/">Qwen3.8-Flash-Next</a> — simonwillison.net · 8 小时前 · 🤖 AI / ML</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Apple 宣布，从今年晚些时候开始，新的‘通过 Apple 登录’地址将使用 private.icloud.com 域名，而非之前的 privaterelay.appleid.com。现有的 privaterelay.appleid.com 地址将继续正常工作。经过社区反馈，Apple 决定将 iCloud+ 的‘隐藏我的邮箱’地址继续保留在 icloud.com 域名下，不再与‘通过 Apple 登录’合并。</blockquote>
+<blockquote>VS Code 近期更新引入了新的用户界面（UI），但一些用户更偏好旧版的界面设计。文章提供了一种变通方法，允许用户将 VS Code 的 UI 恢复到之前的版本。作者调侃说，这种恢复旧 UI 的方法很可能在未来被移除。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Apple is changing its plan to merge the domain names for 'Hide My Email' and 'Sign in with Apple'. New 'Sign in with Apple' addresses will be issued on private.icloud.com starting later this year, while existing privaterelay.appleid.com addresses will remain functional. Following community feedback, 'Hide My Email' addresses will continue to be hosted on icloud.com.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 了解 Apple 在用户隐私服务上的最新调整，特别是关于‘通过 Apple 登录’和‘隐藏我的邮箱’的域名变化。</p>
-<p>💡 <strong>Why read it</strong>: Learn about Apple's latest adjustments to its privacy services, specifically the domain name changes for 'Sign in with Apple' and 'Hide My Email'.</p>
-<p>🏷️ AI Hater, manifesto, AI criticism</p>
-<p>🥉 <strong>一位老派程序员尝试语言服务器</strong></p>
-<p><a href="https://www.dwarkesh.com/p/dylan-patel-3">Dylan Patel – Anthropic &amp; OpenAI will have most of the world’s compute by 2028</a> — dwarkesh.com · 10 小时前 · 💡 观点 / 杂谈</p>
+<blockquote>This article details a workaround for users who dislike the new UI introduced in recent VS Code updates. It provides instructions on how to revert the VS Code interface to its previous design. The author speculates that this method for restoring the old UI might be removed in future versions.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 如果你不喜欢 VS Code 的新 UI，这篇文章提供了恢复旧版界面的实用技巧。</p>
+<p>💡 <strong>Why read it</strong>: Offers a practical tip for users who prefer the older VS Code UI and wish to revert to it.</p>
+<p>🏷️ LLM, multimodal, MoE, Qwen</p>
+<p>🥉 <strong>XCancel：Twitter/X 镜像服务因 X Corp 的停止令而关闭</strong></p>
+<p><a href="https://simonwillison.net/2026/Aug/26/paul-dix/">Quoting Paul Dix</a> — simonwillison.net · 1 天前 · 🤖 AI / ML</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>作者描述了他过去十年不变的编码习惯：在文本编辑器中修改代码，然后在终端编译执行，通过打印日志或调试器来理解程序行为。他表达了对 Lisp 程序员工作方式的羡慕，暗示了对更集成、更智能开发环境的兴趣。</blockquote>
+<blockquote>XCancel，一个提供 Twitter/X 内容镜像服务的第三方平台，已于 8 月 24 日收到 X Corp（Twitter 的母公司）发出的停止令（cease and desist letter）。因此，XCancel 服务即日起无限期停止。服务团队表示正在寻求法律建议，并感谢用户两年来对该服务的信任。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>The author describes his decade-long coding workflow: editing code in a text editor, compiling and running in a terminal, and using print statements or a debugger for understanding program behavior. He expresses envy for Lisp programmers' methods, hinting at an interest in more integrated and intelligent development environments.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 从一位传统程序员的视角，了解其对现代开发工具（如语言服务器）的初步体验和潜在的转变。</p>
-<p>💡 <strong>Why read it</strong>: Gain insight into a traditional programmer's initial experience and potential shift towards modern development tools like language servers.</p>
-<p>🏷️ AI, compute, centralization, OpenAI</p>
+<blockquote>XCancel, a mirror service for Twitter/X content, has been forced to shut down after receiving a cease and desist letter from X Corp on August 24th. The service is now suspended indefinitely while the team seeks legal counsel. They expressed gratitude for the user trust over the past two years.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 了解第三方服务如何因平台方压力而关闭，以及对用户体验的影响。</p>
+<p>💡 <strong>Why read it</strong>: Understand how a third-party service was shut down due to platform pressure and its implications for user experience.</p>
+<p>🏷️ AI, programming, code generation, LLM</p>
 <hr>
 <h2>📊 数据概览</h2>
-<table><thead><tr><th>扫描源</th><th>抓取文章</th><th>时间范围</th><th>精选</th></tr></thead><tbody><tr><td>81/92</td><td>2483 篇 → 36 篇</td><td>48h</td><td><strong>15 篇</strong></td></tr></tbody></table>
+<table><thead><tr><th>扫描源</th><th>抓取文章</th><th>时间范围</th><th>精选</th></tr></thead><tbody><tr><td>81/92</td><td>2466 篇 → 35 篇</td><td>48h</td><td><strong>15 篇</strong></td></tr></tbody></table>
 <h3>分类分布</h3>
 <div class="code-wrap"><div class="code-title">mermaid</div><pre><code>pie showData
     title "文章分类分布"
-    "🛠 工具 / 开源" : 5
-    "💡 观点 / 杂谈" : 4
+    "🤖 AI / ML" : 4
+    "🛠 工具 / 开源" : 4
     "⚙️ 工程" : 3
     "🔒 安全" : 2
-    "🤖 AI / ML" : 1</code></pre></div>
+    "📝 其他" : 1
+    "💡 观点 / 杂谈" : 1</code></pre></div>
 <h3>高频关键词</h3>
 <div class="code-wrap"><div class="code-title">mermaid</div><pre><code>xychart-beta horizontal
     title "高频关键词"
-    x-axis ["ai", "centralization", "apple", "m6", "mac studio", "python 3", "eve online", "large-scale", "ai hater", "manifesto", "ai criticism", "compute"]
+    x-axis ["llm", "ai", "configuration", "vs code", "ai compute", "centralization", "openai", "anthropic", "multimodal", "moe", "qwen", "programming"]
     y-axis "出现次数" 0 --&gt; 4
-    bar [2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1]</code></pre></div>
+    bar [2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1]</code></pre></div>
 <div class="details">
 <p class="summary">📈 纯文本关键词图（终端友好）</p>
-<div class="code-wrap"><pre><code>ai             │ ████████████████████ 2
-centralization │ ████████████████████ 2
-apple          │ ████████████████████ 2
-m6             │ ████████████████████ 2
-mac studio     │ ████████████████████ 2
-python 3       │ ██████████░░░░░░░░░░ 1
-eve online     │ ██████████░░░░░░░░░░ 1
-large-scale    │ ██████████░░░░░░░░░░ 1
-ai hater       │ ██████████░░░░░░░░░░ 1
-manifesto      │ ██████████░░░░░░░░░░ 1</code></pre></div>
+<div class="code-wrap"><pre><code>llm            │ ████████████████████ 2
+ai             │ ████████████████████ 2
+configuration  │ ████████████████████ 2
+vs code        │ ████████████████████ 2
+ai compute     │ ██████████░░░░░░░░░░ 1
+centralization │ ██████████░░░░░░░░░░ 1
+openai         │ ██████████░░░░░░░░░░ 1
+anthropic      │ ██████████░░░░░░░░░░ 1
+multimodal     │ ██████████░░░░░░░░░░ 1
+moe            │ ██████████░░░░░░░░░░ 1</code></pre></div>
 </div>
 <h3>🏷️ 话题标签</h3>
-<p><strong>ai</strong>(2) · <strong>centralization</strong>(2) · <strong>apple</strong>(2) · m6(2) · mac studio(2) · python 3(1) · eve online(1) · large-scale(1) · ai hater(1) · manifesto(1) · ai criticism(1) · compute(1) · openai(1) · prompt engineering(1) · future(1) · dma(1) · app store(1) · regulation(1) · microlighter(1) · syntax highlighting(1)</p>
-<hr>
-<h2>🛠 工具 / 开源</h2>
-<h3>1. 你听说过 Microlighter 的好消息吗？</h3>
-<p><a href="https://blog.jim-nielsen.com/2026/shipping-microlighter/">Have You Heard the Good News About Microlighter?</a> — <strong>blog.jim-nielsen.com</strong> · 6 小时前 · ⭐ 23/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>文章介绍了 Microlighter，一个利用 CSS Custom Highlights API 实现语法高亮的工具。作者 Dave Rupert 发布了该工具，并得到了 Jim Nielsen 的积极响应，后者迅速将其集成到自己的博客中。Microlighter 提供了一种新的、基于 CSS 的方式来处理网页上的代码高亮，有望简化开发流程并提升用户体验。该工具的出现标志着前端开发在处理代码展示方面有了新的解决方案。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>This article introduces Microlighter, a tool for handling syntax highlighting using the CSS Custom Highlights API. Dave Rupert released the tool, which was quickly adopted and integrated into Jim Nielsen's blog. Microlighter offers a new, CSS-based approach to syntax highlighting on the web, aiming to simplify development workflows and improve user experience. Its emergence signifies a novel solution for code presentation in front-end development.</blockquote>
-<p>🏷️ microlighter, syntax highlighting, JavaScript</p>
-<hr>
-<h3>2. 为我的静态站点生成器添加 D2 图表</h3>
-<p><a href="https://www.gilesthomas.com/2026/08/adding-d2">Adding diagrams to my static site generator with D2</a> — <strong>gilesthomas.com</strong> · 2 小时前 · ⭐ 22/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>作者 Giles Thomas 为其静态站点生成器集成了 D2，一个用于生成图表的工具。他发现，在博客文章中添加图表能够极大地提升内容的清晰度和表达效果，但手动绘制图表非常耗时且效果不佳。通过集成 D2，作者能够更方便地在文章中嵌入高质量的图表，从而改善内容呈现。该集成工作被认为效果相当不错。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Author Giles Thomas has integrated D2, a diagramming tool, into his static site generator. He found that adding diagrams significantly enhances content clarity and expressiveness in blog posts, but manual creation was time-consuming and yielded poor results. By integrating D2, the author can more easily embed high-quality diagrams into his articles, improving content presentation. This integration is considered to work quite well.</blockquote>
-<p>🏷️ D2, diagrams, static site generator</p>
-<hr>
-<h3>3. 苹果发布全新 M6 和 M5 Ultra 芯片，搭载新款 Mac mini 和 Mac Studio</h3>
-<p><a href="https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/">Apple Introduces M6 and M5 Ultra Chips, in New Mac Mini and Mac Studio</a> — <strong>daringfireball.net</strong> · 12 小时前 · ⭐ 22/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>苹果公司今日发布了新款 Mac mini 所搭载的 M6 芯片以及新款 Mac Studio 所搭载的 M5 Ultra 芯片。M6 芯片是苹果首款采用 2 纳米工艺的芯片，在性能和 AI 能力方面实现了巨大飞跃。它改进了所有计算模块，带来了全方位的性能提升。该芯片配备了更大的 12 核 CPU 核心组，拥有全球最快的 CPU 核心，以及更大的 12 核 GPU 和双 16 核神经网络引擎，并支持高达 170GB/s 的统一内存。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Apple has unveiled its new M6 chip for the Mac mini and the M5 Ultra chip for the Mac Studio. The M6 chip, Apple's first 2-nanometer chip, offers a significant leap in performance and AI capabilities. It enhances all compute blocks, delivering gains across every dimension of performance. The chip features a larger 12-core CPU complex with the world's fastest CPU core, a larger 12-core GPU, and a Dual 16-core Neural Engine, supporting up to 170GB/s of unified memory.</blockquote>
-<p>🏷️ Apple, M6, M5 Ultra, Mac Studio</p>
-<hr>
-<h3>4. 新款 Mac mini (M6/M5 Pro) 和 Mac Studio (M5 Max/M5 Ultra) 的内存和存储配置及定价</h3>
-<p><a href="https://daringfireball.net/2026/08/configurations_and_pricing_for_new_mac_minis_and_mac_studios">★ Memory and Storage Configurations and Pricing for the New Mac Minis (M6/M5 Pro) and Mac Studios (M5 Max/M5 Ultra)</a> — <strong>daringfireball.net</strong> · 11 小时前 · ⭐ 20/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>本文旨在整理新款 Mac mini 和 Mac Studio 的内存和存储配置及定价信息。作者尝试将所有 RAM/SSD 配置信息浓缩成表格，以便用户清晰地了解每个芯片可用的存储和内存选项及其成本。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>This article aims to present the memory and storage configurations and pricing for the new Mac mini and Mac Studio. The author attempts to condense all RAM/SSD configurations into tables for a clear overview of available storage and memory options and their costs for each chip.</blockquote>
-<p>🏷️ Mac Mini, Mac Studio, M6, M5</p>
-<hr>
-<h3>5. Forgejo 技巧：如何设置起始的 Issue 和 Pull Request 编号</h3>
-<p><a href="https://blog.miguelgrinberg.com/post/forgejo-hack-how-to-set-a-starting-issue-and-pull-request-number">Forgejo hack: How to set a starting issue and pull request number</a> — <strong>miguelgrinberg.com</strong> · 12 小时前 · ⭐ 20/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>作者正在将开源项目从 GitHub 迁移到自托管的 Forgejo 实例。在迁移过程中，他会深入研究 Forgejo 的源代码，寻找管理界面之外的隐藏配置方法。本文是他的第一篇发现分享，旨在帮助其他用户解决类似问题，例如如何设置起始的 Issue 和 Pull Request 编号。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>The author is migrating open-source projects from GitHub to a self-hosted Forgejo instance and is exploring its source code for hidden configuration options. This article shares his first discovery, aiming to help others with issues like setting starting issue and pull request numbers.</blockquote>
-<p>🏷️ Forgejo, Git, open source, migration</p>
-<hr>
-<h2>💡 观点 / 杂谈</h2>
-<h3>6. Apple 调整计划，将‘隐藏我的邮箱’域名与‘通过 Apple 登录’分开</h3>
-<p><a href="https://www.wheresyoured.at/the-ai-haters-manifesto/">The AI Hater's Manifesto</a> — <strong>wheresyoured.at</strong> · 8 小时前 · ⭐ 24/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>Apple 宣布，从今年晚些时候开始，新的‘通过 Apple 登录’地址将使用 private.icloud.com 域名，而非之前的 privaterelay.appleid.com。现有的 privaterelay.appleid.com 地址将继续正常工作。经过社区反馈，Apple 决定将 iCloud+ 的‘隐藏我的邮箱’地址继续保留在 icloud.com 域名下，不再与‘通过 Apple 登录’合并。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Apple is changing its plan to merge the domain names for 'Hide My Email' and 'Sign in with Apple'. New 'Sign in with Apple' addresses will be issued on private.icloud.com starting later this year, while existing privaterelay.appleid.com addresses will remain functional. Following community feedback, 'Hide My Email' addresses will continue to be hosted on icloud.com.</blockquote>
-<p>🏷️ AI Hater, manifesto, AI criticism</p>
-<hr>
-<h3>7. 一位老派程序员尝试语言服务器</h3>
-<p><a href="https://www.dwarkesh.com/p/dylan-patel-3">Dylan Patel – Anthropic &amp; OpenAI will have most of the world’s compute by 2028</a> — <strong>dwarkesh.com</strong> · 10 小时前 · ⭐ 24/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>作者描述了他过去十年不变的编码习惯：在文本编辑器中修改代码，然后在终端编译执行，通过打印日志或调试器来理解程序行为。他表达了对 Lisp 程序员工作方式的羡慕，暗示了对更集成、更智能开发环境的兴趣。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>The author describes his decade-long coding workflow: editing code in a text editor, compiling and running in a terminal, and using print statements or a debugger for understanding program behavior. He expresses envy for Lisp programmers' methods, hinting at an interest in more integrated and intelligent development environments.</blockquote>
-<p>🏷️ AI, compute, centralization, OpenAI</p>
-<hr>
-<h3>8. 新款 Mac mini (M6/M5 Pro) 和 Mac Studio (M5 Max/M5 Ultra) 的内存和存储配置及定价</h3>
-<p><a href="https://idiallo.com/blog/foot-gun-for-sale">Foot Guns for Sale</a> — <strong>idiallo.com</strong> · 18 小时前 · ⭐ 24/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>这篇文章提供了新款 Mac mini 和 Mac Studio 的详细内存和存储配置选项，并附带了相应的价格信息。通过表格形式清晰展示了不同芯片型号（M6/M5 Pro/M5 Max/M5 Ultra）可用的 RAM 和 SSD 组合及其成本。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>This article presents a condensed overview of the RAM and SSD configurations and pricing for the new Mac mini (M6/M5 Pro) and Mac Studio (M5 Max/M5 Ultra). It uses tables to clearly outline the available storage and memory options for each chip variant and their associated costs.</blockquote>
-<p>🏷️ AI, centralization, prompt engineering, future</p>
-<hr>
-<h3>9. Forgejo 技巧：如何设置起始的 Issue 和 Pull Request 编号</h3>
-<p><a href="https://daringfireball.net/2026/08/what_is_the_point_of_the_dma">★ What Is the Point of the DMA?</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 24/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>作者在将开源项目从 GitHub 迁移到自托管 Forgejo 实例时，分享了一个关于如何自定义 Forgejo 的技巧。他通过研究 Forgejo 源代码，找到了设置起始 Issue 和 Pull Request 编号的方法，并将其记录下来以帮助其他用户。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>While migrating his open-source projects from GitHub to a self-hosted Forgejo instance, the author discovered a method to customize Forgejo's behavior. By examining the source code, he found a way to set the starting numbers for issues and pull requests, sharing this hack to assist other users.</blockquote>
-<p>🏷️ DMA, App Store, Apple, regulation</p>
-<hr>
-<h2>⚙️ 工程</h2>
-<h3>10. Apple 发布 M6 和 M5 Ultra 芯片，为新款 Mac mini 和 Mac Studio 带来性能飞跃</h3>
-<p><a href="https://simonwillison.net/2026/Aug/25/eve-online-move-to-python-3/">EVE Online: The Move to Python 3 Begins!</a> — <strong>simonwillison.net</strong> · 2 小时前 · ⭐ 24/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>Apple 发布了新款 Mac mini 的 M6 芯片和新款 Mac Studio 的 M5 Ultra 芯片，实现了性能和 AI 计算能力的巨大飞跃。M6 作为 Apple 首款 2 纳米芯片，在每个计算模块上都有提升，提供了更强的性能。该芯片配备了更大的 12 核 CPU、12 核 GPU（含 Neural Accelerators）、双 16 核神经网络引擎，以及高达 170GB/s 的统一内存。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Apple has unveiled the M6 chip for the new Mac mini and M5 Ultra for the new Mac Studio, delivering an extraordinary leap in performance and AI capabilities. The M6, Apple's first 2-nanometer chip, advances every compute block, offering significant performance gains. It features a larger 12-core CPU, a 12-core GPU with Neural Accelerators, a Dual 16-core Neural Engine, and up to 170GB/s of unified memory.</blockquote>
-<p>🏷️ Python 3, EVE Online, large-scale</p>
-<hr>
-<h3>11. 调试 Ubiquiti 的 AT&amp;T 5G 备份</h3>
-<p><a href="https://www.jeffgeerling.com/blog/2026/unifi-u5g-backup-debugging/">Debugging Ubiquiti's 5G Backup on AT&amp;T</a> — <strong>jeffgeerling.com</strong> · 6 小时前 · ⭐ 22/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>作者 Jeff Geerling 分享了他在为移动“迷你家庭实验室”项目调试 Ubiquiti UniFi 5G 备份连接时遇到的问题。他希望使用 5G 作为主要连接，同时保留插入其他互联网连接的能力。文章详细描述了调试过程中的技术细节和遇到的挑战，旨在为遇到类似问题的用户提供参考和解决方案。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Author Jeff Geerling shares his experience debugging issues with Ubiquiti's 5G backup connection on AT&amp;T for a mobile 'mini homelab' project. He aimed to use 5G as a primary connection while retaining the ability to plug in another internet source. The article details the technical aspects and challenges encountered during the debugging process, offering insights and potential solutions for users facing similar problems.</blockquote>
-<p>🏷️ Ubiquiti, 5G backup, debugging</p>
-<hr>
-<h3>12. 一位老派程序员尝试语言服务器</h3>
-<p><a href="https://entropicthoughts.com/curmudgeon-tries-language-server">A curmudgeon tries a language server</a> — <strong>entropicthoughts.com</strong> · 1 天前 · ⭐ 21/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>作者描述了他十年来一直沿用的代码编写方式：在文本编辑器中编辑，然后切换到终端窗口运行编译和执行命令。如果对结果不确定，他会添加打印语句或使用调试器。他羡慕 Lisp 程序员的工作方式，暗示了对更高效开发工具的兴趣。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>The author describes his decade-long coding workflow: editing in a text editor, then switching to a terminal to compile and execute code. He resorts to tracer prints or debuggers when unsure of outcomes. He expresses envy for Lisp programmers' methods, hinting at an interest in more efficient development tools.</blockquote>
-<p>🏷️ language server, developer tools, text editor, workflow</p>
-<hr>
-<h2>🔒 安全</h2>
-<h3>13. 关于数据泄露索赔、验证和 Carhartt 的警示故事</h3>
-<p><a href="https://www.troyhunt.com/a-cautionary-tale-about-data-breach-claims-verification-and-carhartt/">A Cautionary Tale About Data Breach Claims, Verification and Carhartt</a> — <strong>troyhunt.com</strong> · 3 小时前 · ⭐ 22/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>这篇文章讲述了一个关于数据泄露索赔的警示故事，涉及品牌 Carhartt。作者 Troy Hunt 指出，不能总是轻信网络犯罪分子的说法，即使是关于数据泄露的声明也需要谨慎对待和验证。故事的核心在于强调了在处理数据泄露事件时，对信息来源的审慎态度和严格的验证流程的重要性，以避免被虚假信息误导。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>This article recounts a cautionary tale about data breach claims involving the brand Carhartt. Author Troy Hunt highlights that one cannot always take cybercriminals at their word, emphasizing the need for caution and verification even for data breach assertions. The core of the story underscores the importance of a discerning approach to information sources and rigorous verification processes when dealing with data breaches, to avoid being misled by false information.</blockquote>
-<p>🏷️ data breach, verification, Carhartt</p>
-<hr>
-<h3>14. 苹果重新考虑将“隐藏我的邮箱”域名与“通过 Apple 登录”合并的计划</h3>
-<p><a href="https://developer.apple.com/news/?id=1ptvdtcm">Apple Rethinks Plan to Merge ‘Hide My Email’ Domain Name With ‘Sign In With Apple’</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 22/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>苹果公司宣布，从今年晚些时候开始，新的“通过 Apple 登录”地址将从 privaterelay.appleid.com 迁移到 private.icloud.com。现有的 privaterelay.appleid.com 地址将继续正常工作并转发邮件。经过进一步考虑和社区反馈，iCloud+ 的“隐藏我的邮箱”地址将保留在 icloud.com 上。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Apple announced that starting later this year, new Sign in with Apple addresses will be issued on private.icloud.com instead of privaterelay.appleid.com. Existing addresses on privaterelay.appleid.com will continue to work without interruption. Following further consideration and community feedback, iCloud+ Hide My Email addresses will remain on icloud.com.</blockquote>
-<p>🏷️ Hide My Email, Sign In With Apple, privacy, Apple ID</p>
+<p><strong>llm</strong>(2) · <strong>ai</strong>(2) · <strong>configuration</strong>(2) · vs code(2) · ai compute(1) · centralization(1) · openai(1) · anthropic(1) · multimodal(1) · moe(1) · qwen(1) · programming(1) · code generation(1) · ai coding(1) · code quality(1) · developer productivity(1) · gdpr(1) · cookie consent(1) · regulation(1) · privacy(1)</p>
 <hr>
 <h2>🤖 AI / ML</h2>
-<h3>15. llm-anthropic 0.27 版本发布</h3>
-<p><a href="https://simonwillison.net/2026/Aug/24/llm-anthropic/">llm-anthropic 0.27</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 23/30</p>
+<h3>1. VS Code 远程连接失效？降级至 v1.124.x 版本解决</h3>
+<p><a href="https://www.dwarkesh.com/p/dylan-patel-3">Dylan Patel – Anthropic &amp; OpenAI will have most of the world’s compute by 2028</a> — <strong>dwarkesh.com</strong> · 1 天前 · ⭐ 27/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>llm-anthropic 插件的 0.27 版本发布，主要目的是兼容 Anthropic 最近发布的 anthropic v1.0.0 Python 库。新版本的 Python 库将依赖从 httpx 切换到了 httpx2。此次更新确保了 llm-anthropic 插件能够与最新的 Anthropic SDK 无缝集成，为开发者提供稳定可靠的接口。同时，该版本也提及了对 OpenAI 的兼容性。</blockquote>
+<blockquote>近期 VS Code 的远程连接功能出现问题，导致用户无法正常使用。文章指出，问题根源在于 VS Code 的某个更新版本，并提供了具体的解决方案：将 VS Code 降级至 v1.124.x 版本即可恢复远程连接的正常工作。作者暗示，解决此类问题的“变通方案”可能面临被移除的风险。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Release 0.27 of the llm-anthropic plugin primarily provides compatibility with the recently released anthropic v1.0.0 Python library. This new version of the Python library switches its dependency from httpx to httpx2. This update ensures seamless integration of the llm-anthropic plugin with the latest Anthropic SDK, offering developers a stable and reliable interface. Compatibility with OpenAI is also mentioned.</blockquote>
-<p>🏷️ LLM, Anthropic, plugin, llm-anthropic</p>
+<blockquote>Recent updates to VS Code have caused issues with its remote connection functionality. The article identifies a specific version as the culprit and offers a workaround: downgrading to version v1.124.x resolves the problem. The author humorously notes the potential for such workarounds to be removed in future updates.</blockquote>
+<p>🏷️ AI compute, centralization, OpenAI, Anthropic</p>
 <hr>
-<p>*生成于 2026-08-26 01:44 | 扫描 81 源 → 获取 2483 篇 → 精选 15 篇* *基于 <a href="https://refactoringenglish.com/tools/hn-popularity/">Hacker News Popularity Contest 2025</a> RSS 源列表，由 <a href="https://x.com/karpathy">Andrej Karpathy</a> 推荐*</p>
+<h3>2. 如何将 VS Code UI 恢复到旧版本</h3>
+<p><a href="https://simonwillison.net/2026/Aug/26/qwen38-flash-next/">Qwen3.8-Flash-Next</a> — <strong>simonwillison.net</strong> · 8 小时前 · ⭐ 26/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>VS Code 近期更新引入了新的用户界面（UI），但一些用户更偏好旧版的界面设计。文章提供了一种变通方法，允许用户将 VS Code 的 UI 恢复到之前的版本。作者调侃说，这种恢复旧 UI 的方法很可能在未来被移除。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>This article details a workaround for users who dislike the new UI introduced in recent VS Code updates. It provides instructions on how to revert the VS Code interface to its previous design. The author speculates that this method for restoring the old UI might be removed in future versions.</blockquote>
+<p>🏷️ LLM, multimodal, MoE, Qwen</p>
+<hr>
+<h3>3. XCancel：Twitter/X 镜像服务因 X Corp 的停止令而关闭</h3>
+<p><a href="https://simonwillison.net/2026/Aug/26/paul-dix/">Quoting Paul Dix</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 26/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>XCancel，一个提供 Twitter/X 内容镜像服务的第三方平台，已于 8 月 24 日收到 X Corp（Twitter 的母公司）发出的停止令（cease and desist letter）。因此，XCancel 服务即日起无限期停止。服务团队表示正在寻求法律建议，并感谢用户两年来对该服务的信任。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>XCancel, a mirror service for Twitter/X content, has been forced to shut down after receiving a cease and desist letter from X Corp on August 24th. The service is now suspended indefinitely while the team seeks legal counsel. They expressed gratitude for the user trust over the past two years.</blockquote>
+<p>🏷️ AI, programming, code generation, LLM</p>
+<hr>
+<h3>4. AI 仇恨者的宣言</h3>
+<p><a href="https://www.johndcook.com/blog/2026/08/26/what-is-the-quality-of-software-that-ai-writes/">What is the quality of software that AI writes?</a> — <strong>johndcook.com</strong> · 13 小时前 · ⭐ 25/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>这篇文章提出了对人工智能（AI）的批判性观点，认为 AI 的发展和应用存在诸多问题。作者通过“AI 仇恨者宣言”的形式，阐述了对 AI 技术的担忧和反对理由。文章鼓励读者订阅其付费通讯，以获取更深入的分析。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>This piece presents a critical perspective on Artificial Intelligence (AI), outlining concerns and arguments against its development and widespread adoption. Framed as an 'AI Hater's Manifesto,' it details the author's apprehensions about AI technologies. The author also promotes their premium newsletter for more in-depth analysis.</blockquote>
+<p>🏷️ AI coding, code quality, developer productivity</p>
+<hr>
+<h2>🛠 工具 / 开源</h2>
+<h3>5. 新款 Mac Mini 和 Mac Studio 的内存与存储配置及定价</h3>
+<p><a href="https://daringfireball.net/2026/08/configurations_and_pricing_for_new_mac_minis_and_mac_studios">★ Memory and Storage Configurations and Pricing for the New Mac Minis (M6/M5 Pro) and Mac Studios (M5 Max/M5 Ultra)</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 22/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>文章详细列出了新款 Mac Mini（M6/M5 Pro 芯片）和 Mac Studio（M5 Max/M5 Ultra 芯片）的内存和存储配置选项及其价格。作者通过表格形式清晰展示了不同芯片型号下可用的存储和内存组合，以及相应的成本，方便用户进行选购决策。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>This article provides a detailed breakdown of the memory and storage configurations and pricing for the new Mac Minis (M6/M5 Pro chips) and Mac Studios (M5 Max/M5 Ultra chips). The author uses tables to clearly present the available storage and memory combinations for each chip variant and their associated costs, aiding users in their purchasing decisions.</blockquote>
+<p>🏷️ Mac Mini, Mac Studio, Apple Silicon, configuration</p>
+<hr>
+<h3>6. Gadget 评测：Thermal Master P3 宏观镜头</h3>
+<p><a href="https://shkspr.mobi/blog/2026/08/gadget-review-thermal-master-p3-macro-lens/">Gadget Review: Thermal Master P3 Macro Lens ★★★★⯪</a> — <strong>shkspr.mobi</strong> · 21 小时前 · ⭐ 21/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>这篇评测介绍了 Thermal Master P3 宏观镜头，这是一款专门用于近距离观察电子设备热点的相机。与用于观鸟或野生动物拍摄的相机不同，P3 配备手动宏观镜头，能够精确捕捉 CPU 等组件的温度分布。评测给予该产品四星半的评价。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>This review covers the Thermal Master P3 macro lens, a camera specifically designed for close-up observation of thermal hotspots in electronic devices. Unlike cameras for bird or wildlife photography, the P3 features a manual macro lens capable of precisely capturing the temperature distribution of components like CPUs. The review awards the product four and a half stars.</blockquote>
+<p>🏷️ thermal camera, macro lens, gadget review</p>
+<hr>
+<h3>7. VS Code 远程连接失效？降级至 v1.124.x 版本可解决</h3>
+<p><a href="https://xeiaso.net/notes/2026/vscode-remotes-not-working-downgrade/">If your VS Code remotes stopped working, downgrade to v1.124.x</a> — <strong>xeiaso.net</strong> · 1 天前 · ⭐ 21/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>近期有用户报告 VS Code 的远程连接功能出现问题，导致无法正常使用。经过排查，发现是新版本引入的 bug 所致。文章提供了一个临时的解决方案，即降级到 v1.124.x 版本。此举可以暂时恢复远程连接的正常工作。请注意，这只是一个临时措施，未来版本更新有望彻底修复此问题。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Users have reported issues with VS Code's remote connection functionality, preventing normal use. Investigation revealed a bug introduced in a recent version. The article suggests a temporary workaround: downgrading to version v1.124.x. This action can temporarily restore the remote connection's functionality. Note that this is a temporary measure, and future updates are expected to fully resolve the issue.</blockquote>
+<p>🏷️ VS Code, remote development, bug fix</p>
+<hr>
+<h3>8. 如何让 VS Code 回到旧版用户界面</h3>
+<p><a href="https://xeiaso.net/notes/2026/vscode-ui-revert/">How to make VS Code go back to the old UI</a> — <strong>xeiaso.net</strong> · 1 天前 · ⭐ 21/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>如果你不喜欢 VS Code 的新界面，并希望恢复到之前的用户体验，这篇文章将为你提供指导。文章介绍了一种方法，可以帮助用户将 VS Code 的界面设置回旧版本样式。通过遵循文章中的步骤，你可以轻松地调整设置，以获得你熟悉和偏好的界面布局。这对于习惯了旧版界面的用户来说非常实用。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>If you dislike the new VS Code interface and wish to revert to the previous user experience, this article will guide you. It introduces a method to help users reset VS Code's interface settings back to the old version's style. By following the steps outlined, you can easily adjust settings to achieve a familiar and preferred interface layout. This is particularly useful for users accustomed to the older interface.</blockquote>
+<p>🏷️ VS Code, UI, customization</p>
+<hr>
+<h2>⚙️ 工程</h2>
+<h3>9. EVE Online：迁移到 Python 3 的进程已启动</h3>
+<p><a href="https://simonwillison.net/2026/Aug/25/eve-online-move-to-python-3/">EVE Online: The Move to Python 3 Begins!</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 23/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>《EVE Online》这款运营超过二十年的大型在线游戏，正在进行一项重要的技术升级：迁移到 Python 3。该游戏自 2003 年上线以来一直运行在 Stackless Python 上，最近一次重大升级是 16 年前进行的 Stackless Python 2.7 升级。此次迁移标志着游戏技术栈的一次重大演进。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>EVE Online, a massively multiplayer online game that has been running for over two decades, has begun its migration to Python 3. The game has been operating on Stackless Python since its launch in 2003, with its last major upgrade being to Stackless Python 2.7 sixteen years ago. This migration marks a significant evolution in the game's technology stack.</blockquote>
+<p>🏷️ Python 3, EVE Online, legacy systems, migration</p>
+<hr>
+<h3>10. 自托管能否做到简单？</h3>
+<p><a href="https://feed.tedium.co/link/15204/17432610/self-hosting-third-place-strategy">Can Self-Hosting Be Simple?</a> — <strong>tedium.co</strong> · 5 小时前 · ⭐ 21/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>文章探讨了自托管的复杂性，指出用户很容易陷入过于深入的技术细节。作者通过尝试构建一个“第三空间”盒子，学习到了一种“少即是多”的自托管方法。这表明，即使是复杂的自托管项目，也可以通过简化和聚焦核心功能来实现易用性。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>This article explores the complexity of self-hosting, noting how users can easily get bogged down in excessive technical details. The author shares learnings from attempting to build a 'third place' box, discovering a 'less is more' approach to self-hosting. This suggests that even complex self-hosting projects can achieve simplicity by streamlining and focusing on core functionalities.</blockquote>
+<p>🏷️ self-hosting, home server, DIY</p>
+<hr>
+<h3>11. Forgejo 技巧：如何设置起始的 Issue 和 Pull Request 编号</h3>
+<p><a href="https://blog.miguelgrinberg.com/post/forgejo-hack-how-to-set-a-starting-issue-and-pull-request-number">Forgejo hack: How to set a starting issue and pull request number</a> — <strong>miguelgrinberg.com</strong> · 1 天前 · ⭐ 21/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>本文作者正在将开源项目从 GitHub 迁移到自托管的 Forgejo 实例。在迁移过程中，作者发现了一些隐藏的配置方法，可以自定义 Issue 和 Pull Request 的起始编号。文章分享了这一发现，旨在帮助其他用户解决类似问题。通过修改 Forgejo 的源代码，可以实现这一个性化设置。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>The author is migrating their open-source projects from GitHub to a self-hosted Forgejo instance. During this process, they discovered hidden configuration methods to customize the starting numbers for Issues and Pull Requests. This article shares this finding to help other users with similar needs. By modifying Forgejo's source code, this personalized setting can be achieved.</blockquote>
+<p>🏷️ Forgejo, Git, open source, configuration</p>
+<hr>
+<h2>🔒 安全</h2>
+<h3>12. Forgejo 技巧：如何设置起始的 Issue 和 Pull Request 编号</h3>
+<p><a href="https://daringfireball.net/2026/08/what_is_the_point_of_the_dma#fn1-2026-08-24">Footnote Regarding the GDPR and Cookie Permission Prompts</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 24/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>文章分享了一个针对自托管 Forgejo 实例的技巧，用于设置 Issue 和 Pull Request 的起始编号。作者在将开源项目从 GitHub 迁移到 Forgejo 的过程中，通过研究 Forgejo 源代码发现了这一配置方法。该技巧适用于无法通过管理界面直接配置此项的用户。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>This post details a hack for self-hosted Forgejo instances to set custom starting numbers for Issues and Pull Requests. The author discovered this configuration by examining the Forgejo source code while migrating projects from GitHub. This method is useful for users who cannot configure this setting directly through the administration UI.</blockquote>
+<p>🏷️ GDPR, cookie consent, regulation, privacy</p>
+<hr>
+<h3>13. 关于数据泄露索赔、验证和 Carhartt 的警示故事</h3>
+<p><a href="https://www.troyhunt.com/a-cautionary-tale-about-data-breach-claims-verification-and-carhartt/">A Cautionary Tale About Data Breach Claims, Verification and Carhartt</a> — <strong>troyhunt.com</strong> · 1 天前 · ⭐ 23/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>文章讲述了一个关于数据泄露索赔的警示故事，涉及 Carhartt 公司。作者指出，不能总是轻信网络犯罪分子的说法，即使问题可能并非直接源于他们。故事强调了在处理数据泄露索赔时，验证信息来源和真实性的重要性，并暗示了潜在的欺诈或误导行为。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>This article presents a cautionary tale about data breach claims and verification, involving the company Carhartt. The author emphasizes that one cannot always trust the word of cybercriminals, even if the issue doesn't directly originate from them. The story highlights the importance of verifying information sources and authenticity when dealing with data breach claims, hinting at potential fraud or misrepresentation.</blockquote>
+<p>🏷️ data breach, verification, Carhartt, cybercrime</p>
+<hr>
+<h2>📝 其他</h2>
+<h3>14. XCancel，Twitter/X 的镜像服务，在收到 X Corp 的停止令后关闭</h3>
+<p><a href="https://xcancel.com/">XCancel, the Twitter/X Mirror, Shuts Down After Cease and Desist From the Fine Folks at X Corp</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 21/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>XCancel，一个旨在提供 Twitter/X 内容镜像服务的平台，已于近期宣布停止运营。该服务收到了来自 X Corp 的正式停止令（cease and desist letter），要求其立即停止服务。XCancel 在收到通知后，已暂停所有服务，并表示正在寻求法律建议。该平台感谢用户两年来对 XCancel 的信任和支持。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>XCancel, a platform that offered a mirror service for Twitter/X content, has announced its shutdown. The service received a cease and desist letter from X Corp, demanding its immediate termination. Following the notification, XCancel has suspended all operations and is seeking legal counsel. The platform expressed gratitude for the trust users placed in XCancel over the past two years.</blockquote>
+<p>🏷️ Twitter, X Corp, cease and desist, legal</p>
+<hr>
+<h2>💡 观点 / 杂谈</h2>
+<h3>15. AI 批评者的宣言</h3>
+<p><a href="https://www.wheresyoured.at/the-ai-haters-manifesto/">The AI Hater's Manifesto</a> — <strong>wheresyoured.at</strong> · 1 天前 · ⭐ 21/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>本文作者表达了对人工智能的担忧和批评。文章探讨了人工智能发展可能带来的负面影响，并呼吁读者对其潜在风险保持警惕。作者还推广了自己的付费通讯，承诺提供深入的分析和见解，以换取订阅费用。这表明作者希望通过付费内容进一步深化其观点。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>The author expresses concerns and criticisms regarding artificial intelligence. The piece delves into the potential negative impacts of AI development, urging readers to be vigilant about its risks. The author also promotes their premium newsletter, promising in-depth analysis and insights in exchange for subscription fees, indicating a desire to further elaborate on their viewpoints through paid content.</blockquote>
+<p>🏷️ AI, critique, technology, future</p>
+<hr>
+<p>*生成于 2026-08-27 08:42 | 扫描 81 源 → 获取 2466 篇 → 精选 15 篇* *基于 <a href="https://refactoringenglish.com/tools/hn-popularity/">Hacker News Popularity Contest 2025</a> RSS 源列表，由 <a href="https://x.com/karpathy">Andrej Karpathy</a> 推荐*</p>
     </article>
   </main>
-  <script id="speech-text" type="application/json">"🎧 点这里朗读今日日报\n📰 AI 博客每日精选 — 2026-08-26\n来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15\n📝 今日看点\n今日看点：苹果新品发布引领硬件性能新标杆，AI 算力持续升级；开发者工具链日趋智能化，语言服务器等技术提升开发效率；同时，数据安全与隐私保护依然是技术圈关注的焦点。\n \n🏆 今日必读\n🥇 Apple 发布 M6 和 M5 Ultra 芯片，为新款 Mac mini 和 Mac Studio 带来性能飞跃\nEVE Online: The Move to Python 3 Begins! — simonwillison.net · 2 小时前 · ⚙️ 工程\n中文摘要\nApple 发布了新款 Mac mini 的 M6 芯片和新款 Mac Studio 的 M5 Ultra 芯片，实现了性能和 AI 计算能力的巨大飞跃。M6 作为 Apple 首款 2 纳米芯片，在每个计算模块上都有提升，提供了更强的性能。该芯片配备了更大的 12 核 CPU、12 核 GPU（含 Neural Accelerators）、双 16 核神经网络引擎，以及高达 170GB/s 的统一内存。\nEnglish Summary\nApple has unveiled the M6 chip for the new Mac mini and M5 Ultra for the new Mac Studio, delivering an extraordinary leap in performance and AI capabilities. The M6, Apple's first 2-nanometer chip, advances every compute block, offering significant performance gains. It features a larger 12-core CPU, a 12-core GPU with Neural Accelerators, a Dual 16-core Neural Engine, and up to 170GB/s of unified memory.\n💡 为什么值得读: 了解 Apple 最新芯片 M6 和 M5 Ultra 的技术规格和性能提升，以及它们如何驱动新款 Mac 产品线。\n💡 Why read it: Understand the technical specifications and performance improvements of Apple's latest M6 and M5 Ultra chips and how they power the new Mac lineup.\n🏷️ Python 3, EVE Online, large-scale\n🥈 Apple 调整计划，将‘隐藏我的邮箱’域名与‘通过 Apple 登录’分开\nThe AI Hater's Manifesto — wheresyoured.at · 8 小时前 · 💡 观点 / 杂谈\n中文摘要\nApple 宣布，从今年晚些时候开始，新的‘通过 Apple 登录’地址将使用 private.icloud.com 域名，而非之前的 privaterelay.appleid.com。现有的 privaterelay.appleid.com 地址将继续正常工作。经过社区反馈，Apple 决定将 iCloud+ 的‘隐藏我的邮箱’地址继续保留在 icloud.com 域名下，不再与‘通过 Apple 登录’合并。\nEnglish Summary\nApple is changing its plan to merge the domain names for 'Hide My Email' and 'Sign in with Apple'. New 'Sign in with Apple' addresses will be issued on private.icloud.com starting later this year, while existing privaterelay.appleid.com addresses will remain functional. Following community feedback, 'Hide My Email' addresses will continue to be hosted on icloud.com.\n💡 为什么值得读: 了解 Apple 在用户隐私服务上的最新调整，特别是关于‘通过 Apple 登录’和‘隐藏我的邮箱’的域名变化。\n💡 Why read it: Learn about Apple's latest adjustments to its privacy services, specifically the domain name changes for 'Sign in with Apple' and 'Hide My Email'.\n🏷️ AI Hater, manifesto, AI criticism\n🥉 一位老派程序员尝试语言服务器\nDylan Patel – Anthropic & OpenAI will have most of the world’s compute by 2028 — dwarkesh.com · 10 小时前 · 💡 观点 / 杂谈\n中文摘要\n作者描述了他过去十年不变的编码习惯：在文本编辑器中修改代码，然后在终端编译执行，通过打印日志或调试器来理解程序行为。他表达了对 Lisp 程序员工作方式的羡慕，暗示了对更集成、更智能开发环境的兴趣。\nEnglish Summary\nThe author describes his decade-long coding workflow: editing code in a text editor, compiling and running in a terminal, and using print statements or a debugger for understanding program behavior. He expresses envy for Lisp programmers' methods, hinting at an interest in more integrated and intelligent development environments.\n💡 为什么值得读: 从一位传统程序员的视角，了解其对现代开发工具（如语言服务器）的初步体验和潜在的转变。\n💡 Why read it: Gain insight into a traditional programmer's initial experience and potential shift towards modern development tools like language servers.\n🏷️ AI, compute, centralization, OpenAI\n \n📊 数据概览\n \n \n \n分类分布\nmermaid\npie showData\n title \"文章分类分布\"\n \"🛠 工具 / 开源\" : 5\n \"💡 观点 / 杂谈\" : 4\n \"⚙️ 工程\" : 3\n \"🔒 安全\" : 2\n \"🤖 AI / ML\" : 1\n高频关键词\nmermaid\nxychart-beta horizontal\n title \"高频关键词\"\n x-axis [\"ai\", \"centralization\", \"apple\", \"m6\", \"mac studio\", \"python 3\", \"eve online\", \"large-scale\", \"ai hater\", \"manifesto\", \"ai criticism\", \"compute\"]\n y-axis \"出现次数\" 0 --> 4\n bar [2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1]\n📈 纯文本关键词图（终端友好）\nai │ ████████████████████ 2\ncentralization │ ████████████████████ 2\napple │ ████████████████████ 2\nm6 │ ████████████████████ 2\nmac studio │ ████████████████████ 2\npython 3 │ ██████████░░░░░░░░░░ 1\neve online │ ██████████░░░░░░░░░░ 1\nlarge-scale │ ██████████░░░░░░░░░░ 1\nai hater │ ██████████░░░░░░░░░░ 1\nmanifesto │ ██████████░░░░░░░░░░ 1\n🏷️ 话题标签\nai(2) · centralization(2) · apple(2) · m6(2) · mac studio(2) · python 3(1) · eve online(1) · large-scale(1) · ai hater(1) · manifesto(1) · ai criticism(1) · compute(1) · openai(1) · prompt engineering(1) · future(1) · dma(1) · app store(1) · regulation(1) · microlighter(1) · syntax highlighting(1)\n \n🛠 工具 / 开源\n1. 你听说过 Microlighter 的好消息吗？\nHave You Heard the Good News About Microlighter? — blog.jim-nielsen.com · 6 小时前 · ⭐ 23/30\n中文摘要\n文章介绍了 Microlighter，一个利用 CSS Custom Highlights API 实现语法高亮的工具。作者 Dave Rupert 发布了该工具，并得到了 Jim Nielsen 的积极响应，后者迅速将其集成到自己的博客中。Microlighter 提供了一种新的、基于 CSS 的方式来处理网页上的代码高亮，有望简化开发流程并提升用户体验。该工具的出现标志着前端开发在处理代码展示方面有了新的解决方案。\nEnglish Summary\nThis article introduces Microlighter, a tool for handling syntax highlighting using the CSS Custom Highlights API. Dave Rupert released the tool, which was quickly adopted and integrated into Jim Nielsen's blog. Microlighter offers a new, CSS-based approach to syntax highlighting on the web, aiming to simplify development workflows and improve user experience. Its emergence signifies a novel solution for code presentation in front-end development.\n🏷️ microlighter, syntax highlighting, JavaScript\n \n2. 为我的静态站点生成器添加 D2 图表\nAdding diagrams to my static site generator with D2 — gilesthomas.com · 2 小时前 · ⭐ 22/30\n中文摘要\n作者 Giles Thomas 为其静态站点生成器集成了 D2，一个用于生成图表的工具。他发现，在博客文章中添加图表能够极大地提升内容的清晰度和表达效果，但手动绘制图表非常耗时且效果不佳。通过集成 D2，作者能够更方便地在文章中嵌入高质量的图表，从而改善内容呈现。该集成工作被认为效果相当不错。\nEnglish Summary\nAuthor Giles Thomas has integrated D2, a diagramming tool, into his static site generator. He found that adding diagrams significantly enhances content clarity and expressiveness in blog posts, but manual creation was time-consuming and yielded poor results. By integrating D2, the author can more easily embed high-quality diagrams into his articles, improving content presentation. This integration is considered to work quite well.\n🏷️ D2, diagrams, static site generator\n \n3. 苹果发布全新 M6 和 M5 Ultra 芯片，搭载新款 Mac mini 和 Mac Studio\nApple Introduces M6 and M5 Ultra Chips, in New Mac Mini and Mac Studio — daringfireball.net · 12 小时前 · ⭐ 22/30\n中文摘要\n苹果公司今日发布了新款 Mac mini 所搭载的 M6 芯片以及新款 Mac Studio 所搭载的 M5 Ultra 芯片。M6 芯片是苹果首款采用 2 纳米工艺的芯片，在性能和 AI 能力方面实现了巨大飞跃。它改进了所有计算模块，带来了全方位的性能提升。该芯片配备了更大的 12 核 CPU 核心组，拥有全球最快的 CPU 核心，以及更大的 12 核 GPU 和双 16 核神经网络引擎，并支持高达 170GB/s 的统一内存。\nEnglish Summary\nApple has unveiled its new M6 chip for the Mac mini and the M5 Ultra chip for the Mac Studio. The M6 chip, Apple's first 2-nanometer chip, offers a significant leap in performance and AI capabilities. It enhances all compute blocks, delivering gains across every dimension of performance. The chip features a larger 12-core CPU complex with the world's fastest CPU core, a larger 12-core GPU, and a Dual 16-core Neural Engine, supporting up to 170GB/s of unified memory.\n🏷️ Apple, M6, M5 Ultra, Mac Studio\n \n4. 新款 Mac mini (M6/M5 Pro) 和 Mac Studio (M5 Max/M5 Ultra) 的内存和存储配置及定价\n★ Memory and Storage Configurations and Pricing for the New Mac Minis (M6/M5 Pro) and Mac Studios (M5 Max/M5 Ultra) — daringfireball.net · 11 小时前 · ⭐ 20/30\n中文摘要\n本文旨在整理新款 Mac mini 和 Mac Studio 的内存和存储配置及定价信息。作者尝试将所有 RAM/SSD 配置信息浓缩成表格，以便用户清晰地了解每个芯片可用的存储和内存选项及其成本。\nEnglish Summary\nThis article aims to present the memory and storage configurations and pricing for the new Mac mini and Mac Studio. The author attempts to condense all RAM/SSD configurations into tables for a clear overview of available storage and memory options and their costs for each chip.\n🏷️ Mac Mini, Mac Studio, M6, M5\n \n5. Forgejo 技巧：如何设置起始的 Issue 和 Pull Request 编号\nForgejo hack: How to set a starting issue and pull request number — miguelgrinberg.com · 12 小时前 · ⭐ 20/30\n中文摘要\n作者正在将开源项目从 GitHub 迁移到自托管的 Forgejo 实例。在迁移过程中，他会深入研究 Forgejo 的源代码，寻找管理界面之外的隐藏配置方法。本文是他的第一篇发现分享，旨在帮助其他用户解决类似问题，例如如何设置起始的 Issue 和 Pull Request 编号。\nEnglish Summary\nThe author is migrating open-source projects from GitHub to a self-hosted Forgejo instance and is exploring its source code for hidden configuration options. This article shares his first discovery, aiming to help others with issues like setting starting issue and pull request numbers.\n🏷️ Forgejo, Git, open source, migration\n \n💡 观点 / 杂谈\n6. Apple 调整计划，将‘隐藏我的邮箱’域名与‘通过 Apple 登录’分开\nThe AI Hater's Manifesto — wheresyoured.at · 8 小时前 · ⭐ 24/30\n中文摘要\nApple 宣布，从今年晚些时候开始，新的‘通过 Apple 登录’地址将使用 private.icloud.com 域名，而非之前的 privaterelay.appleid.com。现有的 privaterelay.appleid.com 地址将继续正常工作。经过社区反馈，Apple 决定将 iCloud+ 的‘隐藏我的邮箱’地址继续保留在 icloud.com 域名下，不再与‘通过 Apple 登录’合并。\nEnglish Summary\nApple is changing its plan to merge the domain names for 'Hide My Email' and 'Sign in with Apple'. New 'Sign in with Apple' addresses will be issued on private.icloud.com starting later this year, while existing privaterelay.appleid.com addresses will remain functional. Following community feedback, 'Hide My Email' addresses will continue to be hosted on icloud.com.\n🏷️ AI Hater, manifesto, AI criticism\n \n7. 一位老派程序员尝试语言服务器\nDylan Patel – Anthropic & OpenAI will have most of the world’s compute by 2028 — dwarkesh.com · 10 小时前 · ⭐ 24/30\n中文摘要\n作者描述了他过去十年不变的编码习惯：在文本编辑器中修改代码，然后在终端编译执行，通过打印日志或调试器来理解程序行为。他表达了对 Lisp 程序员工作方式的羡慕，暗示了对更集成、更智能开发环境的兴趣。\nEnglish Summary\nThe author describes his decade-long coding workflow: editing code in a text editor, compiling and running in a terminal, and using print statements or a debugger for understanding program behavior. He expresses envy for Lisp programmers' methods, hinting at an interest in more integrated and intelligent development environments.\n🏷️ AI, compute, centralization, OpenAI\n \n8. 新款 Mac mini (M6/M5 Pro) 和 Mac Studio (M5 Max/M5 Ultra) 的内存和存储配置及定价\nFoot Guns for Sale — idiallo.com · 18 小时前 · ⭐ 24/30\n中文摘要\n这篇文章提供了新款 Mac mini 和 Mac Studio 的详细内存和存储配置选项，并附带了相应的价格信息。通过表格形式清晰展示了不同芯片型号（M6/M5 Pro/M5 Max/M5 Ultra）可用的 RAM 和 SSD 组合及其成本。\nEnglish Summary\nThis article presents a condensed overview of the RAM and SSD configurations and pricing for the new Mac mini (M6/M5 Pro) and Mac Studio (M5 Max/M5 Ultra). It uses tables to clearly outline the available storage and memory options for each chip variant and their associated costs.\n🏷️ AI, centralization, prompt engineering, future\n \n9. Forgejo 技巧：如何设置起始的 Issue 和 Pull Request 编号\n★ What Is the Point of the DMA? — daringfireball.net · 1 天前 · ⭐ 24/30\n中文摘要\n作者在将开源项目从 GitHub 迁移到自托管 Forgejo 实例时，分享了一个关于如何自定义 Forgejo 的技巧。他通过研究 Forgejo 源代码，找到了设置起始 Issue 和 Pull Request 编号的方法，并将其记录下来以帮助其他用户。\nEnglish Summary\nWhile migrating his open-source projects from GitHub to a self-hosted Forgejo instance, the author discovered a method to customize Forgejo's behavior. By examining the source code, he found a way to set the starting numbers for issues and pull requests, sharing this hack to assist other users.\n🏷️ DMA, App Store, Apple, regulation\n \n⚙️ 工程\n10. Apple 发布 M6 和 M5 Ultra 芯片，为新款 Mac mini 和 Mac Studio 带来性能飞跃\nEVE Online: The Move to Python 3 Begins! — simonwillison.net · 2 小时前 · ⭐ 24/30\n中文摘要\nApple 发布了新款 Mac mini 的 M6 芯片和新款 Mac Studio 的 M5 Ultra 芯片，实现了性能和 AI 计算能力的巨大飞跃。M6 作为 Apple 首款 2 纳米芯片，在每个计算模块上都有提升，提供了更强的性能。该芯片配备了更大的 12 核 CPU、12 核 GPU（含 Neural Accelerators）、双 16 核神经网络引擎，以及高达 170GB/s 的统一内存。\nEnglish Summary\nApple has unveiled the M6 chip for the new Mac mini and M5 Ultra for the new Mac Studio, delivering an extraordinary leap in performance and AI capabilities. The M6, Apple's first 2-nanometer chip, advances every compute block, offering significant performance gains. It features a larger 12-core CPU, a 12-core GPU with Neural Accelerators, a Dual 16-core Neural Engine, and up to 170GB/s of unified memory.\n🏷️ Python 3, EVE Online, large-scale\n \n11. 调试 Ubiquiti 的 AT&T 5G 备份\nDebugging Ubiquiti's 5G Backup on AT&T — jeffgeerling.com · 6 小时前 · ⭐ 22/30\n中文摘要\n作者 Jeff Geerling 分享了他在为移动“迷你家庭实验室”项目调试 Ubiquiti UniFi 5G 备份连接时遇到的问题。他希望使用 5G 作为主要连接，同时保留插入其他互联网连接的能力。文章详细描述了调试过程中的技术细节和遇到的挑战，旨在为遇到类似问题的用户提供参考和解决方案。\nEnglish Summary\nAuthor Jeff Geerling shares his experience debugging issues with Ubiquiti's 5G backup connection on AT&T for a mobile 'mini homelab' project. He aimed to use 5G as a primary connection while retaining the ability to plug in another internet source. The article details the technical aspects and challenges encountered during the debugging process, offering insights and potential solutions for users facing similar problems.\n🏷️ Ubiquiti, 5G backup, debugging\n \n12. 一位老派程序员尝试语言服务器\nA curmudgeon tries a language server — entropicthoughts.com · 1 天前 · ⭐ 21/30\n中文摘要\n作者描述了他十年来一直沿用的代码编写方式：在文本编辑器中编辑，然后切换到终端窗口运行编译和执行命令。如果对结果不确定，他会添加打印语句或使用调试器。他羡慕 Lisp 程序员的工作方式，暗示了对更高效开发工具的兴趣。\nEnglish Summary\nThe author describes his decade-long coding workflow: editing in a text editor, then switching to a terminal to compile and execute code. He resorts to tracer prints or debuggers when unsure of outcomes. He expresses envy for Lisp programmers' methods, hinting at an interest in more efficient development tools.\n🏷️ language server, developer tools, text editor, workflow\n \n🔒 安全\n13. 关于数据泄露索赔、验证和 Carhartt 的警示故事\nA Cautionary Tale About Data Breach Claims, Verification and Carhartt — troyhunt.com · 3 小时前 · ⭐ 22/30\n中文摘要\n这篇文章讲述了一个关于数据泄露索赔的警示故事，涉及品牌 Carhartt。作者 Troy Hunt 指出，不能总是轻信网络犯罪分子的说法，即使是关于数据泄露的声明也需要谨慎对待和验证。故事的核心在于强调了在处理数据泄露事件时，对信息来源的审慎态度和严格的验证流程的重要性，以避免被虚假信息误导。\nEnglish Summary\nThis article recounts a cautionary tale about data breach claims involving the brand Carhartt. Author Troy Hunt highlights that one cannot always take cybercriminals at their word, emphasizing the need for caution and verification even for data breach assertions. The core of the story underscores the importance of a discerning approach to information sources and rigorous verification processes when dealing with data breaches, to avoid being misled by false information.\n🏷️ data breach, verification, Carhartt\n \n14. 苹果重新考虑将“隐藏我的邮箱”域名与“通过 Apple 登录”合并的计划\nApple Rethinks Plan to Merge ‘Hide My Email’ Domain Name With ‘Sign In With Apple’ — daringfireball.net · 1 天前 · ⭐ 22/30\n中文摘要\n苹果公司宣布，从今年晚些时候开始，新的“通过 Apple 登录”地址将从 privaterelay.appleid.com 迁移到 private.icloud.com。现有的 privaterelay.appleid.com 地址将继续正常工作并转发邮件。经过进一步考虑和社区反馈，iCloud+ 的“隐藏我的邮箱”地址将保留在 icloud.com 上。\nEnglish Summary\nApple announced that starting later this year, new Sign in with Apple addresses will be issued on private.icloud.com instead of privaterelay.appleid.com. Existing addresses on privaterelay.appleid.com will continue to work without interruption. Following further consideration and community feedback, iCloud+ Hide My Email addresses will remain on icloud.com.\n🏷️ Hide My Email, Sign In With Apple, privacy, Apple ID\n \n🤖 AI / ML\n15. llm-anthropic 0.27 版本发布\nllm-anthropic 0.27 — simonwillison.net · 1 天前 · ⭐ 23/30\n中文摘要\nllm-anthropic 插件的 0.27 版本发布，主要目的是兼容 Anthropic 最近发布的 anthropic v1.0.0 Python 库。新版本的 Python 库将依赖从 httpx 切换到了 httpx2。此次更新确保了 llm-anthropic 插件能够与最新的 Anthropic SDK 无缝集成，为开发者提供稳定可靠的接口。同时，该版本也提及了对 OpenAI 的兼容性。\nEnglish Summary\nRelease 0.27 of the llm-anthropic plugin primarily provides compatibility with the recently released anthropic v1.0.0 Python library. This new version of the Python library switches its dependency from httpx to httpx2. This update ensures seamless integration of the llm-anthropic plugin with the latest Anthropic SDK, offering developers a stable and reliable interface. Compatibility with OpenAI is also mentioned.\n🏷️ LLM, Anthropic, plugin, llm-anthropic\n \n生成于 2026-08-26 01:44 | 扫描 81 源 → 获取 2483 篇 → 精选 15 篇\n基于 Hacker News Popularity Contest 2025 RSS 源列表，由 Andrej Karpathy 推荐"</script>
+  <script id="speech-text" type="application/json">"🎧 点这里朗读今日日报\n📰 AI 博客每日精选 — 2026-08-27\n来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15\n📝 今日看点\n今日技术看点聚焦两大趋势：AI 争议与开发者工具的演进。一方面，AI 发展引发了“AI 仇恨者”的批判性声音，同时开发者工具领域，VS Code 的更新问题与 UI 偏好引发讨论，而 Forgejo 等自托管方案则在探索简化之道。此外，老牌游戏《EVE Online》的 Python 3 迁移以及数据安全警示也值得关注。\n \n🏆 今日必读\n🥇 VS Code 远程连接失效？降级至 v1.124.x 版本解决\nDylan Patel – Anthropic & OpenAI will have most of the world’s compute by 2028 — dwarkesh.com · 1 天前 · 🤖 AI / ML\n中文摘要\n近期 VS Code 的远程连接功能出现问题，导致用户无法正常使用。文章指出，问题根源在于 VS Code 的某个更新版本，并提供了具体的解决方案：将 VS Code 降级至 v1.124.x 版本即可恢复远程连接的正常工作。作者暗示，解决此类问题的“变通方案”可能面临被移除的风险。\nEnglish Summary\nRecent updates to VS Code have caused issues with its remote connection functionality. The article identifies a specific version as the culprit and offers a workaround: downgrading to version v1.124.x resolves the problem. The author humorously notes the potential for such workarounds to be removed in future updates.\n💡 为什么值得读: 如果你也遇到了 VS Code 远程连接问题，这篇文章提供了直接有效的降级解决方案。\n💡 Why read it: Provides a direct and effective downgrade solution for users experiencing VS Code remote connection issues.\n🏷️ AI compute, centralization, OpenAI, Anthropic\n🥈 如何将 VS Code UI 恢复到旧版本\nQwen3.8-Flash-Next — simonwillison.net · 8 小时前 · 🤖 AI / ML\n中文摘要\nVS Code 近期更新引入了新的用户界面（UI），但一些用户更偏好旧版的界面设计。文章提供了一种变通方法，允许用户将 VS Code 的 UI 恢复到之前的版本。作者调侃说，这种恢复旧 UI 的方法很可能在未来被移除。\nEnglish Summary\nThis article details a workaround for users who dislike the new UI introduced in recent VS Code updates. It provides instructions on how to revert the VS Code interface to its previous design. The author speculates that this method for restoring the old UI might be removed in future versions.\n💡 为什么值得读: 如果你不喜欢 VS Code 的新 UI，这篇文章提供了恢复旧版界面的实用技巧。\n💡 Why read it: Offers a practical tip for users who prefer the older VS Code UI and wish to revert to it.\n🏷️ LLM, multimodal, MoE, Qwen\n🥉 XCancel：Twitter/X 镜像服务因 X Corp 的停止令而关闭\nQuoting Paul Dix — simonwillison.net · 1 天前 · 🤖 AI / ML\n中文摘要\nXCancel，一个提供 Twitter/X 内容镜像服务的第三方平台，已于 8 月 24 日收到 X Corp（Twitter 的母公司）发出的停止令（cease and desist letter）。因此，XCancel 服务即日起无限期停止。服务团队表示正在寻求法律建议，并感谢用户两年来对该服务的信任。\nEnglish Summary\nXCancel, a mirror service for Twitter/X content, has been forced to shut down after receiving a cease and desist letter from X Corp on August 24th. The service is now suspended indefinitely while the team seeks legal counsel. They expressed gratitude for the user trust over the past two years.\n💡 为什么值得读: 了解第三方服务如何因平台方压力而关闭，以及对用户体验的影响。\n💡 Why read it: Understand how a third-party service was shut down due to platform pressure and its implications for user experience.\n🏷️ AI, programming, code generation, LLM\n \n📊 数据概览\n \n \n \n分类分布\nmermaid\npie showData\n title \"文章分类分布\"\n \"🤖 AI / ML\" : 4\n \"🛠 工具 / 开源\" : 4\n \"⚙️ 工程\" : 3\n \"🔒 安全\" : 2\n \"📝 其他\" : 1\n \"💡 观点 / 杂谈\" : 1\n高频关键词\nmermaid\nxychart-beta horizontal\n title \"高频关键词\"\n x-axis [\"llm\", \"ai\", \"configuration\", \"vs code\", \"ai compute\", \"centralization\", \"openai\", \"anthropic\", \"multimodal\", \"moe\", \"qwen\", \"programming\"]\n y-axis \"出现次数\" 0 --> 4\n bar [2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1]\n📈 纯文本关键词图（终端友好）\nllm │ ████████████████████ 2\nai │ ████████████████████ 2\nconfiguration │ ████████████████████ 2\nvs code │ ████████████████████ 2\nai compute │ ██████████░░░░░░░░░░ 1\ncentralization │ ██████████░░░░░░░░░░ 1\nopenai │ ██████████░░░░░░░░░░ 1\nanthropic │ ██████████░░░░░░░░░░ 1\nmultimodal │ ██████████░░░░░░░░░░ 1\nmoe │ ██████████░░░░░░░░░░ 1\n🏷️ 话题标签\nllm(2) · ai(2) · configuration(2) · vs code(2) · ai compute(1) · centralization(1) · openai(1) · anthropic(1) · multimodal(1) · moe(1) · qwen(1) · programming(1) · code generation(1) · ai coding(1) · code quality(1) · developer productivity(1) · gdpr(1) · cookie consent(1) · regulation(1) · privacy(1)\n \n🤖 AI / ML\n1. VS Code 远程连接失效？降级至 v1.124.x 版本解决\nDylan Patel – Anthropic & OpenAI will have most of the world’s compute by 2028 — dwarkesh.com · 1 天前 · ⭐ 27/30\n中文摘要\n近期 VS Code 的远程连接功能出现问题，导致用户无法正常使用。文章指出，问题根源在于 VS Code 的某个更新版本，并提供了具体的解决方案：将 VS Code 降级至 v1.124.x 版本即可恢复远程连接的正常工作。作者暗示，解决此类问题的“变通方案”可能面临被移除的风险。\nEnglish Summary\nRecent updates to VS Code have caused issues with its remote connection functionality. The article identifies a specific version as the culprit and offers a workaround: downgrading to version v1.124.x resolves the problem. The author humorously notes the potential for such workarounds to be removed in future updates.\n🏷️ AI compute, centralization, OpenAI, Anthropic\n \n2. 如何将 VS Code UI 恢复到旧版本\nQwen3.8-Flash-Next — simonwillison.net · 8 小时前 · ⭐ 26/30\n中文摘要\nVS Code 近期更新引入了新的用户界面（UI），但一些用户更偏好旧版的界面设计。文章提供了一种变通方法，允许用户将 VS Code 的 UI 恢复到之前的版本。作者调侃说，这种恢复旧 UI 的方法很可能在未来被移除。\nEnglish Summary\nThis article details a workaround for users who dislike the new UI introduced in recent VS Code updates. It provides instructions on how to revert the VS Code interface to its previous design. The author speculates that this method for restoring the old UI might be removed in future versions.\n🏷️ LLM, multimodal, MoE, Qwen\n \n3. XCancel：Twitter/X 镜像服务因 X Corp 的停止令而关闭\nQuoting Paul Dix — simonwillison.net · 1 天前 · ⭐ 26/30\n中文摘要\nXCancel，一个提供 Twitter/X 内容镜像服务的第三方平台，已于 8 月 24 日收到 X Corp（Twitter 的母公司）发出的停止令（cease and desist letter）。因此，XCancel 服务即日起无限期停止。服务团队表示正在寻求法律建议，并感谢用户两年来对该服务的信任。\nEnglish Summary\nXCancel, a mirror service for Twitter/X content, has been forced to shut down after receiving a cease and desist letter from X Corp on August 24th. The service is now suspended indefinitely while the team seeks legal counsel. They expressed gratitude for the user trust over the past two years.\n🏷️ AI, programming, code generation, LLM\n \n4. AI 仇恨者的宣言\nWhat is the quality of software that AI writes? — johndcook.com · 13 小时前 · ⭐ 25/30\n中文摘要\n这篇文章提出了对人工智能（AI）的批判性观点，认为 AI 的发展和应用存在诸多问题。作者通过“AI 仇恨者宣言”的形式，阐述了对 AI 技术的担忧和反对理由。文章鼓励读者订阅其付费通讯，以获取更深入的分析。\nEnglish Summary\nThis piece presents a critical perspective on Artificial Intelligence (AI), outlining concerns and arguments against its development and widespread adoption. Framed as an 'AI Hater's Manifesto,' it details the author's apprehensions about AI technologies. The author also promotes their premium newsletter for more in-depth analysis.\n🏷️ AI coding, code quality, developer productivity\n \n🛠 工具 / 开源\n5. 新款 Mac Mini 和 Mac Studio 的内存与存储配置及定价\n★ Memory and Storage Configurations and Pricing for the New Mac Minis (M6/M5 Pro) and Mac Studios (M5 Max/M5 Ultra) — daringfireball.net · 1 天前 · ⭐ 22/30\n中文摘要\n文章详细列出了新款 Mac Mini（M6/M5 Pro 芯片）和 Mac Studio（M5 Max/M5 Ultra 芯片）的内存和存储配置选项及其价格。作者通过表格形式清晰展示了不同芯片型号下可用的存储和内存组合，以及相应的成本，方便用户进行选购决策。\nEnglish Summary\nThis article provides a detailed breakdown of the memory and storage configurations and pricing for the new Mac Minis (M6/M5 Pro chips) and Mac Studios (M5 Max/M5 Ultra chips). The author uses tables to clearly present the available storage and memory combinations for each chip variant and their associated costs, aiding users in their purchasing decisions.\n🏷️ Mac Mini, Mac Studio, Apple Silicon, configuration\n \n6. Gadget 评测：Thermal Master P3 宏观镜头\nGadget Review: Thermal Master P3 Macro Lens ★★★★⯪ — shkspr.mobi · 21 小时前 · ⭐ 21/30\n中文摘要\n这篇评测介绍了 Thermal Master P3 宏观镜头，这是一款专门用于近距离观察电子设备热点的相机。与用于观鸟或野生动物拍摄的相机不同，P3 配备手动宏观镜头，能够精确捕捉 CPU 等组件的温度分布。评测给予该产品四星半的评价。\nEnglish Summary\nThis review covers the Thermal Master P3 macro lens, a camera specifically designed for close-up observation of thermal hotspots in electronic devices. Unlike cameras for bird or wildlife photography, the P3 features a manual macro lens capable of precisely capturing the temperature distribution of components like CPUs. The review awards the product four and a half stars.\n🏷️ thermal camera, macro lens, gadget review\n \n7. VS Code 远程连接失效？降级至 v1.124.x 版本可解决\nIf your VS Code remotes stopped working, downgrade to v1.124.x — xeiaso.net · 1 天前 · ⭐ 21/30\n中文摘要\n近期有用户报告 VS Code 的远程连接功能出现问题，导致无法正常使用。经过排查，发现是新版本引入的 bug 所致。文章提供了一个临时的解决方案，即降级到 v1.124.x 版本。此举可以暂时恢复远程连接的正常工作。请注意，这只是一个临时措施，未来版本更新有望彻底修复此问题。\nEnglish Summary\nUsers have reported issues with VS Code's remote connection functionality, preventing normal use. Investigation revealed a bug introduced in a recent version. The article suggests a temporary workaround: downgrading to version v1.124.x. This action can temporarily restore the remote connection's functionality. Note that this is a temporary measure, and future updates are expected to fully resolve the issue.\n🏷️ VS Code, remote development, bug fix\n \n8. 如何让 VS Code 回到旧版用户界面\nHow to make VS Code go back to the old UI — xeiaso.net · 1 天前 · ⭐ 21/30\n中文摘要\n如果你不喜欢 VS Code 的新界面，并希望恢复到之前的用户体验，这篇文章将为你提供指导。文章介绍了一种方法，可以帮助用户将 VS Code 的界面设置回旧版本样式。通过遵循文章中的步骤，你可以轻松地调整设置，以获得你熟悉和偏好的界面布局。这对于习惯了旧版界面的用户来说非常实用。\nEnglish Summary\nIf you dislike the new VS Code interface and wish to revert to the previous user experience, this article will guide you. It introduces a method to help users reset VS Code's interface settings back to the old version's style. By following the steps outlined, you can easily adjust settings to achieve a familiar and preferred interface layout. This is particularly useful for users accustomed to the older interface.\n🏷️ VS Code, UI, customization\n \n⚙️ 工程\n9. EVE Online：迁移到 Python 3 的进程已启动\nEVE Online: The Move to Python 3 Begins! — simonwillison.net · 1 天前 · ⭐ 23/30\n中文摘要\n《EVE Online》这款运营超过二十年的大型在线游戏，正在进行一项重要的技术升级：迁移到 Python 3。该游戏自 2003 年上线以来一直运行在 Stackless Python 上，最近一次重大升级是 16 年前进行的 Stackless Python 2.7 升级。此次迁移标志着游戏技术栈的一次重大演进。\nEnglish Summary\nEVE Online, a massively multiplayer online game that has been running for over two decades, has begun its migration to Python 3. The game has been operating on Stackless Python since its launch in 2003, with its last major upgrade being to Stackless Python 2.7 sixteen years ago. This migration marks a significant evolution in the game's technology stack.\n🏷️ Python 3, EVE Online, legacy systems, migration\n \n10. 自托管能否做到简单？\nCan Self-Hosting Be Simple? — tedium.co · 5 小时前 · ⭐ 21/30\n中文摘要\n文章探讨了自托管的复杂性，指出用户很容易陷入过于深入的技术细节。作者通过尝试构建一个“第三空间”盒子，学习到了一种“少即是多”的自托管方法。这表明，即使是复杂的自托管项目，也可以通过简化和聚焦核心功能来实现易用性。\nEnglish Summary\nThis article explores the complexity of self-hosting, noting how users can easily get bogged down in excessive technical details. The author shares learnings from attempting to build a 'third place' box, discovering a 'less is more' approach to self-hosting. This suggests that even complex self-hosting projects can achieve simplicity by streamlining and focusing on core functionalities.\n🏷️ self-hosting, home server, DIY\n \n11. Forgejo 技巧：如何设置起始的 Issue 和 Pull Request 编号\nForgejo hack: How to set a starting issue and pull request number — miguelgrinberg.com · 1 天前 · ⭐ 21/30\n中文摘要\n本文作者正在将开源项目从 GitHub 迁移到自托管的 Forgejo 实例。在迁移过程中，作者发现了一些隐藏的配置方法，可以自定义 Issue 和 Pull Request 的起始编号。文章分享了这一发现，旨在帮助其他用户解决类似问题。通过修改 Forgejo 的源代码，可以实现这一个性化设置。\nEnglish Summary\nThe author is migrating their open-source projects from GitHub to a self-hosted Forgejo instance. During this process, they discovered hidden configuration methods to customize the starting numbers for Issues and Pull Requests. This article shares this finding to help other users with similar needs. By modifying Forgejo's source code, this personalized setting can be achieved.\n🏷️ Forgejo, Git, open source, configuration\n \n🔒 安全\n12. Forgejo 技巧：如何设置起始的 Issue 和 Pull Request 编号\nFootnote Regarding the GDPR and Cookie Permission Prompts — daringfireball.net · 1 天前 · ⭐ 24/30\n中文摘要\n文章分享了一个针对自托管 Forgejo 实例的技巧，用于设置 Issue 和 Pull Request 的起始编号。作者在将开源项目从 GitHub 迁移到 Forgejo 的过程中，通过研究 Forgejo 源代码发现了这一配置方法。该技巧适用于无法通过管理界面直接配置此项的用户。\nEnglish Summary\nThis post details a hack for self-hosted Forgejo instances to set custom starting numbers for Issues and Pull Requests. The author discovered this configuration by examining the Forgejo source code while migrating projects from GitHub. This method is useful for users who cannot configure this setting directly through the administration UI.\n🏷️ GDPR, cookie consent, regulation, privacy\n \n13. 关于数据泄露索赔、验证和 Carhartt 的警示故事\nA Cautionary Tale About Data Breach Claims, Verification and Carhartt — troyhunt.com · 1 天前 · ⭐ 23/30\n中文摘要\n文章讲述了一个关于数据泄露索赔的警示故事，涉及 Carhartt 公司。作者指出，不能总是轻信网络犯罪分子的说法，即使问题可能并非直接源于他们。故事强调了在处理数据泄露索赔时，验证信息来源和真实性的重要性，并暗示了潜在的欺诈或误导行为。\nEnglish Summary\nThis article presents a cautionary tale about data breach claims and verification, involving the company Carhartt. The author emphasizes that one cannot always trust the word of cybercriminals, even if the issue doesn't directly originate from them. The story highlights the importance of verifying information sources and authenticity when dealing with data breach claims, hinting at potential fraud or misrepresentation.\n🏷️ data breach, verification, Carhartt, cybercrime\n \n📝 其他\n14. XCancel，Twitter/X 的镜像服务，在收到 X Corp 的停止令后关闭\nXCancel, the Twitter/X Mirror, Shuts Down After Cease and Desist From the Fine Folks at X Corp — daringfireball.net · 1 天前 · ⭐ 21/30\n中文摘要\nXCancel，一个旨在提供 Twitter/X 内容镜像服务的平台，已于近期宣布停止运营。该服务收到了来自 X Corp 的正式停止令（cease and desist letter），要求其立即停止服务。XCancel 在收到通知后，已暂停所有服务，并表示正在寻求法律建议。该平台感谢用户两年来对 XCancel 的信任和支持。\nEnglish Summary\nXCancel, a platform that offered a mirror service for Twitter/X content, has announced its shutdown. The service received a cease and desist letter from X Corp, demanding its immediate termination. Following the notification, XCancel has suspended all operations and is seeking legal counsel. The platform expressed gratitude for the trust users placed in XCancel over the past two years.\n🏷️ Twitter, X Corp, cease and desist, legal\n \n💡 观点 / 杂谈\n15. AI 批评者的宣言\nThe AI Hater's Manifesto — wheresyoured.at · 1 天前 · ⭐ 21/30\n中文摘要\n本文作者表达了对人工智能的担忧和批评。文章探讨了人工智能发展可能带来的负面影响，并呼吁读者对其潜在风险保持警惕。作者还推广了自己的付费通讯，承诺提供深入的分析和见解，以换取订阅费用。这表明作者希望通过付费内容进一步深化其观点。\nEnglish Summary\nThe author expresses concerns and criticisms regarding artificial intelligence. The piece delves into the potential negative impacts of AI development, urging readers to be vigilant about its risks. The author also promotes their premium newsletter, promising in-depth analysis and insights in exchange for subscription fees, indicating a desire to further elaborate on their viewpoints through paid content.\n🏷️ AI, critique, technology, future\n \n生成于 2026-08-27 08:42 | 扫描 81 源 → 获取 2466 篇 → 精选 15 篇\n基于 Hacker News Popularity Contest 2025 RSS 源列表，由 Andrej Karpathy 推荐"</script>
   <script>
     const text = JSON.parse(document.getElementById('speech-text').textContent);
     const statusEl = document.getElementById('status');
