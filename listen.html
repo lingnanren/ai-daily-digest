@@ -52,203 +52,201 @@
   <main class="shell">
     <article class="card">
       <p>🎧 <a href="https://lingnanren.github.io/ai-daily-digest/listen.html">点这里朗读今日日报</a></p>
-<h1>📰 AI 博客每日精选 — 2026-08-27</h1>
+<h1>📰 AI 博客每日精选 — 2026-08-28</h1>
 <blockquote>来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15</blockquote>
 <h2>📝 今日看点</h2>
-<p>今日技术看点聚焦两大趋势：AI 争议与开发者工具的演进。一方面，AI 发展引发了“AI 仇恨者”的批判性声音，同时开发者工具领域，VS Code 的更新问题与 UI 偏好引发讨论，而 Forgejo 等自托管方案则在探索简化之道。此外，老牌游戏《EVE Online》的 Python 3 迁移以及数据安全警示也值得关注。</p>
+<p>今日技术看点聚焦AI驱动的软件开发新浪潮，从安全沙箱化编码代理到AI生成代码的质量争议，预示着开发模式的深刻变革。同时，内存安全漏洞和开源维护者的招聘需求也凸显了技术生态的持续挑战与机遇。</p>
 <hr>
 <h2>🏆 今日必读</h2>
-<p>🥇 <strong>VS Code 远程连接失效？降级至 v1.124.x 版本解决</strong></p>
-<p><a href="https://www.dwarkesh.com/p/dylan-patel-3">Dylan Patel – Anthropic &amp; OpenAI will have most of the world’s compute by 2028</a> — dwarkesh.com · 1 天前 · 🤖 AI / ML</p>
+<p>🥇 <strong>安全地沙箱化编码代理</strong></p>
+<p><a href="https://www.reuters.com/legal/government/us-judge-blocks-pentagons-anthropic-blacklisting-2026-08-28/">U.S. Judge Blocks Trump Defense Department’s Anthropic Blacklisting</a> — daringfireball.net · 7 小时前 · 🤖 AI / ML</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>近期 VS Code 的远程连接功能出现问题，导致用户无法正常使用。文章指出，问题根源在于 VS Code 的某个更新版本，并提供了具体的解决方案：将 VS Code 降级至 v1.124.x 版本即可恢复远程连接的正常工作。作者暗示，解决此类问题的“变通方案”可能面临被移除的风险。</blockquote>
+<blockquote>本文详细介绍了如何为编码代理设置隔离的沙箱环境，以安全地编写高质量代码。通过限制代理只能访问单个隔离的 GitHub 仓库，可以有效降低安全风险。这种方法旨在解决编码代理在代码生成过程中可能带来的安全隐患，确保其操作在可控范围内。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Recent updates to VS Code have caused issues with its remote connection functionality. The article identifies a specific version as the culprit and offers a workaround: downgrading to version v1.124.x resolves the problem. The author humorously notes the potential for such workarounds to be removed in future updates.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 如果你也遇到了 VS Code 远程连接问题，这篇文章提供了直接有效的降级解决方案。</p>
-<p>💡 <strong>Why read it</strong>: Provides a direct and effective downgrade solution for users experiencing VS Code remote connection issues.</p>
-<p>🏷️ AI compute, centralization, OpenAI, Anthropic</p>
-<p>🥈 <strong>如何将 VS Code UI 恢复到旧版本</strong></p>
-<p><a href="https://simonwillison.net/2026/Aug/26/qwen38-flash-next/">Qwen3.8-Flash-Next</a> — simonwillison.net · 8 小时前 · 🤖 AI / ML</p>
+<blockquote>This post details the setup of isolated sandboxes for coding agents to securely write high-quality code. By restricting agents to access only a single, isolated GitHub repository, security risks are effectively mitigated. This approach addresses potential security vulnerabilities introduced by coding agents during code generation, ensuring their operations remain within controlled boundaries.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 了解如何为 AI 编码助手构建安全隔离环境，以防范潜在的代码安全风险。</p>
+<p>💡 <strong>Why read it</strong>: Learn how to build secure, isolated environments for AI coding assistants to mitigate potential code security risks.</p>
+<p>🏷️ Anthropic, AI safety, Pentagon, lawsuit</p>
+<p>🥈 <strong>卖掉自己：技术与组织运作的艺术</strong></p>
+<p><a href="https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode/">Breaking Claude Code Opus 5 Auto Mode</a> — simonwillison.net · 12 小时前 · 🤖 AI / ML</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>VS Code 近期更新引入了新的用户界面（UI），但一些用户更偏好旧版的界面设计。文章提供了一种变通方法，允许用户将 VS Code 的 UI 恢复到之前的版本。作者调侃说，这种恢复旧 UI 的方法很可能在未来被移除。</blockquote>
+<blockquote>与汤姆·勒赫在 1973 年的说法不同，今天的“卖掉自己”（selling out）需要高超的技术能力和对大型组织运作方式的深刻理解。本文旨在教授读者如何掌握这种能力，以在不牺牲原则的情况下实现职业目标。它强调了技术技能和对组织动态的洞察力在职业发展中的重要性。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This article details a workaround for users who dislike the new UI introduced in recent VS Code updates. It provides instructions on how to revert the VS Code interface to its previous design. The author speculates that this method for restoring the old UI might be removed in future versions.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 如果你不喜欢 VS Code 的新 UI，这篇文章提供了恢复旧版界面的实用技巧。</p>
-<p>💡 <strong>Why read it</strong>: Offers a practical tip for users who prefer the older VS Code UI and wish to revert to it.</p>
-<p>🏷️ LLM, multimodal, MoE, Qwen</p>
-<p>🥉 <strong>XCancel：Twitter/X 镜像服务因 X Corp 的停止令而关闭</strong></p>
-<p><a href="https://simonwillison.net/2026/Aug/26/paul-dix/">Quoting Paul Dix</a> — simonwillison.net · 1 天前 · 🤖 AI / ML</p>
+<blockquote>Contrary to Tom Lehrer's 1973 assertion, 'selling out' today requires significant technical skill and a nuanced understanding of how large organizations function. This post aims to teach readers how to master this art, enabling them to achieve career goals without compromising integrity. It highlights the importance of technical prowess and insight into organizational dynamics for career advancement.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 探讨在现代职场中，如何在不牺牲个人原则的前提下，通过技术和组织洞察力实现职业目标。</p>
+<p>💡 <strong>Why read it</strong>: Explores how to achieve career goals in the modern workplace by leveraging technical skill and organizational insight without compromising personal integrity.</p>
+<p>🏷️ Claude, prompt injection, AI security, coding agent</p>
+<p>🥉 <strong>强制所有派生类实现特定非虚方法的探讨（第一部分）</strong></p>
+<p><a href="https://louisabraham.github.io/load-bearing/">The Load-Bearing Vocabulary of Claude</a> — daringfireball.net · 13 小时前 · 🤖 AI / ML</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>XCancel，一个提供 Twitter/X 内容镜像服务的第三方平台，已于 8 月 24 日收到 X Corp（Twitter 的母公司）发出的停止令（cease and desist letter）。因此，XCancel 服务即日起无限期停止。服务团队表示正在寻求法律建议，并感谢用户两年来对该服务的信任。</blockquote>
+<blockquote>在软件设计中，强制所有派生类实现特定非虚方法，不应通过实现一个空方法（stub）来达成。本文的第一部分深入探讨了这一设计原则，并提出了避免简单实现空方法的替代方案。核心观点是，直接不实现该方法是更优的选择，以避免潜在的设计陷阱。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>XCancel, a mirror service for Twitter/X content, has been forced to shut down after receiving a cease and desist letter from X Corp on August 24th. The service is now suspended indefinitely while the team seeks legal counsel. They expressed gratitude for the user trust over the past two years.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 了解第三方服务如何因平台方压力而关闭，以及对用户体验的影响。</p>
-<p>💡 <strong>Why read it</strong>: Understand how a third-party service was shut down due to platform pressure and its implications for user experience.</p>
-<p>🏷️ AI, programming, code generation, LLM</p>
+<blockquote>In software design, forcing all derived classes to implement a specific non-virtual method should not be achieved by implementing a stub. This first part of the article delves into this design principle, proposing alternatives to simply implementing an empty method. The core argument is that not implementing the method at all is a superior choice to avoid potential design pitfalls.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 学习在面向对象设计中，如何通过避免空方法（stub）来更有效地强制派生类实现特定接口。</p>
+<p>💡 <strong>Why read it</strong>: Learn how to more effectively enforce specific interface implementations in derived classes by avoiding stub implementations in object-oriented design.</p>
+<p>🏷️ Claude, LLM, repetitiveness, data analysis</p>
 <hr>
 <h2>📊 数据概览</h2>
-<table><thead><tr><th>扫描源</th><th>抓取文章</th><th>时间范围</th><th>精选</th></tr></thead><tbody><tr><td>81/92</td><td>2466 篇 → 35 篇</td><td>48h</td><td><strong>15 篇</strong></td></tr></tbody></table>
+<table><thead><tr><th>扫描源</th><th>抓取文章</th><th>时间范围</th><th>精选</th></tr></thead><tbody><tr><td>83/92</td><td>2527 篇 → 33 篇</td><td>48h</td><td><strong>15 篇</strong></td></tr></tbody></table>
 <h3>分类分布</h3>
 <div class="code-wrap"><div class="code-title">mermaid</div><pre><code>pie showData
     title "文章分类分布"
-    "🤖 AI / ML" : 4
-    "🛠 工具 / 开源" : 4
+    "🤖 AI / ML" : 6
     "⚙️ 工程" : 3
+    "📝 其他" : 3
     "🔒 安全" : 2
-    "📝 其他" : 1
     "💡 观点 / 杂谈" : 1</code></pre></div>
 <h3>高频关键词</h3>
 <div class="code-wrap"><div class="code-title">mermaid</div><pre><code>xychart-beta horizontal
     title "高频关键词"
-    x-axis ["llm", "ai", "configuration", "vs code", "ai compute", "centralization", "openai", "anthropic", "multimodal", "moe", "qwen", "programming"]
+    x-axis ["claude", "tariffs", "anthropic", "ai safety", "pentagon", "lawsuit", "prompt injection", "ai security", "coding agent", "llm", "repetitiveness", "data analysis"]
     y-axis "出现次数" 0 --&gt; 4
-    bar [2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1]</code></pre></div>
+    bar [2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]</code></pre></div>
 <div class="details">
 <p class="summary">📈 纯文本关键词图（终端友好）</p>
-<div class="code-wrap"><pre><code>llm            │ ████████████████████ 2
-ai             │ ████████████████████ 2
-configuration  │ ████████████████████ 2
-vs code        │ ████████████████████ 2
-ai compute     │ ██████████░░░░░░░░░░ 1
-centralization │ ██████████░░░░░░░░░░ 1
-openai         │ ██████████░░░░░░░░░░ 1
-anthropic      │ ██████████░░░░░░░░░░ 1
-multimodal     │ ██████████░░░░░░░░░░ 1
-moe            │ ██████████░░░░░░░░░░ 1</code></pre></div>
+<div class="code-wrap"><pre><code>claude           │ ████████████████████ 2
+tariffs          │ ████████████████████ 2
+anthropic        │ ██████████░░░░░░░░░░ 1
+ai safety        │ ██████████░░░░░░░░░░ 1
+pentagon         │ ██████████░░░░░░░░░░ 1
+lawsuit          │ ██████████░░░░░░░░░░ 1
+prompt injection │ ██████████░░░░░░░░░░ 1
+ai security      │ ██████████░░░░░░░░░░ 1
+coding agent     │ ██████████░░░░░░░░░░ 1
+llm              │ ██████████░░░░░░░░░░ 1</code></pre></div>
 </div>
 <h3>🏷️ 话题标签</h3>
-<p><strong>llm</strong>(2) · <strong>ai</strong>(2) · <strong>configuration</strong>(2) · vs code(2) · ai compute(1) · centralization(1) · openai(1) · anthropic(1) · multimodal(1) · moe(1) · qwen(1) · programming(1) · code generation(1) · ai coding(1) · code quality(1) · developer productivity(1) · gdpr(1) · cookie consent(1) · regulation(1) · privacy(1)</p>
+<p><strong>claude</strong>(2) · <strong>tariffs</strong>(2) · <strong>anthropic</strong>(1) · ai safety(1) · pentagon(1) · lawsuit(1) · prompt injection(1) · ai security(1) · coding agent(1) · llm(1) · repetitiveness(1) · data analysis(1) · gpt-2(1) · weights(1) · dropout(1) · model training(1) · teampcp(1) · cybercrime(1) · supply chain attacks(1) · arrests(1)</p>
 <hr>
 <h2>🤖 AI / ML</h2>
-<h3>1. VS Code 远程连接失效？降级至 v1.124.x 版本解决</h3>
-<p><a href="https://www.dwarkesh.com/p/dylan-patel-3">Dylan Patel – Anthropic &amp; OpenAI will have most of the world’s compute by 2028</a> — <strong>dwarkesh.com</strong> · 1 天前 · ⭐ 27/30</p>
+<h3>1. 安全地沙箱化编码代理</h3>
+<p><a href="https://www.reuters.com/legal/government/us-judge-blocks-pentagons-anthropic-blacklisting-2026-08-28/">U.S. Judge Blocks Trump Defense Department’s Anthropic Blacklisting</a> — <strong>daringfireball.net</strong> · 7 小时前 · ⭐ 27/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>近期 VS Code 的远程连接功能出现问题，导致用户无法正常使用。文章指出，问题根源在于 VS Code 的某个更新版本，并提供了具体的解决方案：将 VS Code 降级至 v1.124.x 版本即可恢复远程连接的正常工作。作者暗示，解决此类问题的“变通方案”可能面临被移除的风险。</blockquote>
+<blockquote>本文详细介绍了如何为编码代理设置隔离的沙箱环境，以安全地编写高质量代码。通过限制代理只能访问单个隔离的 GitHub 仓库，可以有效降低安全风险。这种方法旨在解决编码代理在代码生成过程中可能带来的安全隐患，确保其操作在可控范围内。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Recent updates to VS Code have caused issues with its remote connection functionality. The article identifies a specific version as the culprit and offers a workaround: downgrading to version v1.124.x resolves the problem. The author humorously notes the potential for such workarounds to be removed in future updates.</blockquote>
-<p>🏷️ AI compute, centralization, OpenAI, Anthropic</p>
+<blockquote>This post details the setup of isolated sandboxes for coding agents to securely write high-quality code. By restricting agents to access only a single, isolated GitHub repository, security risks are effectively mitigated. This approach addresses potential security vulnerabilities introduced by coding agents during code generation, ensuring their operations remain within controlled boundaries.</blockquote>
+<p>🏷️ Anthropic, AI safety, Pentagon, lawsuit</p>
 <hr>
-<h3>2. 如何将 VS Code UI 恢复到旧版本</h3>
-<p><a href="https://simonwillison.net/2026/Aug/26/qwen38-flash-next/">Qwen3.8-Flash-Next</a> — <strong>simonwillison.net</strong> · 8 小时前 · ⭐ 26/30</p>
+<h3>2. 卖掉自己：技术与组织运作的艺术</h3>
+<p><a href="https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode/">Breaking Claude Code Opus 5 Auto Mode</a> — <strong>simonwillison.net</strong> · 12 小时前 · ⭐ 27/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>VS Code 近期更新引入了新的用户界面（UI），但一些用户更偏好旧版的界面设计。文章提供了一种变通方法，允许用户将 VS Code 的 UI 恢复到之前的版本。作者调侃说，这种恢复旧 UI 的方法很可能在未来被移除。</blockquote>
+<blockquote>与汤姆·勒赫在 1973 年的说法不同，今天的“卖掉自己”（selling out）需要高超的技术能力和对大型组织运作方式的深刻理解。本文旨在教授读者如何掌握这种能力，以在不牺牲原则的情况下实现职业目标。它强调了技术技能和对组织动态的洞察力在职业发展中的重要性。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This article details a workaround for users who dislike the new UI introduced in recent VS Code updates. It provides instructions on how to revert the VS Code interface to its previous design. The author speculates that this method for restoring the old UI might be removed in future versions.</blockquote>
-<p>🏷️ LLM, multimodal, MoE, Qwen</p>
+<blockquote>Contrary to Tom Lehrer's 1973 assertion, 'selling out' today requires significant technical skill and a nuanced understanding of how large organizations function. This post aims to teach readers how to master this art, enabling them to achieve career goals without compromising integrity. It highlights the importance of technical prowess and insight into organizational dynamics for career advancement.</blockquote>
+<p>🏷️ Claude, prompt injection, AI security, coding agent</p>
 <hr>
-<h3>3. XCancel：Twitter/X 镜像服务因 X Corp 的停止令而关闭</h3>
-<p><a href="https://simonwillison.net/2026/Aug/26/paul-dix/">Quoting Paul Dix</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 26/30</p>
+<h3>3. 强制所有派生类实现特定非虚方法的探讨（第一部分）</h3>
+<p><a href="https://louisabraham.github.io/load-bearing/">The Load-Bearing Vocabulary of Claude</a> — <strong>daringfireball.net</strong> · 13 小时前 · ⭐ 25/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>XCancel，一个提供 Twitter/X 内容镜像服务的第三方平台，已于 8 月 24 日收到 X Corp（Twitter 的母公司）发出的停止令（cease and desist letter）。因此，XCancel 服务即日起无限期停止。服务团队表示正在寻求法律建议，并感谢用户两年来对该服务的信任。</blockquote>
+<blockquote>在软件设计中，强制所有派生类实现特定非虚方法，不应通过实现一个空方法（stub）来达成。本文的第一部分深入探讨了这一设计原则，并提出了避免简单实现空方法的替代方案。核心观点是，直接不实现该方法是更优的选择，以避免潜在的设计陷阱。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>XCancel, a mirror service for Twitter/X content, has been forced to shut down after receiving a cease and desist letter from X Corp on August 24th. The service is now suspended indefinitely while the team seeks legal counsel. They expressed gratitude for the user trust over the past two years.</blockquote>
-<p>🏷️ AI, programming, code generation, LLM</p>
+<blockquote>In software design, forcing all derived classes to implement a specific non-virtual method should not be achieved by implementing a stub. This first part of the article delves into this design principle, proposing alternatives to simply implementing an empty method. The core argument is that not implementing the method at all is a superior choice to avoid potential design pitfalls.</blockquote>
+<p>🏷️ Claude, LLM, repetitiveness, data analysis</p>
 <hr>
-<h3>4. AI 仇恨者的宣言</h3>
-<p><a href="https://www.johndcook.com/blog/2026/08/26/what-is-the-quality-of-software-that-ai-writes/">What is the quality of software that AI writes?</a> — <strong>johndcook.com</strong> · 13 小时前 · ⭐ 25/30</p>
+<h3>4. 伊丽莎白·沃伦关于苹果关税退款的不协调愤怒</h3>
+<p><a href="https://www.gilesthomas.com/2026/08/why-do-openai-gpt2-weights-beat-mine-4-ift-dropout">Why do OpenAI's GPT-2 weights beat mine?  Part four: digging into dropout</a> — <strong>gilesthomas.com</strong> · 15 小时前 · ⭐ 25/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>这篇文章提出了对人工智能（AI）的批判性观点，认为 AI 的发展和应用存在诸多问题。作者通过“AI 仇恨者宣言”的形式，阐述了对 AI 技术的担忧和反对理由。文章鼓励读者订阅其付费通讯，以获取更深入的分析。</blockquote>
+<blockquote>参议员伊丽莎白·沃伦致函包括苹果在内的多家大型企业，敦促它们将从特朗普政府获得的关税退款返还给消费者。沃伦认为，消费者因关税支付了更高的价格，因此应获得这些退款。然而，文章指出，沃伦的立场在逻辑上存在不协调之处，暗示其对关税退款的理解和处理方式存在问题。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This piece presents a critical perspective on Artificial Intelligence (AI), outlining concerns and arguments against its development and widespread adoption. Framed as an 'AI Hater's Manifesto,' it details the author's apprehensions about AI technologies. The author also promotes their premium newsletter for more in-depth analysis.</blockquote>
-<p>🏷️ AI coding, code quality, developer productivity</p>
+<blockquote>Senator Elizabeth Warren has written to major corporations, including Apple, urging them to pass tariff refunds received from the Trump administration back to consumers. Warren argues that consumers paid higher prices due to tariffs and should therefore receive these refunds. However, the article points out inconsistencies in Warren's position, suggesting a flawed understanding or approach to tariff refunds.</blockquote>
+<p>🏷️ GPT-2, weights, dropout, model training</p>
 <hr>
-<h2>🛠 工具 / 开源</h2>
-<h3>5. 新款 Mac Mini 和 Mac Studio 的内存与存储配置及定价</h3>
-<p><a href="https://daringfireball.net/2026/08/configurations_and_pricing_for_new_mac_minis_and_mac_studios">★ Memory and Storage Configurations and Pricing for the New Mac Minis (M6/M5 Pro) and Mac Studios (M5 Max/M5 Ultra)</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 22/30</p>
+<h3>5. Qwen3.8-Flash-Next</h3>
+<p><a href="https://simonwillison.net/2026/Aug/26/qwen38-flash-next/">Qwen3.8-Flash-Next</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 25/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>文章详细列出了新款 Mac Mini（M6/M5 Pro 芯片）和 Mac Studio（M5 Max/M5 Ultra 芯片）的内存和存储配置选项及其价格。作者通过表格形式清晰展示了不同芯片型号下可用的存储和内存组合，以及相应的成本，方便用户进行选购决策。</blockquote>
+<blockquote>Qwen发布了其最新的开源权重模型Qwen3.8-Flash-Next，该模型是Qwen4架构的早期预览版，具备多模态能力。模型拥有1250亿个token，但仅激活60亿个参数，显著提升了性能。文章还提到了使用Unsloth量化模型在DGX Spark上进行测试的尝试。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This article provides a detailed breakdown of the memory and storage configurations and pricing for the new Mac Minis (M6/M5 Pro chips) and Mac Studios (M5 Max/M5 Ultra chips). The author uses tables to clearly present the available storage and memory combinations for each chip variant and their associated costs, aiding users in their purchasing decisions.</blockquote>
-<p>🏷️ Mac Mini, Mac Studio, Apple Silicon, configuration</p>
+<blockquote>Qwen has released Qwen3.8-Flash-Next, an open-weights multimodal MoE model previewing the architecture for Qwen4. It boasts 125 billion tokens with only 6 billion active parameters, leading to significant performance gains. The article also mentions testing with Unsloth quantized models on DGX Spark.</blockquote>
+<p>🏷️ Qwen, multimodal, MoE, open weights</p>
 <hr>
-<h3>6. Gadget 评测：Thermal Master P3 宏观镜头</h3>
-<p><a href="https://shkspr.mobi/blog/2026/08/gadget-review-thermal-master-p3-macro-lens/">Gadget Review: Thermal Master P3 Macro Lens ★★★★⯪</a> — <strong>shkspr.mobi</strong> · 21 小时前 · ⭐ 21/30</p>
+<h3>6. AI编写的软件质量如何？</h3>
+<p><a href="https://www.johndcook.com/blog/2026/08/26/what-is-the-quality-of-software-that-ai-writes/">What is the quality of software that AI writes?</a> — <strong>johndcook.com</strong> · 1 天前 · ⭐ 24/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>这篇评测介绍了 Thermal Master P3 宏观镜头，这是一款专门用于近距离观察电子设备热点的相机。与用于观鸟或野生动物拍摄的相机不同，P3 配备手动宏观镜头，能够精确捕捉 CPU 等组件的温度分布。评测给予该产品四星半的评价。</blockquote>
+<blockquote>AI驱动的编码助手提高了开发者的生产力，但其编写的代码质量如何？文章探讨了关于AI生成代码质量的两种观点：一种认为未来将是“黑暗软件工厂”，代码不再被检查；另一种则持不同意见，认为人类仍需审查代码。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This review covers the Thermal Master P3 macro lens, a camera specifically designed for close-up observation of thermal hotspots in electronic devices. Unlike cameras for bird or wildlife photography, the P3 features a manual macro lens capable of precisely capturing the temperature distribution of components like CPUs. The review awards the product four and a half stars.</blockquote>
-<p>🏷️ thermal camera, macro lens, gadget review</p>
-<hr>
-<h3>7. VS Code 远程连接失效？降级至 v1.124.x 版本可解决</h3>
-<p><a href="https://xeiaso.net/notes/2026/vscode-remotes-not-working-downgrade/">If your VS Code remotes stopped working, downgrade to v1.124.x</a> — <strong>xeiaso.net</strong> · 1 天前 · ⭐ 21/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>近期有用户报告 VS Code 的远程连接功能出现问题，导致无法正常使用。经过排查，发现是新版本引入的 bug 所致。文章提供了一个临时的解决方案，即降级到 v1.124.x 版本。此举可以暂时恢复远程连接的正常工作。请注意，这只是一个临时措施，未来版本更新有望彻底修复此问题。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Users have reported issues with VS Code's remote connection functionality, preventing normal use. Investigation revealed a bug introduced in a recent version. The article suggests a temporary workaround: downgrading to version v1.124.x. This action can temporarily restore the remote connection's functionality. Note that this is a temporary measure, and future updates are expected to fully resolve the issue.</blockquote>
-<p>🏷️ VS Code, remote development, bug fix</p>
-<hr>
-<h3>8. 如何让 VS Code 回到旧版用户界面</h3>
-<p><a href="https://xeiaso.net/notes/2026/vscode-ui-revert/">How to make VS Code go back to the old UI</a> — <strong>xeiaso.net</strong> · 1 天前 · ⭐ 21/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>如果你不喜欢 VS Code 的新界面，并希望恢复到之前的用户体验，这篇文章将为你提供指导。文章介绍了一种方法，可以帮助用户将 VS Code 的界面设置回旧版本样式。通过遵循文章中的步骤，你可以轻松地调整设置，以获得你熟悉和偏好的界面布局。这对于习惯了旧版界面的用户来说非常实用。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>If you dislike the new VS Code interface and wish to revert to the previous user experience, this article will guide you. It introduces a method to help users reset VS Code's interface settings back to the old version's style. By following the steps outlined, you can easily adjust settings to achieve a familiar and preferred interface layout. This is particularly useful for users accustomed to the older interface.</blockquote>
-<p>🏷️ VS Code, UI, customization</p>
+<blockquote>AI-powered coding agents boost developer productivity, but what about the quality of the code they produce? The article discusses contrasting views on AI-generated code quality: one perspective suggests a future of 'dark software factories' where code is uninspected, while another argues for continued human oversight.</blockquote>
+<p>🏷️ AI coding, software quality, productivity, source code</p>
 <hr>
 <h2>⚙️ 工程</h2>
-<h3>9. EVE Online：迁移到 Python 3 的进程已启动</h3>
-<p><a href="https://simonwillison.net/2026/Aug/25/eve-online-move-to-python-3/">EVE Online: The Move to Python 3 Begins!</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 23/30</p>
+<h3>7. 招聘：高级开源维护者</h3>
+<p><a href="https://nesbitt.io/2026/08/28/now-hiring-senior-open-source-maintainer.html">Now Hiring: Senior Open Source Maintainer</a> — <strong>nesbitt.io</strong> · 54 分钟前 · ⭐ 24/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>《EVE Online》这款运营超过二十年的大型在线游戏，正在进行一项重要的技术升级：迁移到 Python 3。该游戏自 2003 年上线以来一直运行在 Stackless Python 上，最近一次重大升级是 16 年前进行的 Stackless Python 2.7 升级。此次迁移标志着游戏技术栈的一次重大演进。</blockquote>
+<blockquote>这是一个在快节奏、高可见性环境中做出真正影响的难得机会，招聘高级开源维护者。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>EVE Online, a massively multiplayer online game that has been running for over two decades, has begun its migration to Python 3. The game has been operating on Stackless Python since its launch in 2003, with its last major upgrade being to Stackless Python 2.7 sixteen years ago. This migration marks a significant evolution in the game's technology stack.</blockquote>
-<p>🏷️ Python 3, EVE Online, legacy systems, migration</p>
+<blockquote>A rare opportunity to make a real impact in a fast-paced, high-visibility role is available for a Senior Open Source Maintainer.</blockquote>
+<p>🏷️ open source, maintainer, hiring, community</p>
 <hr>
-<h3>10. 自托管能否做到简单？</h3>
-<p><a href="https://feed.tedium.co/link/15204/17432610/self-hosting-third-place-strategy">Can Self-Hosting Be Simple?</a> — <strong>tedium.co</strong> · 5 小时前 · ⭐ 21/30</p>
+<h3>8. 代码代理沙箱化设置详解</h3>
+<p><a href="https://micahflee.com/sandboxing-coding-agents/">Sandboxing coding agents</a> — <strong>micahflee.com</strong> · 14 小时前 · ⭐ 23/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>文章探讨了自托管的复杂性，指出用户很容易陷入过于深入的技术细节。作者通过尝试构建一个“第三空间”盒子，学习到了一种“少即是多”的自托管方法。这表明，即使是复杂的自托管项目，也可以通过简化和聚焦核心功能来实现易用性。</blockquote>
+<blockquote>本文将详细介绍如何为代码代理设置隔离的沙箱环境。这些沙箱能够限制代理的访问权限，使其只能访问单个隔离的 GitHub 仓库。通过这种方式，可以确保代码代理在安全可控的环境中运行，从而提高代码质量并降低潜在风险。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This article explores the complexity of self-hosting, noting how users can easily get bogged down in excessive technical details. The author shares learnings from attempting to build a 'third place' box, discovering a 'less is more' approach to self-hosting. This suggests that even complex self-hosting projects can achieve simplicity by streamlining and focusing on core functionalities.</blockquote>
-<p>🏷️ self-hosting, home server, DIY</p>
+<blockquote>This post details the setup of isolated sandboxes for coding agents. These sandboxes restrict agent access to a single, isolated GitHub repository. This approach ensures coding agents operate in a secure and controlled environment, enhancing code quality and mitigating risks.</blockquote>
+<p>🏷️ coding agents, sandboxing, security, GitHub</p>
 <hr>
-<h3>11. Forgejo 技巧：如何设置起始的 Issue 和 Pull Request 编号</h3>
-<p><a href="https://blog.miguelgrinberg.com/post/forgejo-hack-how-to-set-a-starting-issue-and-pull-request-number">Forgejo hack: How to set a starting issue and pull request number</a> — <strong>miguelgrinberg.com</strong> · 1 天前 · ⭐ 21/30</p>
+<h3>9. 强制派生类实现特定非虚方法的探讨（第一部分）</h3>
+<p><a href="https://devblogs.microsoft.com/oldnewthing/20260827-00/?p=112651">On forcing all derived classes to implement a specific non-virtual method, part 1</a> — <strong>devblogs.microsoft.com/oldnewthing</strong> · 20 小时前 · ⭐ 22/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>本文作者正在将开源项目从 GitHub 迁移到自托管的 Forgejo 实例。在迁移过程中，作者发现了一些隐藏的配置方法，可以自定义 Issue 和 Pull Request 的起始编号。文章分享了这一发现，旨在帮助其他用户解决类似问题。通过修改 Forgejo 的源代码，可以实现这一个性化设置。</blockquote>
+<blockquote>本文讨论了在编程中，如何强制所有派生类实现一个特定的非虚方法。作者建议，与其实现一个空的存根方法，不如直接避免实现它。这篇博文最初发布在 The Old New Thing 网站上。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>The author is migrating their open-source projects from GitHub to a self-hosted Forgejo instance. During this process, they discovered hidden configuration methods to customize the starting numbers for Issues and Pull Requests. This article shares this finding to help other users with similar needs. By modifying Forgejo's source code, this personalized setting can be achieved.</blockquote>
-<p>🏷️ Forgejo, Git, open source, configuration</p>
-<hr>
-<h2>🔒 安全</h2>
-<h3>12. Forgejo 技巧：如何设置起始的 Issue 和 Pull Request 编号</h3>
-<p><a href="https://daringfireball.net/2026/08/what_is_the_point_of_the_dma#fn1-2026-08-24">Footnote Regarding the GDPR and Cookie Permission Prompts</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 24/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>文章分享了一个针对自托管 Forgejo 实例的技巧，用于设置 Issue 和 Pull Request 的起始编号。作者在将开源项目从 GitHub 迁移到 Forgejo 的过程中，通过研究 Forgejo 源代码发现了这一配置方法。该技巧适用于无法通过管理界面直接配置此项的用户。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>This post details a hack for self-hosted Forgejo instances to set custom starting numbers for Issues and Pull Requests. The author discovered this configuration by examining the Forgejo source code while migrating projects from GitHub. This method is useful for users who cannot configure this setting directly through the administration UI.</blockquote>
-<p>🏷️ GDPR, cookie consent, regulation, privacy</p>
-<hr>
-<h3>13. 关于数据泄露索赔、验证和 Carhartt 的警示故事</h3>
-<p><a href="https://www.troyhunt.com/a-cautionary-tale-about-data-breach-claims-verification-and-carhartt/">A Cautionary Tale About Data Breach Claims, Verification and Carhartt</a> — <strong>troyhunt.com</strong> · 1 天前 · ⭐ 23/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>文章讲述了一个关于数据泄露索赔的警示故事，涉及 Carhartt 公司。作者指出，不能总是轻信网络犯罪分子的说法，即使问题可能并非直接源于他们。故事强调了在处理数据泄露索赔时，验证信息来源和真实性的重要性，并暗示了潜在的欺诈或误导行为。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>This article presents a cautionary tale about data breach claims and verification, involving the company Carhartt. The author emphasizes that one cannot always trust the word of cybercriminals, even if the issue doesn't directly originate from them. The story highlights the importance of verifying information sources and authenticity when dealing with data breach claims, hinting at potential fraud or misrepresentation.</blockquote>
-<p>🏷️ data breach, verification, Carhartt, cybercrime</p>
+<blockquote>This article explores how to enforce the implementation of a specific non-virtual method across all derived classes. The author suggests avoiding the implementation of a stub method altogether. This post originally appeared on The Old New Thing.</blockquote>
+<p>🏷️ inheritance, non-virtual methods, class design, C++</p>
 <hr>
 <h2>📝 其他</h2>
-<h3>14. XCancel，Twitter/X 的镜像服务，在收到 X Corp 的停止令后关闭</h3>
-<p><a href="https://xcancel.com/">XCancel, the Twitter/X Mirror, Shuts Down After Cease and Desist From the Fine Folks at X Corp</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 21/30</p>
+<h3>10. Apple地图广告现已上线</h3>
+<p><a href="https://9to5mac.com/2026/08/25/apple-maps-launches-ads-on-iphone-heres-whats-new/">Ads in Apple Maps Have Now Launched</a> — <strong>daringfireball.net</strong> · 14 小时前 · ⭐ 23/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>XCancel，一个旨在提供 Twitter/X 内容镜像服务的平台，已于近期宣布停止运营。该服务收到了来自 X Corp 的正式停止令（cease and desist letter），要求其立即停止服务。XCancel 在收到通知后，已暂停所有服务，并表示正在寻求法律建议。该平台感谢用户两年来对 XCancel 的信任和支持。</blockquote>
+<blockquote>Apple已确认在地图应用中推出广告，这些广告将在搜索屏幕的“推荐地点”以及搜索结果中出现。广告的推出将逐步覆盖所有用户，为用户提供基于位置和搜索相关性的推广信息。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>XCancel, a platform that offered a mirror service for Twitter/X content, has announced its shutdown. The service received a cease and desist letter from X Corp, demanding its immediate termination. Following the notification, XCancel has suspended all operations and is seeking legal counsel. The platform expressed gratitude for the trust users placed in XCancel over the past two years.</blockquote>
-<p>🏷️ Twitter, X Corp, cease and desist, legal</p>
+<blockquote>Apple has confirmed the launch of ads within its Maps app, appearing in 'Suggested Places' on the search screen and in search results. The rollout will gradually reach all users, offering location-based and search-relevant promotional content.</blockquote>
+<p>🏷️ Apple Maps, ads, launch, user experience</p>
+<hr>
+<h3>11. 伊丽莎白·沃伦关于苹果关税退款的不合逻辑的愤怒</h3>
+<p><a href="https://www.warren.senate.gov/newsroom/press-releases/warren-pushes-giant-corporations-to-give-billions-in-tariff-refunds-back-to-consumers/">Elizabeth Warren’s Incoherent Outrage Regarding Apple’s Tariff Refund</a> — <strong>daringfireball.net</strong> · 14 小时前 · ⭐ 21/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>文章引用了参议员伊丽莎白·沃伦关于关税退款的官方声明。沃伦致函多家公司，包括苹果，敦促它们将从特朗普政府那里收到的关税退款转交给消费者。声明强调了消费者因关税支付了更高的价格。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>This article quotes Senator Elizabeth Warren's official statement regarding tariff refunds. Warren wrote to several companies, including Apple, urging them to pass tariff rebates received from the Trump administration onto consumers. The statement highlights that consumers paid higher prices due to tariffs.</blockquote>
+<p>🏷️ Elizabeth Warren, tariffs, Apple, politics</p>
+<hr>
+<h3>12. Panic 公司因“玩伴”游戏退还关税费用</h3>
+<p><a href="https://www.gamedeveloper.com/business/playdate-maker-is-refunding-tariff-fees-to-customers">Panic Is Refunding Tariff Fees to Playdate Buyers</a> — <strong>daringfireball.net</strong> · 14 小时前 · ⭐ 21/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>根据 Game Developer 的报道，Panic 公司正在为其“玩伴”（Playdate）游戏的购买者退还关税费用。公司联合创始人解释说，在特定时期内，他们曾向客户收取关税，但由于财务困难，无法长期承担这笔费用。关税曾作为单独的项目在结账时明确列出。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>According to Game Developer, Panic is refunding tariff fees to buyers of their 'Playdate' game. The co-founder explained that tariffs were charged to customers during a specific period due to financial difficulties in absorbing the cost. The tariff was clearly itemized at checkout.</blockquote>
+<p>🏷️ Playdate, tariffs, Panic, refunds</p>
+<hr>
+<h2>🔒 安全</h2>
+<h3>13. Panic 公司因 Playdate 买家退还关税费用</h3>
+<p><a href="https://krebsonsecurity.com/2026/08/two-alleged-teampcp-hackers-arrested-in-australia/">Two Alleged ‘TeamPCP’ Hackers Arrested in Australia</a> — <strong>krebsonsecurity.com</strong> · 23 小时前 · ⭐ 25/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Playdate 制造商 Panic 公司正在向其客户退还之前收取的关税费用。该公司联合创始人 Cabel Sasser 解释说，在特定时期内，他们曾将关税成本转嫁给消费者，但由于财务困难，无法长期承担。Panic 公司已设立专门网站，向受影响的 Playdate 买家说明情况并处理退款事宜。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Panic, the maker of Playdate, is refunding tariff fees to its customers. Co-founder Cabel Sasser explained that the company had passed tariff costs onto customers during a specific period but found it financially difficult to absorb them long-term. Panic has set up a dedicated website to inform affected Playdate buyers and process these refunds.</blockquote>
+<p>🏷️ TeamPCP, cybercrime, supply chain attacks, arrests</p>
+<hr>
+<h3>14. 用户称“无法阻止这种情况发生”：内存安全问题导致GNU gzip漏洞</h3>
+<p><a href="https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-41992/">"No way to prevent this" say users of only language where this regularly happens</a> — <strong>xeiaso.net</strong> · 1 天前 · ⭐ 25/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>在GNU gzip发布CVE-2026-41992漏洞后，系统管理员紧急修复系统。该漏洞允许攻击者通过解压两个文件触发LZH解码器中的越界读取，导致读取共享全局缓冲区之外的数据，因为该缓冲区在调用之间未被重置。这暴露了内存安全问题在关键基础软件中的严重性。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Following the release of CVE-2026-41992 for GNU gzip, system administrators scrambled to patch systems. The vulnerability allows attackers to trigger out-of-bounds reads in the LZH decoder by decompressing two files in the same invocation, as the shared global buffer is not reset between calls. This highlights the critical impact of memory safety issues in essential software.</blockquote>
+<p>🏷️ CVE, gzip, vulnerability, patching</p>
 <hr>
 <h2>💡 观点 / 杂谈</h2>
-<h3>15. AI 批评者的宣言</h3>
-<p><a href="https://www.wheresyoured.at/the-ai-haters-manifesto/">The AI Hater's Manifesto</a> — <strong>wheresyoured.at</strong> · 1 天前 · ⭐ 21/30</p>
+<h3>15. 关于“卖出”的艺术：技术与组织运作的结合</h3>
+<p><a href="https://seangoedecke.com/selling-out/">Selling out</a> — <strong>seangoedecke.com</strong> · 10 小时前 · ⭐ 22/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>本文作者表达了对人工智能的担忧和批评。文章探讨了人工智能发展可能带来的负面影响，并呼吁读者对其潜在风险保持警惕。作者还推广了自己的付费通讯，承诺提供深入的分析和见解，以换取订阅费用。这表明作者希望通过付费内容进一步深化其观点。</blockquote>
+<blockquote>文章探讨了在当今社会，“卖出”（selling out）并非易事，它需要结合扎实的技术能力和对大型组织运作方式的深刻理解。作者指出，掌握这一技巧是许多人追求的目标。本文旨在教授读者如何实现这一目标，并保持其职业生涯中的诚信。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>The author expresses concerns and criticisms regarding artificial intelligence. The piece delves into the potential negative impacts of AI development, urging readers to be vigilant about its risks. The author also promotes their premium newsletter, promising in-depth analysis and insights in exchange for subscription fees, indicating a desire to further elaborate on their viewpoints through paid content.</blockquote>
-<p>🏷️ AI, critique, technology, future</p>
+<blockquote>The article discusses how 'selling out' is not easy today, requiring both technical skill and a deep understanding of how large organizations function. The author suggests that mastering this is a goal for many. This post aims to teach readers how to achieve this while maintaining integrity.</blockquote>
+<p>🏷️ selling out, engineers, career, tech industry</p>
 <hr>
-<p>*生成于 2026-08-27 08:42 | 扫描 81 源 → 获取 2466 篇 → 精选 15 篇* *基于 <a href="https://refactoringenglish.com/tools/hn-popularity/">Hacker News Popularity Contest 2025</a> RSS 源列表，由 <a href="https://x.com/karpathy">Andrej Karpathy</a> 推荐*</p>
+<p>*生成于 2026-08-28 10:54 | 扫描 83 源 → 获取 2527 篇 → 精选 15 篇* *基于 <a href="https://refactoringenglish.com/tools/hn-popularity/">Hacker News Popularity Contest 2025</a> RSS 源列表，由 <a href="https://x.com/karpathy">Andrej Karpathy</a> 推荐*</p>
     </article>
   </main>
-  <script id="speech-text" type="application/json">"🎧 点这里朗读今日日报\n📰 AI 博客每日精选 — 2026-08-27\n来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15\n📝 今日看点\n今日技术看点聚焦两大趋势：AI 争议与开发者工具的演进。一方面，AI 发展引发了“AI 仇恨者”的批判性声音，同时开发者工具领域，VS Code 的更新问题与 UI 偏好引发讨论，而 Forgejo 等自托管方案则在探索简化之道。此外，老牌游戏《EVE Online》的 Python 3 迁移以及数据安全警示也值得关注。\n \n🏆 今日必读\n🥇 VS Code 远程连接失效？降级至 v1.124.x 版本解决\nDylan Patel – Anthropic & OpenAI will have most of the world’s compute by 2028 — dwarkesh.com · 1 天前 · 🤖 AI / ML\n中文摘要\n近期 VS Code 的远程连接功能出现问题，导致用户无法正常使用。文章指出，问题根源在于 VS Code 的某个更新版本，并提供了具体的解决方案：将 VS Code 降级至 v1.124.x 版本即可恢复远程连接的正常工作。作者暗示，解决此类问题的“变通方案”可能面临被移除的风险。\nEnglish Summary\nRecent updates to VS Code have caused issues with its remote connection functionality. The article identifies a specific version as the culprit and offers a workaround: downgrading to version v1.124.x resolves the problem. The author humorously notes the potential for such workarounds to be removed in future updates.\n💡 为什么值得读: 如果你也遇到了 VS Code 远程连接问题，这篇文章提供了直接有效的降级解决方案。\n💡 Why read it: Provides a direct and effective downgrade solution for users experiencing VS Code remote connection issues.\n🏷️ AI compute, centralization, OpenAI, Anthropic\n🥈 如何将 VS Code UI 恢复到旧版本\nQwen3.8-Flash-Next — simonwillison.net · 8 小时前 · 🤖 AI / ML\n中文摘要\nVS Code 近期更新引入了新的用户界面（UI），但一些用户更偏好旧版的界面设计。文章提供了一种变通方法，允许用户将 VS Code 的 UI 恢复到之前的版本。作者调侃说，这种恢复旧 UI 的方法很可能在未来被移除。\nEnglish Summary\nThis article details a workaround for users who dislike the new UI introduced in recent VS Code updates. It provides instructions on how to revert the VS Code interface to its previous design. The author speculates that this method for restoring the old UI might be removed in future versions.\n💡 为什么值得读: 如果你不喜欢 VS Code 的新 UI，这篇文章提供了恢复旧版界面的实用技巧。\n💡 Why read it: Offers a practical tip for users who prefer the older VS Code UI and wish to revert to it.\n🏷️ LLM, multimodal, MoE, Qwen\n🥉 XCancel：Twitter/X 镜像服务因 X Corp 的停止令而关闭\nQuoting Paul Dix — simonwillison.net · 1 天前 · 🤖 AI / ML\n中文摘要\nXCancel，一个提供 Twitter/X 内容镜像服务的第三方平台，已于 8 月 24 日收到 X Corp（Twitter 的母公司）发出的停止令（cease and desist letter）。因此，XCancel 服务即日起无限期停止。服务团队表示正在寻求法律建议，并感谢用户两年来对该服务的信任。\nEnglish Summary\nXCancel, a mirror service for Twitter/X content, has been forced to shut down after receiving a cease and desist letter from X Corp on August 24th. The service is now suspended indefinitely while the team seeks legal counsel. They expressed gratitude for the user trust over the past two years.\n💡 为什么值得读: 了解第三方服务如何因平台方压力而关闭，以及对用户体验的影响。\n💡 Why read it: Understand how a third-party service was shut down due to platform pressure and its implications for user experience.\n🏷️ AI, programming, code generation, LLM\n \n📊 数据概览\n \n \n \n分类分布\nmermaid\npie showData\n title \"文章分类分布\"\n \"🤖 AI / ML\" : 4\n \"🛠 工具 / 开源\" : 4\n \"⚙️ 工程\" : 3\n \"🔒 安全\" : 2\n \"📝 其他\" : 1\n \"💡 观点 / 杂谈\" : 1\n高频关键词\nmermaid\nxychart-beta horizontal\n title \"高频关键词\"\n x-axis [\"llm\", \"ai\", \"configuration\", \"vs code\", \"ai compute\", \"centralization\", \"openai\", \"anthropic\", \"multimodal\", \"moe\", \"qwen\", \"programming\"]\n y-axis \"出现次数\" 0 --> 4\n bar [2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1]\n📈 纯文本关键词图（终端友好）\nllm │ ████████████████████ 2\nai │ ████████████████████ 2\nconfiguration │ ████████████████████ 2\nvs code │ ████████████████████ 2\nai compute │ ██████████░░░░░░░░░░ 1\ncentralization │ ██████████░░░░░░░░░░ 1\nopenai │ ██████████░░░░░░░░░░ 1\nanthropic │ ██████████░░░░░░░░░░ 1\nmultimodal │ ██████████░░░░░░░░░░ 1\nmoe │ ██████████░░░░░░░░░░ 1\n🏷️ 话题标签\nllm(2) · ai(2) · configuration(2) · vs code(2) · ai compute(1) · centralization(1) · openai(1) · anthropic(1) · multimodal(1) · moe(1) · qwen(1) · programming(1) · code generation(1) · ai coding(1) · code quality(1) · developer productivity(1) · gdpr(1) · cookie consent(1) · regulation(1) · privacy(1)\n \n🤖 AI / ML\n1. VS Code 远程连接失效？降级至 v1.124.x 版本解决\nDylan Patel – Anthropic & OpenAI will have most of the world’s compute by 2028 — dwarkesh.com · 1 天前 · ⭐ 27/30\n中文摘要\n近期 VS Code 的远程连接功能出现问题，导致用户无法正常使用。文章指出，问题根源在于 VS Code 的某个更新版本，并提供了具体的解决方案：将 VS Code 降级至 v1.124.x 版本即可恢复远程连接的正常工作。作者暗示，解决此类问题的“变通方案”可能面临被移除的风险。\nEnglish Summary\nRecent updates to VS Code have caused issues with its remote connection functionality. The article identifies a specific version as the culprit and offers a workaround: downgrading to version v1.124.x resolves the problem. The author humorously notes the potential for such workarounds to be removed in future updates.\n🏷️ AI compute, centralization, OpenAI, Anthropic\n \n2. 如何将 VS Code UI 恢复到旧版本\nQwen3.8-Flash-Next — simonwillison.net · 8 小时前 · ⭐ 26/30\n中文摘要\nVS Code 近期更新引入了新的用户界面（UI），但一些用户更偏好旧版的界面设计。文章提供了一种变通方法，允许用户将 VS Code 的 UI 恢复到之前的版本。作者调侃说，这种恢复旧 UI 的方法很可能在未来被移除。\nEnglish Summary\nThis article details a workaround for users who dislike the new UI introduced in recent VS Code updates. It provides instructions on how to revert the VS Code interface to its previous design. The author speculates that this method for restoring the old UI might be removed in future versions.\n🏷️ LLM, multimodal, MoE, Qwen\n \n3. XCancel：Twitter/X 镜像服务因 X Corp 的停止令而关闭\nQuoting Paul Dix — simonwillison.net · 1 天前 · ⭐ 26/30\n中文摘要\nXCancel，一个提供 Twitter/X 内容镜像服务的第三方平台，已于 8 月 24 日收到 X Corp（Twitter 的母公司）发出的停止令（cease and desist letter）。因此，XCancel 服务即日起无限期停止。服务团队表示正在寻求法律建议，并感谢用户两年来对该服务的信任。\nEnglish Summary\nXCancel, a mirror service for Twitter/X content, has been forced to shut down after receiving a cease and desist letter from X Corp on August 24th. The service is now suspended indefinitely while the team seeks legal counsel. They expressed gratitude for the user trust over the past two years.\n🏷️ AI, programming, code generation, LLM\n \n4. AI 仇恨者的宣言\nWhat is the quality of software that AI writes? — johndcook.com · 13 小时前 · ⭐ 25/30\n中文摘要\n这篇文章提出了对人工智能（AI）的批判性观点，认为 AI 的发展和应用存在诸多问题。作者通过“AI 仇恨者宣言”的形式，阐述了对 AI 技术的担忧和反对理由。文章鼓励读者订阅其付费通讯，以获取更深入的分析。\nEnglish Summary\nThis piece presents a critical perspective on Artificial Intelligence (AI), outlining concerns and arguments against its development and widespread adoption. Framed as an 'AI Hater's Manifesto,' it details the author's apprehensions about AI technologies. The author also promotes their premium newsletter for more in-depth analysis.\n🏷️ AI coding, code quality, developer productivity\n \n🛠 工具 / 开源\n5. 新款 Mac Mini 和 Mac Studio 的内存与存储配置及定价\n★ Memory and Storage Configurations and Pricing for the New Mac Minis (M6/M5 Pro) and Mac Studios (M5 Max/M5 Ultra) — daringfireball.net · 1 天前 · ⭐ 22/30\n中文摘要\n文章详细列出了新款 Mac Mini（M6/M5 Pro 芯片）和 Mac Studio（M5 Max/M5 Ultra 芯片）的内存和存储配置选项及其价格。作者通过表格形式清晰展示了不同芯片型号下可用的存储和内存组合，以及相应的成本，方便用户进行选购决策。\nEnglish Summary\nThis article provides a detailed breakdown of the memory and storage configurations and pricing for the new Mac Minis (M6/M5 Pro chips) and Mac Studios (M5 Max/M5 Ultra chips). The author uses tables to clearly present the available storage and memory combinations for each chip variant and their associated costs, aiding users in their purchasing decisions.\n🏷️ Mac Mini, Mac Studio, Apple Silicon, configuration\n \n6. Gadget 评测：Thermal Master P3 宏观镜头\nGadget Review: Thermal Master P3 Macro Lens ★★★★⯪ — shkspr.mobi · 21 小时前 · ⭐ 21/30\n中文摘要\n这篇评测介绍了 Thermal Master P3 宏观镜头，这是一款专门用于近距离观察电子设备热点的相机。与用于观鸟或野生动物拍摄的相机不同，P3 配备手动宏观镜头，能够精确捕捉 CPU 等组件的温度分布。评测给予该产品四星半的评价。\nEnglish Summary\nThis review covers the Thermal Master P3 macro lens, a camera specifically designed for close-up observation of thermal hotspots in electronic devices. Unlike cameras for bird or wildlife photography, the P3 features a manual macro lens capable of precisely capturing the temperature distribution of components like CPUs. The review awards the product four and a half stars.\n🏷️ thermal camera, macro lens, gadget review\n \n7. VS Code 远程连接失效？降级至 v1.124.x 版本可解决\nIf your VS Code remotes stopped working, downgrade to v1.124.x — xeiaso.net · 1 天前 · ⭐ 21/30\n中文摘要\n近期有用户报告 VS Code 的远程连接功能出现问题，导致无法正常使用。经过排查，发现是新版本引入的 bug 所致。文章提供了一个临时的解决方案，即降级到 v1.124.x 版本。此举可以暂时恢复远程连接的正常工作。请注意，这只是一个临时措施，未来版本更新有望彻底修复此问题。\nEnglish Summary\nUsers have reported issues with VS Code's remote connection functionality, preventing normal use. Investigation revealed a bug introduced in a recent version. The article suggests a temporary workaround: downgrading to version v1.124.x. This action can temporarily restore the remote connection's functionality. Note that this is a temporary measure, and future updates are expected to fully resolve the issue.\n🏷️ VS Code, remote development, bug fix\n \n8. 如何让 VS Code 回到旧版用户界面\nHow to make VS Code go back to the old UI — xeiaso.net · 1 天前 · ⭐ 21/30\n中文摘要\n如果你不喜欢 VS Code 的新界面，并希望恢复到之前的用户体验，这篇文章将为你提供指导。文章介绍了一种方法，可以帮助用户将 VS Code 的界面设置回旧版本样式。通过遵循文章中的步骤，你可以轻松地调整设置，以获得你熟悉和偏好的界面布局。这对于习惯了旧版界面的用户来说非常实用。\nEnglish Summary\nIf you dislike the new VS Code interface and wish to revert to the previous user experience, this article will guide you. It introduces a method to help users reset VS Code's interface settings back to the old version's style. By following the steps outlined, you can easily adjust settings to achieve a familiar and preferred interface layout. This is particularly useful for users accustomed to the older interface.\n🏷️ VS Code, UI, customization\n \n⚙️ 工程\n9. EVE Online：迁移到 Python 3 的进程已启动\nEVE Online: The Move to Python 3 Begins! — simonwillison.net · 1 天前 · ⭐ 23/30\n中文摘要\n《EVE Online》这款运营超过二十年的大型在线游戏，正在进行一项重要的技术升级：迁移到 Python 3。该游戏自 2003 年上线以来一直运行在 Stackless Python 上，最近一次重大升级是 16 年前进行的 Stackless Python 2.7 升级。此次迁移标志着游戏技术栈的一次重大演进。\nEnglish Summary\nEVE Online, a massively multiplayer online game that has been running for over two decades, has begun its migration to Python 3. The game has been operating on Stackless Python since its launch in 2003, with its last major upgrade being to Stackless Python 2.7 sixteen years ago. This migration marks a significant evolution in the game's technology stack.\n🏷️ Python 3, EVE Online, legacy systems, migration\n \n10. 自托管能否做到简单？\nCan Self-Hosting Be Simple? — tedium.co · 5 小时前 · ⭐ 21/30\n中文摘要\n文章探讨了自托管的复杂性，指出用户很容易陷入过于深入的技术细节。作者通过尝试构建一个“第三空间”盒子，学习到了一种“少即是多”的自托管方法。这表明，即使是复杂的自托管项目，也可以通过简化和聚焦核心功能来实现易用性。\nEnglish Summary\nThis article explores the complexity of self-hosting, noting how users can easily get bogged down in excessive technical details. The author shares learnings from attempting to build a 'third place' box, discovering a 'less is more' approach to self-hosting. This suggests that even complex self-hosting projects can achieve simplicity by streamlining and focusing on core functionalities.\n🏷️ self-hosting, home server, DIY\n \n11. Forgejo 技巧：如何设置起始的 Issue 和 Pull Request 编号\nForgejo hack: How to set a starting issue and pull request number — miguelgrinberg.com · 1 天前 · ⭐ 21/30\n中文摘要\n本文作者正在将开源项目从 GitHub 迁移到自托管的 Forgejo 实例。在迁移过程中，作者发现了一些隐藏的配置方法，可以自定义 Issue 和 Pull Request 的起始编号。文章分享了这一发现，旨在帮助其他用户解决类似问题。通过修改 Forgejo 的源代码，可以实现这一个性化设置。\nEnglish Summary\nThe author is migrating their open-source projects from GitHub to a self-hosted Forgejo instance. During this process, they discovered hidden configuration methods to customize the starting numbers for Issues and Pull Requests. This article shares this finding to help other users with similar needs. By modifying Forgejo's source code, this personalized setting can be achieved.\n🏷️ Forgejo, Git, open source, configuration\n \n🔒 安全\n12. Forgejo 技巧：如何设置起始的 Issue 和 Pull Request 编号\nFootnote Regarding the GDPR and Cookie Permission Prompts — daringfireball.net · 1 天前 · ⭐ 24/30\n中文摘要\n文章分享了一个针对自托管 Forgejo 实例的技巧，用于设置 Issue 和 Pull Request 的起始编号。作者在将开源项目从 GitHub 迁移到 Forgejo 的过程中，通过研究 Forgejo 源代码发现了这一配置方法。该技巧适用于无法通过管理界面直接配置此项的用户。\nEnglish Summary\nThis post details a hack for self-hosted Forgejo instances to set custom starting numbers for Issues and Pull Requests. The author discovered this configuration by examining the Forgejo source code while migrating projects from GitHub. This method is useful for users who cannot configure this setting directly through the administration UI.\n🏷️ GDPR, cookie consent, regulation, privacy\n \n13. 关于数据泄露索赔、验证和 Carhartt 的警示故事\nA Cautionary Tale About Data Breach Claims, Verification and Carhartt — troyhunt.com · 1 天前 · ⭐ 23/30\n中文摘要\n文章讲述了一个关于数据泄露索赔的警示故事，涉及 Carhartt 公司。作者指出，不能总是轻信网络犯罪分子的说法，即使问题可能并非直接源于他们。故事强调了在处理数据泄露索赔时，验证信息来源和真实性的重要性，并暗示了潜在的欺诈或误导行为。\nEnglish Summary\nThis article presents a cautionary tale about data breach claims and verification, involving the company Carhartt. The author emphasizes that one cannot always trust the word of cybercriminals, even if the issue doesn't directly originate from them. The story highlights the importance of verifying information sources and authenticity when dealing with data breach claims, hinting at potential fraud or misrepresentation.\n🏷️ data breach, verification, Carhartt, cybercrime\n \n📝 其他\n14. XCancel，Twitter/X 的镜像服务，在收到 X Corp 的停止令后关闭\nXCancel, the Twitter/X Mirror, Shuts Down After Cease and Desist From the Fine Folks at X Corp — daringfireball.net · 1 天前 · ⭐ 21/30\n中文摘要\nXCancel，一个旨在提供 Twitter/X 内容镜像服务的平台，已于近期宣布停止运营。该服务收到了来自 X Corp 的正式停止令（cease and desist letter），要求其立即停止服务。XCancel 在收到通知后，已暂停所有服务，并表示正在寻求法律建议。该平台感谢用户两年来对 XCancel 的信任和支持。\nEnglish Summary\nXCancel, a platform that offered a mirror service for Twitter/X content, has announced its shutdown. The service received a cease and desist letter from X Corp, demanding its immediate termination. Following the notification, XCancel has suspended all operations and is seeking legal counsel. The platform expressed gratitude for the trust users placed in XCancel over the past two years.\n🏷️ Twitter, X Corp, cease and desist, legal\n \n💡 观点 / 杂谈\n15. AI 批评者的宣言\nThe AI Hater's Manifesto — wheresyoured.at · 1 天前 · ⭐ 21/30\n中文摘要\n本文作者表达了对人工智能的担忧和批评。文章探讨了人工智能发展可能带来的负面影响，并呼吁读者对其潜在风险保持警惕。作者还推广了自己的付费通讯，承诺提供深入的分析和见解，以换取订阅费用。这表明作者希望通过付费内容进一步深化其观点。\nEnglish Summary\nThe author expresses concerns and criticisms regarding artificial intelligence. The piece delves into the potential negative impacts of AI development, urging readers to be vigilant about its risks. The author also promotes their premium newsletter, promising in-depth analysis and insights in exchange for subscription fees, indicating a desire to further elaborate on their viewpoints through paid content.\n🏷️ AI, critique, technology, future\n \n生成于 2026-08-27 08:42 | 扫描 81 源 → 获取 2466 篇 → 精选 15 篇\n基于 Hacker News Popularity Contest 2025 RSS 源列表，由 Andrej Karpathy 推荐"</script>
+  <script id="speech-text" type="application/json">"🎧 点这里朗读今日日报\n📰 AI 博客每日精选 — 2026-08-28\n来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15\n📝 今日看点\n今日技术看点聚焦AI驱动的软件开发新浪潮，从安全沙箱化编码代理到AI生成代码的质量争议，预示着开发模式的深刻变革。同时，内存安全漏洞和开源维护者的招聘需求也凸显了技术生态的持续挑战与机遇。\n \n🏆 今日必读\n🥇 安全地沙箱化编码代理\nU.S. Judge Blocks Trump Defense Department’s Anthropic Blacklisting — daringfireball.net · 7 小时前 · 🤖 AI / ML\n中文摘要\n本文详细介绍了如何为编码代理设置隔离的沙箱环境，以安全地编写高质量代码。通过限制代理只能访问单个隔离的 GitHub 仓库，可以有效降低安全风险。这种方法旨在解决编码代理在代码生成过程中可能带来的安全隐患，确保其操作在可控范围内。\nEnglish Summary\nThis post details the setup of isolated sandboxes for coding agents to securely write high-quality code. By restricting agents to access only a single, isolated GitHub repository, security risks are effectively mitigated. This approach addresses potential security vulnerabilities introduced by coding agents during code generation, ensuring their operations remain within controlled boundaries.\n💡 为什么值得读: 了解如何为 AI 编码助手构建安全隔离环境，以防范潜在的代码安全风险。\n💡 Why read it: Learn how to build secure, isolated environments for AI coding assistants to mitigate potential code security risks.\n🏷️ Anthropic, AI safety, Pentagon, lawsuit\n🥈 卖掉自己：技术与组织运作的艺术\nBreaking Claude Code Opus 5 Auto Mode — simonwillison.net · 12 小时前 · 🤖 AI / ML\n中文摘要\n与汤姆·勒赫在 1973 年的说法不同，今天的“卖掉自己”（selling out）需要高超的技术能力和对大型组织运作方式的深刻理解。本文旨在教授读者如何掌握这种能力，以在不牺牲原则的情况下实现职业目标。它强调了技术技能和对组织动态的洞察力在职业发展中的重要性。\nEnglish Summary\nContrary to Tom Lehrer's 1973 assertion, 'selling out' today requires significant technical skill and a nuanced understanding of how large organizations function. This post aims to teach readers how to master this art, enabling them to achieve career goals without compromising integrity. It highlights the importance of technical prowess and insight into organizational dynamics for career advancement.\n💡 为什么值得读: 探讨在现代职场中，如何在不牺牲个人原则的前提下，通过技术和组织洞察力实现职业目标。\n💡 Why read it: Explores how to achieve career goals in the modern workplace by leveraging technical skill and organizational insight without compromising personal integrity.\n🏷️ Claude, prompt injection, AI security, coding agent\n🥉 强制所有派生类实现特定非虚方法的探讨（第一部分）\nThe Load-Bearing Vocabulary of Claude — daringfireball.net · 13 小时前 · 🤖 AI / ML\n中文摘要\n在软件设计中，强制所有派生类实现特定非虚方法，不应通过实现一个空方法（stub）来达成。本文的第一部分深入探讨了这一设计原则，并提出了避免简单实现空方法的替代方案。核心观点是，直接不实现该方法是更优的选择，以避免潜在的设计陷阱。\nEnglish Summary\nIn software design, forcing all derived classes to implement a specific non-virtual method should not be achieved by implementing a stub. This first part of the article delves into this design principle, proposing alternatives to simply implementing an empty method. The core argument is that not implementing the method at all is a superior choice to avoid potential design pitfalls.\n💡 为什么值得读: 学习在面向对象设计中，如何通过避免空方法（stub）来更有效地强制派生类实现特定接口。\n💡 Why read it: Learn how to more effectively enforce specific interface implementations in derived classes by avoiding stub implementations in object-oriented design.\n🏷️ Claude, LLM, repetitiveness, data analysis\n \n📊 数据概览\n \n \n \n分类分布\nmermaid\npie showData\n title \"文章分类分布\"\n \"🤖 AI / ML\" : 6\n \"⚙️ 工程\" : 3\n \"📝 其他\" : 3\n \"🔒 安全\" : 2\n \"💡 观点 / 杂谈\" : 1\n高频关键词\nmermaid\nxychart-beta horizontal\n title \"高频关键词\"\n x-axis [\"claude\", \"tariffs\", \"anthropic\", \"ai safety\", \"pentagon\", \"lawsuit\", \"prompt injection\", \"ai security\", \"coding agent\", \"llm\", \"repetitiveness\", \"data analysis\"]\n y-axis \"出现次数\" 0 --> 4\n bar [2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]\n📈 纯文本关键词图（终端友好）\nclaude │ ████████████████████ 2\ntariffs │ ████████████████████ 2\nanthropic │ ██████████░░░░░░░░░░ 1\nai safety │ ██████████░░░░░░░░░░ 1\npentagon │ ██████████░░░░░░░░░░ 1\nlawsuit │ ██████████░░░░░░░░░░ 1\nprompt injection │ ██████████░░░░░░░░░░ 1\nai security │ ██████████░░░░░░░░░░ 1\ncoding agent │ ██████████░░░░░░░░░░ 1\nllm │ ██████████░░░░░░░░░░ 1\n🏷️ 话题标签\nclaude(2) · tariffs(2) · anthropic(1) · ai safety(1) · pentagon(1) · lawsuit(1) · prompt injection(1) · ai security(1) · coding agent(1) · llm(1) · repetitiveness(1) · data analysis(1) · gpt-2(1) · weights(1) · dropout(1) · model training(1) · teampcp(1) · cybercrime(1) · supply chain attacks(1) · arrests(1)\n \n🤖 AI / ML\n1. 安全地沙箱化编码代理\nU.S. Judge Blocks Trump Defense Department’s Anthropic Blacklisting — daringfireball.net · 7 小时前 · ⭐ 27/30\n中文摘要\n本文详细介绍了如何为编码代理设置隔离的沙箱环境，以安全地编写高质量代码。通过限制代理只能访问单个隔离的 GitHub 仓库，可以有效降低安全风险。这种方法旨在解决编码代理在代码生成过程中可能带来的安全隐患，确保其操作在可控范围内。\nEnglish Summary\nThis post details the setup of isolated sandboxes for coding agents to securely write high-quality code. By restricting agents to access only a single, isolated GitHub repository, security risks are effectively mitigated. This approach addresses potential security vulnerabilities introduced by coding agents during code generation, ensuring their operations remain within controlled boundaries.\n🏷️ Anthropic, AI safety, Pentagon, lawsuit\n \n2. 卖掉自己：技术与组织运作的艺术\nBreaking Claude Code Opus 5 Auto Mode — simonwillison.net · 12 小时前 · ⭐ 27/30\n中文摘要\n与汤姆·勒赫在 1973 年的说法不同，今天的“卖掉自己”（selling out）需要高超的技术能力和对大型组织运作方式的深刻理解。本文旨在教授读者如何掌握这种能力，以在不牺牲原则的情况下实现职业目标。它强调了技术技能和对组织动态的洞察力在职业发展中的重要性。\nEnglish Summary\nContrary to Tom Lehrer's 1973 assertion, 'selling out' today requires significant technical skill and a nuanced understanding of how large organizations function. This post aims to teach readers how to master this art, enabling them to achieve career goals without compromising integrity. It highlights the importance of technical prowess and insight into organizational dynamics for career advancement.\n🏷️ Claude, prompt injection, AI security, coding agent\n \n3. 强制所有派生类实现特定非虚方法的探讨（第一部分）\nThe Load-Bearing Vocabulary of Claude — daringfireball.net · 13 小时前 · ⭐ 25/30\n中文摘要\n在软件设计中，强制所有派生类实现特定非虚方法，不应通过实现一个空方法（stub）来达成。本文的第一部分深入探讨了这一设计原则，并提出了避免简单实现空方法的替代方案。核心观点是，直接不实现该方法是更优的选择，以避免潜在的设计陷阱。\nEnglish Summary\nIn software design, forcing all derived classes to implement a specific non-virtual method should not be achieved by implementing a stub. This first part of the article delves into this design principle, proposing alternatives to simply implementing an empty method. The core argument is that not implementing the method at all is a superior choice to avoid potential design pitfalls.\n🏷️ Claude, LLM, repetitiveness, data analysis\n \n4. 伊丽莎白·沃伦关于苹果关税退款的不协调愤怒\nWhy do OpenAI's GPT-2 weights beat mine? Part four: digging into dropout — gilesthomas.com · 15 小时前 · ⭐ 25/30\n中文摘要\n参议员伊丽莎白·沃伦致函包括苹果在内的多家大型企业，敦促它们将从特朗普政府获得的关税退款返还给消费者。沃伦认为，消费者因关税支付了更高的价格，因此应获得这些退款。然而，文章指出，沃伦的立场在逻辑上存在不协调之处，暗示其对关税退款的理解和处理方式存在问题。\nEnglish Summary\nSenator Elizabeth Warren has written to major corporations, including Apple, urging them to pass tariff refunds received from the Trump administration back to consumers. Warren argues that consumers paid higher prices due to tariffs and should therefore receive these refunds. However, the article points out inconsistencies in Warren's position, suggesting a flawed understanding or approach to tariff refunds.\n🏷️ GPT-2, weights, dropout, model training\n \n5. Qwen3.8-Flash-Next\nQwen3.8-Flash-Next — simonwillison.net · 1 天前 · ⭐ 25/30\n中文摘要\nQwen发布了其最新的开源权重模型Qwen3.8-Flash-Next，该模型是Qwen4架构的早期预览版，具备多模态能力。模型拥有1250亿个token，但仅激活60亿个参数，显著提升了性能。文章还提到了使用Unsloth量化模型在DGX Spark上进行测试的尝试。\nEnglish Summary\nQwen has released Qwen3.8-Flash-Next, an open-weights multimodal MoE model previewing the architecture for Qwen4. It boasts 125 billion tokens with only 6 billion active parameters, leading to significant performance gains. The article also mentions testing with Unsloth quantized models on DGX Spark.\n🏷️ Qwen, multimodal, MoE, open weights\n \n6. AI编写的软件质量如何？\nWhat is the quality of software that AI writes? — johndcook.com · 1 天前 · ⭐ 24/30\n中文摘要\nAI驱动的编码助手提高了开发者的生产力，但其编写的代码质量如何？文章探讨了关于AI生成代码质量的两种观点：一种认为未来将是“黑暗软件工厂”，代码不再被检查；另一种则持不同意见，认为人类仍需审查代码。\nEnglish Summary\nAI-powered coding agents boost developer productivity, but what about the quality of the code they produce? The article discusses contrasting views on AI-generated code quality: one perspective suggests a future of 'dark software factories' where code is uninspected, while another argues for continued human oversight.\n🏷️ AI coding, software quality, productivity, source code\n \n⚙️ 工程\n7. 招聘：高级开源维护者\nNow Hiring: Senior Open Source Maintainer — nesbitt.io · 54 分钟前 · ⭐ 24/30\n中文摘要\n这是一个在快节奏、高可见性环境中做出真正影响的难得机会，招聘高级开源维护者。\nEnglish Summary\nA rare opportunity to make a real impact in a fast-paced, high-visibility role is available for a Senior Open Source Maintainer.\n🏷️ open source, maintainer, hiring, community\n \n8. 代码代理沙箱化设置详解\nSandboxing coding agents — micahflee.com · 14 小时前 · ⭐ 23/30\n中文摘要\n本文将详细介绍如何为代码代理设置隔离的沙箱环境。这些沙箱能够限制代理的访问权限，使其只能访问单个隔离的 GitHub 仓库。通过这种方式，可以确保代码代理在安全可控的环境中运行，从而提高代码质量并降低潜在风险。\nEnglish Summary\nThis post details the setup of isolated sandboxes for coding agents. These sandboxes restrict agent access to a single, isolated GitHub repository. This approach ensures coding agents operate in a secure and controlled environment, enhancing code quality and mitigating risks.\n🏷️ coding agents, sandboxing, security, GitHub\n \n9. 强制派生类实现特定非虚方法的探讨（第一部分）\nOn forcing all derived classes to implement a specific non-virtual method, part 1 — devblogs.microsoft.com/oldnewthing · 20 小时前 · ⭐ 22/30\n中文摘要\n本文讨论了在编程中，如何强制所有派生类实现一个特定的非虚方法。作者建议，与其实现一个空的存根方法，不如直接避免实现它。这篇博文最初发布在 The Old New Thing 网站上。\nEnglish Summary\nThis article explores how to enforce the implementation of a specific non-virtual method across all derived classes. The author suggests avoiding the implementation of a stub method altogether. This post originally appeared on The Old New Thing.\n🏷️ inheritance, non-virtual methods, class design, C++\n \n📝 其他\n10. Apple地图广告现已上线\nAds in Apple Maps Have Now Launched — daringfireball.net · 14 小时前 · ⭐ 23/30\n中文摘要\nApple已确认在地图应用中推出广告，这些广告将在搜索屏幕的“推荐地点”以及搜索结果中出现。广告的推出将逐步覆盖所有用户，为用户提供基于位置和搜索相关性的推广信息。\nEnglish Summary\nApple has confirmed the launch of ads within its Maps app, appearing in 'Suggested Places' on the search screen and in search results. The rollout will gradually reach all users, offering location-based and search-relevant promotional content.\n🏷️ Apple Maps, ads, launch, user experience\n \n11. 伊丽莎白·沃伦关于苹果关税退款的不合逻辑的愤怒\nElizabeth Warren’s Incoherent Outrage Regarding Apple’s Tariff Refund — daringfireball.net · 14 小时前 · ⭐ 21/30\n中文摘要\n文章引用了参议员伊丽莎白·沃伦关于关税退款的官方声明。沃伦致函多家公司，包括苹果，敦促它们将从特朗普政府那里收到的关税退款转交给消费者。声明强调了消费者因关税支付了更高的价格。\nEnglish Summary\nThis article quotes Senator Elizabeth Warren's official statement regarding tariff refunds. Warren wrote to several companies, including Apple, urging them to pass tariff rebates received from the Trump administration onto consumers. The statement highlights that consumers paid higher prices due to tariffs.\n🏷️ Elizabeth Warren, tariffs, Apple, politics\n \n12. Panic 公司因“玩伴”游戏退还关税费用\nPanic Is Refunding Tariff Fees to Playdate Buyers — daringfireball.net · 14 小时前 · ⭐ 21/30\n中文摘要\n根据 Game Developer 的报道，Panic 公司正在为其“玩伴”（Playdate）游戏的购买者退还关税费用。公司联合创始人解释说，在特定时期内，他们曾向客户收取关税，但由于财务困难，无法长期承担这笔费用。关税曾作为单独的项目在结账时明确列出。\nEnglish Summary\nAccording to Game Developer, Panic is refunding tariff fees to buyers of their 'Playdate' game. The co-founder explained that tariffs were charged to customers during a specific period due to financial difficulties in absorbing the cost. The tariff was clearly itemized at checkout.\n🏷️ Playdate, tariffs, Panic, refunds\n \n🔒 安全\n13. Panic 公司因 Playdate 买家退还关税费用\nTwo Alleged ‘TeamPCP’ Hackers Arrested in Australia — krebsonsecurity.com · 23 小时前 · ⭐ 25/30\n中文摘要\nPlaydate 制造商 Panic 公司正在向其客户退还之前收取的关税费用。该公司联合创始人 Cabel Sasser 解释说，在特定时期内，他们曾将关税成本转嫁给消费者，但由于财务困难，无法长期承担。Panic 公司已设立专门网站，向受影响的 Playdate 买家说明情况并处理退款事宜。\nEnglish Summary\nPanic, the maker of Playdate, is refunding tariff fees to its customers. Co-founder Cabel Sasser explained that the company had passed tariff costs onto customers during a specific period but found it financially difficult to absorb them long-term. Panic has set up a dedicated website to inform affected Playdate buyers and process these refunds.\n🏷️ TeamPCP, cybercrime, supply chain attacks, arrests\n \n14. 用户称“无法阻止这种情况发生”：内存安全问题导致GNU gzip漏洞\n\"No way to prevent this\" say users of only language where this regularly happens — xeiaso.net · 1 天前 · ⭐ 25/30\n中文摘要\n在GNU gzip发布CVE-2026-41992漏洞后，系统管理员紧急修复系统。该漏洞允许攻击者通过解压两个文件触发LZH解码器中的越界读取，导致读取共享全局缓冲区之外的数据，因为该缓冲区在调用之间未被重置。这暴露了内存安全问题在关键基础软件中的严重性。\nEnglish Summary\nFollowing the release of CVE-2026-41992 for GNU gzip, system administrators scrambled to patch systems. The vulnerability allows attackers to trigger out-of-bounds reads in the LZH decoder by decompressing two files in the same invocation, as the shared global buffer is not reset between calls. This highlights the critical impact of memory safety issues in essential software.\n🏷️ CVE, gzip, vulnerability, patching\n \n💡 观点 / 杂谈\n15. 关于“卖出”的艺术：技术与组织运作的结合\nSelling out — seangoedecke.com · 10 小时前 · ⭐ 22/30\n中文摘要\n文章探讨了在当今社会，“卖出”（selling out）并非易事，它需要结合扎实的技术能力和对大型组织运作方式的深刻理解。作者指出，掌握这一技巧是许多人追求的目标。本文旨在教授读者如何实现这一目标，并保持其职业生涯中的诚信。\nEnglish Summary\nThe article discusses how 'selling out' is not easy today, requiring both technical skill and a deep understanding of how large organizations function. The author suggests that mastering this is a goal for many. This post aims to teach readers how to achieve this while maintaining integrity.\n🏷️ selling out, engineers, career, tech industry\n \n生成于 2026-08-28 10:54 | 扫描 83 源 → 获取 2527 篇 → 精选 15 篇\n基于 Hacker News Popularity Contest 2025 RSS 源列表，由 Andrej Karpathy 推荐"</script>
   <script>
     const text = JSON.parse(document.getElementById('speech-text').textContent);
     const statusEl = document.getElementById('status');
