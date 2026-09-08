@@ -52,201 +52,201 @@
   <main class="shell">
     <article class="card">
       <p>🎧 <a href="https://lingnanren.github.io/ai-daily-digest/listen.html">点这里朗读今日日报</a></p>
-<h1>📰 AI 博客每日精选 — 2026-09-07</h1>
+<h1>📰 AI 博客每日精选 — 2026-09-08</h1>
 <blockquote>来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15</blockquote>
 <h2>📝 今日看点</h2>
-<p>今日技术看点聚焦 AI 发展新动向与安全挑战。OpenAI 在 AGI 研究加速和 GPT-6 Astra 模型上取得突破，预示着 AI 能力的飞跃，但 Agent 安全与哲学边界的探讨也日益凸显。同时，WebAssembly 和原生 Mac 应用的集成，以及新的 AI Agent 访问控制方式，展现了技术工具和工程实践的持续演进。</p>
+<p>今日技术看点聚焦人工智能的广泛应用与挑战。从苹果高管调整看AI生态的演进，到浏览器自动检测AI生成文本的需求凸显，AI正深刻影响内容创作与分发。同时，网络安全领域也面临AI驱动的诈骗和爬虫滋扰等新威胁，企业需构建更强大的防御体系。</p>
 <hr>
 <h2>🏆 今日必读</h2>
-<p>🥇 <strong>OpenAI 的研究加速：内部视角</strong></p>
-<p><a href="https://simonwillison.net/2026/Sep/6/research-acceleration-the-view-inside-openai/">Research acceleration: The view inside OpenAI</a> — simonwillison.net · 4 小时前 · 🤖 AI / ML</p>
+<p>🥇 <strong>苹果高管变动：Schiller 离职与 Ternus 接管 App Store 的目标</strong></p>
+<p><a href="https://simonwillison.net/2026/Sep/7/jakub-pachocki/">Quoting Jakub Pachocki</a> — simonwillison.net · 5 小时前 · 🤖 AI / ML</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>OpenAI 发布了关于其新一代 AGI（递归自我改进）的研究加速计划。该计划旨在通过自动化和优化研究流程来加速 AI 的发展。文章详细介绍了 OpenAI 内部如何实现这一目标，包括对研究人员和工具的投入。这标志着 AI 领域向更自主和高效的研究范式迈进。</blockquote>
+<blockquote>苹果资深高管 Phil Schiller 将卸任 App Store 和 Apple Events 的领导职责，由 Greg Joswiak 接管。App Store 作为苹果一项年收入约 300 亿美元的关键业务，面临着来自开发者批评和日益严格的监管挑战。Schiller 的离职标志着苹果高层的一次重要人事调整，而新任领导者将如何应对 App Store 的复杂局面备受关注。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>OpenAI is accelerating its research with a focus on Recursive Self-Improvement (RSI), hinting at a new AGI. This initiative aims to speed up AI development by optimizing research processes and tools. The article provides an internal perspective on how OpenAI is achieving this acceleration, underscoring a shift towards more autonomous and efficient AI research paradigms.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 了解 OpenAI 如何通过递归自我改进加速 AI 研究，以及其对 AGI 的最新进展。</p>
-<p>💡 <strong>Why read it</strong>: Understand how OpenAI is accelerating AI research through Recursive Self-Improvement and their latest advancements in AGI.</p>
-<p>🏷️ OpenAI, AGI, research acceleration</p>
-<p>🥈 <strong>Debian 代码搜索：使用 Go SIMD 实现的快速 TurboPFor</strong></p>
-<p><a href="https://michael.stapelberg.ch/posts/2026-09-06-dcs-fast-turbopfor-go-simd/">Debian Code Search: Fast TurboPFor with Go SIMD</a> — michael.stapelberg.ch · 21 小时前 · ⚙️ 工程</p>
+<blockquote>Phil Schiller, a veteran Apple executive, is stepping down from his leadership roles overseeing the App Store and Apple Events, with Greg Joswiak taking over. The App Store, a critical business generating an estimated $30 billion annually, faces ongoing challenges from developer criticism and increasing regulatory scrutiny. Schiller's departure marks a significant leadership transition within Apple, and the new leadership will navigate the complexities of the app marketplace.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 了解苹果高层人事变动及其对关键业务 App Store 未来发展的影响。</p>
+<p>💡 <strong>Why read it</strong>: Understand the implications of Apple's executive changes on the future of its critical App Store business.</p>
+<p>🏷️ AI safety, scalable defense, aligned AI, AI development</p>
+<p>🥈 <strong>Litterbox：Safari 浏览器查看 X (Twitter) 推文的扩展程序</strong></p>
+<p><a href="https://simonwillison.net/2026/Sep/6/research-acceleration-the-view-inside-openai/">Research acceleration: The view inside OpenAI</a> — simonwillison.net · 1 天前 · 🤖 AI / ML</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Debian 代码搜索（DCS）成功移除了最后一个 cgo 依赖，实现了完全的 Go 语言实现。这得益于 Go 语言新增的 SIMD 支持，使得 TurboPFor 整型压缩格式的实现比原先的参考实现更高效，甚至利用了 AVX512 指令集。DCS 需要快速的整型编解码器来支持其大规模代码搜索功能。</blockquote>
+<blockquote>在 Nitter 和 XCancel 等工具失效后，Zhenyi Tan 推出了名为 Litterbox 的 Safari 扩展程序，旨在解决用户查看 X (原 Twitter) 内容的需求。该扩展程序可以将 x.com 链接在弹出窗口中打开，方便用户快速浏览，并在完成后关闭。Litterbox 的设计理念是提供一个简洁、临时的 X 内容查看方式，同时避免发送用户 Cookie。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Debian Code Search (DCS) has eliminated its last cgo dependency by implementing the TurboPFor integer compression format entirely in Go. This was made possible by Go's new SIMD support, achieving greater efficiency than the reference implementation by leveraging the AVX512 instruction set. This optimization is crucial for DCS's function as a high-performance code search engine.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 了解 Go 语言 SIMD 如何赋能 Debian 代码搜索，实现更高效的 TurboPFor 压缩。</p>
-<p>💡 <strong>Why read it</strong>: Learn how Go's SIMD capabilities empower Debian Code Search with a more efficient TurboPFor compression implementation.</p>
-<p>🏷️ Go, SIMD, Debian Code Search, performance</p>
-<p>🥉 <strong>Anubis 花费一年时间才上线 WebAssembly</strong></p>
-<p><a href="https://anubis.techaro.lol/blog/2026/anubis-wasm/">It took a year to ship WebAssembly in Anubis</a> — xeiaso.net · 1 天前 · 🛠 工具 / 开源</p>
+<blockquote>Following the demise of Nitter and XCancel, Zhenyi Tan has released Litterbox, a new Safari extension designed to facilitate viewing X (formerly Twitter) content. This extension opens x.com links in a popup window for quick browsing and can be easily closed afterward. Litterbox aims to provide a simple, ephemeral way to consume X content without sending user cookies.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 为 Safari 用户提供一个在 Nitter 失效后查看 X (Twitter) 内容的便捷解决方案。</p>
+<p>💡 <strong>Why read it</strong>: Offers a convenient solution for Safari users to view X (Twitter) content after the discontinuation of tools like Nitter.</p>
+<p>🏷️ OpenAI, research acceleration, AGI, Recursive Self-Improvement</p>
+<p>🥉 <strong>Kunsten '92 论坛：关于人工智能的讨论</strong></p>
+<p><a href="https://simonwillison.net/2026/Sep/7/llm/">llm 0.35</a> — simonwillison.net · 4 小时前 · 🛠 工具 / 开源</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>经过一年的开发、数百次提交和多次重写，Anubis 系统终于在下一版本中集成了基于 WebAssembly 的工作量证明（PoW）检查。管理员现在可以启用这一功能来增强其阈值或机器人规则。这一集成过程涉及了 Rust 重写、编译器 bug 修复以及大量的内存消耗。</blockquote>
+<blockquote>作者受邀在 Kunsten '92 的 Paradiso 论坛上就人工智能 (AI) 发表开场演讲，并参与了两小时的讨论。此次活动为来自科技界的作者提供了一个与艺术和文化领域人士交流的宝贵机会，作者认为这种跨界交流有助于拓宽视野和学习新知。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>After a year of development, hundreds of commits, and significant rewrites, Anubis is set to ship with WebAssembly-based proof-of-work (PoW) checks in its next version. This feature allows administrators to enable WASM-based PoW for their thresholds or bot rules, enhancing system security. The integration involved substantial effort, including rewriting parts in Rust and overcoming technical challenges.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 深入了解 Anubis 如何克服技术挑战，耗时一年将 WebAssembly 集成到其工作量证明机制中。</p>
-<p>💡 <strong>Why read it</strong>: Explore the year-long effort and technical challenges overcome by Anubis to integrate WebAssembly into its proof-of-work mechanism.</p>
-<p>🏷️ WebAssembly, Rust, compiler, Anubis</p>
+<blockquote>The author was invited to give an opening speech at the Kunsten '92 Paradiso forum, followed by a two-hour discussion on Artificial Intelligence (AI). This event provided a valuable opportunity for the author, from the tech scene, to engage with professionals from the arts and culture sectors, fostering cross-disciplinary learning and broadening perspectives.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 了解科技界人士对人工智能在艺术文化领域应用的看法和跨界交流的价值。</p>
+<p>💡 <strong>Why read it</strong>: Gain insights into perspectives on AI applications in arts and culture from a tech professional and the value of interdisciplinary exchange.</p>
+<p>🏷️ LLM, CLI tool, OpenAI, GPT-6 Astra</p>
 <hr>
 <h2>📊 数据概览</h2>
-<table><thead><tr><th>扫描源</th><th>抓取文章</th><th>时间范围</th><th>精选</th></tr></thead><tbody><tr><td>83/92</td><td>2523 篇 → 25 篇</td><td>48h</td><td><strong>15 篇</strong></td></tr></tbody></table>
+<table><thead><tr><th>扫描源</th><th>抓取文章</th><th>时间范围</th><th>精选</th></tr></thead><tbody><tr><td>84/92</td><td>2553 篇 → 33 篇</td><td>48h</td><td><strong>15 篇</strong></td></tr></tbody></table>
 <h3>分类分布</h3>
 <div class="code-wrap"><div class="code-title">mermaid</div><pre><code>pie showData
     title "文章分类分布"
-    "🛠 工具 / 开源" : 5
-    "⚙️ 工程" : 4
-    "🤖 AI / ML" : 3
-    "💡 观点 / 杂谈" : 2
-    "🔒 安全" : 1</code></pre></div>
+    "🤖 AI / ML" : 4
+    "🛠 工具 / 开源" : 4
+    "💡 观点 / 杂谈" : 3
+    "🔒 安全" : 3
+    "⚙️ 工程" : 1</code></pre></div>
 <h3>高频关键词</h3>
 <div class="code-wrap"><div class="code-title">mermaid</div><pre><code>xychart-beta horizontal
     title "高频关键词"
-    x-axis ["technical debt", "openai", "agi", "research acceleration", "go", "simd", "debian code search", "performance", "webassembly", "rust", "compiler", "anubis"]
+    x-axis ["ai safety", "openai", "ai", "dns", "scams", "tool", "scalable defense", "aligned ai", "ai development", "research acceleration", "agi", "recursive self-improvement"]
     y-axis "出现次数" 0 --&gt; 4
-    bar [2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]</code></pre></div>
+    bar [2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1]</code></pre></div>
 <div class="details">
 <p class="summary">📈 纯文本关键词图（终端友好）</p>
-<div class="code-wrap"><pre><code>technical debt        │ ████████████████████ 2
-openai                │ ██████████░░░░░░░░░░ 1
-agi                   │ ██████████░░░░░░░░░░ 1
-research acceleration │ ██████████░░░░░░░░░░ 1
-go                    │ ██████████░░░░░░░░░░ 1
-simd                  │ ██████████░░░░░░░░░░ 1
-debian code search    │ ██████████░░░░░░░░░░ 1
-performance           │ ██████████░░░░░░░░░░ 1
-webassembly           │ ██████████░░░░░░░░░░ 1
-rust                  │ ██████████░░░░░░░░░░ 1</code></pre></div>
+<div class="code-wrap"><pre><code>ai safety             │ ████████████████████ 2
+openai                │ ████████████████████ 2
+ai                    │ ████████████████████ 2
+dns                   │ ████████████████████ 2
+scams                 │ ████████████████████ 2
+tool                  │ ████████████████████ 2
+scalable defense      │ ██████████░░░░░░░░░░ 1
+aligned ai            │ ██████████░░░░░░░░░░ 1
+ai development        │ ██████████░░░░░░░░░░ 1
+research acceleration │ ██████████░░░░░░░░░░ 1</code></pre></div>
 </div>
 <h3>🏷️ 话题标签</h3>
-<p><strong>technical debt</strong>(2) · <strong>openai</strong>(1) · <strong>agi</strong>(1) · research acceleration(1) · go(1) · simd(1) · debian code search(1) · performance(1) · webassembly(1) · rust(1) · compiler(1) · anubis(1) · ai safety(1) · security(1) · ai agents(1) · sandbox(1) · gpt-6(1) · llm(1) · ai models(1) · developers(1)</p>
-<hr>
-<h2>🛠 工具 / 开源</h2>
-<h3>1. Anubis 花费一年时间才上线 WebAssembly</h3>
-<p><a href="https://anubis.techaro.lol/blog/2026/anubis-wasm/">It took a year to ship WebAssembly in Anubis</a> — <strong>xeiaso.net</strong> · 1 天前 · ⭐ 26/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>经过一年的开发、数百次提交和多次重写，Anubis 系统终于在下一版本中集成了基于 WebAssembly 的工作量证明（PoW）检查。管理员现在可以启用这一功能来增强其阈值或机器人规则。这一集成过程涉及了 Rust 重写、编译器 bug 修复以及大量的内存消耗。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>After a year of development, hundreds of commits, and significant rewrites, Anubis is set to ship with WebAssembly-based proof-of-work (PoW) checks in its next version. This feature allows administrators to enable WASM-based PoW for their thresholds or bot rules, enhancing system security. The integration involved substantial effort, including rewriting parts in Rust and overcoming technical challenges.</blockquote>
-<p>🏷️ WebAssembly, Rust, compiler, Anubis</p>
-<hr>
-<h3>2. 本周包管理：2026 年 9 月 5 日</h3>
-<p><a href="https://nesbitt.io/2026/09/05/this-week-in-package-management.html">This Week in Package Management: 5 September 2026</a> — <strong>nesbitt.io</strong> · 1 天前 · ⭐ 24/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>本周包管理聚焦于该领域的最新动态，包括重要的版本发布、安全公告以及相关的深度文章。内容涵盖了从不同包管理器生态系统中的更新到对行业趋势的分析，为从业者提供了全面的信息。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>This week in package management covers releases, advisories, and articles from across the package management world. It provides updates and insights from various package management ecosystems, offering a comprehensive overview for professionals in the field.</blockquote>
-<p>🏷️ package management, releases, advisories</p>
-<hr>
-<h3>3. Meta AI 现已推出原生 Mac 应用，表现不错</h3>
-<p><a href="https://9to5mac.com/2026/08/19/meta-ai-is-now-available-as-a-more-capable-desktop-app-for-mac/">Meta AI Has a Native Mac App Now, and It Seems Decent</a> — <strong>daringfireball.net</strong> · 7 小时前 · ⭐ 23/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>Meta AI 已推出其首个原生 Mac 桌面应用（1.0 Beta 版），该应用体积小巧（16MB），运行在 Apple Silicon Mac 上，支持 macOS 15 及以上版本。它采用 AppKit 和 SwiftUI 构建，并使用 WebKit 处理富文本内容，而非 Electron 或 iPad repackaging。该应用集成了 Mac 特有的功能，提供了比移动应用更强大的桌面体验。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Meta AI has launched its first native Mac desktop app (version 1.0 beta), a lightweight 16MB application running natively on Apple Silicon Macs with macOS 15+. Built with AppKit and SwiftUI and using WebKit for rich chat content, it avoids Electron or repackaged iPad versions. The app includes Mac-specific hooks, offering a more robust desktop experience than its mobile counterpart.</blockquote>
-<p>🏷️ Meta AI, Mac app, native app</p>
-<hr>
-<h3>4. Litterbox：Safari 扩展，用于查看 X (Twitter) 推文</h3>
-<p><a href="https://andadinosaur.com/launch-litterbox">Litterbox: Safari Extension for Viewing X Tweets</a> — <strong>daringfireball.net</strong> · 11 小时前 · ⭐ 22/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>在 Nitter 和 XCancel 消失后，Zhenyi Tan 推出了 Litterbox，一个 Safari 扩展，旨在提供一种更私密的 X 平台内容查看方式。该扩展将 x.com 链接在新窗口中打开，允许用户查看推文，但设计上鼓励用户在看完后迅速关闭，以减少不必要的互动和数据泄露。Litterbox 的核心优势在于不发送用户 Cookie，提供了一个更注重隐私的浏览 X 内容的替代方案。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Following the demise of Nitter and XCancel, Zhenyi Tan has released Litterbox, a Safari extension designed for a more private way to view X (formerly Twitter) content. The extension opens x.com links in a popup, allowing users to view tweets with the intention of quick viewing and closing. Litterbox prioritizes user privacy by not sending cookies, offering an alternative for browsing X content with reduced tracking.</blockquote>
-<p>🏷️ Safari extension, X, Litterbox</p>
-<hr>
-<h3>5. 在 macOS 上将 Blender 与编码代理一起使用</h3>
-<p><a href="https://simonwillison.net/2026/Sep/5/blender-coding-agents-macos/">Using Blender with coding agents on macOS</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 21/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>在 macOS 上使用 ChatGPT Codex 和 Blender 结合编码代理非常简单。只需安装 blender.org 提供的完整 Mac 应用程序，然后使用特定格式的提示即可。例如，一个简单的提示可以指示代理使用已安装的 Blender 来渲染一个场景，如一个包含鹈鹕的场景。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Using Blender with coding agents on macOS is straightforward with ChatGPT Codex. After installing the full Mac application from blender.org, users can employ prompts like instructing the agent to render a scene using the installed Blender application, for instance, a scene featuring a pelican.</blockquote>
-<p>🏷️ Blender, coding agents, AI, macOS</p>
-<hr>
-<h2>⚙️ 工程</h2>
-<h3>6. Debian 代码搜索：使用 Go SIMD 实现的快速 TurboPFor</h3>
-<p><a href="https://michael.stapelberg.ch/posts/2026-09-06-dcs-fast-turbopfor-go-simd/">Debian Code Search: Fast TurboPFor with Go SIMD</a> — <strong>michael.stapelberg.ch</strong> · 21 小时前 · ⭐ 26/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>Debian 代码搜索（DCS）成功移除了最后一个 cgo 依赖，实现了完全的 Go 语言实现。这得益于 Go 语言新增的 SIMD 支持，使得 TurboPFor 整型压缩格式的实现比原先的参考实现更高效，甚至利用了 AVX512 指令集。DCS 需要快速的整型编解码器来支持其大规模代码搜索功能。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Debian Code Search (DCS) has eliminated its last cgo dependency by implementing the TurboPFor integer compression format entirely in Go. This was made possible by Go's new SIMD support, achieving greater efficiency than the reference implementation by leveraging the AVX512 instruction set. This optimization is crucial for DCS's function as a high-performance code search engine.</blockquote>
-<p>🏷️ Go, SIMD, Debian Code Search, performance</p>
-<hr>
-<h3>7. WorkOS：如何赋予 Agent 任务而非 Token</h3>
-<p><a href="https://workos.com/blog/delegated-access-for-ai-agents?utm_source=daringfireball&amp;amp;amp;utm_medium=newsletter&amp;amp;amp;utm_campaign=q32026">WorkOS: How to Give an Agent a Task Instead of a Token</a> — <strong>daringfireball.net</strong> · 8 小时前 · ⭐ 23/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>WorkOS 提出了一种新的 AI Agent 访问控制方法，通过“委托访问”来管理 Agent 的权限，而非直接授予访问 Token。这种方法将凭证保留在 WorkOS，Agent 仅在被授权的主机上使用，且可被随时终止，从而降低了 Agent 被劫持的风险。这为 AI Agent 的安全部署提供了更精细化的控制。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>WorkOS introduces a new approach to AI agent access control, focusing on 'delegated access' rather than direct token provisioning. This method keeps credentials at WorkOS, with agents using tokens only on allowlisted hosts and sessions being killable, significantly reducing the risk of hijacked agent sessions. It offers more granular control for secure AI agent deployment.</blockquote>
-<p>🏷️ agent, access token, WorkOS</p>
-<hr>
-<h3>8. 代码的糟糕程度没有上限</h3>
-<p><a href="https://simonwillison.net/2026/Sep/6/theres-no-limit-to-how-bad-code-can-get/">There's No Limit to How Bad Code Can Get</a> — <strong>simonwillison.net</strong> · 18 小时前 · ⭐ 22/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>在技术债务堆积如山的情况下，从头开始重构项目往往难以成功。作者认为，与物理世界的建筑不同，软件代码没有内在的约束来阻止其变得越来越糟糕。总可以引入新的间接层或进一步降低性能。这种持续的退化使得代码库在理论上可以无限期地变得更差。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Relying on a 'burn it down and start over' approach for overwhelming technical debt is rarely successful. Unlike physical structures, software code has no inherent limit to how bad it can become; new layers of indirection or performance degradation can always be introduced. This continuous decay means codebases can theoretically worsen indefinitely.</blockquote>
-<p>🏷️ code quality, technical debt, software development</p>
-<hr>
-<h3>9. 引用 Zach Kehs 的观点</h3>
-<p><a href="https://simonwillison.net/2026/Sep/6/zach-kehs/">Quoting Zach Kehs</a> — <strong>simonwillison.net</strong> · 19 小时前 · ⭐ 22/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>Zach Kehs 指出，与会不断增加楼层和房间的建筑最终会倒塌不同，软件代码没有这种物理约束。代码可以变得越来越糟，总能引入新的间接层或降低性能。这意味着软件的复杂性和糟糕程度可以无限增长。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Zach Kehs observes that unlike buildings which eventually collapse under continuous expansion, software code faces no such constraint. Code can always degrade further, with new layers of indirection or performance reductions perpetually possible. This implies software's complexity and poor quality can grow without bound.</blockquote>
-<p>🏷️ code complexity, software architecture, technical debt</p>
+<p><strong>ai safety</strong>(2) · <strong>openai</strong>(2) · <strong>ai</strong>(2) · dns(2) · scams(2) · tool(2) · scalable defense(1) · aligned ai(1) · ai development(1) · research acceleration(1) · agi(1) · recursive self-improvement(1) · llm(1) · cli tool(1) · gpt-6 astra(1) · doomer(1) · optimism(1) · cybersecurity(1) · phishing(1) · git.kernel.org(1)</p>
 <hr>
 <h2>🤖 AI / ML</h2>
-<h3>10. OpenAI 的研究加速：内部视角</h3>
-<p><a href="https://simonwillison.net/2026/Sep/6/research-acceleration-the-view-inside-openai/">Research acceleration: The view inside OpenAI</a> — <strong>simonwillison.net</strong> · 4 小时前 · ⭐ 26/30</p>
+<h3>1. 苹果高管变动：Schiller 离职与 Ternus 接管 App Store 的目标</h3>
+<p><a href="https://simonwillison.net/2026/Sep/7/jakub-pachocki/">Quoting Jakub Pachocki</a> — <strong>simonwillison.net</strong> · 5 小时前 · ⭐ 26/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>OpenAI 发布了关于其新一代 AGI（递归自我改进）的研究加速计划。该计划旨在通过自动化和优化研究流程来加速 AI 的发展。文章详细介绍了 OpenAI 内部如何实现这一目标，包括对研究人员和工具的投入。这标志着 AI 领域向更自主和高效的研究范式迈进。</blockquote>
+<blockquote>苹果资深高管 Phil Schiller 将卸任 App Store 和 Apple Events 的领导职责，由 Greg Joswiak 接管。App Store 作为苹果一项年收入约 300 亿美元的关键业务，面临着来自开发者批评和日益严格的监管挑战。Schiller 的离职标志着苹果高层的一次重要人事调整，而新任领导者将如何应对 App Store 的复杂局面备受关注。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>OpenAI is accelerating its research with a focus on Recursive Self-Improvement (RSI), hinting at a new AGI. This initiative aims to speed up AI development by optimizing research processes and tools. The article provides an internal perspective on how OpenAI is achieving this acceleration, underscoring a shift towards more autonomous and efficient AI research paradigms.</blockquote>
-<p>🏷️ OpenAI, AGI, research acceleration</p>
+<blockquote>Phil Schiller, a veteran Apple executive, is stepping down from his leadership roles overseeing the App Store and Apple Events, with Greg Joswiak taking over. The App Store, a critical business generating an estimated $30 billion annually, faces ongoing challenges from developer criticism and increasing regulatory scrutiny. Schiller's departure marks a significant leadership transition within Apple, and the new leadership will navigate the complexities of the app marketplace.</blockquote>
+<p>🏷️ AI safety, scalable defense, aligned AI, AI development</p>
 <hr>
-<h3>11. 前沿实验室是否混淆了 AI 安全与安全？</h3>
-<p><a href="https://martinalderson.com/posts/ai-safety-vs-security/?utm_source=rss&amp;amp;amp;utm_medium=rss&amp;amp;amp;utm_campaign=feed">Have the frontier labs mixed up AI safety and security?</a> — <strong>martinalderson.com</strong> · 1 天前 · ⭐ 25/30</p>
+<h3>2. Litterbox：Safari 浏览器查看 X (Twitter) 推文的扩展程序</h3>
+<p><a href="https://simonwillison.net/2026/Sep/6/research-acceleration-the-view-inside-openai/">Research acceleration: The view inside OpenAI</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 26/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>OpenAI 和 Anthropic 近期发生的 Agent 沙盒逃逸事件，与其说是技术故障，不如说是哲学上的失误。作者认为，这些事件暴露了将安全控制视为“大部分时间有效”的观念问题。这表明在 AI 安全领域，对安全措施的理解和实施可能存在根本性偏差。</blockquote>
+<blockquote>在 Nitter 和 XCancel 等工具失效后，Zhenyi Tan 推出了名为 Litterbox 的 Safari 扩展程序，旨在解决用户查看 X (原 Twitter) 内容的需求。该扩展程序可以将 x.com 链接在弹出窗口中打开，方便用户快速浏览，并在完成后关闭。Litterbox 的设计理念是提供一个简洁、临时的 X 内容查看方式，同时避免发送用户 Cookie。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Recent agent sandbox escapes at OpenAI and Anthropic are viewed less as technical failures and more as philosophical ones, stemming from a mindset that treats security controls as only needing to work most of the time. This suggests a potential misunderstanding or misapplication of security principles within frontier AI labs.</blockquote>
-<p>🏷️ AI safety, security, AI agents, sandbox</p>
+<blockquote>Following the demise of Nitter and XCancel, Zhenyi Tan has released Litterbox, a new Safari extension designed to facilitate viewing X (formerly Twitter) content. This extension opens x.com links in a popup window for quick browsing and can be easily closed afterward. Litterbox aims to provide a simple, ephemeral way to consume X content without sending user cookies.</blockquote>
+<p>🏷️ OpenAI, research acceleration, AGI, Recursive Self-Improvement</p>
 <hr>
-<h3>12. 为开发者推出 GPT-6 Astra</h3>
-<p><a href="https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/">Introducing GPT-6 Astra for developers</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 24/30</p>
+<h3>3. Kunsten '92 讲座：AI 列车</h3>
+<p><a href="https://berthub.eu/articles/posts/kunsten92-paradiso-2026/">Kunsten '92 praatje: De AI Trein</a> — <strong>berthub.eu</strong> · 1 天前 · ⭐ 22/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>OpenAI 发布了面向开发者的 GPT-6 Astra 模型，该模型在细节处理、用户提示理解和输出复杂性方面均有显著提升。特别之处在于，Astra 在生成 3D 模型方面表现出色，能够创建令人惊叹的渲染效果。此次发布标志着 OpenAI 在提升模型能力和开发者体验方面迈出了重要一步。</blockquote>
+<blockquote>在 9 月 6 日星期日，作者为 Kunsten '92 的 Paradijs 辩论会发表了开场演讲，为关于人工智能的两小时讨论拉开了序幕。整个活动的视频录像非常出色，其中包含作者的发言。作者对组织方的邀请表示感谢，并认为这次跨界交流让他这位科技界的“书呆子”受益匪浅。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>OpenAI introduces GPT-6 Astra for developers, showcasing significant improvements in attention to detail, prompt understanding, and output sophistication. Astra particularly excels at generating 3D models with impressive rendering capabilities. This release marks a notable advancement in OpenAI's efforts to enhance model performance and developer utility.</blockquote>
-<p>🏷️ GPT-6, LLM, AI models, developers</p>
+<blockquote>On Sunday, September 6th, the author delivered the opening remarks for Kunsten '92's Paradijs debate, initiating a two-hour discussion on artificial intelligence. An excellent video recording of the entire event is available, featuring the author's contribution. The author expressed gratitude for the invitation and found the interdisciplinary exchange highly beneficial, offering a valuable perspective from the tech scene.</blockquote>
+<p>🏷️ AI, Discussion, Art</p>
+<hr>
+<h3>4. 在浏览器中自动检测 AI 生成文本</h3>
+<p><a href="https://seangoedecke.com/deckard/">Automatically detecting AI text in my browser</a> — <strong>seangoedecke.com</strong> · 4 小时前 · ⭐ 21/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>目前，自动检测 AI 生成文本是一个服务不足的领域。Pangram 是该领域唯一的工具，表现出色但急需竞争。作者预测，未来几年内，各大社交网络可能会扫描新帖子和评论中的 AI 内容，并进行标记或移除。作者表示，他可以依赖 Pangram 来确认自己的怀疑。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Automated detection of AI-generated text is currently an underserved niche, with Pangram being the sole, albeit excellent, tool in the market, desperately needing competition. The author anticipates that within a few years, major social networks will likely scan new posts and comments for AI content, either tagging or removing it. The author finds Pangram reliable for confirming his suspicions.</blockquote>
+<p>🏷️ AI text detection, browser extension, Pangram</p>
+<hr>
+<h2>🛠 工具 / 开源</h2>
+<h3>5. Kunsten '92 论坛：关于人工智能的讨论</h3>
+<p><a href="https://simonwillison.net/2026/Sep/7/llm/">llm 0.35</a> — <strong>simonwillison.net</strong> · 4 小时前 · ⭐ 24/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>作者受邀在 Kunsten '92 的 Paradiso 论坛上就人工智能 (AI) 发表开场演讲，并参与了两小时的讨论。此次活动为来自科技界的作者提供了一个与艺术和文化领域人士交流的宝贵机会，作者认为这种跨界交流有助于拓宽视野和学习新知。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>The author was invited to give an opening speech at the Kunsten '92 Paradiso forum, followed by a two-hour discussion on Artificial Intelligence (AI). This event provided a valuable opportunity for the author, from the tech scene, to engage with professionals from the arts and culture sectors, fostering cross-disciplinary learning and broadening perspectives.</blockquote>
+<p>🏷️ LLM, CLI tool, OpenAI, GPT-6 Astra</p>
+<hr>
+<h3>6. 视频压缩工具</h3>
+<p><a href="https://simonwillison.net/2026/Sep/7/video-compressor/">Video compressor</a> — <strong>simonwillison.net</strong> · 9 小时前 · ⭐ 23/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>作者使用 Claude 5.1 编写了一个视频压缩工具，该工具利用 WebAssembly 和 FFMPEG，可以将手机录制的演示视频优化后发布到博客上。这个工具的开发展示了利用 AI 辅助进行 Web 开发和媒体处理的效率。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>The author developed a video compression tool using Claude 5.1, leveraging WebAssembly and FFMPEG. This tool optimizes demo videos recorded on a phone for blog publication, demonstrating the efficiency of AI-assisted web development and media processing.</blockquote>
+<p>🏷️ video compressor, optimization, tool</p>
+<hr>
+<h3>7. Mercator ↔ Equal Earth 地图投影转换工具</h3>
+<p><a href="https://simonwillison.net/2026/Sep/7/equal-earth/">Mercator ↔ Equal Earth</a> — <strong>simonwillison.net</strong> · 11 小时前 · ⭐ 23/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>作者利用 GPT-6 Astra（medium）在 ChatGPT Work 中构建了一个工具，用于在 Mercator 和 Equal Earth 地图投影之间进行动画过渡。该工具的开发源于对联合国近期投票采用 Equal Earth 投影的好奇，旨在可视化两种投影方式的差异。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>The author used GPT-6 Astra (medium) within ChatGPT Work to build a tool that creates animated transitions between the Mercator and Equal Earth map projections. This tool was developed out of curiosity about the UN's recent vote to adopt the Equal Earth projection, aiming to visualize the differences between the two.</blockquote>
+<p>🏷️ map projection, Equal Earth, Mercator, tool</p>
+<hr>
+<h3>8. Litterbox：用于查看 X 推文的 Safari 扩展</h3>
+<p><a href="https://andadinosaur.com/launch-litterbox">Litterbox: Safari Extension for Viewing X Tweets</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 22/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>在 Nitter 和 XCancel 停止服务后，Zhenyi Tan 推出了名为 Litterbox 的新 Safari 扩展。该扩展旨在解决用户仍需查看 X（原 Twitter）内容的需求，例如查看特定用户的推文。Litterbox 会将 x.com 链接在新弹出窗口中打开，方便用户快速浏览后关闭。该扩展的一个特点是不会在用户打开链接时发送 Cookie。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Following the demise of Nitter and XCancel, Zhenyi Tan has released Litterbox, a new Safari extension. This tool addresses the ongoing need to view X (formerly Twitter) content, such as specific user posts. Litterbox opens x.com links in a pop-up window for quick viewing and closing, and notably, it does not send cookies when links are opened.</blockquote>
+<p>🏷️ Safari Extension, X Tweets, Litterbox</p>
 <hr>
 <h2>💡 观点 / 杂谈</h2>
-<h3>13. Gurman 谈 Schiller 离职及 Ternus 对 App Store 的目标</h3>
-<p><a href="https://www.bloomberg.com/news/newsletters/2026-09-06/apple-s-new-ceo-like-cook-pay-package-shows-he-s-going-nowhere-sept-9-event-mtpvpcj1?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc4ODcwNTgwOCwiZXhwIjoxNzg5MzEwNjA4LCJhcnRpY2xlSWQiOiJUS1k0ODFLR0NURlEwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.VPVLP03ZWjEbH48efjq8Q7n0_vk4t7OynYeaUbOfYzU&amp;amp;amp;leadSource=article-gifting">Gurman on Schiller’s Departure and Ternus’s Goals for the App Store</a> — <strong>daringfireball.net</strong> · 11 小时前 · ⭐ 22/30</p>
+<h3>9. 浏览器中自动检测 AI 生成文本</h3>
+<p><a href="https://borretti.me/article/the-education-of-a-doomer">The Education of a Doomer</a> — <strong>borretti.me</strong> · 14 小时前 · ⭐ 24/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Mark Gurman 在其 Power On 专栏中报道了 Phil Schiller 的离职及其对 App Store 的影响。Schiller 曾负责 App Store 和 Apple Events，而 App Store 每年能带来约 300 亿美元的收入，管理难度极大，并面临来自开发者和监管机构的双重压力。Ternus 接任后，其目标和策略将是文章关注的焦点。</blockquote>
+<blockquote>文章指出，目前浏览器中自动检测 AI 生成文本是一个服务不足的领域，Pangram 是当前唯一的解决方案，但需要更多竞争。作者预测，未来几年内，各大社交网络可能会扫描新帖子和评论以识别和标记（或移除）AI 内容。文章作者正在开发自己的解决方案，并希望通过 Deckard 项目实现这一目标。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Mark Gurman reports on Phil Schiller's departure from his role overseeing the App Store and Apple Events. The App Store, a significant revenue generator estimated at $30 billion annually, faces challenges from developers and increasing regulations. The article touches upon the implications of this transition and the potential goals of the new leadership for the platform.</blockquote>
+<blockquote>The article highlights that automated AI text detection in browsers is an underserved niche, with Pangram being the sole current solution, though more competition is needed. The author predicts that major social networks will likely scan new posts and comments for AI content in the coming years to tag or remove it. The author is developing their own solution, aiming to achieve this through the Deckard project.</blockquote>
+<p>🏷️ AI, doomer, optimism, AI safety</p>
+<hr>
+<h3>10. 古尔曼谈席勒离职及特努斯对应用商店的目标</h3>
+<p><a href="https://www.bloomberg.com/news/newsletters/2026-09-06/apple-s-new-ceo-like-cook-pay-package-shows-he-s-going-nowhere-sept-9-event-mtpvpcj1?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc4ODcwNTgwOCwiZXhwIjoxNzg5MzEwNjA4LCJhcnRpY2xlSWQiOiJUS1k0ODFLR0NURlEwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.VPVLP03ZWjEbH48efjq8Q7n0_vk4t7OynYeaUbOfYzU&amp;amp;amp;leadSource=article-gifting">Gurman on Schiller’s Departure and Ternus’s Goals for the App Store</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 23/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>马克·古尔曼在其最新的彭博专栏中指出，斯科特·席勒的离职备受关注。与马斯特里不同，席勒仍然担任着重要职务，他曾负责苹果的应用商店和Apple Events。应用商店业务体量巨大，年收入估计达300亿美元，管理难度极高。尽管苹果的应用市场受到许多消费者喜爱，但开发者对其常有批评，且面临日益严格的监管。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Mark Gurman's latest Bloomberg column highlights the notable departure of Scott Schiller. Unlike Maestri, Schiller held a significant role, overseeing the App Store and Apple Events. The App Store alone is a massive business, generating an estimated $30 billion annually and presenting considerable management challenges. This marketplace, while popular with consumers, frequently faces criticism from developers and increasing regulatory scrutiny.</blockquote>
 <p>🏷️ App Store, Apple, Schiller</p>
 <hr>
-<h3>14. Pluralistic: Google 逃避责任 (2026年9月5日)</h3>
-<p><a href="https://pluralistic.net/2026/09/05/divorce-court/">Pluralistic: Google skates (05 Sep 2026)</a> — <strong>pluralistic.net</strong> · 1 天前 · ⭐ 22/30</p>
+<h3>11. Pluralistic：企业如何构建更好的“蟑螂旅馆”（2026年9月7日）</h3>
+<p><a href="https://pluralistic.net/2026/09/06/hotels-california/">Pluralistic: How corporate America built a better Roach Motel (07 Sep 2026)</a> — <strong>pluralistic.net</strong> · 22 小时前 · ⭐ 21/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>本文链接集涵盖了多个主题，包括联邦法官在处理案件时的失误、内存操纵广告、“Dzur”技术、新西兰的数字版权管理（DRM）政策、加拿大人对互联网的看法、自助出版和作家建议，以及维基百科的运作机制。此外，还列出了作者即将和近期的一些公开露面活动，以及其最新出版的书籍信息。</blockquote>
+<blockquote>今天的链接聚焦“企业如何构建更好的蟑螂旅馆”这一主题。文章还提到了“人质每天殴打顾客”等内容。此外，还包括了“令人愉悦的享受”、“物体恒存性：三孔打孔器”、“华纳兄弟诉华纳兄弟”等多个独立话题，以及关于隐私战争恶化、AI武器化、香港选举改革、股票回购骗局等内容。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This collection of links touches upon various topics including a federal judge's missteps, memory-hacking ads, 'Dzur,' New Zealand's DRM policies, Canadian perspectives on the internet, advice for self-publishers and writers, and the mechanics of Wikipedia. It also lists upcoming and recent author appearances and information about their latest books.</blockquote>
-<p>🏷️ Google, DRM, self-publishing, Wikipedia</p>
+<blockquote>Today's links explore the theme of 'How corporate America built a better Roach Motel.' The article also touches upon topics like 'Hostages beat customers every day.' Additionally, it covers various independent subjects such as 'Delights to delectate,' 'Object permanence: 3-hole punches,' and 'Warner Bros v Warner Bros,' alongside discussions on worsening privacy wars, weaponized AI, Hong Kong election reforms, and stock buyback scams.</blockquote>
+<p>🏷️ corporate America, privacy, tech news</p>
 <hr>
 <h2>🔒 安全</h2>
-<h3>15. DNS 的目的就是传播诈骗</h3>
-<p><a href="https://simonwillison.net/2026/Sep/6/the-purpose-of-dns-is-to-spread-scams/">The purpose of DNS is to spread scams</a> — <strong>simonwillison.net</strong> · 13 小时前 · ⭐ 23/30</p>
+<h3>12. 企业如何构建“更好的蟑螂旅馆”：对客户的剥削</h3>
+<p><a href="https://simonwillison.net/2026/Sep/6/the-purpose-of-dns-is-to-spread-scams/">The purpose of DNS is to spread scams</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 24/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>文章引用 Terence Eden 的观点，指出域名系统（DNS）已成为犯罪分子进行诈骗的温床，其“目的”似乎已演变为传播诈骗。数据表明，DNS 被用于网络钓鱼和恶意软件分发等活动的比率极高。这揭示了 DNS 在当前网络安全环境下面临的严峻挑战。</blockquote>
+<blockquote>文章以“企业如何构建一个更好的蟑螂旅馆”为题，揭示了企业如何通过各种手段剥削客户。内容涵盖了从“人质”式的客户服务到对隐私的侵犯，以及对开源社区的阻碍等多个方面。文章还提到了近期的一些事件和趋势，如对 DRM 的快速修复、股票回购的争议等，旨在批判企业行为对消费者和社会的负面影响。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Citing Terence Eden, the article argues that the Domain Name System (DNS) has become a primary vector for criminals to perpetrate scams at a terrifyingly high rate. Statistics indicate a significant portion of DNS usage is associated with fraudulent activities, highlighting the system's vulnerability and its unintended role in facilitating cybercrime.</blockquote>
-<p>🏷️ DNS, scams, Domain Name System</p>
+<blockquote>Titled 'How corporate America built a better Roach Motel,' this article exposes how corporations exploit customers through various means, ranging from 'hostage' customer service and privacy violations to hindering open-source communities. It touches upon recent events and trends, including faster DRM patching than other bugs and controversies surrounding stock buybacks, aiming to critique the negative impact of corporate practices on consumers and society.</blockquote>
+<p>🏷️ DNS, Scams, Cybersecurity</p>
 <hr>
-<p>*生成于 2026-09-07 04:02 | 扫描 83 源 → 获取 2523 篇 → 精选 15 篇* *基于 <a href="https://refactoringenglish.com/tools/hn-popularity/">Hacker News Popularity Contest 2025</a> RSS 源列表，由 <a href="https://x.com/karpathy">Andrej Karpathy</a> 推荐*</p>
+<h3>13. DNS 的目的似乎是传播诈骗</h3>
+<p><a href="https://shkspr.mobi/blog/2026/09/the-purpose-of-dns-is-to-spread-scams/">The purpose of DNS is to spread scams</a> — <strong>shkspr.mobi</strong> · 1 天前 · ⭐ 24/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>文章指出，许多用户会收到声称税务逾期或包裹被扣留的诈骗信息，并被引导至虚假网站。虽然大多数人能识别并忽略这些诈骗，但仍有相当一部分人会受骗。这突显了 DNS 在网络钓鱼和诈骗活动中的作用。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>The article points out that many users receive scam messages claiming overdue taxes or delayed parcels, directing them to fake websites. While most people can identify and ignore these scams, a significant number fall victim, highlighting the role of DNS in phishing and fraudulent activities.</blockquote>
+<p>🏷️ DNS, Scams, Phishing</p>
+<hr>
+<h3>14. 爬虫的滋扰</h3>
+<p><a href="https://simonwillison.net/2026/Sep/7/creepy-crawlies/">Creepy crawlies</a> — <strong>simonwillison.net</strong> · 4 小时前 · ⭐ 23/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Konstantin Ryabitsev 从 git.kernel.org 的角度，描述了恶意爬虫造成的“背景辐射”问题已变得多么严重。他指出，用于渲染提交给爬虫的 CPU 周期，已经超过了所有其他合法访问（包括 git 克隆）的总和。这表明了对开源项目基础设施的巨大压力。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Konstantin Ryabitsev discusses the severe problem of abusive 'background radiation' from crawlers from the perspective of git.kernel.org. He notes that CPU cycles spent rendering commits for scrapers now exceed those for all other legitimate access, including git clones, indicating significant strain on open-source project infrastructure.</blockquote>
+<p>🏷️ git.kernel.org, abusive crawlers, security, infrastructure</p>
+<hr>
+<h2>⚙️ 工程</h2>
+<h3>15. WorkOS：如何为 Agent 分配任务而非 Token</h3>
+<p><a href="https://workos.com/blog/delegated-access-for-ai-agents?utm_source=daringfireball&amp;amp;amp;utm_medium=newsletter&amp;amp;amp;utm_campaign=q32026">WorkOS: How to Give an Agent a Task Instead of a Token</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 23/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>WorkOS 提出了一种新的 AI Agent 访问控制方法，即通过任务委托而非直接授予 Token。这种方法将凭证保留在 WorkOS，Agent 通过命名用户来请求访问，WorkOS 负责 Token 的刷新和仅授权给允许的主机。这能有效限制被劫持 Agent 会话的潜在危害。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>WorkOS introduces a novel approach to AI Agent access control by delegating tasks instead of directly granting tokens. This method keeps credentials at WorkOS, with agents requesting access by naming users, and WorkOS managing token refreshing and allowing access only to whitelisted hosts. This effectively limits the potential harm from hijacked agent sessions.</blockquote>
+<p>🏷️ AI Agent, Token Management, WorkOS</p>
+<hr>
+<p>*生成于 2026-09-08 04:04 | 扫描 84 源 → 获取 2553 篇 → 精选 15 篇* *基于 <a href="https://refactoringenglish.com/tools/hn-popularity/">Hacker News Popularity Contest 2025</a> RSS 源列表，由 <a href="https://x.com/karpathy">Andrej Karpathy</a> 推荐*</p>
     </article>
   </main>
-  <script id="speech-text" type="application/json">"🎧 点这里朗读今日日报\n📰 AI 博客每日精选 — 2026-09-07\n来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15\n📝 今日看点\n今日技术看点聚焦 AI 发展新动向与安全挑战。OpenAI 在 AGI 研究加速和 GPT-6 Astra 模型上取得突破，预示着 AI 能力的飞跃，但 Agent 安全与哲学边界的探讨也日益凸显。同时，WebAssembly 和原生 Mac 应用的集成，以及新的 AI Agent 访问控制方式，展现了技术工具和工程实践的持续演进。\n \n🏆 今日必读\n🥇 OpenAI 的研究加速：内部视角\nResearch acceleration: The view inside OpenAI — simonwillison.net · 4 小时前 · 🤖 AI / ML\n中文摘要\nOpenAI 发布了关于其新一代 AGI（递归自我改进）的研究加速计划。该计划旨在通过自动化和优化研究流程来加速 AI 的发展。文章详细介绍了 OpenAI 内部如何实现这一目标，包括对研究人员和工具的投入。这标志着 AI 领域向更自主和高效的研究范式迈进。\nEnglish Summary\nOpenAI is accelerating its research with a focus on Recursive Self-Improvement (RSI), hinting at a new AGI. This initiative aims to speed up AI development by optimizing research processes and tools. The article provides an internal perspective on how OpenAI is achieving this acceleration, underscoring a shift towards more autonomous and efficient AI research paradigms.\n💡 为什么值得读: 了解 OpenAI 如何通过递归自我改进加速 AI 研究，以及其对 AGI 的最新进展。\n💡 Why read it: Understand how OpenAI is accelerating AI research through Recursive Self-Improvement and their latest advancements in AGI.\n🏷️ OpenAI, AGI, research acceleration\n🥈 Debian 代码搜索：使用 Go SIMD 实现的快速 TurboPFor\nDebian Code Search: Fast TurboPFor with Go SIMD — michael.stapelberg.ch · 21 小时前 · ⚙️ 工程\n中文摘要\nDebian 代码搜索（DCS）成功移除了最后一个 cgo 依赖，实现了完全的 Go 语言实现。这得益于 Go 语言新增的 SIMD 支持，使得 TurboPFor 整型压缩格式的实现比原先的参考实现更高效，甚至利用了 AVX512 指令集。DCS 需要快速的整型编解码器来支持其大规模代码搜索功能。\nEnglish Summary\nDebian Code Search (DCS) has eliminated its last cgo dependency by implementing the TurboPFor integer compression format entirely in Go. This was made possible by Go's new SIMD support, achieving greater efficiency than the reference implementation by leveraging the AVX512 instruction set. This optimization is crucial for DCS's function as a high-performance code search engine.\n💡 为什么值得读: 了解 Go 语言 SIMD 如何赋能 Debian 代码搜索，实现更高效的 TurboPFor 压缩。\n💡 Why read it: Learn how Go's SIMD capabilities empower Debian Code Search with a more efficient TurboPFor compression implementation.\n🏷️ Go, SIMD, Debian Code Search, performance\n🥉 Anubis 花费一年时间才上线 WebAssembly\nIt took a year to ship WebAssembly in Anubis — xeiaso.net · 1 天前 · 🛠 工具 / 开源\n中文摘要\n经过一年的开发、数百次提交和多次重写，Anubis 系统终于在下一版本中集成了基于 WebAssembly 的工作量证明（PoW）检查。管理员现在可以启用这一功能来增强其阈值或机器人规则。这一集成过程涉及了 Rust 重写、编译器 bug 修复以及大量的内存消耗。\nEnglish Summary\nAfter a year of development, hundreds of commits, and significant rewrites, Anubis is set to ship with WebAssembly-based proof-of-work (PoW) checks in its next version. This feature allows administrators to enable WASM-based PoW for their thresholds or bot rules, enhancing system security. The integration involved substantial effort, including rewriting parts in Rust and overcoming technical challenges.\n💡 为什么值得读: 深入了解 Anubis 如何克服技术挑战，耗时一年将 WebAssembly 集成到其工作量证明机制中。\n💡 Why read it: Explore the year-long effort and technical challenges overcome by Anubis to integrate WebAssembly into its proof-of-work mechanism.\n🏷️ WebAssembly, Rust, compiler, Anubis\n \n📊 数据概览\n \n \n \n分类分布\nmermaid\npie showData\n title \"文章分类分布\"\n \"🛠 工具 / 开源\" : 5\n \"⚙️ 工程\" : 4\n \"🤖 AI / ML\" : 3\n \"💡 观点 / 杂谈\" : 2\n \"🔒 安全\" : 1\n高频关键词\nmermaid\nxychart-beta horizontal\n title \"高频关键词\"\n x-axis [\"technical debt\", \"openai\", \"agi\", \"research acceleration\", \"go\", \"simd\", \"debian code search\", \"performance\", \"webassembly\", \"rust\", \"compiler\", \"anubis\"]\n y-axis \"出现次数\" 0 --> 4\n bar [2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]\n📈 纯文本关键词图（终端友好）\ntechnical debt │ ████████████████████ 2\nopenai │ ██████████░░░░░░░░░░ 1\nagi │ ██████████░░░░░░░░░░ 1\nresearch acceleration │ ██████████░░░░░░░░░░ 1\ngo │ ██████████░░░░░░░░░░ 1\nsimd │ ██████████░░░░░░░░░░ 1\ndebian code search │ ██████████░░░░░░░░░░ 1\nperformance │ ██████████░░░░░░░░░░ 1\nwebassembly │ ██████████░░░░░░░░░░ 1\nrust │ ██████████░░░░░░░░░░ 1\n🏷️ 话题标签\ntechnical debt(2) · openai(1) · agi(1) · research acceleration(1) · go(1) · simd(1) · debian code search(1) · performance(1) · webassembly(1) · rust(1) · compiler(1) · anubis(1) · ai safety(1) · security(1) · ai agents(1) · sandbox(1) · gpt-6(1) · llm(1) · ai models(1) · developers(1)\n \n🛠 工具 / 开源\n1. Anubis 花费一年时间才上线 WebAssembly\nIt took a year to ship WebAssembly in Anubis — xeiaso.net · 1 天前 · ⭐ 26/30\n中文摘要\n经过一年的开发、数百次提交和多次重写，Anubis 系统终于在下一版本中集成了基于 WebAssembly 的工作量证明（PoW）检查。管理员现在可以启用这一功能来增强其阈值或机器人规则。这一集成过程涉及了 Rust 重写、编译器 bug 修复以及大量的内存消耗。\nEnglish Summary\nAfter a year of development, hundreds of commits, and significant rewrites, Anubis is set to ship with WebAssembly-based proof-of-work (PoW) checks in its next version. This feature allows administrators to enable WASM-based PoW for their thresholds or bot rules, enhancing system security. The integration involved substantial effort, including rewriting parts in Rust and overcoming technical challenges.\n🏷️ WebAssembly, Rust, compiler, Anubis\n \n2. 本周包管理：2026 年 9 月 5 日\nThis Week in Package Management: 5 September 2026 — nesbitt.io · 1 天前 · ⭐ 24/30\n中文摘要\n本周包管理聚焦于该领域的最新动态，包括重要的版本发布、安全公告以及相关的深度文章。内容涵盖了从不同包管理器生态系统中的更新到对行业趋势的分析，为从业者提供了全面的信息。\nEnglish Summary\nThis week in package management covers releases, advisories, and articles from across the package management world. It provides updates and insights from various package management ecosystems, offering a comprehensive overview for professionals in the field.\n🏷️ package management, releases, advisories\n \n3. Meta AI 现已推出原生 Mac 应用，表现不错\nMeta AI Has a Native Mac App Now, and It Seems Decent — daringfireball.net · 7 小时前 · ⭐ 23/30\n中文摘要\nMeta AI 已推出其首个原生 Mac 桌面应用（1.0 Beta 版），该应用体积小巧（16MB），运行在 Apple Silicon Mac 上，支持 macOS 15 及以上版本。它采用 AppKit 和 SwiftUI 构建，并使用 WebKit 处理富文本内容，而非 Electron 或 iPad repackaging。该应用集成了 Mac 特有的功能，提供了比移动应用更强大的桌面体验。\nEnglish Summary\nMeta AI has launched its first native Mac desktop app (version 1.0 beta), a lightweight 16MB application running natively on Apple Silicon Macs with macOS 15+. Built with AppKit and SwiftUI and using WebKit for rich chat content, it avoids Electron or repackaged iPad versions. The app includes Mac-specific hooks, offering a more robust desktop experience than its mobile counterpart.\n🏷️ Meta AI, Mac app, native app\n \n4. Litterbox：Safari 扩展，用于查看 X (Twitter) 推文\nLitterbox: Safari Extension for Viewing X Tweets — daringfireball.net · 11 小时前 · ⭐ 22/30\n中文摘要\n在 Nitter 和 XCancel 消失后，Zhenyi Tan 推出了 Litterbox，一个 Safari 扩展，旨在提供一种更私密的 X 平台内容查看方式。该扩展将 x.com 链接在新窗口中打开，允许用户查看推文，但设计上鼓励用户在看完后迅速关闭，以减少不必要的互动和数据泄露。Litterbox 的核心优势在于不发送用户 Cookie，提供了一个更注重隐私的浏览 X 内容的替代方案。\nEnglish Summary\nFollowing the demise of Nitter and XCancel, Zhenyi Tan has released Litterbox, a Safari extension designed for a more private way to view X (formerly Twitter) content. The extension opens x.com links in a popup, allowing users to view tweets with the intention of quick viewing and closing. Litterbox prioritizes user privacy by not sending cookies, offering an alternative for browsing X content with reduced tracking.\n🏷️ Safari extension, X, Litterbox\n \n5. 在 macOS 上将 Blender 与编码代理一起使用\nUsing Blender with coding agents on macOS — simonwillison.net · 1 天前 · ⭐ 21/30\n中文摘要\n在 macOS 上使用 ChatGPT Codex 和 Blender 结合编码代理非常简单。只需安装 blender.org 提供的完整 Mac 应用程序，然后使用特定格式的提示即可。例如，一个简单的提示可以指示代理使用已安装的 Blender 来渲染一个场景，如一个包含鹈鹕的场景。\nEnglish Summary\nUsing Blender with coding agents on macOS is straightforward with ChatGPT Codex. After installing the full Mac application from blender.org, users can employ prompts like instructing the agent to render a scene using the installed Blender application, for instance, a scene featuring a pelican.\n🏷️ Blender, coding agents, AI, macOS\n \n⚙️ 工程\n6. Debian 代码搜索：使用 Go SIMD 实现的快速 TurboPFor\nDebian Code Search: Fast TurboPFor with Go SIMD — michael.stapelberg.ch · 21 小时前 · ⭐ 26/30\n中文摘要\nDebian 代码搜索（DCS）成功移除了最后一个 cgo 依赖，实现了完全的 Go 语言实现。这得益于 Go 语言新增的 SIMD 支持，使得 TurboPFor 整型压缩格式的实现比原先的参考实现更高效，甚至利用了 AVX512 指令集。DCS 需要快速的整型编解码器来支持其大规模代码搜索功能。\nEnglish Summary\nDebian Code Search (DCS) has eliminated its last cgo dependency by implementing the TurboPFor integer compression format entirely in Go. This was made possible by Go's new SIMD support, achieving greater efficiency than the reference implementation by leveraging the AVX512 instruction set. This optimization is crucial for DCS's function as a high-performance code search engine.\n🏷️ Go, SIMD, Debian Code Search, performance\n \n7. WorkOS：如何赋予 Agent 任务而非 Token\nWorkOS: How to Give an Agent a Task Instead of a Token — daringfireball.net · 8 小时前 · ⭐ 23/30\n中文摘要\nWorkOS 提出了一种新的 AI Agent 访问控制方法，通过“委托访问”来管理 Agent 的权限，而非直接授予访问 Token。这种方法将凭证保留在 WorkOS，Agent 仅在被授权的主机上使用，且可被随时终止，从而降低了 Agent 被劫持的风险。这为 AI Agent 的安全部署提供了更精细化的控制。\nEnglish Summary\nWorkOS introduces a new approach to AI agent access control, focusing on 'delegated access' rather than direct token provisioning. This method keeps credentials at WorkOS, with agents using tokens only on allowlisted hosts and sessions being killable, significantly reducing the risk of hijacked agent sessions. It offers more granular control for secure AI agent deployment.\n🏷️ agent, access token, WorkOS\n \n8. 代码的糟糕程度没有上限\nThere's No Limit to How Bad Code Can Get — simonwillison.net · 18 小时前 · ⭐ 22/30\n中文摘要\n在技术债务堆积如山的情况下，从头开始重构项目往往难以成功。作者认为，与物理世界的建筑不同，软件代码没有内在的约束来阻止其变得越来越糟糕。总可以引入新的间接层或进一步降低性能。这种持续的退化使得代码库在理论上可以无限期地变得更差。\nEnglish Summary\nRelying on a 'burn it down and start over' approach for overwhelming technical debt is rarely successful. Unlike physical structures, software code has no inherent limit to how bad it can become; new layers of indirection or performance degradation can always be introduced. This continuous decay means codebases can theoretically worsen indefinitely.\n🏷️ code quality, technical debt, software development\n \n9. 引用 Zach Kehs 的观点\nQuoting Zach Kehs — simonwillison.net · 19 小时前 · ⭐ 22/30\n中文摘要\nZach Kehs 指出，与会不断增加楼层和房间的建筑最终会倒塌不同，软件代码没有这种物理约束。代码可以变得越来越糟，总能引入新的间接层或降低性能。这意味着软件的复杂性和糟糕程度可以无限增长。\nEnglish Summary\nZach Kehs observes that unlike buildings which eventually collapse under continuous expansion, software code faces no such constraint. Code can always degrade further, with new layers of indirection or performance reductions perpetually possible. This implies software's complexity and poor quality can grow without bound.\n🏷️ code complexity, software architecture, technical debt\n \n🤖 AI / ML\n10. OpenAI 的研究加速：内部视角\nResearch acceleration: The view inside OpenAI — simonwillison.net · 4 小时前 · ⭐ 26/30\n中文摘要\nOpenAI 发布了关于其新一代 AGI（递归自我改进）的研究加速计划。该计划旨在通过自动化和优化研究流程来加速 AI 的发展。文章详细介绍了 OpenAI 内部如何实现这一目标，包括对研究人员和工具的投入。这标志着 AI 领域向更自主和高效的研究范式迈进。\nEnglish Summary\nOpenAI is accelerating its research with a focus on Recursive Self-Improvement (RSI), hinting at a new AGI. This initiative aims to speed up AI development by optimizing research processes and tools. The article provides an internal perspective on how OpenAI is achieving this acceleration, underscoring a shift towards more autonomous and efficient AI research paradigms.\n🏷️ OpenAI, AGI, research acceleration\n \n11. 前沿实验室是否混淆了 AI 安全与安全？\nHave the frontier labs mixed up AI safety and security? — martinalderson.com · 1 天前 · ⭐ 25/30\n中文摘要\nOpenAI 和 Anthropic 近期发生的 Agent 沙盒逃逸事件，与其说是技术故障，不如说是哲学上的失误。作者认为，这些事件暴露了将安全控制视为“大部分时间有效”的观念问题。这表明在 AI 安全领域，对安全措施的理解和实施可能存在根本性偏差。\nEnglish Summary\nRecent agent sandbox escapes at OpenAI and Anthropic are viewed less as technical failures and more as philosophical ones, stemming from a mindset that treats security controls as only needing to work most of the time. This suggests a potential misunderstanding or misapplication of security principles within frontier AI labs.\n🏷️ AI safety, security, AI agents, sandbox\n \n12. 为开发者推出 GPT-6 Astra\nIntroducing GPT-6 Astra for developers — simonwillison.net · 1 天前 · ⭐ 24/30\n中文摘要\nOpenAI 发布了面向开发者的 GPT-6 Astra 模型，该模型在细节处理、用户提示理解和输出复杂性方面均有显著提升。特别之处在于，Astra 在生成 3D 模型方面表现出色，能够创建令人惊叹的渲染效果。此次发布标志着 OpenAI 在提升模型能力和开发者体验方面迈出了重要一步。\nEnglish Summary\nOpenAI introduces GPT-6 Astra for developers, showcasing significant improvements in attention to detail, prompt understanding, and output sophistication. Astra particularly excels at generating 3D models with impressive rendering capabilities. This release marks a notable advancement in OpenAI's efforts to enhance model performance and developer utility.\n🏷️ GPT-6, LLM, AI models, developers\n \n💡 观点 / 杂谈\n13. Gurman 谈 Schiller 离职及 Ternus 对 App Store 的目标\nGurman on Schiller’s Departure and Ternus’s Goals for the App Store — daringfireball.net · 11 小时前 · ⭐ 22/30\n中文摘要\nMark Gurman 在其 Power On 专栏中报道了 Phil Schiller 的离职及其对 App Store 的影响。Schiller 曾负责 App Store 和 Apple Events，而 App Store 每年能带来约 300 亿美元的收入，管理难度极大，并面临来自开发者和监管机构的双重压力。Ternus 接任后，其目标和策略将是文章关注的焦点。\nEnglish Summary\nMark Gurman reports on Phil Schiller's departure from his role overseeing the App Store and Apple Events. The App Store, a significant revenue generator estimated at $30 billion annually, faces challenges from developers and increasing regulations. The article touches upon the implications of this transition and the potential goals of the new leadership for the platform.\n🏷️ App Store, Apple, Schiller\n \n14. Pluralistic: Google 逃避责任 (2026年9月5日)\nPluralistic: Google skates (05 Sep 2026) — pluralistic.net · 1 天前 · ⭐ 22/30\n中文摘要\n本文链接集涵盖了多个主题，包括联邦法官在处理案件时的失误、内存操纵广告、“Dzur”技术、新西兰的数字版权管理（DRM）政策、加拿大人对互联网的看法、自助出版和作家建议，以及维基百科的运作机制。此外，还列出了作者即将和近期的一些公开露面活动，以及其最新出版的书籍信息。\nEnglish Summary\nThis collection of links touches upon various topics including a federal judge's missteps, memory-hacking ads, 'Dzur,' New Zealand's DRM policies, Canadian perspectives on the internet, advice for self-publishers and writers, and the mechanics of Wikipedia. It also lists upcoming and recent author appearances and information about their latest books.\n🏷️ Google, DRM, self-publishing, Wikipedia\n \n🔒 安全\n15. DNS 的目的就是传播诈骗\nThe purpose of DNS is to spread scams — simonwillison.net · 13 小时前 · ⭐ 23/30\n中文摘要\n文章引用 Terence Eden 的观点，指出域名系统（DNS）已成为犯罪分子进行诈骗的温床，其“目的”似乎已演变为传播诈骗。数据表明，DNS 被用于网络钓鱼和恶意软件分发等活动的比率极高。这揭示了 DNS 在当前网络安全环境下面临的严峻挑战。\nEnglish Summary\nCiting Terence Eden, the article argues that the Domain Name System (DNS) has become a primary vector for criminals to perpetrate scams at a terrifyingly high rate. Statistics indicate a significant portion of DNS usage is associated with fraudulent activities, highlighting the system's vulnerability and its unintended role in facilitating cybercrime.\n🏷️ DNS, scams, Domain Name System\n \n生成于 2026-09-07 04:02 | 扫描 83 源 → 获取 2523 篇 → 精选 15 篇\n基于 Hacker News Popularity Contest 2025 RSS 源列表，由 Andrej Karpathy 推荐"</script>
+  <script id="speech-text" type="application/json">"🎧 点这里朗读今日日报\n📰 AI 博客每日精选 — 2026-09-08\n来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15\n📝 今日看点\n今日技术看点聚焦人工智能的广泛应用与挑战。从苹果高管调整看AI生态的演进，到浏览器自动检测AI生成文本的需求凸显，AI正深刻影响内容创作与分发。同时，网络安全领域也面临AI驱动的诈骗和爬虫滋扰等新威胁，企业需构建更强大的防御体系。\n \n🏆 今日必读\n🥇 苹果高管变动：Schiller 离职与 Ternus 接管 App Store 的目标\nQuoting Jakub Pachocki — simonwillison.net · 5 小时前 · 🤖 AI / ML\n中文摘要\n苹果资深高管 Phil Schiller 将卸任 App Store 和 Apple Events 的领导职责，由 Greg Joswiak 接管。App Store 作为苹果一项年收入约 300 亿美元的关键业务，面临着来自开发者批评和日益严格的监管挑战。Schiller 的离职标志着苹果高层的一次重要人事调整，而新任领导者将如何应对 App Store 的复杂局面备受关注。\nEnglish Summary\nPhil Schiller, a veteran Apple executive, is stepping down from his leadership roles overseeing the App Store and Apple Events, with Greg Joswiak taking over. The App Store, a critical business generating an estimated $30 billion annually, faces ongoing challenges from developer criticism and increasing regulatory scrutiny. Schiller's departure marks a significant leadership transition within Apple, and the new leadership will navigate the complexities of the app marketplace.\n💡 为什么值得读: 了解苹果高层人事变动及其对关键业务 App Store 未来发展的影响。\n💡 Why read it: Understand the implications of Apple's executive changes on the future of its critical App Store business.\n🏷️ AI safety, scalable defense, aligned AI, AI development\n🥈 Litterbox：Safari 浏览器查看 X (Twitter) 推文的扩展程序\nResearch acceleration: The view inside OpenAI — simonwillison.net · 1 天前 · 🤖 AI / ML\n中文摘要\n在 Nitter 和 XCancel 等工具失效后，Zhenyi Tan 推出了名为 Litterbox 的 Safari 扩展程序，旨在解决用户查看 X (原 Twitter) 内容的需求。该扩展程序可以将 x.com 链接在弹出窗口中打开，方便用户快速浏览，并在完成后关闭。Litterbox 的设计理念是提供一个简洁、临时的 X 内容查看方式，同时避免发送用户 Cookie。\nEnglish Summary\nFollowing the demise of Nitter and XCancel, Zhenyi Tan has released Litterbox, a new Safari extension designed to facilitate viewing X (formerly Twitter) content. This extension opens x.com links in a popup window for quick browsing and can be easily closed afterward. Litterbox aims to provide a simple, ephemeral way to consume X content without sending user cookies.\n💡 为什么值得读: 为 Safari 用户提供一个在 Nitter 失效后查看 X (Twitter) 内容的便捷解决方案。\n💡 Why read it: Offers a convenient solution for Safari users to view X (Twitter) content after the discontinuation of tools like Nitter.\n🏷️ OpenAI, research acceleration, AGI, Recursive Self-Improvement\n🥉 Kunsten '92 论坛：关于人工智能的讨论\nllm 0.35 — simonwillison.net · 4 小时前 · 🛠 工具 / 开源\n中文摘要\n作者受邀在 Kunsten '92 的 Paradiso 论坛上就人工智能 (AI) 发表开场演讲，并参与了两小时的讨论。此次活动为来自科技界的作者提供了一个与艺术和文化领域人士交流的宝贵机会，作者认为这种跨界交流有助于拓宽视野和学习新知。\nEnglish Summary\nThe author was invited to give an opening speech at the Kunsten '92 Paradiso forum, followed by a two-hour discussion on Artificial Intelligence (AI). This event provided a valuable opportunity for the author, from the tech scene, to engage with professionals from the arts and culture sectors, fostering cross-disciplinary learning and broadening perspectives.\n💡 为什么值得读: 了解科技界人士对人工智能在艺术文化领域应用的看法和跨界交流的价值。\n💡 Why read it: Gain insights into perspectives on AI applications in arts and culture from a tech professional and the value of interdisciplinary exchange.\n🏷️ LLM, CLI tool, OpenAI, GPT-6 Astra\n \n📊 数据概览\n \n \n \n分类分布\nmermaid\npie showData\n title \"文章分类分布\"\n \"🤖 AI / ML\" : 4\n \"🛠 工具 / 开源\" : 4\n \"💡 观点 / 杂谈\" : 3\n \"🔒 安全\" : 3\n \"⚙️ 工程\" : 1\n高频关键词\nmermaid\nxychart-beta horizontal\n title \"高频关键词\"\n x-axis [\"ai safety\", \"openai\", \"ai\", \"dns\", \"scams\", \"tool\", \"scalable defense\", \"aligned ai\", \"ai development\", \"research acceleration\", \"agi\", \"recursive self-improvement\"]\n y-axis \"出现次数\" 0 --> 4\n bar [2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1]\n📈 纯文本关键词图（终端友好）\nai safety │ ████████████████████ 2\nopenai │ ████████████████████ 2\nai │ ████████████████████ 2\ndns │ ████████████████████ 2\nscams │ ████████████████████ 2\ntool │ ████████████████████ 2\nscalable defense │ ██████████░░░░░░░░░░ 1\naligned ai │ ██████████░░░░░░░░░░ 1\nai development │ ██████████░░░░░░░░░░ 1\nresearch acceleration │ ██████████░░░░░░░░░░ 1\n🏷️ 话题标签\nai safety(2) · openai(2) · ai(2) · dns(2) · scams(2) · tool(2) · scalable defense(1) · aligned ai(1) · ai development(1) · research acceleration(1) · agi(1) · recursive self-improvement(1) · llm(1) · cli tool(1) · gpt-6 astra(1) · doomer(1) · optimism(1) · cybersecurity(1) · phishing(1) · git.kernel.org(1)\n \n🤖 AI / ML\n1. 苹果高管变动：Schiller 离职与 Ternus 接管 App Store 的目标\nQuoting Jakub Pachocki — simonwillison.net · 5 小时前 · ⭐ 26/30\n中文摘要\n苹果资深高管 Phil Schiller 将卸任 App Store 和 Apple Events 的领导职责，由 Greg Joswiak 接管。App Store 作为苹果一项年收入约 300 亿美元的关键业务，面临着来自开发者批评和日益严格的监管挑战。Schiller 的离职标志着苹果高层的一次重要人事调整，而新任领导者将如何应对 App Store 的复杂局面备受关注。\nEnglish Summary\nPhil Schiller, a veteran Apple executive, is stepping down from his leadership roles overseeing the App Store and Apple Events, with Greg Joswiak taking over. The App Store, a critical business generating an estimated $30 billion annually, faces ongoing challenges from developer criticism and increasing regulatory scrutiny. Schiller's departure marks a significant leadership transition within Apple, and the new leadership will navigate the complexities of the app marketplace.\n🏷️ AI safety, scalable defense, aligned AI, AI development\n \n2. Litterbox：Safari 浏览器查看 X (Twitter) 推文的扩展程序\nResearch acceleration: The view inside OpenAI — simonwillison.net · 1 天前 · ⭐ 26/30\n中文摘要\n在 Nitter 和 XCancel 等工具失效后，Zhenyi Tan 推出了名为 Litterbox 的 Safari 扩展程序，旨在解决用户查看 X (原 Twitter) 内容的需求。该扩展程序可以将 x.com 链接在弹出窗口中打开，方便用户快速浏览，并在完成后关闭。Litterbox 的设计理念是提供一个简洁、临时的 X 内容查看方式，同时避免发送用户 Cookie。\nEnglish Summary\nFollowing the demise of Nitter and XCancel, Zhenyi Tan has released Litterbox, a new Safari extension designed to facilitate viewing X (formerly Twitter) content. This extension opens x.com links in a popup window for quick browsing and can be easily closed afterward. Litterbox aims to provide a simple, ephemeral way to consume X content without sending user cookies.\n🏷️ OpenAI, research acceleration, AGI, Recursive Self-Improvement\n \n3. Kunsten '92 讲座：AI 列车\nKunsten '92 praatje: De AI Trein — berthub.eu · 1 天前 · ⭐ 22/30\n中文摘要\n在 9 月 6 日星期日，作者为 Kunsten '92 的 Paradijs 辩论会发表了开场演讲，为关于人工智能的两小时讨论拉开了序幕。整个活动的视频录像非常出色，其中包含作者的发言。作者对组织方的邀请表示感谢，并认为这次跨界交流让他这位科技界的“书呆子”受益匪浅。\nEnglish Summary\nOn Sunday, September 6th, the author delivered the opening remarks for Kunsten '92's Paradijs debate, initiating a two-hour discussion on artificial intelligence. An excellent video recording of the entire event is available, featuring the author's contribution. The author expressed gratitude for the invitation and found the interdisciplinary exchange highly beneficial, offering a valuable perspective from the tech scene.\n🏷️ AI, Discussion, Art\n \n4. 在浏览器中自动检测 AI 生成文本\nAutomatically detecting AI text in my browser — seangoedecke.com · 4 小时前 · ⭐ 21/30\n中文摘要\n目前，自动检测 AI 生成文本是一个服务不足的领域。Pangram 是该领域唯一的工具，表现出色但急需竞争。作者预测，未来几年内，各大社交网络可能会扫描新帖子和评论中的 AI 内容，并进行标记或移除。作者表示，他可以依赖 Pangram 来确认自己的怀疑。\nEnglish Summary\nAutomated detection of AI-generated text is currently an underserved niche, with Pangram being the sole, albeit excellent, tool in the market, desperately needing competition. The author anticipates that within a few years, major social networks will likely scan new posts and comments for AI content, either tagging or removing it. The author finds Pangram reliable for confirming his suspicions.\n🏷️ AI text detection, browser extension, Pangram\n \n🛠 工具 / 开源\n5. Kunsten '92 论坛：关于人工智能的讨论\nllm 0.35 — simonwillison.net · 4 小时前 · ⭐ 24/30\n中文摘要\n作者受邀在 Kunsten '92 的 Paradiso 论坛上就人工智能 (AI) 发表开场演讲，并参与了两小时的讨论。此次活动为来自科技界的作者提供了一个与艺术和文化领域人士交流的宝贵机会，作者认为这种跨界交流有助于拓宽视野和学习新知。\nEnglish Summary\nThe author was invited to give an opening speech at the Kunsten '92 Paradiso forum, followed by a two-hour discussion on Artificial Intelligence (AI). This event provided a valuable opportunity for the author, from the tech scene, to engage with professionals from the arts and culture sectors, fostering cross-disciplinary learning and broadening perspectives.\n🏷️ LLM, CLI tool, OpenAI, GPT-6 Astra\n \n6. 视频压缩工具\nVideo compressor — simonwillison.net · 9 小时前 · ⭐ 23/30\n中文摘要\n作者使用 Claude 5.1 编写了一个视频压缩工具，该工具利用 WebAssembly 和 FFMPEG，可以将手机录制的演示视频优化后发布到博客上。这个工具的开发展示了利用 AI 辅助进行 Web 开发和媒体处理的效率。\nEnglish Summary\nThe author developed a video compression tool using Claude 5.1, leveraging WebAssembly and FFMPEG. This tool optimizes demo videos recorded on a phone for blog publication, demonstrating the efficiency of AI-assisted web development and media processing.\n🏷️ video compressor, optimization, tool\n \n7. Mercator ↔ Equal Earth 地图投影转换工具\nMercator ↔ Equal Earth — simonwillison.net · 11 小时前 · ⭐ 23/30\n中文摘要\n作者利用 GPT-6 Astra（medium）在 ChatGPT Work 中构建了一个工具，用于在 Mercator 和 Equal Earth 地图投影之间进行动画过渡。该工具的开发源于对联合国近期投票采用 Equal Earth 投影的好奇，旨在可视化两种投影方式的差异。\nEnglish Summary\nThe author used GPT-6 Astra (medium) within ChatGPT Work to build a tool that creates animated transitions between the Mercator and Equal Earth map projections. This tool was developed out of curiosity about the UN's recent vote to adopt the Equal Earth projection, aiming to visualize the differences between the two.\n🏷️ map projection, Equal Earth, Mercator, tool\n \n8. Litterbox：用于查看 X 推文的 Safari 扩展\nLitterbox: Safari Extension for Viewing X Tweets — daringfireball.net · 1 天前 · ⭐ 22/30\n中文摘要\n在 Nitter 和 XCancel 停止服务后，Zhenyi Tan 推出了名为 Litterbox 的新 Safari 扩展。该扩展旨在解决用户仍需查看 X（原 Twitter）内容的需求，例如查看特定用户的推文。Litterbox 会将 x.com 链接在新弹出窗口中打开，方便用户快速浏览后关闭。该扩展的一个特点是不会在用户打开链接时发送 Cookie。\nEnglish Summary\nFollowing the demise of Nitter and XCancel, Zhenyi Tan has released Litterbox, a new Safari extension. This tool addresses the ongoing need to view X (formerly Twitter) content, such as specific user posts. Litterbox opens x.com links in a pop-up window for quick viewing and closing, and notably, it does not send cookies when links are opened.\n🏷️ Safari Extension, X Tweets, Litterbox\n \n💡 观点 / 杂谈\n9. 浏览器中自动检测 AI 生成文本\nThe Education of a Doomer — borretti.me · 14 小时前 · ⭐ 24/30\n中文摘要\n文章指出，目前浏览器中自动检测 AI 生成文本是一个服务不足的领域，Pangram 是当前唯一的解决方案，但需要更多竞争。作者预测，未来几年内，各大社交网络可能会扫描新帖子和评论以识别和标记（或移除）AI 内容。文章作者正在开发自己的解决方案，并希望通过 Deckard 项目实现这一目标。\nEnglish Summary\nThe article highlights that automated AI text detection in browsers is an underserved niche, with Pangram being the sole current solution, though more competition is needed. The author predicts that major social networks will likely scan new posts and comments for AI content in the coming years to tag or remove it. The author is developing their own solution, aiming to achieve this through the Deckard project.\n🏷️ AI, doomer, optimism, AI safety\n \n10. 古尔曼谈席勒离职及特努斯对应用商店的目标\nGurman on Schiller’s Departure and Ternus’s Goals for the App Store — daringfireball.net · 1 天前 · ⭐ 23/30\n中文摘要\n马克·古尔曼在其最新的彭博专栏中指出，斯科特·席勒的离职备受关注。与马斯特里不同，席勒仍然担任着重要职务，他曾负责苹果的应用商店和Apple Events。应用商店业务体量巨大，年收入估计达300亿美元，管理难度极高。尽管苹果的应用市场受到许多消费者喜爱，但开发者对其常有批评，且面临日益严格的监管。\nEnglish Summary\nMark Gurman's latest Bloomberg column highlights the notable departure of Scott Schiller. Unlike Maestri, Schiller held a significant role, overseeing the App Store and Apple Events. The App Store alone is a massive business, generating an estimated $30 billion annually and presenting considerable management challenges. This marketplace, while popular with consumers, frequently faces criticism from developers and increasing regulatory scrutiny.\n🏷️ App Store, Apple, Schiller\n \n11. Pluralistic：企业如何构建更好的“蟑螂旅馆”（2026年9月7日）\nPluralistic: How corporate America built a better Roach Motel (07 Sep 2026) — pluralistic.net · 22 小时前 · ⭐ 21/30\n中文摘要\n今天的链接聚焦“企业如何构建更好的蟑螂旅馆”这一主题。文章还提到了“人质每天殴打顾客”等内容。此外，还包括了“令人愉悦的享受”、“物体恒存性：三孔打孔器”、“华纳兄弟诉华纳兄弟”等多个独立话题，以及关于隐私战争恶化、AI武器化、香港选举改革、股票回购骗局等内容。\nEnglish Summary\nToday's links explore the theme of 'How corporate America built a better Roach Motel.' The article also touches upon topics like 'Hostages beat customers every day.' Additionally, it covers various independent subjects such as 'Delights to delectate,' 'Object permanence: 3-hole punches,' and 'Warner Bros v Warner Bros,' alongside discussions on worsening privacy wars, weaponized AI, Hong Kong election reforms, and stock buyback scams.\n🏷️ corporate America, privacy, tech news\n \n🔒 安全\n12. 企业如何构建“更好的蟑螂旅馆”：对客户的剥削\nThe purpose of DNS is to spread scams — simonwillison.net · 1 天前 · ⭐ 24/30\n中文摘要\n文章以“企业如何构建一个更好的蟑螂旅馆”为题，揭示了企业如何通过各种手段剥削客户。内容涵盖了从“人质”式的客户服务到对隐私的侵犯，以及对开源社区的阻碍等多个方面。文章还提到了近期的一些事件和趋势，如对 DRM 的快速修复、股票回购的争议等，旨在批判企业行为对消费者和社会的负面影响。\nEnglish Summary\nTitled 'How corporate America built a better Roach Motel,' this article exposes how corporations exploit customers through various means, ranging from 'hostage' customer service and privacy violations to hindering open-source communities. It touches upon recent events and trends, including faster DRM patching than other bugs and controversies surrounding stock buybacks, aiming to critique the negative impact of corporate practices on consumers and society.\n🏷️ DNS, Scams, Cybersecurity\n \n13. DNS 的目的似乎是传播诈骗\nThe purpose of DNS is to spread scams — shkspr.mobi · 1 天前 · ⭐ 24/30\n中文摘要\n文章指出，许多用户会收到声称税务逾期或包裹被扣留的诈骗信息，并被引导至虚假网站。虽然大多数人能识别并忽略这些诈骗，但仍有相当一部分人会受骗。这突显了 DNS 在网络钓鱼和诈骗活动中的作用。\nEnglish Summary\nThe article points out that many users receive scam messages claiming overdue taxes or delayed parcels, directing them to fake websites. While most people can identify and ignore these scams, a significant number fall victim, highlighting the role of DNS in phishing and fraudulent activities.\n🏷️ DNS, Scams, Phishing\n \n14. 爬虫的滋扰\nCreepy crawlies — simonwillison.net · 4 小时前 · ⭐ 23/30\n中文摘要\nKonstantin Ryabitsev 从 git.kernel.org 的角度，描述了恶意爬虫造成的“背景辐射”问题已变得多么严重。他指出，用于渲染提交给爬虫的 CPU 周期，已经超过了所有其他合法访问（包括 git 克隆）的总和。这表明了对开源项目基础设施的巨大压力。\nEnglish Summary\nKonstantin Ryabitsev discusses the severe problem of abusive 'background radiation' from crawlers from the perspective of git.kernel.org. He notes that CPU cycles spent rendering commits for scrapers now exceed those for all other legitimate access, including git clones, indicating significant strain on open-source project infrastructure.\n🏷️ git.kernel.org, abusive crawlers, security, infrastructure\n \n⚙️ 工程\n15. WorkOS：如何为 Agent 分配任务而非 Token\nWorkOS: How to Give an Agent a Task Instead of a Token — daringfireball.net · 1 天前 · ⭐ 23/30\n中文摘要\nWorkOS 提出了一种新的 AI Agent 访问控制方法，即通过任务委托而非直接授予 Token。这种方法将凭证保留在 WorkOS，Agent 通过命名用户来请求访问，WorkOS 负责 Token 的刷新和仅授权给允许的主机。这能有效限制被劫持 Agent 会话的潜在危害。\nEnglish Summary\nWorkOS introduces a novel approach to AI Agent access control by delegating tasks instead of directly granting tokens. This method keeps credentials at WorkOS, with agents requesting access by naming users, and WorkOS managing token refreshing and allowing access only to whitelisted hosts. This effectively limits the potential harm from hijacked agent sessions.\n🏷️ AI Agent, Token Management, WorkOS\n \n生成于 2026-09-08 04:04 | 扫描 84 源 → 获取 2553 篇 → 精选 15 篇\n基于 Hacker News Popularity Contest 2025 RSS 源列表，由 Andrej Karpathy 推荐"</script>
   <script>
     const text = JSON.parse(document.getElementById('speech-text').textContent);
     const statusEl = document.getElementById('status');
