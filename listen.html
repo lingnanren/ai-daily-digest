@@ -52,201 +52,201 @@
   <main class="shell">
     <article class="card">
       <p>🎧 <a href="https://lingnanren.github.io/ai-daily-digest/listen.html">点这里朗读今日日报</a></p>
-<h1>📰 AI 博客每日精选 — 2026-09-08</h1>
+<h1>📰 AI 博客每日精选 — 2026-09-09</h1>
 <blockquote>来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15</blockquote>
 <h2>📝 今日看点</h2>
-<p>今日技术看点聚焦人工智能的广泛应用与挑战。从苹果高管调整看AI生态的演进，到浏览器自动检测AI生成文本的需求凸显，AI正深刻影响内容创作与分发。同时，网络安全领域也面临AI驱动的诈骗和爬虫滋扰等新威胁，企业需构建更强大的防御体系。</p>
+<p>今日技术看点聚焦AI浪潮下的挑战与机遇：一方面，AI正以前所未有的速度渗透内容创作与科学研究，从AI生成文本检测到AI加速数学难题的“消耗”，都引发了关于原创性与研究边界的深刻讨论；另一方面，AI也在赋能开发者，如利用Claude AI构建视频压缩工具，以及LLM新版本对更多模型的支持，展现了AI作为生产力工具的巨大潜力。同时，开源社区也在积极应对技术挑战，如OpenNMC为昂贵的硬件提供了开源替代方案，而安全领域则在探讨如何应对AI时代可能出现的重放攻击等新威胁。</p>
 <hr>
 <h2>🏆 今日必读</h2>
-<p>🥇 <strong>苹果高管变动：Schiller 离职与 Ternus 接管 App Store 的目标</strong></p>
-<p><a href="https://simonwillison.net/2026/Sep/7/jakub-pachocki/">Quoting Jakub Pachocki</a> — simonwillison.net · 5 小时前 · 🤖 AI / ML</p>
+<p>🥇 <strong>git.kernel.org 遭遇恶意爬虫困扰，CPU 资源消耗过大</strong></p>
+<p><a href="https://krebsonsecurity.com/2026/09/microsoft-plugs-nearly-1000-security-holes/">Microsoft Plugs Nearly 1,000 Security Holes</a> — krebsonsecurity.com · 6 小时前 · 🔒 安全</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>苹果资深高管 Phil Schiller 将卸任 App Store 和 Apple Events 的领导职责，由 Greg Joswiak 接管。App Store 作为苹果一项年收入约 300 亿美元的关键业务，面临着来自开发者批评和日益严格的监管挑战。Schiller 的离职标志着苹果高层的一次重要人事调整，而新任领导者将如何应对 App Store 的复杂局面备受关注。</blockquote>
+<blockquote>Linux 内核官方 Git 仓库 git.kernel.org 正面临日益严重的恶意爬虫问题。这些爬虫消耗的 CPU 资源已超过所有合法访问（包括 Git 克隆）的总和。作者指出，渲染提交信息给爬虫所花费的 CPU 周期，比服务所有其他合法用户（如克隆仓库）的资源还要多。这种“背景辐射”式的滥用正严重影响仓库的正常运行和资源分配。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Phil Schiller, a veteran Apple executive, is stepping down from his leadership roles overseeing the App Store and Apple Events, with Greg Joswiak taking over. The App Store, a critical business generating an estimated $30 billion annually, faces ongoing challenges from developer criticism and increasing regulatory scrutiny. Schiller's departure marks a significant leadership transition within Apple, and the new leadership will navigate the complexities of the app marketplace.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 了解苹果高层人事变动及其对关键业务 App Store 未来发展的影响。</p>
-<p>💡 <strong>Why read it</strong>: Understand the implications of Apple's executive changes on the future of its critical App Store business.</p>
-<p>🏷️ AI safety, scalable defense, aligned AI, AI development</p>
-<p>🥈 <strong>Litterbox：Safari 浏览器查看 X (Twitter) 推文的扩展程序</strong></p>
-<p><a href="https://simonwillison.net/2026/Sep/6/research-acceleration-the-view-inside-openai/">Research acceleration: The view inside OpenAI</a> — simonwillison.net · 1 天前 · 🤖 AI / ML</p>
+<blockquote>The official Git repository for the Linux kernel, git.kernel.org, is experiencing a significant problem with abusive crawlers. These bots are consuming more CPU cycles rendering commits for scrapers than for all legitimate access, including Git clones. The "background radiation" of these crawlers is so severe that it outweighs the resources used for all other valid operations, impacting the repository's performance and resource allocation.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 了解开源项目基础设施面临的真实挑战，以及如何被恶意流量挤占宝贵资源。</p>
+<p>💡 <strong>Why read it</strong>: Understand the real-world infrastructure challenges faced by open-source projects and how malicious traffic can consume valuable resources.</p>
+<p>🏷️ Microsoft, vulnerabilities, security, AI</p>
+<p>🥈 <strong>界面设计的本质：交互而非静态图像</strong></p>
+<p><a href="https://simonwillison.net/2026/Sep/8/on-navier-stokes/">On the Navier–Stokes Millennium Prize Problem</a> — simonwillison.net · 4 小时前 · 🤖 AI / ML</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>在 Nitter 和 XCancel 等工具失效后，Zhenyi Tan 推出了名为 Litterbox 的 Safari 扩展程序，旨在解决用户查看 X (原 Twitter) 内容的需求。该扩展程序可以将 x.com 链接在弹出窗口中打开，方便用户快速浏览，并在完成后关闭。Litterbox 的设计理念是提供一个简洁、临时的 X 内容查看方式，同时避免发送用户 Cookie。</blockquote>
+<blockquote>文章通过对比静态图片难以体现界面交互性的挑战，强调了界面的核心在于其“工作方式”即用户如何与之交互。作者认为，在设计新界面时，试图通过静态图像比较旧界面是无效的，因为这忽略了用户实际操作中的感受和效率。真正的界面评估应关注其动态交互体验，而非孤立的视觉元素。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Following the demise of Nitter and XCancel, Zhenyi Tan has released Litterbox, a new Safari extension designed to facilitate viewing X (formerly Twitter) content. This extension opens x.com links in a popup window for quick browsing and can be easily closed afterward. Litterbox aims to provide a simple, ephemeral way to consume X content without sending user cookies.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 为 Safari 用户提供一个在 Nitter 失效后查看 X (Twitter) 内容的便捷解决方案。</p>
-<p>💡 <strong>Why read it</strong>: Offers a convenient solution for Safari users to view X (Twitter) content after the discontinuation of tools like Nitter.</p>
-<p>🏷️ OpenAI, research acceleration, AGI, Recursive Self-Improvement</p>
-<p>🥉 <strong>Kunsten '92 论坛：关于人工智能的讨论</strong></p>
-<p><a href="https://simonwillison.net/2026/Sep/7/llm/">llm 0.35</a> — simonwillison.net · 4 小时前 · 🛠 工具 / 开源</p>
+<blockquote>The article argues that the essence of interface design lies in its functionality and how users interact with it, rather than static visual comparisons. Static images fail to capture the true user experience and the nuances of interaction. Evaluating an interface requires understanding its dynamic behavior and how it feels to use, not just how it looks in a still frame.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 深入理解界面设计的关键在于用户体验和交互性，而非仅仅是视觉呈现。</p>
+<p>💡 <strong>Why read it</strong>: Gain a deeper understanding of why user experience and interactivity are paramount in interface design, beyond mere visual presentation.</p>
+<p>🏷️ Navier-Stokes, OpenAI, AI, mathematics</p>
+<p>🥉 <strong>OpenNMC：昂贵的 APC 管理卡开源替代方案</strong></p>
+<p><a href="https://simonwillison.net/2026/Sep/7/jakub-pachocki/">Quoting Jakub Pachocki</a> — simonwillison.net · 1 天前 · 🤖 AI / ML</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>作者受邀在 Kunsten '92 的 Paradiso 论坛上就人工智能 (AI) 发表开场演讲，并参与了两小时的讨论。此次活动为来自科技界的作者提供了一个与艺术和文化领域人士交流的宝贵机会，作者认为这种跨界交流有助于拓宽视野和学习新知。</blockquote>
+<blockquote>文章介绍了 OpenNMC，一个旨在替代昂贵的 APC UPS（不间断电源）管理卡的开源解决方案。UPS 在数据中心和家庭实验室中至关重要，主要负责在断电时安全关闭服务器并调节电源。OpenNMC 提供了一个更经济实惠且功能强大的替代方案，允许用户更有效地管理和监控其 UPS 设备。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>The author was invited to give an opening speech at the Kunsten '92 Paradiso forum, followed by a two-hour discussion on Artificial Intelligence (AI). This event provided a valuable opportunity for the author, from the tech scene, to engage with professionals from the arts and culture sectors, fostering cross-disciplinary learning and broadening perspectives.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 了解科技界人士对人工智能在艺术文化领域应用的看法和跨界交流的价值。</p>
-<p>💡 <strong>Why read it</strong>: Gain insights into perspectives on AI applications in arts and culture from a tech professional and the value of interdisciplinary exchange.</p>
-<p>🏷️ LLM, CLI tool, OpenAI, GPT-6 Astra</p>
+<blockquote>OpenNMC is presented as an open-source alternative to expensive proprietary APC management cards for UPS (Uninterruptible Power Supply) devices. UPS units are critical for ensuring safe server shutdowns during power outages and for power conditioning. OpenNMC offers a cost-effective and capable solution for managing and monitoring these essential pieces of hardware.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 为寻求经济高效的 UPS 管理方案的读者提供了一个值得关注的开源项目。</p>
+<p>💡 <strong>Why read it</strong>: Highlights a noteworthy open-source project for readers seeking cost-effective UPS management solutions.</p>
+<p>🏷️ AI safety, AI defense, LLM development</p>
 <hr>
 <h2>📊 数据概览</h2>
-<table><thead><tr><th>扫描源</th><th>抓取文章</th><th>时间范围</th><th>精选</th></tr></thead><tbody><tr><td>84/92</td><td>2553 篇 → 33 篇</td><td>48h</td><td><strong>15 篇</strong></td></tr></tbody></table>
+<table><thead><tr><th>扫描源</th><th>抓取文章</th><th>时间范围</th><th>精选</th></tr></thead><tbody><tr><td>82/92</td><td>2499 篇 → 35 篇</td><td>48h</td><td><strong>15 篇</strong></td></tr></tbody></table>
 <h3>分类分布</h3>
 <div class="code-wrap"><div class="code-title">mermaid</div><pre><code>pie showData
     title "文章分类分布"
-    "🤖 AI / ML" : 4
-    "🛠 工具 / 开源" : 4
-    "💡 观点 / 杂谈" : 3
+    "🤖 AI / ML" : 7
     "🔒 安全" : 3
+    "🛠 工具 / 开源" : 3
+    "💡 观点 / 杂谈" : 1
     "⚙️ 工程" : 1</code></pre></div>
 <h3>高频关键词</h3>
 <div class="code-wrap"><div class="code-title">mermaid</div><pre><code>xychart-beta horizontal
     title "高频关键词"
-    x-axis ["ai safety", "openai", "ai", "dns", "scams", "tool", "scalable defense", "aligned ai", "ai development", "research acceleration", "agi", "recursive self-improvement"]
-    y-axis "出现次数" 0 --&gt; 4
-    bar [2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1]</code></pre></div>
+    x-axis ["ai", "mathematics", "security", "navier-stokes", "openai", "llm", "microsoft", "vulnerabilities", "ai safety", "ai defense", "llm development", "chatgpt"]
+    y-axis "出现次数" 0 --&gt; 6
+    bar [4, 3, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1]</code></pre></div>
 <div class="details">
 <p class="summary">📈 纯文本关键词图（终端友好）</p>
-<div class="code-wrap"><pre><code>ai safety             │ ████████████████████ 2
-openai                │ ████████████████████ 2
-ai                    │ ████████████████████ 2
-dns                   │ ████████████████████ 2
-scams                 │ ████████████████████ 2
-tool                  │ ████████████████████ 2
-scalable defense      │ ██████████░░░░░░░░░░ 1
-aligned ai            │ ██████████░░░░░░░░░░ 1
-ai development        │ ██████████░░░░░░░░░░ 1
-research acceleration │ ██████████░░░░░░░░░░ 1</code></pre></div>
+<div class="code-wrap"><pre><code>ai              │ ████████████████████ 4
+mathematics     │ ███████████████░░░░░ 3
+security        │ ██████████░░░░░░░░░░ 2
+navier-stokes   │ ██████████░░░░░░░░░░ 2
+openai          │ ██████████░░░░░░░░░░ 2
+llm             │ ██████████░░░░░░░░░░ 2
+microsoft       │ █████░░░░░░░░░░░░░░░ 1
+vulnerabilities │ █████░░░░░░░░░░░░░░░ 1
+ai safety       │ █████░░░░░░░░░░░░░░░ 1
+ai defense      │ █████░░░░░░░░░░░░░░░ 1</code></pre></div>
 </div>
 <h3>🏷️ 话题标签</h3>
-<p><strong>ai safety</strong>(2) · <strong>openai</strong>(2) · <strong>ai</strong>(2) · dns(2) · scams(2) · tool(2) · scalable defense(1) · aligned ai(1) · ai development(1) · research acceleration(1) · agi(1) · recursive self-improvement(1) · llm(1) · cli tool(1) · gpt-6 astra(1) · doomer(1) · optimism(1) · cybersecurity(1) · phishing(1) · git.kernel.org(1)</p>
+<p><strong>ai</strong>(4) · <strong>mathematics</strong>(3) · <strong>security</strong>(2) · navier-stokes(2) · openai(2) · llm(2) · microsoft(1) · vulnerabilities(1) · ai safety(1) · ai defense(1) · llm development(1) · chatgpt(1) · image generation(1) · pretraining(1) · data(1) · model improvements(1) · ai detection(1) · browser extension(1) · pangram(1) · generative ai(1)</p>
 <hr>
 <h2>🤖 AI / ML</h2>
-<h3>1. 苹果高管变动：Schiller 离职与 Ternus 接管 App Store 的目标</h3>
-<p><a href="https://simonwillison.net/2026/Sep/7/jakub-pachocki/">Quoting Jakub Pachocki</a> — <strong>simonwillison.net</strong> · 5 小时前 · ⭐ 26/30</p>
+<h3>1. 界面设计的本质：交互而非静态图像</h3>
+<p><a href="https://simonwillison.net/2026/Sep/8/on-navier-stokes/">On the Navier–Stokes Millennium Prize Problem</a> — <strong>simonwillison.net</strong> · 4 小时前 · ⭐ 26/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>苹果资深高管 Phil Schiller 将卸任 App Store 和 Apple Events 的领导职责，由 Greg Joswiak 接管。App Store 作为苹果一项年收入约 300 亿美元的关键业务，面临着来自开发者批评和日益严格的监管挑战。Schiller 的离职标志着苹果高层的一次重要人事调整，而新任领导者将如何应对 App Store 的复杂局面备受关注。</blockquote>
+<blockquote>文章通过对比静态图片难以体现界面交互性的挑战，强调了界面的核心在于其“工作方式”即用户如何与之交互。作者认为，在设计新界面时，试图通过静态图像比较旧界面是无效的，因为这忽略了用户实际操作中的感受和效率。真正的界面评估应关注其动态交互体验，而非孤立的视觉元素。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Phil Schiller, a veteran Apple executive, is stepping down from his leadership roles overseeing the App Store and Apple Events, with Greg Joswiak taking over. The App Store, a critical business generating an estimated $30 billion annually, faces ongoing challenges from developer criticism and increasing regulatory scrutiny. Schiller's departure marks a significant leadership transition within Apple, and the new leadership will navigate the complexities of the app marketplace.</blockquote>
-<p>🏷️ AI safety, scalable defense, aligned AI, AI development</p>
+<blockquote>The article argues that the essence of interface design lies in its functionality and how users interact with it, rather than static visual comparisons. Static images fail to capture the true user experience and the nuances of interaction. Evaluating an interface requires understanding its dynamic behavior and how it feels to use, not just how it looks in a still frame.</blockquote>
+<p>🏷️ Navier-Stokes, OpenAI, AI, mathematics</p>
 <hr>
-<h3>2. Litterbox：Safari 浏览器查看 X (Twitter) 推文的扩展程序</h3>
-<p><a href="https://simonwillison.net/2026/Sep/6/research-acceleration-the-view-inside-openai/">Research acceleration: The view inside OpenAI</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 26/30</p>
+<h3>2. OpenNMC：昂贵的 APC 管理卡开源替代方案</h3>
+<p><a href="https://simonwillison.net/2026/Sep/7/jakub-pachocki/">Quoting Jakub Pachocki</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 26/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>在 Nitter 和 XCancel 等工具失效后，Zhenyi Tan 推出了名为 Litterbox 的 Safari 扩展程序，旨在解决用户查看 X (原 Twitter) 内容的需求。该扩展程序可以将 x.com 链接在弹出窗口中打开，方便用户快速浏览，并在完成后关闭。Litterbox 的设计理念是提供一个简洁、临时的 X 内容查看方式，同时避免发送用户 Cookie。</blockquote>
+<blockquote>文章介绍了 OpenNMC，一个旨在替代昂贵的 APC UPS（不间断电源）管理卡的开源解决方案。UPS 在数据中心和家庭实验室中至关重要，主要负责在断电时安全关闭服务器并调节电源。OpenNMC 提供了一个更经济实惠且功能强大的替代方案，允许用户更有效地管理和监控其 UPS 设备。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Following the demise of Nitter and XCancel, Zhenyi Tan has released Litterbox, a new Safari extension designed to facilitate viewing X (formerly Twitter) content. This extension opens x.com links in a popup window for quick browsing and can be easily closed afterward. Litterbox aims to provide a simple, ephemeral way to consume X content without sending user cookies.</blockquote>
-<p>🏷️ OpenAI, research acceleration, AGI, Recursive Self-Improvement</p>
+<blockquote>OpenNMC is presented as an open-source alternative to expensive proprietary APC management cards for UPS (Uninterruptible Power Supply) devices. UPS units are critical for ensuring safe server shutdowns during power outages and for power conditioning. OpenNMC offers a cost-effective and capable solution for managing and monitoring these essential pieces of hardware.</blockquote>
+<p>🏷️ AI safety, AI defense, LLM development</p>
 <hr>
-<h3>3. Kunsten '92 讲座：AI 列车</h3>
-<p><a href="https://berthub.eu/articles/posts/kunsten92-paradiso-2026/">Kunsten '92 praatje: De AI Trein</a> — <strong>berthub.eu</strong> · 1 天前 · ⭐ 22/30</p>
+<h3>3. 使用 Claude AI 构建的 WebAssembly 视频压缩工具</h3>
+<p><a href="https://simonwillison.net/2026/Sep/8/introducing-chatgpt-images-25/">Introducing ChatGPT Images 2.5</a> — <strong>simonwillison.net</strong> · 5 小时前 · ⭐ 25/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>在 9 月 6 日星期日，作者为 Kunsten '92 的 Paradijs 辩论会发表了开场演讲，为关于人工智能的两小时讨论拉开了序幕。整个活动的视频录像非常出色，其中包含作者的发言。作者对组织方的邀请表示感谢，并认为这次跨界交流让他这位科技界的“书呆子”受益匪浅。</blockquote>
+<blockquote>作者使用 Claude AI（Claude Fable 5.1 in Claude Code for web）构建了一个基于 WebAssembly 的视频压缩工具。该工具利用 FFMPEG，能够优化视频文件，以便在博客上发布。作者录制了一个短视频演示，并利用该工具生成了一个优化版本。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>On Sunday, September 6th, the author delivered the opening remarks for Kunsten '92's Paradijs debate, initiating a two-hour discussion on artificial intelligence. An excellent video recording of the entire event is available, featuring the author's contribution. The author expressed gratitude for the invitation and found the interdisciplinary exchange highly beneficial, offering a valuable perspective from the tech scene.</blockquote>
-<p>🏷️ AI, Discussion, Art</p>
+<blockquote>A WebAssembly-based video compressor tool was built using Claude AI (Claude Fable 5.1 in Claude Code for web). Leveraging FFMPEG, the tool optimizes video files for web publishing, as demonstrated by the author who used it to create an optimized version of a short demo video.</blockquote>
+<p>🏷️ ChatGPT, image generation, OpenAI, AI</p>
 <hr>
-<h3>4. 在浏览器中自动检测 AI 生成文本</h3>
-<p><a href="https://seangoedecke.com/deckard/">Automatically detecting AI text in my browser</a> — <strong>seangoedecke.com</strong> · 4 小时前 · ⭐ 21/30</p>
+<h3>4. SuperDuper 4：一款卓越的备份和克隆软件</h3>
+<p><a href="https://www.dwarkesh.com/p/pretraining-progress-is-mostly-data">Pretraining progress is mostly coming from data</a> — <strong>dwarkesh.com</strong> · 12 小时前 · ⭐ 25/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>目前，自动检测 AI 生成文本是一个服务不足的领域。Pangram 是该领域唯一的工具，表现出色但急需竞争。作者预测，未来几年内，各大社交网络可能会扫描新帖子和评论中的 AI 内容，并进行标记或移除。作者表示，他可以依赖 Pangram 来确认自己的怀疑。</blockquote>
+<blockquote>SuperDuper 4 被描述为一款“不可思议地好”的软件，专注于提供卓越的备份和磁盘克隆功能。该软件以其高质量和可靠性而闻名，为用户提供了强大的数据保护和系统迁移解决方案。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Automated detection of AI-generated text is currently an underserved niche, with Pangram being the sole, albeit excellent, tool in the market, desperately needing competition. The author anticipates that within a few years, major social networks will likely scan new posts and comments for AI content, either tagging or removing it. The author finds Pangram reliable for confirming his suspicions.</blockquote>
-<p>🏷️ AI text detection, browser extension, Pangram</p>
+<blockquote>SuperDuper 4 is lauded as "impossibly good" software, excelling in its backup and disk cloning capabilities. The application is recognized for its high quality and reliability, offering users a robust solution for data protection and system migration.</blockquote>
+<p>🏷️ pretraining, data, model improvements, LLM</p>
 <hr>
-<h2>🛠 工具 / 开源</h2>
-<h3>5. Kunsten '92 论坛：关于人工智能的讨论</h3>
-<p><a href="https://simonwillison.net/2026/Sep/7/llm/">llm 0.35</a> — <strong>simonwillison.net</strong> · 4 小时前 · ⭐ 24/30</p>
+<h3>5. 在浏览器中自动检测 AI 生成文本</h3>
+<p><a href="https://seangoedecke.com/deckard/">Automatically detecting AI text in my browser</a> — <strong>seangoedecke.com</strong> · 1 天前 · ⭐ 24/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>作者受邀在 Kunsten '92 的 Paradiso 论坛上就人工智能 (AI) 发表开场演讲，并参与了两小时的讨论。此次活动为来自科技界的作者提供了一个与艺术和文化领域人士交流的宝贵机会，作者认为这种跨界交流有助于拓宽视野和学习新知。</blockquote>
+<blockquote>AI 文本检测是一个尚待开发的领域，目前 Pangram 是该领域的主要服务商。文章预测，未来几年内，各大社交网络可能会扫描新帖子和评论以识别 AI 内容，并进行标记或移除。目前，Pangram 已能有效确认作者的怀疑。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>The author was invited to give an opening speech at the Kunsten '92 Paradiso forum, followed by a two-hour discussion on Artificial Intelligence (AI). This event provided a valuable opportunity for the author, from the tech scene, to engage with professionals from the arts and culture sectors, fostering cross-disciplinary learning and broadening perspectives.</blockquote>
-<p>🏷️ LLM, CLI tool, OpenAI, GPT-6 Astra</p>
+<blockquote>Automated AI text detection is an underserved niche, with Pangram currently being the primary service. The author predicts that major social networks will likely scan posts and comments for AI content within a few years to tag or remove it. Pangram currently provides reliable confirmation for suspicions.</blockquote>
+<p>🏷️ AI detection, browser extension, Pangram, generative AI</p>
 <hr>
-<h3>6. 视频压缩工具</h3>
-<p><a href="https://simonwillison.net/2026/Sep/7/video-compressor/">Video compressor</a> — <strong>simonwillison.net</strong> · 9 小时前 · ⭐ 23/30</p>
+<h3>6. llm 0.35 版本发布</h3>
+<p><a href="https://simonwillison.net/2026/Sep/7/llm/">llm 0.35</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 24/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>作者使用 Claude 5.1 编写了一个视频压缩工具，该工具利用 WebAssembly 和 FFMPEG，可以将手机录制的演示视频优化后发布到博客上。这个工具的开发展示了利用 AI 辅助进行 Web 开发和媒体处理的效率。</blockquote>
+<blockquote>llm 工具发布了 0.35 版本，新增了对 OpenAI 的 GPT-6 Astra 模型（代号 <code>gpt-6-astra</code>）的支持。该版本进一步扩展了对不同大型语言模型的集成能力。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>The author developed a video compression tool using Claude 5.1, leveraging WebAssembly and FFMPEG. This tool optimizes demo videos recorded on a phone for blog publication, demonstrating the efficiency of AI-assisted web development and media processing.</blockquote>
-<p>🏷️ video compressor, optimization, tool</p>
+<blockquote>The llm tool has released version 0.35, adding support for OpenAI's GPT-6 Astra model, identified by the model ID <code>gpt-6-astra</code>. This update expands integration capabilities with various large language models.</blockquote>
+<p>🏷️ LLM, local LLM, GPT-6 Astra, tooling</p>
 <hr>
-<h3>7. Mercator ↔ Equal Earth 地图投影转换工具</h3>
-<p><a href="https://simonwillison.net/2026/Sep/7/equal-earth/">Mercator ↔ Equal Earth</a> — <strong>simonwillison.net</strong> · 11 小时前 · ⭐ 23/30</p>
+<h3>7. 纳维-斯托克斯方程问题的新闻报道</h3>
+<p><a href="https://www.johndcook.com/blog/2026/09/08/navier-stokes-in-the-news/">Navier-Stokes in the news</a> — <strong>johndcook.com</strong> · 12 小时前 · ⭐ 23/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>作者利用 GPT-6 Astra（medium）在 ChatGPT Work 中构建了一个工具，用于在 Mercator 和 Equal Earth 地图投影之间进行动画过渡。该工具的开发源于对联合国近期投票采用 Equal Earth 投影的好奇，旨在可视化两种投影方式的差异。</blockquote>
+<blockquote>关于一个长期存在的数学难题——千禧年大奖难题之一的纳维-斯托克斯存在性与光滑性问题——已被解决的传闻甚嚣尘上。该问题涉及描述流体动力学的纳维-斯托克斯方程的数学特性，但公众对此的理解常被简化和误导。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>The author used GPT-6 Astra (medium) within ChatGPT Work to build a tool that creates animated transitions between the Mercator and Equal Earth map projections. This tool was developed out of curiosity about the UN's recent vote to adopt the Equal Earth projection, aiming to visualize the differences between the two.</blockquote>
-<p>🏷️ map projection, Equal Earth, Mercator, tool</p>
-<hr>
-<h3>8. Litterbox：用于查看 X 推文的 Safari 扩展</h3>
-<p><a href="https://andadinosaur.com/launch-litterbox">Litterbox: Safari Extension for Viewing X Tweets</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 22/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>在 Nitter 和 XCancel 停止服务后，Zhenyi Tan 推出了名为 Litterbox 的新 Safari 扩展。该扩展旨在解决用户仍需查看 X（原 Twitter）内容的需求，例如查看特定用户的推文。Litterbox 会将 x.com 链接在新弹出窗口中打开，方便用户快速浏览后关闭。该扩展的一个特点是不会在用户打开链接时发送 Cookie。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Following the demise of Nitter and XCancel, Zhenyi Tan has released Litterbox, a new Safari extension. This tool addresses the ongoing need to view X (formerly Twitter) content, such as specific user posts. Litterbox opens x.com links in a pop-up window for quick viewing and closing, and notably, it does not send cookies when links are opened.</blockquote>
-<p>🏷️ Safari Extension, X Tweets, Litterbox</p>
-<hr>
-<h2>💡 观点 / 杂谈</h2>
-<h3>9. 浏览器中自动检测 AI 生成文本</h3>
-<p><a href="https://borretti.me/article/the-education-of-a-doomer">The Education of a Doomer</a> — <strong>borretti.me</strong> · 14 小时前 · ⭐ 24/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>文章指出，目前浏览器中自动检测 AI 生成文本是一个服务不足的领域，Pangram 是当前唯一的解决方案，但需要更多竞争。作者预测，未来几年内，各大社交网络可能会扫描新帖子和评论以识别和标记（或移除）AI 内容。文章作者正在开发自己的解决方案，并希望通过 Deckard 项目实现这一目标。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>The article highlights that automated AI text detection in browsers is an underserved niche, with Pangram being the sole current solution, though more competition is needed. The author predicts that major social networks will likely scan new posts and comments for AI content in the coming years to tag or remove it. The author is developing their own solution, aiming to achieve this through the Deckard project.</blockquote>
-<p>🏷️ AI, doomer, optimism, AI safety</p>
-<hr>
-<h3>10. 古尔曼谈席勒离职及特努斯对应用商店的目标</h3>
-<p><a href="https://www.bloomberg.com/news/newsletters/2026-09-06/apple-s-new-ceo-like-cook-pay-package-shows-he-s-going-nowhere-sept-9-event-mtpvpcj1?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc4ODcwNTgwOCwiZXhwIjoxNzg5MzEwNjA4LCJhcnRpY2xlSWQiOiJUS1k0ODFLR0NURlEwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.VPVLP03ZWjEbH48efjq8Q7n0_vk4t7OynYeaUbOfYzU&amp;amp;amp;leadSource=article-gifting">Gurman on Schiller’s Departure and Ternus’s Goals for the App Store</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 23/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>马克·古尔曼在其最新的彭博专栏中指出，斯科特·席勒的离职备受关注。与马斯特里不同，席勒仍然担任着重要职务，他曾负责苹果的应用商店和Apple Events。应用商店业务体量巨大，年收入估计达300亿美元，管理难度极高。尽管苹果的应用市场受到许多消费者喜爱，但开发者对其常有批评，且面临日益严格的监管。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Mark Gurman's latest Bloomberg column highlights the notable departure of Scott Schiller. Unlike Maestri, Schiller held a significant role, overseeing the App Store and Apple Events. The App Store alone is a massive business, generating an estimated $30 billion annually and presenting considerable management challenges. This marketplace, while popular with consumers, frequently faces criticism from developers and increasing regulatory scrutiny.</blockquote>
-<p>🏷️ App Store, Apple, Schiller</p>
-<hr>
-<h3>11. Pluralistic：企业如何构建更好的“蟑螂旅馆”（2026年9月7日）</h3>
-<p><a href="https://pluralistic.net/2026/09/06/hotels-california/">Pluralistic: How corporate America built a better Roach Motel (07 Sep 2026)</a> — <strong>pluralistic.net</strong> · 22 小时前 · ⭐ 21/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>今天的链接聚焦“企业如何构建更好的蟑螂旅馆”这一主题。文章还提到了“人质每天殴打顾客”等内容。此外，还包括了“令人愉悦的享受”、“物体恒存性：三孔打孔器”、“华纳兄弟诉华纳兄弟”等多个独立话题，以及关于隐私战争恶化、AI武器化、香港选举改革、股票回购骗局等内容。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Today's links explore the theme of 'How corporate America built a better Roach Motel.' The article also touches upon topics like 'Hostages beat customers every day.' Additionally, it covers various independent subjects such as 'Delights to delectate,' 'Object permanence: 3-hole punches,' and 'Warner Bros v Warner Bros,' alongside discussions on worsening privacy wars, weaponized AI, Hong Kong election reforms, and stock buyback scams.</blockquote>
-<p>🏷️ corporate America, privacy, tech news</p>
+<blockquote>Rumors are circulating about the resolution of a long-standing mathematical problem, the Navier-Stokes existence and smoothness problem, one of the Millennium Prize Problems. This problem concerns the mathematical properties of the Navier-Stokes equations, which describe fluid dynamics, though popular accounts often oversimplify and mislead.</blockquote>
+<p>🏷️ Navier-Stokes, fluid dynamics, mathematics, news</p>
 <hr>
 <h2>🔒 安全</h2>
-<h3>12. 企业如何构建“更好的蟑螂旅馆”：对客户的剥削</h3>
-<p><a href="https://simonwillison.net/2026/Sep/6/the-purpose-of-dns-is-to-spread-scams/">The purpose of DNS is to spread scams</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 24/30</p>
+<h3>8. git.kernel.org 遭遇恶意爬虫困扰，CPU 资源消耗过大</h3>
+<p><a href="https://krebsonsecurity.com/2026/09/microsoft-plugs-nearly-1000-security-holes/">Microsoft Plugs Nearly 1,000 Security Holes</a> — <strong>krebsonsecurity.com</strong> · 6 小时前 · ⭐ 27/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>文章以“企业如何构建一个更好的蟑螂旅馆”为题，揭示了企业如何通过各种手段剥削客户。内容涵盖了从“人质”式的客户服务到对隐私的侵犯，以及对开源社区的阻碍等多个方面。文章还提到了近期的一些事件和趋势，如对 DRM 的快速修复、股票回购的争议等，旨在批判企业行为对消费者和社会的负面影响。</blockquote>
+<blockquote>Linux 内核官方 Git 仓库 git.kernel.org 正面临日益严重的恶意爬虫问题。这些爬虫消耗的 CPU 资源已超过所有合法访问（包括 Git 克隆）的总和。作者指出，渲染提交信息给爬虫所花费的 CPU 周期，比服务所有其他合法用户（如克隆仓库）的资源还要多。这种“背景辐射”式的滥用正严重影响仓库的正常运行和资源分配。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Titled 'How corporate America built a better Roach Motel,' this article exposes how corporations exploit customers through various means, ranging from 'hostage' customer service and privacy violations to hindering open-source communities. It touches upon recent events and trends, including faster DRM patching than other bugs and controversies surrounding stock buybacks, aiming to critique the negative impact of corporate practices on consumers and society.</blockquote>
-<p>🏷️ DNS, Scams, Cybersecurity</p>
+<blockquote>The official Git repository for the Linux kernel, git.kernel.org, is experiencing a significant problem with abusive crawlers. These bots are consuming more CPU cycles rendering commits for scrapers than for all legitimate access, including Git clones. The "background radiation" of these crawlers is so severe that it outweighs the resources used for all other valid operations, impacting the repository's performance and resource allocation.</blockquote>
+<p>🏷️ Microsoft, vulnerabilities, security, AI</p>
 <hr>
-<h3>13. DNS 的目的似乎是传播诈骗</h3>
-<p><a href="https://shkspr.mobi/blog/2026/09/the-purpose-of-dns-is-to-spread-scams/">The purpose of DNS is to spread scams</a> — <strong>shkspr.mobi</strong> · 1 天前 · ⭐ 24/30</p>
+<h3>9. ActivityPub 是否值得防御重放攻击和消息/签名时间偏移？</h3>
+<p><a href="https://shkspr.mobi/blog/2026/09/activitypub-is-it-worth-defending-against-replay-attacks-and-message-signature-time-skew/">ActivityPub - Is it worth defending against replay attacks and message/signature time skew?</a> — <strong>shkspr.mobi</strong> · 16 小时前 · ⭐ 23/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>文章指出，许多用户会收到声称税务逾期或包裹被扣留的诈骗信息，并被引导至虚假网站。虽然大多数人能识别并忽略这些诈骗，但仍有相当一部分人会受骗。这突显了 DNS 在网络钓鱼和诈骗活动中的作用。</blockquote>
+<blockquote>文章探讨了 ActivityPub 服务器 ActivityBot 偶尔接收到数月前发送消息的问题，并分析了接受和处理这些旧消息的风险。作者的初步结论是，可能不值得为此担忧，但希望有人能指出其错误之处。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>The article points out that many users receive scam messages claiming overdue taxes or delayed parcels, directing them to fake websites. While most people can identify and ignore these scams, a significant number fall victim, highlighting the role of DNS in phishing and fraudulent activities.</blockquote>
-<p>🏷️ DNS, Scams, Phishing</p>
+<blockquote>This article examines the issue of ActivityBot, an ActivityPub server, occasionally receiving messages sent months prior and analyzes the risks of accepting and processing them. The author's tentative conclusion is that it's likely not worth worrying about, but seeks counterarguments.</blockquote>
+<p>🏷️ ActivityPub, replay attacks, message signing, federated social media</p>
 <hr>
-<h3>14. 爬虫的滋扰</h3>
-<p><a href="https://simonwillison.net/2026/Sep/7/creepy-crawlies/">Creepy crawlies</a> — <strong>simonwillison.net</strong> · 4 小时前 · ⭐ 23/30</p>
+<h3>10. 爬虫的背景噪音</h3>
+<p><a href="https://simonwillison.net/2026/Sep/7/creepy-crawlies/">Creepy crawlies</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 23/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Konstantin Ryabitsev 从 git.kernel.org 的角度，描述了恶意爬虫造成的“背景辐射”问题已变得多么严重。他指出，用于渲染提交给爬虫的 CPU 周期，已经超过了所有其他合法访问（包括 git 克隆）的总和。这表明了对开源项目基础设施的巨大压力。</blockquote>
+<blockquote>Git 仓库的维护者 Konstantin Ryabitsev 讨论了来自恶意爬虫的“背景噪音”问题。这些爬虫消耗了比合法访问（包括 Git 克隆）更多的 CPU 资源。他指出，渲染爬虫提交信息所花费的 CPU 时间，甚至超过了所有其他合法访问的总和。这表明了自动化工具滥用对开源项目基础设施造成的巨大压力。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Konstantin Ryabitsev discusses the severe problem of abusive 'background radiation' from crawlers from the perspective of git.kernel.org. He notes that CPU cycles spent rendering commits for scrapers now exceed those for all other legitimate access, including git clones, indicating significant strain on open-source project infrastructure.</blockquote>
-<p>🏷️ git.kernel.org, abusive crawlers, security, infrastructure</p>
+<blockquote>Konstantin Ryabitsev discusses the significant issue of "background radiation" from abusive web crawlers impacting git.kernel.org. He highlights that more CPU cycles are spent rendering commits for scrapers than for all legitimate access, including Git clones. This indicates a substantial strain on infrastructure due to automated tool misuse.</blockquote>
+<p>🏷️ git.kernel.org, web crawlers, security, abuse</p>
+<hr>
+<h2>🛠 工具 / 开源</h2>
+<h3>11. OpenNMC：昂贵的 APC 管理卡的开源替代品</h3>
+<p><a href="https://www.jeffgeerling.com/blog/2026/opennmc-apc-ups-replacement-card/">OpenNMC is an open replacement for expensive APC management cards</a> — <strong>jeffgeerling.com</strong> · 12 小时前 · ⭐ 22/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>UPS（不间断电源）是家庭实验室中看似不起眼但至关重要的设备，主要负责在断电时安全关闭服务器，并稳定电源。然而，管理这些设备的卡片通常价格昂贵。文章介绍了 OpenNMC，一个开源的替代方案，旨在提供与昂贵的 APC 管理卡相同的功能，但成本更低，为用户提供了更经济的选择。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>UPS devices are crucial for safely shutting down servers during power outages and conditioning power. However, their management cards, like those from APC, can be expensive. This article introduces OpenNMC as an open-source replacement for costly APC management cards. It aims to provide similar functionality at a lower cost, offering a more economical solution for users.</blockquote>
+<p>🏷️ OpenNMC, UPS, homelab, open source</p>
+<hr>
+<h3>12. 视频压缩工具</h3>
+<p><a href="https://simonwillison.net/2026/Sep/7/video-compressor/">Video compressor</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 22/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>本文介绍了一个名为“Video compressor”的在线工具，该工具可以帮助用户优化视频文件。作者使用该工具处理了一个短视频演示，目的是将其发布到博客上。该工具利用 WebAssembly 和 Claude Code 构建，能够高效地压缩视频，使其更适合网络传播。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>This article introduces a tool called "Video compressor" designed for optimizing video files. The author used it to process a short demo video for their blog. Built using WebAssembly and Claude Code, this tool efficiently compresses videos, making them more suitable for web publication.</blockquote>
+<p>🏷️ video compression, web tool, optimization</p>
+<hr>
+<h3>13. SuperDuper 4</h3>
+<p><a href="https://daringfireball.net/2026/09/superduper_4">★ SuperDuper 4</a> — <strong>daringfireball.net</strong> · 13 小时前 · ⭐ 21/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>SuperDuper 4 是一款令人印象深刻的软件，其卓越的性能和用户体验使其脱颖而出。作者认为这款软件的质量达到了令人难以置信的高度。它在功能和易用性方面都表现出色，为用户提供了极佳的软件使用感受。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>SuperDuper 4 is described as an exceptionally impressive piece of software, offering an almost unbelievably high level of quality. Its performance and user experience are highlighted as outstanding. The software provides an excellent user experience, setting a high standard in its category.</blockquote>
+<p>🏷️ macOS, backup, disk imaging, SuperDuper</p>
+<hr>
+<h2>💡 观点 / 杂谈</h2>
+<h3>14. 引用 Terence Tao 的观点</h3>
+<p><a href="https://simonwillison.net/2026/Sep/9/terence-tao/">Quoting Terence Tao</a> — <strong>simonwillison.net</strong> · 3 小时前 · ⭐ 23/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Terence Tao 担忧，有价值的开放性数学问题正被快速消耗，并且 AI 的出现可能加速这一过程。他指出，仅仅是某个问题有研究的传闻，就可能引发大量 AI 驱动的努力来“压平”该问题，阻碍原始研究项目的充分发展。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Terence Tao expresses concern that valuable, fruitful open problems are being depleted, a process potentially accelerated by AI. He notes that even the rumor of research on a problem can trigger massive AI-driven efforts to 'flatten' it before original research projects can reach their full potential.</blockquote>
+<p>🏷️ research, mathematics, open problems, AI</p>
 <hr>
 <h2>⚙️ 工程</h2>
-<h3>15. WorkOS：如何为 Agent 分配任务而非 Token</h3>
-<p><a href="https://workos.com/blog/delegated-access-for-ai-agents?utm_source=daringfireball&amp;amp;amp;utm_medium=newsletter&amp;amp;amp;utm_campaign=q32026">WorkOS: How to Give an Agent a Task Instead of a Token</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 23/30</p>
+<h3>15. 界面的推倒重建</h3>
+<p><a href="https://blog.jim-nielsen.com/2026/bulldoze-ui/">The Bulldozing of an Interface</a> — <strong>blog.jim-nielsen.com</strong> · 9 小时前 · ⭐ 22/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>WorkOS 提出了一种新的 AI Agent 访问控制方法，即通过任务委托而非直接授予 Token。这种方法将凭证保留在 WorkOS，Agent 通过命名用户来请求访问，WorkOS 负责 Token 的刷新和仅授权给允许的主机。这能有效限制被劫持 Agent 会话的潜在危害。</blockquote>
+<blockquote>Marcin Wichary 的文章探讨了界面设计的挑战，特别是与静态图片对比的局限性。他强调，界面的真正价值在于其功能性和用户交互体验，而非仅仅是视觉呈现。当一个界面被完全推倒重建时，其核心的交互逻辑和用户感受才是关键的考量因素，这比单纯的视觉更新更为重要。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>WorkOS introduces a novel approach to AI Agent access control by delegating tasks instead of directly granting tokens. This method keeps credentials at WorkOS, with agents requesting access by naming users, and WorkOS managing token refreshing and allowing access only to whitelisted hosts. This effectively limits the potential harm from hijacked agent sessions.</blockquote>
-<p>🏷️ AI Agent, Token Management, WorkOS</p>
+<blockquote>Marcin Wichary's article delves into the challenges of interface design, particularly the limitations of comparing interfaces as static images. He emphasizes that the true value of an interface lies in its functionality and user interaction, not just its visual appearance. Rebuilding an interface requires focusing on its core interactive logic and user experience.</blockquote>
+<p>🏷️ UI design, interface, usability, Photoshop</p>
 <hr>
-<p>*生成于 2026-09-08 04:04 | 扫描 84 源 → 获取 2553 篇 → 精选 15 篇* *基于 <a href="https://refactoringenglish.com/tools/hn-popularity/">Hacker News Popularity Contest 2025</a> RSS 源列表，由 <a href="https://x.com/karpathy">Andrej Karpathy</a> 推荐*</p>
+<p>*生成于 2026-09-09 04:13 | 扫描 82 源 → 获取 2499 篇 → 精选 15 篇* *基于 <a href="https://refactoringenglish.com/tools/hn-popularity/">Hacker News Popularity Contest 2025</a> RSS 源列表，由 <a href="https://x.com/karpathy">Andrej Karpathy</a> 推荐*</p>
     </article>
   </main>
-  <script id="speech-text" type="application/json">"🎧 点这里朗读今日日报\n📰 AI 博客每日精选 — 2026-09-08\n来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15\n📝 今日看点\n今日技术看点聚焦人工智能的广泛应用与挑战。从苹果高管调整看AI生态的演进，到浏览器自动检测AI生成文本的需求凸显，AI正深刻影响内容创作与分发。同时，网络安全领域也面临AI驱动的诈骗和爬虫滋扰等新威胁，企业需构建更强大的防御体系。\n \n🏆 今日必读\n🥇 苹果高管变动：Schiller 离职与 Ternus 接管 App Store 的目标\nQuoting Jakub Pachocki — simonwillison.net · 5 小时前 · 🤖 AI / ML\n中文摘要\n苹果资深高管 Phil Schiller 将卸任 App Store 和 Apple Events 的领导职责，由 Greg Joswiak 接管。App Store 作为苹果一项年收入约 300 亿美元的关键业务，面临着来自开发者批评和日益严格的监管挑战。Schiller 的离职标志着苹果高层的一次重要人事调整，而新任领导者将如何应对 App Store 的复杂局面备受关注。\nEnglish Summary\nPhil Schiller, a veteran Apple executive, is stepping down from his leadership roles overseeing the App Store and Apple Events, with Greg Joswiak taking over. The App Store, a critical business generating an estimated $30 billion annually, faces ongoing challenges from developer criticism and increasing regulatory scrutiny. Schiller's departure marks a significant leadership transition within Apple, and the new leadership will navigate the complexities of the app marketplace.\n💡 为什么值得读: 了解苹果高层人事变动及其对关键业务 App Store 未来发展的影响。\n💡 Why read it: Understand the implications of Apple's executive changes on the future of its critical App Store business.\n🏷️ AI safety, scalable defense, aligned AI, AI development\n🥈 Litterbox：Safari 浏览器查看 X (Twitter) 推文的扩展程序\nResearch acceleration: The view inside OpenAI — simonwillison.net · 1 天前 · 🤖 AI / ML\n中文摘要\n在 Nitter 和 XCancel 等工具失效后，Zhenyi Tan 推出了名为 Litterbox 的 Safari 扩展程序，旨在解决用户查看 X (原 Twitter) 内容的需求。该扩展程序可以将 x.com 链接在弹出窗口中打开，方便用户快速浏览，并在完成后关闭。Litterbox 的设计理念是提供一个简洁、临时的 X 内容查看方式，同时避免发送用户 Cookie。\nEnglish Summary\nFollowing the demise of Nitter and XCancel, Zhenyi Tan has released Litterbox, a new Safari extension designed to facilitate viewing X (formerly Twitter) content. This extension opens x.com links in a popup window for quick browsing and can be easily closed afterward. Litterbox aims to provide a simple, ephemeral way to consume X content without sending user cookies.\n💡 为什么值得读: 为 Safari 用户提供一个在 Nitter 失效后查看 X (Twitter) 内容的便捷解决方案。\n💡 Why read it: Offers a convenient solution for Safari users to view X (Twitter) content after the discontinuation of tools like Nitter.\n🏷️ OpenAI, research acceleration, AGI, Recursive Self-Improvement\n🥉 Kunsten '92 论坛：关于人工智能的讨论\nllm 0.35 — simonwillison.net · 4 小时前 · 🛠 工具 / 开源\n中文摘要\n作者受邀在 Kunsten '92 的 Paradiso 论坛上就人工智能 (AI) 发表开场演讲，并参与了两小时的讨论。此次活动为来自科技界的作者提供了一个与艺术和文化领域人士交流的宝贵机会，作者认为这种跨界交流有助于拓宽视野和学习新知。\nEnglish Summary\nThe author was invited to give an opening speech at the Kunsten '92 Paradiso forum, followed by a two-hour discussion on Artificial Intelligence (AI). This event provided a valuable opportunity for the author, from the tech scene, to engage with professionals from the arts and culture sectors, fostering cross-disciplinary learning and broadening perspectives.\n💡 为什么值得读: 了解科技界人士对人工智能在艺术文化领域应用的看法和跨界交流的价值。\n💡 Why read it: Gain insights into perspectives on AI applications in arts and culture from a tech professional and the value of interdisciplinary exchange.\n🏷️ LLM, CLI tool, OpenAI, GPT-6 Astra\n \n📊 数据概览\n \n \n \n分类分布\nmermaid\npie showData\n title \"文章分类分布\"\n \"🤖 AI / ML\" : 4\n \"🛠 工具 / 开源\" : 4\n \"💡 观点 / 杂谈\" : 3\n \"🔒 安全\" : 3\n \"⚙️ 工程\" : 1\n高频关键词\nmermaid\nxychart-beta horizontal\n title \"高频关键词\"\n x-axis [\"ai safety\", \"openai\", \"ai\", \"dns\", \"scams\", \"tool\", \"scalable defense\", \"aligned ai\", \"ai development\", \"research acceleration\", \"agi\", \"recursive self-improvement\"]\n y-axis \"出现次数\" 0 --> 4\n bar [2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1]\n📈 纯文本关键词图（终端友好）\nai safety │ ████████████████████ 2\nopenai │ ████████████████████ 2\nai │ ████████████████████ 2\ndns │ ████████████████████ 2\nscams │ ████████████████████ 2\ntool │ ████████████████████ 2\nscalable defense │ ██████████░░░░░░░░░░ 1\naligned ai │ ██████████░░░░░░░░░░ 1\nai development │ ██████████░░░░░░░░░░ 1\nresearch acceleration │ ██████████░░░░░░░░░░ 1\n🏷️ 话题标签\nai safety(2) · openai(2) · ai(2) · dns(2) · scams(2) · tool(2) · scalable defense(1) · aligned ai(1) · ai development(1) · research acceleration(1) · agi(1) · recursive self-improvement(1) · llm(1) · cli tool(1) · gpt-6 astra(1) · doomer(1) · optimism(1) · cybersecurity(1) · phishing(1) · git.kernel.org(1)\n \n🤖 AI / ML\n1. 苹果高管变动：Schiller 离职与 Ternus 接管 App Store 的目标\nQuoting Jakub Pachocki — simonwillison.net · 5 小时前 · ⭐ 26/30\n中文摘要\n苹果资深高管 Phil Schiller 将卸任 App Store 和 Apple Events 的领导职责，由 Greg Joswiak 接管。App Store 作为苹果一项年收入约 300 亿美元的关键业务，面临着来自开发者批评和日益严格的监管挑战。Schiller 的离职标志着苹果高层的一次重要人事调整，而新任领导者将如何应对 App Store 的复杂局面备受关注。\nEnglish Summary\nPhil Schiller, a veteran Apple executive, is stepping down from his leadership roles overseeing the App Store and Apple Events, with Greg Joswiak taking over. The App Store, a critical business generating an estimated $30 billion annually, faces ongoing challenges from developer criticism and increasing regulatory scrutiny. Schiller's departure marks a significant leadership transition within Apple, and the new leadership will navigate the complexities of the app marketplace.\n🏷️ AI safety, scalable defense, aligned AI, AI development\n \n2. Litterbox：Safari 浏览器查看 X (Twitter) 推文的扩展程序\nResearch acceleration: The view inside OpenAI — simonwillison.net · 1 天前 · ⭐ 26/30\n中文摘要\n在 Nitter 和 XCancel 等工具失效后，Zhenyi Tan 推出了名为 Litterbox 的 Safari 扩展程序，旨在解决用户查看 X (原 Twitter) 内容的需求。该扩展程序可以将 x.com 链接在弹出窗口中打开，方便用户快速浏览，并在完成后关闭。Litterbox 的设计理念是提供一个简洁、临时的 X 内容查看方式，同时避免发送用户 Cookie。\nEnglish Summary\nFollowing the demise of Nitter and XCancel, Zhenyi Tan has released Litterbox, a new Safari extension designed to facilitate viewing X (formerly Twitter) content. This extension opens x.com links in a popup window for quick browsing and can be easily closed afterward. Litterbox aims to provide a simple, ephemeral way to consume X content without sending user cookies.\n🏷️ OpenAI, research acceleration, AGI, Recursive Self-Improvement\n \n3. Kunsten '92 讲座：AI 列车\nKunsten '92 praatje: De AI Trein — berthub.eu · 1 天前 · ⭐ 22/30\n中文摘要\n在 9 月 6 日星期日，作者为 Kunsten '92 的 Paradijs 辩论会发表了开场演讲，为关于人工智能的两小时讨论拉开了序幕。整个活动的视频录像非常出色，其中包含作者的发言。作者对组织方的邀请表示感谢，并认为这次跨界交流让他这位科技界的“书呆子”受益匪浅。\nEnglish Summary\nOn Sunday, September 6th, the author delivered the opening remarks for Kunsten '92's Paradijs debate, initiating a two-hour discussion on artificial intelligence. An excellent video recording of the entire event is available, featuring the author's contribution. The author expressed gratitude for the invitation and found the interdisciplinary exchange highly beneficial, offering a valuable perspective from the tech scene.\n🏷️ AI, Discussion, Art\n \n4. 在浏览器中自动检测 AI 生成文本\nAutomatically detecting AI text in my browser — seangoedecke.com · 4 小时前 · ⭐ 21/30\n中文摘要\n目前，自动检测 AI 生成文本是一个服务不足的领域。Pangram 是该领域唯一的工具，表现出色但急需竞争。作者预测，未来几年内，各大社交网络可能会扫描新帖子和评论中的 AI 内容，并进行标记或移除。作者表示，他可以依赖 Pangram 来确认自己的怀疑。\nEnglish Summary\nAutomated detection of AI-generated text is currently an underserved niche, with Pangram being the sole, albeit excellent, tool in the market, desperately needing competition. The author anticipates that within a few years, major social networks will likely scan new posts and comments for AI content, either tagging or removing it. The author finds Pangram reliable for confirming his suspicions.\n🏷️ AI text detection, browser extension, Pangram\n \n🛠 工具 / 开源\n5. Kunsten '92 论坛：关于人工智能的讨论\nllm 0.35 — simonwillison.net · 4 小时前 · ⭐ 24/30\n中文摘要\n作者受邀在 Kunsten '92 的 Paradiso 论坛上就人工智能 (AI) 发表开场演讲，并参与了两小时的讨论。此次活动为来自科技界的作者提供了一个与艺术和文化领域人士交流的宝贵机会，作者认为这种跨界交流有助于拓宽视野和学习新知。\nEnglish Summary\nThe author was invited to give an opening speech at the Kunsten '92 Paradiso forum, followed by a two-hour discussion on Artificial Intelligence (AI). This event provided a valuable opportunity for the author, from the tech scene, to engage with professionals from the arts and culture sectors, fostering cross-disciplinary learning and broadening perspectives.\n🏷️ LLM, CLI tool, OpenAI, GPT-6 Astra\n \n6. 视频压缩工具\nVideo compressor — simonwillison.net · 9 小时前 · ⭐ 23/30\n中文摘要\n作者使用 Claude 5.1 编写了一个视频压缩工具，该工具利用 WebAssembly 和 FFMPEG，可以将手机录制的演示视频优化后发布到博客上。这个工具的开发展示了利用 AI 辅助进行 Web 开发和媒体处理的效率。\nEnglish Summary\nThe author developed a video compression tool using Claude 5.1, leveraging WebAssembly and FFMPEG. This tool optimizes demo videos recorded on a phone for blog publication, demonstrating the efficiency of AI-assisted web development and media processing.\n🏷️ video compressor, optimization, tool\n \n7. Mercator ↔ Equal Earth 地图投影转换工具\nMercator ↔ Equal Earth — simonwillison.net · 11 小时前 · ⭐ 23/30\n中文摘要\n作者利用 GPT-6 Astra（medium）在 ChatGPT Work 中构建了一个工具，用于在 Mercator 和 Equal Earth 地图投影之间进行动画过渡。该工具的开发源于对联合国近期投票采用 Equal Earth 投影的好奇，旨在可视化两种投影方式的差异。\nEnglish Summary\nThe author used GPT-6 Astra (medium) within ChatGPT Work to build a tool that creates animated transitions between the Mercator and Equal Earth map projections. This tool was developed out of curiosity about the UN's recent vote to adopt the Equal Earth projection, aiming to visualize the differences between the two.\n🏷️ map projection, Equal Earth, Mercator, tool\n \n8. Litterbox：用于查看 X 推文的 Safari 扩展\nLitterbox: Safari Extension for Viewing X Tweets — daringfireball.net · 1 天前 · ⭐ 22/30\n中文摘要\n在 Nitter 和 XCancel 停止服务后，Zhenyi Tan 推出了名为 Litterbox 的新 Safari 扩展。该扩展旨在解决用户仍需查看 X（原 Twitter）内容的需求，例如查看特定用户的推文。Litterbox 会将 x.com 链接在新弹出窗口中打开，方便用户快速浏览后关闭。该扩展的一个特点是不会在用户打开链接时发送 Cookie。\nEnglish Summary\nFollowing the demise of Nitter and XCancel, Zhenyi Tan has released Litterbox, a new Safari extension. This tool addresses the ongoing need to view X (formerly Twitter) content, such as specific user posts. Litterbox opens x.com links in a pop-up window for quick viewing and closing, and notably, it does not send cookies when links are opened.\n🏷️ Safari Extension, X Tweets, Litterbox\n \n💡 观点 / 杂谈\n9. 浏览器中自动检测 AI 生成文本\nThe Education of a Doomer — borretti.me · 14 小时前 · ⭐ 24/30\n中文摘要\n文章指出，目前浏览器中自动检测 AI 生成文本是一个服务不足的领域，Pangram 是当前唯一的解决方案，但需要更多竞争。作者预测，未来几年内，各大社交网络可能会扫描新帖子和评论以识别和标记（或移除）AI 内容。文章作者正在开发自己的解决方案，并希望通过 Deckard 项目实现这一目标。\nEnglish Summary\nThe article highlights that automated AI text detection in browsers is an underserved niche, with Pangram being the sole current solution, though more competition is needed. The author predicts that major social networks will likely scan new posts and comments for AI content in the coming years to tag or remove it. The author is developing their own solution, aiming to achieve this through the Deckard project.\n🏷️ AI, doomer, optimism, AI safety\n \n10. 古尔曼谈席勒离职及特努斯对应用商店的目标\nGurman on Schiller’s Departure and Ternus’s Goals for the App Store — daringfireball.net · 1 天前 · ⭐ 23/30\n中文摘要\n马克·古尔曼在其最新的彭博专栏中指出，斯科特·席勒的离职备受关注。与马斯特里不同，席勒仍然担任着重要职务，他曾负责苹果的应用商店和Apple Events。应用商店业务体量巨大，年收入估计达300亿美元，管理难度极高。尽管苹果的应用市场受到许多消费者喜爱，但开发者对其常有批评，且面临日益严格的监管。\nEnglish Summary\nMark Gurman's latest Bloomberg column highlights the notable departure of Scott Schiller. Unlike Maestri, Schiller held a significant role, overseeing the App Store and Apple Events. The App Store alone is a massive business, generating an estimated $30 billion annually and presenting considerable management challenges. This marketplace, while popular with consumers, frequently faces criticism from developers and increasing regulatory scrutiny.\n🏷️ App Store, Apple, Schiller\n \n11. Pluralistic：企业如何构建更好的“蟑螂旅馆”（2026年9月7日）\nPluralistic: How corporate America built a better Roach Motel (07 Sep 2026) — pluralistic.net · 22 小时前 · ⭐ 21/30\n中文摘要\n今天的链接聚焦“企业如何构建更好的蟑螂旅馆”这一主题。文章还提到了“人质每天殴打顾客”等内容。此外，还包括了“令人愉悦的享受”、“物体恒存性：三孔打孔器”、“华纳兄弟诉华纳兄弟”等多个独立话题，以及关于隐私战争恶化、AI武器化、香港选举改革、股票回购骗局等内容。\nEnglish Summary\nToday's links explore the theme of 'How corporate America built a better Roach Motel.' The article also touches upon topics like 'Hostages beat customers every day.' Additionally, it covers various independent subjects such as 'Delights to delectate,' 'Object permanence: 3-hole punches,' and 'Warner Bros v Warner Bros,' alongside discussions on worsening privacy wars, weaponized AI, Hong Kong election reforms, and stock buyback scams.\n🏷️ corporate America, privacy, tech news\n \n🔒 安全\n12. 企业如何构建“更好的蟑螂旅馆”：对客户的剥削\nThe purpose of DNS is to spread scams — simonwillison.net · 1 天前 · ⭐ 24/30\n中文摘要\n文章以“企业如何构建一个更好的蟑螂旅馆”为题，揭示了企业如何通过各种手段剥削客户。内容涵盖了从“人质”式的客户服务到对隐私的侵犯，以及对开源社区的阻碍等多个方面。文章还提到了近期的一些事件和趋势，如对 DRM 的快速修复、股票回购的争议等，旨在批判企业行为对消费者和社会的负面影响。\nEnglish Summary\nTitled 'How corporate America built a better Roach Motel,' this article exposes how corporations exploit customers through various means, ranging from 'hostage' customer service and privacy violations to hindering open-source communities. It touches upon recent events and trends, including faster DRM patching than other bugs and controversies surrounding stock buybacks, aiming to critique the negative impact of corporate practices on consumers and society.\n🏷️ DNS, Scams, Cybersecurity\n \n13. DNS 的目的似乎是传播诈骗\nThe purpose of DNS is to spread scams — shkspr.mobi · 1 天前 · ⭐ 24/30\n中文摘要\n文章指出，许多用户会收到声称税务逾期或包裹被扣留的诈骗信息，并被引导至虚假网站。虽然大多数人能识别并忽略这些诈骗，但仍有相当一部分人会受骗。这突显了 DNS 在网络钓鱼和诈骗活动中的作用。\nEnglish Summary\nThe article points out that many users receive scam messages claiming overdue taxes or delayed parcels, directing them to fake websites. While most people can identify and ignore these scams, a significant number fall victim, highlighting the role of DNS in phishing and fraudulent activities.\n🏷️ DNS, Scams, Phishing\n \n14. 爬虫的滋扰\nCreepy crawlies — simonwillison.net · 4 小时前 · ⭐ 23/30\n中文摘要\nKonstantin Ryabitsev 从 git.kernel.org 的角度，描述了恶意爬虫造成的“背景辐射”问题已变得多么严重。他指出，用于渲染提交给爬虫的 CPU 周期，已经超过了所有其他合法访问（包括 git 克隆）的总和。这表明了对开源项目基础设施的巨大压力。\nEnglish Summary\nKonstantin Ryabitsev discusses the severe problem of abusive 'background radiation' from crawlers from the perspective of git.kernel.org. He notes that CPU cycles spent rendering commits for scrapers now exceed those for all other legitimate access, including git clones, indicating significant strain on open-source project infrastructure.\n🏷️ git.kernel.org, abusive crawlers, security, infrastructure\n \n⚙️ 工程\n15. WorkOS：如何为 Agent 分配任务而非 Token\nWorkOS: How to Give an Agent a Task Instead of a Token — daringfireball.net · 1 天前 · ⭐ 23/30\n中文摘要\nWorkOS 提出了一种新的 AI Agent 访问控制方法，即通过任务委托而非直接授予 Token。这种方法将凭证保留在 WorkOS，Agent 通过命名用户来请求访问，WorkOS 负责 Token 的刷新和仅授权给允许的主机。这能有效限制被劫持 Agent 会话的潜在危害。\nEnglish Summary\nWorkOS introduces a novel approach to AI Agent access control by delegating tasks instead of directly granting tokens. This method keeps credentials at WorkOS, with agents requesting access by naming users, and WorkOS managing token refreshing and allowing access only to whitelisted hosts. This effectively limits the potential harm from hijacked agent sessions.\n🏷️ AI Agent, Token Management, WorkOS\n \n生成于 2026-09-08 04:04 | 扫描 84 源 → 获取 2553 篇 → 精选 15 篇\n基于 Hacker News Popularity Contest 2025 RSS 源列表，由 Andrej Karpathy 推荐"</script>
+  <script id="speech-text" type="application/json">"🎧 点这里朗读今日日报\n📰 AI 博客每日精选 — 2026-09-09\n来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15\n📝 今日看点\n今日技术看点聚焦AI浪潮下的挑战与机遇：一方面，AI正以前所未有的速度渗透内容创作与科学研究，从AI生成文本检测到AI加速数学难题的“消耗”，都引发了关于原创性与研究边界的深刻讨论；另一方面，AI也在赋能开发者，如利用Claude AI构建视频压缩工具，以及LLM新版本对更多模型的支持，展现了AI作为生产力工具的巨大潜力。同时，开源社区也在积极应对技术挑战，如OpenNMC为昂贵的硬件提供了开源替代方案，而安全领域则在探讨如何应对AI时代可能出现的重放攻击等新威胁。\n \n🏆 今日必读\n🥇 git.kernel.org 遭遇恶意爬虫困扰，CPU 资源消耗过大\nMicrosoft Plugs Nearly 1,000 Security Holes — krebsonsecurity.com · 6 小时前 · 🔒 安全\n中文摘要\nLinux 内核官方 Git 仓库 git.kernel.org 正面临日益严重的恶意爬虫问题。这些爬虫消耗的 CPU 资源已超过所有合法访问（包括 Git 克隆）的总和。作者指出，渲染提交信息给爬虫所花费的 CPU 周期，比服务所有其他合法用户（如克隆仓库）的资源还要多。这种“背景辐射”式的滥用正严重影响仓库的正常运行和资源分配。\nEnglish Summary\nThe official Git repository for the Linux kernel, git.kernel.org, is experiencing a significant problem with abusive crawlers. These bots are consuming more CPU cycles rendering commits for scrapers than for all legitimate access, including Git clones. The \"background radiation\" of these crawlers is so severe that it outweighs the resources used for all other valid operations, impacting the repository's performance and resource allocation.\n💡 为什么值得读: 了解开源项目基础设施面临的真实挑战，以及如何被恶意流量挤占宝贵资源。\n💡 Why read it: Understand the real-world infrastructure challenges faced by open-source projects and how malicious traffic can consume valuable resources.\n🏷️ Microsoft, vulnerabilities, security, AI\n🥈 界面设计的本质：交互而非静态图像\nOn the Navier–Stokes Millennium Prize Problem — simonwillison.net · 4 小时前 · 🤖 AI / ML\n中文摘要\n文章通过对比静态图片难以体现界面交互性的挑战，强调了界面的核心在于其“工作方式”即用户如何与之交互。作者认为，在设计新界面时，试图通过静态图像比较旧界面是无效的，因为这忽略了用户实际操作中的感受和效率。真正的界面评估应关注其动态交互体验，而非孤立的视觉元素。\nEnglish Summary\nThe article argues that the essence of interface design lies in its functionality and how users interact with it, rather than static visual comparisons. Static images fail to capture the true user experience and the nuances of interaction. Evaluating an interface requires understanding its dynamic behavior and how it feels to use, not just how it looks in a still frame.\n💡 为什么值得读: 深入理解界面设计的关键在于用户体验和交互性，而非仅仅是视觉呈现。\n💡 Why read it: Gain a deeper understanding of why user experience and interactivity are paramount in interface design, beyond mere visual presentation.\n🏷️ Navier-Stokes, OpenAI, AI, mathematics\n🥉 OpenNMC：昂贵的 APC 管理卡开源替代方案\nQuoting Jakub Pachocki — simonwillison.net · 1 天前 · 🤖 AI / ML\n中文摘要\n文章介绍了 OpenNMC，一个旨在替代昂贵的 APC UPS（不间断电源）管理卡的开源解决方案。UPS 在数据中心和家庭实验室中至关重要，主要负责在断电时安全关闭服务器并调节电源。OpenNMC 提供了一个更经济实惠且功能强大的替代方案，允许用户更有效地管理和监控其 UPS 设备。\nEnglish Summary\nOpenNMC is presented as an open-source alternative to expensive proprietary APC management cards for UPS (Uninterruptible Power Supply) devices. UPS units are critical for ensuring safe server shutdowns during power outages and for power conditioning. OpenNMC offers a cost-effective and capable solution for managing and monitoring these essential pieces of hardware.\n💡 为什么值得读: 为寻求经济高效的 UPS 管理方案的读者提供了一个值得关注的开源项目。\n💡 Why read it: Highlights a noteworthy open-source project for readers seeking cost-effective UPS management solutions.\n🏷️ AI safety, AI defense, LLM development\n \n📊 数据概览\n \n \n \n分类分布\nmermaid\npie showData\n title \"文章分类分布\"\n \"🤖 AI / ML\" : 7\n \"🔒 安全\" : 3\n \"🛠 工具 / 开源\" : 3\n \"💡 观点 / 杂谈\" : 1\n \"⚙️ 工程\" : 1\n高频关键词\nmermaid\nxychart-beta horizontal\n title \"高频关键词\"\n x-axis [\"ai\", \"mathematics\", \"security\", \"navier-stokes\", \"openai\", \"llm\", \"microsoft\", \"vulnerabilities\", \"ai safety\", \"ai defense\", \"llm development\", \"chatgpt\"]\n y-axis \"出现次数\" 0 --> 6\n bar [4, 3, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1]\n📈 纯文本关键词图（终端友好）\nai │ ████████████████████ 4\nmathematics │ ███████████████░░░░░ 3\nsecurity │ ██████████░░░░░░░░░░ 2\nnavier-stokes │ ██████████░░░░░░░░░░ 2\nopenai │ ██████████░░░░░░░░░░ 2\nllm │ ██████████░░░░░░░░░░ 2\nmicrosoft │ █████░░░░░░░░░░░░░░░ 1\nvulnerabilities │ █████░░░░░░░░░░░░░░░ 1\nai safety │ █████░░░░░░░░░░░░░░░ 1\nai defense │ █████░░░░░░░░░░░░░░░ 1\n🏷️ 话题标签\nai(4) · mathematics(3) · security(2) · navier-stokes(2) · openai(2) · llm(2) · microsoft(1) · vulnerabilities(1) · ai safety(1) · ai defense(1) · llm development(1) · chatgpt(1) · image generation(1) · pretraining(1) · data(1) · model improvements(1) · ai detection(1) · browser extension(1) · pangram(1) · generative ai(1)\n \n🤖 AI / ML\n1. 界面设计的本质：交互而非静态图像\nOn the Navier–Stokes Millennium Prize Problem — simonwillison.net · 4 小时前 · ⭐ 26/30\n中文摘要\n文章通过对比静态图片难以体现界面交互性的挑战，强调了界面的核心在于其“工作方式”即用户如何与之交互。作者认为，在设计新界面时，试图通过静态图像比较旧界面是无效的，因为这忽略了用户实际操作中的感受和效率。真正的界面评估应关注其动态交互体验，而非孤立的视觉元素。\nEnglish Summary\nThe article argues that the essence of interface design lies in its functionality and how users interact with it, rather than static visual comparisons. Static images fail to capture the true user experience and the nuances of interaction. Evaluating an interface requires understanding its dynamic behavior and how it feels to use, not just how it looks in a still frame.\n🏷️ Navier-Stokes, OpenAI, AI, mathematics\n \n2. OpenNMC：昂贵的 APC 管理卡开源替代方案\nQuoting Jakub Pachocki — simonwillison.net · 1 天前 · ⭐ 26/30\n中文摘要\n文章介绍了 OpenNMC，一个旨在替代昂贵的 APC UPS（不间断电源）管理卡的开源解决方案。UPS 在数据中心和家庭实验室中至关重要，主要负责在断电时安全关闭服务器并调节电源。OpenNMC 提供了一个更经济实惠且功能强大的替代方案，允许用户更有效地管理和监控其 UPS 设备。\nEnglish Summary\nOpenNMC is presented as an open-source alternative to expensive proprietary APC management cards for UPS (Uninterruptible Power Supply) devices. UPS units are critical for ensuring safe server shutdowns during power outages and for power conditioning. OpenNMC offers a cost-effective and capable solution for managing and monitoring these essential pieces of hardware.\n🏷️ AI safety, AI defense, LLM development\n \n3. 使用 Claude AI 构建的 WebAssembly 视频压缩工具\nIntroducing ChatGPT Images 2.5 — simonwillison.net · 5 小时前 · ⭐ 25/30\n中文摘要\n作者使用 Claude AI（Claude Fable 5.1 in Claude Code for web）构建了一个基于 WebAssembly 的视频压缩工具。该工具利用 FFMPEG，能够优化视频文件，以便在博客上发布。作者录制了一个短视频演示，并利用该工具生成了一个优化版本。\nEnglish Summary\nA WebAssembly-based video compressor tool was built using Claude AI (Claude Fable 5.1 in Claude Code for web). Leveraging FFMPEG, the tool optimizes video files for web publishing, as demonstrated by the author who used it to create an optimized version of a short demo video.\n🏷️ ChatGPT, image generation, OpenAI, AI\n \n4. SuperDuper 4：一款卓越的备份和克隆软件\nPretraining progress is mostly coming from data — dwarkesh.com · 12 小时前 · ⭐ 25/30\n中文摘要\nSuperDuper 4 被描述为一款“不可思议地好”的软件，专注于提供卓越的备份和磁盘克隆功能。该软件以其高质量和可靠性而闻名，为用户提供了强大的数据保护和系统迁移解决方案。\nEnglish Summary\nSuperDuper 4 is lauded as \"impossibly good\" software, excelling in its backup and disk cloning capabilities. The application is recognized for its high quality and reliability, offering users a robust solution for data protection and system migration.\n🏷️ pretraining, data, model improvements, LLM\n \n5. 在浏览器中自动检测 AI 生成文本\nAutomatically detecting AI text in my browser — seangoedecke.com · 1 天前 · ⭐ 24/30\n中文摘要\nAI 文本检测是一个尚待开发的领域，目前 Pangram 是该领域的主要服务商。文章预测，未来几年内，各大社交网络可能会扫描新帖子和评论以识别 AI 内容，并进行标记或移除。目前，Pangram 已能有效确认作者的怀疑。\nEnglish Summary\nAutomated AI text detection is an underserved niche, with Pangram currently being the primary service. The author predicts that major social networks will likely scan posts and comments for AI content within a few years to tag or remove it. Pangram currently provides reliable confirmation for suspicions.\n🏷️ AI detection, browser extension, Pangram, generative AI\n \n6. llm 0.35 版本发布\nllm 0.35 — simonwillison.net · 1 天前 · ⭐ 24/30\n中文摘要\nllm 工具发布了 0.35 版本，新增了对 OpenAI 的 GPT-6 Astra 模型（代号 gpt-6-astra）的支持。该版本进一步扩展了对不同大型语言模型的集成能力。\nEnglish Summary\nThe llm tool has released version 0.35, adding support for OpenAI's GPT-6 Astra model, identified by the model ID gpt-6-astra. This update expands integration capabilities with various large language models.\n🏷️ LLM, local LLM, GPT-6 Astra, tooling\n \n7. 纳维-斯托克斯方程问题的新闻报道\nNavier-Stokes in the news — johndcook.com · 12 小时前 · ⭐ 23/30\n中文摘要\n关于一个长期存在的数学难题——千禧年大奖难题之一的纳维-斯托克斯存在性与光滑性问题——已被解决的传闻甚嚣尘上。该问题涉及描述流体动力学的纳维-斯托克斯方程的数学特性，但公众对此的理解常被简化和误导。\nEnglish Summary\nRumors are circulating about the resolution of a long-standing mathematical problem, the Navier-Stokes existence and smoothness problem, one of the Millennium Prize Problems. This problem concerns the mathematical properties of the Navier-Stokes equations, which describe fluid dynamics, though popular accounts often oversimplify and mislead.\n🏷️ Navier-Stokes, fluid dynamics, mathematics, news\n \n🔒 安全\n8. git.kernel.org 遭遇恶意爬虫困扰，CPU 资源消耗过大\nMicrosoft Plugs Nearly 1,000 Security Holes — krebsonsecurity.com · 6 小时前 · ⭐ 27/30\n中文摘要\nLinux 内核官方 Git 仓库 git.kernel.org 正面临日益严重的恶意爬虫问题。这些爬虫消耗的 CPU 资源已超过所有合法访问（包括 Git 克隆）的总和。作者指出，渲染提交信息给爬虫所花费的 CPU 周期，比服务所有其他合法用户（如克隆仓库）的资源还要多。这种“背景辐射”式的滥用正严重影响仓库的正常运行和资源分配。\nEnglish Summary\nThe official Git repository for the Linux kernel, git.kernel.org, is experiencing a significant problem with abusive crawlers. These bots are consuming more CPU cycles rendering commits for scrapers than for all legitimate access, including Git clones. The \"background radiation\" of these crawlers is so severe that it outweighs the resources used for all other valid operations, impacting the repository's performance and resource allocation.\n🏷️ Microsoft, vulnerabilities, security, AI\n \n9. ActivityPub 是否值得防御重放攻击和消息/签名时间偏移？\nActivityPub - Is it worth defending against replay attacks and message/signature time skew? — shkspr.mobi · 16 小时前 · ⭐ 23/30\n中文摘要\n文章探讨了 ActivityPub 服务器 ActivityBot 偶尔接收到数月前发送消息的问题，并分析了接受和处理这些旧消息的风险。作者的初步结论是，可能不值得为此担忧，但希望有人能指出其错误之处。\nEnglish Summary\nThis article examines the issue of ActivityBot, an ActivityPub server, occasionally receiving messages sent months prior and analyzes the risks of accepting and processing them. The author's tentative conclusion is that it's likely not worth worrying about, but seeks counterarguments.\n🏷️ ActivityPub, replay attacks, message signing, federated social media\n \n10. 爬虫的背景噪音\nCreepy crawlies — simonwillison.net · 1 天前 · ⭐ 23/30\n中文摘要\nGit 仓库的维护者 Konstantin Ryabitsev 讨论了来自恶意爬虫的“背景噪音”问题。这些爬虫消耗了比合法访问（包括 Git 克隆）更多的 CPU 资源。他指出，渲染爬虫提交信息所花费的 CPU 时间，甚至超过了所有其他合法访问的总和。这表明了自动化工具滥用对开源项目基础设施造成的巨大压力。\nEnglish Summary\nKonstantin Ryabitsev discusses the significant issue of \"background radiation\" from abusive web crawlers impacting git.kernel.org. He highlights that more CPU cycles are spent rendering commits for scrapers than for all legitimate access, including Git clones. This indicates a substantial strain on infrastructure due to automated tool misuse.\n🏷️ git.kernel.org, web crawlers, security, abuse\n \n🛠 工具 / 开源\n11. OpenNMC：昂贵的 APC 管理卡的开源替代品\nOpenNMC is an open replacement for expensive APC management cards — jeffgeerling.com · 12 小时前 · ⭐ 22/30\n中文摘要\nUPS（不间断电源）是家庭实验室中看似不起眼但至关重要的设备，主要负责在断电时安全关闭服务器，并稳定电源。然而，管理这些设备的卡片通常价格昂贵。文章介绍了 OpenNMC，一个开源的替代方案，旨在提供与昂贵的 APC 管理卡相同的功能，但成本更低，为用户提供了更经济的选择。\nEnglish Summary\nUPS devices are crucial for safely shutting down servers during power outages and conditioning power. However, their management cards, like those from APC, can be expensive. This article introduces OpenNMC as an open-source replacement for costly APC management cards. It aims to provide similar functionality at a lower cost, offering a more economical solution for users.\n🏷️ OpenNMC, UPS, homelab, open source\n \n12. 视频压缩工具\nVideo compressor — simonwillison.net · 1 天前 · ⭐ 22/30\n中文摘要\n本文介绍了一个名为“Video compressor”的在线工具，该工具可以帮助用户优化视频文件。作者使用该工具处理了一个短视频演示，目的是将其发布到博客上。该工具利用 WebAssembly 和 Claude Code 构建，能够高效地压缩视频，使其更适合网络传播。\nEnglish Summary\nThis article introduces a tool called \"Video compressor\" designed for optimizing video files. The author used it to process a short demo video for their blog. Built using WebAssembly and Claude Code, this tool efficiently compresses videos, making them more suitable for web publication.\n🏷️ video compression, web tool, optimization\n \n13. SuperDuper 4\n★ SuperDuper 4 — daringfireball.net · 13 小时前 · ⭐ 21/30\n中文摘要\nSuperDuper 4 是一款令人印象深刻的软件，其卓越的性能和用户体验使其脱颖而出。作者认为这款软件的质量达到了令人难以置信的高度。它在功能和易用性方面都表现出色，为用户提供了极佳的软件使用感受。\nEnglish Summary\nSuperDuper 4 is described as an exceptionally impressive piece of software, offering an almost unbelievably high level of quality. Its performance and user experience are highlighted as outstanding. The software provides an excellent user experience, setting a high standard in its category.\n🏷️ macOS, backup, disk imaging, SuperDuper\n \n💡 观点 / 杂谈\n14. 引用 Terence Tao 的观点\nQuoting Terence Tao — simonwillison.net · 3 小时前 · ⭐ 23/30\n中文摘要\nTerence Tao 担忧，有价值的开放性数学问题正被快速消耗，并且 AI 的出现可能加速这一过程。他指出，仅仅是某个问题有研究的传闻，就可能引发大量 AI 驱动的努力来“压平”该问题，阻碍原始研究项目的充分发展。\nEnglish Summary\nTerence Tao expresses concern that valuable, fruitful open problems are being depleted, a process potentially accelerated by AI. He notes that even the rumor of research on a problem can trigger massive AI-driven efforts to 'flatten' it before original research projects can reach their full potential.\n🏷️ research, mathematics, open problems, AI\n \n⚙️ 工程\n15. 界面的推倒重建\nThe Bulldozing of an Interface — blog.jim-nielsen.com · 9 小时前 · ⭐ 22/30\n中文摘要\nMarcin Wichary 的文章探讨了界面设计的挑战，特别是与静态图片对比的局限性。他强调，界面的真正价值在于其功能性和用户交互体验，而非仅仅是视觉呈现。当一个界面被完全推倒重建时，其核心的交互逻辑和用户感受才是关键的考量因素，这比单纯的视觉更新更为重要。\nEnglish Summary\nMarcin Wichary's article delves into the challenges of interface design, particularly the limitations of comparing interfaces as static images. He emphasizes that the true value of an interface lies in its functionality and user interaction, not just its visual appearance. Rebuilding an interface requires focusing on its core interactive logic and user experience.\n🏷️ UI design, interface, usability, Photoshop\n \n生成于 2026-09-09 04:13 | 扫描 82 源 → 获取 2499 篇 → 精选 15 篇\n基于 Hacker News Popularity Contest 2025 RSS 源列表，由 Andrej Karpathy 推荐"</script>
   <script>
     const text = JSON.parse(document.getElementById('speech-text').textContent);
     const statusEl = document.getElementById('status');
