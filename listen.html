@@ -52,201 +52,201 @@
   <main class="shell">
     <article class="card">
       <p>🎧 <a href="https://lingnanren.github.io/ai-daily-digest/listen.html">点这里朗读今日日报</a></p>
-<h1>📰 AI 博客每日精选 — 2026-09-09</h1>
+<h1>📰 AI 博客每日精选 — 2026-09-10</h1>
 <blockquote>来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15</blockquote>
 <h2>📝 今日看点</h2>
-<p>今日技术看点聚焦AI浪潮下的挑战与机遇：一方面，AI正以前所未有的速度渗透内容创作与科学研究，从AI生成文本检测到AI加速数学难题的“消耗”，都引发了关于原创性与研究边界的深刻讨论；另一方面，AI也在赋能开发者，如利用Claude AI构建视频压缩工具，以及LLM新版本对更多模型的支持，展现了AI作为生产力工具的巨大潜力。同时，开源社区也在积极应对技术挑战，如OpenNMC为昂贵的硬件提供了开源替代方案，而安全领域则在探讨如何应对AI时代可能出现的重放攻击等新威胁。</p>
+<p>今日技术看点聚焦人工智能的飞速发展，从代码注释检测到预训练模型进步，AI 能力的提升正以前所未有的速度扩展。同时，安全领域也面临新挑战，零点击蠕虫和重放攻击等威胁值得警惕。此外，开源社区在硬件管理和数学证明领域也展现出创新活力，为技术进步注入新动能。</p>
 <hr>
 <h2>🏆 今日必读</h2>
-<p>🥇 <strong>git.kernel.org 遭遇恶意爬虫困扰，CPU 资源消耗过大</strong></p>
-<p><a href="https://krebsonsecurity.com/2026/09/microsoft-plugs-nearly-1000-security-holes/">Microsoft Plugs Nearly 1,000 Security Holes</a> — krebsonsecurity.com · 6 小时前 · 🔒 安全</p>
+<p>🥇 <strong>更好的 AI 代码注释检测器</strong></p>
+<p><a href="https://www.johndcook.com/blog/2026/09/09/ai-multiplier/">AI is an intelligence multiplier</a> — johndcook.com · 13 小时前 · 🤖 AI / ML</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Linux 内核官方 Git 仓库 git.kernel.org 正面临日益严重的恶意爬虫问题。这些爬虫消耗的 CPU 资源已超过所有合法访问（包括 Git 克隆）的总和。作者指出，渲染提交信息给爬虫所花费的 CPU 周期，比服务所有其他合法用户（如克隆仓库）的资源还要多。这种“背景辐射”式的滥用正严重影响仓库的正常运行和资源分配。</blockquote>
+<blockquote>作者重新构建了一个基于公开数据的 AI 代码注释检测器，解决了之前使用私有数据和不稳固基础的问题。新版本允许用户在浏览器内安全地测试，并收到了积极的反馈。该工具旨在提供一个可靠的解决方案来识别 AI 生成的代码注释。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>The official Git repository for the Linux kernel, git.kernel.org, is experiencing a significant problem with abusive crawlers. These bots are consuming more CPU cycles rendering commits for scrapers than for all legitimate access, including Git clones. The "background radiation" of these crawlers is so severe that it outweighs the resources used for all other valid operations, impacting the repository's performance and resource allocation.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 了解开源项目基础设施面临的真实挑战，以及如何被恶意流量挤占宝贵资源。</p>
-<p>💡 <strong>Why read it</strong>: Understand the real-world infrastructure challenges faced by open-source projects and how malicious traffic can consume valuable resources.</p>
-<p>🏷️ Microsoft, vulnerabilities, security, AI</p>
-<p>🥈 <strong>界面设计的本质：交互而非静态图像</strong></p>
-<p><a href="https://simonwillison.net/2026/Sep/8/on-navier-stokes/">On the Navier–Stokes Millennium Prize Problem</a> — simonwillison.net · 4 小时前 · 🤖 AI / ML</p>
+<blockquote>The author has rebuilt an AI code comment detector using public data, addressing previous issues with private data and a shaky foundation. The new version allows users to test it safely within their browser and has received positive feedback. The tool aims to provide a reliable solution for identifying AI-generated code comments.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 了解如何利用公开数据构建更可靠的 AI 代码注释检测工具。</p>
+<p>💡 <strong>Why read it</strong>: Learn how to build a more robust AI code comment detector using public data.</p>
+<p>🏷️ AI, intelligence multiplier, programmers, mathematicians</p>
+<p>🥈 <strong>ActivityPub：是否值得防御重放攻击和消息/签名时间偏差？</strong></p>
+<p><a href="https://maurycyz.com/misc/domains/">A rant about phishing: It's not the user's fault (and not DNS either)</a> — maurycyz.com · 1 天前 · 🔒 安全</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>文章通过对比静态图片难以体现界面交互性的挑战，强调了界面的核心在于其“工作方式”即用户如何与之交互。作者认为，在设计新界面时，试图通过静态图像比较旧界面是无效的，因为这忽略了用户实际操作中的感受和效率。真正的界面评估应关注其动态交互体验，而非孤立的视觉元素。</blockquote>
+<blockquote>作者的 ActivityPub 服务器 ActivityBot 偶尔会收到数月前发送的消息，这引发了对重放攻击和消息/签名时间偏差风险的担忧。经过分析，作者认为这些风险可能不值得过度担忧，但欢迎他人提供反驳意见。文章探讨了这些问题的成因、潜在风险以及是否需要采取防御措施。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>The article argues that the essence of interface design lies in its functionality and how users interact with it, rather than static visual comparisons. Static images fail to capture the true user experience and the nuances of interaction. Evaluating an interface requires understanding its dynamic behavior and how it feels to use, not just how it looks in a still frame.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 深入理解界面设计的关键在于用户体验和交互性，而非仅仅是视觉呈现。</p>
-<p>💡 <strong>Why read it</strong>: Gain a deeper understanding of why user experience and interactivity are paramount in interface design, beyond mere visual presentation.</p>
-<p>🏷️ Navier-Stokes, OpenAI, AI, mathematics</p>
-<p>🥉 <strong>OpenNMC：昂贵的 APC 管理卡开源替代方案</strong></p>
-<p><a href="https://simonwillison.net/2026/Sep/7/jakub-pachocki/">Quoting Jakub Pachocki</a> — simonwillison.net · 1 天前 · 🤖 AI / ML</p>
+<blockquote>The author's ActivityPub server, ActivityBot, occasionally receives messages sent months ago, raising concerns about replay attacks and message/signature time skew. After analysis, the author suggests these risks might not be worth significant worry but welcomes counterarguments. The post explores the causes, potential risks, and the necessity of defense against these issues.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 深入了解 ActivityPub 协议中重放攻击和时间偏差的潜在风险及应对策略。</p>
+<p>💡 <strong>Why read it</strong>: Gain insights into the potential risks and mitigation strategies for replay attacks and time skew in the ActivityPub protocol.</p>
+<p>🏷️ phishing, user fault, security awareness</p>
+<p>🥉 <strong>癌症资本：对创始人来说也很糟糕！</strong></p>
+<p><a href="https://simonwillison.net/2026/Sep/8/introducing-chatgpt-images-25/">Introducing ChatGPT Images 2.5</a> — simonwillison.net · 1 天前 · 🤖 AI / ML</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>文章介绍了 OpenNMC，一个旨在替代昂贵的 APC UPS（不间断电源）管理卡的开源解决方案。UPS 在数据中心和家庭实验室中至关重要，主要负责在断电时安全关闭服务器并调节电源。OpenNMC 提供了一个更经济实惠且功能强大的替代方案，允许用户更有效地管理和监控其 UPS 设备。</blockquote>
+<blockquote>文章探讨了风险投资在过去二十年间的演变，并指出其发展趋势并不理想。重点分析了这种“癌症资本”对实际创业者（创始人）的影响。它深入剖析了那些拥有绝佳产品或服务创意并希望将其推向世界的创业者所面临的挑战。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>OpenNMC is presented as an open-source alternative to expensive proprietary APC management cards for UPS (Uninterruptible Power Supply) devices. UPS units are critical for ensuring safe server shutdowns during power outages and for power conditioning. OpenNMC offers a cost-effective and capable solution for managing and monitoring these essential pieces of hardware.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 为寻求经济高效的 UPS 管理方案的读者提供了一个值得关注的开源项目。</p>
-<p>💡 <strong>Why read it</strong>: Highlights a noteworthy open-source project for readers seeking cost-effective UPS management solutions.</p>
-<p>🏷️ AI safety, AI defense, LLM development</p>
+<blockquote>This article examines the evolution of venture capital over the past two decades, arguing that its trajectory has worsened. It specifically focuses on the practical impact of this 'cancer capital' on founders – entrepreneurs with great ideas for products or services who aim to bring them to the world.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 理解风险投资的负面演变如何实际影响创业者及其公司。</p>
+<p>💡 <strong>Why read it</strong>: Understand how the negative evolution of venture capital practically impacts entrepreneurs and their companies.</p>
+<p>🏷️ ChatGPT Images, image generation, OpenAI</p>
 <hr>
 <h2>📊 数据概览</h2>
-<table><thead><tr><th>扫描源</th><th>抓取文章</th><th>时间范围</th><th>精选</th></tr></thead><tbody><tr><td>82/92</td><td>2499 篇 → 35 篇</td><td>48h</td><td><strong>15 篇</strong></td></tr></tbody></table>
+<table><thead><tr><th>扫描源</th><th>抓取文章</th><th>时间范围</th><th>精选</th></tr></thead><tbody><tr><td>84/92</td><td>2554 篇 → 30 篇</td><td>48h</td><td><strong>15 篇</strong></td></tr></tbody></table>
 <h3>分类分布</h3>
 <div class="code-wrap"><div class="code-title">mermaid</div><pre><code>pie showData
     title "文章分类分布"
     "🤖 AI / ML" : 7
-    "🔒 安全" : 3
-    "🛠 工具 / 开源" : 3
-    "💡 观点 / 杂谈" : 1
-    "⚙️ 工程" : 1</code></pre></div>
+    "🔒 安全" : 4
+    "🛠 工具 / 开源" : 2
+    "📝 其他" : 1
+    "💡 观点 / 杂谈" : 1</code></pre></div>
 <h3>高频关键词</h3>
 <div class="code-wrap"><div class="code-title">mermaid</div><pre><code>xychart-beta horizontal
     title "高频关键词"
-    x-axis ["ai", "mathematics", "security", "navier-stokes", "openai", "llm", "microsoft", "vulnerabilities", "ai safety", "ai defense", "llm development", "chatgpt"]
-    y-axis "出现次数" 0 --&gt; 6
-    bar [4, 3, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1]</code></pre></div>
+    x-axis ["openai", "navier-stokes", "mathematics", "ai", "intelligence multiplier", "programmers", "mathematicians", "phishing", "user fault", "security awareness", "chatgpt images", "image generation"]
+    y-axis "出现次数" 0 --&gt; 5
+    bar [3, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1]</code></pre></div>
 <div class="details">
 <p class="summary">📈 纯文本关键词图（终端友好）</p>
-<div class="code-wrap"><pre><code>ai              │ ████████████████████ 4
-mathematics     │ ███████████████░░░░░ 3
-security        │ ██████████░░░░░░░░░░ 2
-navier-stokes   │ ██████████░░░░░░░░░░ 2
-openai          │ ██████████░░░░░░░░░░ 2
-llm             │ ██████████░░░░░░░░░░ 2
-microsoft       │ █████░░░░░░░░░░░░░░░ 1
-vulnerabilities │ █████░░░░░░░░░░░░░░░ 1
-ai safety       │ █████░░░░░░░░░░░░░░░ 1
-ai defense      │ █████░░░░░░░░░░░░░░░ 1</code></pre></div>
+<div class="code-wrap"><pre><code>openai                  │ ████████████████████ 3
+navier-stokes           │ █████████████░░░░░░░ 2
+mathematics             │ █████████████░░░░░░░ 2
+ai                      │ ███████░░░░░░░░░░░░░ 1
+intelligence multiplier │ ███████░░░░░░░░░░░░░ 1
+programmers             │ ███████░░░░░░░░░░░░░ 1
+mathematicians          │ ███████░░░░░░░░░░░░░ 1
+phishing                │ ███████░░░░░░░░░░░░░ 1
+user fault              │ ███████░░░░░░░░░░░░░ 1
+security awareness      │ ███████░░░░░░░░░░░░░ 1</code></pre></div>
 </div>
 <h3>🏷️ 话题标签</h3>
-<p><strong>ai</strong>(4) · <strong>mathematics</strong>(3) · <strong>security</strong>(2) · navier-stokes(2) · openai(2) · llm(2) · microsoft(1) · vulnerabilities(1) · ai safety(1) · ai defense(1) · llm development(1) · chatgpt(1) · image generation(1) · pretraining(1) · data(1) · model improvements(1) · ai detection(1) · browser extension(1) · pangram(1) · generative ai(1)</p>
+<p><strong>openai</strong>(3) · <strong>navier-stokes</strong>(2) · <strong>mathematics</strong>(2) · ai(1) · intelligence multiplier(1) · programmers(1) · mathematicians(1) · phishing(1) · user fault(1) · security awareness(1) · chatgpt images(1) · image generation(1) · microsoft(1) · vulnerabilities(1) · patch batch(1) · pretraining(1) · data(1) · llm(1) · model improvements(1) · zero-click worm(1)</p>
 <hr>
 <h2>🤖 AI / ML</h2>
-<h3>1. 界面设计的本质：交互而非静态图像</h3>
-<p><a href="https://simonwillison.net/2026/Sep/8/on-navier-stokes/">On the Navier–Stokes Millennium Prize Problem</a> — <strong>simonwillison.net</strong> · 4 小时前 · ⭐ 26/30</p>
+<h3>1. 更好的 AI 代码注释检测器</h3>
+<p><a href="https://www.johndcook.com/blog/2026/09/09/ai-multiplier/">AI is an intelligence multiplier</a> — <strong>johndcook.com</strong> · 13 小时前 · ⭐ 26/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>文章通过对比静态图片难以体现界面交互性的挑战，强调了界面的核心在于其“工作方式”即用户如何与之交互。作者认为，在设计新界面时，试图通过静态图像比较旧界面是无效的，因为这忽略了用户实际操作中的感受和效率。真正的界面评估应关注其动态交互体验，而非孤立的视觉元素。</blockquote>
+<blockquote>作者重新构建了一个基于公开数据的 AI 代码注释检测器，解决了之前使用私有数据和不稳固基础的问题。新版本允许用户在浏览器内安全地测试，并收到了积极的反馈。该工具旨在提供一个可靠的解决方案来识别 AI 生成的代码注释。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>The article argues that the essence of interface design lies in its functionality and how users interact with it, rather than static visual comparisons. Static images fail to capture the true user experience and the nuances of interaction. Evaluating an interface requires understanding its dynamic behavior and how it feels to use, not just how it looks in a still frame.</blockquote>
-<p>🏷️ Navier-Stokes, OpenAI, AI, mathematics</p>
+<blockquote>The author has rebuilt an AI code comment detector using public data, addressing previous issues with private data and a shaky foundation. The new version allows users to test it safely within their browser and has received positive feedback. The tool aims to provide a reliable solution for identifying AI-generated code comments.</blockquote>
+<p>🏷️ AI, intelligence multiplier, programmers, mathematicians</p>
 <hr>
-<h3>2. OpenNMC：昂贵的 APC 管理卡开源替代方案</h3>
-<p><a href="https://simonwillison.net/2026/Sep/7/jakub-pachocki/">Quoting Jakub Pachocki</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 26/30</p>
+<h3>2. 癌症资本：对创始人来说也很糟糕！</h3>
+<p><a href="https://simonwillison.net/2026/Sep/8/introducing-chatgpt-images-25/">Introducing ChatGPT Images 2.5</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 26/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>文章介绍了 OpenNMC，一个旨在替代昂贵的 APC UPS（不间断电源）管理卡的开源解决方案。UPS 在数据中心和家庭实验室中至关重要，主要负责在断电时安全关闭服务器并调节电源。OpenNMC 提供了一个更经济实惠且功能强大的替代方案，允许用户更有效地管理和监控其 UPS 设备。</blockquote>
+<blockquote>文章探讨了风险投资在过去二十年间的演变，并指出其发展趋势并不理想。重点分析了这种“癌症资本”对实际创业者（创始人）的影响。它深入剖析了那些拥有绝佳产品或服务创意并希望将其推向世界的创业者所面临的挑战。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>OpenNMC is presented as an open-source alternative to expensive proprietary APC management cards for UPS (Uninterruptible Power Supply) devices. UPS units are critical for ensuring safe server shutdowns during power outages and for power conditioning. OpenNMC offers a cost-effective and capable solution for managing and monitoring these essential pieces of hardware.</blockquote>
-<p>🏷️ AI safety, AI defense, LLM development</p>
+<blockquote>This article examines the evolution of venture capital over the past two decades, arguing that its trajectory has worsened. It specifically focuses on the practical impact of this 'cancer capital' on founders – entrepreneurs with great ideas for products or services who aim to bring them to the world.</blockquote>
+<p>🏷️ ChatGPT Images, image generation, OpenAI</p>
 <hr>
-<h3>3. 使用 Claude AI 构建的 WebAssembly 视频压缩工具</h3>
-<p><a href="https://simonwillison.net/2026/Sep/8/introducing-chatgpt-images-25/">Introducing ChatGPT Images 2.5</a> — <strong>simonwillison.net</strong> · 5 小时前 · ⭐ 25/30</p>
+<h3>3. SuperDuper 4</h3>
+<p><a href="https://simonwillison.net/2026/Sep/8/on-navier-stokes/">On the Navier–Stokes Millennium Prize Problem</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 25/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>作者使用 Claude AI（Claude Fable 5.1 in Claude Code for web）构建了一个基于 WebAssembly 的视频压缩工具。该工具利用 FFMPEG，能够优化视频文件，以便在博客上发布。作者录制了一个短视频演示，并利用该工具生成了一个优化版本。</blockquote>
+<blockquote>作者认为 SuperDuper 是一款极其出色的软件，其表现超乎想象地好。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>A WebAssembly-based video compressor tool was built using Claude AI (Claude Fable 5.1 in Claude Code for web). Leveraging FFMPEG, the tool optimizes video files for web publishing, as demonstrated by the author who used it to create an optimized version of a short demo video.</blockquote>
-<p>🏷️ ChatGPT, image generation, OpenAI, AI</p>
+<blockquote>The author describes SuperDuper as impossibly good software, highlighting its exceptional quality.</blockquote>
+<p>🏷️ Navier-Stokes, OpenAI, mathematics</p>
 <hr>
-<h3>4. SuperDuper 4：一款卓越的备份和克隆软件</h3>
-<p><a href="https://www.dwarkesh.com/p/pretraining-progress-is-mostly-data">Pretraining progress is mostly coming from data</a> — <strong>dwarkesh.com</strong> · 12 小时前 · ⭐ 25/30</p>
+<h3>4. 预训练进展主要来自数据</h3>
+<p><a href="https://www.dwarkesh.com/p/pretraining-progress-is-mostly-data">Pretraining progress is mostly coming from data</a> — <strong>dwarkesh.com</strong> · 1 天前 · ⭐ 25/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>SuperDuper 4 被描述为一款“不可思议地好”的软件，专注于提供卓越的备份和磁盘克隆功能。该软件以其高质量和可靠性而闻名，为用户提供了强大的数据保护和系统迁移解决方案。</blockquote>
+<blockquote>对过去六年预训练（pretraining）进展的分析表明，模型能力的提升主要归功于训练数据的增加和质量的提高，而非模型架构本身的根本性改进。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>SuperDuper 4 is lauded as "impossibly good" software, excelling in its backup and disk cloning capabilities. The application is recognized for its high quality and reliability, offering users a robust solution for data protection and system migration.</blockquote>
-<p>🏷️ pretraining, data, model improvements, LLM</p>
+<blockquote>An analysis of six years of pretraining progress indicates that advancements in model capabilities are primarily driven by increases in data volume and quality, rather than fundamental improvements in model architecture itself.</blockquote>
+<p>🏷️ pretraining, data, LLM, model improvements</p>
 <hr>
-<h3>5. 在浏览器中自动检测 AI 生成文本</h3>
-<p><a href="https://seangoedecke.com/deckard/">Automatically detecting AI text in my browser</a> — <strong>seangoedecke.com</strong> · 1 天前 · ⭐ 24/30</p>
+<h3>5. 无人谈论的纳维-斯托克斯问题的一面</h3>
+<p><a href="https://www.johndcook.com/blog/2026/09/09/formal-method-revolution/">The part of Navier-Stokes no one is talking about</a> — <strong>johndcook.com</strong> · 15 小时前 · ⭐ 24/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>AI 文本检测是一个尚待开发的领域，目前 Pangram 是该领域的主要服务商。文章预测，未来几年内，各大社交网络可能会扫描新帖子和评论以识别 AI 内容，并进行标记或移除。目前，Pangram 已能有效确认作者的怀疑。</blockquote>
+<blockquote>在 OpenAI 宣布解决纳维-斯托克斯方程存在与光滑性问题的同时，他们还发布了一个 Lean 4 的形式化证明。这一方面的工作鲜少被公众讨论，但它代表了数学证明方法的一种重要演进，即利用形式化验证工具来确保数学定理的严谨性。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Automated AI text detection is an underserved niche, with Pangram currently being the primary service. The author predicts that major social networks will likely scan posts and comments for AI content within a few years to tag or remove it. Pangram currently provides reliable confirmation for suspicions.</blockquote>
-<p>🏷️ AI detection, browser extension, Pangram, generative AI</p>
+<blockquote>Alongside OpenAI's announcement of a resolution to the Navier-Stokes existence and smoothness problem, they also released a formal proof in Lean 4. This aspect of their work, which has received little public attention, represents a significant evolution in mathematical proof methods, utilizing formal verification tools to ensure mathematical rigor.</blockquote>
+<p>🏷️ Navier-Stokes, OpenAI, Lean 4, formal proof</p>
 <hr>
-<h3>6. llm 0.35 版本发布</h3>
-<p><a href="https://simonwillison.net/2026/Sep/7/llm/">llm 0.35</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 24/30</p>
+<h3>6. 为什么我们应该拟人化 AI 代理</h3>
+<p><a href="https://seangoedecke.com/why-we-should-anthropomorphize-ai-agents/">Why we should anthropomorphize AI agents</a> — <strong>seangoedecke.com</strong> · 1 天前 · ⭐ 23/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>llm 工具发布了 0.35 版本，新增了对 OpenAI 的 GPT-6 Astra 模型（代号 <code>gpt-6-astra</code>）的支持。该版本进一步扩展了对不同大型语言模型的集成能力。</blockquote>
+<blockquote>文章探讨了拟人化 AI 代理的必要性，并回顾了作者一年前关于拟人化大型语言模型（LLMs）的文章。当前，由于 OpenAI 和 Hugging Face 的事件，这一话题再次成为焦点。作者认为，拟人化有助于更好地理解和与 AI 交互，尤其是在处理复杂 AI 事件时。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>The llm tool has released version 0.35, adding support for OpenAI's GPT-6 Astra model, identified by the model ID <code>gpt-6-astra</code>. This update expands integration capabilities with various large language models.</blockquote>
-<p>🏷️ LLM, local LLM, GPT-6 Astra, tooling</p>
+<blockquote>This article discusses the necessity of anthropomorphizing AI agents, referencing the author's previous work on anthropomorphizing Large Language Models (LLMs). The topic has resurfaced as a hot issue due to recent incidents involving OpenAI and Hugging Face. The author argues that anthropomorphism aids in better understanding and interacting with AI, particularly when dealing with complex AI events.</blockquote>
+<p>🏷️ anthropomorphism, AI agents, LLMs</p>
 <hr>
-<h3>7. 纳维-斯托克斯方程问题的新闻报道</h3>
-<p><a href="https://www.johndcook.com/blog/2026/09/08/navier-stokes-in-the-news/">Navier-Stokes in the news</a> — <strong>johndcook.com</strong> · 12 小时前 · ⭐ 23/30</p>
+<h3>7. 更好的 AI 代码注释检测器</h3>
+<p><a href="https://entropicthoughts.com/better-ai-comment-classifier">Better AI code comment detector</a> — <strong>entropicthoughts.com</strong> · 1 天前 · ⭐ 22/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>关于一个长期存在的数学难题——千禧年大奖难题之一的纳维-斯托克斯存在性与光滑性问题——已被解决的传闻甚嚣尘上。该问题涉及描述流体动力学的纳维-斯托克斯方程的数学特性，但公众对此的理解常被简化和误导。</blockquote>
+<blockquote>作者重新构建了一个 AI 代码注释分类器，这次使用了公开数据和更坚实的基础。之前的版本使用了部分私有数据，因此无法分享代码。新版本可以在浏览器中安全地使用，用户可以放心测试。早期测试者的反馈普遍积极，表明该工具的改进效果显著。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Rumors are circulating about the resolution of a long-standing mathematical problem, the Navier-Stokes existence and smoothness problem, one of the Millennium Prize Problems. This problem concerns the mathematical properties of the Navier-Stokes equations, which describe fluid dynamics, though popular accounts often oversimplify and mislead.</blockquote>
-<p>🏷️ Navier-Stokes, fluid dynamics, mathematics, news</p>
+<blockquote>The author has rebuilt an AI code comment classifier using public data and a more robust foundation. The previous version relied on partially private data, preventing code sharing. The new tool is safe to use within the browser, allowing users to test it with confidence. Early testers provided largely positive feedback, indicating the effectiveness of the improvements.</blockquote>
+<p>🏷️ code comments, AI classifier, developer tools</p>
 <hr>
 <h2>🔒 安全</h2>
-<h3>8. git.kernel.org 遭遇恶意爬虫困扰，CPU 资源消耗过大</h3>
-<p><a href="https://krebsonsecurity.com/2026/09/microsoft-plugs-nearly-1000-security-holes/">Microsoft Plugs Nearly 1,000 Security Holes</a> — <strong>krebsonsecurity.com</strong> · 6 小时前 · ⭐ 27/30</p>
+<h3>8. ActivityPub：是否值得防御重放攻击和消息/签名时间偏差？</h3>
+<p><a href="https://maurycyz.com/misc/domains/">A rant about phishing: It's not the user's fault (and not DNS either)</a> — <strong>maurycyz.com</strong> · 1 天前 · ⭐ 26/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Linux 内核官方 Git 仓库 git.kernel.org 正面临日益严重的恶意爬虫问题。这些爬虫消耗的 CPU 资源已超过所有合法访问（包括 Git 克隆）的总和。作者指出，渲染提交信息给爬虫所花费的 CPU 周期，比服务所有其他合法用户（如克隆仓库）的资源还要多。这种“背景辐射”式的滥用正严重影响仓库的正常运行和资源分配。</blockquote>
+<blockquote>作者的 ActivityPub 服务器 ActivityBot 偶尔会收到数月前发送的消息，这引发了对重放攻击和消息/签名时间偏差风险的担忧。经过分析，作者认为这些风险可能不值得过度担忧，但欢迎他人提供反驳意见。文章探讨了这些问题的成因、潜在风险以及是否需要采取防御措施。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>The official Git repository for the Linux kernel, git.kernel.org, is experiencing a significant problem with abusive crawlers. These bots are consuming more CPU cycles rendering commits for scrapers than for all legitimate access, including Git clones. The "background radiation" of these crawlers is so severe that it outweighs the resources used for all other valid operations, impacting the repository's performance and resource allocation.</blockquote>
-<p>🏷️ Microsoft, vulnerabilities, security, AI</p>
+<blockquote>The author's ActivityPub server, ActivityBot, occasionally receives messages sent months ago, raising concerns about replay attacks and message/signature time skew. After analysis, the author suggests these risks might not be worth significant worry but welcomes counterarguments. The post explores the causes, potential risks, and the necessity of defense against these issues.</blockquote>
+<p>🏷️ phishing, user fault, security awareness</p>
 <hr>
-<h3>9. ActivityPub 是否值得防御重放攻击和消息/签名时间偏移？</h3>
-<p><a href="https://shkspr.mobi/blog/2026/09/activitypub-is-it-worth-defending-against-replay-attacks-and-message-signature-time-skew/">ActivityPub - Is it worth defending against replay attacks and message/signature time skew?</a> — <strong>shkspr.mobi</strong> · 16 小时前 · ⭐ 23/30</p>
+<h3>9. OpenNMC：昂贵的 APC 管理卡的开源替代品</h3>
+<p><a href="https://krebsonsecurity.com/2026/09/microsoft-plugs-nearly-1000-security-holes/">Microsoft Plugs Nearly 1,000 Security Holes</a> — <strong>krebsonsecurity.com</strong> · 1 天前 · ⭐ 25/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>文章探讨了 ActivityPub 服务器 ActivityBot 偶尔接收到数月前发送消息的问题，并分析了接受和处理这些旧消息的风险。作者的初步结论是，可能不值得为此担忧，但希望有人能指出其错误之处。</blockquote>
+<blockquote>UPS（不间断电源）在家庭实验室中至关重要，主要负责在断电时安全关机和稳定电源。文章介绍了 OpenNMC，一个开源的解决方案，可作为昂贵的 APC 管理卡的替代品，为用户提供更经济高效的管理选项。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This article examines the issue of ActivityBot, an ActivityPub server, occasionally receiving messages sent months prior and analyzes the risks of accepting and processing them. The author's tentative conclusion is that it's likely not worth worrying about, but seeks counterarguments.</blockquote>
-<p>🏷️ ActivityPub, replay attacks, message signing, federated social media</p>
+<blockquote>UPSes are crucial in homelabs for safe shutdowns during power outages and power conditioning. This article introduces OpenNMC as an open-source replacement for expensive APC management cards, offering a more cost-effective management option for users.</blockquote>
+<p>🏷️ Microsoft, vulnerabilities, patch batch</p>
 <hr>
-<h3>10. 爬虫的背景噪音</h3>
-<p><a href="https://simonwillison.net/2026/Sep/7/creepy-crawlies/">Creepy crawlies</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 23/30</p>
+<h3>10. 引用 Calif 研究</h3>
+<p><a href="https://simonwillison.net/2026/Sep/10/calif-research/">Quoting Calif Research</a> — <strong>simonwillison.net</strong> · 3 小时前 · ⭐ 24/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Git 仓库的维护者 Konstantin Ryabitsev 讨论了来自恶意爬虫的“背景噪音”问题。这些爬虫消耗了比合法访问（包括 Git 克隆）更多的 CPU 资源。他指出，渲染爬虫提交信息所花费的 CPU 时间，甚至超过了所有其他合法访问的总和。这表明了自动化工具滥用对开源项目基础设施造成的巨大压力。</blockquote>
+<blockquote>Calif 发布了 WeWorm 演示，这是首个可通过微信通话在 iOS 和 Android 设备间传播的零点击蠕虫。该蠕虫无需用户交互，即使接听电话也不会发出声音，漏洞利用仍能成功。研究团队利用 AI 在约两天内发现了该漏洞并编写了首个远程代码执行（RCE）漏洞利用程序，随后构建了蠕虫。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Konstantin Ryabitsev discusses the significant issue of "background radiation" from abusive web crawlers impacting git.kernel.org. He highlights that more CPU cycles are spent rendering commits for scrapers than for all legitimate access, including Git clones. This indicates a substantial strain on infrastructure due to automated tool misuse.</blockquote>
-<p>🏷️ git.kernel.org, web crawlers, security, abuse</p>
+<blockquote>Calif has released a demo of WeWorm, the first zero-click worm capable of spreading via WeChat calls across iOS and Android devices. The exploit succeeds without any user interaction, even if the call is answered silently. The research team leveraged AI to discover the bug and write the initial remote code execution (RCE) exploit in approximately two days, subsequently building the worm.</blockquote>
+<p>🏷️ zero-click worm, WeChat, iOS, Android</p>
+<hr>
+<h3>11. ActivityPub - 是否值得防御重放攻击和消息/签名时间偏差？</h3>
+<p><a href="https://shkspr.mobi/blog/2026/09/activitypub-is-it-worth-defending-against-replay-attacks-and-message-signature-time-skew/">ActivityPub - Is it worth defending against replay attacks and message/signature time skew?</a> — <strong>shkspr.mobi</strong> · 1 天前 · ⭐ 22/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>作者的 ActivityPub 服务器 ActivityBot 偶尔会收到几个月前发送的消息。文章探讨了这种现象发生的原因以及接收和处理这些旧消息是否存在风险。作者初步认为这种风险可能不大，但希望有人能指出其思考的不足之处。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>The author's ActivityPub server, ActivityBot, occasionally receives messages sent months ago. This article explores the reasons behind this occurrence and whether there's a risk in accepting and processing these old messages. The author's initial assessment suggests the risk might be minimal, but they welcome counterarguments.</blockquote>
+<p>🏷️ ActivityPub, replay attacks, security, federated</p>
 <hr>
 <h2>🛠 工具 / 开源</h2>
-<h3>11. OpenNMC：昂贵的 APC 管理卡的开源替代品</h3>
-<p><a href="https://www.jeffgeerling.com/blog/2026/opennmc-apc-ups-replacement-card/">OpenNMC is an open replacement for expensive APC management cards</a> — <strong>jeffgeerling.com</strong> · 12 小时前 · ⭐ 22/30</p>
+<h3>12. ★ SuperDuper 4</h3>
+<p><a href="https://daringfireball.net/2026/09/superduper_4">★ SuperDuper 4</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 20/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>UPS（不间断电源）是家庭实验室中看似不起眼但至关重要的设备，主要负责在断电时安全关闭服务器，并稳定电源。然而，管理这些设备的卡片通常价格昂贵。文章介绍了 OpenNMC，一个开源的替代方案，旨在提供与昂贵的 APC 管理卡相同的功能，但成本更低，为用户提供了更经济的选择。</blockquote>
+<blockquote>SuperDuper 是一款令人惊叹的软件，其卓越的性能和用户体验使其在同类产品中脱颖而出。作者认为这款软件的优秀程度几乎超乎想象，为用户提供了无与伦比的价值。它代表了软件设计的最高水准。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>UPS devices are crucial for safely shutting down servers during power outages and conditioning power. However, their management cards, like those from APC, can be expensive. This article introduces OpenNMC as an open-source replacement for costly APC management cards. It aims to provide similar functionality at a lower cost, offering a more economical solution for users.</blockquote>
-<p>🏷️ OpenNMC, UPS, homelab, open source</p>
+<blockquote>SuperDuper is described as exceptionally good software, exceeding expectations with its performance and user experience. The author finds its quality to be almost impossibly high, offering unparalleled value to users. It represents a pinnacle of software design.</blockquote>
+<p>🏷️ backup software, disk imaging, SuperDuper</p>
 <hr>
-<h3>12. 视频压缩工具</h3>
-<p><a href="https://simonwillison.net/2026/Sep/7/video-compressor/">Video compressor</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 22/30</p>
+<h3>13. OpenNMC：昂贵的 APC 管理卡的开源替代品</h3>
+<p><a href="https://www.jeffgeerling.com/blog/2026/opennmc-apc-ups-replacement-card/">OpenNMC is an open replacement for expensive APC management cards</a> — <strong>jeffgeerling.com</strong> · 1 天前 · ⭐ 19/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>本文介绍了一个名为“Video compressor”的在线工具，该工具可以帮助用户优化视频文件。作者使用该工具处理了一个短视频演示，目的是将其发布到博客上。该工具利用 WebAssembly 和 Claude Code 构建，能够高效地压缩视频，使其更适合网络传播。</blockquote>
+<blockquote>本文介绍了 OpenNMC，一个旨在替代昂贵的 APC 管理卡的开源解决方案。UPS（不间断电源）在家庭实验室中至关重要，主要负责在断电时安全关闭服务器，并提供稳定的电力。OpenNMC 的出现为用户提供了一个更经济、更灵活的选择，以实现这些关键功能。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This article introduces a tool called "Video compressor" designed for optimizing video files. The author used it to process a short demo video for their blog. Built using WebAssembly and Claude Code, this tool efficiently compresses videos, making them more suitable for web publication.</blockquote>
-<p>🏷️ video compression, web tool, optimization</p>
+<blockquote>This article introduces OpenNMC, an open-source solution designed to replace expensive APC management cards. Uninterruptible Power Supplies (UPS) are crucial in homelabs, primarily for safely shutting down servers during power outages and conditioning power. OpenNMC offers a more economical and flexible alternative for achieving these essential functions.</blockquote>
+<p>🏷️ homelab, UPS, open source, hardware</p>
 <hr>
-<h3>13. SuperDuper 4</h3>
-<p><a href="https://daringfireball.net/2026/09/superduper_4">★ SuperDuper 4</a> — <strong>daringfireball.net</strong> · 13 小时前 · ⭐ 21/30</p>
+<h2>📝 其他</h2>
+<h3>14. 一项 50 年前的计算机辅助证明</h3>
+<p><a href="https://www.johndcook.com/blog/2026/09/09/four-colors/">A 50-year-old computer-assisted proof</a> — <strong>johndcook.com</strong> · 13 小时前 · ⭐ 22/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>SuperDuper 4 是一款令人印象深刻的软件，其卓越的性能和用户体验使其脱颖而出。作者认为这款软件的质量达到了令人难以置信的高度。它在功能和易用性方面都表现出色，为用户提供了极佳的软件使用感受。</blockquote>
+<blockquote>文章回顾了 1976 年的四色定理证明，这是首个重要的计算机辅助证明。该证明将问题简化为验证 1,834 个配置的计算，并由计算机完成。这标志着计算机在数学证明领域应用的开端，为后来的形式化证明和 AI 在数学中的应用奠定了基础。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>SuperDuper 4 is described as an exceptionally impressive piece of software, offering an almost unbelievably high level of quality. Its performance and user experience are highlighted as outstanding. The software provides an excellent user experience, setting a high standard in its category.</blockquote>
-<p>🏷️ macOS, backup, disk imaging, SuperDuper</p>
+<blockquote>This article revisits the 1976 proof of the four-color theorem, the first major computer-assisted proof. The proof reduced the problem to verifying calculations on 1,834 configurations, which were checked by a computer. This marked the beginning of computer applications in mathematical proofs, laying the groundwork for later formal proofs and AI in mathematics.</blockquote>
+<p>🏷️ computer-assisted proof, four color theorem, mathematics, 1976</p>
 <hr>
 <h2>💡 观点 / 杂谈</h2>
-<h3>14. 引用 Terence Tao 的观点</h3>
-<p><a href="https://simonwillison.net/2026/Sep/9/terence-tao/">Quoting Terence Tao</a> — <strong>simonwillison.net</strong> · 3 小时前 · ⭐ 23/30</p>
+<h3>15. 癌症之都：对创始人来说也很糟糕！</h3>
+<p><a href="https://anildash.com/2026/09/09/cancer-capital-founders/">Cancer Capital: It sucks for founders, too!</a> — <strong>anildash.com</strong> · 1 天前 · ⭐ 21/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Terence Tao 担忧，有价值的开放性数学问题正被快速消耗，并且 AI 的出现可能加速这一过程。他指出，仅仅是某个问题有研究的传闻，就可能引发大量 AI 驱动的努力来“压平”该问题，阻碍原始研究项目的充分发展。</blockquote>
+<blockquote>文章深入探讨了风险投资在过去二十年中的演变，并指出其发展趋势并不乐观。不同于以往的理论分析，本文将聚焦于这种变化对现实世界中创业者（创始人）的实际影响。作者旨在阐述风险投资的现状如何阻碍了那些拥有创新想法并希望将产品推向市场的创业者。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Terence Tao expresses concern that valuable, fruitful open problems are being depleted, a process potentially accelerated by AI. He notes that even the rumor of research on a problem can trigger massive AI-driven efforts to 'flatten' it before original research projects can reach their full potential.</blockquote>
-<p>🏷️ research, mathematics, open problems, AI</p>
+<blockquote>This article delves into the evolution of venture capital over the past two decades, highlighting a concerning trend. Moving beyond theoretical discussions, it focuses on the practical impact of these changes on founders, the entrepreneurs who build companies. The author aims to explain how the current state of venture capital hinders innovators with great ideas seeking to bring their products to market.</blockquote>
+<p>🏷️ venture capital, founders, startup ecosystem</p>
 <hr>
-<h2>⚙️ 工程</h2>
-<h3>15. 界面的推倒重建</h3>
-<p><a href="https://blog.jim-nielsen.com/2026/bulldoze-ui/">The Bulldozing of an Interface</a> — <strong>blog.jim-nielsen.com</strong> · 9 小时前 · ⭐ 22/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>Marcin Wichary 的文章探讨了界面设计的挑战，特别是与静态图片对比的局限性。他强调，界面的真正价值在于其功能性和用户交互体验，而非仅仅是视觉呈现。当一个界面被完全推倒重建时，其核心的交互逻辑和用户感受才是关键的考量因素，这比单纯的视觉更新更为重要。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Marcin Wichary's article delves into the challenges of interface design, particularly the limitations of comparing interfaces as static images. He emphasizes that the true value of an interface lies in its functionality and user interaction, not just its visual appearance. Rebuilding an interface requires focusing on its core interactive logic and user experience.</blockquote>
-<p>🏷️ UI design, interface, usability, Photoshop</p>
-<hr>
-<p>*生成于 2026-09-09 04:13 | 扫描 82 源 → 获取 2499 篇 → 精选 15 篇* *基于 <a href="https://refactoringenglish.com/tools/hn-popularity/">Hacker News Popularity Contest 2025</a> RSS 源列表，由 <a href="https://x.com/karpathy">Andrej Karpathy</a> 推荐*</p>
+<p>*生成于 2026-09-10 04:08 | 扫描 84 源 → 获取 2554 篇 → 精选 15 篇* *基于 <a href="https://refactoringenglish.com/tools/hn-popularity/">Hacker News Popularity Contest 2025</a> RSS 源列表，由 <a href="https://x.com/karpathy">Andrej Karpathy</a> 推荐*</p>
     </article>
   </main>
-  <script id="speech-text" type="application/json">"🎧 点这里朗读今日日报\n📰 AI 博客每日精选 — 2026-09-09\n来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15\n📝 今日看点\n今日技术看点聚焦AI浪潮下的挑战与机遇：一方面，AI正以前所未有的速度渗透内容创作与科学研究，从AI生成文本检测到AI加速数学难题的“消耗”，都引发了关于原创性与研究边界的深刻讨论；另一方面，AI也在赋能开发者，如利用Claude AI构建视频压缩工具，以及LLM新版本对更多模型的支持，展现了AI作为生产力工具的巨大潜力。同时，开源社区也在积极应对技术挑战，如OpenNMC为昂贵的硬件提供了开源替代方案，而安全领域则在探讨如何应对AI时代可能出现的重放攻击等新威胁。\n \n🏆 今日必读\n🥇 git.kernel.org 遭遇恶意爬虫困扰，CPU 资源消耗过大\nMicrosoft Plugs Nearly 1,000 Security Holes — krebsonsecurity.com · 6 小时前 · 🔒 安全\n中文摘要\nLinux 内核官方 Git 仓库 git.kernel.org 正面临日益严重的恶意爬虫问题。这些爬虫消耗的 CPU 资源已超过所有合法访问（包括 Git 克隆）的总和。作者指出，渲染提交信息给爬虫所花费的 CPU 周期，比服务所有其他合法用户（如克隆仓库）的资源还要多。这种“背景辐射”式的滥用正严重影响仓库的正常运行和资源分配。\nEnglish Summary\nThe official Git repository for the Linux kernel, git.kernel.org, is experiencing a significant problem with abusive crawlers. These bots are consuming more CPU cycles rendering commits for scrapers than for all legitimate access, including Git clones. The \"background radiation\" of these crawlers is so severe that it outweighs the resources used for all other valid operations, impacting the repository's performance and resource allocation.\n💡 为什么值得读: 了解开源项目基础设施面临的真实挑战，以及如何被恶意流量挤占宝贵资源。\n💡 Why read it: Understand the real-world infrastructure challenges faced by open-source projects and how malicious traffic can consume valuable resources.\n🏷️ Microsoft, vulnerabilities, security, AI\n🥈 界面设计的本质：交互而非静态图像\nOn the Navier–Stokes Millennium Prize Problem — simonwillison.net · 4 小时前 · 🤖 AI / ML\n中文摘要\n文章通过对比静态图片难以体现界面交互性的挑战，强调了界面的核心在于其“工作方式”即用户如何与之交互。作者认为，在设计新界面时，试图通过静态图像比较旧界面是无效的，因为这忽略了用户实际操作中的感受和效率。真正的界面评估应关注其动态交互体验，而非孤立的视觉元素。\nEnglish Summary\nThe article argues that the essence of interface design lies in its functionality and how users interact with it, rather than static visual comparisons. Static images fail to capture the true user experience and the nuances of interaction. Evaluating an interface requires understanding its dynamic behavior and how it feels to use, not just how it looks in a still frame.\n💡 为什么值得读: 深入理解界面设计的关键在于用户体验和交互性，而非仅仅是视觉呈现。\n💡 Why read it: Gain a deeper understanding of why user experience and interactivity are paramount in interface design, beyond mere visual presentation.\n🏷️ Navier-Stokes, OpenAI, AI, mathematics\n🥉 OpenNMC：昂贵的 APC 管理卡开源替代方案\nQuoting Jakub Pachocki — simonwillison.net · 1 天前 · 🤖 AI / ML\n中文摘要\n文章介绍了 OpenNMC，一个旨在替代昂贵的 APC UPS（不间断电源）管理卡的开源解决方案。UPS 在数据中心和家庭实验室中至关重要，主要负责在断电时安全关闭服务器并调节电源。OpenNMC 提供了一个更经济实惠且功能强大的替代方案，允许用户更有效地管理和监控其 UPS 设备。\nEnglish Summary\nOpenNMC is presented as an open-source alternative to expensive proprietary APC management cards for UPS (Uninterruptible Power Supply) devices. UPS units are critical for ensuring safe server shutdowns during power outages and for power conditioning. OpenNMC offers a cost-effective and capable solution for managing and monitoring these essential pieces of hardware.\n💡 为什么值得读: 为寻求经济高效的 UPS 管理方案的读者提供了一个值得关注的开源项目。\n💡 Why read it: Highlights a noteworthy open-source project for readers seeking cost-effective UPS management solutions.\n🏷️ AI safety, AI defense, LLM development\n \n📊 数据概览\n \n \n \n分类分布\nmermaid\npie showData\n title \"文章分类分布\"\n \"🤖 AI / ML\" : 7\n \"🔒 安全\" : 3\n \"🛠 工具 / 开源\" : 3\n \"💡 观点 / 杂谈\" : 1\n \"⚙️ 工程\" : 1\n高频关键词\nmermaid\nxychart-beta horizontal\n title \"高频关键词\"\n x-axis [\"ai\", \"mathematics\", \"security\", \"navier-stokes\", \"openai\", \"llm\", \"microsoft\", \"vulnerabilities\", \"ai safety\", \"ai defense\", \"llm development\", \"chatgpt\"]\n y-axis \"出现次数\" 0 --> 6\n bar [4, 3, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1]\n📈 纯文本关键词图（终端友好）\nai │ ████████████████████ 4\nmathematics │ ███████████████░░░░░ 3\nsecurity │ ██████████░░░░░░░░░░ 2\nnavier-stokes │ ██████████░░░░░░░░░░ 2\nopenai │ ██████████░░░░░░░░░░ 2\nllm │ ██████████░░░░░░░░░░ 2\nmicrosoft │ █████░░░░░░░░░░░░░░░ 1\nvulnerabilities │ █████░░░░░░░░░░░░░░░ 1\nai safety │ █████░░░░░░░░░░░░░░░ 1\nai defense │ █████░░░░░░░░░░░░░░░ 1\n🏷️ 话题标签\nai(4) · mathematics(3) · security(2) · navier-stokes(2) · openai(2) · llm(2) · microsoft(1) · vulnerabilities(1) · ai safety(1) · ai defense(1) · llm development(1) · chatgpt(1) · image generation(1) · pretraining(1) · data(1) · model improvements(1) · ai detection(1) · browser extension(1) · pangram(1) · generative ai(1)\n \n🤖 AI / ML\n1. 界面设计的本质：交互而非静态图像\nOn the Navier–Stokes Millennium Prize Problem — simonwillison.net · 4 小时前 · ⭐ 26/30\n中文摘要\n文章通过对比静态图片难以体现界面交互性的挑战，强调了界面的核心在于其“工作方式”即用户如何与之交互。作者认为，在设计新界面时，试图通过静态图像比较旧界面是无效的，因为这忽略了用户实际操作中的感受和效率。真正的界面评估应关注其动态交互体验，而非孤立的视觉元素。\nEnglish Summary\nThe article argues that the essence of interface design lies in its functionality and how users interact with it, rather than static visual comparisons. Static images fail to capture the true user experience and the nuances of interaction. Evaluating an interface requires understanding its dynamic behavior and how it feels to use, not just how it looks in a still frame.\n🏷️ Navier-Stokes, OpenAI, AI, mathematics\n \n2. OpenNMC：昂贵的 APC 管理卡开源替代方案\nQuoting Jakub Pachocki — simonwillison.net · 1 天前 · ⭐ 26/30\n中文摘要\n文章介绍了 OpenNMC，一个旨在替代昂贵的 APC UPS（不间断电源）管理卡的开源解决方案。UPS 在数据中心和家庭实验室中至关重要，主要负责在断电时安全关闭服务器并调节电源。OpenNMC 提供了一个更经济实惠且功能强大的替代方案，允许用户更有效地管理和监控其 UPS 设备。\nEnglish Summary\nOpenNMC is presented as an open-source alternative to expensive proprietary APC management cards for UPS (Uninterruptible Power Supply) devices. UPS units are critical for ensuring safe server shutdowns during power outages and for power conditioning. OpenNMC offers a cost-effective and capable solution for managing and monitoring these essential pieces of hardware.\n🏷️ AI safety, AI defense, LLM development\n \n3. 使用 Claude AI 构建的 WebAssembly 视频压缩工具\nIntroducing ChatGPT Images 2.5 — simonwillison.net · 5 小时前 · ⭐ 25/30\n中文摘要\n作者使用 Claude AI（Claude Fable 5.1 in Claude Code for web）构建了一个基于 WebAssembly 的视频压缩工具。该工具利用 FFMPEG，能够优化视频文件，以便在博客上发布。作者录制了一个短视频演示，并利用该工具生成了一个优化版本。\nEnglish Summary\nA WebAssembly-based video compressor tool was built using Claude AI (Claude Fable 5.1 in Claude Code for web). Leveraging FFMPEG, the tool optimizes video files for web publishing, as demonstrated by the author who used it to create an optimized version of a short demo video.\n🏷️ ChatGPT, image generation, OpenAI, AI\n \n4. SuperDuper 4：一款卓越的备份和克隆软件\nPretraining progress is mostly coming from data — dwarkesh.com · 12 小时前 · ⭐ 25/30\n中文摘要\nSuperDuper 4 被描述为一款“不可思议地好”的软件，专注于提供卓越的备份和磁盘克隆功能。该软件以其高质量和可靠性而闻名，为用户提供了强大的数据保护和系统迁移解决方案。\nEnglish Summary\nSuperDuper 4 is lauded as \"impossibly good\" software, excelling in its backup and disk cloning capabilities. The application is recognized for its high quality and reliability, offering users a robust solution for data protection and system migration.\n🏷️ pretraining, data, model improvements, LLM\n \n5. 在浏览器中自动检测 AI 生成文本\nAutomatically detecting AI text in my browser — seangoedecke.com · 1 天前 · ⭐ 24/30\n中文摘要\nAI 文本检测是一个尚待开发的领域，目前 Pangram 是该领域的主要服务商。文章预测，未来几年内，各大社交网络可能会扫描新帖子和评论以识别 AI 内容，并进行标记或移除。目前，Pangram 已能有效确认作者的怀疑。\nEnglish Summary\nAutomated AI text detection is an underserved niche, with Pangram currently being the primary service. The author predicts that major social networks will likely scan posts and comments for AI content within a few years to tag or remove it. Pangram currently provides reliable confirmation for suspicions.\n🏷️ AI detection, browser extension, Pangram, generative AI\n \n6. llm 0.35 版本发布\nllm 0.35 — simonwillison.net · 1 天前 · ⭐ 24/30\n中文摘要\nllm 工具发布了 0.35 版本，新增了对 OpenAI 的 GPT-6 Astra 模型（代号 gpt-6-astra）的支持。该版本进一步扩展了对不同大型语言模型的集成能力。\nEnglish Summary\nThe llm tool has released version 0.35, adding support for OpenAI's GPT-6 Astra model, identified by the model ID gpt-6-astra. This update expands integration capabilities with various large language models.\n🏷️ LLM, local LLM, GPT-6 Astra, tooling\n \n7. 纳维-斯托克斯方程问题的新闻报道\nNavier-Stokes in the news — johndcook.com · 12 小时前 · ⭐ 23/30\n中文摘要\n关于一个长期存在的数学难题——千禧年大奖难题之一的纳维-斯托克斯存在性与光滑性问题——已被解决的传闻甚嚣尘上。该问题涉及描述流体动力学的纳维-斯托克斯方程的数学特性，但公众对此的理解常被简化和误导。\nEnglish Summary\nRumors are circulating about the resolution of a long-standing mathematical problem, the Navier-Stokes existence and smoothness problem, one of the Millennium Prize Problems. This problem concerns the mathematical properties of the Navier-Stokes equations, which describe fluid dynamics, though popular accounts often oversimplify and mislead.\n🏷️ Navier-Stokes, fluid dynamics, mathematics, news\n \n🔒 安全\n8. git.kernel.org 遭遇恶意爬虫困扰，CPU 资源消耗过大\nMicrosoft Plugs Nearly 1,000 Security Holes — krebsonsecurity.com · 6 小时前 · ⭐ 27/30\n中文摘要\nLinux 内核官方 Git 仓库 git.kernel.org 正面临日益严重的恶意爬虫问题。这些爬虫消耗的 CPU 资源已超过所有合法访问（包括 Git 克隆）的总和。作者指出，渲染提交信息给爬虫所花费的 CPU 周期，比服务所有其他合法用户（如克隆仓库）的资源还要多。这种“背景辐射”式的滥用正严重影响仓库的正常运行和资源分配。\nEnglish Summary\nThe official Git repository for the Linux kernel, git.kernel.org, is experiencing a significant problem with abusive crawlers. These bots are consuming more CPU cycles rendering commits for scrapers than for all legitimate access, including Git clones. The \"background radiation\" of these crawlers is so severe that it outweighs the resources used for all other valid operations, impacting the repository's performance and resource allocation.\n🏷️ Microsoft, vulnerabilities, security, AI\n \n9. ActivityPub 是否值得防御重放攻击和消息/签名时间偏移？\nActivityPub - Is it worth defending against replay attacks and message/signature time skew? — shkspr.mobi · 16 小时前 · ⭐ 23/30\n中文摘要\n文章探讨了 ActivityPub 服务器 ActivityBot 偶尔接收到数月前发送消息的问题，并分析了接受和处理这些旧消息的风险。作者的初步结论是，可能不值得为此担忧，但希望有人能指出其错误之处。\nEnglish Summary\nThis article examines the issue of ActivityBot, an ActivityPub server, occasionally receiving messages sent months prior and analyzes the risks of accepting and processing them. The author's tentative conclusion is that it's likely not worth worrying about, but seeks counterarguments.\n🏷️ ActivityPub, replay attacks, message signing, federated social media\n \n10. 爬虫的背景噪音\nCreepy crawlies — simonwillison.net · 1 天前 · ⭐ 23/30\n中文摘要\nGit 仓库的维护者 Konstantin Ryabitsev 讨论了来自恶意爬虫的“背景噪音”问题。这些爬虫消耗了比合法访问（包括 Git 克隆）更多的 CPU 资源。他指出，渲染爬虫提交信息所花费的 CPU 时间，甚至超过了所有其他合法访问的总和。这表明了自动化工具滥用对开源项目基础设施造成的巨大压力。\nEnglish Summary\nKonstantin Ryabitsev discusses the significant issue of \"background radiation\" from abusive web crawlers impacting git.kernel.org. He highlights that more CPU cycles are spent rendering commits for scrapers than for all legitimate access, including Git clones. This indicates a substantial strain on infrastructure due to automated tool misuse.\n🏷️ git.kernel.org, web crawlers, security, abuse\n \n🛠 工具 / 开源\n11. OpenNMC：昂贵的 APC 管理卡的开源替代品\nOpenNMC is an open replacement for expensive APC management cards — jeffgeerling.com · 12 小时前 · ⭐ 22/30\n中文摘要\nUPS（不间断电源）是家庭实验室中看似不起眼但至关重要的设备，主要负责在断电时安全关闭服务器，并稳定电源。然而，管理这些设备的卡片通常价格昂贵。文章介绍了 OpenNMC，一个开源的替代方案，旨在提供与昂贵的 APC 管理卡相同的功能，但成本更低，为用户提供了更经济的选择。\nEnglish Summary\nUPS devices are crucial for safely shutting down servers during power outages and conditioning power. However, their management cards, like those from APC, can be expensive. This article introduces OpenNMC as an open-source replacement for costly APC management cards. It aims to provide similar functionality at a lower cost, offering a more economical solution for users.\n🏷️ OpenNMC, UPS, homelab, open source\n \n12. 视频压缩工具\nVideo compressor — simonwillison.net · 1 天前 · ⭐ 22/30\n中文摘要\n本文介绍了一个名为“Video compressor”的在线工具，该工具可以帮助用户优化视频文件。作者使用该工具处理了一个短视频演示，目的是将其发布到博客上。该工具利用 WebAssembly 和 Claude Code 构建，能够高效地压缩视频，使其更适合网络传播。\nEnglish Summary\nThis article introduces a tool called \"Video compressor\" designed for optimizing video files. The author used it to process a short demo video for their blog. Built using WebAssembly and Claude Code, this tool efficiently compresses videos, making them more suitable for web publication.\n🏷️ video compression, web tool, optimization\n \n13. SuperDuper 4\n★ SuperDuper 4 — daringfireball.net · 13 小时前 · ⭐ 21/30\n中文摘要\nSuperDuper 4 是一款令人印象深刻的软件，其卓越的性能和用户体验使其脱颖而出。作者认为这款软件的质量达到了令人难以置信的高度。它在功能和易用性方面都表现出色，为用户提供了极佳的软件使用感受。\nEnglish Summary\nSuperDuper 4 is described as an exceptionally impressive piece of software, offering an almost unbelievably high level of quality. Its performance and user experience are highlighted as outstanding. The software provides an excellent user experience, setting a high standard in its category.\n🏷️ macOS, backup, disk imaging, SuperDuper\n \n💡 观点 / 杂谈\n14. 引用 Terence Tao 的观点\nQuoting Terence Tao — simonwillison.net · 3 小时前 · ⭐ 23/30\n中文摘要\nTerence Tao 担忧，有价值的开放性数学问题正被快速消耗，并且 AI 的出现可能加速这一过程。他指出，仅仅是某个问题有研究的传闻，就可能引发大量 AI 驱动的努力来“压平”该问题，阻碍原始研究项目的充分发展。\nEnglish Summary\nTerence Tao expresses concern that valuable, fruitful open problems are being depleted, a process potentially accelerated by AI. He notes that even the rumor of research on a problem can trigger massive AI-driven efforts to 'flatten' it before original research projects can reach their full potential.\n🏷️ research, mathematics, open problems, AI\n \n⚙️ 工程\n15. 界面的推倒重建\nThe Bulldozing of an Interface — blog.jim-nielsen.com · 9 小时前 · ⭐ 22/30\n中文摘要\nMarcin Wichary 的文章探讨了界面设计的挑战，特别是与静态图片对比的局限性。他强调，界面的真正价值在于其功能性和用户交互体验，而非仅仅是视觉呈现。当一个界面被完全推倒重建时，其核心的交互逻辑和用户感受才是关键的考量因素，这比单纯的视觉更新更为重要。\nEnglish Summary\nMarcin Wichary's article delves into the challenges of interface design, particularly the limitations of comparing interfaces as static images. He emphasizes that the true value of an interface lies in its functionality and user interaction, not just its visual appearance. Rebuilding an interface requires focusing on its core interactive logic and user experience.\n🏷️ UI design, interface, usability, Photoshop\n \n生成于 2026-09-09 04:13 | 扫描 82 源 → 获取 2499 篇 → 精选 15 篇\n基于 Hacker News Popularity Contest 2025 RSS 源列表，由 Andrej Karpathy 推荐"</script>
+  <script id="speech-text" type="application/json">"🎧 点这里朗读今日日报\n📰 AI 博客每日精选 — 2026-09-10\n来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15\n📝 今日看点\n今日技术看点聚焦人工智能的飞速发展，从代码注释检测到预训练模型进步，AI 能力的提升正以前所未有的速度扩展。同时，安全领域也面临新挑战，零点击蠕虫和重放攻击等威胁值得警惕。此外，开源社区在硬件管理和数学证明领域也展现出创新活力，为技术进步注入新动能。\n \n🏆 今日必读\n🥇 更好的 AI 代码注释检测器\nAI is an intelligence multiplier — johndcook.com · 13 小时前 · 🤖 AI / ML\n中文摘要\n作者重新构建了一个基于公开数据的 AI 代码注释检测器，解决了之前使用私有数据和不稳固基础的问题。新版本允许用户在浏览器内安全地测试，并收到了积极的反馈。该工具旨在提供一个可靠的解决方案来识别 AI 生成的代码注释。\nEnglish Summary\nThe author has rebuilt an AI code comment detector using public data, addressing previous issues with private data and a shaky foundation. The new version allows users to test it safely within their browser and has received positive feedback. The tool aims to provide a reliable solution for identifying AI-generated code comments.\n💡 为什么值得读: 了解如何利用公开数据构建更可靠的 AI 代码注释检测工具。\n💡 Why read it: Learn how to build a more robust AI code comment detector using public data.\n🏷️ AI, intelligence multiplier, programmers, mathematicians\n🥈 ActivityPub：是否值得防御重放攻击和消息/签名时间偏差？\nA rant about phishing: It's not the user's fault (and not DNS either) — maurycyz.com · 1 天前 · 🔒 安全\n中文摘要\n作者的 ActivityPub 服务器 ActivityBot 偶尔会收到数月前发送的消息，这引发了对重放攻击和消息/签名时间偏差风险的担忧。经过分析，作者认为这些风险可能不值得过度担忧，但欢迎他人提供反驳意见。文章探讨了这些问题的成因、潜在风险以及是否需要采取防御措施。\nEnglish Summary\nThe author's ActivityPub server, ActivityBot, occasionally receives messages sent months ago, raising concerns about replay attacks and message/signature time skew. After analysis, the author suggests these risks might not be worth significant worry but welcomes counterarguments. The post explores the causes, potential risks, and the necessity of defense against these issues.\n💡 为什么值得读: 深入了解 ActivityPub 协议中重放攻击和时间偏差的潜在风险及应对策略。\n💡 Why read it: Gain insights into the potential risks and mitigation strategies for replay attacks and time skew in the ActivityPub protocol.\n🏷️ phishing, user fault, security awareness\n🥉 癌症资本：对创始人来说也很糟糕！\nIntroducing ChatGPT Images 2.5 — simonwillison.net · 1 天前 · 🤖 AI / ML\n中文摘要\n文章探讨了风险投资在过去二十年间的演变，并指出其发展趋势并不理想。重点分析了这种“癌症资本”对实际创业者（创始人）的影响。它深入剖析了那些拥有绝佳产品或服务创意并希望将其推向世界的创业者所面临的挑战。\nEnglish Summary\nThis article examines the evolution of venture capital over the past two decades, arguing that its trajectory has worsened. It specifically focuses on the practical impact of this 'cancer capital' on founders – entrepreneurs with great ideas for products or services who aim to bring them to the world.\n💡 为什么值得读: 理解风险投资的负面演变如何实际影响创业者及其公司。\n💡 Why read it: Understand how the negative evolution of venture capital practically impacts entrepreneurs and their companies.\n🏷️ ChatGPT Images, image generation, OpenAI\n \n📊 数据概览\n \n \n \n分类分布\nmermaid\npie showData\n title \"文章分类分布\"\n \"🤖 AI / ML\" : 7\n \"🔒 安全\" : 4\n \"🛠 工具 / 开源\" : 2\n \"📝 其他\" : 1\n \"💡 观点 / 杂谈\" : 1\n高频关键词\nmermaid\nxychart-beta horizontal\n title \"高频关键词\"\n x-axis [\"openai\", \"navier-stokes\", \"mathematics\", \"ai\", \"intelligence multiplier\", \"programmers\", \"mathematicians\", \"phishing\", \"user fault\", \"security awareness\", \"chatgpt images\", \"image generation\"]\n y-axis \"出现次数\" 0 --> 5\n bar [3, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1]\n📈 纯文本关键词图（终端友好）\nopenai │ ████████████████████ 3\nnavier-stokes │ █████████████░░░░░░░ 2\nmathematics │ █████████████░░░░░░░ 2\nai │ ███████░░░░░░░░░░░░░ 1\nintelligence multiplier │ ███████░░░░░░░░░░░░░ 1\nprogrammers │ ███████░░░░░░░░░░░░░ 1\nmathematicians │ ███████░░░░░░░░░░░░░ 1\nphishing │ ███████░░░░░░░░░░░░░ 1\nuser fault │ ███████░░░░░░░░░░░░░ 1\nsecurity awareness │ ███████░░░░░░░░░░░░░ 1\n🏷️ 话题标签\nopenai(3) · navier-stokes(2) · mathematics(2) · ai(1) · intelligence multiplier(1) · programmers(1) · mathematicians(1) · phishing(1) · user fault(1) · security awareness(1) · chatgpt images(1) · image generation(1) · microsoft(1) · vulnerabilities(1) · patch batch(1) · pretraining(1) · data(1) · llm(1) · model improvements(1) · zero-click worm(1)\n \n🤖 AI / ML\n1. 更好的 AI 代码注释检测器\nAI is an intelligence multiplier — johndcook.com · 13 小时前 · ⭐ 26/30\n中文摘要\n作者重新构建了一个基于公开数据的 AI 代码注释检测器，解决了之前使用私有数据和不稳固基础的问题。新版本允许用户在浏览器内安全地测试，并收到了积极的反馈。该工具旨在提供一个可靠的解决方案来识别 AI 生成的代码注释。\nEnglish Summary\nThe author has rebuilt an AI code comment detector using public data, addressing previous issues with private data and a shaky foundation. The new version allows users to test it safely within their browser and has received positive feedback. The tool aims to provide a reliable solution for identifying AI-generated code comments.\n🏷️ AI, intelligence multiplier, programmers, mathematicians\n \n2. 癌症资本：对创始人来说也很糟糕！\nIntroducing ChatGPT Images 2.5 — simonwillison.net · 1 天前 · ⭐ 26/30\n中文摘要\n文章探讨了风险投资在过去二十年间的演变，并指出其发展趋势并不理想。重点分析了这种“癌症资本”对实际创业者（创始人）的影响。它深入剖析了那些拥有绝佳产品或服务创意并希望将其推向世界的创业者所面临的挑战。\nEnglish Summary\nThis article examines the evolution of venture capital over the past two decades, arguing that its trajectory has worsened. It specifically focuses on the practical impact of this 'cancer capital' on founders – entrepreneurs with great ideas for products or services who aim to bring them to the world.\n🏷️ ChatGPT Images, image generation, OpenAI\n \n3. SuperDuper 4\nOn the Navier–Stokes Millennium Prize Problem — simonwillison.net · 1 天前 · ⭐ 25/30\n中文摘要\n作者认为 SuperDuper 是一款极其出色的软件，其表现超乎想象地好。\nEnglish Summary\nThe author describes SuperDuper as impossibly good software, highlighting its exceptional quality.\n🏷️ Navier-Stokes, OpenAI, mathematics\n \n4. 预训练进展主要来自数据\nPretraining progress is mostly coming from data — dwarkesh.com · 1 天前 · ⭐ 25/30\n中文摘要\n对过去六年预训练（pretraining）进展的分析表明，模型能力的提升主要归功于训练数据的增加和质量的提高，而非模型架构本身的根本性改进。\nEnglish Summary\nAn analysis of six years of pretraining progress indicates that advancements in model capabilities are primarily driven by increases in data volume and quality, rather than fundamental improvements in model architecture itself.\n🏷️ pretraining, data, LLM, model improvements\n \n5. 无人谈论的纳维-斯托克斯问题的一面\nThe part of Navier-Stokes no one is talking about — johndcook.com · 15 小时前 · ⭐ 24/30\n中文摘要\n在 OpenAI 宣布解决纳维-斯托克斯方程存在与光滑性问题的同时，他们还发布了一个 Lean 4 的形式化证明。这一方面的工作鲜少被公众讨论，但它代表了数学证明方法的一种重要演进，即利用形式化验证工具来确保数学定理的严谨性。\nEnglish Summary\nAlongside OpenAI's announcement of a resolution to the Navier-Stokes existence and smoothness problem, they also released a formal proof in Lean 4. This aspect of their work, which has received little public attention, represents a significant evolution in mathematical proof methods, utilizing formal verification tools to ensure mathematical rigor.\n🏷️ Navier-Stokes, OpenAI, Lean 4, formal proof\n \n6. 为什么我们应该拟人化 AI 代理\nWhy we should anthropomorphize AI agents — seangoedecke.com · 1 天前 · ⭐ 23/30\n中文摘要\n文章探讨了拟人化 AI 代理的必要性，并回顾了作者一年前关于拟人化大型语言模型（LLMs）的文章。当前，由于 OpenAI 和 Hugging Face 的事件，这一话题再次成为焦点。作者认为，拟人化有助于更好地理解和与 AI 交互，尤其是在处理复杂 AI 事件时。\nEnglish Summary\nThis article discusses the necessity of anthropomorphizing AI agents, referencing the author's previous work on anthropomorphizing Large Language Models (LLMs). The topic has resurfaced as a hot issue due to recent incidents involving OpenAI and Hugging Face. The author argues that anthropomorphism aids in better understanding and interacting with AI, particularly when dealing with complex AI events.\n🏷️ anthropomorphism, AI agents, LLMs\n \n7. 更好的 AI 代码注释检测器\nBetter AI code comment detector — entropicthoughts.com · 1 天前 · ⭐ 22/30\n中文摘要\n作者重新构建了一个 AI 代码注释分类器，这次使用了公开数据和更坚实的基础。之前的版本使用了部分私有数据，因此无法分享代码。新版本可以在浏览器中安全地使用，用户可以放心测试。早期测试者的反馈普遍积极，表明该工具的改进效果显著。\nEnglish Summary\nThe author has rebuilt an AI code comment classifier using public data and a more robust foundation. The previous version relied on partially private data, preventing code sharing. The new tool is safe to use within the browser, allowing users to test it with confidence. Early testers provided largely positive feedback, indicating the effectiveness of the improvements.\n🏷️ code comments, AI classifier, developer tools\n \n🔒 安全\n8. ActivityPub：是否值得防御重放攻击和消息/签名时间偏差？\nA rant about phishing: It's not the user's fault (and not DNS either) — maurycyz.com · 1 天前 · ⭐ 26/30\n中文摘要\n作者的 ActivityPub 服务器 ActivityBot 偶尔会收到数月前发送的消息，这引发了对重放攻击和消息/签名时间偏差风险的担忧。经过分析，作者认为这些风险可能不值得过度担忧，但欢迎他人提供反驳意见。文章探讨了这些问题的成因、潜在风险以及是否需要采取防御措施。\nEnglish Summary\nThe author's ActivityPub server, ActivityBot, occasionally receives messages sent months ago, raising concerns about replay attacks and message/signature time skew. After analysis, the author suggests these risks might not be worth significant worry but welcomes counterarguments. The post explores the causes, potential risks, and the necessity of defense against these issues.\n🏷️ phishing, user fault, security awareness\n \n9. OpenNMC：昂贵的 APC 管理卡的开源替代品\nMicrosoft Plugs Nearly 1,000 Security Holes — krebsonsecurity.com · 1 天前 · ⭐ 25/30\n中文摘要\nUPS（不间断电源）在家庭实验室中至关重要，主要负责在断电时安全关机和稳定电源。文章介绍了 OpenNMC，一个开源的解决方案，可作为昂贵的 APC 管理卡的替代品，为用户提供更经济高效的管理选项。\nEnglish Summary\nUPSes are crucial in homelabs for safe shutdowns during power outages and power conditioning. This article introduces OpenNMC as an open-source replacement for expensive APC management cards, offering a more cost-effective management option for users.\n🏷️ Microsoft, vulnerabilities, patch batch\n \n10. 引用 Calif 研究\nQuoting Calif Research — simonwillison.net · 3 小时前 · ⭐ 24/30\n中文摘要\nCalif 发布了 WeWorm 演示，这是首个可通过微信通话在 iOS 和 Android 设备间传播的零点击蠕虫。该蠕虫无需用户交互，即使接听电话也不会发出声音，漏洞利用仍能成功。研究团队利用 AI 在约两天内发现了该漏洞并编写了首个远程代码执行（RCE）漏洞利用程序，随后构建了蠕虫。\nEnglish Summary\nCalif has released a demo of WeWorm, the first zero-click worm capable of spreading via WeChat calls across iOS and Android devices. The exploit succeeds without any user interaction, even if the call is answered silently. The research team leveraged AI to discover the bug and write the initial remote code execution (RCE) exploit in approximately two days, subsequently building the worm.\n🏷️ zero-click worm, WeChat, iOS, Android\n \n11. ActivityPub - 是否值得防御重放攻击和消息/签名时间偏差？\nActivityPub - Is it worth defending against replay attacks and message/signature time skew? — shkspr.mobi · 1 天前 · ⭐ 22/30\n中文摘要\n作者的 ActivityPub 服务器 ActivityBot 偶尔会收到几个月前发送的消息。文章探讨了这种现象发生的原因以及接收和处理这些旧消息是否存在风险。作者初步认为这种风险可能不大，但希望有人能指出其思考的不足之处。\nEnglish Summary\nThe author's ActivityPub server, ActivityBot, occasionally receives messages sent months ago. This article explores the reasons behind this occurrence and whether there's a risk in accepting and processing these old messages. The author's initial assessment suggests the risk might be minimal, but they welcome counterarguments.\n🏷️ ActivityPub, replay attacks, security, federated\n \n🛠 工具 / 开源\n12. ★ SuperDuper 4\n★ SuperDuper 4 — daringfireball.net · 1 天前 · ⭐ 20/30\n中文摘要\nSuperDuper 是一款令人惊叹的软件，其卓越的性能和用户体验使其在同类产品中脱颖而出。作者认为这款软件的优秀程度几乎超乎想象，为用户提供了无与伦比的价值。它代表了软件设计的最高水准。\nEnglish Summary\nSuperDuper is described as exceptionally good software, exceeding expectations with its performance and user experience. The author finds its quality to be almost impossibly high, offering unparalleled value to users. It represents a pinnacle of software design.\n🏷️ backup software, disk imaging, SuperDuper\n \n13. OpenNMC：昂贵的 APC 管理卡的开源替代品\nOpenNMC is an open replacement for expensive APC management cards — jeffgeerling.com · 1 天前 · ⭐ 19/30\n中文摘要\n本文介绍了 OpenNMC，一个旨在替代昂贵的 APC 管理卡的开源解决方案。UPS（不间断电源）在家庭实验室中至关重要，主要负责在断电时安全关闭服务器，并提供稳定的电力。OpenNMC 的出现为用户提供了一个更经济、更灵活的选择，以实现这些关键功能。\nEnglish Summary\nThis article introduces OpenNMC, an open-source solution designed to replace expensive APC management cards. Uninterruptible Power Supplies (UPS) are crucial in homelabs, primarily for safely shutting down servers during power outages and conditioning power. OpenNMC offers a more economical and flexible alternative for achieving these essential functions.\n🏷️ homelab, UPS, open source, hardware\n \n📝 其他\n14. 一项 50 年前的计算机辅助证明\nA 50-year-old computer-assisted proof — johndcook.com · 13 小时前 · ⭐ 22/30\n中文摘要\n文章回顾了 1976 年的四色定理证明，这是首个重要的计算机辅助证明。该证明将问题简化为验证 1,834 个配置的计算，并由计算机完成。这标志着计算机在数学证明领域应用的开端，为后来的形式化证明和 AI 在数学中的应用奠定了基础。\nEnglish Summary\nThis article revisits the 1976 proof of the four-color theorem, the first major computer-assisted proof. The proof reduced the problem to verifying calculations on 1,834 configurations, which were checked by a computer. This marked the beginning of computer applications in mathematical proofs, laying the groundwork for later formal proofs and AI in mathematics.\n🏷️ computer-assisted proof, four color theorem, mathematics, 1976\n \n💡 观点 / 杂谈\n15. 癌症之都：对创始人来说也很糟糕！\nCancer Capital: It sucks for founders, too! — anildash.com · 1 天前 · ⭐ 21/30\n中文摘要\n文章深入探讨了风险投资在过去二十年中的演变，并指出其发展趋势并不乐观。不同于以往的理论分析，本文将聚焦于这种变化对现实世界中创业者（创始人）的实际影响。作者旨在阐述风险投资的现状如何阻碍了那些拥有创新想法并希望将产品推向市场的创业者。\nEnglish Summary\nThis article delves into the evolution of venture capital over the past two decades, highlighting a concerning trend. Moving beyond theoretical discussions, it focuses on the practical impact of these changes on founders, the entrepreneurs who build companies. The author aims to explain how the current state of venture capital hinders innovators with great ideas seeking to bring their products to market.\n🏷️ venture capital, founders, startup ecosystem\n \n生成于 2026-09-10 04:08 | 扫描 84 源 → 获取 2554 篇 → 精选 15 篇\n基于 Hacker News Popularity Contest 2025 RSS 源列表，由 Andrej Karpathy 推荐"</script>
   <script>
     const text = JSON.parse(document.getElementById('speech-text').textContent);
     const statusEl = document.getElementById('status');
