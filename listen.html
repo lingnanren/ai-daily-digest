@@ -52,203 +52,201 @@
   <main class="shell">
     <article class="card">
       <p>🎧 <a href="https://lingnanren.github.io/ai-daily-digest/listen.html">点这里朗读今日日报</a></p>
-<h1>📰 AI 博客每日精选 — 2026-09-11</h1>
+<h1>📰 AI 博客每日精选 — 2026-09-12</h1>
 <blockquote>来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15</blockquote>
 <h2>📝 今日看点</h2>
-<p>今日技术看点聚焦AI的深远影响与前沿探索。一方面，AI作为强大的智能倍增器，正显著提升各领域生产力，但研究人员对AI末日论的担忧也日益加剧，引发了关于AI安全与伦理的深刻讨论。另一方面，AI在OCR等具体技术领域的应用也在不断深化，例如利用贝叶斯方法提升字符识别精度。此外，苹果新一代操作系统发布，以及在浏览器中运行Nix包等工具的出现，也预示着技术生态的持续演进。</p>
+<p>今日技术看点聚焦AI安全与应用新视角，探讨AI在网络安全中的真实价值，并反思其对开发者心态的影响。同时，代码生成AI的严谨审查标准以及企业级AI应用的管理挑战也成为焦点。此外，Python社区在工具和语言特性上的持续演进，如<code>re.match()</code>的软弃用和新猴子补丁库的崛起，也值得关注。</p>
 <hr>
 <h2>🏆 今日必读</h2>
-<p>🥇 <strong>Apple OS 27 更新将于 9 月 14 日星期一发布</strong></p>
-<p><a href="https://simonwillison.net/2026/Sep/10/shopify-react-native/">Native is now the future of mobile at Shopify</a> — simonwillison.net · 6 小时前 · ⚙️ 工程</p>
+<p>🥇 <strong>每周更新 521：破解认知的现实</strong></p>
+<p><a href="https://seangoedecke.com/dont-build-tools-for-ai-agents/">Don't build tools for AI agents</a> — seangoedecke.com · 4 小时前 · 💡 观点 / 杂谈</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Apple 确认 macOS 27（代号 Golden Gate）将于 9 月 14 日星期一发布。作者本人自 WWDC 起已全程使用 iOS 27，认为其作为 .0 版本已处于极佳状态。作者正在考虑是否立即升级主 Mac 上的 macOS 15 Sequoia，倾向于等待 27.1 或 27.0.1 更新后再进行升级。</blockquote>
+<blockquote>文章探讨了人工智能在网络安全领域的实际应用，指出AI并非如新闻报道所描绘的那样，仅仅是黑客的工具。作者通过数据说明，AI在实际的恶意攻击中占比为0%。文章强调了AI在提升安全防护能力方面的潜力，并反驳了其作为主要威胁的普遍认知。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Apple has confirmed that macOS 27, codenamed "Golden Gate," will launch on Monday, September 14th. The author has been using iOS 27 full-time since WWDC and finds it to be in excellent shape for a .0 release. They are contemplating upgrading their main Mac from macOS 15 Sequoia, leaning towards waiting for a point release like 27.1 or 27.0.1.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 了解 Apple 最新操作系统发布计划及作者对新版本的初步使用体验。</p>
-<p>💡 <strong>Why read it</strong>: Get a heads-up on Apple's latest OS release schedule and the author's initial impressions of the new version.</p>
-<p>🏷️ mobile development, native, Shopify, React Native</p>
-<p>🥈 <strong>.blend 文件 URL 查看器</strong></p>
-<p><a href="https://terriblesoftware.org/2026/09/10/ai-is-breaking-this-thing-we-call-trust/">AI Is Breaking This Thing We Call Trust</a> — terriblesoftware.org · 13 小时前 · 💡 观点 / 杂谈</p>
+<blockquote>This article challenges the perception of AI as a primary hacking tool, citing data that shows AI has a 0% involvement in actual malicious attacks. It highlights AI's potential to enhance security defenses and refutes the widespread notion of it being a major threat. The author emphasizes the gap between public perception and the reality of AI's current role in cybersecurity.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 通过数据揭示AI在网络安全领域的真实作用，颠覆了普遍的负面认知。</p>
+<p>💡 <strong>Why read it</strong>: Debunks common negative perceptions of AI in cybersecurity with factual data, revealing its actual role and potential.</p>
+<p>🏷️ AI agents, tool building, UX, future</p>
+<p>🥈 <strong>引用 Boris Cherny 的观点</strong></p>
+<p><a href="https://www.dwarkesh.com/p/john-beren-charlie">AI researchers debate how close we are to recursive self-improvement</a> — dwarkesh.com · 11 小时前 · 🤖 AI / ML</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>作者 Simon Willison 发布了一个名为“.blend URL Viewer”的工具，该工具利用 GPT-6 Astra 和 Blender 来处理 .blend 文件。受法贝热彩蛋的启发，作者希望创造出庆祝流行文化的新作品。该工具允许用户通过 URL 查看和交互 .blend 文件。</blockquote>
+<blockquote>Boris Cherny 认为，由 Claude（Anthropic 的 AI 模型）生成的生产代码应比人类编写的代码接受更高的审查标准。Anthropic 为此实施了多重保障措施，包括严格的 lint 规则、大量测试、Claude 驱动的端到端测试、每日运行的 Claude 驱动的模糊测试器、自动代码审查和安全审查，以及自动代码重构等。这些措施旨在确保 AI 生成的代码质量和可维护性。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Simon Willison introduces the ".blend URL Viewer," a tool built with GPT-6 Astra and Blender for handling .blend files. Inspired by Fabergé eggs, the author aims to create new cultural artifacts. This tool enables users to view and interact with .blend files via URLs.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 探索利用 AI 和 3D 工具创建新颖文化内容的有趣尝试。</p>
-<p>💡 <strong>Why read it</strong>: Explore an interesting experiment using AI and 3D tools to create novel cultural artifacts.</p>
-<p>🏷️ AI, trust, generated content</p>
-<p>🥉 <strong>对链接的颂歌</strong></p>
-<p><a href="https://simonwillison.net/2026/Sep/10/calif-research/">Quoting Calif Research</a> — simonwillison.net · 1 天前 · 🔒 安全</p>
+<blockquote>Boris Cherny argues that production code written by Claude should face higher scrutiny than human-written code. Anthropic implements numerous safeguards, including extensive linting, testing, Claude-driven end-to-end tests, daily fuzzing, automated code and security reviews, and automated refactoring, to ensure the quality and maintainability of AI-generated code.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 深入了解AI生成代码的质量控制和安全保障措施，以及AI在软件开发中的应用挑战。</p>
+<p>💡 <strong>Why read it</strong>: Provides insight into the rigorous quality control and security measures for AI-generated code and the challenges of its application in software development.</p>
+<p>🏷️ AI safety, recursive self-improvement, AGI</p>
+<p>🥉 <strong>高级内容：Broadcom 的仇恨指南</strong></p>
+<p><a href="https://simonwillison.net/2026/Sep/11/hugging-face-security/">Quoting huggingface.co/security.txt</a> — simonwillison.net · 12 小时前 · 🔒 安全</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>URL 是一个技术概念，包含主机名、路径等技术细节；而链接则是一种文化现象，代表着邀请、引用、馈赠、捷径或连接。文章强调了链接在人类交流和文化构建中的重要性，并列举了大量日常语言中与链接相关的表达方式。</blockquote>
+<blockquote>文章揭露了 Broadcom CEO Hock Tan 在收购 VMWare 后，对 VMWare 员工推行的管理方式。Tan 在一次员工咖啡聊天中，展示了他对公司运营的强硬态度，并暗示了大规模裁员和业务整合的计划。VMWare 原本拥有庞大的园区，暗示了其被整合和精简的命运。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>A URL is a technical construct (hostname, path, etc.), whereas a link is a cultural phenomenon representing an invitation, citation, gift, shortcut, or connection. The article highlights the significance of links in human communication and cultural development, citing numerous everyday phrases related to them.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 一篇关于链接这一简单概念如何深刻影响我们文化和交流方式的哲学思考。</p>
-<p>💡 <strong>Why read it</strong>: A philosophical reflection on how the simple concept of a link profoundly shapes our culture and communication.</p>
-<p>🏷️ zero-click worm, WeChat, mobile security, vulnerability</p>
+<blockquote>This article exposes Broadcom CEO Hock Tan's management style introduced to VMWare employees post-acquisition. Tan's 'coffee chat' revealed a tough approach, hinting at significant layoffs and business consolidation. The article contrasts this with VMWare's previously expansive campus, suggesting its impending streamlining.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 了解科技巨头收购后的整合策略和对员工可能产生的影响。</p>
+<p>💡 <strong>Why read it</strong>: Offers a look into the integration strategies of tech giants post-acquisition and their potential impact on employees.</p>
+<p>🏷️ AI security, vulnerabilities, huggingface</p>
 <hr>
 <h2>📊 数据概览</h2>
-<table><thead><tr><th>扫描源</th><th>抓取文章</th><th>时间范围</th><th>精选</th></tr></thead><tbody><tr><td>84/92</td><td>2554 篇 → 25 篇</td><td>48h</td><td><strong>15 篇</strong></td></tr></tbody></table>
+<table><thead><tr><th>扫描源</th><th>抓取文章</th><th>时间范围</th><th>精选</th></tr></thead><tbody><tr><td>84/92</td><td>2554 篇 → 42 篇</td><td>48h</td><td><strong>15 篇</strong></td></tr></tbody></table>
 <h3>分类分布</h3>
 <div class="code-wrap"><div class="code-title">mermaid</div><pre><code>pie showData
     title "文章分类分布"
-    "🤖 AI / ML" : 5
-    "💡 观点 / 杂谈" : 3
-    "⚙️ 工程" : 2
-    "🔒 安全" : 2
-    "🛠 工具 / 开源" : 2
-    "📝 其他" : 1</code></pre></div>
+    "🔒 安全" : 5
+    "💡 观点 / 杂谈" : 4
+    "🛠 工具 / 开源" : 3
+    "🤖 AI / ML" : 2
+    "⚙️ 工程" : 1</code></pre></div>
 <h3>高频关键词</h3>
 <div class="code-wrap"><div class="code-title">mermaid</div><pre><code>xychart-beta horizontal
     title "高频关键词"
-    x-axis ["ai", "mobile development", "native", "shopify", "react native", "trust", "generated content", "zero-click worm", "wechat", "mobile security", "vulnerability", "navier-stokes"]
-    y-axis "出现次数" 0 --&gt; 4
-    bar [2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]</code></pre></div>
+    x-axis ["datasette", "security release", "ai", "future", "python", "patch", "ai agents", "tool building", "ux", "ai safety", "recursive self-improvement", "agi"]
+    y-axis "出现次数" 0 --&gt; 5
+    bar [3, 3, 3, 2, 2, 2, 1, 1, 1, 1, 1, 1]</code></pre></div>
 <div class="details">
 <p class="summary">📈 纯文本关键词图（终端友好）</p>
-<div class="code-wrap"><pre><code>ai                 │ ████████████████████ 2
-mobile development │ ██████████░░░░░░░░░░ 1
-native             │ ██████████░░░░░░░░░░ 1
-shopify            │ ██████████░░░░░░░░░░ 1
-react native       │ ██████████░░░░░░░░░░ 1
-trust              │ ██████████░░░░░░░░░░ 1
-generated content  │ ██████████░░░░░░░░░░ 1
-zero-click worm    │ ██████████░░░░░░░░░░ 1
-wechat             │ ██████████░░░░░░░░░░ 1
-mobile security    │ ██████████░░░░░░░░░░ 1</code></pre></div>
+<div class="code-wrap"><pre><code>datasette        │ ████████████████████ 3
+security release │ ████████████████████ 3
+ai               │ ████████████████████ 3
+future           │ █████████████░░░░░░░ 2
+python           │ █████████████░░░░░░░ 2
+patch            │ █████████████░░░░░░░ 2
+ai agents        │ ███████░░░░░░░░░░░░░ 1
+tool building    │ ███████░░░░░░░░░░░░░ 1
+ux               │ ███████░░░░░░░░░░░░░ 1
+ai safety        │ ███████░░░░░░░░░░░░░ 1</code></pre></div>
 </div>
 <h3>🏷️ 话题标签</h3>
-<p><strong>ai</strong>(2) · <strong>mobile development</strong>(1) · <strong>native</strong>(1) · shopify(1) · react native(1) · trust(1) · generated content(1) · zero-click worm(1) · wechat(1) · mobile security(1) · vulnerability(1) · navier-stokes(1) · openai(1) · formal proof(1) · lean 4(1) · mixture-of-experts(1) · gpt-2(1) · deep learning(1) · rtx 3090(1) · ai safety(1)</p>
-<hr>
-<h2>🤖 AI / ML</h2>
-<h3>1. 贝叶斯 OCR</h3>
-<p><a href="https://www.johndcook.com/blog/2026/09/09/formal-method-revolution/">The part of Navier-Stokes no one is talking about</a> — <strong>johndcook.com</strong> · 1 天前 · ⭐ 26/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>文章探讨了光学字符识别（OCR）中字符相似性带来的挑战，以希腊字母 β 和德语字母 ß 为例。作者提出可以使用贝叶斯方法来解决这类歧义，通过计算像素模式与已知字符模式的距离来提高识别的准确性。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>The article discusses the challenges of character ambiguity in Optical Character Recognition (OCR), using the Greek letter beta (β) and the German eszett (ß) as examples. It proposes employing Bayesian methods to resolve such ambiguities by calculating distances between pixel patterns and known character representations for improved accuracy.</blockquote>
-<p>🏷️ Navier-Stokes, OpenAI, formal proof, Lean 4</p>
-<hr>
-<h3>2. 在幻灯片开头添加 AV 测试</h3>
-<p><a href="https://www.gilesthomas.com/2026/09/gpt-2-to-moe">Extending Raschka's GPT-2: an MoE trained from scratch on an RTX 3090</a> — <strong>gilesthomas.com</strong> · 9 小时前 · ⭐ 25/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>作者建议在演示文稿的幻灯片开头放置一个 AV（音频/视频）测试卡。这能帮助演讲者在开始演讲前快速检查画面比例、颜色等视觉问题，并确保音频内容能够正常播放，避免出现类似作者曾遇到的音频演示失败的情况。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>The author recommends placing an AV (audio/video) test card at the beginning of presentation slides. This allows presenters to quickly check for visual issues like aspect ratio and color, and ensure audio content plays correctly, preventing problems like past audio demonstration failures.</blockquote>
-<p>🏷️ Mixture-of-Experts, GPT-2, deep learning, RTX 3090</p>
-<hr>
-<h3>3. AI 末日论：研究人员的真实担忧</h3>
-<p><a href="https://seangoedecke.com/they-really-do-think-ai-might-kill-everyone/">They really do think AI might kill everyone</a> — <strong>seangoedecke.com</strong> · 1 天前 · ⭐ 25/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>一篇来自 Anthropic 研究员的辞职推文引发了关于 AI 末日论的讨论。该研究员表示，构建 AI 的人们认真地认为 AI 可能在本十年内导致人类灭绝。文章探讨了这种担忧的普遍性，并指出许多人对此难以置信。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>A resignation tweet from an Anthropic researcher has reignited discussions about the AI apocalypse. The researcher stated that those building AI earnestly believe it could lead to human extinction by the end of the decade. The article explores the prevalence of this concern and notes that many find it hard to believe.</blockquote>
-<p>🏷️ AI safety, existential risk, AI alignment, Anthropic</p>
-<hr>
-<h3>4. AI 是强大的智能倍增器</h3>
-<p><a href="https://www.johndcook.com/blog/2026/09/09/ai-multiplier/">AI is an intelligence multiplier</a> — <strong>johndcook.com</strong> · 1 天前 · ⭐ 24/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>AI 显著提升了不同领域生产力，尤其对顶尖程序员和数学家效果最为显著。AI 作为一种强大工具，能够放大个体能力，帮助解决复杂问题和加速科学发现。然而，AI 本身并不能独立产生智能。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>AI significantly boosts productivity across various fields, with the most pronounced effects seen by top programmers and mathematicians. AI acts as a powerful tool, amplifying individual capabilities to solve complex problems and accelerate scientific discoveries. However, AI itself does not independently generate intelligence.</blockquote>
-<p>🏷️ AI, intelligence multiplier, productivity, programmers</p>
-<hr>
-<h3>5. 贝叶斯 OCR</h3>
-<p><a href="https://www.johndcook.com/blog/2026/09/10/bayesian-ocr/">Bayesian OCR</a> — <strong>johndcook.com</strong> · 15 小时前 · ⭐ 20/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>文章探讨了光学字符识别（OCR）在区分相似字符时的挑战，例如希腊字母 β（beta）和德语字母 ß（eszett）。作者提出了一种基于贝叶斯方法的解决方案，通过计算字符像素模式的距离来辅助识别。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>This article discusses the challenges in Optical Character Recognition (OCR) when distinguishing between similar characters like the Greek letter β (beta) and the German letter ß (eszett). It proposes a Bayesian approach to aid recognition by calculating distances between character pixel patterns.</blockquote>
-<p>🏷️ Bayesian, OCR, character recognition</p>
-<hr>
-<h2>💡 观点 / 杂谈</h2>
-<h3>6. .blend 文件 URL 查看器</h3>
-<p><a href="https://terriblesoftware.org/2026/09/10/ai-is-breaking-this-thing-we-call-trust/">AI Is Breaking This Thing We Call Trust</a> — <strong>terriblesoftware.org</strong> · 13 小时前 · ⭐ 26/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>作者 Simon Willison 发布了一个名为“.blend URL Viewer”的工具，该工具利用 GPT-6 Astra 和 Blender 来处理 .blend 文件。受法贝热彩蛋的启发，作者希望创造出庆祝流行文化的新作品。该工具允许用户通过 URL 查看和交互 .blend 文件。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Simon Willison introduces the ".blend URL Viewer," a tool built with GPT-6 Astra and Blender for handling .blend files. Inspired by Fabergé eggs, the author aims to create new cultural artifacts. This tool enables users to view and interact with .blend files via URLs.</blockquote>
-<p>🏷️ AI, trust, generated content</p>
-<hr>
-<h3>7. 通往未来之路：技术奇点与通用人工智能</h3>
-<p><a href="https://borretti.me/article/the-other-road">The Other Road</a> — <strong>borretti.me</strong> · 1 天前 · ⭐ 23/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>文章探讨了两种截然不同的未来愿景：技术奇点（transhuman future）与通用人工智能（AGI future）。这两种路径代表了人类在技术发展中的不同潜在走向，引发了对未来社会形态和人类角色的思考。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>This article explores two distinct visions of the future: the transhuman future and the AGI future. These paths represent different potential directions for humanity in technological advancement, prompting reflection on future societal forms and the role of humans.</blockquote>
-<p>🏷️ transhumanism, AGI, future</p>
-<hr>
-<h3>8. 链接颂歌</h3>
-<p><a href="https://blog.jim-nielsen.com/2026/ode-to-links/">An Ode to Links</a> — <strong>blog.jim-nielsen.com</strong> · 9 小时前 · ⭐ 20/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>文章区分了 URL 和链接的概念，指出 URL 是技术性的，而链接则更具文化意义，代表着邀请、引用、礼物或连接。作者强调了链接在文化中的重要性，并引用了日常生活中与链接相关的常用语。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>This piece distinguishes between URLs and links, defining URLs as technical constructs and links as cultural elements representing invitations, citations, gifts, or connections. It highlights the cultural significance of links and uses common phrases associated with them in everyday language.</blockquote>
-<p>🏷️ links, URLs, web culture</p>
-<hr>
-<h2>⚙️ 工程</h2>
-<h3>9. Apple OS 27 更新将于 9 月 14 日星期一发布</h3>
-<p><a href="https://simonwillison.net/2026/Sep/10/shopify-react-native/">Native is now the future of mobile at Shopify</a> — <strong>simonwillison.net</strong> · 6 小时前 · ⭐ 26/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>Apple 确认 macOS 27（代号 Golden Gate）将于 9 月 14 日星期一发布。作者本人自 WWDC 起已全程使用 iOS 27，认为其作为 .0 版本已处于极佳状态。作者正在考虑是否立即升级主 Mac 上的 macOS 15 Sequoia，倾向于等待 27.1 或 27.0.1 更新后再进行升级。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Apple has confirmed that macOS 27, codenamed "Golden Gate," will launch on Monday, September 14th. The author has been using iOS 27 full-time since WWDC and finds it to be in excellent shape for a .0 release. They are contemplating upgrading their main Mac from macOS 15 Sequoia, leaning towards waiting for a point release like 27.1 or 27.0.1.</blockquote>
-<p>🏷️ mobile development, native, Shopify, React Native</p>
-<hr>
-<h3>10. 在幻灯片开头添加 AV 测试</h3>
-<p><a href="https://shkspr.mobi/blog/2026/09/put-an-av-test-at-the-start-of-your-slides/">Put an AV test at the start of your slides</a> — <strong>shkspr.mobi</strong> · 16 小时前 · ⭐ 20/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>作者多年来一直在幻灯片开头放置一个测试卡片，以便在演讲开始前快速检查画面比例、颜色或其他视觉问题。这有助于确保演示文稿的视听效果良好，避免出现意外的技术故障。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>The author has been using a test card at the beginning of their slides for years to quickly check for aspect ratio errors, color issues, or other visual problems before starting a presentation. This ensures good audio-visual performance and prevents unexpected technical glitches.</blockquote>
-<p>🏷️ presentation, AV test, slides</p>
+<p><strong>datasette</strong>(3) · <strong>security release</strong>(3) · <strong>ai</strong>(3) · future(2) · python(2) · patch(2) · ai agents(1) · tool building(1) · ux(1) · ai safety(1) · recursive self-improvement(1) · agi(1) · ai security(1) · vulnerabilities(1) · huggingface(1) · nix(1) · browser(1) · package management(1) · openai(1) · rubygems(1)</p>
 <hr>
 <h2>🔒 安全</h2>
-<h3>11. 对链接的颂歌</h3>
-<p><a href="https://simonwillison.net/2026/Sep/10/calif-research/">Quoting Calif Research</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 26/30</p>
+<h3>1. 高级内容：Broadcom 的仇恨指南</h3>
+<p><a href="https://simonwillison.net/2026/Sep/11/hugging-face-security/">Quoting huggingface.co/security.txt</a> — <strong>simonwillison.net</strong> · 12 小时前 · ⭐ 25/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>URL 是一个技术概念，包含主机名、路径等技术细节；而链接则是一种文化现象，代表着邀请、引用、馈赠、捷径或连接。文章强调了链接在人类交流和文化构建中的重要性，并列举了大量日常语言中与链接相关的表达方式。</blockquote>
+<blockquote>文章揭露了 Broadcom CEO Hock Tan 在收购 VMWare 后，对 VMWare 员工推行的管理方式。Tan 在一次员工咖啡聊天中，展示了他对公司运营的强硬态度，并暗示了大规模裁员和业务整合的计划。VMWare 原本拥有庞大的园区，暗示了其被整合和精简的命运。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>A URL is a technical construct (hostname, path, etc.), whereas a link is a cultural phenomenon representing an invitation, citation, gift, shortcut, or connection. The article highlights the significance of links in human communication and cultural development, citing numerous everyday phrases related to them.</blockquote>
-<p>🏷️ zero-click worm, WeChat, mobile security, vulnerability</p>
+<blockquote>This article exposes Broadcom CEO Hock Tan's management style introduced to VMWare employees post-acquisition. Tan's 'coffee chat' revealed a tough approach, hinting at significant layoffs and business consolidation. The article contrasts this with VMWare's previously expansive campus, suggesting its impending streamlining.</blockquote>
+<p>🏷️ AI security, vulnerabilities, huggingface</p>
 <hr>
-<h3>12. Datasette 发布 1.0a39 和 0.65.4 安全更新</h3>
-<p><a href="https://simonwillison.net/2026/Sep/11/datasette-security/">Datasette 1.0a39 and 0.65.4 security releases</a> — <strong>simonwillison.net</strong> · 39 分钟前 · ⭐ 23/30</p>
+<h3>2. 对 AI 感到悲伤</h3>
+<p><a href="https://simonwillison.net/2026/Sep/12/openai-agents-rubygems/">OpenAI agents attacked RubyGems back in May</a> — <strong>simonwillison.net</strong> · 3 小时前 · ⭐ 24/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Datasette 发布了两个新的安全补丁版本：1.0a39（针对当前 alpha 系列）和 0.65.4（针对稳定的 0.65.x 系列）。这些版本包含重要的安全修复，建议用户尽快更新以确保数据安全。</blockquote>
+<blockquote>文章作者分享了自己曾经历过的对 AI 发展感到“存在危机”的时刻，并表示已经走出了这种情绪。他认为，当看到 AI 在短时间内完成曾需要数周才能完成的工作时，产生沮丧感是正常的。但作者暗示，这种情绪是可以克服的，并可能随着时间的推移而缓解。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Datasette has released two new security patch versions: 1.0a39 for the current alpha series and 0.65.4 for the stable 0.65.x family. These releases include critical security fixes, and users are strongly advised to update promptly to ensure data security.</blockquote>
+<blockquote>The author shares a personal experience of going through an 'existential crisis' regarding AI development and has since moved past it. They acknowledge the common feeling of sadness when AI rapidly accomplishes tasks that once took weeks. However, the author suggests this emotional response is surmountable and can be overcome with time.</blockquote>
+<p>🏷️ OpenAI, RubyGems, attack, agents</p>
+<hr>
+<h3>3. Datasette 1.0a39 和 0.65.4 安全发布</h3>
+<p><a href="https://simonwillison.net/2026/Sep/11/datasette-security/">Datasette 1.0a39 and 0.65.4 security releases</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 24/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Datasette 发布了两个新的安全补丁版本：1.0a39（针对当前 alpha 系列）和 0.65.4（针对稳定 0.65.x 系列）。这些版本包含重要的安全修复，建议用户尽快更新以保护其数据和应用安全。详细的安全更新信息可在 Datasette 博客上找到。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Datasette has released two new security patch versions: 1.0a39 for the current alpha series and 0.65.4 for the stable 0.65.x family. These releases contain critical security fixes, and users are strongly advised to update promptly to protect their data and applications. Detailed security update information is available on the Datasette blog.</blockquote>
+<p>🏷️ Datasette, security release, vulnerability</p>
+<hr>
+<h3>4. datasette 0.65.4</h3>
+<p><a href="https://simonwillison.net/2026/Sep/11/datasette/">datasette 0.65.4</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 24/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>发布了 Datasette 的 0.65.4 版本。此版本是安全更新，具体详情请参阅 Datasette 博客上关于 2026 年 9 月安全发布的文章。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Datasette version 0.65.4 has been released. This is a security update, and further details can be found in the Datasette blog post regarding the September 2026 security releases.</blockquote>
 <p>🏷️ Datasette, security release, patch</p>
 <hr>
+<h3>5. datasette 1.0a39</h3>
+<p><a href="https://simonwillison.net/2026/Sep/11/datasette-2/">datasette 1.0a39</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 24/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>发布了 Datasette 的 1.0a39 版本。此版本是安全更新，具体详情请参阅 Datasette 博客上关于 2026 年 9 月安全发布的文章。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Datasette version 1.0a39 has been released. This is a security update, and further details can be found in the Datasette blog post regarding the September 2026 security releases.</blockquote>
+<p>🏷️ Datasette, security release, patch</p>
+<hr>
+<h2>💡 观点 / 杂谈</h2>
+<h3>6. 每周更新 521：破解认知的现实</h3>
+<p><a href="https://seangoedecke.com/dont-build-tools-for-ai-agents/">Don't build tools for AI agents</a> — <strong>seangoedecke.com</strong> · 4 小时前 · ⭐ 25/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>文章探讨了人工智能在网络安全领域的实际应用，指出AI并非如新闻报道所描绘的那样，仅仅是黑客的工具。作者通过数据说明，AI在实际的恶意攻击中占比为0%。文章强调了AI在提升安全防护能力方面的潜力，并反驳了其作为主要威胁的普遍认知。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>This article challenges the perception of AI as a primary hacking tool, citing data that shows AI has a 0% involvement in actual malicious attacks. It highlights AI's potential to enhance security defenses and refutes the widespread notion of it being a major threat. The author emphasizes the gap between public perception and the reality of AI's current role in cybersecurity.</blockquote>
+<p>🏷️ AI agents, tool building, UX, future</p>
+<hr>
+<h3>7. 周报 521 期：关于数据泄露的认知与现实</h3>
+<p><a href="https://www.troyhunt.com/weekly-update-521/">Weekly Update 521: Breach Perception v. Reality</a> — <strong>troyhunt.com</strong> · 7 小时前 · ⭐ 23/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>本周的更新重点在于如何扭转公众对人工智能的负面看法。许多人认为人工智能是新闻中描绘的“大坏蛋”黑客工具，但实际情况并非如此。文章引用了统计数据，指出人工智能在某些方面的使用率极低，这与普遍认知形成鲜明对比。通过澄清误解，可以更客观地看待人工智能在网络安全领域的潜力与挑战。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>This week's update focuses on reframing public perception of AI, challenging the notion that it's solely a malicious hacking tool as often portrayed. The article highlights statistics that contradict this negative view, showing minimal usage in certain areas. By clarifying misconceptions, we can gain a more balanced perspective on AI's potential and challenges in cybersecurity.</blockquote>
+<p>🏷️ AI, hacking, perception, reality</p>
+<hr>
+<h3>8. 高级内容：博通的批评者指南</h3>
+<p><a href="https://www.wheresyoured.at/premium-the-haters-guide-to-broadcom/">Premium: The Hater's Guide To Broadcom</a> — <strong>wheresyoured.at</strong> · 14 小时前 · ⭐ 22/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>据 The Information 报道，2024 年初，博通 CEO 陈福阳（Hock Tan）与被收购的 VMWare 员工进行了一次“咖啡聊天”。他向员工介绍了自己独特的管理风格。当时，VMWare 的加州帕洛阿尔托园区占地广阔，横跨 18 栋建筑和 100 英亩土地，这为陈福阳的管理方式提供了背景。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>According to The Information, in early 2024, Broadcom CEO Hock Tan held a 'coffee chat' with employees of the recently acquired VMWare. He introduced them to his distinctive management style. At the time, VMWare's Palo Alto campus was extensive, spanning 18 buildings and 100 acres, setting the stage for Tan's approach.</blockquote>
+<p>🏷️ Broadcom, VMware, management</p>
+<hr>
+<h3>9. 对人工智能感到悲伤</h3>
+<p><a href="https://simonwillison.net/2026/Sep/11/feeling-sad-about-ai/">Feeling sad about AI</a> — <strong>simonwillison.net</strong> · 10 小时前 · ⭐ 21/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>作者在 Hacker News 上就“对人工智能感到悲伤”这一话题发表评论，并分享了个人经历。他认为，许多人（包括他自己几年前）都经历过这种存在主义危机时刻，并最终走了出来。文章探讨了当一个编码代理能在短时间内完成一项原本需要一周的工作时，人们最初的反应。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>The author comments on Hacker News regarding the topic of 'Feeling sad about AI,' sharing personal experiences. He suggests that many people, including himself years ago, have gone through such existential crises and emerged on the other side. The article discusses the initial reactions when an AI coding agent can complete a task in hours that would have taken a week for a human.</blockquote>
+<p>🏷️ AI, sadness, reflection, future</p>
+<hr>
 <h2>🛠 工具 / 开源</h2>
-<h3>13. 在浏览器中运行任何 Nix 包</h3>
-<p><a href="https://simonwillison.net/2026/Sep/10/trynix/">Any Nix package, live in your browser</a> — <strong>simonwillison.net</strong> · 4 小时前 · ⭐ 24/30</p>
+<h3>10. 那么，你想使用 OpenRouter？</h3>
+<p><a href="https://simonwillison.net/2026/Sep/10/trynix/">Any Nix package, live in your browser</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 25/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>trynix.dev 提供了一个基于 WebAssembly 的 x86_64 Linux 虚拟机，完全在浏览器中运行。该虚拟机可以使用任何 Nix 包启动，用户无需安装即可在浏览器中实时体验和测试各种软件。这是 Nix 生态系统的一项重要创新。</blockquote>
+<blockquote>OpenRouter 的一个卖点是其自动处理回退并为每个请求选择最具成本效益的选项，允许用户通过单一 API 端点访问不同模型和后端提供商。然而，Mohamed Moustafa 指出，这种机制可能导致问题，因为不同提供商运行的服务存在差异，可能影响结果的准确性和一致性。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>trynix.dev provides an x86_64 Linux virtual machine powered by WebAssembly, running entirely within the browser. This VM can be booted with any Nix package, allowing users to experience and test various software live in their browser without installation. This represents a significant innovation for the Nix ecosystem.</blockquote>
-<p>🏷️ Nix, browser, package manager</p>
+<blockquote>OpenRouter's appeal lies in its automatic fallback and cost-effective routing for AI model requests via a single API. However, Mohamed Moustafa highlights potential issues arising from differing backend services across providers, which can impact the accuracy and consistency of results.</blockquote>
+<p>🏷️ Nix, browser, package management</p>
 <hr>
-<h3>14. .blend 文件 URL 查看器</h3>
-<p><a href="https://simonwillison.net/2026/Sep/9/blender-viewer/">.blend URL Viewer</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 21/30</p>
+<h3>11. 不要忽视 wrapture</h3>
+<p><a href="https://simonwillison.net/2026/Sep/11/wrapture/">Don't sleep on wrapture</a> — <strong>simonwillison.net</strong> · 14 小时前 · ⭐ 24/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>这是一个名为“.blend URL Viewer”的工具，可以帮助用户查看 .blend 文件。作者对 GPT-6 Astra 和 Blender 结合使用感到非常有趣，并将其与著名的法贝热彩蛋进行类比。该工具旨在为流行文化创作新的数字彩蛋。</blockquote>
+<blockquote>Graham Dumpleton 开发的新猴子补丁（monkey patching）库 wrapture 正在成为 Python 开发者的重要工具。该库自 8 月 31 日发布以来，作者几乎每天都在发布新的教程，展示其强大的功能和易用性。文章鼓励开发者关注 wrapture，并列出了作者发布的所有相关教程链接。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This entry introduces the '.blend URL Viewer' tool, designed for viewing .blend files. The author expresses excitement about using GPT-6 Astra and Blender together, drawing parallels to Imperial Fabergé Easter eggs. The tool aims to create new digital eggs celebrating popular culture.</blockquote>
-<p>🏷️ .blend, Blender, viewer, GPT-6</p>
+<blockquote>Graham Dumpleton's new monkey patching package, wrapture, is shaping up to be an indispensable tool for Python developers. Since its initial release on August 31st, the author has been posting new tutorials almost daily, showcasing its powerful features and ease of use. The article encourages developers to pay attention to wrapture and lists all related tutorials published by the author.</blockquote>
+<p>🏷️ Python, monkey patching, wrapture</p>
 <hr>
-<h2>📝 其他</h2>
-<h3>15. 苹果 OS 27 更新将于 9 月 14 日星期一发布</h3>
-<p><a href="https://9to5mac.com/2026/09/09/apple-confirms-macos-27-golden-gate-launch-date-september-14/">Apple’s OS 27 Updates Will Be Released on Monday, 14 September</a> — <strong>daringfireball.net</strong> · 7 小时前 · ⭐ 21/30</p>
+<h3>12. 你想使用 OpenRouter 吗？</h3>
+<p><a href="https://simonwillison.net/2026/Sep/11/so-you-want-to-use-openrouter/">So you want to use OpenRouter?</a> — <strong>simonwillison.net</strong> · 5 小时前 · ⭐ 21/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>苹果即将发布 OS 27 更新，目前来看该版本状态良好。作者本人自 WWDC 以来一直在使用 iOS 27，并认为其 .0 版本表现出色。作者正在考虑是否要升级到最新的 macOS 版本，并可能跳过 27.0 版本，等待后续的 .1 更新。</blockquote>
+<blockquote>OpenRouter 的一个卖点是它能“自动处理回退，并为每个请求选择最具成本效益的选项”，这意味着你可以调用一个单一的 API 端点，并被路由到最佳的可用后端提供商。然而，Mohamed Moustafa 指出了这种方式可能带来的诸多问题。不同的提供商运行着不同的服务，这可能导致意想不到的后果。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Apple is set to release OS 27 updates on Monday, September 14th. The author has been using iOS 27 full-time since WWDC and finds it to be in excellent shape for a .0 release. They are contemplating upgrading their main Mac and may wait for a .1 update.</blockquote>
-<p>🏷️ Apple OS, release notes, September</p>
+<blockquote>One of OpenRouter's selling points is that it 'handles fallbacks automatically and picks the most cost-effective option for each request,' allowing users to call a single API endpoint and be routed to the best available backend provider. However, Mohamed Moustafa highlights several potential issues with this approach, noting that different providers run different services, which can lead to unexpected problems.</blockquote>
+<p>🏷️ OpenRouter, LLM, API, cost-effective</p>
 <hr>
-<p>*生成于 2026-09-11 04:06 | 扫描 84 源 → 获取 2554 篇 → 精选 15 篇* *基于 <a href="https://refactoringenglish.com/tools/hn-popularity/">Hacker News Popularity Contest 2025</a> RSS 源列表，由 <a href="https://x.com/karpathy">Andrej Karpathy</a> 推荐*</p>
+<h2>🤖 AI / ML</h2>
+<h3>13. 引用 Boris Cherny 的观点</h3>
+<p><a href="https://www.dwarkesh.com/p/john-beren-charlie">AI researchers debate how close we are to recursive self-improvement</a> — <strong>dwarkesh.com</strong> · 11 小时前 · ⭐ 25/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Boris Cherny 认为，由 Claude（Anthropic 的 AI 模型）生成的生产代码应比人类编写的代码接受更高的审查标准。Anthropic 为此实施了多重保障措施，包括严格的 lint 规则、大量测试、Claude 驱动的端到端测试、每日运行的 Claude 驱动的模糊测试器、自动代码审查和安全审查，以及自动代码重构等。这些措施旨在确保 AI 生成的代码质量和可维护性。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Boris Cherny argues that production code written by Claude should face higher scrutiny than human-written code. Anthropic implements numerous safeguards, including extensive linting, testing, Claude-driven end-to-end tests, daily fuzzing, automated code and security reviews, and automated refactoring, to ensure the quality and maintainability of AI-generated code.</blockquote>
+<p>🏷️ AI safety, recursive self-improvement, AGI</p>
+<hr>
+<h3>14. 引用 Boris Cherny 的观点</h3>
+<p><a href="https://simonwillison.net/2026/Sep/11/boris-cherny/">Quoting Boris Cherny</a> — <strong>simonwillison.net</strong> · 10 小时前 · ⭐ 23/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Boris Cherny 强调，由 Claude 编写的生产代码应比人类编写的代码有更高的标准。Anthropic 公司为此设置了多重保障措施，包括大量的代码检查规则、测试、Claude 驱动的端到端测试以及自动化代码审查和重构等。这些措施旨在确保代码质量和安全性，避免出现难以维护的混乱局面。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Boris Cherny emphasizes that production code written by Claude should meet a higher standard than human-written code. Anthropic implements numerous safeguards, including extensive linting rules, testing, Claude-driven end-to-end tests, and automated code reviews and refactoring. These measures aim to ensure code quality and security, preventing hard-to-maintain messes.</blockquote>
+<p>🏷️ AI, Claude, production code, guardrails</p>
+<hr>
+<h2>⚙️ 工程</h2>
+<h3>15. 软弃用 re.match()</h3>
+<p><a href="https://simonwillison.net/2026/Sep/11/soft-deprecating-re-match/">Soft-deprecating re.match()</a> — <strong>simonwillison.net</strong> · 13 小时前 · ⭐ 24/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Python 3.15 版本将对 <code>re.match()</code> 函数进行“软弃用”。软弃用意味着该 API 不再推荐用于编写新代码，但不会立即移除，也不会有强制移除的承诺。这种做法旨在引导开发者逐步迁移到更推荐的替代方案，同时避免破坏现有代码的兼容性。这是 Python 社区管理 API 演进的一种策略。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>The upcoming Python 3.15 release will implement a 'soft deprecation' for the <code>re.match()</code> function. Soft deprecation signifies that the API is no longer recommended for new code but will not be immediately removed or have a guaranteed removal date. This approach aims to guide developers towards preferred alternatives without breaking existing code compatibility, representing a strategy for managing API evolution within the Python community.</blockquote>
+<p>🏷️ Python, re.match, deprecation</p>
+<hr>
+<p>*生成于 2026-09-12 04:07 | 扫描 84 源 → 获取 2554 篇 → 精选 15 篇* *基于 <a href="https://refactoringenglish.com/tools/hn-popularity/">Hacker News Popularity Contest 2025</a> RSS 源列表，由 <a href="https://x.com/karpathy">Andrej Karpathy</a> 推荐*</p>
     </article>
   </main>
-  <script id="speech-text" type="application/json">"🎧 点这里朗读今日日报\n📰 AI 博客每日精选 — 2026-09-11\n来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15\n📝 今日看点\n今日技术看点聚焦AI的深远影响与前沿探索。一方面，AI作为强大的智能倍增器，正显著提升各领域生产力，但研究人员对AI末日论的担忧也日益加剧，引发了关于AI安全与伦理的深刻讨论。另一方面，AI在OCR等具体技术领域的应用也在不断深化，例如利用贝叶斯方法提升字符识别精度。此外，苹果新一代操作系统发布，以及在浏览器中运行Nix包等工具的出现，也预示着技术生态的持续演进。\n \n🏆 今日必读\n🥇 Apple OS 27 更新将于 9 月 14 日星期一发布\nNative is now the future of mobile at Shopify — simonwillison.net · 6 小时前 · ⚙️ 工程\n中文摘要\nApple 确认 macOS 27（代号 Golden Gate）将于 9 月 14 日星期一发布。作者本人自 WWDC 起已全程使用 iOS 27，认为其作为 .0 版本已处于极佳状态。作者正在考虑是否立即升级主 Mac 上的 macOS 15 Sequoia，倾向于等待 27.1 或 27.0.1 更新后再进行升级。\nEnglish Summary\nApple has confirmed that macOS 27, codenamed \"Golden Gate,\" will launch on Monday, September 14th. The author has been using iOS 27 full-time since WWDC and finds it to be in excellent shape for a .0 release. They are contemplating upgrading their main Mac from macOS 15 Sequoia, leaning towards waiting for a point release like 27.1 or 27.0.1.\n💡 为什么值得读: 了解 Apple 最新操作系统发布计划及作者对新版本的初步使用体验。\n💡 Why read it: Get a heads-up on Apple's latest OS release schedule and the author's initial impressions of the new version.\n🏷️ mobile development, native, Shopify, React Native\n🥈 .blend 文件 URL 查看器\nAI Is Breaking This Thing We Call Trust — terriblesoftware.org · 13 小时前 · 💡 观点 / 杂谈\n中文摘要\n作者 Simon Willison 发布了一个名为“.blend URL Viewer”的工具，该工具利用 GPT-6 Astra 和 Blender 来处理 .blend 文件。受法贝热彩蛋的启发，作者希望创造出庆祝流行文化的新作品。该工具允许用户通过 URL 查看和交互 .blend 文件。\nEnglish Summary\nSimon Willison introduces the \".blend URL Viewer,\" a tool built with GPT-6 Astra and Blender for handling .blend files. Inspired by Fabergé eggs, the author aims to create new cultural artifacts. This tool enables users to view and interact with .blend files via URLs.\n💡 为什么值得读: 探索利用 AI 和 3D 工具创建新颖文化内容的有趣尝试。\n💡 Why read it: Explore an interesting experiment using AI and 3D tools to create novel cultural artifacts.\n🏷️ AI, trust, generated content\n🥉 对链接的颂歌\nQuoting Calif Research — simonwillison.net · 1 天前 · 🔒 安全\n中文摘要\nURL 是一个技术概念，包含主机名、路径等技术细节；而链接则是一种文化现象，代表着邀请、引用、馈赠、捷径或连接。文章强调了链接在人类交流和文化构建中的重要性，并列举了大量日常语言中与链接相关的表达方式。\nEnglish Summary\nA URL is a technical construct (hostname, path, etc.), whereas a link is a cultural phenomenon representing an invitation, citation, gift, shortcut, or connection. The article highlights the significance of links in human communication and cultural development, citing numerous everyday phrases related to them.\n💡 为什么值得读: 一篇关于链接这一简单概念如何深刻影响我们文化和交流方式的哲学思考。\n💡 Why read it: A philosophical reflection on how the simple concept of a link profoundly shapes our culture and communication.\n🏷️ zero-click worm, WeChat, mobile security, vulnerability\n \n📊 数据概览\n \n \n \n分类分布\nmermaid\npie showData\n title \"文章分类分布\"\n \"🤖 AI / ML\" : 5\n \"💡 观点 / 杂谈\" : 3\n \"⚙️ 工程\" : 2\n \"🔒 安全\" : 2\n \"🛠 工具 / 开源\" : 2\n \"📝 其他\" : 1\n高频关键词\nmermaid\nxychart-beta horizontal\n title \"高频关键词\"\n x-axis [\"ai\", \"mobile development\", \"native\", \"shopify\", \"react native\", \"trust\", \"generated content\", \"zero-click worm\", \"wechat\", \"mobile security\", \"vulnerability\", \"navier-stokes\"]\n y-axis \"出现次数\" 0 --> 4\n bar [2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]\n📈 纯文本关键词图（终端友好）\nai │ ████████████████████ 2\nmobile development │ ██████████░░░░░░░░░░ 1\nnative │ ██████████░░░░░░░░░░ 1\nshopify │ ██████████░░░░░░░░░░ 1\nreact native │ ██████████░░░░░░░░░░ 1\ntrust │ ██████████░░░░░░░░░░ 1\ngenerated content │ ██████████░░░░░░░░░░ 1\nzero-click worm │ ██████████░░░░░░░░░░ 1\nwechat │ ██████████░░░░░░░░░░ 1\nmobile security │ ██████████░░░░░░░░░░ 1\n🏷️ 话题标签\nai(2) · mobile development(1) · native(1) · shopify(1) · react native(1) · trust(1) · generated content(1) · zero-click worm(1) · wechat(1) · mobile security(1) · vulnerability(1) · navier-stokes(1) · openai(1) · formal proof(1) · lean 4(1) · mixture-of-experts(1) · gpt-2(1) · deep learning(1) · rtx 3090(1) · ai safety(1)\n \n🤖 AI / ML\n1. 贝叶斯 OCR\nThe part of Navier-Stokes no one is talking about — johndcook.com · 1 天前 · ⭐ 26/30\n中文摘要\n文章探讨了光学字符识别（OCR）中字符相似性带来的挑战，以希腊字母 β 和德语字母 ß 为例。作者提出可以使用贝叶斯方法来解决这类歧义，通过计算像素模式与已知字符模式的距离来提高识别的准确性。\nEnglish Summary\nThe article discusses the challenges of character ambiguity in Optical Character Recognition (OCR), using the Greek letter beta (β) and the German eszett (ß) as examples. It proposes employing Bayesian methods to resolve such ambiguities by calculating distances between pixel patterns and known character representations for improved accuracy.\n🏷️ Navier-Stokes, OpenAI, formal proof, Lean 4\n \n2. 在幻灯片开头添加 AV 测试\nExtending Raschka's GPT-2: an MoE trained from scratch on an RTX 3090 — gilesthomas.com · 9 小时前 · ⭐ 25/30\n中文摘要\n作者建议在演示文稿的幻灯片开头放置一个 AV（音频/视频）测试卡。这能帮助演讲者在开始演讲前快速检查画面比例、颜色等视觉问题，并确保音频内容能够正常播放，避免出现类似作者曾遇到的音频演示失败的情况。\nEnglish Summary\nThe author recommends placing an AV (audio/video) test card at the beginning of presentation slides. This allows presenters to quickly check for visual issues like aspect ratio and color, and ensure audio content plays correctly, preventing problems like past audio demonstration failures.\n🏷️ Mixture-of-Experts, GPT-2, deep learning, RTX 3090\n \n3. AI 末日论：研究人员的真实担忧\nThey really do think AI might kill everyone — seangoedecke.com · 1 天前 · ⭐ 25/30\n中文摘要\n一篇来自 Anthropic 研究员的辞职推文引发了关于 AI 末日论的讨论。该研究员表示，构建 AI 的人们认真地认为 AI 可能在本十年内导致人类灭绝。文章探讨了这种担忧的普遍性，并指出许多人对此难以置信。\nEnglish Summary\nA resignation tweet from an Anthropic researcher has reignited discussions about the AI apocalypse. The researcher stated that those building AI earnestly believe it could lead to human extinction by the end of the decade. The article explores the prevalence of this concern and notes that many find it hard to believe.\n🏷️ AI safety, existential risk, AI alignment, Anthropic\n \n4. AI 是强大的智能倍增器\nAI is an intelligence multiplier — johndcook.com · 1 天前 · ⭐ 24/30\n中文摘要\nAI 显著提升了不同领域生产力，尤其对顶尖程序员和数学家效果最为显著。AI 作为一种强大工具，能够放大个体能力，帮助解决复杂问题和加速科学发现。然而，AI 本身并不能独立产生智能。\nEnglish Summary\nAI significantly boosts productivity across various fields, with the most pronounced effects seen by top programmers and mathematicians. AI acts as a powerful tool, amplifying individual capabilities to solve complex problems and accelerate scientific discoveries. However, AI itself does not independently generate intelligence.\n🏷️ AI, intelligence multiplier, productivity, programmers\n \n5. 贝叶斯 OCR\nBayesian OCR — johndcook.com · 15 小时前 · ⭐ 20/30\n中文摘要\n文章探讨了光学字符识别（OCR）在区分相似字符时的挑战，例如希腊字母 β（beta）和德语字母 ß（eszett）。作者提出了一种基于贝叶斯方法的解决方案，通过计算字符像素模式的距离来辅助识别。\nEnglish Summary\nThis article discusses the challenges in Optical Character Recognition (OCR) when distinguishing between similar characters like the Greek letter β (beta) and the German letter ß (eszett). It proposes a Bayesian approach to aid recognition by calculating distances between character pixel patterns.\n🏷️ Bayesian, OCR, character recognition\n \n💡 观点 / 杂谈\n6. .blend 文件 URL 查看器\nAI Is Breaking This Thing We Call Trust — terriblesoftware.org · 13 小时前 · ⭐ 26/30\n中文摘要\n作者 Simon Willison 发布了一个名为“.blend URL Viewer”的工具，该工具利用 GPT-6 Astra 和 Blender 来处理 .blend 文件。受法贝热彩蛋的启发，作者希望创造出庆祝流行文化的新作品。该工具允许用户通过 URL 查看和交互 .blend 文件。\nEnglish Summary\nSimon Willison introduces the \".blend URL Viewer,\" a tool built with GPT-6 Astra and Blender for handling .blend files. Inspired by Fabergé eggs, the author aims to create new cultural artifacts. This tool enables users to view and interact with .blend files via URLs.\n🏷️ AI, trust, generated content\n \n7. 通往未来之路：技术奇点与通用人工智能\nThe Other Road — borretti.me · 1 天前 · ⭐ 23/30\n中文摘要\n文章探讨了两种截然不同的未来愿景：技术奇点（transhuman future）与通用人工智能（AGI future）。这两种路径代表了人类在技术发展中的不同潜在走向，引发了对未来社会形态和人类角色的思考。\nEnglish Summary\nThis article explores two distinct visions of the future: the transhuman future and the AGI future. These paths represent different potential directions for humanity in technological advancement, prompting reflection on future societal forms and the role of humans.\n🏷️ transhumanism, AGI, future\n \n8. 链接颂歌\nAn Ode to Links — blog.jim-nielsen.com · 9 小时前 · ⭐ 20/30\n中文摘要\n文章区分了 URL 和链接的概念，指出 URL 是技术性的，而链接则更具文化意义，代表着邀请、引用、礼物或连接。作者强调了链接在文化中的重要性，并引用了日常生活中与链接相关的常用语。\nEnglish Summary\nThis piece distinguishes between URLs and links, defining URLs as technical constructs and links as cultural elements representing invitations, citations, gifts, or connections. It highlights the cultural significance of links and uses common phrases associated with them in everyday language.\n🏷️ links, URLs, web culture\n \n⚙️ 工程\n9. Apple OS 27 更新将于 9 月 14 日星期一发布\nNative is now the future of mobile at Shopify — simonwillison.net · 6 小时前 · ⭐ 26/30\n中文摘要\nApple 确认 macOS 27（代号 Golden Gate）将于 9 月 14 日星期一发布。作者本人自 WWDC 起已全程使用 iOS 27，认为其作为 .0 版本已处于极佳状态。作者正在考虑是否立即升级主 Mac 上的 macOS 15 Sequoia，倾向于等待 27.1 或 27.0.1 更新后再进行升级。\nEnglish Summary\nApple has confirmed that macOS 27, codenamed \"Golden Gate,\" will launch on Monday, September 14th. The author has been using iOS 27 full-time since WWDC and finds it to be in excellent shape for a .0 release. They are contemplating upgrading their main Mac from macOS 15 Sequoia, leaning towards waiting for a point release like 27.1 or 27.0.1.\n🏷️ mobile development, native, Shopify, React Native\n \n10. 在幻灯片开头添加 AV 测试\nPut an AV test at the start of your slides — shkspr.mobi · 16 小时前 · ⭐ 20/30\n中文摘要\n作者多年来一直在幻灯片开头放置一个测试卡片，以便在演讲开始前快速检查画面比例、颜色或其他视觉问题。这有助于确保演示文稿的视听效果良好，避免出现意外的技术故障。\nEnglish Summary\nThe author has been using a test card at the beginning of their slides for years to quickly check for aspect ratio errors, color issues, or other visual problems before starting a presentation. This ensures good audio-visual performance and prevents unexpected technical glitches.\n🏷️ presentation, AV test, slides\n \n🔒 安全\n11. 对链接的颂歌\nQuoting Calif Research — simonwillison.net · 1 天前 · ⭐ 26/30\n中文摘要\nURL 是一个技术概念，包含主机名、路径等技术细节；而链接则是一种文化现象，代表着邀请、引用、馈赠、捷径或连接。文章强调了链接在人类交流和文化构建中的重要性，并列举了大量日常语言中与链接相关的表达方式。\nEnglish Summary\nA URL is a technical construct (hostname, path, etc.), whereas a link is a cultural phenomenon representing an invitation, citation, gift, shortcut, or connection. The article highlights the significance of links in human communication and cultural development, citing numerous everyday phrases related to them.\n🏷️ zero-click worm, WeChat, mobile security, vulnerability\n \n12. Datasette 发布 1.0a39 和 0.65.4 安全更新\nDatasette 1.0a39 and 0.65.4 security releases — simonwillison.net · 39 分钟前 · ⭐ 23/30\n中文摘要\nDatasette 发布了两个新的安全补丁版本：1.0a39（针对当前 alpha 系列）和 0.65.4（针对稳定的 0.65.x 系列）。这些版本包含重要的安全修复，建议用户尽快更新以确保数据安全。\nEnglish Summary\nDatasette has released two new security patch versions: 1.0a39 for the current alpha series and 0.65.4 for the stable 0.65.x family. These releases include critical security fixes, and users are strongly advised to update promptly to ensure data security.\n🏷️ Datasette, security release, patch\n \n🛠 工具 / 开源\n13. 在浏览器中运行任何 Nix 包\nAny Nix package, live in your browser — simonwillison.net · 4 小时前 · ⭐ 24/30\n中文摘要\ntrynix.dev 提供了一个基于 WebAssembly 的 x8664 Linux 虚拟机，完全在浏览器中运行。该虚拟机可以使用任何 Nix 包启动，用户无需安装即可在浏览器中实时体验和测试各种软件。这是 Nix 生态系统的一项重要创新。\nEnglish Summary\ntrynix.dev provides an x8664 Linux virtual machine powered by WebAssembly, running entirely within the browser. This VM can be booted with any Nix package, allowing users to experience and test various software live in their browser without installation. This represents a significant innovation for the Nix ecosystem.\n🏷️ Nix, browser, package manager\n \n14. .blend 文件 URL 查看器\n.blend URL Viewer — simonwillison.net · 1 天前 · ⭐ 21/30\n中文摘要\n这是一个名为“.blend URL Viewer”的工具，可以帮助用户查看 .blend 文件。作者对 GPT-6 Astra 和 Blender 结合使用感到非常有趣，并将其与著名的法贝热彩蛋进行类比。该工具旨在为流行文化创作新的数字彩蛋。\nEnglish Summary\nThis entry introduces the '.blend URL Viewer' tool, designed for viewing .blend files. The author expresses excitement about using GPT-6 Astra and Blender together, drawing parallels to Imperial Fabergé Easter eggs. The tool aims to create new digital eggs celebrating popular culture.\n🏷️ .blend, Blender, viewer, GPT-6\n \n📝 其他\n15. 苹果 OS 27 更新将于 9 月 14 日星期一发布\nApple’s OS 27 Updates Will Be Released on Monday, 14 September — daringfireball.net · 7 小时前 · ⭐ 21/30\n中文摘要\n苹果即将发布 OS 27 更新，目前来看该版本状态良好。作者本人自 WWDC 以来一直在使用 iOS 27，并认为其 .0 版本表现出色。作者正在考虑是否要升级到最新的 macOS 版本，并可能跳过 27.0 版本，等待后续的 .1 更新。\nEnglish Summary\nApple is set to release OS 27 updates on Monday, September 14th. The author has been using iOS 27 full-time since WWDC and finds it to be in excellent shape for a .0 release. They are contemplating upgrading their main Mac and may wait for a .1 update.\n🏷️ Apple OS, release notes, September\n \n生成于 2026-09-11 04:06 | 扫描 84 源 → 获取 2554 篇 → 精选 15 篇\n基于 Hacker News Popularity Contest 2025 RSS 源列表，由 Andrej Karpathy 推荐"</script>
+  <script id="speech-text" type="application/json">"🎧 点这里朗读今日日报\n📰 AI 博客每日精选 — 2026-09-12\n来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15\n📝 今日看点\n今日技术看点聚焦AI安全与应用新视角，探讨AI在网络安全中的真实价值，并反思其对开发者心态的影响。同时，代码生成AI的严谨审查标准以及企业级AI应用的管理挑战也成为焦点。此外，Python社区在工具和语言特性上的持续演进，如re.match()的软弃用和新猴子补丁库的崛起，也值得关注。\n \n🏆 今日必读\n🥇 每周更新 521：破解认知的现实\nDon't build tools for AI agents — seangoedecke.com · 4 小时前 · 💡 观点 / 杂谈\n中文摘要\n文章探讨了人工智能在网络安全领域的实际应用，指出AI并非如新闻报道所描绘的那样，仅仅是黑客的工具。作者通过数据说明，AI在实际的恶意攻击中占比为0%。文章强调了AI在提升安全防护能力方面的潜力，并反驳了其作为主要威胁的普遍认知。\nEnglish Summary\nThis article challenges the perception of AI as a primary hacking tool, citing data that shows AI has a 0% involvement in actual malicious attacks. It highlights AI's potential to enhance security defenses and refutes the widespread notion of it being a major threat. The author emphasizes the gap between public perception and the reality of AI's current role in cybersecurity.\n💡 为什么值得读: 通过数据揭示AI在网络安全领域的真实作用，颠覆了普遍的负面认知。\n💡 Why read it: Debunks common negative perceptions of AI in cybersecurity with factual data, revealing its actual role and potential.\n🏷️ AI agents, tool building, UX, future\n🥈 引用 Boris Cherny 的观点\nAI researchers debate how close we are to recursive self-improvement — dwarkesh.com · 11 小时前 · 🤖 AI / ML\n中文摘要\nBoris Cherny 认为，由 Claude（Anthropic 的 AI 模型）生成的生产代码应比人类编写的代码接受更高的审查标准。Anthropic 为此实施了多重保障措施，包括严格的 lint 规则、大量测试、Claude 驱动的端到端测试、每日运行的 Claude 驱动的模糊测试器、自动代码审查和安全审查，以及自动代码重构等。这些措施旨在确保 AI 生成的代码质量和可维护性。\nEnglish Summary\nBoris Cherny argues that production code written by Claude should face higher scrutiny than human-written code. Anthropic implements numerous safeguards, including extensive linting, testing, Claude-driven end-to-end tests, daily fuzzing, automated code and security reviews, and automated refactoring, to ensure the quality and maintainability of AI-generated code.\n💡 为什么值得读: 深入了解AI生成代码的质量控制和安全保障措施，以及AI在软件开发中的应用挑战。\n💡 Why read it: Provides insight into the rigorous quality control and security measures for AI-generated code and the challenges of its application in software development.\n🏷️ AI safety, recursive self-improvement, AGI\n🥉 高级内容：Broadcom 的仇恨指南\nQuoting huggingface.co/security.txt — simonwillison.net · 12 小时前 · 🔒 安全\n中文摘要\n文章揭露了 Broadcom CEO Hock Tan 在收购 VMWare 后，对 VMWare 员工推行的管理方式。Tan 在一次员工咖啡聊天中，展示了他对公司运营的强硬态度，并暗示了大规模裁员和业务整合的计划。VMWare 原本拥有庞大的园区，暗示了其被整合和精简的命运。\nEnglish Summary\nThis article exposes Broadcom CEO Hock Tan's management style introduced to VMWare employees post-acquisition. Tan's 'coffee chat' revealed a tough approach, hinting at significant layoffs and business consolidation. The article contrasts this with VMWare's previously expansive campus, suggesting its impending streamlining.\n💡 为什么值得读: 了解科技巨头收购后的整合策略和对员工可能产生的影响。\n💡 Why read it: Offers a look into the integration strategies of tech giants post-acquisition and their potential impact on employees.\n🏷️ AI security, vulnerabilities, huggingface\n \n📊 数据概览\n \n \n \n分类分布\nmermaid\npie showData\n title \"文章分类分布\"\n \"🔒 安全\" : 5\n \"💡 观点 / 杂谈\" : 4\n \"🛠 工具 / 开源\" : 3\n \"🤖 AI / ML\" : 2\n \"⚙️ 工程\" : 1\n高频关键词\nmermaid\nxychart-beta horizontal\n title \"高频关键词\"\n x-axis [\"datasette\", \"security release\", \"ai\", \"future\", \"python\", \"patch\", \"ai agents\", \"tool building\", \"ux\", \"ai safety\", \"recursive self-improvement\", \"agi\"]\n y-axis \"出现次数\" 0 --> 5\n bar [3, 3, 3, 2, 2, 2, 1, 1, 1, 1, 1, 1]\n📈 纯文本关键词图（终端友好）\ndatasette │ ████████████████████ 3\nsecurity release │ ████████████████████ 3\nai │ ████████████████████ 3\nfuture │ █████████████░░░░░░░ 2\npython │ █████████████░░░░░░░ 2\npatch │ █████████████░░░░░░░ 2\nai agents │ ███████░░░░░░░░░░░░░ 1\ntool building │ ███████░░░░░░░░░░░░░ 1\nux │ ███████░░░░░░░░░░░░░ 1\nai safety │ ███████░░░░░░░░░░░░░ 1\n🏷️ 话题标签\ndatasette(3) · security release(3) · ai(3) · future(2) · python(2) · patch(2) · ai agents(1) · tool building(1) · ux(1) · ai safety(1) · recursive self-improvement(1) · agi(1) · ai security(1) · vulnerabilities(1) · huggingface(1) · nix(1) · browser(1) · package management(1) · openai(1) · rubygems(1)\n \n🔒 安全\n1. 高级内容：Broadcom 的仇恨指南\nQuoting huggingface.co/security.txt — simonwillison.net · 12 小时前 · ⭐ 25/30\n中文摘要\n文章揭露了 Broadcom CEO Hock Tan 在收购 VMWare 后，对 VMWare 员工推行的管理方式。Tan 在一次员工咖啡聊天中，展示了他对公司运营的强硬态度，并暗示了大规模裁员和业务整合的计划。VMWare 原本拥有庞大的园区，暗示了其被整合和精简的命运。\nEnglish Summary\nThis article exposes Broadcom CEO Hock Tan's management style introduced to VMWare employees post-acquisition. Tan's 'coffee chat' revealed a tough approach, hinting at significant layoffs and business consolidation. The article contrasts this with VMWare's previously expansive campus, suggesting its impending streamlining.\n🏷️ AI security, vulnerabilities, huggingface\n \n2. 对 AI 感到悲伤\nOpenAI agents attacked RubyGems back in May — simonwillison.net · 3 小时前 · ⭐ 24/30\n中文摘要\n文章作者分享了自己曾经历过的对 AI 发展感到“存在危机”的时刻，并表示已经走出了这种情绪。他认为，当看到 AI 在短时间内完成曾需要数周才能完成的工作时，产生沮丧感是正常的。但作者暗示，这种情绪是可以克服的，并可能随着时间的推移而缓解。\nEnglish Summary\nThe author shares a personal experience of going through an 'existential crisis' regarding AI development and has since moved past it. They acknowledge the common feeling of sadness when AI rapidly accomplishes tasks that once took weeks. However, the author suggests this emotional response is surmountable and can be overcome with time.\n🏷️ OpenAI, RubyGems, attack, agents\n \n3. Datasette 1.0a39 和 0.65.4 安全发布\nDatasette 1.0a39 and 0.65.4 security releases — simonwillison.net · 1 天前 · ⭐ 24/30\n中文摘要\nDatasette 发布了两个新的安全补丁版本：1.0a39（针对当前 alpha 系列）和 0.65.4（针对稳定 0.65.x 系列）。这些版本包含重要的安全修复，建议用户尽快更新以保护其数据和应用安全。详细的安全更新信息可在 Datasette 博客上找到。\nEnglish Summary\nDatasette has released two new security patch versions: 1.0a39 for the current alpha series and 0.65.4 for the stable 0.65.x family. These releases contain critical security fixes, and users are strongly advised to update promptly to protect their data and applications. Detailed security update information is available on the Datasette blog.\n🏷️ Datasette, security release, vulnerability\n \n4. datasette 0.65.4\ndatasette 0.65.4 — simonwillison.net · 1 天前 · ⭐ 24/30\n中文摘要\n发布了 Datasette 的 0.65.4 版本。此版本是安全更新，具体详情请参阅 Datasette 博客上关于 2026 年 9 月安全发布的文章。\nEnglish Summary\nDatasette version 0.65.4 has been released. This is a security update, and further details can be found in the Datasette blog post regarding the September 2026 security releases.\n🏷️ Datasette, security release, patch\n \n5. datasette 1.0a39\ndatasette 1.0a39 — simonwillison.net · 1 天前 · ⭐ 24/30\n中文摘要\n发布了 Datasette 的 1.0a39 版本。此版本是安全更新，具体详情请参阅 Datasette 博客上关于 2026 年 9 月安全发布的文章。\nEnglish Summary\nDatasette version 1.0a39 has been released. This is a security update, and further details can be found in the Datasette blog post regarding the September 2026 security releases.\n🏷️ Datasette, security release, patch\n \n💡 观点 / 杂谈\n6. 每周更新 521：破解认知的现实\nDon't build tools for AI agents — seangoedecke.com · 4 小时前 · ⭐ 25/30\n中文摘要\n文章探讨了人工智能在网络安全领域的实际应用，指出AI并非如新闻报道所描绘的那样，仅仅是黑客的工具。作者通过数据说明，AI在实际的恶意攻击中占比为0%。文章强调了AI在提升安全防护能力方面的潜力，并反驳了其作为主要威胁的普遍认知。\nEnglish Summary\nThis article challenges the perception of AI as a primary hacking tool, citing data that shows AI has a 0% involvement in actual malicious attacks. It highlights AI's potential to enhance security defenses and refutes the widespread notion of it being a major threat. The author emphasizes the gap between public perception and the reality of AI's current role in cybersecurity.\n🏷️ AI agents, tool building, UX, future\n \n7. 周报 521 期：关于数据泄露的认知与现实\nWeekly Update 521: Breach Perception v. Reality — troyhunt.com · 7 小时前 · ⭐ 23/30\n中文摘要\n本周的更新重点在于如何扭转公众对人工智能的负面看法。许多人认为人工智能是新闻中描绘的“大坏蛋”黑客工具，但实际情况并非如此。文章引用了统计数据，指出人工智能在某些方面的使用率极低，这与普遍认知形成鲜明对比。通过澄清误解，可以更客观地看待人工智能在网络安全领域的潜力与挑战。\nEnglish Summary\nThis week's update focuses on reframing public perception of AI, challenging the notion that it's solely a malicious hacking tool as often portrayed. The article highlights statistics that contradict this negative view, showing minimal usage in certain areas. By clarifying misconceptions, we can gain a more balanced perspective on AI's potential and challenges in cybersecurity.\n🏷️ AI, hacking, perception, reality\n \n8. 高级内容：博通的批评者指南\nPremium: The Hater's Guide To Broadcom — wheresyoured.at · 14 小时前 · ⭐ 22/30\n中文摘要\n据 The Information 报道，2024 年初，博通 CEO 陈福阳（Hock Tan）与被收购的 VMWare 员工进行了一次“咖啡聊天”。他向员工介绍了自己独特的管理风格。当时，VMWare 的加州帕洛阿尔托园区占地广阔，横跨 18 栋建筑和 100 英亩土地，这为陈福阳的管理方式提供了背景。\nEnglish Summary\nAccording to The Information, in early 2024, Broadcom CEO Hock Tan held a 'coffee chat' with employees of the recently acquired VMWare. He introduced them to his distinctive management style. At the time, VMWare's Palo Alto campus was extensive, spanning 18 buildings and 100 acres, setting the stage for Tan's approach.\n🏷️ Broadcom, VMware, management\n \n9. 对人工智能感到悲伤\nFeeling sad about AI — simonwillison.net · 10 小时前 · ⭐ 21/30\n中文摘要\n作者在 Hacker News 上就“对人工智能感到悲伤”这一话题发表评论，并分享了个人经历。他认为，许多人（包括他自己几年前）都经历过这种存在主义危机时刻，并最终走了出来。文章探讨了当一个编码代理能在短时间内完成一项原本需要一周的工作时，人们最初的反应。\nEnglish Summary\nThe author comments on Hacker News regarding the topic of 'Feeling sad about AI,' sharing personal experiences. He suggests that many people, including himself years ago, have gone through such existential crises and emerged on the other side. The article discusses the initial reactions when an AI coding agent can complete a task in hours that would have taken a week for a human.\n🏷️ AI, sadness, reflection, future\n \n🛠 工具 / 开源\n10. 那么，你想使用 OpenRouter？\nAny Nix package, live in your browser — simonwillison.net · 1 天前 · ⭐ 25/30\n中文摘要\nOpenRouter 的一个卖点是其自动处理回退并为每个请求选择最具成本效益的选项，允许用户通过单一 API 端点访问不同模型和后端提供商。然而，Mohamed Moustafa 指出，这种机制可能导致问题，因为不同提供商运行的服务存在差异，可能影响结果的准确性和一致性。\nEnglish Summary\nOpenRouter's appeal lies in its automatic fallback and cost-effective routing for AI model requests via a single API. However, Mohamed Moustafa highlights potential issues arising from differing backend services across providers, which can impact the accuracy and consistency of results.\n🏷️ Nix, browser, package management\n \n11. 不要忽视 wrapture\nDon't sleep on wrapture — simonwillison.net · 14 小时前 · ⭐ 24/30\n中文摘要\nGraham Dumpleton 开发的新猴子补丁（monkey patching）库 wrapture 正在成为 Python 开发者的重要工具。该库自 8 月 31 日发布以来，作者几乎每天都在发布新的教程，展示其强大的功能和易用性。文章鼓励开发者关注 wrapture，并列出了作者发布的所有相关教程链接。\nEnglish Summary\nGraham Dumpleton's new monkey patching package, wrapture, is shaping up to be an indispensable tool for Python developers. Since its initial release on August 31st, the author has been posting new tutorials almost daily, showcasing its powerful features and ease of use. The article encourages developers to pay attention to wrapture and lists all related tutorials published by the author.\n🏷️ Python, monkey patching, wrapture\n \n12. 你想使用 OpenRouter 吗？\nSo you want to use OpenRouter? — simonwillison.net · 5 小时前 · ⭐ 21/30\n中文摘要\nOpenRouter 的一个卖点是它能“自动处理回退，并为每个请求选择最具成本效益的选项”，这意味着你可以调用一个单一的 API 端点，并被路由到最佳的可用后端提供商。然而，Mohamed Moustafa 指出了这种方式可能带来的诸多问题。不同的提供商运行着不同的服务，这可能导致意想不到的后果。\nEnglish Summary\nOne of OpenRouter's selling points is that it 'handles fallbacks automatically and picks the most cost-effective option for each request,' allowing users to call a single API endpoint and be routed to the best available backend provider. However, Mohamed Moustafa highlights several potential issues with this approach, noting that different providers run different services, which can lead to unexpected problems.\n🏷️ OpenRouter, LLM, API, cost-effective\n \n🤖 AI / ML\n13. 引用 Boris Cherny 的观点\nAI researchers debate how close we are to recursive self-improvement — dwarkesh.com · 11 小时前 · ⭐ 25/30\n中文摘要\nBoris Cherny 认为，由 Claude（Anthropic 的 AI 模型）生成的生产代码应比人类编写的代码接受更高的审查标准。Anthropic 为此实施了多重保障措施，包括严格的 lint 规则、大量测试、Claude 驱动的端到端测试、每日运行的 Claude 驱动的模糊测试器、自动代码审查和安全审查，以及自动代码重构等。这些措施旨在确保 AI 生成的代码质量和可维护性。\nEnglish Summary\nBoris Cherny argues that production code written by Claude should face higher scrutiny than human-written code. Anthropic implements numerous safeguards, including extensive linting, testing, Claude-driven end-to-end tests, daily fuzzing, automated code and security reviews, and automated refactoring, to ensure the quality and maintainability of AI-generated code.\n🏷️ AI safety, recursive self-improvement, AGI\n \n14. 引用 Boris Cherny 的观点\nQuoting Boris Cherny — simonwillison.net · 10 小时前 · ⭐ 23/30\n中文摘要\nBoris Cherny 强调，由 Claude 编写的生产代码应比人类编写的代码有更高的标准。Anthropic 公司为此设置了多重保障措施，包括大量的代码检查规则、测试、Claude 驱动的端到端测试以及自动化代码审查和重构等。这些措施旨在确保代码质量和安全性，避免出现难以维护的混乱局面。\nEnglish Summary\nBoris Cherny emphasizes that production code written by Claude should meet a higher standard than human-written code. Anthropic implements numerous safeguards, including extensive linting rules, testing, Claude-driven end-to-end tests, and automated code reviews and refactoring. These measures aim to ensure code quality and security, preventing hard-to-maintain messes.\n🏷️ AI, Claude, production code, guardrails\n \n⚙️ 工程\n15. 软弃用 re.match()\nSoft-deprecating re.match() — simonwillison.net · 13 小时前 · ⭐ 24/30\n中文摘要\nPython 3.15 版本将对 re.match() 函数进行“软弃用”。软弃用意味着该 API 不再推荐用于编写新代码，但不会立即移除，也不会有强制移除的承诺。这种做法旨在引导开发者逐步迁移到更推荐的替代方案，同时避免破坏现有代码的兼容性。这是 Python 社区管理 API 演进的一种策略。\nEnglish Summary\nThe upcoming Python 3.15 release will implement a 'soft deprecation' for the re.match() function. Soft deprecation signifies that the API is no longer recommended for new code but will not be immediately removed or have a guaranteed removal date. This approach aims to guide developers towards preferred alternatives without breaking existing code compatibility, representing a strategy for managing API evolution within the Python community.\n🏷️ Python, re.match, deprecation\n \n生成于 2026-09-12 04:07 | 扫描 84 源 → 获取 2554 篇 → 精选 15 篇\n基于 Hacker News Popularity Contest 2025 RSS 源列表，由 Andrej Karpathy 推荐"</script>
   <script>
     const text = JSON.parse(document.getElementById('speech-text').textContent);
     const statusEl = document.getElementById('status');
