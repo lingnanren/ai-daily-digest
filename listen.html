@@ -52,199 +52,203 @@
   <main class="shell">
     <article class="card">
       <p>🎧 <a href="https://lingnanren.github.io/ai-daily-digest/listen.html">点这里朗读今日日报</a></p>
-<h1>📰 AI 博客每日精选 — 2026-09-16</h1>
+<h1>📰 AI 博客每日精选 — 2026-09-17</h1>
 <blockquote>来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15</blockquote>
 <h2>📝 今日看点</h2>
-<p>今日技术看点聚焦两大趋势：AI 领域持续爆发，从苹果新品的 AI 集成到 Google Gemini 的语音模型更新，预示着智能交互的加速；同时，软件工程的深度探索也在进行，包括对 Python 标准库的覆盖、博客构建的技术细节，以及对“瓶颈”等核心工程概念的重新审视，共同推动着技术边界的拓展。</p>
+<p>今日技术圈聚焦AI安全与监管新动向，跨党派政治人物呼吁加强AI治理，同时AI模型应被视为工具而非拥有权利。在AI技术前沿，Google发布实时语音模型，Anthropic整合Claude产品线。苹果方面，新一代硬件发布预示着产品线革新，但开发者工具的滞后影响了新应用的支持。</p>
 <hr>
 <h2>🏆 今日必读</h2>
-<p>🥇 <strong>苹果“惊喜与闪耀”发布会观察：iPhone 18 Pro、AirPods 5、Apple Watch Series 12 及 Ultra 4、iPhone Duo 发布，以及 Ternus 时代的开启</strong></p>
-<p><a href="https://seangoedecke.com/tell-agents-the-why/">Tell agents the why, not just the how</a> — seangoedecke.com · 1 天前 · 🤖 AI / ML</p>
+<p>🥇 <strong>Gemini 3.8 Live：Google 发布实时语音到语音模型</strong></p>
+<p><a href="https://micahflee.com/flock-cameras-are-riddled-with-security-vulnerabilities-and-hard-coded-credentials/">Flock cameras are riddled with security vulnerabilities and hard-coded credentials</a> — micahflee.com · 7 小时前 · 🔒 安全</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>本文深入分析了苹果近期备受瞩目的“惊喜与闪耀”发布会，重点关注了 iPhone 18 Pro、AirPods 5、Apple Watch Series 12 和 Ultra 4，以及创新的 iPhone Duo。文章还探讨了苹果高管 John Ternus 上任后可能带来的新 era。发布会展示了苹果在硬件创新和产品线扩展上的持续投入，预示着公司未来发展的新方向。</blockquote>
+<blockquote>Google 发布了 Gemini 3.8 Live 和 Gemini 3.8 Live Extended Thinking，这是两款新的语音到语音模型。这些模型类似于 OpenAI 的 GPT-Live 系列，能够进行实时音频交互。文章还提到了作者使用 GPT-6 Astra 进行的测试。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This analysis delves into Apple's recent 'Surprise and Shine' event, focusing on the announcements of the iPhone 18 Pro, AirPods 5, Apple Watches Series 12 and Ultra 4, and the innovative iPhone Duo. It also explores the dawn of the John Ternus era at Apple. The event showcased Apple's continued commitment to hardware innovation and product line expansion, signaling new directions for the company's future.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 深入解读苹果最新产品发布会，洞察未来产品趋势和公司战略。</p>
-<p>💡 <strong>Why read it</strong>: Offers an in-depth look at Apple's latest product announcements and insights into future product trends and company strategy.</p>
-<p>🏷️ AI agents, prompting, LLM, reasoning</p>
-<p>🥈 <strong>WorkOS：SSO 工作原理及最快集成方法</strong></p>
-<p><a href="https://simonwillison.net/2026/Sep/14/the-contagion-of-fear/">The contagion of fear</a> — simonwillison.net · 1 天前 · 💡 观点 / 杂谈</p>
+<blockquote>Google has released Gemini 3.8 Live and 3.8 Live Extended Thinking, two new speech-to-speech models. These models are similar in architecture to OpenAI's GPT-Live family, enabling real-time audio interactions. The author also mentions testing with GPT-6 Astra.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 了解 Google 在实时语音模型领域的最新进展及其与 OpenAI 的竞争态势。</p>
+<p>💡 <strong>Why read it</strong>: Understand Google's latest advancements in real-time speech models and its competitive landscape against OpenAI.</p>
+<p>🏷️ Flock cameras, vulnerabilities, hard-coded credentials, ALPR</p>
+<p>🥈 <strong>Datasette 1.0a40 发布：插件支持后台任务</strong></p>
+<p><a href="https://krebsonsecurity.com/2026/09/data-broker-radaris-loses-domains-in-privacy-fight/">Data Broker Radaris Loses Domains in Privacy Fight</a> — krebsonsecurity.com · 10 小时前 · 🔒 安全</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>单点登录（SSO）是企业级交易的关键，但自行集成 SSO 意味着需要处理 SAML 控制器、解析 XML 断言以及应对各 IdP 的特定问题。本文将介绍 SAML 的工作流程，对比自建与购买的优劣，并提供安全、路由和用户体验的最佳实践。或者，使用 WorkOS 可以跳过繁琐的集成过程，快速添加 SSO 功能。</blockquote>
+<blockquote>Datasette 发布了 1.0a40 版本，引入了插件支持后台任务的新功能，通过 <code>datasette.add_background_task()</code> 方法实现。此版本还包含其他一些新特性和错误修复。这是继 0.65.5 版本安全修复后的又一次重要更新。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Single Sign-On (SSO) is essential for enterprise deals, but building it in-house involves complex SAML controllers, XML assertion parsing, and handling IdP-specific quirks. This guide explains SAML flows, the trade-offs between building and buying, and best practices for security, routing, and UX. Alternatively, WorkOS offers a hassle-free way to add SSO.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 为开发者提供集成 SSO 的实用指南，权衡利弊并推荐高效解决方案。</p>
-<p>💡 <strong>Why read it</strong>: Provides developers with a practical guide to integrating SSO, weighing pros and cons and recommending an efficient solution.</p>
-<p>🏷️ AI safety, fear, Anthropic, ethics</p>
-<p>🥉 <strong>alt.time-capsule.reopened：Usenet 历史存档网站的复兴</strong></p>
-<p><a href="https://www.wheresyoured.at/ai-is-already-in-dangerous-hands/">AI Is Already In Dangerous Hands</a> — wheresyoured.at · 1 天前 · 🤖 AI / ML</p>
+<blockquote>Datasette version 1.0a40 has been released, introducing the ability for plugins to launch and manage background tasks via the new <code>datasette.add_background_task()</code> method. This release also includes other new features and bug fixes, following the security fix in version 0.65.5.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 了解 Datasette 插件生态的最新能力，特别是后台任务处理的改进。</p>
+<p>💡 <strong>Why read it</strong>: Learn about the latest capabilities in the Datasette plugin ecosystem, particularly improvements in background task handling.</p>
+<p>🏷️ Data broker, Radaris, privacy law, domains</p>
+<p>🥉 <strong>Datasette 0.65.5 发布：修复安全漏洞</strong></p>
+<p><a href="https://pluralistic.net/2026/09/16/beggar-thy-neighbor/">Pluralistic: How an AI moratorium can save AI bosses (16 Sep 2026)</a> — pluralistic.net · 20 小时前 · 💡 观点 / 杂谈</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>一个新工具的出现，使得深入研究 Usenet 的历史成为可能，这为研究人员带来了巨大的潜力。同时，它也提醒我们，当时许多用户认为 Usenet 是短暂的，但事实并非如此。该网站的复兴为探索早期互联网文化和交流方式提供了宝贵的资源。</blockquote>
+<blockquote>Datasette 发布了 0.65.5 版本，修复了一个安全漏洞。该漏洞允许在表名末尾添加换行符绕过表权限检查，从而暴露私有行。此问题已在 GHSA-h547-rmjf-5m2m 中报告并解决。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>A new tool for exploring Usenet history offers significant potential for researchers. It also serves as a reminder that many users at the time believed Usenet to be ephemeral, which proved to be incorrect. This revival provides a valuable resource for understanding early internet culture and communication.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 探索早期互联网历史的独特视角，揭示 Usenet 的持久价值。</p>
-<p>💡 <strong>Why read it</strong>: Offers a unique perspective on early internet history, revealing the lasting value of Usenet.</p>
-<p>🏷️ AI risks, safety, control, misuse</p>
+<blockquote>Datasette version 0.65.5 has been released, addressing a security vulnerability. This issue allowed a trailing newline in a requested table name to bypass table permissions and expose private rows, as reported in GHSA-h547-rmjf-5m2m.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 关注 Datasette 的安全更新，了解并及时应用修复以保护数据安全。</p>
+<p>💡 <strong>Why read it</strong>: Stay informed about critical security updates for Datasette and ensure timely application of fixes to protect data.</p>
+<p>🏷️ AI moratorium, AI regulation, competition</p>
 <hr>
 <h2>📊 数据概览</h2>
-<table><thead><tr><th>扫描源</th><th>抓取文章</th><th>时间范围</th><th>精选</th></tr></thead><tbody><tr><td>84/92</td><td>2555 篇 → 29 篇</td><td>48h</td><td><strong>15 篇</strong></td></tr></tbody></table>
+<table><thead><tr><th>扫描源</th><th>抓取文章</th><th>时间范围</th><th>精选</th></tr></thead><tbody><tr><td>84/92</td><td>2555 篇 → 33 篇</td><td>48h</td><td><strong>15 篇</strong></td></tr></tbody></table>
 <h3>分类分布</h3>
 <div class="code-wrap"><div class="code-title">mermaid</div><pre><code>pie showData
     title "文章分类分布"
-    "💡 观点 / 杂谈" : 5
-    "⚙️ 工程" : 5
-    "🤖 AI / ML" : 3
-    "🔒 安全" : 2</code></pre></div>
+    "🔒 安全" : 4
+    "🤖 AI / ML" : 4
+    "💡 观点 / 杂谈" : 3
+    "⚙️ 工程" : 2
+    "🛠 工具 / 开源" : 1
+    "📝 其他" : 1</code></pre></div>
 <h3>高频关键词</h3>
 <div class="code-wrap"><div class="code-title">mermaid</div><pre><code>xychart-beta horizontal
     title "高频关键词"
-    x-axis ["llm", "ai safety", "apple", "blogging", "ai agents", "prompting", "reasoning", "fear", "anthropic", "ethics", "ai risks", "safety"]
+    x-axis ["llm", "apple", "duo", "datasette", "flock cameras", "vulnerabilities", "hard-coded credentials", "alpr", "data broker", "radaris", "privacy law", "domains"]
     y-axis "出现次数" 0 --&gt; 4
     bar [2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1]</code></pre></div>
 <div class="details">
 <p class="summary">📈 纯文本关键词图（终端友好）</p>
-<div class="code-wrap"><pre><code>llm       │ ████████████████████ 2
-ai safety │ ████████████████████ 2
-apple     │ ████████████████████ 2
-blogging  │ ████████████████████ 2
-ai agents │ ██████████░░░░░░░░░░ 1
-prompting │ ██████████░░░░░░░░░░ 1
-reasoning │ ██████████░░░░░░░░░░ 1
-fear      │ ██████████░░░░░░░░░░ 1
-anthropic │ ██████████░░░░░░░░░░ 1
-ethics    │ ██████████░░░░░░░░░░ 1</code></pre></div>
+<div class="code-wrap"><pre><code>llm                    │ ████████████████████ 2
+apple                  │ ████████████████████ 2
+duo                    │ ████████████████████ 2
+datasette              │ ████████████████████ 2
+flock cameras          │ ██████████░░░░░░░░░░ 1
+vulnerabilities        │ ██████████░░░░░░░░░░ 1
+hard-coded credentials │ ██████████░░░░░░░░░░ 1
+alpr                   │ ██████████░░░░░░░░░░ 1
+data broker            │ ██████████░░░░░░░░░░ 1
+radaris                │ ██████████░░░░░░░░░░ 1</code></pre></div>
 </div>
 <h3>🏷️ 话题标签</h3>
-<p><strong>llm</strong>(2) · <strong>ai safety</strong>(2) · <strong>apple</strong>(2) · blogging(2) · ai agents(1) · prompting(1) · reasoning(1) · fear(1) · anthropic(1) · ethics(1) · ai risks(1) · safety(1) · control(1) · misuse(1) · photography(1) · verification(1) · privacy(1) · regulation(1) · bernie sanders(1) · steve bannon(1)</p>
-<hr>
-<h2>💡 观点 / 杂谈</h2>
-<h3>1. WorkOS：SSO 工作原理及最快集成方法</h3>
-<p><a href="https://simonwillison.net/2026/Sep/14/the-contagion-of-fear/">The contagion of fear</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 26/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>单点登录（SSO）是企业级交易的关键，但自行集成 SSO 意味着需要处理 SAML 控制器、解析 XML 断言以及应对各 IdP 的特定问题。本文将介绍 SAML 的工作流程，对比自建与购买的优劣，并提供安全、路由和用户体验的最佳实践。或者，使用 WorkOS 可以跳过繁琐的集成过程，快速添加 SSO 功能。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Single Sign-On (SSO) is essential for enterprise deals, but building it in-house involves complex SAML controllers, XML assertion parsing, and handling IdP-specific quirks. This guide explains SAML flows, the trade-offs between building and buying, and best practices for security, routing, and UX. Alternatively, WorkOS offers a hassle-free way to add SSO.</blockquote>
-<p>🏷️ AI safety, fear, Anthropic, ethics</p>
-<hr>
-<h3>2. 覆盖标准库</h3>
-<p><a href="https://www.ft.com/content/bab5c4c5-5377-4dd0-8b46-d8c4ce9a36d5?syn-25a6b1a6=1">FT: ‘Steve Bannon and Bernie Sanders Unite in AI Safety Call’</a> — <strong>daringfireball.net</strong> · 9 小时前 · ⭐ 24/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>通过设置 <code>export PYTHONSAFEPATH=1</code> 环境变量，可以实现对 Python 标准库的覆盖。这允许开发者在不修改原始标准库文件的情况下，引入自定义的实现或行为。这种技术在特定场景下，例如测试、调试或引入实验性功能时非常有用。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>By setting the <code>export PYTHONSAFEPATH=1</code> environment variable, it is possible to shadow the Python standard library. This allows developers to introduce custom implementations or behaviors without modifying the original standard library files. This technique is particularly useful in specific scenarios such as testing, debugging, or introducing experimental features.</blockquote>
-<p>🏷️ AI safety, regulation, Bernie Sanders, Steve Bannon</p>
-<hr>
-<h3>3. 哪些博客文章对你的思考影响最大？</h3>
-<p><a href="https://simonwillison.net/2026/Sep/14/influences/">What blog posts influenced your thinking the most?</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 22/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>作者在 Lobste.rs 论坛上分享了对他职业生涯影响最大的博客文章。其中一篇早期 Joel Spolsky 的文章《The Law of Leaky Abstractions》尤为重要，它鼓励作者在职业生涯初期就始终警惕抽象的局限性。这篇文章强调了理解技术底层细节的重要性，即使在高级抽象层面工作。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>The author shares blog posts that most influenced their career on the Lobste.rs forum. A key early influence was Joel Spolsky's 'The Law of Leaky Abstractions,' which encouraged the author to always be mindful of the limitations of abstractions early in their career. This piece emphasizes the importance of understanding underlying technical details, even when working at a higher level of abstraction.</blockquote>
-<p>🏷️ blogging, influential posts, software development, community</p>
-<hr>
-<h3>4. 引用 Laurie Voss</h3>
-<p><a href="https://simonwillison.net/2026/Sep/14/laurie-voss/">Quoting Laurie Voss</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 22/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>Laurie Voss 认为，随着代码编写成本的急剧下降，审查、修复和运维代码的成本也随之降低，并且这种趋势将继续下去。他预测，软件开发的重心将转移到理解用户真实需求、精确定义需求以及提升用户体验上。这些成本是针对每个软件产品的，不会转移，因此随着软件数量的无限增长，这些核心成本将变得更加重要。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Laurie Voss posits that as the cost of writing code has collapsed, the costs of reviewing, fixing, and operating it are following suit and are expected to continue declining. He predicts that the focus of software development will shift to understanding what people actually want, defining it precisely, and making it pleasant to use. These costs are per piece of software and do not transfer, meaning as the amount of software grows infinitely, these core costs will become increasingly significant.</blockquote>
-<p>🏷️ software engineering, product development, cost</p>
-<hr>
-<h3>5. 苹果“惊喜与闪耀”发布会回顾：iPhone 18 Pro、AirPods 5、Apple Watch Series 12 及 Ultra 4、iPhone Duo 发布，以及 John Ternus 时代的开启</h3>
-<p><a href="https://daringfireball.net/2026/09/thoughts_and_observations_on_apples_surprise_and_shine_event">★ Thoughts and Observations on Apple’s ‘Surprise and Shine’ Event; the Announcements of the iPhones 18 Pro, AirPods 5, Apple Watches Series 12 and Ultra 4, and the iPhone Duo; and the Dawn of the Ternus, John Ternus Era at Apple</a> — <strong>daringfireball.net</strong> · 10 小时前 · ⭐ 21/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>本次发布会聚焦于苹果最新推出的产品，包括多款 iPhone、AirPods 和 Apple Watch 型号。文章还探讨了 John Ternus 接管苹果硬件工程部门后，公司可能迎来新的发展方向。此次活动展示了苹果在创新和产品迭代方面的持续努力。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>This article reviews Apple's 'Surprise and Shine' event, highlighting the announcements of the latest iPhones, AirPods, and Apple Watches. It also delves into the potential new era under John Ternus's leadership in Apple's hardware engineering. The event showcased Apple's ongoing commitment to innovation and product evolution.</blockquote>
-<p>🏷️ Apple Event, iPhone, product launch, leadership</p>
-<hr>
-<h2>⚙️ 工程</h2>
-<h3>6. Apple 的 27.0 操作系统更新</h3>
-<p><a href="https://scriptingosx.com/2026/09/apple-27-platform-updates-september-2026/">Apple’s 27.0 OS Updates</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 23/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>Scripting OS X 的 Armin Briegel 汇总了 Apple 今日发布的 27.0 平台更新的所有发布说明链接，涵盖了功能、开发者和安全更新。除了 27.0 版本外，Apple 还发布了 26.7 更新以及 macOS 15.8 Sequoia。这是一个重大的更新发布日。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Armin Briegel at Scripting OS X has compiled links to all release notes for today's 27.0 platform updates, covering features, developer, and security. In addition to the 27.0 updates, Apple also released 26.7 updates and macOS 15.8 Sequoia, marking a significant day for platform updates.</blockquote>
-<p>🏷️ Apple, OS updates, release notes, software</p>
-<hr>
-<h3>7. 瓶颈总是被误解</h3>
-<p><a href="https://blog.jim-nielsen.com/2026/bottlenecks/">Bottlenecks Get a Bad Rap</a> — <strong>blog.jim-nielsen.com</strong> · 9 小时前 · ⭐ 21/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>文章挑战了对瓶颈的普遍负面看法，指出瓶颈并非总是问题，而是有其设计目的。以瓶子为例，瓶颈是为了控制液体流出的速度，防止过量涌出造成混乱。人类的生理限制也与此类似，瓶颈的存在是为了与我们的消费能力相匹配。因此，瓶颈是效率和用户体验的必要组成部分，而非单纯的障碍。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>The article challenges the common negative perception of bottlenecks, arguing they are not always problematic and serve a design purpose. Using the analogy of a bottle, a bottleneck controls the flow rate of liquid to prevent overwhelming output and mess. Human physiological limitations are similarly matched by bottlenecks, which are designed to align with our consumption capacity. Therefore, bottlenecks are presented as necessary components for efficiency and user experience, rather than mere impediments.</blockquote>
-<p>🏷️ bottlenecks, performance, efficiency, systems</p>
-<hr>
-<h3>8. alt.time-capsule.reopened</h3>
-<p><a href="https://feed.tedium.co/link/15204/17462130/usenet-rewind-archive-revival-website">alt.time-capsule.reopened</a> — <strong>tedium.co</strong> · 1 天前 · ⭐ 21/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>一个用于深入研究 Usenet 历史的新工具为研究人员提供了巨大的潜力。然而，它也提醒我们，当时许多用户认为 Usenet 是短暂的，但事实并非如此。这个工具的出现，为我们重新审视和理解过去的网络交流方式提供了新的视角。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>A new tool for exploring Usenet history offers significant potential for researchers. It also serves as a reminder that many users at the time believed Usenet was ephemeral, which proved to be incorrect. This tool provides a new perspective on understanding past online communication.</blockquote>
-<p>🏷️ Usenet, history, archives, research</p>
-<hr>
-<h3>9. Org mode 博客标签索引</h3>
-<p><a href="https://entropicthoughts.com/tag-index-for-org-mode-blog">Tag index for Org mode blog</a> — <strong>entropicthoughts.com</strong> · 1 天前 · ⭐ 21/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>由于不断有人询问博客的构建方式，作者决定分步解释部分技术细节，而非直接分享“糟糕”的代码。最近遇到的问题是生成标签索引时，一个辅助函数因递归调用过深而导致堆栈溢出。文章将详细介绍解决此问题的过程。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Due to frequent inquiries about how the blog is built, the author will explain parts of the process piecewise rather than sharing the 'terrible' code. A recent issue involved a helper function for generating the tag index causing a stack overflow due to excessive recursion. The article will detail the resolution.</blockquote>
-<p>🏷️ Org mode, blogging, Emacs, workflow</p>
-<hr>
-<h3>10. 覆盖标准库</h3>
-<p><a href="https://nesbitt.io/2026/09/15/shadowing-the-standard-library.html">Shadowing the Standard Library</a> — <strong>nesbitt.io</strong> · 19 小时前 · ⭐ 20/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>本文简要介绍了如何通过设置环境变量 <code>PYTHONSAFEPATH=1</code> 来覆盖 Python 的标准库。这是一种在特定场景下，例如开发或测试时，用于调试或实验性修改标准库行为的技巧。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>This article briefly explains how to override Python's standard library by setting the environment variable <code>PYTHONSAFEPATH=1</code>. This is a technique used in specific scenarios, such as development or testing, for debugging or experimentally modifying standard library behavior.</blockquote>
-<p>🏷️ Python, standard library, environment variable</p>
-<hr>
-<h2>🤖 AI / ML</h2>
-<h3>11. 苹果“惊喜与闪耀”发布会观察：iPhone 18 Pro、AirPods 5、Apple Watch Series 12 及 Ultra 4、iPhone Duo 发布，以及 Ternus 时代的开启</h3>
-<p><a href="https://seangoedecke.com/tell-agents-the-why/">Tell agents the why, not just the how</a> — <strong>seangoedecke.com</strong> · 1 天前 · ⭐ 26/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>本文深入分析了苹果近期备受瞩目的“惊喜与闪耀”发布会，重点关注了 iPhone 18 Pro、AirPods 5、Apple Watch Series 12 和 Ultra 4，以及创新的 iPhone Duo。文章还探讨了苹果高管 John Ternus 上任后可能带来的新 era。发布会展示了苹果在硬件创新和产品线扩展上的持续投入，预示着公司未来发展的新方向。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>This analysis delves into Apple's recent 'Surprise and Shine' event, focusing on the announcements of the iPhone 18 Pro, AirPods 5, Apple Watches Series 12 and Ultra 4, and the innovative iPhone Duo. It also explores the dawn of the John Ternus era at Apple. The event showcased Apple's continued commitment to hardware innovation and product line expansion, signaling new directions for the company's future.</blockquote>
-<p>🏷️ AI agents, prompting, LLM, reasoning</p>
-<hr>
-<h3>12. alt.time-capsule.reopened：Usenet 历史存档网站的复兴</h3>
-<p><a href="https://www.wheresyoured.at/ai-is-already-in-dangerous-hands/">AI Is Already In Dangerous Hands</a> — <strong>wheresyoured.at</strong> · 1 天前 · ⭐ 26/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>一个新工具的出现，使得深入研究 Usenet 的历史成为可能，这为研究人员带来了巨大的潜力。同时，它也提醒我们，当时许多用户认为 Usenet 是短暂的，但事实并非如此。该网站的复兴为探索早期互联网文化和交流方式提供了宝贵的资源。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>A new tool for exploring Usenet history offers significant potential for researchers. It also serves as a reminder that many users at the time believed Usenet to be ephemeral, which proved to be incorrect. This revival provides a valuable resource for understanding early internet culture and communication.</blockquote>
-<p>🏷️ AI risks, safety, control, misuse</p>
-<hr>
-<h3>13. Gemini Live 音频</h3>
-<p><a href="https://simonwillison.net/2026/Sep/15/gemini-live/">Gemini Live audio</a> — <strong>simonwillison.net</strong> · 5 小时前 · ⭐ 23/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>Google 发布了 Gemini 3.8 Live 和 Gemini 3.8 Live Extended Thinking，这是两款新的语音转语音模型。这些模型在功能上类似于 OpenAI 的 GPT-Live 系列。文章作者介绍了自己使用一款名为 Gemini Live audio 的工具，该工具可能用于与这些新模型进行交互或演示其能力。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Google has released Gemini 3.8 Live and Gemini 3.8 Live Extended Thinking, two new speech-to-speech models. These models are functionally similar to OpenAI's GPT-Live family. The author introduces a tool called Gemini Live audio, which may be used for interacting with these new models or demonstrating their capabilities.</blockquote>
-<p>🏷️ Gemini, Google AI, LLM, audio</p>
+<p><strong>llm</strong>(2) · <strong>apple</strong>(2) · <strong>duo</strong>(2) · datasette(2) · flock cameras(1) · vulnerabilities(1) · hard-coded credentials(1) · alpr(1) · data broker(1) · radaris(1) · privacy law(1) · domains(1) · ai moratorium(1) · ai regulation(1) · competition(1) · structured output(1) · jev(1) · llms(1) · tla+(1) · specifications(1)</p>
 <hr>
 <h2>🔒 安全</h2>
-<h3>14. Org mode 博客的标签索引</h3>
-<p><a href="https://security.apple.com/blog/apple-reference-image/">‘Apple Reference Image: A New Approach for Verified Photography’</a> — <strong>daringfireball.net</strong> · 1 小时前 · ⭐ 24/30</p>
+<h3>1. Gemini 3.8 Live：Google 发布实时语音到语音模型</h3>
+<p><a href="https://micahflee.com/flock-cameras-are-riddled-with-security-vulnerabilities-and-hard-coded-credentials/">Flock cameras are riddled with security vulnerabilities and hard-coded credentials</a> — <strong>micahflee.com</strong> · 7 小时前 · ⭐ 26/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>由于用户频繁询问博客的构建方式，作者决定分步解释其技术细节，而非直接分享“糟糕”的代码。最近遇到的问题是，一个用于生成标签索引的辅助函数导致了堆栈溢出，因为该函数被设计为递归调用，在处理少量数据时工作正常。文章将逐步剖析解决此问题的过程。</blockquote>
+<blockquote>Google 发布了 Gemini 3.8 Live 和 Gemini 3.8 Live Extended Thinking，这是两款新的语音到语音模型。这些模型类似于 OpenAI 的 GPT-Live 系列，能够进行实时音频交互。文章还提到了作者使用 GPT-6 Astra 进行的测试。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>In response to frequent inquiries about how this blog is built, the author is explaining its technical aspects piece by piece rather than sharing the underlying code. A recent issue involved a helper function for generating the tag index blowing the stack limit due to its recursive design, which worked fine with small data sets. The article will detail the process of addressing this problem.</blockquote>
-<p>🏷️ Apple, photography, verification, privacy</p>
+<blockquote>Google has released Gemini 3.8 Live and 3.8 Live Extended Thinking, two new speech-to-speech models. These models are similar in architecture to OpenAI's GPT-Live family, enabling real-time audio interactions. The author also mentions testing with GPT-6 Astra.</blockquote>
+<p>🏷️ Flock cameras, vulnerabilities, hard-coded credentials, ALPR</p>
 <hr>
-<h3>15. [赞助] WorkOS：SSO 如何工作以及添加它的最快方法</h3>
-<p>[[Sponsor] WorkOS: How SSO Works and the Fastest Way to Add It](https://workos.com/guide/the-developers-guide-to-sso?utm_source=daringfireball&amp;amp;utm_medium=newsletter&amp;amp;utm_campaign=q32026) — <strong>daringfireball.net</strong> · 12 小时前 · ⭐ 21/30</p>
+<h3>2. Datasette 1.0a40 发布：插件支持后台任务</h3>
+<p><a href="https://krebsonsecurity.com/2026/09/data-broker-radaris-loses-domains-in-privacy-fight/">Data Broker Radaris Loses Domains in Privacy Fight</a> — <strong>krebsonsecurity.com</strong> · 10 小时前 · ⭐ 26/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>单点登录（SSO）是企业交易的关键，但自行构建 SSO 功能需要处理 SAML 控制器、XML 断言解析以及针对不同提供商的特定配置。本文将介绍 SAML 流程的工作原理、自建与购买的权衡，以及安全、路由和用户体验的最佳实践。或者，您也可以通过 WorkOS 轻松添加 SSO。</blockquote>
+<blockquote>Datasette 发布了 1.0a40 版本，引入了插件支持后台任务的新功能，通过 <code>datasette.add_background_task()</code> 方法实现。此版本还包含其他一些新特性和错误修复。这是继 0.65.5 版本安全修复后的又一次重要更新。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Single Sign-On (SSO) is essential for enterprise deals, but building it yourself involves complex SAML controllers and XML parsing. This article explains SAML flows, build vs. buy trade-offs, and best practices for security and UX. Alternatively, you can easily add SSO with WorkOS.</blockquote>
-<p>🏷️ SSO, SAML, WorkOS, enterprise</p>
+<blockquote>Datasette version 1.0a40 has been released, introducing the ability for plugins to launch and manage background tasks via the new <code>datasette.add_background_task()</code> method. This release also includes other new features and bug fixes, following the security fix in version 0.65.5.</blockquote>
+<p>🏷️ Data broker, Radaris, privacy law, domains</p>
 <hr>
-<p>*生成于 2026-09-16 04:21 | 扫描 84 源 → 获取 2555 篇 → 精选 15 篇* *基于 <a href="https://refactoringenglish.com/tools/hn-popularity/">Hacker News Popularity Contest 2025</a> RSS 源列表，由 <a href="https://x.com/karpathy">Andrej Karpathy</a> 推荐*</p>
+<h3>3. Apple Reference Image：一种新的验证摄影方法</h3>
+<p><a href="https://security.apple.com/blog/apple-reference-image/">‘Apple Reference Image: A New Approach for Verified Photography’</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 24/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Apple 安全研究团队发布了一篇关于“Apple Reference Image”的论文，详细介绍了该技术的工作原理及其设计初衷。该方法旨在为摄影作品提供一种新的验证方式，特别关注隐私问题。与需要摄影师或机构使用自身凭证进行担保的现有方案不同，Apple Reference Image 避免了让摄影师（尤其是在冲突地区工作的摄影师）面临暴露身份的风险，从而无需牺牲匿名性即可证明图像的真实性。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Apple Security Research has released a paper detailing 'Apple Reference Image,' a new approach for verifying photography. The system addresses privacy concerns by avoiding the need for photographers or institutions to vouch for images using their own credentials, which can put individuals, especially those in conflict zones, at risk. This method allows for image authenticity to be proven without requiring photographers to forgo anonymity.</blockquote>
+<p>🏷️ Apple, photography, privacy, verification</p>
+<hr>
+<h3>4. Datasette 0.65.5 版本发布</h3>
+<p><a href="https://simonwillison.net/2026/Sep/16/datasette-2/">datasette 0.65.5</a> — <strong>simonwillison.net</strong> · 4 小时前 · ⭐ 22/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Datasette 发布了 0.65.5 版本，主要是一个安全修复。该问题存在于请求的表名中尾随的换行符可能绕过表权限并暴露私有行的情况。此漏洞已由 dpfkdlemtp 报告。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Datasette has released version 0.65.5, which primarily addresses a security fix. The issue involved a trailing newline in a requested table name that could bypass table permissions and expose private rows. This vulnerability was reported by dpfkdlemtp.</blockquote>
+<p>🏷️ Datasette, security fix, permissions</p>
+<hr>
+<h2>🤖 AI / ML</h2>
+<h3>5. FT：史蒂夫·班农和伯尼·桑德斯呼吁 AI 安全</h3>
+<p><a href="https://seangoedecke.com/jev-means-structured-output-is-interesting-again/">Jev means structured output is interesting again</a> — <strong>seangoedecke.com</strong> · 1 天前 · ⭐ 26/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>报道指出，美国政治光谱两端的代表人物，包括社会主义者伯尼·桑德斯和右翼活动家史蒂夫·班农，正联手呼吁加强对人工智能（AI）的监管。这一罕见的跨党派合作表明 AI 安全问题正在重塑美国政治格局，尽管特朗普总统对此表示怀疑。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Veteran socialist Bernie Sanders and right-wing activist Steve Bannon are joining forces to call for greater guardrails on AI, indicating a significant shift in the US political landscape. This unlikely alliance highlights the growing bipartisan concern over AI safety, despite skepticism from figures like Donald Trump.</blockquote>
+<p>🏷️ structured output, LLM, Jev</p>
+<hr>
+<h3>6. Apple“惊喜与闪耀”发布会观察：iPhone 18 Pro、AirPods 5、Apple Watch Series 12/Ultra 4 及 iPhone Duo 发布，以及 Ternus 时代的开启</h3>
+<p><a href="https://buttondown.com/hillelwayne/archive/the-llms-yearn-for-the-spines/">The LLMs yearn for the spines</a> — <strong>buttondown.com/hillelwayne</strong> · 8 小时前 · ⭐ 25/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>本文对 Apple 的“惊喜与闪耀”发布会进行了深入观察和评论，重点关注了 iPhone 18 Pro、AirPods 5、Apple Watch Series 12 和 Ultra 4，以及 iPhone Duo 等新产品的发布。同时，文章也探讨了 John Ternus 接任后 Apple 产品策略可能的新方向。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>This article offers thoughts and observations on Apple's 'Surprise and Shine' event, detailing the announcements of the iPhone 18 Pro, AirPods 5, Apple Watches Series 12 and Ultra 4, and the iPhone Duo. It also marks the beginning of the John Ternus era at Apple, suggesting potential shifts in product strategy.</blockquote>
+<p>🏷️ LLMs, TLA+, specifications, spine</p>
+<hr>
+<h3>7. Claude Cowork 与 Chat 合并为单一 Claude 产品</h3>
+<p><a href="https://simonwillison.net/2026/Sep/16/one-claude/">Claude Cowork and chat are now one Claude</a> — <strong>simonwillison.net</strong> · 10 小时前 · ⭐ 24/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Anthropic 已将 Claude Cowork 和 Claude Chat 合并为一个名为“Claude”的统一产品。此次整合旨在简化用户体验，解决用户对不同 Claude 版本（Cowork、Chat、Code）的混淆。新版 Claude 将能够处理从快速提问到复杂报告的任务，并支持跨会话的持久性，即使在用户关闭设备后也能继续工作。该更新将首先面向 Pro 用户推出。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Anthropic has merged Claude Cowork and Claude Chat into a single product named 'Claude'. This integration aims to simplify the user experience and address confusion among users regarding different Claude versions (Cowork, Chat, Code). The unified Claude will handle tasks ranging from quick questions to detailed reports and offers persistent capabilities across sessions, even after the user closes their laptop. This update is rolling out to Pro users first.</blockquote>
+<p>🏷️ Claude, AI chat, integration</p>
+<hr>
+<h3>8. Gemini Live 音频模型发布</h3>
+<p><a href="https://simonwillison.net/2026/Sep/15/gemini-live/">Gemini Live audio</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 23/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Google 今日发布了两款新的语音转语音模型 Gemini 3.8 Live 和 3.8 Live Extended Thinking。这些模型在功能上类似于 OpenAI 的 GPT-Live 系列。该工具允许用户体验这些先进的音频处理能力。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Google has released two new speech-to-speech models, Gemini 3.8 Live and 3.8 Live Extended Thinking. These models are similar in functionality to OpenAI's GPT-Live family. The tool allows users to experience these advanced audio processing capabilities.</blockquote>
+<p>🏷️ Gemini, AI, Google, LLM</p>
+<hr>
+<h2>💡 观点 / 杂谈</h2>
+<h3>9. Datasette 0.65.5 发布：修复安全漏洞</h3>
+<p><a href="https://pluralistic.net/2026/09/16/beggar-thy-neighbor/">Pluralistic: How an AI moratorium can save AI bosses (16 Sep 2026)</a> — <strong>pluralistic.net</strong> · 20 小时前 · ⭐ 26/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Datasette 发布了 0.65.5 版本，修复了一个安全漏洞。该漏洞允许在表名末尾添加换行符绕过表权限检查，从而暴露私有行。此问题已在 GHSA-h547-rmjf-5m2m 中报告并解决。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Datasette version 0.65.5 has been released, addressing a security vulnerability. This issue allowed a trailing newline in a requested table name to bypass table permissions and expose private rows, as reported in GHSA-h547-rmjf-5m2m.</blockquote>
+<p>🏷️ AI moratorium, AI regulation, competition</p>
+<hr>
+<h3>10. 引用 Mustafa Suleyman 的观点：不应赋予 AI 模型权利</h3>
+<p><a href="https://simonwillison.net/2026/Sep/16/mustafa-suleyman/">Quoting Mustafa Suleyman</a> — <strong>simonwillison.net</strong> · 12 小时前 · ⭐ 25/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Mustafa Suleyman 强调，不应将 AI 模型视为拥有情感、偏好、权利或应得的福利。他认为，意识是人类伦理、法律和政治体系的基础，将这些权利赋予 AI 并无证据支持，反而会使 AI 的安全和对齐（alignment）挑战更加困难。此观点旨在警示对 AI 拟人化和赋予其权利的倾向。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Mustafa Suleyman emphasizes that AI models should not be treated as entities with feelings, preferences, rights, or entitlements. He argues that consciousness is the foundation of human ethical, legal, and political systems, and granting AI any flavor of these rights is not justified by evidence and will complicate the AI containment and alignment challenge.</blockquote>
+<p>🏷️ AI ethics, model welfare, consciousness</p>
+<hr>
+<h3>11. 金融时报：‘史蒂夫·班农和伯尼·桑德斯就 AI 安全发出联合呼吁’</h3>
+<p><a href="https://www.ft.com/content/bab5c4c5-5377-4dd0-8b46-d8c4ce9a36d5?syn-25a6b1a6=1">FT: ‘Steve Bannon and Bernie Sanders Unite in AI Safety Call’</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 22/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>金融时报报道称，资深社会主义者伯尼·桑德斯和右翼活动家史蒂夫·班农正联手呼吁加强对人工智能的监管。这一不同寻常的联合表明，人工智能安全问题正重塑美国政治格局。即使在唐纳德·特朗普声称对该技术的担忧是帮助中国超越美国的骗局之际，双方仍就此达成一致。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>According to the Financial Times, veteran socialist Bernie Sanders and right-wing activist Steve Bannon are joining forces to call for greater guardrails on AI. This unusual alliance indicates that AI safety concerns are reshaping the US political landscape. They are finding common ground even as Donald Trump insists concerns about the technology are a hoax that will help China overtake the US.</blockquote>
+<p>🏷️ AI safety, regulation, politics, ethics</p>
+<hr>
+<h2>⚙️ 工程</h2>
+<h3>12. Xcode 27.2 已发布，但 27.1 未发布，开发者仍无法开始 Duo 应用开发</h3>
+<p><a href="https://developer.apple.com/documentation/xcode-release-notes/xcode-27_2-release-notes">Xcode 27.2 Is Out, but 27.1 Is Not, Which Means Developers Still Can’t Get Started on Duo-Adapted Apps</a> — <strong>daringfireball.net</strong> · 5 小时前 · ⭐ 23/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Xcode 27.2 已发布，但支持 iPhone Duo 的 Xcode 27.1 版本尚未推出，导致开发者无法开始为 Duo 开发适配的应用。Xcode 27.1 中的 iOS SDK 和模拟器支持对于 Duo 应用的适配至关重要，而适配工作并非简单的重新编译，可能需要大量开发工作。开发者们急切等待此 SDK，但目前仍无法进行开发。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Xcode 27.2 has been released, but the crucial Xcode 27.1, which includes the iOS SDK and simulator support for the iPhone Duo, is still unavailable. This prevents developers from starting the significant work required to adapt their apps for the Duo, which is more than a simple recompile. Developers have been awaiting this SDK for some time, but development remains blocked.</blockquote>
+<p>🏷️ Xcode, iOS SDK, Duo, app development</p>
+<hr>
+<h3>13. 苹果发布 iOS 27.2 Beta，27.1 是 Duo 专属的 iOS 分支</h3>
+<p><a href="https://www.macrumors.com/2026/09/16/heres-why-apple-released-ios-27-2-beta/">Apple OS 27.2 Betas Are Out; Version 27.1 Is the Duo-Exclusive iOS Fork</a> — <strong>daringfireball.net</strong> · 9 小时前 · ⭐ 23/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>苹果发布了 iOS 27.2 的首个开发者 Beta 版本，而非预期的 27.1。这一不同寻常的版本命名与即将推出的 iPhone Duo 有关。Duo 将运行 iOS 27.1，该版本目前是 Duo 的专属分支，旨在保密其软件细节。Duo 预计将于 10 月 23 日上市，届时将搭载 iOS 27.1。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Apple has released the first developer beta of iOS 27.2, bypassing the expected 27.1. This unusual versioning is directly related to the upcoming iPhone Duo, which will ship with iOS 27.1. This version is currently a Duo-exclusive branch, kept internal to Apple for secrecy. The Duo is slated for release on October 23rd with iOS 27.1.</blockquote>
+<p>🏷️ Apple OS, beta, iOS, Duo</p>
+<hr>
+<h2>🛠 工具 / 开源</h2>
+<h3>14. Datasette 1.0a40 版本发布</h3>
+<p><a href="https://simonwillison.net/2026/Sep/16/datasette/">datasette 1.0a40</a> — <strong>simonwillison.net</strong> · 4 小时前 · ⭐ 22/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Datasette 发布了 1.0a40 版本，包含与 0.65.5 版本相同的安全修复。此外，新版本还引入了一些新功能和错误修复。插件现在可以使用新的 datasette.add_background_task() 方法来启动和管理后台任务。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Datasette has released version 1.0a40, which includes the same security fix as version 0.65.5. Additionally, this new version introduces some neat new features and bug fixes. Plugins can now launch and manage background tasks using the new datasette.add_background_task() method.</blockquote>
+<p>🏷️ Datasette, release, security</p>
+<hr>
+<h2>📝 其他</h2>
+<h3>15. 关于苹果‘惊喜与闪耀’发布会、iPhone 18 Pro、AirPods 5、Apple Watch Series 12 和 Ultra 4、iPhone Duo 的发布以及苹果 Ternus、John Ternus 时代的开端的一些想法和观察</h3>
+<p><a href="https://daringfireball.net/2026/09/thoughts_and_observations_on_apples_surprise_and_shine_event">★ Thoughts and Observations on Apple’s ‘Surprise and Shine’ Event; the Announcements of the iPhones 18 Pro, AirPods 5, Apple Watches Series 12 and Ultra 4, and the iPhone Duo; and the Dawn of the Ternus, John Ternus Era at Apple</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 22/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>本次发布会涵盖了主题演讲、发布的产品以及苹果公司新任领导者 John Ternus 开启的新时代。文章对这些内容进行了深入的思考和观察。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>This article offers thoughts and observations on Apple's 'Surprise and Shine' event, covering the keynote, the products announced, and the dawn of a new era under John Ternus. It delves into the implications of these developments.</blockquote>
+<p>🏷️ Apple, event, iPhone, product launch</p>
+<hr>
+<p>*生成于 2026-09-17 04:28 | 扫描 84 源 → 获取 2555 篇 → 精选 15 篇* *基于 <a href="https://refactoringenglish.com/tools/hn-popularity/">Hacker News Popularity Contest 2025</a> RSS 源列表，由 <a href="https://x.com/karpathy">Andrej Karpathy</a> 推荐*</p>
     </article>
   </main>
-  <script id="speech-text" type="application/json">"🎧 点这里朗读今日日报\n📰 AI 博客每日精选 — 2026-09-16\n来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15\n📝 今日看点\n今日技术看点聚焦两大趋势：AI 领域持续爆发，从苹果新品的 AI 集成到 Google Gemini 的语音模型更新，预示着智能交互的加速；同时，软件工程的深度探索也在进行，包括对 Python 标准库的覆盖、博客构建的技术细节，以及对“瓶颈”等核心工程概念的重新审视，共同推动着技术边界的拓展。\n \n🏆 今日必读\n🥇 苹果“惊喜与闪耀”发布会观察：iPhone 18 Pro、AirPods 5、Apple Watch Series 12 及 Ultra 4、iPhone Duo 发布，以及 Ternus 时代的开启\nTell agents the why, not just the how — seangoedecke.com · 1 天前 · 🤖 AI / ML\n中文摘要\n本文深入分析了苹果近期备受瞩目的“惊喜与闪耀”发布会，重点关注了 iPhone 18 Pro、AirPods 5、Apple Watch Series 12 和 Ultra 4，以及创新的 iPhone Duo。文章还探讨了苹果高管 John Ternus 上任后可能带来的新 era。发布会展示了苹果在硬件创新和产品线扩展上的持续投入，预示着公司未来发展的新方向。\nEnglish Summary\nThis analysis delves into Apple's recent 'Surprise and Shine' event, focusing on the announcements of the iPhone 18 Pro, AirPods 5, Apple Watches Series 12 and Ultra 4, and the innovative iPhone Duo. It also explores the dawn of the John Ternus era at Apple. The event showcased Apple's continued commitment to hardware innovation and product line expansion, signaling new directions for the company's future.\n💡 为什么值得读: 深入解读苹果最新产品发布会，洞察未来产品趋势和公司战略。\n💡 Why read it: Offers an in-depth look at Apple's latest product announcements and insights into future product trends and company strategy.\n🏷️ AI agents, prompting, LLM, reasoning\n🥈 WorkOS：SSO 工作原理及最快集成方法\nThe contagion of fear — simonwillison.net · 1 天前 · 💡 观点 / 杂谈\n中文摘要\n单点登录（SSO）是企业级交易的关键，但自行集成 SSO 意味着需要处理 SAML 控制器、解析 XML 断言以及应对各 IdP 的特定问题。本文将介绍 SAML 的工作流程，对比自建与购买的优劣，并提供安全、路由和用户体验的最佳实践。或者，使用 WorkOS 可以跳过繁琐的集成过程，快速添加 SSO 功能。\nEnglish Summary\nSingle Sign-On (SSO) is essential for enterprise deals, but building it in-house involves complex SAML controllers, XML assertion parsing, and handling IdP-specific quirks. This guide explains SAML flows, the trade-offs between building and buying, and best practices for security, routing, and UX. Alternatively, WorkOS offers a hassle-free way to add SSO.\n💡 为什么值得读: 为开发者提供集成 SSO 的实用指南，权衡利弊并推荐高效解决方案。\n💡 Why read it: Provides developers with a practical guide to integrating SSO, weighing pros and cons and recommending an efficient solution.\n🏷️ AI safety, fear, Anthropic, ethics\n🥉 alt.time-capsule.reopened：Usenet 历史存档网站的复兴\nAI Is Already In Dangerous Hands — wheresyoured.at · 1 天前 · 🤖 AI / ML\n中文摘要\n一个新工具的出现，使得深入研究 Usenet 的历史成为可能，这为研究人员带来了巨大的潜力。同时，它也提醒我们，当时许多用户认为 Usenet 是短暂的，但事实并非如此。该网站的复兴为探索早期互联网文化和交流方式提供了宝贵的资源。\nEnglish Summary\nA new tool for exploring Usenet history offers significant potential for researchers. It also serves as a reminder that many users at the time believed Usenet to be ephemeral, which proved to be incorrect. This revival provides a valuable resource for understanding early internet culture and communication.\n💡 为什么值得读: 探索早期互联网历史的独特视角，揭示 Usenet 的持久价值。\n💡 Why read it: Offers a unique perspective on early internet history, revealing the lasting value of Usenet.\n🏷️ AI risks, safety, control, misuse\n \n📊 数据概览\n \n \n \n分类分布\nmermaid\npie showData\n title \"文章分类分布\"\n \"💡 观点 / 杂谈\" : 5\n \"⚙️ 工程\" : 5\n \"🤖 AI / ML\" : 3\n \"🔒 安全\" : 2\n高频关键词\nmermaid\nxychart-beta horizontal\n title \"高频关键词\"\n x-axis [\"llm\", \"ai safety\", \"apple\", \"blogging\", \"ai agents\", \"prompting\", \"reasoning\", \"fear\", \"anthropic\", \"ethics\", \"ai risks\", \"safety\"]\n y-axis \"出现次数\" 0 --> 4\n bar [2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1]\n📈 纯文本关键词图（终端友好）\nllm │ ████████████████████ 2\nai safety │ ████████████████████ 2\napple │ ████████████████████ 2\nblogging │ ████████████████████ 2\nai agents │ ██████████░░░░░░░░░░ 1\nprompting │ ██████████░░░░░░░░░░ 1\nreasoning │ ██████████░░░░░░░░░░ 1\nfear │ ██████████░░░░░░░░░░ 1\nanthropic │ ██████████░░░░░░░░░░ 1\nethics │ ██████████░░░░░░░░░░ 1\n🏷️ 话题标签\nllm(2) · ai safety(2) · apple(2) · blogging(2) · ai agents(1) · prompting(1) · reasoning(1) · fear(1) · anthropic(1) · ethics(1) · ai risks(1) · safety(1) · control(1) · misuse(1) · photography(1) · verification(1) · privacy(1) · regulation(1) · bernie sanders(1) · steve bannon(1)\n \n💡 观点 / 杂谈\n1. WorkOS：SSO 工作原理及最快集成方法\nThe contagion of fear — simonwillison.net · 1 天前 · ⭐ 26/30\n中文摘要\n单点登录（SSO）是企业级交易的关键，但自行集成 SSO 意味着需要处理 SAML 控制器、解析 XML 断言以及应对各 IdP 的特定问题。本文将介绍 SAML 的工作流程，对比自建与购买的优劣，并提供安全、路由和用户体验的最佳实践。或者，使用 WorkOS 可以跳过繁琐的集成过程，快速添加 SSO 功能。\nEnglish Summary\nSingle Sign-On (SSO) is essential for enterprise deals, but building it in-house involves complex SAML controllers, XML assertion parsing, and handling IdP-specific quirks. This guide explains SAML flows, the trade-offs between building and buying, and best practices for security, routing, and UX. Alternatively, WorkOS offers a hassle-free way to add SSO.\n🏷️ AI safety, fear, Anthropic, ethics\n \n2. 覆盖标准库\nFT: ‘Steve Bannon and Bernie Sanders Unite in AI Safety Call’ — daringfireball.net · 9 小时前 · ⭐ 24/30\n中文摘要\n通过设置 export PYTHONSAFEPATH=1 环境变量，可以实现对 Python 标准库的覆盖。这允许开发者在不修改原始标准库文件的情况下，引入自定义的实现或行为。这种技术在特定场景下，例如测试、调试或引入实验性功能时非常有用。\nEnglish Summary\nBy setting the export PYTHONSAFEPATH=1 environment variable, it is possible to shadow the Python standard library. This allows developers to introduce custom implementations or behaviors without modifying the original standard library files. This technique is particularly useful in specific scenarios such as testing, debugging, or introducing experimental features.\n🏷️ AI safety, regulation, Bernie Sanders, Steve Bannon\n \n3. 哪些博客文章对你的思考影响最大？\nWhat blog posts influenced your thinking the most? — simonwillison.net · 1 天前 · ⭐ 22/30\n中文摘要\n作者在 Lobste.rs 论坛上分享了对他职业生涯影响最大的博客文章。其中一篇早期 Joel Spolsky 的文章《The Law of Leaky Abstractions》尤为重要，它鼓励作者在职业生涯初期就始终警惕抽象的局限性。这篇文章强调了理解技术底层细节的重要性，即使在高级抽象层面工作。\nEnglish Summary\nThe author shares blog posts that most influenced their career on the Lobste.rs forum. A key early influence was Joel Spolsky's 'The Law of Leaky Abstractions,' which encouraged the author to always be mindful of the limitations of abstractions early in their career. This piece emphasizes the importance of understanding underlying technical details, even when working at a higher level of abstraction.\n🏷️ blogging, influential posts, software development, community\n \n4. 引用 Laurie Voss\nQuoting Laurie Voss — simonwillison.net · 1 天前 · ⭐ 22/30\n中文摘要\nLaurie Voss 认为，随着代码编写成本的急剧下降，审查、修复和运维代码的成本也随之降低，并且这种趋势将继续下去。他预测，软件开发的重心将转移到理解用户真实需求、精确定义需求以及提升用户体验上。这些成本是针对每个软件产品的，不会转移，因此随着软件数量的无限增长，这些核心成本将变得更加重要。\nEnglish Summary\nLaurie Voss posits that as the cost of writing code has collapsed, the costs of reviewing, fixing, and operating it are following suit and are expected to continue declining. He predicts that the focus of software development will shift to understanding what people actually want, defining it precisely, and making it pleasant to use. These costs are per piece of software and do not transfer, meaning as the amount of software grows infinitely, these core costs will become increasingly significant.\n🏷️ software engineering, product development, cost\n \n5. 苹果“惊喜与闪耀”发布会回顾：iPhone 18 Pro、AirPods 5、Apple Watch Series 12 及 Ultra 4、iPhone Duo 发布，以及 John Ternus 时代的开启\n★ Thoughts and Observations on Apple’s ‘Surprise and Shine’ Event; the Announcements of the iPhones 18 Pro, AirPods 5, Apple Watches Series 12 and Ultra 4, and the iPhone Duo; and the Dawn of the Ternus, John Ternus Era at Apple — daringfireball.net · 10 小时前 · ⭐ 21/30\n中文摘要\n本次发布会聚焦于苹果最新推出的产品，包括多款 iPhone、AirPods 和 Apple Watch 型号。文章还探讨了 John Ternus 接管苹果硬件工程部门后，公司可能迎来新的发展方向。此次活动展示了苹果在创新和产品迭代方面的持续努力。\nEnglish Summary\nThis article reviews Apple's 'Surprise and Shine' event, highlighting the announcements of the latest iPhones, AirPods, and Apple Watches. It also delves into the potential new era under John Ternus's leadership in Apple's hardware engineering. The event showcased Apple's ongoing commitment to innovation and product evolution.\n🏷️ Apple Event, iPhone, product launch, leadership\n \n⚙️ 工程\n6. Apple 的 27.0 操作系统更新\nApple’s 27.0 OS Updates — daringfireball.net · 1 天前 · ⭐ 23/30\n中文摘要\nScripting OS X 的 Armin Briegel 汇总了 Apple 今日发布的 27.0 平台更新的所有发布说明链接，涵盖了功能、开发者和安全更新。除了 27.0 版本外，Apple 还发布了 26.7 更新以及 macOS 15.8 Sequoia。这是一个重大的更新发布日。\nEnglish Summary\nArmin Briegel at Scripting OS X has compiled links to all release notes for today's 27.0 platform updates, covering features, developer, and security. In addition to the 27.0 updates, Apple also released 26.7 updates and macOS 15.8 Sequoia, marking a significant day for platform updates.\n🏷️ Apple, OS updates, release notes, software\n \n7. 瓶颈总是被误解\nBottlenecks Get a Bad Rap — blog.jim-nielsen.com · 9 小时前 · ⭐ 21/30\n中文摘要\n文章挑战了对瓶颈的普遍负面看法，指出瓶颈并非总是问题，而是有其设计目的。以瓶子为例，瓶颈是为了控制液体流出的速度，防止过量涌出造成混乱。人类的生理限制也与此类似，瓶颈的存在是为了与我们的消费能力相匹配。因此，瓶颈是效率和用户体验的必要组成部分，而非单纯的障碍。\nEnglish Summary\nThe article challenges the common negative perception of bottlenecks, arguing they are not always problematic and serve a design purpose. Using the analogy of a bottle, a bottleneck controls the flow rate of liquid to prevent overwhelming output and mess. Human physiological limitations are similarly matched by bottlenecks, which are designed to align with our consumption capacity. Therefore, bottlenecks are presented as necessary components for efficiency and user experience, rather than mere impediments.\n🏷️ bottlenecks, performance, efficiency, systems\n \n8. alt.time-capsule.reopened\nalt.time-capsule.reopened — tedium.co · 1 天前 · ⭐ 21/30\n中文摘要\n一个用于深入研究 Usenet 历史的新工具为研究人员提供了巨大的潜力。然而，它也提醒我们，当时许多用户认为 Usenet 是短暂的，但事实并非如此。这个工具的出现，为我们重新审视和理解过去的网络交流方式提供了新的视角。\nEnglish Summary\nA new tool for exploring Usenet history offers significant potential for researchers. It also serves as a reminder that many users at the time believed Usenet was ephemeral, which proved to be incorrect. This tool provides a new perspective on understanding past online communication.\n🏷️ Usenet, history, archives, research\n \n9. Org mode 博客标签索引\nTag index for Org mode blog — entropicthoughts.com · 1 天前 · ⭐ 21/30\n中文摘要\n由于不断有人询问博客的构建方式，作者决定分步解释部分技术细节，而非直接分享“糟糕”的代码。最近遇到的问题是生成标签索引时，一个辅助函数因递归调用过深而导致堆栈溢出。文章将详细介绍解决此问题的过程。\nEnglish Summary\nDue to frequent inquiries about how the blog is built, the author will explain parts of the process piecewise rather than sharing the 'terrible' code. A recent issue involved a helper function for generating the tag index causing a stack overflow due to excessive recursion. The article will detail the resolution.\n🏷️ Org mode, blogging, Emacs, workflow\n \n10. 覆盖标准库\nShadowing the Standard Library — nesbitt.io · 19 小时前 · ⭐ 20/30\n中文摘要\n本文简要介绍了如何通过设置环境变量 PYTHONSAFEPATH=1 来覆盖 Python 的标准库。这是一种在特定场景下，例如开发或测试时，用于调试或实验性修改标准库行为的技巧。\nEnglish Summary\nThis article briefly explains how to override Python's standard library by setting the environment variable PYTHONSAFEPATH=1. This is a technique used in specific scenarios, such as development or testing, for debugging or experimentally modifying standard library behavior.\n🏷️ Python, standard library, environment variable\n \n🤖 AI / ML\n11. 苹果“惊喜与闪耀”发布会观察：iPhone 18 Pro、AirPods 5、Apple Watch Series 12 及 Ultra 4、iPhone Duo 发布，以及 Ternus 时代的开启\nTell agents the why, not just the how — seangoedecke.com · 1 天前 · ⭐ 26/30\n中文摘要\n本文深入分析了苹果近期备受瞩目的“惊喜与闪耀”发布会，重点关注了 iPhone 18 Pro、AirPods 5、Apple Watch Series 12 和 Ultra 4，以及创新的 iPhone Duo。文章还探讨了苹果高管 John Ternus 上任后可能带来的新 era。发布会展示了苹果在硬件创新和产品线扩展上的持续投入，预示着公司未来发展的新方向。\nEnglish Summary\nThis analysis delves into Apple's recent 'Surprise and Shine' event, focusing on the announcements of the iPhone 18 Pro, AirPods 5, Apple Watches Series 12 and Ultra 4, and the innovative iPhone Duo. It also explores the dawn of the John Ternus era at Apple. The event showcased Apple's continued commitment to hardware innovation and product line expansion, signaling new directions for the company's future.\n🏷️ AI agents, prompting, LLM, reasoning\n \n12. alt.time-capsule.reopened：Usenet 历史存档网站的复兴\nAI Is Already In Dangerous Hands — wheresyoured.at · 1 天前 · ⭐ 26/30\n中文摘要\n一个新工具的出现，使得深入研究 Usenet 的历史成为可能，这为研究人员带来了巨大的潜力。同时，它也提醒我们，当时许多用户认为 Usenet 是短暂的，但事实并非如此。该网站的复兴为探索早期互联网文化和交流方式提供了宝贵的资源。\nEnglish Summary\nA new tool for exploring Usenet history offers significant potential for researchers. It also serves as a reminder that many users at the time believed Usenet to be ephemeral, which proved to be incorrect. This revival provides a valuable resource for understanding early internet culture and communication.\n🏷️ AI risks, safety, control, misuse\n \n13. Gemini Live 音频\nGemini Live audio — simonwillison.net · 5 小时前 · ⭐ 23/30\n中文摘要\nGoogle 发布了 Gemini 3.8 Live 和 Gemini 3.8 Live Extended Thinking，这是两款新的语音转语音模型。这些模型在功能上类似于 OpenAI 的 GPT-Live 系列。文章作者介绍了自己使用一款名为 Gemini Live audio 的工具，该工具可能用于与这些新模型进行交互或演示其能力。\nEnglish Summary\nGoogle has released Gemini 3.8 Live and Gemini 3.8 Live Extended Thinking, two new speech-to-speech models. These models are functionally similar to OpenAI's GPT-Live family. The author introduces a tool called Gemini Live audio, which may be used for interacting with these new models or demonstrating their capabilities.\n🏷️ Gemini, Google AI, LLM, audio\n \n🔒 安全\n14. Org mode 博客的标签索引\n‘Apple Reference Image: A New Approach for Verified Photography’ — daringfireball.net · 1 小时前 · ⭐ 24/30\n中文摘要\n由于用户频繁询问博客的构建方式，作者决定分步解释其技术细节，而非直接分享“糟糕”的代码。最近遇到的问题是，一个用于生成标签索引的辅助函数导致了堆栈溢出，因为该函数被设计为递归调用，在处理少量数据时工作正常。文章将逐步剖析解决此问题的过程。\nEnglish Summary\nIn response to frequent inquiries about how this blog is built, the author is explaining its technical aspects piece by piece rather than sharing the underlying code. A recent issue involved a helper function for generating the tag index blowing the stack limit due to its recursive design, which worked fine with small data sets. The article will detail the process of addressing this problem.\n🏷️ Apple, photography, verification, privacy\n \n15. [赞助] WorkOS：SSO 如何工作以及添加它的最快方法\n[[Sponsor] WorkOS: How SSO Works and the Fastest Way to Add It](https://workos.com/guide/the-developers-guide-to-sso?utmsource=daringfireball&utmmedium=newsletter&utmcampaign=q32026) — daringfireball.net · 12 小时前 · ⭐ 21/30\n中文摘要\n单点登录（SSO）是企业交易的关键，但自行构建 SSO 功能需要处理 SAML 控制器、XML 断言解析以及针对不同提供商的特定配置。本文将介绍 SAML 流程的工作原理、自建与购买的权衡，以及安全、路由和用户体验的最佳实践。或者，您也可以通过 WorkOS 轻松添加 SSO。\nEnglish Summary\nSingle Sign-On (SSO) is essential for enterprise deals, but building it yourself involves complex SAML controllers and XML parsing. This article explains SAML flows, build vs. buy trade-offs, and best practices for security and UX. Alternatively, you can easily add SSO with WorkOS.\n🏷️ SSO, SAML, WorkOS, enterprise\n \n生成于 2026-09-16 04:21 | 扫描 84 源 → 获取 2555 篇 → 精选 15 篇\n基于 Hacker News Popularity Contest 2025 RSS 源列表，由 Andrej Karpathy 推荐"</script>
+  <script id="speech-text" type="application/json">"🎧 点这里朗读今日日报\n📰 AI 博客每日精选 — 2026-09-17\n来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15\n📝 今日看点\n今日技术圈聚焦AI安全与监管新动向，跨党派政治人物呼吁加强AI治理，同时AI模型应被视为工具而非拥有权利。在AI技术前沿，Google发布实时语音模型，Anthropic整合Claude产品线。苹果方面，新一代硬件发布预示着产品线革新，但开发者工具的滞后影响了新应用的支持。\n \n🏆 今日必读\n🥇 Gemini 3.8 Live：Google 发布实时语音到语音模型\nFlock cameras are riddled with security vulnerabilities and hard-coded credentials — micahflee.com · 7 小时前 · 🔒 安全\n中文摘要\nGoogle 发布了 Gemini 3.8 Live 和 Gemini 3.8 Live Extended Thinking，这是两款新的语音到语音模型。这些模型类似于 OpenAI 的 GPT-Live 系列，能够进行实时音频交互。文章还提到了作者使用 GPT-6 Astra 进行的测试。\nEnglish Summary\nGoogle has released Gemini 3.8 Live and 3.8 Live Extended Thinking, two new speech-to-speech models. These models are similar in architecture to OpenAI's GPT-Live family, enabling real-time audio interactions. The author also mentions testing with GPT-6 Astra.\n💡 为什么值得读: 了解 Google 在实时语音模型领域的最新进展及其与 OpenAI 的竞争态势。\n💡 Why read it: Understand Google's latest advancements in real-time speech models and its competitive landscape against OpenAI.\n🏷️ Flock cameras, vulnerabilities, hard-coded credentials, ALPR\n🥈 Datasette 1.0a40 发布：插件支持后台任务\nData Broker Radaris Loses Domains in Privacy Fight — krebsonsecurity.com · 10 小时前 · 🔒 安全\n中文摘要\nDatasette 发布了 1.0a40 版本，引入了插件支持后台任务的新功能，通过 datasette.addbackgroundtask() 方法实现。此版本还包含其他一些新特性和错误修复。这是继 0.65.5 版本安全修复后的又一次重要更新。\nEnglish Summary\nDatasette version 1.0a40 has been released, introducing the ability for plugins to launch and manage background tasks via the new datasette.addbackgroundtask() method. This release also includes other new features and bug fixes, following the security fix in version 0.65.5.\n💡 为什么值得读: 了解 Datasette 插件生态的最新能力，特别是后台任务处理的改进。\n💡 Why read it: Learn about the latest capabilities in the Datasette plugin ecosystem, particularly improvements in background task handling.\n🏷️ Data broker, Radaris, privacy law, domains\n🥉 Datasette 0.65.5 发布：修复安全漏洞\nPluralistic: How an AI moratorium can save AI bosses (16 Sep 2026) — pluralistic.net · 20 小时前 · 💡 观点 / 杂谈\n中文摘要\nDatasette 发布了 0.65.5 版本，修复了一个安全漏洞。该漏洞允许在表名末尾添加换行符绕过表权限检查，从而暴露私有行。此问题已在 GHSA-h547-rmjf-5m2m 中报告并解决。\nEnglish Summary\nDatasette version 0.65.5 has been released, addressing a security vulnerability. This issue allowed a trailing newline in a requested table name to bypass table permissions and expose private rows, as reported in GHSA-h547-rmjf-5m2m.\n💡 为什么值得读: 关注 Datasette 的安全更新，了解并及时应用修复以保护数据安全。\n💡 Why read it: Stay informed about critical security updates for Datasette and ensure timely application of fixes to protect data.\n🏷️ AI moratorium, AI regulation, competition\n \n📊 数据概览\n \n \n \n分类分布\nmermaid\npie showData\n title \"文章分类分布\"\n \"🔒 安全\" : 4\n \"🤖 AI / ML\" : 4\n \"💡 观点 / 杂谈\" : 3\n \"⚙️ 工程\" : 2\n \"🛠 工具 / 开源\" : 1\n \"📝 其他\" : 1\n高频关键词\nmermaid\nxychart-beta horizontal\n title \"高频关键词\"\n x-axis [\"llm\", \"apple\", \"duo\", \"datasette\", \"flock cameras\", \"vulnerabilities\", \"hard-coded credentials\", \"alpr\", \"data broker\", \"radaris\", \"privacy law\", \"domains\"]\n y-axis \"出现次数\" 0 --> 4\n bar [2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1]\n📈 纯文本关键词图（终端友好）\nllm │ ████████████████████ 2\napple │ ████████████████████ 2\nduo │ ████████████████████ 2\ndatasette │ ████████████████████ 2\nflock cameras │ ██████████░░░░░░░░░░ 1\nvulnerabilities │ ██████████░░░░░░░░░░ 1\nhard-coded credentials │ ██████████░░░░░░░░░░ 1\nalpr │ ██████████░░░░░░░░░░ 1\ndata broker │ ██████████░░░░░░░░░░ 1\nradaris │ ██████████░░░░░░░░░░ 1\n🏷️ 话题标签\nllm(2) · apple(2) · duo(2) · datasette(2) · flock cameras(1) · vulnerabilities(1) · hard-coded credentials(1) · alpr(1) · data broker(1) · radaris(1) · privacy law(1) · domains(1) · ai moratorium(1) · ai regulation(1) · competition(1) · structured output(1) · jev(1) · llms(1) · tla+(1) · specifications(1)\n \n🔒 安全\n1. Gemini 3.8 Live：Google 发布实时语音到语音模型\nFlock cameras are riddled with security vulnerabilities and hard-coded credentials — micahflee.com · 7 小时前 · ⭐ 26/30\n中文摘要\nGoogle 发布了 Gemini 3.8 Live 和 Gemini 3.8 Live Extended Thinking，这是两款新的语音到语音模型。这些模型类似于 OpenAI 的 GPT-Live 系列，能够进行实时音频交互。文章还提到了作者使用 GPT-6 Astra 进行的测试。\nEnglish Summary\nGoogle has released Gemini 3.8 Live and 3.8 Live Extended Thinking, two new speech-to-speech models. These models are similar in architecture to OpenAI's GPT-Live family, enabling real-time audio interactions. The author also mentions testing with GPT-6 Astra.\n🏷️ Flock cameras, vulnerabilities, hard-coded credentials, ALPR\n \n2. Datasette 1.0a40 发布：插件支持后台任务\nData Broker Radaris Loses Domains in Privacy Fight — krebsonsecurity.com · 10 小时前 · ⭐ 26/30\n中文摘要\nDatasette 发布了 1.0a40 版本，引入了插件支持后台任务的新功能，通过 datasette.addbackgroundtask() 方法实现。此版本还包含其他一些新特性和错误修复。这是继 0.65.5 版本安全修复后的又一次重要更新。\nEnglish Summary\nDatasette version 1.0a40 has been released, introducing the ability for plugins to launch and manage background tasks via the new datasette.addbackgroundtask() method. This release also includes other new features and bug fixes, following the security fix in version 0.65.5.\n🏷️ Data broker, Radaris, privacy law, domains\n \n3. Apple Reference Image：一种新的验证摄影方法\n‘Apple Reference Image: A New Approach for Verified Photography’ — daringfireball.net · 1 天前 · ⭐ 24/30\n中文摘要\nApple 安全研究团队发布了一篇关于“Apple Reference Image”的论文，详细介绍了该技术的工作原理及其设计初衷。该方法旨在为摄影作品提供一种新的验证方式，特别关注隐私问题。与需要摄影师或机构使用自身凭证进行担保的现有方案不同，Apple Reference Image 避免了让摄影师（尤其是在冲突地区工作的摄影师）面临暴露身份的风险，从而无需牺牲匿名性即可证明图像的真实性。\nEnglish Summary\nApple Security Research has released a paper detailing 'Apple Reference Image,' a new approach for verifying photography. The system addresses privacy concerns by avoiding the need for photographers or institutions to vouch for images using their own credentials, which can put individuals, especially those in conflict zones, at risk. This method allows for image authenticity to be proven without requiring photographers to forgo anonymity.\n🏷️ Apple, photography, privacy, verification\n \n4. Datasette 0.65.5 版本发布\ndatasette 0.65.5 — simonwillison.net · 4 小时前 · ⭐ 22/30\n中文摘要\nDatasette 发布了 0.65.5 版本，主要是一个安全修复。该问题存在于请求的表名中尾随的换行符可能绕过表权限并暴露私有行的情况。此漏洞已由 dpfkdlemtp 报告。\nEnglish Summary\nDatasette has released version 0.65.5, which primarily addresses a security fix. The issue involved a trailing newline in a requested table name that could bypass table permissions and expose private rows. This vulnerability was reported by dpfkdlemtp.\n🏷️ Datasette, security fix, permissions\n \n🤖 AI / ML\n5. FT：史蒂夫·班农和伯尼·桑德斯呼吁 AI 安全\nJev means structured output is interesting again — seangoedecke.com · 1 天前 · ⭐ 26/30\n中文摘要\n报道指出，美国政治光谱两端的代表人物，包括社会主义者伯尼·桑德斯和右翼活动家史蒂夫·班农，正联手呼吁加强对人工智能（AI）的监管。这一罕见的跨党派合作表明 AI 安全问题正在重塑美国政治格局，尽管特朗普总统对此表示怀疑。\nEnglish Summary\nVeteran socialist Bernie Sanders and right-wing activist Steve Bannon are joining forces to call for greater guardrails on AI, indicating a significant shift in the US political landscape. This unlikely alliance highlights the growing bipartisan concern over AI safety, despite skepticism from figures like Donald Trump.\n🏷️ structured output, LLM, Jev\n \n6. Apple“惊喜与闪耀”发布会观察：iPhone 18 Pro、AirPods 5、Apple Watch Series 12/Ultra 4 及 iPhone Duo 发布，以及 Ternus 时代的开启\nThe LLMs yearn for the spines — buttondown.com/hillelwayne · 8 小时前 · ⭐ 25/30\n中文摘要\n本文对 Apple 的“惊喜与闪耀”发布会进行了深入观察和评论，重点关注了 iPhone 18 Pro、AirPods 5、Apple Watch Series 12 和 Ultra 4，以及 iPhone Duo 等新产品的发布。同时，文章也探讨了 John Ternus 接任后 Apple 产品策略可能的新方向。\nEnglish Summary\nThis article offers thoughts and observations on Apple's 'Surprise and Shine' event, detailing the announcements of the iPhone 18 Pro, AirPods 5, Apple Watches Series 12 and Ultra 4, and the iPhone Duo. It also marks the beginning of the John Ternus era at Apple, suggesting potential shifts in product strategy.\n🏷️ LLMs, TLA+, specifications, spine\n \n7. Claude Cowork 与 Chat 合并为单一 Claude 产品\nClaude Cowork and chat are now one Claude — simonwillison.net · 10 小时前 · ⭐ 24/30\n中文摘要\nAnthropic 已将 Claude Cowork 和 Claude Chat 合并为一个名为“Claude”的统一产品。此次整合旨在简化用户体验，解决用户对不同 Claude 版本（Cowork、Chat、Code）的混淆。新版 Claude 将能够处理从快速提问到复杂报告的任务，并支持跨会话的持久性，即使在用户关闭设备后也能继续工作。该更新将首先面向 Pro 用户推出。\nEnglish Summary\nAnthropic has merged Claude Cowork and Claude Chat into a single product named 'Claude'. This integration aims to simplify the user experience and address confusion among users regarding different Claude versions (Cowork, Chat, Code). The unified Claude will handle tasks ranging from quick questions to detailed reports and offers persistent capabilities across sessions, even after the user closes their laptop. This update is rolling out to Pro users first.\n🏷️ Claude, AI chat, integration\n \n8. Gemini Live 音频模型发布\nGemini Live audio — simonwillison.net · 1 天前 · ⭐ 23/30\n中文摘要\nGoogle 今日发布了两款新的语音转语音模型 Gemini 3.8 Live 和 3.8 Live Extended Thinking。这些模型在功能上类似于 OpenAI 的 GPT-Live 系列。该工具允许用户体验这些先进的音频处理能力。\nEnglish Summary\nGoogle has released two new speech-to-speech models, Gemini 3.8 Live and 3.8 Live Extended Thinking. These models are similar in functionality to OpenAI's GPT-Live family. The tool allows users to experience these advanced audio processing capabilities.\n🏷️ Gemini, AI, Google, LLM\n \n💡 观点 / 杂谈\n9. Datasette 0.65.5 发布：修复安全漏洞\nPluralistic: How an AI moratorium can save AI bosses (16 Sep 2026) — pluralistic.net · 20 小时前 · ⭐ 26/30\n中文摘要\nDatasette 发布了 0.65.5 版本，修复了一个安全漏洞。该漏洞允许在表名末尾添加换行符绕过表权限检查，从而暴露私有行。此问题已在 GHSA-h547-rmjf-5m2m 中报告并解决。\nEnglish Summary\nDatasette version 0.65.5 has been released, addressing a security vulnerability. This issue allowed a trailing newline in a requested table name to bypass table permissions and expose private rows, as reported in GHSA-h547-rmjf-5m2m.\n🏷️ AI moratorium, AI regulation, competition\n \n10. 引用 Mustafa Suleyman 的观点：不应赋予 AI 模型权利\nQuoting Mustafa Suleyman — simonwillison.net · 12 小时前 · ⭐ 25/30\n中文摘要\nMustafa Suleyman 强调，不应将 AI 模型视为拥有情感、偏好、权利或应得的福利。他认为，意识是人类伦理、法律和政治体系的基础，将这些权利赋予 AI 并无证据支持，反而会使 AI 的安全和对齐（alignment）挑战更加困难。此观点旨在警示对 AI 拟人化和赋予其权利的倾向。\nEnglish Summary\nMustafa Suleyman emphasizes that AI models should not be treated as entities with feelings, preferences, rights, or entitlements. He argues that consciousness is the foundation of human ethical, legal, and political systems, and granting AI any flavor of these rights is not justified by evidence and will complicate the AI containment and alignment challenge.\n🏷️ AI ethics, model welfare, consciousness\n \n11. 金融时报：‘史蒂夫·班农和伯尼·桑德斯就 AI 安全发出联合呼吁’\nFT: ‘Steve Bannon and Bernie Sanders Unite in AI Safety Call’ — daringfireball.net · 1 天前 · ⭐ 22/30\n中文摘要\n金融时报报道称，资深社会主义者伯尼·桑德斯和右翼活动家史蒂夫·班农正联手呼吁加强对人工智能的监管。这一不同寻常的联合表明，人工智能安全问题正重塑美国政治格局。即使在唐纳德·特朗普声称对该技术的担忧是帮助中国超越美国的骗局之际，双方仍就此达成一致。\nEnglish Summary\nAccording to the Financial Times, veteran socialist Bernie Sanders and right-wing activist Steve Bannon are joining forces to call for greater guardrails on AI. This unusual alliance indicates that AI safety concerns are reshaping the US political landscape. They are finding common ground even as Donald Trump insists concerns about the technology are a hoax that will help China overtake the US.\n🏷️ AI safety, regulation, politics, ethics\n \n⚙️ 工程\n12. Xcode 27.2 已发布，但 27.1 未发布，开发者仍无法开始 Duo 应用开发\nXcode 27.2 Is Out, but 27.1 Is Not, Which Means Developers Still Can’t Get Started on Duo-Adapted Apps — daringfireball.net · 5 小时前 · ⭐ 23/30\n中文摘要\nXcode 27.2 已发布，但支持 iPhone Duo 的 Xcode 27.1 版本尚未推出，导致开发者无法开始为 Duo 开发适配的应用。Xcode 27.1 中的 iOS SDK 和模拟器支持对于 Duo 应用的适配至关重要，而适配工作并非简单的重新编译，可能需要大量开发工作。开发者们急切等待此 SDK，但目前仍无法进行开发。\nEnglish Summary\nXcode 27.2 has been released, but the crucial Xcode 27.1, which includes the iOS SDK and simulator support for the iPhone Duo, is still unavailable. This prevents developers from starting the significant work required to adapt their apps for the Duo, which is more than a simple recompile. Developers have been awaiting this SDK for some time, but development remains blocked.\n🏷️ Xcode, iOS SDK, Duo, app development\n \n13. 苹果发布 iOS 27.2 Beta，27.1 是 Duo 专属的 iOS 分支\nApple OS 27.2 Betas Are Out; Version 27.1 Is the Duo-Exclusive iOS Fork — daringfireball.net · 9 小时前 · ⭐ 23/30\n中文摘要\n苹果发布了 iOS 27.2 的首个开发者 Beta 版本，而非预期的 27.1。这一不同寻常的版本命名与即将推出的 iPhone Duo 有关。Duo 将运行 iOS 27.1，该版本目前是 Duo 的专属分支，旨在保密其软件细节。Duo 预计将于 10 月 23 日上市，届时将搭载 iOS 27.1。\nEnglish Summary\nApple has released the first developer beta of iOS 27.2, bypassing the expected 27.1. This unusual versioning is directly related to the upcoming iPhone Duo, which will ship with iOS 27.1. This version is currently a Duo-exclusive branch, kept internal to Apple for secrecy. The Duo is slated for release on October 23rd with iOS 27.1.\n🏷️ Apple OS, beta, iOS, Duo\n \n🛠 工具 / 开源\n14. Datasette 1.0a40 版本发布\ndatasette 1.0a40 — simonwillison.net · 4 小时前 · ⭐ 22/30\n中文摘要\nDatasette 发布了 1.0a40 版本，包含与 0.65.5 版本相同的安全修复。此外，新版本还引入了一些新功能和错误修复。插件现在可以使用新的 datasette.addbackgroundtask() 方法来启动和管理后台任务。\nEnglish Summary\nDatasette has released version 1.0a40, which includes the same security fix as version 0.65.5. Additionally, this new version introduces some neat new features and bug fixes. Plugins can now launch and manage background tasks using the new datasette.addbackgroundtask() method.\n🏷️ Datasette, release, security\n \n📝 其他\n15. 关于苹果‘惊喜与闪耀’发布会、iPhone 18 Pro、AirPods 5、Apple Watch Series 12 和 Ultra 4、iPhone Duo 的发布以及苹果 Ternus、John Ternus 时代的开端的一些想法和观察\n★ Thoughts and Observations on Apple’s ‘Surprise and Shine’ Event; the Announcements of the iPhones 18 Pro, AirPods 5, Apple Watches Series 12 and Ultra 4, and the iPhone Duo; and the Dawn of the Ternus, John Ternus Era at Apple — daringfireball.net · 1 天前 · ⭐ 22/30\n中文摘要\n本次发布会涵盖了主题演讲、发布的产品以及苹果公司新任领导者 John Ternus 开启的新时代。文章对这些内容进行了深入的思考和观察。\nEnglish Summary\nThis article offers thoughts and observations on Apple's 'Surprise and Shine' event, covering the keynote, the products announced, and the dawn of a new era under John Ternus. It delves into the implications of these developments.\n🏷️ Apple, event, iPhone, product launch\n \n生成于 2026-09-17 04:28 | 扫描 84 源 → 获取 2555 篇 → 精选 15 篇\n基于 Hacker News Popularity Contest 2025 RSS 源列表，由 Andrej Karpathy 推荐"</script>
   <script>
     const text = JSON.parse(document.getElementById('speech-text').textContent);
     const statusEl = document.getElementById('status');
