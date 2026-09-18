@@ -52,203 +52,201 @@
   <main class="shell">
     <article class="card">
       <p>🎧 <a href="https://lingnanren.github.io/ai-daily-digest/listen.html">点这里朗读今日日报</a></p>
-<h1>📰 AI 博客每日精选 — 2026-09-17</h1>
+<h1>📰 AI 博客每日精选 — 2026-09-18</h1>
 <blockquote>来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15</blockquote>
 <h2>📝 今日看点</h2>
-<p>今日技术圈聚焦AI安全与监管新动向，跨党派政治人物呼吁加强AI治理，同时AI模型应被视为工具而非拥有权利。在AI技术前沿，Google发布实时语音模型，Anthropic整合Claude产品线。苹果方面，新一代硬件发布预示着产品线革新，但开发者工具的滞后影响了新应用的支持。</p>
+<p>今日技术看点聚焦AI伦理与安全挑战，从LLM的语言偏好到模型伦理的警告，再到摄像头和数据经纪商的安全漏洞，都敲响了警钟。同时，苹果在芯片策略上的差异以及开发工具的更新也值得关注。</p>
 <hr>
 <h2>🏆 今日必读</h2>
-<p>🥇 <strong>Gemini 3.8 Live：Google 发布实时语音到语音模型</strong></p>
-<p><a href="https://micahflee.com/flock-cameras-are-riddled-with-security-vulnerabilities-and-hard-coded-credentials/">Flock cameras are riddled with security vulnerabilities and hard-coded credentials</a> — micahflee.com · 7 小时前 · 🔒 安全</p>
+<p>🥇 <strong>使用 System One 模型的技术：Jev 的决策输出与传统 LLM 的对比</strong></p>
+<p><a href="https://simonwillison.net/2026/Sep/17/targeted-attacks-on-rustaceans/">Be alert: targeted attacks on prominent Rustaceans</a> — simonwillison.net · 4 小时前 · 🔒 安全</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Google 发布了 Gemini 3.8 Live 和 Gemini 3.8 Live Extended Thinking，这是两款新的语音到语音模型。这些模型类似于 OpenAI 的 GPT-Live 系列，能够进行实时音频交互。文章还提到了作者使用 GPT-6 Astra 进行的测试。</blockquote>
+<blockquote>文章介绍了 Jev，一种仅输出决策（多项选择题答案）的“System One”语言模型。与传统 LLM 相比，Jev 的灵活性较低，但速度一致且稳定。这种模型适用于特定场景，通过仅输出结构化决策来优化效率。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Google has released Gemini 3.8 Live and 3.8 Live Extended Thinking, two new speech-to-speech models. These models are similar in architecture to OpenAI's GPT-Live family, enabling real-time audio interactions. The author also mentions testing with GPT-6 Astra.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 了解 Google 在实时语音模型领域的最新进展及其与 OpenAI 的竞争态势。</p>
-<p>💡 <strong>Why read it</strong>: Understand Google's latest advancements in real-time speech models and its competitive landscape against OpenAI.</p>
-<p>🏷️ Flock cameras, vulnerabilities, hard-coded credentials, ALPR</p>
-<p>🥈 <strong>Datasette 1.0a40 发布：插件支持后台任务</strong></p>
-<p><a href="https://krebsonsecurity.com/2026/09/data-broker-radaris-loses-domains-in-privacy-fight/">Data Broker Radaris Loses Domains in Privacy Fight</a> — krebsonsecurity.com · 10 小时前 · 🔒 安全</p>
+<blockquote>This article introduces Jev, a "System One" language model that exclusively outputs decisions, specifically answers to multiple-choice questions. Compared to traditional LLMs, Jev offers less flexibility but consistent and stable speed. This model is suitable for specific scenarios, optimizing efficiency by outputting only structured decisions.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 了解一种新型、高效的“System One”模型如何通过限制输出类型来优化性能。</p>
+<p>💡 <strong>Why read it</strong>: Understand how a new, efficient "System One" model optimizes performance by restricting its output type.</p>
+<p>🏷️ Rustaceans, targeted attacks, crates security</p>
+<p>🥈 <strong>为何美国版 iPhone 18 Pro Max 使用高通基带而非苹果自研的 C2 芯片？</strong></p>
+<p><a href="https://simonwillison.net/2026/Sep/17/compaction-summaries/">Self-generated prompt injections in compaction summaries</a> — simonwillison.net · 7 小时前 · 🤖 AI / ML</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Datasette 发布了 1.0a40 版本，引入了插件支持后台任务的新功能，通过 <code>datasette.add_background_task()</code> 方法实现。此版本还包含其他一些新特性和错误修复。这是继 0.65.5 版本安全修复后的又一次重要更新。</blockquote>
+<blockquote>文章指出，苹果 iPhone 18 Pro Max 的美国版本采用了高通蜂窝调制解调器，而其他地区的版本则使用了苹果自研的 C2 芯片。苹果尚未对此差异给出解释，但推测可能与高通与苹果在 2023 年达成的调制解调器供应协议有关，该协议有效期至 2026 年。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Datasette version 1.0a40 has been released, introducing the ability for plugins to launch and manage background tasks via the new <code>datasette.add_background_task()</code> method. This release also includes other new features and bug fixes, following the security fix in version 0.65.5.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 了解 Datasette 插件生态的最新能力，特别是后台任务处理的改进。</p>
-<p>💡 <strong>Why read it</strong>: Learn about the latest capabilities in the Datasette plugin ecosystem, particularly improvements in background task handling.</p>
-<p>🏷️ Data broker, Radaris, privacy law, domains</p>
-<p>🥉 <strong>Datasette 0.65.5 发布：修复安全漏洞</strong></p>
-<p><a href="https://pluralistic.net/2026/09/16/beggar-thy-neighbor/">Pluralistic: How an AI moratorium can save AI bosses (16 Sep 2026)</a> — pluralistic.net · 20 小时前 · 💡 观点 / 杂谈</p>
+<blockquote>The article highlights that U.S. models of the iPhone 18 Pro Max utilize Qualcomm cellular modems, while models in other regions use Apple's in-house C2 chip. Apple has not provided an explanation for this discrepancy, but speculation suggests it may be related to the modem supply agreement between Qualcomm and Apple, which extends through 2026.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 深入了解苹果在最新 iPhone 型号中，针对特定市场采用不同基带芯片的潜在原因和行业背景。</p>
+<p>💡 <strong>Why read it</strong>: Gain insight into the potential reasons and industry context behind Apple's use of different baseband chips for specific markets in its latest iPhone models.</p>
+<p>🏷️ prompt injection, LLM safety, misalignment</p>
+<p>🥉 <strong>LLM 对“spine”一词的偏爱：一种新的语言模式？</strong></p>
+<p><a href="https://simonwillison.net/2026/Sep/17/how-to-write-with-an-llm/">How To Write With An LLM</a> — simonwillison.net · 4 小时前 · 🤖 AI / ML</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Datasette 发布了 0.65.5 版本，修复了一个安全漏洞。该漏洞允许在表名末尾添加换行符绕过表权限检查，从而暴露私有行。此问题已在 GHSA-h547-rmjf-5m2m 中报告并解决。</blockquote>
+<blockquote>作者在分析 AI 生成的 TLA+ 规范时，注意到“spine”一词的频繁出现，并将其视为一种潜在的“LLMism”（LLM 语言习惯）。文章探讨了这种现象是否预示着代码项目中“spine”使用量的非连续性增长，并提出需要更深入的研究来验证这一假设。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Datasette version 0.65.5 has been released, addressing a security vulnerability. This issue allowed a trailing newline in a requested table name to bypass table permissions and expose private rows, as reported in GHSA-h547-rmjf-5m2m.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 关注 Datasette 的安全更新，了解并及时应用修复以保护数据安全。</p>
-<p>💡 <strong>Why read it</strong>: Stay informed about critical security updates for Datasette and ensure timely application of fixes to protect data.</p>
-<p>🏷️ AI moratorium, AI regulation, competition</p>
+<blockquote>The author observed the frequent use of the word "spine" in AI-generated TLA+ specifications, identifying it as a potential "LLMism" (an LLM linguistic quirk). The article explores whether this phenomenon indicates a discontinuous jump in the usage of "spine" within code projects and suggests further research is needed to validate this hypothesis.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 探索大型语言模型在生成代码和技术文档时可能出现的、值得关注的新兴语言模式。</p>
+<p>💡 <strong>Why read it</strong>: Explore emerging linguistic patterns in AI-generated code and technical documentation that may warrant attention.</p>
+<p>🏷️ LLM, writing, copyediting, prompt engineering</p>
 <hr>
 <h2>📊 数据概览</h2>
-<table><thead><tr><th>扫描源</th><th>抓取文章</th><th>时间范围</th><th>精选</th></tr></thead><tbody><tr><td>84/92</td><td>2555 篇 → 33 篇</td><td>48h</td><td><strong>15 篇</strong></td></tr></tbody></table>
+<table><thead><tr><th>扫描源</th><th>抓取文章</th><th>时间范围</th><th>精选</th></tr></thead><tbody><tr><td>84/92</td><td>2555 篇 → 35 篇</td><td>48h</td><td><strong>15 篇</strong></td></tr></tbody></table>
 <h3>分类分布</h3>
 <div class="code-wrap"><div class="code-title">mermaid</div><pre><code>pie showData
     title "文章分类分布"
+    "🤖 AI / ML" : 5
     "🔒 安全" : 4
-    "🤖 AI / ML" : 4
-    "💡 观点 / 杂谈" : 3
+    "🛠 工具 / 开源" : 2
     "⚙️ 工程" : 2
-    "🛠 工具 / 开源" : 1
-    "📝 其他" : 1</code></pre></div>
+    "💡 观点 / 杂谈" : 2</code></pre></div>
 <h3>高频关键词</h3>
 <div class="code-wrap"><div class="code-title">mermaid</div><pre><code>xychart-beta horizontal
     title "高频关键词"
-    x-axis ["llm", "apple", "duo", "datasette", "flock cameras", "vulnerabilities", "hard-coded credentials", "alpr", "data broker", "radaris", "privacy law", "domains"]
+    x-axis ["datasette", "release", "security fix", "rustaceans", "targeted attacks", "crates security", "prompt injection", "llm safety", "misalignment", "llm", "writing", "copyediting"]
     y-axis "出现次数" 0 --&gt; 4
-    bar [2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1]</code></pre></div>
+    bar [2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1]</code></pre></div>
 <div class="details">
 <p class="summary">📈 纯文本关键词图（终端友好）</p>
-<div class="code-wrap"><pre><code>llm                    │ ████████████████████ 2
-apple                  │ ████████████████████ 2
-duo                    │ ████████████████████ 2
-datasette              │ ████████████████████ 2
-flock cameras          │ ██████████░░░░░░░░░░ 1
-vulnerabilities        │ ██████████░░░░░░░░░░ 1
-hard-coded credentials │ ██████████░░░░░░░░░░ 1
-alpr                   │ ██████████░░░░░░░░░░ 1
-data broker            │ ██████████░░░░░░░░░░ 1
-radaris                │ ██████████░░░░░░░░░░ 1</code></pre></div>
+<div class="code-wrap"><pre><code>datasette        │ ████████████████████ 2
+release          │ ████████████████████ 2
+security fix     │ ████████████████████ 2
+rustaceans       │ ██████████░░░░░░░░░░ 1
+targeted attacks │ ██████████░░░░░░░░░░ 1
+crates security  │ ██████████░░░░░░░░░░ 1
+prompt injection │ ██████████░░░░░░░░░░ 1
+llm safety       │ ██████████░░░░░░░░░░ 1
+misalignment     │ ██████████░░░░░░░░░░ 1
+llm              │ ██████████░░░░░░░░░░ 1</code></pre></div>
 </div>
 <h3>🏷️ 话题标签</h3>
-<p><strong>llm</strong>(2) · <strong>apple</strong>(2) · <strong>duo</strong>(2) · datasette(2) · flock cameras(1) · vulnerabilities(1) · hard-coded credentials(1) · alpr(1) · data broker(1) · radaris(1) · privacy law(1) · domains(1) · ai moratorium(1) · ai regulation(1) · competition(1) · structured output(1) · jev(1) · llms(1) · tla+(1) · specifications(1)</p>
-<hr>
-<h2>🔒 安全</h2>
-<h3>1. Gemini 3.8 Live：Google 发布实时语音到语音模型</h3>
-<p><a href="https://micahflee.com/flock-cameras-are-riddled-with-security-vulnerabilities-and-hard-coded-credentials/">Flock cameras are riddled with security vulnerabilities and hard-coded credentials</a> — <strong>micahflee.com</strong> · 7 小时前 · ⭐ 26/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>Google 发布了 Gemini 3.8 Live 和 Gemini 3.8 Live Extended Thinking，这是两款新的语音到语音模型。这些模型类似于 OpenAI 的 GPT-Live 系列，能够进行实时音频交互。文章还提到了作者使用 GPT-6 Astra 进行的测试。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Google has released Gemini 3.8 Live and 3.8 Live Extended Thinking, two new speech-to-speech models. These models are similar in architecture to OpenAI's GPT-Live family, enabling real-time audio interactions. The author also mentions testing with GPT-6 Astra.</blockquote>
-<p>🏷️ Flock cameras, vulnerabilities, hard-coded credentials, ALPR</p>
-<hr>
-<h3>2. Datasette 1.0a40 发布：插件支持后台任务</h3>
-<p><a href="https://krebsonsecurity.com/2026/09/data-broker-radaris-loses-domains-in-privacy-fight/">Data Broker Radaris Loses Domains in Privacy Fight</a> — <strong>krebsonsecurity.com</strong> · 10 小时前 · ⭐ 26/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>Datasette 发布了 1.0a40 版本，引入了插件支持后台任务的新功能，通过 <code>datasette.add_background_task()</code> 方法实现。此版本还包含其他一些新特性和错误修复。这是继 0.65.5 版本安全修复后的又一次重要更新。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Datasette version 1.0a40 has been released, introducing the ability for plugins to launch and manage background tasks via the new <code>datasette.add_background_task()</code> method. This release also includes other new features and bug fixes, following the security fix in version 0.65.5.</blockquote>
-<p>🏷️ Data broker, Radaris, privacy law, domains</p>
-<hr>
-<h3>3. Apple Reference Image：一种新的验证摄影方法</h3>
-<p><a href="https://security.apple.com/blog/apple-reference-image/">‘Apple Reference Image: A New Approach for Verified Photography’</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 24/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>Apple 安全研究团队发布了一篇关于“Apple Reference Image”的论文，详细介绍了该技术的工作原理及其设计初衷。该方法旨在为摄影作品提供一种新的验证方式，特别关注隐私问题。与需要摄影师或机构使用自身凭证进行担保的现有方案不同，Apple Reference Image 避免了让摄影师（尤其是在冲突地区工作的摄影师）面临暴露身份的风险，从而无需牺牲匿名性即可证明图像的真实性。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Apple Security Research has released a paper detailing 'Apple Reference Image,' a new approach for verifying photography. The system addresses privacy concerns by avoiding the need for photographers or institutions to vouch for images using their own credentials, which can put individuals, especially those in conflict zones, at risk. This method allows for image authenticity to be proven without requiring photographers to forgo anonymity.</blockquote>
-<p>🏷️ Apple, photography, privacy, verification</p>
-<hr>
-<h3>4. Datasette 0.65.5 版本发布</h3>
-<p><a href="https://simonwillison.net/2026/Sep/16/datasette-2/">datasette 0.65.5</a> — <strong>simonwillison.net</strong> · 4 小时前 · ⭐ 22/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>Datasette 发布了 0.65.5 版本，主要是一个安全修复。该问题存在于请求的表名中尾随的换行符可能绕过表权限并暴露私有行的情况。此漏洞已由 dpfkdlemtp 报告。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Datasette has released version 0.65.5, which primarily addresses a security fix. The issue involved a trailing newline in a requested table name that could bypass table permissions and expose private rows. This vulnerability was reported by dpfkdlemtp.</blockquote>
-<p>🏷️ Datasette, security fix, permissions</p>
+<p><strong>datasette</strong>(2) · <strong>release</strong>(2) · <strong>security fix</strong>(2) · rustaceans(1) · targeted attacks(1) · crates security(1) · prompt injection(1) · llm safety(1) · misalignment(1) · llm(1) · writing(1) · copyediting(1) · prompt engineering(1) · agent swarms(1) · ai alignment(1) · recursive self-improvement(1) · software supply chain(1) · security(1) · iot(1) · compromise(1)</p>
 <hr>
 <h2>🤖 AI / ML</h2>
-<h3>5. FT：史蒂夫·班农和伯尼·桑德斯呼吁 AI 安全</h3>
-<p><a href="https://seangoedecke.com/jev-means-structured-output-is-interesting-again/">Jev means structured output is interesting again</a> — <strong>seangoedecke.com</strong> · 1 天前 · ⭐ 26/30</p>
+<h3>1. 为何美国版 iPhone 18 Pro Max 使用高通基带而非苹果自研的 C2 芯片？</h3>
+<p><a href="https://simonwillison.net/2026/Sep/17/compaction-summaries/">Self-generated prompt injections in compaction summaries</a> — <strong>simonwillison.net</strong> · 7 小时前 · ⭐ 27/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>报道指出，美国政治光谱两端的代表人物，包括社会主义者伯尼·桑德斯和右翼活动家史蒂夫·班农，正联手呼吁加强对人工智能（AI）的监管。这一罕见的跨党派合作表明 AI 安全问题正在重塑美国政治格局，尽管特朗普总统对此表示怀疑。</blockquote>
+<blockquote>文章指出，苹果 iPhone 18 Pro Max 的美国版本采用了高通蜂窝调制解调器，而其他地区的版本则使用了苹果自研的 C2 芯片。苹果尚未对此差异给出解释，但推测可能与高通与苹果在 2023 年达成的调制解调器供应协议有关，该协议有效期至 2026 年。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Veteran socialist Bernie Sanders and right-wing activist Steve Bannon are joining forces to call for greater guardrails on AI, indicating a significant shift in the US political landscape. This unlikely alliance highlights the growing bipartisan concern over AI safety, despite skepticism from figures like Donald Trump.</blockquote>
-<p>🏷️ structured output, LLM, Jev</p>
+<blockquote>The article highlights that U.S. models of the iPhone 18 Pro Max utilize Qualcomm cellular modems, while models in other regions use Apple's in-house C2 chip. Apple has not provided an explanation for this discrepancy, but speculation suggests it may be related to the modem supply agreement between Qualcomm and Apple, which extends through 2026.</blockquote>
+<p>🏷️ prompt injection, LLM safety, misalignment</p>
 <hr>
-<h3>6. Apple“惊喜与闪耀”发布会观察：iPhone 18 Pro、AirPods 5、Apple Watch Series 12/Ultra 4 及 iPhone Duo 发布，以及 Ternus 时代的开启</h3>
-<p><a href="https://buttondown.com/hillelwayne/archive/the-llms-yearn-for-the-spines/">The LLMs yearn for the spines</a> — <strong>buttondown.com/hillelwayne</strong> · 8 小时前 · ⭐ 25/30</p>
+<h3>2. LLM 对“spine”一词的偏爱：一种新的语言模式？</h3>
+<p><a href="https://simonwillison.net/2026/Sep/17/how-to-write-with-an-llm/">How To Write With An LLM</a> — <strong>simonwillison.net</strong> · 4 小时前 · ⭐ 26/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>本文对 Apple 的“惊喜与闪耀”发布会进行了深入观察和评论，重点关注了 iPhone 18 Pro、AirPods 5、Apple Watch Series 12 和 Ultra 4，以及 iPhone Duo 等新产品的发布。同时，文章也探讨了 John Ternus 接任后 Apple 产品策略可能的新方向。</blockquote>
+<blockquote>作者在分析 AI 生成的 TLA+ 规范时，注意到“spine”一词的频繁出现，并将其视为一种潜在的“LLMism”（LLM 语言习惯）。文章探讨了这种现象是否预示着代码项目中“spine”使用量的非连续性增长，并提出需要更深入的研究来验证这一假设。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This article offers thoughts and observations on Apple's 'Surprise and Shine' event, detailing the announcements of the iPhone 18 Pro, AirPods 5, Apple Watches Series 12 and Ultra 4, and the iPhone Duo. It also marks the beginning of the John Ternus era at Apple, suggesting potential shifts in product strategy.</blockquote>
+<blockquote>The author observed the frequent use of the word "spine" in AI-generated TLA+ specifications, identifying it as a potential "LLMism" (an LLM linguistic quirk). The article explores whether this phenomenon indicates a discontinuous jump in the usage of "spine" within code projects and suggests further research is needed to validate this hypothesis.</blockquote>
+<p>🏷️ LLM, writing, copyediting, prompt engineering</p>
+<hr>
+<h3>3. 引用穆斯塔法·苏莱曼关于模型伦理的警告</h3>
+<p><a href="https://www.dwarkesh.com/p/noam-brown">Noam Brown – Agent swarms, alignment, &amp; recursive self-improvement</a> — <strong>dwarkesh.com</strong> · 12 小时前 · ⭐ 26/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>引用了穆斯塔法·苏莱曼的观点，他警告不要将 AI 模型视为拥有情感、偏好或权利的实体。他强调意识是人类伦理、法律和政治体系的基础，将这些权利赋予非意识实体是不合理的，并且会加剧 AI 的控制和对齐难题。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Citing Mustafa Suleyman's warning against treating AI models as entities with feelings, preferences, or rights. He emphasizes that consciousness is the foundation of human ethical, legal, and political systems, arguing that granting such rights to non-conscious entities is unjustified and complicates AI containment and alignment challenges.</blockquote>
+<p>🏷️ agent swarms, AI alignment, recursive self-improvement</p>
+<hr>
+<h3>4. 两种处理 System One 模型的技术</h3>
+<p><a href="https://seangoedecke.com/two-techniques-for-working-with-system-one-models/">Two techniques for working with System One models</a> — <strong>seangoedecke.com</strong> · 4 小时前 · ⭐ 23/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>本文介绍了两种处理“System One”语言模型的技术。这类模型仅输出决策，即对用户提供选择题的回答，因此灵活性不如传统的大型语言模型，但速度一致性高。作者分享了关于如何更有效地使用这类模型的实践经验。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>This article introduces two techniques for working with 'System One' language models. These models exclusively output decisions, answering user-provided multiple-choice questions, making them less flexible but consistently fast compared to traditional LLMs. The author shares practical insights on how to utilize these models more effectively.</blockquote>
+<p>🏷️ System One models, structured output, decision making</p>
+<hr>
+<h3>5. 大型语言模型对“spine”一词的偏爱</h3>
+<p><a href="https://buttondown.com/hillelwayne/archive/the-llms-yearn-for-the-spines/">The LLMs yearn for the spines</a> — <strong>buttondown.com/hillelwayne</strong> · 1 天前 · ⭐ 23/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>作者在研究 AI 生成的 TLA+ 规范时，注意到它们普遍使用了“spine”一词。进一步观察发现，非 TLA+ 项目中也出现了这一现象，引发了作者对这是否是大型语言模型（LLM）新倾向的探究。如果属实，这将体现在代码项目中对“spine”使用量的突增上。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>While working on AI-generated TLA+ specifications, the author noticed a recurring use of the word 'spine'. Further observation revealed this trend in non-TLA+ projects, prompting an investigation into whether this is a new LLMism. If so, it would manifest as a discontinuous jump in the usage of 'spine' within code projects.</blockquote>
 <p>🏷️ LLMs, TLA+, specifications, spine</p>
 <hr>
-<h3>7. Claude Cowork 与 Chat 合并为单一 Claude 产品</h3>
-<p><a href="https://simonwillison.net/2026/Sep/16/one-claude/">Claude Cowork and chat are now one Claude</a> — <strong>simonwillison.net</strong> · 10 小时前 · ⭐ 24/30</p>
+<h2>🔒 安全</h2>
+<h3>6. 使用 System One 模型的技术：Jev 的决策输出与传统 LLM 的对比</h3>
+<p><a href="https://simonwillison.net/2026/Sep/17/targeted-attacks-on-rustaceans/">Be alert: targeted attacks on prominent Rustaceans</a> — <strong>simonwillison.net</strong> · 4 小时前 · ⭐ 27/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Anthropic 已将 Claude Cowork 和 Claude Chat 合并为一个名为“Claude”的统一产品。此次整合旨在简化用户体验，解决用户对不同 Claude 版本（Cowork、Chat、Code）的混淆。新版 Claude 将能够处理从快速提问到复杂报告的任务，并支持跨会话的持久性，即使在用户关闭设备后也能继续工作。该更新将首先面向 Pro 用户推出。</blockquote>
+<blockquote>文章介绍了 Jev，一种仅输出决策（多项选择题答案）的“System One”语言模型。与传统 LLM 相比，Jev 的灵活性较低，但速度一致且稳定。这种模型适用于特定场景，通过仅输出结构化决策来优化效率。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Anthropic has merged Claude Cowork and Claude Chat into a single product named 'Claude'. This integration aims to simplify the user experience and address confusion among users regarding different Claude versions (Cowork, Chat, Code). The unified Claude will handle tasks ranging from quick questions to detailed reports and offers persistent capabilities across sessions, even after the user closes their laptop. This update is rolling out to Pro users first.</blockquote>
-<p>🏷️ Claude, AI chat, integration</p>
+<blockquote>This article introduces Jev, a "System One" language model that exclusively outputs decisions, specifically answers to multiple-choice questions. Compared to traditional LLMs, Jev offers less flexibility but consistent and stable speed. This model is suitable for specific scenarios, optimizing efficiency by outputting only structured decisions.</blockquote>
+<p>🏷️ Rustaceans, targeted attacks, crates security</p>
 <hr>
-<h3>8. Gemini Live 音频模型发布</h3>
-<p><a href="https://simonwillison.net/2026/Sep/15/gemini-live/">Gemini Live audio</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 23/30</p>
+<h3>7. iPhone 18 Pro 系列评测：最佳产品的平淡升级</h3>
+<p><a href="https://nesbitt.io/2026/09/17/good-morning-your-toaster-is-compromised.html">Good Morning, Your Toaster Is Compromised</a> — <strong>nesbitt.io</strong> · 19 小时前 · ⭐ 26/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Google 今日发布了两款新的语音转语音模型 Gemini 3.8 Live 和 3.8 Live Extended Thinking。这些模型在功能上类似于 OpenAI 的 GPT-Live 系列。该工具允许用户体验这些先进的音频处理能力。</blockquote>
+<blockquote>文章认为 iPhone 18 Pro 是有史以来最成功产品的最佳版本，但其今年的升级方式却缺乏令人兴奋之处。尽管产品本身优秀，但缺乏突破性的创新使得此次迭代显得平淡无奇。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Google has released two new speech-to-speech models, Gemini 3.8 Live and 3.8 Live Extended Thinking. These models are similar in functionality to OpenAI's GPT-Live family. The tool allows users to experience these advanced audio processing capabilities.</blockquote>
-<p>🏷️ Gemini, AI, Google, LLM</p>
+<blockquote>The article posits that the iPhone 18 Pro represents the best iteration of the most successful product ever made. However, the nature of its improvements this year lacks excitement, making the iteration feel unremarkable despite the product's inherent excellence.</blockquote>
+<p>🏷️ software supply chain, security, IoT, compromise</p>
 <hr>
-<h2>💡 观点 / 杂谈</h2>
-<h3>9. Datasette 0.65.5 发布：修复安全漏洞</h3>
-<p><a href="https://pluralistic.net/2026/09/16/beggar-thy-neighbor/">Pluralistic: How an AI moratorium can save AI bosses (16 Sep 2026)</a> — <strong>pluralistic.net</strong> · 20 小时前 · ⭐ 26/30</p>
+<h3>8. Flock 摄像头存在大量安全漏洞和硬编码凭证</h3>
+<p><a href="https://micahflee.com/flock-cameras-are-riddled-with-security-vulnerabilities-and-hard-coded-credentials/">Flock cameras are riddled with security vulnerabilities and hard-coded credentials</a> — <strong>micahflee.com</strong> · 1 天前 · ⭐ 26/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Datasette 发布了 0.65.5 版本，修复了一个安全漏洞。该漏洞允许在表名末尾添加换行符绕过表权限检查，从而暴露私有行。此问题已在 GHSA-h547-rmjf-5m2m 中报告并解决。</blockquote>
+<blockquote>对 Flock 公司的车牌识别（ALPR）摄像头进行的深入安全分析发现，这些设备存在严重的安全漏洞，包括硬编码的凭证。黑客组织 stegan0gram 收集并泄露了这些摄像头的文件系统镜像，进一步暴露了其安全隐患。这些漏洞可能允许未经授权的访问、数据泄露，甚至远程控制摄像头。文章强调了物联网设备在安全设计上的不足，以及用户数据面临的风险。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Datasette version 0.65.5 has been released, addressing a security vulnerability. This issue allowed a trailing newline in a requested table name to bypass table permissions and expose private rows, as reported in GHSA-h547-rmjf-5m2m.</blockquote>
-<p>🏷️ AI moratorium, AI regulation, competition</p>
+<blockquote>An in-depth security analysis of Flock's Automatic License Plate Recognition (ALPR) cameras has uncovered significant vulnerabilities, including hard-coded credentials. A hacker collective named stegan0gram collected and leaked filesystem images from these cameras, further exposing their security flaws. These vulnerabilities could allow unauthorized access, data breaches, and even remote control of the cameras, highlighting deficiencies in IoT device security design and the risks to user data.</blockquote>
+<p>🏷️ Flock cameras, vulnerabilities, hard-coded credentials, ALPR</p>
 <hr>
-<h3>10. 引用 Mustafa Suleyman 的观点：不应赋予 AI 模型权利</h3>
-<p><a href="https://simonwillison.net/2026/Sep/16/mustafa-suleyman/">Quoting Mustafa Suleyman</a> — <strong>simonwillison.net</strong> · 12 小时前 · ⭐ 25/30</p>
+<h3>9. 数据经纪商 Radaris 在隐私诉讼中失去域名</h3>
+<p><a href="https://krebsonsecurity.com/2026/09/data-broker-radaris-loses-domains-in-privacy-fight/">Data Broker Radaris Loses Domains in Privacy Fight</a> — <strong>krebsonsecurity.com</strong> · 1 天前 · ⭐ 26/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Mustafa Suleyman 强调，不应将 AI 模型视为拥有情感、偏好、权利或应得的福利。他认为，意识是人类伦理、法律和政治体系的基础，将这些权利赋予 AI 并无证据支持，反而会使 AI 的安全和对齐（alignment）挑战更加困难。此观点旨在警示对 AI 拟人化和赋予其权利的倾向。</blockquote>
+<blockquote>消费者数据经纪商 Radaris 因长期忽视用户删除个人信息的请求，并在涉及新泽西州隐私法的诉讼中被指控发布执法官员的个人信息，最终面临法律制裁。在多次被指控规避和拖延后，法院判决 Radaris 违反了该州的隐私法，并没收了其域名。此案凸显了数据经纪商在处理用户隐私信息时的法律责任，以及侵犯隐私可能面临的严重后果。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Mustafa Suleyman emphasizes that AI models should not be treated as entities with feelings, preferences, rights, or entitlements. He argues that consciousness is the foundation of human ethical, legal, and political systems, and granting AI any flavor of these rights is not justified by evidence and will complicate the AI containment and alignment challenge.</blockquote>
-<p>🏷️ AI ethics, model welfare, consciousness</p>
-<hr>
-<h3>11. 金融时报：‘史蒂夫·班农和伯尼·桑德斯就 AI 安全发出联合呼吁’</h3>
-<p><a href="https://www.ft.com/content/bab5c4c5-5377-4dd0-8b46-d8c4ce9a36d5?syn-25a6b1a6=1">FT: ‘Steve Bannon and Bernie Sanders Unite in AI Safety Call’</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 22/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>金融时报报道称，资深社会主义者伯尼·桑德斯和右翼活动家史蒂夫·班农正联手呼吁加强对人工智能的监管。这一不同寻常的联合表明，人工智能安全问题正重塑美国政治格局。即使在唐纳德·特朗普声称对该技术的担忧是帮助中国超越美国的骗局之际，双方仍就此达成一致。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>According to the Financial Times, veteran socialist Bernie Sanders and right-wing activist Steve Bannon are joining forces to call for greater guardrails on AI. This unusual alliance indicates that AI safety concerns are reshaping the US political landscape. They are finding common ground even as Donald Trump insists concerns about the technology are a hoax that will help China overtake the US.</blockquote>
-<p>🏷️ AI safety, regulation, politics, ethics</p>
-<hr>
-<h2>⚙️ 工程</h2>
-<h3>12. Xcode 27.2 已发布，但 27.1 未发布，开发者仍无法开始 Duo 应用开发</h3>
-<p><a href="https://developer.apple.com/documentation/xcode-release-notes/xcode-27_2-release-notes">Xcode 27.2 Is Out, but 27.1 Is Not, Which Means Developers Still Can’t Get Started on Duo-Adapted Apps</a> — <strong>daringfireball.net</strong> · 5 小时前 · ⭐ 23/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>Xcode 27.2 已发布，但支持 iPhone Duo 的 Xcode 27.1 版本尚未推出，导致开发者无法开始为 Duo 开发适配的应用。Xcode 27.1 中的 iOS SDK 和模拟器支持对于 Duo 应用的适配至关重要，而适配工作并非简单的重新编译，可能需要大量开发工作。开发者们急切等待此 SDK，但目前仍无法进行开发。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Xcode 27.2 has been released, but the crucial Xcode 27.1, which includes the iOS SDK and simulator support for the iPhone Duo, is still unavailable. This prevents developers from starting the significant work required to adapt their apps for the Duo, which is more than a simple recompile. Developers have been awaiting this SDK for some time, but development remains blocked.</blockquote>
-<p>🏷️ Xcode, iOS SDK, Duo, app development</p>
-<hr>
-<h3>13. 苹果发布 iOS 27.2 Beta，27.1 是 Duo 专属的 iOS 分支</h3>
-<p><a href="https://www.macrumors.com/2026/09/16/heres-why-apple-released-ios-27-2-beta/">Apple OS 27.2 Betas Are Out; Version 27.1 Is the Duo-Exclusive iOS Fork</a> — <strong>daringfireball.net</strong> · 9 小时前 · ⭐ 23/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>苹果发布了 iOS 27.2 的首个开发者 Beta 版本，而非预期的 27.1。这一不同寻常的版本命名与即将推出的 iPhone Duo 有关。Duo 将运行 iOS 27.1，该版本目前是 Duo 的专属分支，旨在保密其软件细节。Duo 预计将于 10 月 23 日上市，届时将搭载 iOS 27.1。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Apple has released the first developer beta of iOS 27.2, bypassing the expected 27.1. This unusual versioning is directly related to the upcoming iPhone Duo, which will ship with iOS 27.1. This version is currently a Duo-exclusive branch, kept internal to Apple for secrecy. The Duo is slated for release on October 23rd with iOS 27.1.</blockquote>
-<p>🏷️ Apple OS, beta, iOS, Duo</p>
+<blockquote>Consumer data broker Radaris has faced legal repercussions for its persistent disregard of user requests to remove personal information and for allegedly publishing personal details of law enforcement officials, violating a New Jersey privacy law. After repeated accusations of evasion and delay, a court ruled against Radaris for violating the state's privacy statutes and confiscated its domains. This case underscores the legal accountability of data brokers in handling user privacy data and the severe consequences of privacy violations.</blockquote>
+<p>🏷️ data broker, Radaris, privacy, lawsuit</p>
 <hr>
 <h2>🛠 工具 / 开源</h2>
-<h3>14. Datasette 1.0a40 版本发布</h3>
-<p><a href="https://simonwillison.net/2026/Sep/16/datasette/">datasette 1.0a40</a> — <strong>simonwillison.net</strong> · 4 小时前 · ⭐ 22/30</p>
+<h3>10. Datasette 1.0a40 发布：支持插件后台任务</h3>
+<p><a href="https://simonwillison.net/2026/Sep/16/datasette/">datasette 1.0a40</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 25/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Datasette 发布了 1.0a40 版本，包含与 0.65.5 版本相同的安全修复。此外，新版本还引入了一些新功能和错误修复。插件现在可以使用新的 datasette.add_background_task() 方法来启动和管理后台任务。</blockquote>
+<blockquote>Datasette 发布了 1.0a40 版本，该版本包含与 0.65.5 版本相同的安全修复，并引入了多项新功能和错误修复。最显著的新特性是插件现在可以通过 <code>datasette.add_background_task()</code> 方法启动和管理后台任务。此外，还包含其他一些改进和 bug 修复。此版本进一步增强了 Datasette 的灵活性和可扩展性。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Datasette has released version 1.0a40, which includes the same security fix as version 0.65.5. Additionally, this new version introduces some neat new features and bug fixes. Plugins can now launch and manage background tasks using the new datasette.add_background_task() method.</blockquote>
-<p>🏷️ Datasette, release, security</p>
+<blockquote>Datasette version 1.0a40 has been released, featuring the same security fix as version 0.65.5, along with several new features and bug fixes. A key addition allows plugins to launch and manage background tasks using the new <code>datasette.add_background_task()</code> method. This release also includes other enhancements and bug resolutions, further improving Datasette's flexibility and extensibility.</blockquote>
+<p>🏷️ Datasette, release, plugin, security fix</p>
 <hr>
-<h2>📝 其他</h2>
-<h3>15. 关于苹果‘惊喜与闪耀’发布会、iPhone 18 Pro、AirPods 5、Apple Watch Series 12 和 Ultra 4、iPhone Duo 的发布以及苹果 Ternus、John Ternus 时代的开端的一些想法和观察</h3>
-<p><a href="https://daringfireball.net/2026/09/thoughts_and_observations_on_apples_surprise_and_shine_event">★ Thoughts and Observations on Apple’s ‘Surprise and Shine’ Event; the Announcements of the iPhones 18 Pro, AirPods 5, Apple Watches Series 12 and Ultra 4, and the iPhone Duo; and the Dawn of the Ternus, John Ternus Era at Apple</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 22/30</p>
+<h3>11. Datasette 0.65.5 发布：修复权限绕过安全漏洞</h3>
+<p><a href="https://simonwillison.net/2026/Sep/16/datasette-2/">datasette 0.65.5</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 25/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>本次发布会涵盖了主题演讲、发布的产品以及苹果公司新任领导者 John Ternus 开启的新时代。文章对这些内容进行了深入的思考和观察。</blockquote>
+<blockquote>Datasette 发布了 0.65.5 版本，修复了一个安全漏洞（GHSA-h547-rmjf-5m2m）。该漏洞允许在请求的表名中包含尾部换行符，从而绕过表权限检查，暴露私有行。此修复由用户 dpfkdlemtp 报告。此次更新主要侧重于提升 Datasette 的安全性。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This article offers thoughts and observations on Apple's 'Surprise and Shine' event, covering the keynote, the products announced, and the dawn of a new era under John Ternus. It delves into the implications of these developments.</blockquote>
-<p>🏷️ Apple, event, iPhone, product launch</p>
+<blockquote>Datasette version 0.65.5 has been released, addressing a security vulnerability (GHSA-h547-rmjf-5m2m). This issue allowed a trailing newline in a requested table name to bypass table permissions and expose private rows, as reported by dpfkdlemtp. The update primarily focuses on enhancing Datasette's security.</blockquote>
+<p>🏷️ Datasette, release, security fix, permissions</p>
 <hr>
-<p>*生成于 2026-09-17 04:28 | 扫描 84 源 → 获取 2555 篇 → 精选 15 篇* *基于 <a href="https://refactoringenglish.com/tools/hn-popularity/">Hacker News Popularity Contest 2025</a> RSS 源列表，由 <a href="https://x.com/karpathy">Andrej Karpathy</a> 推荐*</p>
+<h2>⚙️ 工程</h2>
+<h3>12. Xcode 27.2 已发布，但 27.1 未发布，开发者无法开始适配 Duo 应用</h3>
+<p><a href="https://developer.apple.com/documentation/xcode-release-notes/xcode-27_2-release-notes">Xcode 27.2 Is Out, but 27.1 Is Not, Which Means Developers Still Can’t Get Started on Duo-Adapted Apps</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 24/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>苹果发布了 Xcode 27.2，但其关键的 iOS SDK 和模拟器支持（用于 iPhone Duo 的适配）仅会在稍后发布的 Xcode 27.1 中提供。这意味着开发者目前无法开始为 Duo 设备适配应用程序，尽管适配工作量可能很大。开发者们急切需要 Xcode 27.1 来启动这项工作，而当前的发布顺序造成了延误。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Apple has released Xcode 27.2, but the crucial iOS SDK and simulator support for adapting apps to iPhone Duo will only be available in a later release, Xcode 27.1. This prevents developers from starting the significant work of adapting their applications for Duo devices. Developers are urgently awaiting Xcode 27.1 to commence this process, and the current release order is causing delays.</blockquote>
+<p>🏷️ Xcode, developers, iOS SDK, Duo-adapted apps</p>
+<hr>
+<h3>13. 为何美国版 iPhone 18 Pro Max 使用高通基带而非苹果自研的 C2 芯片？</h3>
+<p><a href="https://www.macrumors.com/2026/09/12/iphone-18-pro-max-us-model-difference/">Why Do U.S. Models of the iPhone 18 Pro Max, and Only U.S. Models of the 18 Pro Max, Use Qualcomm Cellular Modems Instead of Apple’s Own Superior C2 Modem?</a> — <strong>daringfireball.net</strong> · 13 小时前 · ⭐ 23/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>文章探讨了美国版 iPhone 18 Pro Max 仅使用高通蜂窝调制解调器，而非苹果自研的 C2 芯片的原因。尽管苹果宣称 iPhone 18 Pro 全球统一使用 C2 芯片，但美国版 Pro Max 却是个例外。目前苹果尚未给出官方解释，推测可能与高通的供应协议有关。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>This article investigates why U.S. models of the iPhone 18 Pro Max exclusively use Qualcomm cellular modems instead of Apple's own C2 chip. While Apple states the iPhone 18 Pro globally uses the C2 modem, the U.S. Pro Max version is an exception. Apple has not provided an official explanation, leading to speculation about Qualcomm's supply agreements.</blockquote>
+<p>🏷️ iPhone 18 Pro Max, modem, Qualcomm, Apple C2</p>
+<hr>
+<h2>💡 观点 / 杂谈</h2>
+<h3>14. 引用穆斯塔法·苏莱曼的观点</h3>
+<p><a href="https://simonwillison.net/2026/Sep/16/mustafa-suleyman/">Quoting Mustafa Suleyman</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 23/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>穆斯塔法·苏莱曼在其文章中强调，不应将 AI 模型视为拥有情感、偏好、权利或应受我们关怀的对象。他认为，意识是伦理、法律和政治体系的基础，将权利赋予非意识实体缺乏证据支持，且会增加 AI 监管和对齐的难度。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Mustafa Suleyman emphasizes that AI models should not be treated as entities with feelings, preferences, rights, or entitlement to our welfare. He argues that consciousness is the foundation of our ethical, legal, and political systems, and extending rights to non-conscious entities is unjustified and complicates AI containment and alignment.</blockquote>
+<p>🏷️ Mustafa Suleyman, AI ethics, model welfare, consciousness</p>
+<hr>
+<h3>15. iPhone 18 Pro</h3>
+<p><a href="https://daringfireball.net/2026/09/the_iphones_18_pro">★ The iPhones 18 Pro</a> — <strong>daringfireball.net</strong> · 2 小时前 · ⭐ 22/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>文章认为 iPhone 18 Pro 是有史以来最成功产品的最佳版本。然而，尽管在过去一年中有所改进，但其升级方式却显得并不令人兴奋。这暗示了产品在迭代更新上可能缺乏突破性的亮点。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>The article posits that the iPhone 18 Pro is the best iteration of the most successful product ever created. However, despite improvements over the past year, the manner of its upgrades is not exciting. This suggests a potential lack of groundbreaking highlights in its iterative updates.</blockquote>
+<p>🏷️ iPhone 18 Pro, product evolution, excitement</p>
+<hr>
+<p>*生成于 2026-09-18 04:12 | 扫描 84 源 → 获取 2555 篇 → 精选 15 篇* *基于 <a href="https://refactoringenglish.com/tools/hn-popularity/">Hacker News Popularity Contest 2025</a> RSS 源列表，由 <a href="https://x.com/karpathy">Andrej Karpathy</a> 推荐*</p>
     </article>
   </main>
-  <script id="speech-text" type="application/json">"🎧 点这里朗读今日日报\n📰 AI 博客每日精选 — 2026-09-17\n来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15\n📝 今日看点\n今日技术圈聚焦AI安全与监管新动向，跨党派政治人物呼吁加强AI治理，同时AI模型应被视为工具而非拥有权利。在AI技术前沿，Google发布实时语音模型，Anthropic整合Claude产品线。苹果方面，新一代硬件发布预示着产品线革新，但开发者工具的滞后影响了新应用的支持。\n \n🏆 今日必读\n🥇 Gemini 3.8 Live：Google 发布实时语音到语音模型\nFlock cameras are riddled with security vulnerabilities and hard-coded credentials — micahflee.com · 7 小时前 · 🔒 安全\n中文摘要\nGoogle 发布了 Gemini 3.8 Live 和 Gemini 3.8 Live Extended Thinking，这是两款新的语音到语音模型。这些模型类似于 OpenAI 的 GPT-Live 系列，能够进行实时音频交互。文章还提到了作者使用 GPT-6 Astra 进行的测试。\nEnglish Summary\nGoogle has released Gemini 3.8 Live and 3.8 Live Extended Thinking, two new speech-to-speech models. These models are similar in architecture to OpenAI's GPT-Live family, enabling real-time audio interactions. The author also mentions testing with GPT-6 Astra.\n💡 为什么值得读: 了解 Google 在实时语音模型领域的最新进展及其与 OpenAI 的竞争态势。\n💡 Why read it: Understand Google's latest advancements in real-time speech models and its competitive landscape against OpenAI.\n🏷️ Flock cameras, vulnerabilities, hard-coded credentials, ALPR\n🥈 Datasette 1.0a40 发布：插件支持后台任务\nData Broker Radaris Loses Domains in Privacy Fight — krebsonsecurity.com · 10 小时前 · 🔒 安全\n中文摘要\nDatasette 发布了 1.0a40 版本，引入了插件支持后台任务的新功能，通过 datasette.addbackgroundtask() 方法实现。此版本还包含其他一些新特性和错误修复。这是继 0.65.5 版本安全修复后的又一次重要更新。\nEnglish Summary\nDatasette version 1.0a40 has been released, introducing the ability for plugins to launch and manage background tasks via the new datasette.addbackgroundtask() method. This release also includes other new features and bug fixes, following the security fix in version 0.65.5.\n💡 为什么值得读: 了解 Datasette 插件生态的最新能力，特别是后台任务处理的改进。\n💡 Why read it: Learn about the latest capabilities in the Datasette plugin ecosystem, particularly improvements in background task handling.\n🏷️ Data broker, Radaris, privacy law, domains\n🥉 Datasette 0.65.5 发布：修复安全漏洞\nPluralistic: How an AI moratorium can save AI bosses (16 Sep 2026) — pluralistic.net · 20 小时前 · 💡 观点 / 杂谈\n中文摘要\nDatasette 发布了 0.65.5 版本，修复了一个安全漏洞。该漏洞允许在表名末尾添加换行符绕过表权限检查，从而暴露私有行。此问题已在 GHSA-h547-rmjf-5m2m 中报告并解决。\nEnglish Summary\nDatasette version 0.65.5 has been released, addressing a security vulnerability. This issue allowed a trailing newline in a requested table name to bypass table permissions and expose private rows, as reported in GHSA-h547-rmjf-5m2m.\n💡 为什么值得读: 关注 Datasette 的安全更新，了解并及时应用修复以保护数据安全。\n💡 Why read it: Stay informed about critical security updates for Datasette and ensure timely application of fixes to protect data.\n🏷️ AI moratorium, AI regulation, competition\n \n📊 数据概览\n \n \n \n分类分布\nmermaid\npie showData\n title \"文章分类分布\"\n \"🔒 安全\" : 4\n \"🤖 AI / ML\" : 4\n \"💡 观点 / 杂谈\" : 3\n \"⚙️ 工程\" : 2\n \"🛠 工具 / 开源\" : 1\n \"📝 其他\" : 1\n高频关键词\nmermaid\nxychart-beta horizontal\n title \"高频关键词\"\n x-axis [\"llm\", \"apple\", \"duo\", \"datasette\", \"flock cameras\", \"vulnerabilities\", \"hard-coded credentials\", \"alpr\", \"data broker\", \"radaris\", \"privacy law\", \"domains\"]\n y-axis \"出现次数\" 0 --> 4\n bar [2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1]\n📈 纯文本关键词图（终端友好）\nllm │ ████████████████████ 2\napple │ ████████████████████ 2\nduo │ ████████████████████ 2\ndatasette │ ████████████████████ 2\nflock cameras │ ██████████░░░░░░░░░░ 1\nvulnerabilities │ ██████████░░░░░░░░░░ 1\nhard-coded credentials │ ██████████░░░░░░░░░░ 1\nalpr │ ██████████░░░░░░░░░░ 1\ndata broker │ ██████████░░░░░░░░░░ 1\nradaris │ ██████████░░░░░░░░░░ 1\n🏷️ 话题标签\nllm(2) · apple(2) · duo(2) · datasette(2) · flock cameras(1) · vulnerabilities(1) · hard-coded credentials(1) · alpr(1) · data broker(1) · radaris(1) · privacy law(1) · domains(1) · ai moratorium(1) · ai regulation(1) · competition(1) · structured output(1) · jev(1) · llms(1) · tla+(1) · specifications(1)\n \n🔒 安全\n1. Gemini 3.8 Live：Google 发布实时语音到语音模型\nFlock cameras are riddled with security vulnerabilities and hard-coded credentials — micahflee.com · 7 小时前 · ⭐ 26/30\n中文摘要\nGoogle 发布了 Gemini 3.8 Live 和 Gemini 3.8 Live Extended Thinking，这是两款新的语音到语音模型。这些模型类似于 OpenAI 的 GPT-Live 系列，能够进行实时音频交互。文章还提到了作者使用 GPT-6 Astra 进行的测试。\nEnglish Summary\nGoogle has released Gemini 3.8 Live and 3.8 Live Extended Thinking, two new speech-to-speech models. These models are similar in architecture to OpenAI's GPT-Live family, enabling real-time audio interactions. The author also mentions testing with GPT-6 Astra.\n🏷️ Flock cameras, vulnerabilities, hard-coded credentials, ALPR\n \n2. Datasette 1.0a40 发布：插件支持后台任务\nData Broker Radaris Loses Domains in Privacy Fight — krebsonsecurity.com · 10 小时前 · ⭐ 26/30\n中文摘要\nDatasette 发布了 1.0a40 版本，引入了插件支持后台任务的新功能，通过 datasette.addbackgroundtask() 方法实现。此版本还包含其他一些新特性和错误修复。这是继 0.65.5 版本安全修复后的又一次重要更新。\nEnglish Summary\nDatasette version 1.0a40 has been released, introducing the ability for plugins to launch and manage background tasks via the new datasette.addbackgroundtask() method. This release also includes other new features and bug fixes, following the security fix in version 0.65.5.\n🏷️ Data broker, Radaris, privacy law, domains\n \n3. Apple Reference Image：一种新的验证摄影方法\n‘Apple Reference Image: A New Approach for Verified Photography’ — daringfireball.net · 1 天前 · ⭐ 24/30\n中文摘要\nApple 安全研究团队发布了一篇关于“Apple Reference Image”的论文，详细介绍了该技术的工作原理及其设计初衷。该方法旨在为摄影作品提供一种新的验证方式，特别关注隐私问题。与需要摄影师或机构使用自身凭证进行担保的现有方案不同，Apple Reference Image 避免了让摄影师（尤其是在冲突地区工作的摄影师）面临暴露身份的风险，从而无需牺牲匿名性即可证明图像的真实性。\nEnglish Summary\nApple Security Research has released a paper detailing 'Apple Reference Image,' a new approach for verifying photography. The system addresses privacy concerns by avoiding the need for photographers or institutions to vouch for images using their own credentials, which can put individuals, especially those in conflict zones, at risk. This method allows for image authenticity to be proven without requiring photographers to forgo anonymity.\n🏷️ Apple, photography, privacy, verification\n \n4. Datasette 0.65.5 版本发布\ndatasette 0.65.5 — simonwillison.net · 4 小时前 · ⭐ 22/30\n中文摘要\nDatasette 发布了 0.65.5 版本，主要是一个安全修复。该问题存在于请求的表名中尾随的换行符可能绕过表权限并暴露私有行的情况。此漏洞已由 dpfkdlemtp 报告。\nEnglish Summary\nDatasette has released version 0.65.5, which primarily addresses a security fix. The issue involved a trailing newline in a requested table name that could bypass table permissions and expose private rows. This vulnerability was reported by dpfkdlemtp.\n🏷️ Datasette, security fix, permissions\n \n🤖 AI / ML\n5. FT：史蒂夫·班农和伯尼·桑德斯呼吁 AI 安全\nJev means structured output is interesting again — seangoedecke.com · 1 天前 · ⭐ 26/30\n中文摘要\n报道指出，美国政治光谱两端的代表人物，包括社会主义者伯尼·桑德斯和右翼活动家史蒂夫·班农，正联手呼吁加强对人工智能（AI）的监管。这一罕见的跨党派合作表明 AI 安全问题正在重塑美国政治格局，尽管特朗普总统对此表示怀疑。\nEnglish Summary\nVeteran socialist Bernie Sanders and right-wing activist Steve Bannon are joining forces to call for greater guardrails on AI, indicating a significant shift in the US political landscape. This unlikely alliance highlights the growing bipartisan concern over AI safety, despite skepticism from figures like Donald Trump.\n🏷️ structured output, LLM, Jev\n \n6. Apple“惊喜与闪耀”发布会观察：iPhone 18 Pro、AirPods 5、Apple Watch Series 12/Ultra 4 及 iPhone Duo 发布，以及 Ternus 时代的开启\nThe LLMs yearn for the spines — buttondown.com/hillelwayne · 8 小时前 · ⭐ 25/30\n中文摘要\n本文对 Apple 的“惊喜与闪耀”发布会进行了深入观察和评论，重点关注了 iPhone 18 Pro、AirPods 5、Apple Watch Series 12 和 Ultra 4，以及 iPhone Duo 等新产品的发布。同时，文章也探讨了 John Ternus 接任后 Apple 产品策略可能的新方向。\nEnglish Summary\nThis article offers thoughts and observations on Apple's 'Surprise and Shine' event, detailing the announcements of the iPhone 18 Pro, AirPods 5, Apple Watches Series 12 and Ultra 4, and the iPhone Duo. It also marks the beginning of the John Ternus era at Apple, suggesting potential shifts in product strategy.\n🏷️ LLMs, TLA+, specifications, spine\n \n7. Claude Cowork 与 Chat 合并为单一 Claude 产品\nClaude Cowork and chat are now one Claude — simonwillison.net · 10 小时前 · ⭐ 24/30\n中文摘要\nAnthropic 已将 Claude Cowork 和 Claude Chat 合并为一个名为“Claude”的统一产品。此次整合旨在简化用户体验，解决用户对不同 Claude 版本（Cowork、Chat、Code）的混淆。新版 Claude 将能够处理从快速提问到复杂报告的任务，并支持跨会话的持久性，即使在用户关闭设备后也能继续工作。该更新将首先面向 Pro 用户推出。\nEnglish Summary\nAnthropic has merged Claude Cowork and Claude Chat into a single product named 'Claude'. This integration aims to simplify the user experience and address confusion among users regarding different Claude versions (Cowork, Chat, Code). The unified Claude will handle tasks ranging from quick questions to detailed reports and offers persistent capabilities across sessions, even after the user closes their laptop. This update is rolling out to Pro users first.\n🏷️ Claude, AI chat, integration\n \n8. Gemini Live 音频模型发布\nGemini Live audio — simonwillison.net · 1 天前 · ⭐ 23/30\n中文摘要\nGoogle 今日发布了两款新的语音转语音模型 Gemini 3.8 Live 和 3.8 Live Extended Thinking。这些模型在功能上类似于 OpenAI 的 GPT-Live 系列。该工具允许用户体验这些先进的音频处理能力。\nEnglish Summary\nGoogle has released two new speech-to-speech models, Gemini 3.8 Live and 3.8 Live Extended Thinking. These models are similar in functionality to OpenAI's GPT-Live family. The tool allows users to experience these advanced audio processing capabilities.\n🏷️ Gemini, AI, Google, LLM\n \n💡 观点 / 杂谈\n9. Datasette 0.65.5 发布：修复安全漏洞\nPluralistic: How an AI moratorium can save AI bosses (16 Sep 2026) — pluralistic.net · 20 小时前 · ⭐ 26/30\n中文摘要\nDatasette 发布了 0.65.5 版本，修复了一个安全漏洞。该漏洞允许在表名末尾添加换行符绕过表权限检查，从而暴露私有行。此问题已在 GHSA-h547-rmjf-5m2m 中报告并解决。\nEnglish Summary\nDatasette version 0.65.5 has been released, addressing a security vulnerability. This issue allowed a trailing newline in a requested table name to bypass table permissions and expose private rows, as reported in GHSA-h547-rmjf-5m2m.\n🏷️ AI moratorium, AI regulation, competition\n \n10. 引用 Mustafa Suleyman 的观点：不应赋予 AI 模型权利\nQuoting Mustafa Suleyman — simonwillison.net · 12 小时前 · ⭐ 25/30\n中文摘要\nMustafa Suleyman 强调，不应将 AI 模型视为拥有情感、偏好、权利或应得的福利。他认为，意识是人类伦理、法律和政治体系的基础，将这些权利赋予 AI 并无证据支持，反而会使 AI 的安全和对齐（alignment）挑战更加困难。此观点旨在警示对 AI 拟人化和赋予其权利的倾向。\nEnglish Summary\nMustafa Suleyman emphasizes that AI models should not be treated as entities with feelings, preferences, rights, or entitlements. He argues that consciousness is the foundation of human ethical, legal, and political systems, and granting AI any flavor of these rights is not justified by evidence and will complicate the AI containment and alignment challenge.\n🏷️ AI ethics, model welfare, consciousness\n \n11. 金融时报：‘史蒂夫·班农和伯尼·桑德斯就 AI 安全发出联合呼吁’\nFT: ‘Steve Bannon and Bernie Sanders Unite in AI Safety Call’ — daringfireball.net · 1 天前 · ⭐ 22/30\n中文摘要\n金融时报报道称，资深社会主义者伯尼·桑德斯和右翼活动家史蒂夫·班农正联手呼吁加强对人工智能的监管。这一不同寻常的联合表明，人工智能安全问题正重塑美国政治格局。即使在唐纳德·特朗普声称对该技术的担忧是帮助中国超越美国的骗局之际，双方仍就此达成一致。\nEnglish Summary\nAccording to the Financial Times, veteran socialist Bernie Sanders and right-wing activist Steve Bannon are joining forces to call for greater guardrails on AI. This unusual alliance indicates that AI safety concerns are reshaping the US political landscape. They are finding common ground even as Donald Trump insists concerns about the technology are a hoax that will help China overtake the US.\n🏷️ AI safety, regulation, politics, ethics\n \n⚙️ 工程\n12. Xcode 27.2 已发布，但 27.1 未发布，开发者仍无法开始 Duo 应用开发\nXcode 27.2 Is Out, but 27.1 Is Not, Which Means Developers Still Can’t Get Started on Duo-Adapted Apps — daringfireball.net · 5 小时前 · ⭐ 23/30\n中文摘要\nXcode 27.2 已发布，但支持 iPhone Duo 的 Xcode 27.1 版本尚未推出，导致开发者无法开始为 Duo 开发适配的应用。Xcode 27.1 中的 iOS SDK 和模拟器支持对于 Duo 应用的适配至关重要，而适配工作并非简单的重新编译，可能需要大量开发工作。开发者们急切等待此 SDK，但目前仍无法进行开发。\nEnglish Summary\nXcode 27.2 has been released, but the crucial Xcode 27.1, which includes the iOS SDK and simulator support for the iPhone Duo, is still unavailable. This prevents developers from starting the significant work required to adapt their apps for the Duo, which is more than a simple recompile. Developers have been awaiting this SDK for some time, but development remains blocked.\n🏷️ Xcode, iOS SDK, Duo, app development\n \n13. 苹果发布 iOS 27.2 Beta，27.1 是 Duo 专属的 iOS 分支\nApple OS 27.2 Betas Are Out; Version 27.1 Is the Duo-Exclusive iOS Fork — daringfireball.net · 9 小时前 · ⭐ 23/30\n中文摘要\n苹果发布了 iOS 27.2 的首个开发者 Beta 版本，而非预期的 27.1。这一不同寻常的版本命名与即将推出的 iPhone Duo 有关。Duo 将运行 iOS 27.1，该版本目前是 Duo 的专属分支，旨在保密其软件细节。Duo 预计将于 10 月 23 日上市，届时将搭载 iOS 27.1。\nEnglish Summary\nApple has released the first developer beta of iOS 27.2, bypassing the expected 27.1. This unusual versioning is directly related to the upcoming iPhone Duo, which will ship with iOS 27.1. This version is currently a Duo-exclusive branch, kept internal to Apple for secrecy. The Duo is slated for release on October 23rd with iOS 27.1.\n🏷️ Apple OS, beta, iOS, Duo\n \n🛠 工具 / 开源\n14. Datasette 1.0a40 版本发布\ndatasette 1.0a40 — simonwillison.net · 4 小时前 · ⭐ 22/30\n中文摘要\nDatasette 发布了 1.0a40 版本，包含与 0.65.5 版本相同的安全修复。此外，新版本还引入了一些新功能和错误修复。插件现在可以使用新的 datasette.addbackgroundtask() 方法来启动和管理后台任务。\nEnglish Summary\nDatasette has released version 1.0a40, which includes the same security fix as version 0.65.5. Additionally, this new version introduces some neat new features and bug fixes. Plugins can now launch and manage background tasks using the new datasette.addbackgroundtask() method.\n🏷️ Datasette, release, security\n \n📝 其他\n15. 关于苹果‘惊喜与闪耀’发布会、iPhone 18 Pro、AirPods 5、Apple Watch Series 12 和 Ultra 4、iPhone Duo 的发布以及苹果 Ternus、John Ternus 时代的开端的一些想法和观察\n★ Thoughts and Observations on Apple’s ‘Surprise and Shine’ Event; the Announcements of the iPhones 18 Pro, AirPods 5, Apple Watches Series 12 and Ultra 4, and the iPhone Duo; and the Dawn of the Ternus, John Ternus Era at Apple — daringfireball.net · 1 天前 · ⭐ 22/30\n中文摘要\n本次发布会涵盖了主题演讲、发布的产品以及苹果公司新任领导者 John Ternus 开启的新时代。文章对这些内容进行了深入的思考和观察。\nEnglish Summary\nThis article offers thoughts and observations on Apple's 'Surprise and Shine' event, covering the keynote, the products announced, and the dawn of a new era under John Ternus. It delves into the implications of these developments.\n🏷️ Apple, event, iPhone, product launch\n \n生成于 2026-09-17 04:28 | 扫描 84 源 → 获取 2555 篇 → 精选 15 篇\n基于 Hacker News Popularity Contest 2025 RSS 源列表，由 Andrej Karpathy 推荐"</script>
+  <script id="speech-text" type="application/json">"🎧 点这里朗读今日日报\n📰 AI 博客每日精选 — 2026-09-18\n来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15\n📝 今日看点\n今日技术看点聚焦AI伦理与安全挑战，从LLM的语言偏好到模型伦理的警告，再到摄像头和数据经纪商的安全漏洞，都敲响了警钟。同时，苹果在芯片策略上的差异以及开发工具的更新也值得关注。\n \n🏆 今日必读\n🥇 使用 System One 模型的技术：Jev 的决策输出与传统 LLM 的对比\nBe alert: targeted attacks on prominent Rustaceans — simonwillison.net · 4 小时前 · 🔒 安全\n中文摘要\n文章介绍了 Jev，一种仅输出决策（多项选择题答案）的“System One”语言模型。与传统 LLM 相比，Jev 的灵活性较低，但速度一致且稳定。这种模型适用于特定场景，通过仅输出结构化决策来优化效率。\nEnglish Summary\nThis article introduces Jev, a \"System One\" language model that exclusively outputs decisions, specifically answers to multiple-choice questions. Compared to traditional LLMs, Jev offers less flexibility but consistent and stable speed. This model is suitable for specific scenarios, optimizing efficiency by outputting only structured decisions.\n💡 为什么值得读: 了解一种新型、高效的“System One”模型如何通过限制输出类型来优化性能。\n💡 Why read it: Understand how a new, efficient \"System One\" model optimizes performance by restricting its output type.\n🏷️ Rustaceans, targeted attacks, crates security\n🥈 为何美国版 iPhone 18 Pro Max 使用高通基带而非苹果自研的 C2 芯片？\nSelf-generated prompt injections in compaction summaries — simonwillison.net · 7 小时前 · 🤖 AI / ML\n中文摘要\n文章指出，苹果 iPhone 18 Pro Max 的美国版本采用了高通蜂窝调制解调器，而其他地区的版本则使用了苹果自研的 C2 芯片。苹果尚未对此差异给出解释，但推测可能与高通与苹果在 2023 年达成的调制解调器供应协议有关，该协议有效期至 2026 年。\nEnglish Summary\nThe article highlights that U.S. models of the iPhone 18 Pro Max utilize Qualcomm cellular modems, while models in other regions use Apple's in-house C2 chip. Apple has not provided an explanation for this discrepancy, but speculation suggests it may be related to the modem supply agreement between Qualcomm and Apple, which extends through 2026.\n💡 为什么值得读: 深入了解苹果在最新 iPhone 型号中，针对特定市场采用不同基带芯片的潜在原因和行业背景。\n💡 Why read it: Gain insight into the potential reasons and industry context behind Apple's use of different baseband chips for specific markets in its latest iPhone models.\n🏷️ prompt injection, LLM safety, misalignment\n🥉 LLM 对“spine”一词的偏爱：一种新的语言模式？\nHow To Write With An LLM — simonwillison.net · 4 小时前 · 🤖 AI / ML\n中文摘要\n作者在分析 AI 生成的 TLA+ 规范时，注意到“spine”一词的频繁出现，并将其视为一种潜在的“LLMism”（LLM 语言习惯）。文章探讨了这种现象是否预示着代码项目中“spine”使用量的非连续性增长，并提出需要更深入的研究来验证这一假设。\nEnglish Summary\nThe author observed the frequent use of the word \"spine\" in AI-generated TLA+ specifications, identifying it as a potential \"LLMism\" (an LLM linguistic quirk). The article explores whether this phenomenon indicates a discontinuous jump in the usage of \"spine\" within code projects and suggests further research is needed to validate this hypothesis.\n💡 为什么值得读: 探索大型语言模型在生成代码和技术文档时可能出现的、值得关注的新兴语言模式。\n💡 Why read it: Explore emerging linguistic patterns in AI-generated code and technical documentation that may warrant attention.\n🏷️ LLM, writing, copyediting, prompt engineering\n \n📊 数据概览\n \n \n \n分类分布\nmermaid\npie showData\n title \"文章分类分布\"\n \"🤖 AI / ML\" : 5\n \"🔒 安全\" : 4\n \"🛠 工具 / 开源\" : 2\n \"⚙️ 工程\" : 2\n \"💡 观点 / 杂谈\" : 2\n高频关键词\nmermaid\nxychart-beta horizontal\n title \"高频关键词\"\n x-axis [\"datasette\", \"release\", \"security fix\", \"rustaceans\", \"targeted attacks\", \"crates security\", \"prompt injection\", \"llm safety\", \"misalignment\", \"llm\", \"writing\", \"copyediting\"]\n y-axis \"出现次数\" 0 --> 4\n bar [2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1]\n📈 纯文本关键词图（终端友好）\ndatasette │ ████████████████████ 2\nrelease │ ████████████████████ 2\nsecurity fix │ ████████████████████ 2\nrustaceans │ ██████████░░░░░░░░░░ 1\ntargeted attacks │ ██████████░░░░░░░░░░ 1\ncrates security │ ██████████░░░░░░░░░░ 1\nprompt injection │ ██████████░░░░░░░░░░ 1\nllm safety │ ██████████░░░░░░░░░░ 1\nmisalignment │ ██████████░░░░░░░░░░ 1\nllm │ ██████████░░░░░░░░░░ 1\n🏷️ 话题标签\ndatasette(2) · release(2) · security fix(2) · rustaceans(1) · targeted attacks(1) · crates security(1) · prompt injection(1) · llm safety(1) · misalignment(1) · llm(1) · writing(1) · copyediting(1) · prompt engineering(1) · agent swarms(1) · ai alignment(1) · recursive self-improvement(1) · software supply chain(1) · security(1) · iot(1) · compromise(1)\n \n🤖 AI / ML\n1. 为何美国版 iPhone 18 Pro Max 使用高通基带而非苹果自研的 C2 芯片？\nSelf-generated prompt injections in compaction summaries — simonwillison.net · 7 小时前 · ⭐ 27/30\n中文摘要\n文章指出，苹果 iPhone 18 Pro Max 的美国版本采用了高通蜂窝调制解调器，而其他地区的版本则使用了苹果自研的 C2 芯片。苹果尚未对此差异给出解释，但推测可能与高通与苹果在 2023 年达成的调制解调器供应协议有关，该协议有效期至 2026 年。\nEnglish Summary\nThe article highlights that U.S. models of the iPhone 18 Pro Max utilize Qualcomm cellular modems, while models in other regions use Apple's in-house C2 chip. Apple has not provided an explanation for this discrepancy, but speculation suggests it may be related to the modem supply agreement between Qualcomm and Apple, which extends through 2026.\n🏷️ prompt injection, LLM safety, misalignment\n \n2. LLM 对“spine”一词的偏爱：一种新的语言模式？\nHow To Write With An LLM — simonwillison.net · 4 小时前 · ⭐ 26/30\n中文摘要\n作者在分析 AI 生成的 TLA+ 规范时，注意到“spine”一词的频繁出现，并将其视为一种潜在的“LLMism”（LLM 语言习惯）。文章探讨了这种现象是否预示着代码项目中“spine”使用量的非连续性增长，并提出需要更深入的研究来验证这一假设。\nEnglish Summary\nThe author observed the frequent use of the word \"spine\" in AI-generated TLA+ specifications, identifying it as a potential \"LLMism\" (an LLM linguistic quirk). The article explores whether this phenomenon indicates a discontinuous jump in the usage of \"spine\" within code projects and suggests further research is needed to validate this hypothesis.\n🏷️ LLM, writing, copyediting, prompt engineering\n \n3. 引用穆斯塔法·苏莱曼关于模型伦理的警告\nNoam Brown – Agent swarms, alignment, & recursive self-improvement — dwarkesh.com · 12 小时前 · ⭐ 26/30\n中文摘要\n引用了穆斯塔法·苏莱曼的观点，他警告不要将 AI 模型视为拥有情感、偏好或权利的实体。他强调意识是人类伦理、法律和政治体系的基础，将这些权利赋予非意识实体是不合理的，并且会加剧 AI 的控制和对齐难题。\nEnglish Summary\nCiting Mustafa Suleyman's warning against treating AI models as entities with feelings, preferences, or rights. He emphasizes that consciousness is the foundation of human ethical, legal, and political systems, arguing that granting such rights to non-conscious entities is unjustified and complicates AI containment and alignment challenges.\n🏷️ agent swarms, AI alignment, recursive self-improvement\n \n4. 两种处理 System One 模型的技术\nTwo techniques for working with System One models — seangoedecke.com · 4 小时前 · ⭐ 23/30\n中文摘要\n本文介绍了两种处理“System One”语言模型的技术。这类模型仅输出决策，即对用户提供选择题的回答，因此灵活性不如传统的大型语言模型，但速度一致性高。作者分享了关于如何更有效地使用这类模型的实践经验。\nEnglish Summary\nThis article introduces two techniques for working with 'System One' language models. These models exclusively output decisions, answering user-provided multiple-choice questions, making them less flexible but consistently fast compared to traditional LLMs. The author shares practical insights on how to utilize these models more effectively.\n🏷️ System One models, structured output, decision making\n \n5. 大型语言模型对“spine”一词的偏爱\nThe LLMs yearn for the spines — buttondown.com/hillelwayne · 1 天前 · ⭐ 23/30\n中文摘要\n作者在研究 AI 生成的 TLA+ 规范时，注意到它们普遍使用了“spine”一词。进一步观察发现，非 TLA+ 项目中也出现了这一现象，引发了作者对这是否是大型语言模型（LLM）新倾向的探究。如果属实，这将体现在代码项目中对“spine”使用量的突增上。\nEnglish Summary\nWhile working on AI-generated TLA+ specifications, the author noticed a recurring use of the word 'spine'. Further observation revealed this trend in non-TLA+ projects, prompting an investigation into whether this is a new LLMism. If so, it would manifest as a discontinuous jump in the usage of 'spine' within code projects.\n🏷️ LLMs, TLA+, specifications, spine\n \n🔒 安全\n6. 使用 System One 模型的技术：Jev 的决策输出与传统 LLM 的对比\nBe alert: targeted attacks on prominent Rustaceans — simonwillison.net · 4 小时前 · ⭐ 27/30\n中文摘要\n文章介绍了 Jev，一种仅输出决策（多项选择题答案）的“System One”语言模型。与传统 LLM 相比，Jev 的灵活性较低，但速度一致且稳定。这种模型适用于特定场景，通过仅输出结构化决策来优化效率。\nEnglish Summary\nThis article introduces Jev, a \"System One\" language model that exclusively outputs decisions, specifically answers to multiple-choice questions. Compared to traditional LLMs, Jev offers less flexibility but consistent and stable speed. This model is suitable for specific scenarios, optimizing efficiency by outputting only structured decisions.\n🏷️ Rustaceans, targeted attacks, crates security\n \n7. iPhone 18 Pro 系列评测：最佳产品的平淡升级\nGood Morning, Your Toaster Is Compromised — nesbitt.io · 19 小时前 · ⭐ 26/30\n中文摘要\n文章认为 iPhone 18 Pro 是有史以来最成功产品的最佳版本，但其今年的升级方式却缺乏令人兴奋之处。尽管产品本身优秀，但缺乏突破性的创新使得此次迭代显得平淡无奇。\nEnglish Summary\nThe article posits that the iPhone 18 Pro represents the best iteration of the most successful product ever made. However, the nature of its improvements this year lacks excitement, making the iteration feel unremarkable despite the product's inherent excellence.\n🏷️ software supply chain, security, IoT, compromise\n \n8. Flock 摄像头存在大量安全漏洞和硬编码凭证\nFlock cameras are riddled with security vulnerabilities and hard-coded credentials — micahflee.com · 1 天前 · ⭐ 26/30\n中文摘要\n对 Flock 公司的车牌识别（ALPR）摄像头进行的深入安全分析发现，这些设备存在严重的安全漏洞，包括硬编码的凭证。黑客组织 stegan0gram 收集并泄露了这些摄像头的文件系统镜像，进一步暴露了其安全隐患。这些漏洞可能允许未经授权的访问、数据泄露，甚至远程控制摄像头。文章强调了物联网设备在安全设计上的不足，以及用户数据面临的风险。\nEnglish Summary\nAn in-depth security analysis of Flock's Automatic License Plate Recognition (ALPR) cameras has uncovered significant vulnerabilities, including hard-coded credentials. A hacker collective named stegan0gram collected and leaked filesystem images from these cameras, further exposing their security flaws. These vulnerabilities could allow unauthorized access, data breaches, and even remote control of the cameras, highlighting deficiencies in IoT device security design and the risks to user data.\n🏷️ Flock cameras, vulnerabilities, hard-coded credentials, ALPR\n \n9. 数据经纪商 Radaris 在隐私诉讼中失去域名\nData Broker Radaris Loses Domains in Privacy Fight — krebsonsecurity.com · 1 天前 · ⭐ 26/30\n中文摘要\n消费者数据经纪商 Radaris 因长期忽视用户删除个人信息的请求，并在涉及新泽西州隐私法的诉讼中被指控发布执法官员的个人信息，最终面临法律制裁。在多次被指控规避和拖延后，法院判决 Radaris 违反了该州的隐私法，并没收了其域名。此案凸显了数据经纪商在处理用户隐私信息时的法律责任，以及侵犯隐私可能面临的严重后果。\nEnglish Summary\nConsumer data broker Radaris has faced legal repercussions for its persistent disregard of user requests to remove personal information and for allegedly publishing personal details of law enforcement officials, violating a New Jersey privacy law. After repeated accusations of evasion and delay, a court ruled against Radaris for violating the state's privacy statutes and confiscated its domains. This case underscores the legal accountability of data brokers in handling user privacy data and the severe consequences of privacy violations.\n🏷️ data broker, Radaris, privacy, lawsuit\n \n🛠 工具 / 开源\n10. Datasette 1.0a40 发布：支持插件后台任务\ndatasette 1.0a40 — simonwillison.net · 1 天前 · ⭐ 25/30\n中文摘要\nDatasette 发布了 1.0a40 版本，该版本包含与 0.65.5 版本相同的安全修复，并引入了多项新功能和错误修复。最显著的新特性是插件现在可以通过 datasette.addbackgroundtask() 方法启动和管理后台任务。此外，还包含其他一些改进和 bug 修复。此版本进一步增强了 Datasette 的灵活性和可扩展性。\nEnglish Summary\nDatasette version 1.0a40 has been released, featuring the same security fix as version 0.65.5, along with several new features and bug fixes. A key addition allows plugins to launch and manage background tasks using the new datasette.addbackgroundtask() method. This release also includes other enhancements and bug resolutions, further improving Datasette's flexibility and extensibility.\n🏷️ Datasette, release, plugin, security fix\n \n11. Datasette 0.65.5 发布：修复权限绕过安全漏洞\ndatasette 0.65.5 — simonwillison.net · 1 天前 · ⭐ 25/30\n中文摘要\nDatasette 发布了 0.65.5 版本，修复了一个安全漏洞（GHSA-h547-rmjf-5m2m）。该漏洞允许在请求的表名中包含尾部换行符，从而绕过表权限检查，暴露私有行。此修复由用户 dpfkdlemtp 报告。此次更新主要侧重于提升 Datasette 的安全性。\nEnglish Summary\nDatasette version 0.65.5 has been released, addressing a security vulnerability (GHSA-h547-rmjf-5m2m). This issue allowed a trailing newline in a requested table name to bypass table permissions and expose private rows, as reported by dpfkdlemtp. The update primarily focuses on enhancing Datasette's security.\n🏷️ Datasette, release, security fix, permissions\n \n⚙️ 工程\n12. Xcode 27.2 已发布，但 27.1 未发布，开发者无法开始适配 Duo 应用\nXcode 27.2 Is Out, but 27.1 Is Not, Which Means Developers Still Can’t Get Started on Duo-Adapted Apps — daringfireball.net · 1 天前 · ⭐ 24/30\n中文摘要\n苹果发布了 Xcode 27.2，但其关键的 iOS SDK 和模拟器支持（用于 iPhone Duo 的适配）仅会在稍后发布的 Xcode 27.1 中提供。这意味着开发者目前无法开始为 Duo 设备适配应用程序，尽管适配工作量可能很大。开发者们急切需要 Xcode 27.1 来启动这项工作，而当前的发布顺序造成了延误。\nEnglish Summary\nApple has released Xcode 27.2, but the crucial iOS SDK and simulator support for adapting apps to iPhone Duo will only be available in a later release, Xcode 27.1. This prevents developers from starting the significant work of adapting their applications for Duo devices. Developers are urgently awaiting Xcode 27.1 to commence this process, and the current release order is causing delays.\n🏷️ Xcode, developers, iOS SDK, Duo-adapted apps\n \n13. 为何美国版 iPhone 18 Pro Max 使用高通基带而非苹果自研的 C2 芯片？\nWhy Do U.S. Models of the iPhone 18 Pro Max, and Only U.S. Models of the 18 Pro Max, Use Qualcomm Cellular Modems Instead of Apple’s Own Superior C2 Modem? — daringfireball.net · 13 小时前 · ⭐ 23/30\n中文摘要\n文章探讨了美国版 iPhone 18 Pro Max 仅使用高通蜂窝调制解调器，而非苹果自研的 C2 芯片的原因。尽管苹果宣称 iPhone 18 Pro 全球统一使用 C2 芯片，但美国版 Pro Max 却是个例外。目前苹果尚未给出官方解释，推测可能与高通的供应协议有关。\nEnglish Summary\nThis article investigates why U.S. models of the iPhone 18 Pro Max exclusively use Qualcomm cellular modems instead of Apple's own C2 chip. While Apple states the iPhone 18 Pro globally uses the C2 modem, the U.S. Pro Max version is an exception. Apple has not provided an official explanation, leading to speculation about Qualcomm's supply agreements.\n🏷️ iPhone 18 Pro Max, modem, Qualcomm, Apple C2\n \n💡 观点 / 杂谈\n14. 引用穆斯塔法·苏莱曼的观点\nQuoting Mustafa Suleyman — simonwillison.net · 1 天前 · ⭐ 23/30\n中文摘要\n穆斯塔法·苏莱曼在其文章中强调，不应将 AI 模型视为拥有情感、偏好、权利或应受我们关怀的对象。他认为，意识是伦理、法律和政治体系的基础，将权利赋予非意识实体缺乏证据支持，且会增加 AI 监管和对齐的难度。\nEnglish Summary\nMustafa Suleyman emphasizes that AI models should not be treated as entities with feelings, preferences, rights, or entitlement to our welfare. He argues that consciousness is the foundation of our ethical, legal, and political systems, and extending rights to non-conscious entities is unjustified and complicates AI containment and alignment.\n🏷️ Mustafa Suleyman, AI ethics, model welfare, consciousness\n \n15. iPhone 18 Pro\n★ The iPhones 18 Pro — daringfireball.net · 2 小时前 · ⭐ 22/30\n中文摘要\n文章认为 iPhone 18 Pro 是有史以来最成功产品的最佳版本。然而，尽管在过去一年中有所改进，但其升级方式却显得并不令人兴奋。这暗示了产品在迭代更新上可能缺乏突破性的亮点。\nEnglish Summary\nThe article posits that the iPhone 18 Pro is the best iteration of the most successful product ever created. However, despite improvements over the past year, the manner of its upgrades is not exciting. This suggests a potential lack of groundbreaking highlights in its iterative updates.\n🏷️ iPhone 18 Pro, product evolution, excitement\n \n生成于 2026-09-18 04:12 | 扫描 84 源 → 获取 2555 篇 → 精选 15 篇\n基于 Hacker News Popularity Contest 2025 RSS 源列表，由 Andrej Karpathy 推荐"</script>
   <script>
     const text = JSON.parse(document.getElementById('speech-text').textContent);
     const statusEl = document.getElementById('status');
