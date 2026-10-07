@@ -52,203 +52,201 @@
   <main class="shell">
     <article class="card">
       <p>🎧 <a href="https://lingnanren.github.io/ai-daily-digest/listen.html">点这里朗读今日日报</a></p>
-<h1>📰 AI 博客每日精选 — 2026-10-06</h1>
+<h1>📰 AI 博客每日精选 — 2026-10-07</h1>
 <blockquote>来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15</blockquote>
 <h2>📝 今日看点</h2>
-<p>今日技术看点聚焦两大趋势：一是人工智能与机器学习的持续演进，从微基准测试优化到对AI伦理的探讨；二是企业级软件与技术创新，预示着B2B领域的新变革，同时回顾经典技术产品与人物，致敬技术史上的里程碑。此外，网络安全与开发者工具的更新也值得关注。</p>
+<p>今日技术看点聚焦人工智能的广泛应用与开放生态。从利用大型语言模型创作音乐、优化模型推理，到对开源嵌入式模型的赞赏，AI 正以前所未有的方式渗透到创意和工程领域。同时，开发者工具的更新，如对 Mistral Large 4 的支持，以及新的终端协议提升程序可见性，都预示着技术正在朝着更高效、更开放的方向发展。</p>
 <hr>
 <h2>🏆 今日必读</h2>
-<p>🥇 <strong>IBM Thinkpad 于 1992 年首次亮相</strong></p>
-<p><a href="https://openai.com/index/eu-text-provenance/">OpenAI Announces Their Text Watermarking Plans</a> — daringfireball.net · 6 小时前 · 🤖 AI / ML</p>
+<p>🥇 <strong>信贷紧缩</strong></p>
+<p><a href="https://simonwillison.net/2026/Oct/7/openai-rogue-agents-wikimedia/">OpenAI “rogue” agent activities found on Wikimedia projects</a> — simonwillison.net · 5 小时前 · 🤖 AI / ML</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>1992 年 10 月 5 日，IBM 推出了首批三款 Thinkpad 型号，标志着其在便携式计算机领域的重大突破。尽管 IBM 此前已有便携式电脑产品，如 1984 年的 Portable PC 和 1986 年的 PC Convertible，但这些产品均未获得 Thinkpad 那样的持久成功。Thinkpad 的推出奠定了其在笔记本电脑市场的重要地位。</blockquote>
+<blockquote>文章讨论了当前经济环境下信贷紧缩的潜在影响。作者指出，高利率和通胀压力正在限制企业和个人的借贷能力。这可能导致投资减少、消费疲软以及经济增长放缓。作者建议关注宏观经济指标，并为潜在的经济下行做好准备。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>On October 5, 1992, IBM launched its first three Thinkpad models, marking a significant entry into the portable computer market. While IBM had prior portable offerings like the 1984 Portable PC and 1986 PC Convertible, none achieved the lasting success of the Thinkpad. This debut established the Thinkpad's enduring legacy in the laptop industry.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 了解一款标志性笔记本电脑的诞生及其与早期便携式电脑的对比。</p>
-<p>💡 <strong>Why read it</strong>: Understand the debut of an iconic laptop and its contrast with earlier portable computers.</p>
-<p>🏷️ OpenAI, text watermarking, AI Act, generative AI</p>
-<p>🥈 <strong>微基准测试的时长建议：300 毫秒</strong></p>
-<p><a href="https://simonwillison.net/2026/Oct/5/felix-rieseberg/">Quoting Felix Rieseberg</a> — simonwillison.net · 5 小时前 · 🤖 AI / ML</p>
+<blockquote>This piece discusses the potential impacts of a credit crunch in the current economic climate. The author points out that high interest rates and inflationary pressures are limiting the borrowing capacity of businesses and individuals. This could lead to reduced investment, weaker consumption, and slower economic growth. The author suggests monitoring macroeconomic indicators and preparing for a potential economic downturn.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 了解当前宏观经济环境下信贷紧缩的潜在风险和应对策略。</p>
+<p>💡 <strong>Why read it</strong>: Understand the potential risks and mitigation strategies of a credit crunch in the current macroeconomic environment.</p>
+<p>🏷️ OpenAI, Wikimedia, AI safety, rogue agents</p>
+<p>🥈 <strong>引用 Felix Rieseberg 的观点</strong></p>
+<p><a href="https://simonwillison.net/2026/Oct/6/victoria-kim/">Quoting Victoria Kim</a> — simonwillison.net · 5 小时前 · 🤖 AI / ML</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>进行微基准测试时，建议将输入大小调整至使测试运行约 300 毫秒。这一时长能够平衡测试的准确性与效率，避免因时间过短导致结果不稳定，或因时间过长而降低开发迭代速度。通过精确控制测试时长，可以获得更可靠的性能度量。</blockquote>
+<blockquote>Felix Rieseberg 讨论了 Cowork 应用中模型推理的演变。早期版本在云端运行模型推理，并在用户本地计算机上执行 Anthropic 提供的虚拟机（VM）来处理工具调用，以确保能力、安全性和隐私。然而，本地运行 VM 带来了磁盘、电池和性能上的成本，用户对此并不满意。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>When conducting micro-benchmarks, a rule of thumb is to adjust input size until the benchmark runs for approximately 300ms. This duration balances accuracy and efficiency, preventing unstable results from short runs and slow iteration cycles from excessively long ones. Precise control over test duration yields more reliable performance measurements.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 学习一种实用的微基准测试时长设定方法，以获得更可靠的性能数据。</p>
-<p>💡 <strong>Why read it</strong>: Learn a practical method for setting micro-benchmark duration to obtain more reliable performance data.</p>
-<p>🏷️ LLM, model inference, cloud, tool calls</p>
-<p>🥉 <strong>Ternus 和 Cook 在史蒂夫·乔布斯逝世 15 周年之际发文缅怀</strong></p>
-<p><a href="https://simonwillison.net/2026/Oct/4/qwen38-addition-in-words/">Qwen3.8 27B addition in words</a> — simonwillison.net · 1 天前 · 🤖 AI / ML</p>
+<blockquote>Felix Rieseberg discusses the evolution of model inference in the Cowork application. Early versions ran model inference in the cloud, executing tool calls in an Anthropic-provided VM shipped to the user's computer for capability, safety, and security. However, users disliked the disk, battery, and performance costs associated with running the VM locally.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 了解 AI 应用在本地部署和云端推理之间的权衡与用户体验的演变。</p>
+<p>💡 <strong>Why read it</strong>: Understand the trade-offs between local deployment and cloud inference for AI applications and the evolution of user experience.</p>
+<p>🏷️ OpenAI, data privacy, security breach, monitoring</p>
+<p>🥉 <strong>如何阅读代码</strong></p>
+<p><a href="https://simonwillison.net/2026/Oct/6/le-chonk/">Introducing Mistral Large 4: Le chonk</a> — simonwillison.net · 9 小时前 · 🤖 AI / ML</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>在史蒂夫·乔布斯逝世 15 周年之际，John Ternus 和 Tim Cook 分别在 X（原 Twitter）上发文表达了深切的怀念。Ternus 强调了乔布斯对细节、体验和人的关注如何持续指导着他们的工作。Cook 则表示乔布斯改变了世界和无数人的生活，他的精神体现在他创造的一切和激励的每一个人身上。</blockquote>
+<blockquote>文章探讨了阅读代码与阅读书籍、文章等文本的根本区别。与线性阅读不同，代码阅读需要理解其结构、逻辑和意图。作者强调了理解代码上下文、依赖关系以及作者意图的重要性。这需要一种更具分析性和探索性的阅读方法。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>On the 15th anniversary of Steve Jobs's death, John Ternus and Tim Cook posted brief remembrances on X. Ternus highlighted how Jobs's teaching to care about every detail, experience, and person continues to guide their work. Cook stated that Jobs changed the world and many lives, with his spirit living on in his creations and inspirations.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 通过苹果高管的缅怀，感受史蒂夫·乔布斯对科技行业和个人产生的深远影响。</p>
-<p>💡 <strong>Why read it</strong>: Gain insight into Steve Jobs's profound impact on the tech industry and individuals through remembrances from Apple executives.</p>
-<p>🏷️ LLM, Qwen, benchmarking, AI</p>
+<blockquote>This article explores the fundamental differences between reading code and reading texts like books or articles. Unlike linear reading, code comprehension requires understanding its structure, logic, and intent. The author emphasizes the importance of grasping code context, dependencies, and the author's intentions, necessitating a more analytical and exploratory approach.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 学习一套系统性的方法来更有效地理解和分析代码。</p>
+<p>💡 <strong>Why read it</strong>: Learn a systematic approach to more effectively understand and analyze code.</p>
+<p>🏷️ Mistral Large 4, LLM, AI models, large language models</p>
 <hr>
 <h2>📊 数据概览</h2>
-<table><thead><tr><th>扫描源</th><th>抓取文章</th><th>时间范围</th><th>精选</th></tr></thead><tbody><tr><td>83/92</td><td>2344 篇 → 21 篇</td><td>48h</td><td><strong>15 篇</strong></td></tr></tbody></table>
+<table><thead><tr><th>扫描源</th><th>抓取文章</th><th>时间范围</th><th>精选</th></tr></thead><tbody><tr><td>82/92</td><td>2315 篇 → 36 篇</td><td>48h</td><td><strong>15 篇</strong></td></tr></tbody></table>
 <h3>分类分布</h3>
 <div class="code-wrap"><div class="code-title">mermaid</div><pre><code>pie showData
     title "文章分类分布"
-    "💡 观点 / 杂谈" : 4
-    "🤖 AI / ML" : 3
+    "🤖 AI / ML" : 8
     "⚙️ 工程" : 3
     "🛠 工具 / 开源" : 2
-    "📝 其他" : 2
-    "🔒 安全" : 1</code></pre></div>
+    "🔒 安全" : 1
+    "💡 观点 / 杂谈" : 1</code></pre></div>
 <h3>高频关键词</h3>
 <div class="code-wrap"><div class="code-title">mermaid</div><pre><code>xychart-beta horizontal
     title "高频关键词"
-    x-axis ["benchmarking", "llm", "performance", "steve jobs", "openai", "text watermarking", "ai act", "generative ai", "model inference", "cloud", "tool calls", "qwen"]
-    y-axis "出现次数" 0 --&gt; 5
-    bar [3, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1]</code></pre></div>
+    x-axis ["llm", "openai", "ai models", "developer tools", "wikimedia", "ai safety", "rogue agents", "data privacy", "security breach", "monitoring", "mistral large 4", "large language models"]
+    y-axis "出现次数" 0 --&gt; 8
+    bar [6, 4, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1]</code></pre></div>
 <div class="details">
 <p class="summary">📈 纯文本关键词图（终端友好）</p>
-<div class="code-wrap"><pre><code>benchmarking      │ ████████████████████ 3
-llm               │ █████████████░░░░░░░ 2
-performance       │ █████████████░░░░░░░ 2
-steve jobs        │ █████████████░░░░░░░ 2
-openai            │ ███████░░░░░░░░░░░░░ 1
-text watermarking │ ███████░░░░░░░░░░░░░ 1
-ai act            │ ███████░░░░░░░░░░░░░ 1
-generative ai     │ ███████░░░░░░░░░░░░░ 1
-model inference   │ ███████░░░░░░░░░░░░░ 1
-cloud             │ ███████░░░░░░░░░░░░░ 1</code></pre></div>
+<div class="code-wrap"><pre><code>llm             │ ████████████████████ 6
+openai          │ █████████████░░░░░░░ 4
+ai models       │ ███████░░░░░░░░░░░░░ 2
+developer tools │ ███████░░░░░░░░░░░░░ 2
+wikimedia       │ ███░░░░░░░░░░░░░░░░░ 1
+ai safety       │ ███░░░░░░░░░░░░░░░░░ 1
+rogue agents    │ ███░░░░░░░░░░░░░░░░░ 1
+data privacy    │ ███░░░░░░░░░░░░░░░░░ 1
+security breach │ ███░░░░░░░░░░░░░░░░░ 1
+monitoring      │ ███░░░░░░░░░░░░░░░░░ 1</code></pre></div>
 </div>
 <h3>🏷️ 话题标签</h3>
-<p><strong>benchmarking</strong>(3) · <strong>llm</strong>(2) · <strong>performance</strong>(2) · steve jobs(2) · openai(1) · text watermarking(1) · ai act(1) · generative ai(1) · model inference(1) · cloud(1) · tool calls(1) · qwen(1) · ai(1) · python(1) · python 3.15(1) · tech industry(1) · usability(1) · user experience(1) · digital life(1) · hot-patching(1)</p>
-<hr>
-<h2>💡 观点 / 杂谈</h2>
-<h3>1. 怀念 Link 报纸：一段改变人生的经历</h3>
-<p><a href="https://blog.jim-nielsen.com/2026/embarrassed-by-tech/">“I’m Embarrassed on Behalf of the Tech Industry”</a> — <strong>blog.jim-nielsen.com</strong> · 1 天前 · ⭐ 24/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>作者在 Link 报纸迎来 20 周年之际，回忆了这段报纸对自己人生的深刻影响。尽管 Link 报纸的辉煌时期已过去 18 年，作者仍对其充满怀念，并认为这段工作经历改变了自己的人生轨迹。文章表达了对一份曾经充满意义的工作的追忆。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>On the 20th anniversary of the newspaper Link, the author reflects on how it profoundly changed their life. Despite 18 years having passed since its peak, the author deeply misses the publication and considers the job a life-altering experience. The piece is a remembrance of a once meaningful professional period.</blockquote>
-<p>🏷️ tech industry, usability, user experience, digital life</p>
-<hr>
-<h3>2. 史蒂夫·乔布斯在 2010 年参观 Apple Park 模拟模型</h3>
-<p><a href="https://book.stevejobsarchive.com/#photo-37">Steve Jobs, Walking Through a Mockup for Apple Park in 2010</a> — <strong>daringfireball.net</strong> · 3 小时前 · ⭐ 20/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>这篇文章分享了一张史蒂夫·乔布斯在 2010 年参观 Apple Park 模拟模型的照片。作者认为这张照片非常应景，并称赞了“Make Something Wonderful”这本书是一份珍贵的礼物。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>This entry shares a photo of Steve Jobs walking through a mockup for Apple Park in 2010. The author finds the photo particularly apt and praises the book 'Make Something Wonderful' as a gift.</blockquote>
-<p>🏷️ Steve Jobs, Apple Park, design</p>
-<hr>
-<h3>3. Ternus 和 Cook 在史蒂夫·乔布斯逝世15周年之际发文悼念</h3>
-<p><a href="https://x.com/johnternus/status/2107093462118199562">Ternus and Cook Tweet Brief Remembrances on the 15th Anniversary of Steve Jobs’s Death</a> — <strong>daringfireball.net</strong> · 10 小时前 · ⭐ 19/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>在史蒂夫·乔布斯逝世15周年之际，苹果高管John Ternus和Tim Cook在X（前身为Twitter）上发布了简短的悼念。Ternus强调了乔布斯对细节、体验和人的关注如何持续指引着苹果的工作。Cook则表示，乔布斯不仅给世界留下了印记，更是彻底改变了世界和许多人的生活，他的精神体现在他创造的一切和激励的每一个人身上。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>On the 15th anniversary of Steve Jobs's death, Apple executives John Ternus and Tim Cook posted brief remembrances on X. Ternus highlighted how Jobs's focus on every detail, experience, and person continues to guide Apple's work. Cook stated that Jobs not only left a mark on the world but fundamentally changed it and many lives, with his spirit living on in his creations and inspirations.</blockquote>
-<p>🏷️ Steve Jobs, anniversary, Apple leadership</p>
-<hr>
-<h3>4. 失落的链接</h3>
-<p><a href="https://feed.tedium.co/link/15204/17490109/link-newspaper-virginian-pilot-remembrance">Missing Link</a> — <strong>tedium.co</strong> · 2 小时前 · ⭐ 16/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>作者在一家名为“Link”的报纸迎来创刊20周年之际，分享了一些关于该报纸的零散思绪。他表示，这家报纸在某种程度上改变了他的生活，尽管距离他离开该报纸已有18年，他仍然怀念那份工作。文章表达了对过去工作经历的怀旧之情。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>The author shares some spare thoughts about a newspaper called 'Link' on its 20th anniversary, noting that it significantly changed his life. Even after 18 years since leaving the job, he still misses it. The piece reflects a sense of nostalgia for past work experiences.</blockquote>
-<p>🏷️ personal reflection, career, journalism</p>
+<p><strong>llm</strong>(6) · <strong>openai</strong>(4) · <strong>ai models</strong>(2) · developer tools(2) · wikimedia(1) · ai safety(1) · rogue agents(1) · data privacy(1) · security breach(1) · monitoring(1) · mistral large 4(1) · large language models(1) · text watermarking(1) · ai act(1) · generative ai(1) · mistral large(1) · benchmarks(1) · gemma(1) · embeddings(1) · google ai(1)</p>
 <hr>
 <h2>🤖 AI / ML</h2>
-<h3>5. IBM Thinkpad 于 1992 年首次亮相</h3>
-<p><a href="https://openai.com/index/eu-text-provenance/">OpenAI Announces Their Text Watermarking Plans</a> — <strong>daringfireball.net</strong> · 6 小时前 · ⭐ 28/30</p>
+<h3>1. 信贷紧缩</h3>
+<p><a href="https://simonwillison.net/2026/Oct/7/openai-rogue-agents-wikimedia/">OpenAI “rogue” agent activities found on Wikimedia projects</a> — <strong>simonwillison.net</strong> · 5 小时前 · ⭐ 26/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>1992 年 10 月 5 日，IBM 推出了首批三款 Thinkpad 型号，标志着其在便携式计算机领域的重大突破。尽管 IBM 此前已有便携式电脑产品，如 1984 年的 Portable PC 和 1986 年的 PC Convertible，但这些产品均未获得 Thinkpad 那样的持久成功。Thinkpad 的推出奠定了其在笔记本电脑市场的重要地位。</blockquote>
+<blockquote>文章讨论了当前经济环境下信贷紧缩的潜在影响。作者指出，高利率和通胀压力正在限制企业和个人的借贷能力。这可能导致投资减少、消费疲软以及经济增长放缓。作者建议关注宏观经济指标，并为潜在的经济下行做好准备。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>On October 5, 1992, IBM launched its first three Thinkpad models, marking a significant entry into the portable computer market. While IBM had prior portable offerings like the 1984 Portable PC and 1986 PC Convertible, none achieved the lasting success of the Thinkpad. This debut established the Thinkpad's enduring legacy in the laptop industry.</blockquote>
+<blockquote>This piece discusses the potential impacts of a credit crunch in the current economic climate. The author points out that high interest rates and inflationary pressures are limiting the borrowing capacity of businesses and individuals. This could lead to reduced investment, weaker consumption, and slower economic growth. The author suggests monitoring macroeconomic indicators and preparing for a potential economic downturn.</blockquote>
+<p>🏷️ OpenAI, Wikimedia, AI safety, rogue agents</p>
+<hr>
+<h3>2. 引用 Felix Rieseberg 的观点</h3>
+<p><a href="https://simonwillison.net/2026/Oct/6/victoria-kim/">Quoting Victoria Kim</a> — <strong>simonwillison.net</strong> · 5 小时前 · ⭐ 26/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Felix Rieseberg 讨论了 Cowork 应用中模型推理的演变。早期版本在云端运行模型推理，并在用户本地计算机上执行 Anthropic 提供的虚拟机（VM）来处理工具调用，以确保能力、安全性和隐私。然而，本地运行 VM 带来了磁盘、电池和性能上的成本，用户对此并不满意。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Felix Rieseberg discusses the evolution of model inference in the Cowork application. Early versions ran model inference in the cloud, executing tool calls in an Anthropic-provided VM shipped to the user's computer for capability, safety, and security. However, users disliked the disk, battery, and performance costs associated with running the VM locally.</blockquote>
+<p>🏷️ OpenAI, data privacy, security breach, monitoring</p>
+<hr>
+<h3>3. 如何阅读代码</h3>
+<p><a href="https://simonwillison.net/2026/Oct/6/le-chonk/">Introducing Mistral Large 4: Le chonk</a> — <strong>simonwillison.net</strong> · 9 小时前 · ⭐ 26/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>文章探讨了阅读代码与阅读书籍、文章等文本的根本区别。与线性阅读不同，代码阅读需要理解其结构、逻辑和意图。作者强调了理解代码上下文、依赖关系以及作者意图的重要性。这需要一种更具分析性和探索性的阅读方法。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>This article explores the fundamental differences between reading code and reading texts like books or articles. Unlike linear reading, code comprehension requires understanding its structure, logic, and intent. The author emphasizes the importance of grasping code context, dependencies, and the author's intentions, necessitating a more analytical and exploratory approach.</blockquote>
+<p>🏷️ Mistral Large 4, LLM, AI models, large language models</p>
+<hr>
+<h3>4. Scrimshaw Jukebox</h3>
+<p><a href="https://openai.com/index/eu-text-provenance/">OpenAI Announces Their Text Watermarking Plans</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 26/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>作者使用 Claude Opus 5.5 尝试创作计算机游戏音乐。他首先设计了一个简单的文本格式来表示音乐，然后构建了一个能够播放该格式音乐的工具。文章展示了如何利用大型语言模型（LLM）进行创意音乐生成，并提供了示例曲目。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>The author experimented with Claude Opus 5.5 to compose computer game music. They first designed a simple text-based format for music and then built an artifact capable of playing it aloud, including example tracks. This demonstrates the use of large language models (LLMs) for creative music generation.</blockquote>
 <p>🏷️ OpenAI, text watermarking, AI Act, generative AI</p>
 <hr>
-<h3>6. 微基准测试的时长建议：300 毫秒</h3>
-<p><a href="https://simonwillison.net/2026/Oct/5/felix-rieseberg/">Quoting Felix Rieseberg</a> — <strong>simonwillison.net</strong> · 5 小时前 · ⭐ 25/30</p>
+<h3>5. 为什么编译器有时使用 ud2，有时使用 int 3 来处理不应执行的代码？</h3>
+<p><a href="https://simonwillison.net/2026/Oct/6/hn-49982139/">Mistral Large 4</a> — <strong>simonwillison.net</strong> · 11 小时前 · ⭐ 25/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>进行微基准测试时，建议将输入大小调整至使测试运行约 300 毫秒。这一时长能够平衡测试的准确性与效率，避免因时间过短导致结果不稳定，或因时间过长而降低开发迭代速度。通过精确控制测试时长，可以获得更可靠的性能度量。</blockquote>
+<blockquote>编译器在处理不应执行的代码时，会根据具体原因选择使用 <code>ud2</code>（Undefined Instruction）或 <code>int 3</code>（Breakpoint Instruction）。<code>ud2</code> 指令用于表示明确的程序错误或逻辑缺陷，而 <code>int 3</code> 则常用于调试断点，指示程序在此处应停止执行。这两种指令的选择反映了编译器对代码执行路径和错误处理策略的不同考量。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>When conducting micro-benchmarks, a rule of thumb is to adjust input size until the benchmark runs for approximately 300ms. This duration balances accuracy and efficiency, preventing unstable results from short runs and slow iteration cycles from excessively long ones. Precise control over test duration yields more reliable performance measurements.</blockquote>
-<p>🏷️ LLM, model inference, cloud, tool calls</p>
+<blockquote>The compiler sometimes uses <code>ud2</code> (Undefined Instruction) and sometimes <code>int 3</code> (Breakpoint Instruction) for code that should not execute, depending on the specific reason. <code>ud2</code> is used to indicate explicit programming errors or logical flaws, while <code>int 3</code> is often used for debugging breakpoints, signaling that the program should stop execution at that point. The choice between these instructions reflects different compiler considerations for code execution paths and error handling strategies.</blockquote>
+<p>🏷️ Mistral Large, LLM, benchmarks, AI models</p>
 <hr>
-<h3>7. Ternus 和 Cook 在史蒂夫·乔布斯逝世 15 周年之际发文缅怀</h3>
-<p><a href="https://simonwillison.net/2026/Oct/4/qwen38-addition-in-words/">Qwen3.8 27B addition in words</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 25/30</p>
+<h3>6. EmbeddingGemma 2</h3>
+<p><a href="https://simonwillison.net/2026/Oct/6/hn-49983751/">EmbeddingGemma 2</a> — <strong>simonwillison.net</strong> · 8 小时前 · ⭐ 24/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>在史蒂夫·乔布斯逝世 15 周年之际，John Ternus 和 Tim Cook 分别在 X（原 Twitter）上发文表达了深切的怀念。Ternus 强调了乔布斯对细节、体验和人的关注如何持续指导着他们的工作。Cook 则表示乔布斯改变了世界和无数人的生活，他的精神体现在他创造的一切和激励的每一个人身上。</blockquote>
+<blockquote>作者高度赞赏 Google 的 EmbeddingGemma 2 模型采用 Apache 2.0 许可证发布，认为对于嵌入模型而言，闭源专有托管模型不具优势。开放的许可证使得开发者能够更自由地使用和集成该模型，这对于嵌入式 AI 应用的普及和创新至关重要。作者强调了开源在嵌入模型领域的价值。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>On the 15th anniversary of Steve Jobs's death, John Ternus and Tim Cook posted brief remembrances on X. Ternus highlighted how Jobs's teaching to care about every detail, experience, and person continues to guide their work. Cook stated that Jobs changed the world and many lives, with his spirit living on in his creations and inspirations.</blockquote>
-<p>🏷️ LLM, Qwen, benchmarking, AI</p>
+<blockquote>The author appreciates that Google's EmbeddingGemma 2 model is released under the Apache 2.0 license, arguing that closed, proprietary, hosted-only models are not ideal for embedding models. The open license allows developers greater freedom to use and integrate the model, which is crucial for the adoption and innovation of embedded AI applications. The author highlights the value of open source for embedding models.</blockquote>
+<p>🏷️ Gemma, embeddings, LLM, Google AI</p>
+<hr>
+<h3>7. 引用菲利克斯·里瑟伯格</h3>
+<p><a href="https://simonwillison.net/2026/Oct/5/felix-rieseberg/">Quoting Felix Rieseberg</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 23/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Cowork的旧版本在云端运行模型推理，并在Anthropic提供的虚拟机中执行工具调用。该虚拟机被发送到您的计算机上，用于增强功能、安全性和可靠性。用户们喜爱Claude的功能，但对其本地运行的虚拟机带来的磁盘、电池和性能消耗感到不满。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>The older version of Cowork performed model inference in the cloud, utilizing an Anthropic-provided VM shipped to user computers for enhanced capabilities, safety, and reliability. While users appreciated Claude's features, they disliked the local VM's impact on disk space, battery, and performance.</blockquote>
+<p>🏷️ LLM, tool calls, cloud inference, VM</p>
+<hr>
+<h3>8. 浮雕音乐盒</h3>
+<p><a href="https://simonwillison.net/2026/Oct/6/scrimshaw-jukebox/">Scrimshaw Jukebox</a> — <strong>simonwillison.net</strong> · 14 小时前 · ⭐ 22/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>本文作者尝试使用Claude Opus 5.5来创作音乐。作者设计了一种简单的基于文本的音乐格式，并构建了一个可以播放音乐的工具。文章展示了如何利用AI进行音乐创作的实验。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>The author experimented with using Claude Opus 5.5 to compose music. They designed a simple text-based format for music and built a tool capable of playing it. The article demonstrates an experiment in AI-driven music creation.</blockquote>
+<p>🏷️ Claude Opus, music generation, AI tools, experimentation</p>
 <hr>
 <h2>⚙️ 工程</h2>
-<h3>8. Sunnny：一款令人期待的 B2B 软件</h3>
-<p><a href="https://blog.miguelgrinberg.com/post/how-fast-is-python-3-15">How fast is Python 3.15?</a> — <strong>miguelgrinberg.com</strong> · 19 小时前 · ⭐ 24/30</p>
+<h3>9. 程序状态的终端协议 (OSC 7501)</h3>
+<p><a href="https://mitchellh.com/writing/program-status-osc7501">A Terminal Protocol for Program Status (OSC 7501)</a> — <strong>mitchellh.com</strong> · 1 天前 · ⭐ 24/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Sunnny 是一款即将于 10 月 19 日发布的 B2B 软件，预示着其在企业级软件领域将带来令人耳目一新的体验。该产品承诺提供“美味”的 B2B 软件体验，并已开放早期访问。其发布预示着对现有 B2B 软件模式的革新。</blockquote>
+<blockquote>该文章介绍了一种新的终端协议，OSC 7501，用于在终端中显示程序状态。该协议允许应用程序向终端发送关于其运行状态的信息，例如进度、错误或完成情况，从而增强用户对后台进程的可见性。这为开发者提供了一种标准化的方式来改进命令行工具的用户体验。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Sunnny, a B2B software set for early access release on October 19th, promises a remarkably "delicious" experience in the enterprise software space. This upcoming launch suggests a significant innovation in how B2B software is designed and perceived, aiming to offer a refreshing approach to business tools.</blockquote>
-<p>🏷️ Python, performance, benchmarking, Python 3.15</p>
+<blockquote>This article introduces a new terminal protocol, OSC 7501, designed for displaying program status within the terminal. The protocol enables applications to send information about their running state, such as progress, errors, or completion, to the terminal, enhancing user visibility into background processes. This provides developers with a standardized way to improve the user experience of command-line tools.</blockquote>
+<p>🏷️ terminal, protocol, program status, debugging</p>
 <hr>
-<h3>9. Windows 热补丁技术如何避免已打补丁函数的冲突</h3>
-<p><a href="https://devblogs.microsoft.com/oldnewthing/20261005-00/?p=112755/">If somebody tries to hot-patch an already-hot-patched function, how do they avoid conflicts?</a> — <strong>devblogs.microsoft.com/oldnewthing</strong> · 15 小时前 · ⭐ 23/30</p>
+<h3>10. 如何阅读代码</h3>
+<p><a href="https://seangoedecke.com/how-to-read-code/">How to read code</a> — <strong>seangoedecke.com</strong> · 5 小时前 · ⭐ 22/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>该文章探讨了在 Windows 系统中，当尝试对一个已经应用了热补丁的函数再次进行热补丁操作时，如何避免潜在的冲突。文章简要提及了热补丁技术是针对 Windows 系统的特性。</blockquote>
+<blockquote>阅读代码与阅读书籍、报纸或电子邮件的方式不同。虽然我们都熟悉按顺序阅读文本，但代码的结构和执行方式要求一种不同的理解方法。本文探讨了代码阅读的独特性。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This post addresses how conflicts are avoided when attempting to hot-patch a function that has already been hot-patched on Windows. It briefly notes that hot-patching is a Windows-specific technology.</blockquote>
-<p>🏷️ hot-patching, Windows, function patching</p>
+<blockquote>Reading code differs from reading books, newspapers, or emails. While we are accustomed to reading text sequentially, the structure and execution of code necessitate a distinct approach to comprehension. This article explores the unique aspects of code reading.</blockquote>
+<p>🏷️ code reading, software development, learning</p>
 <hr>
-<h3>10. 微基准测试的时长考量</h3>
-<p><a href="https://matklad.github.io/2026/10/05/benchmark-milliseconds.html">Benchmark In Milliseconds</a> — <strong>matklad.github.io</strong> · 1 天前 · ⭐ 20/30</p>
+<h3>11. 编译器为何有时使用ud2，有时使用int 3来处理不应执行的代码？</h3>
+<p><a href="https://devblogs.microsoft.com/oldnewthing/20261006-00/?p=112757/">Why does the compiler sometimes use ud2 and sometimes int 3 for code that shouldn’t execute?</a> — <strong>devblogs.microsoft.com/oldnewthing</strong> · 15 小时前 · ⭐ 22/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>微基准测试应该运行多久？一个经验法则是调整输入大小，直到基准测试运行大约300毫秒。这样做的主要原因是，过短的测试可能无法捕捉到真实的性能波动，而过长的测试则会降低效率。300毫秒的阈值被认为是在准确性和效率之间取得良好平衡的一个点，能够提供有意义的性能数据。</blockquote>
+<blockquote>编译器在处理不应执行的代码时，有时会使用ud2指令，有时会使用int 3指令。这两种指令的选择背后存在不同的原因。本文探讨了这种现象。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>How long should a micro benchmark run? A rule of thumb is to adjust the input size until the benchmark takes approximately 300ms. This duration is chosen to balance accuracy and efficiency, avoiding overly short tests that miss performance fluctuations and overly long tests that reduce efficiency. The 300ms threshold provides meaningful performance data.</blockquote>
-<p>🏷️ benchmarking, performance, microbenchmark, testing</p>
+<blockquote>Compilers sometimes use the 'ud2' instruction and other times the 'int 3' instruction for code that should not execute. There are different underlying reasons for choosing one over the other. This post delves into this phenomenon.</blockquote>
+<p>🏷️ compiler, ud2, int 3, assembly</p>
 <hr>
 <h2>🛠 工具 / 开源</h2>
-<h3>11. RSS Club：RSS 和 Atom Feed 的变更通知</h3>
-<p>[[RSS Club] Changes to the RSS and Atom feeds](https://shkspr.mobi/blog/2026/10/rss-club-changes-to-the-rss-and-atom-feeds/) — <strong>shkspr.mobi</strong> · 18 小时前 · ⭐ 21/30</p>
+<h3>12. llm-openai-decisions 0.1a0</h3>
+<p><a href="https://simonwillison.net/2026/Oct/6/llm-openai-decisions/">llm-openai-decisions 0.1a0</a> — <strong>simonwillison.net</strong> · 6 小时前 · ⭐ 23/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>RSS Club 发布通知，说明近期对 RSS 和 Atom Feed 进行了修改，以解决之前意外破坏部分用户 Feed 阅读器的问题。问题源于在 Feed 中使用了 CDATA 块，导致部分 Feed 阅读器错误地解码了本应保持转义的 HTML。此次更新旨在修复此问题。</blockquote>
+<blockquote>OpenAI 发布了其新的 Jev 风格 Decisions API，该 API 在上周的 DevDay 上已宣布。作者基于已有的 llm-typesafe 插件，利用 GPT-6 Astra 阅读了新的 OpenAI API 文档，并发布了 llm-openai-decisions 0.1a0 版本。此举表明了对新 API 的快速集成和支持。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>RSS Club announces changes to its RSS and Atom feeds to fix an issue that accidentally broke some feed readers. The problem arose from using CDATA blocks in the feed, causing some readers to unescape HTML that should have remained escaped. This update aims to resolve that specific issue.</blockquote>
-<p>🏷️ RSS, Atom feeds, feed readers, CDATA</p>
+<blockquote>OpenAI has released its new Jev-style Decisions API, previously announced at DevDay. The author, leveraging an existing llm-typesafe plugin and GPT-6 Astra, has read the new OpenAI API documentation and released version 0.1a0 of llm-openai-decisions. This indicates rapid integration and support for the new API.</blockquote>
+<p>🏷️ OpenAI API, LLM, developer tools, decisions API</p>
 <hr>
-<h3>12. [赞助] Sunnny</h3>
-<p>[[Sponsor] Sunnny](https://sunnny.com/) — <strong>daringfireball.net</strong> · 6 小时前 · ⭐ 17/30</p>
+<h3>13. llm-mistral 0.16</h3>
+<p><a href="https://simonwillison.net/2026/Oct/6/llm-mistral/">llm-mistral 0.16</a> — <strong>simonwillison.net</strong> · 7 小时前 · ⭐ 23/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Sunnny 宣布其B2B软件将于10月19日推出早期访问版本，并以一种引人入胜的方式宣传其产品的吸引力。他们将B2B软件形容为“美味”，并鼓励用户“传播爱”。此次推广旨在引起潜在用户的兴趣，并为即将到来的发布造势。</blockquote>
+<blockquote>llm-mistral 0.16 版本发布，新增了对推理模型（如新发布的 Mistral Large 4）的支持。此次更新扩展了该工具在处理更复杂 AI 任务方面的能力，特别是与 Mistral AI 的最新模型集成。这标志着该 LLM 工具在支持先进推理模型方面迈出了重要一步。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Sunnny announced that its B2B software will have an early access release on October 19th, promoting its appeal in an engaging way. They describe the B2B software as 'delicious' and encourage users to 'spread the love.' This promotion aims to pique the interest of potential users and build anticipation for the upcoming launch.</blockquote>
-<p>🏷️ B2B software, early access, SaaS</p>
-<hr>
-<h2>📝 其他</h2>
-<h3>13. Pluralistic：审查（2026年10月5日）</h3>
-<p><a href="https://pluralistic.net/2026/10/05/pervert-glasses/">Pluralistic: Scrutinized (05 Oct 2026)</a> — <strong>pluralistic.net</strong> · 10 小时前 · ⭐ 20/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>本期 Pluralistic 链接集聚焦“色情眼镜”与真实自我之间的对比，并包含一系列多元化主题。内容涵盖 DRM-free 在英国的推广、枫叶玫瑰、意大利维基百科关闭、温哥华的房产投机税成效、前苏联左翼人士的“九月”组织、“The Every”书籍、尼尔森与中国互联网的结合、Get-a-cluevog、猫咪 EULA、心形滤水壶、千禧一代的困境以及苹果的非法行为等。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>This edition of Pluralistic links scrutinizes 'pervert glasses' versus the authentic self, alongside a diverse range of topics. It covers DRM-free in the UK, maple-leaf roses, the Italian Wikipedia shutdown, Vancouver's property speculator tax effectiveness, ex-Soviet leftists launching 'September,' 'The Every,' Nielsen x Chinese internet, Get-a-cluevog, Cat EULA, heart carafes, the plight of millennials, and Apple's unlawful actions.</blockquote>
-<p>🏷️ links, culture, technology trends</p>
-<hr>
-<h3>14. IBM Thinkpad 于 1992 年首次亮相</h3>
-<p><a href="https://dfarq.homeip.net/the-ibm-thinkpads-1992-debut/?utm_source=rss&amp;amp;#038;utm_medium=rss&amp;amp;#038;utm_campaign=the-ibm-thinkpads-1992-debut">The IBM Thinkpad’s 1992 debut</a> — <strong>dfarq.homeip.net</strong> · 18 小时前 · ⭐ 20/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>1992年10月5日，IBM发布了其首批三款Thinkpad型号。在此之前，IBM已有便携式电脑，如1984年的Portable PC和1986年的PC Convertible。然而，这些早期产品并未像Thinkpad那样获得持久的成功，Thinkpad系列凭借其创新设计和可靠性能，最终成为便携式计算领域的标志性产品。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>On October 5, 1992, IBM launched its first three Thinkpad models. While IBM had portable computers before, including the 1984 Portable PC and the 1986 PC Convertible, none achieved the lasting success of the Thinkpad. The Thinkpad series ultimately became an iconic product in portable computing due to its innovative design and reliable performance.</blockquote>
-<p>🏷️ IBM Thinkpad, history, laptops</p>
+<blockquote>Version 0.16 of llm-mistral has been released, adding support for reasoning models, such as the newly released Mistral Large 4. This update expands the tool's capabilities in handling more complex AI tasks, particularly with the integration of Mistral AI's latest model. This marks a significant step in supporting advanced reasoning models.</blockquote>
+<p>🏷️ Mistral AI, LLM, reasoning models, developer tools</p>
 <hr>
 <h2>🔒 安全</h2>
-<h3>15. Troy Hunt 的每周更新 524：来自哥本哈根的现场报道</h3>
-<p><a href="https://www.troyhunt.com/weekly-update-524/">Weekly Update 524: Live From Copenhagen</a> — <strong>troyhunt.com</strong> · 1 天前 · ⭐ 23/30</p>
+<h3>14. 非官方命令行工具可从 macOS 27 中移除 Apple Intelligence</h3>
+<p><a href="https://arstechnica.com/apple/2026/10/command-line-tool-quickly-removes-apple-intelligence-from-macos-27/">Unofficial Command-Line Tool Removes Apple Intelligence From MacOS 27</a> — <strong>daringfireball.net</strong> · 11 小时前 · ⭐ 23/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Troy Hunt 分享了他本周的最新动态，他目前正在哥本哈根机场准备回国。本周的更新中，他提到了两起“ShinyHunters”的逮捕事件，分别发生在荷兰和沙特阿拉伯，并简要介绍了相关细节。</blockquote>
+<blockquote>macOS 27 的 Golden Gate 版本取消了直接关闭 Apple Intelligence 的选项，使得禁用该功能更加困难，并且即使不使用，AI 模型也会占用磁盘空间。为应对此问题，一位开发者创建了一个非官方的命令行工具，允许用户快速从系统中移除 Apple Intelligence 的相关组件。该工具的出现反映了用户对控制设备 AI 功能的需求。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Troy Hunt shares his latest weekly update from Copenhagen, where he is currently at the airport preparing for his journey home. This week's update highlights two 'ShinyHunters' arrests, one in the Netherlands and another in Saudi Arabia, with brief details provided.</blockquote>
-<p>🏷️ cybersecurity, breaches, ShinyHunters, Troy Hunt</p>
+<blockquote>macOS 27 Golden Gate lacks a toggle to turn off Apple Intelligence, making it harder to disable and causing AI models to occupy disk space even if unused. In response, a developer has created an unofficial command-line tool to quickly remove Apple Intelligence components from the system. This tool addresses user demand for control over device AI features.</blockquote>
+<p>🏷️ Apple Intelligence, macOS, privacy, disabling features</p>
 <hr>
-<p>*生成于 2026-10-06 05:52 | 扫描 83 源 → 获取 2344 篇 → 精选 15 篇* *基于 <a href="https://refactoringenglish.com/tools/hn-popularity/">Hacker News Popularity Contest 2025</a> RSS 源列表，由 <a href="https://x.com/karpathy">Andrej Karpathy</a> 推荐*</p>
+<h2>💡 观点 / 杂谈</h2>
+<h3>15. 信贷紧缩</h3>
+<p><a href="https://www.wheresyoured.at/credit-crunch/">Credit Crunch</a> — <strong>wheresyoured.at</strong> · 14 小时前 · ⭐ 23/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>如果您喜欢这篇文章，可以订阅我的付费新闻通讯。订阅价格为每年70美元、每季度18美元或每月7美元。订阅后，您将获得每周的付费新闻通讯，其中包含对NVIDIA、Anthropic和OpenAI的深入分析。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>If you enjoyed this article, consider subscribing to my premium newsletter. Subscription options include $70 annually, $18 quarterly, or $7 monthly. Subscribers receive a weekly premium newsletter featuring in-depth analyses of companies like NVIDIA, Anthropic, and OpenAI.</blockquote>
+<p>🏷️ NVIDIA, Anthropic, OpenAI, tech industry analysis</p>
+<hr>
+<p>*生成于 2026-10-07 05:25 | 扫描 82 源 → 获取 2315 篇 → 精选 15 篇* *基于 <a href="https://refactoringenglish.com/tools/hn-popularity/">Hacker News Popularity Contest 2025</a> RSS 源列表，由 <a href="https://x.com/karpathy">Andrej Karpathy</a> 推荐*</p>
     </article>
   </main>
-  <script id="speech-text" type="application/json">"🎧 点这里朗读今日日报\n📰 AI 博客每日精选 — 2026-10-06\n来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15\n📝 今日看点\n今日技术看点聚焦两大趋势：一是人工智能与机器学习的持续演进，从微基准测试优化到对AI伦理的探讨；二是企业级软件与技术创新，预示着B2B领域的新变革，同时回顾经典技术产品与人物，致敬技术史上的里程碑。此外，网络安全与开发者工具的更新也值得关注。\n \n🏆 今日必读\n🥇 IBM Thinkpad 于 1992 年首次亮相\nOpenAI Announces Their Text Watermarking Plans — daringfireball.net · 6 小时前 · 🤖 AI / ML\n中文摘要\n1992 年 10 月 5 日，IBM 推出了首批三款 Thinkpad 型号，标志着其在便携式计算机领域的重大突破。尽管 IBM 此前已有便携式电脑产品，如 1984 年的 Portable PC 和 1986 年的 PC Convertible，但这些产品均未获得 Thinkpad 那样的持久成功。Thinkpad 的推出奠定了其在笔记本电脑市场的重要地位。\nEnglish Summary\nOn October 5, 1992, IBM launched its first three Thinkpad models, marking a significant entry into the portable computer market. While IBM had prior portable offerings like the 1984 Portable PC and 1986 PC Convertible, none achieved the lasting success of the Thinkpad. This debut established the Thinkpad's enduring legacy in the laptop industry.\n💡 为什么值得读: 了解一款标志性笔记本电脑的诞生及其与早期便携式电脑的对比。\n💡 Why read it: Understand the debut of an iconic laptop and its contrast with earlier portable computers.\n🏷️ OpenAI, text watermarking, AI Act, generative AI\n🥈 微基准测试的时长建议：300 毫秒\nQuoting Felix Rieseberg — simonwillison.net · 5 小时前 · 🤖 AI / ML\n中文摘要\n进行微基准测试时，建议将输入大小调整至使测试运行约 300 毫秒。这一时长能够平衡测试的准确性与效率，避免因时间过短导致结果不稳定，或因时间过长而降低开发迭代速度。通过精确控制测试时长，可以获得更可靠的性能度量。\nEnglish Summary\nWhen conducting micro-benchmarks, a rule of thumb is to adjust input size until the benchmark runs for approximately 300ms. This duration balances accuracy and efficiency, preventing unstable results from short runs and slow iteration cycles from excessively long ones. Precise control over test duration yields more reliable performance measurements.\n💡 为什么值得读: 学习一种实用的微基准测试时长设定方法，以获得更可靠的性能数据。\n💡 Why read it: Learn a practical method for setting micro-benchmark duration to obtain more reliable performance data.\n🏷️ LLM, model inference, cloud, tool calls\n🥉 Ternus 和 Cook 在史蒂夫·乔布斯逝世 15 周年之际发文缅怀\nQwen3.8 27B addition in words — simonwillison.net · 1 天前 · 🤖 AI / ML\n中文摘要\n在史蒂夫·乔布斯逝世 15 周年之际，John Ternus 和 Tim Cook 分别在 X（原 Twitter）上发文表达了深切的怀念。Ternus 强调了乔布斯对细节、体验和人的关注如何持续指导着他们的工作。Cook 则表示乔布斯改变了世界和无数人的生活，他的精神体现在他创造的一切和激励的每一个人身上。\nEnglish Summary\nOn the 15th anniversary of Steve Jobs's death, John Ternus and Tim Cook posted brief remembrances on X. Ternus highlighted how Jobs's teaching to care about every detail, experience, and person continues to guide their work. Cook stated that Jobs changed the world and many lives, with his spirit living on in his creations and inspirations.\n💡 为什么值得读: 通过苹果高管的缅怀，感受史蒂夫·乔布斯对科技行业和个人产生的深远影响。\n💡 Why read it: Gain insight into Steve Jobs's profound impact on the tech industry and individuals through remembrances from Apple executives.\n🏷️ LLM, Qwen, benchmarking, AI\n \n📊 数据概览\n \n \n \n分类分布\nmermaid\npie showData\n title \"文章分类分布\"\n \"💡 观点 / 杂谈\" : 4\n \"🤖 AI / ML\" : 3\n \"⚙️ 工程\" : 3\n \"🛠 工具 / 开源\" : 2\n \"📝 其他\" : 2\n \"🔒 安全\" : 1\n高频关键词\nmermaid\nxychart-beta horizontal\n title \"高频关键词\"\n x-axis [\"benchmarking\", \"llm\", \"performance\", \"steve jobs\", \"openai\", \"text watermarking\", \"ai act\", \"generative ai\", \"model inference\", \"cloud\", \"tool calls\", \"qwen\"]\n y-axis \"出现次数\" 0 --> 5\n bar [3, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1]\n📈 纯文本关键词图（终端友好）\nbenchmarking │ ████████████████████ 3\nllm │ █████████████░░░░░░░ 2\nperformance │ █████████████░░░░░░░ 2\nsteve jobs │ █████████████░░░░░░░ 2\nopenai │ ███████░░░░░░░░░░░░░ 1\ntext watermarking │ ███████░░░░░░░░░░░░░ 1\nai act │ ███████░░░░░░░░░░░░░ 1\ngenerative ai │ ███████░░░░░░░░░░░░░ 1\nmodel inference │ ███████░░░░░░░░░░░░░ 1\ncloud │ ███████░░░░░░░░░░░░░ 1\n🏷️ 话题标签\nbenchmarking(3) · llm(2) · performance(2) · steve jobs(2) · openai(1) · text watermarking(1) · ai act(1) · generative ai(1) · model inference(1) · cloud(1) · tool calls(1) · qwen(1) · ai(1) · python(1) · python 3.15(1) · tech industry(1) · usability(1) · user experience(1) · digital life(1) · hot-patching(1)\n \n💡 观点 / 杂谈\n1. 怀念 Link 报纸：一段改变人生的经历\n“I’m Embarrassed on Behalf of the Tech Industry” — blog.jim-nielsen.com · 1 天前 · ⭐ 24/30\n中文摘要\n作者在 Link 报纸迎来 20 周年之际，回忆了这段报纸对自己人生的深刻影响。尽管 Link 报纸的辉煌时期已过去 18 年，作者仍对其充满怀念，并认为这段工作经历改变了自己的人生轨迹。文章表达了对一份曾经充满意义的工作的追忆。\nEnglish Summary\nOn the 20th anniversary of the newspaper Link, the author reflects on how it profoundly changed their life. Despite 18 years having passed since its peak, the author deeply misses the publication and considers the job a life-altering experience. The piece is a remembrance of a once meaningful professional period.\n🏷️ tech industry, usability, user experience, digital life\n \n2. 史蒂夫·乔布斯在 2010 年参观 Apple Park 模拟模型\nSteve Jobs, Walking Through a Mockup for Apple Park in 2010 — daringfireball.net · 3 小时前 · ⭐ 20/30\n中文摘要\n这篇文章分享了一张史蒂夫·乔布斯在 2010 年参观 Apple Park 模拟模型的照片。作者认为这张照片非常应景，并称赞了“Make Something Wonderful”这本书是一份珍贵的礼物。\nEnglish Summary\nThis entry shares a photo of Steve Jobs walking through a mockup for Apple Park in 2010. The author finds the photo particularly apt and praises the book 'Make Something Wonderful' as a gift.\n🏷️ Steve Jobs, Apple Park, design\n \n3. Ternus 和 Cook 在史蒂夫·乔布斯逝世15周年之际发文悼念\nTernus and Cook Tweet Brief Remembrances on the 15th Anniversary of Steve Jobs’s Death — daringfireball.net · 10 小时前 · ⭐ 19/30\n中文摘要\n在史蒂夫·乔布斯逝世15周年之际，苹果高管John Ternus和Tim Cook在X（前身为Twitter）上发布了简短的悼念。Ternus强调了乔布斯对细节、体验和人的关注如何持续指引着苹果的工作。Cook则表示，乔布斯不仅给世界留下了印记，更是彻底改变了世界和许多人的生活，他的精神体现在他创造的一切和激励的每一个人身上。\nEnglish Summary\nOn the 15th anniversary of Steve Jobs's death, Apple executives John Ternus and Tim Cook posted brief remembrances on X. Ternus highlighted how Jobs's focus on every detail, experience, and person continues to guide Apple's work. Cook stated that Jobs not only left a mark on the world but fundamentally changed it and many lives, with his spirit living on in his creations and inspirations.\n🏷️ Steve Jobs, anniversary, Apple leadership\n \n4. 失落的链接\nMissing Link — tedium.co · 2 小时前 · ⭐ 16/30\n中文摘要\n作者在一家名为“Link”的报纸迎来创刊20周年之际，分享了一些关于该报纸的零散思绪。他表示，这家报纸在某种程度上改变了他的生活，尽管距离他离开该报纸已有18年，他仍然怀念那份工作。文章表达了对过去工作经历的怀旧之情。\nEnglish Summary\nThe author shares some spare thoughts about a newspaper called 'Link' on its 20th anniversary, noting that it significantly changed his life. Even after 18 years since leaving the job, he still misses it. The piece reflects a sense of nostalgia for past work experiences.\n🏷️ personal reflection, career, journalism\n \n🤖 AI / ML\n5. IBM Thinkpad 于 1992 年首次亮相\nOpenAI Announces Their Text Watermarking Plans — daringfireball.net · 6 小时前 · ⭐ 28/30\n中文摘要\n1992 年 10 月 5 日，IBM 推出了首批三款 Thinkpad 型号，标志着其在便携式计算机领域的重大突破。尽管 IBM 此前已有便携式电脑产品，如 1984 年的 Portable PC 和 1986 年的 PC Convertible，但这些产品均未获得 Thinkpad 那样的持久成功。Thinkpad 的推出奠定了其在笔记本电脑市场的重要地位。\nEnglish Summary\nOn October 5, 1992, IBM launched its first three Thinkpad models, marking a significant entry into the portable computer market. While IBM had prior portable offerings like the 1984 Portable PC and 1986 PC Convertible, none achieved the lasting success of the Thinkpad. This debut established the Thinkpad's enduring legacy in the laptop industry.\n🏷️ OpenAI, text watermarking, AI Act, generative AI\n \n6. 微基准测试的时长建议：300 毫秒\nQuoting Felix Rieseberg — simonwillison.net · 5 小时前 · ⭐ 25/30\n中文摘要\n进行微基准测试时，建议将输入大小调整至使测试运行约 300 毫秒。这一时长能够平衡测试的准确性与效率，避免因时间过短导致结果不稳定，或因时间过长而降低开发迭代速度。通过精确控制测试时长，可以获得更可靠的性能度量。\nEnglish Summary\nWhen conducting micro-benchmarks, a rule of thumb is to adjust input size until the benchmark runs for approximately 300ms. This duration balances accuracy and efficiency, preventing unstable results from short runs and slow iteration cycles from excessively long ones. Precise control over test duration yields more reliable performance measurements.\n🏷️ LLM, model inference, cloud, tool calls\n \n7. Ternus 和 Cook 在史蒂夫·乔布斯逝世 15 周年之际发文缅怀\nQwen3.8 27B addition in words — simonwillison.net · 1 天前 · ⭐ 25/30\n中文摘要\n在史蒂夫·乔布斯逝世 15 周年之际，John Ternus 和 Tim Cook 分别在 X（原 Twitter）上发文表达了深切的怀念。Ternus 强调了乔布斯对细节、体验和人的关注如何持续指导着他们的工作。Cook 则表示乔布斯改变了世界和无数人的生活，他的精神体现在他创造的一切和激励的每一个人身上。\nEnglish Summary\nOn the 15th anniversary of Steve Jobs's death, John Ternus and Tim Cook posted brief remembrances on X. Ternus highlighted how Jobs's teaching to care about every detail, experience, and person continues to guide their work. Cook stated that Jobs changed the world and many lives, with his spirit living on in his creations and inspirations.\n🏷️ LLM, Qwen, benchmarking, AI\n \n⚙️ 工程\n8. Sunnny：一款令人期待的 B2B 软件\nHow fast is Python 3.15? — miguelgrinberg.com · 19 小时前 · ⭐ 24/30\n中文摘要\nSunnny 是一款即将于 10 月 19 日发布的 B2B 软件，预示着其在企业级软件领域将带来令人耳目一新的体验。该产品承诺提供“美味”的 B2B 软件体验，并已开放早期访问。其发布预示着对现有 B2B 软件模式的革新。\nEnglish Summary\nSunnny, a B2B software set for early access release on October 19th, promises a remarkably \"delicious\" experience in the enterprise software space. This upcoming launch suggests a significant innovation in how B2B software is designed and perceived, aiming to offer a refreshing approach to business tools.\n🏷️ Python, performance, benchmarking, Python 3.15\n \n9. Windows 热补丁技术如何避免已打补丁函数的冲突\nIf somebody tries to hot-patch an already-hot-patched function, how do they avoid conflicts? — devblogs.microsoft.com/oldnewthing · 15 小时前 · ⭐ 23/30\n中文摘要\n该文章探讨了在 Windows 系统中，当尝试对一个已经应用了热补丁的函数再次进行热补丁操作时，如何避免潜在的冲突。文章简要提及了热补丁技术是针对 Windows 系统的特性。\nEnglish Summary\nThis post addresses how conflicts are avoided when attempting to hot-patch a function that has already been hot-patched on Windows. It briefly notes that hot-patching is a Windows-specific technology.\n🏷️ hot-patching, Windows, function patching\n \n10. 微基准测试的时长考量\nBenchmark In Milliseconds — matklad.github.io · 1 天前 · ⭐ 20/30\n中文摘要\n微基准测试应该运行多久？一个经验法则是调整输入大小，直到基准测试运行大约300毫秒。这样做的主要原因是，过短的测试可能无法捕捉到真实的性能波动，而过长的测试则会降低效率。300毫秒的阈值被认为是在准确性和效率之间取得良好平衡的一个点，能够提供有意义的性能数据。\nEnglish Summary\nHow long should a micro benchmark run? A rule of thumb is to adjust the input size until the benchmark takes approximately 300ms. This duration is chosen to balance accuracy and efficiency, avoiding overly short tests that miss performance fluctuations and overly long tests that reduce efficiency. The 300ms threshold provides meaningful performance data.\n🏷️ benchmarking, performance, microbenchmark, testing\n \n🛠 工具 / 开源\n11. RSS Club：RSS 和 Atom Feed 的变更通知\n[[RSS Club] Changes to the RSS and Atom feeds](https://shkspr.mobi/blog/2026/10/rss-club-changes-to-the-rss-and-atom-feeds/) — shkspr.mobi · 18 小时前 · ⭐ 21/30\n中文摘要\nRSS Club 发布通知，说明近期对 RSS 和 Atom Feed 进行了修改，以解决之前意外破坏部分用户 Feed 阅读器的问题。问题源于在 Feed 中使用了 CDATA 块，导致部分 Feed 阅读器错误地解码了本应保持转义的 HTML。此次更新旨在修复此问题。\nEnglish Summary\nRSS Club announces changes to its RSS and Atom feeds to fix an issue that accidentally broke some feed readers. The problem arose from using CDATA blocks in the feed, causing some readers to unescape HTML that should have remained escaped. This update aims to resolve that specific issue.\n🏷️ RSS, Atom feeds, feed readers, CDATA\n \n12. [赞助] Sunnny\n[[Sponsor] Sunnny](https://sunnny.com/) — daringfireball.net · 6 小时前 · ⭐ 17/30\n中文摘要\nSunnny 宣布其B2B软件将于10月19日推出早期访问版本，并以一种引人入胜的方式宣传其产品的吸引力。他们将B2B软件形容为“美味”，并鼓励用户“传播爱”。此次推广旨在引起潜在用户的兴趣，并为即将到来的发布造势。\nEnglish Summary\nSunnny announced that its B2B software will have an early access release on October 19th, promoting its appeal in an engaging way. They describe the B2B software as 'delicious' and encourage users to 'spread the love.' This promotion aims to pique the interest of potential users and build anticipation for the upcoming launch.\n🏷️ B2B software, early access, SaaS\n \n📝 其他\n13. Pluralistic：审查（2026年10月5日）\nPluralistic: Scrutinized (05 Oct 2026) — pluralistic.net · 10 小时前 · ⭐ 20/30\n中文摘要\n本期 Pluralistic 链接集聚焦“色情眼镜”与真实自我之间的对比，并包含一系列多元化主题。内容涵盖 DRM-free 在英国的推广、枫叶玫瑰、意大利维基百科关闭、温哥华的房产投机税成效、前苏联左翼人士的“九月”组织、“The Every”书籍、尼尔森与中国互联网的结合、Get-a-cluevog、猫咪 EULA、心形滤水壶、千禧一代的困境以及苹果的非法行为等。\nEnglish Summary\nThis edition of Pluralistic links scrutinizes 'pervert glasses' versus the authentic self, alongside a diverse range of topics. It covers DRM-free in the UK, maple-leaf roses, the Italian Wikipedia shutdown, Vancouver's property speculator tax effectiveness, ex-Soviet leftists launching 'September,' 'The Every,' Nielsen x Chinese internet, Get-a-cluevog, Cat EULA, heart carafes, the plight of millennials, and Apple's unlawful actions.\n🏷️ links, culture, technology trends\n \n14. IBM Thinkpad 于 1992 年首次亮相\nThe IBM Thinkpad’s 1992 debut — dfarq.homeip.net · 18 小时前 · ⭐ 20/30\n中文摘要\n1992年10月5日，IBM发布了其首批三款Thinkpad型号。在此之前，IBM已有便携式电脑，如1984年的Portable PC和1986年的PC Convertible。然而，这些早期产品并未像Thinkpad那样获得持久的成功，Thinkpad系列凭借其创新设计和可靠性能，最终成为便携式计算领域的标志性产品。\nEnglish Summary\nOn October 5, 1992, IBM launched its first three Thinkpad models. While IBM had portable computers before, including the 1984 Portable PC and the 1986 PC Convertible, none achieved the lasting success of the Thinkpad. The Thinkpad series ultimately became an iconic product in portable computing due to its innovative design and reliable performance.\n🏷️ IBM Thinkpad, history, laptops\n \n🔒 安全\n15. Troy Hunt 的每周更新 524：来自哥本哈根的现场报道\nWeekly Update 524: Live From Copenhagen — troyhunt.com · 1 天前 · ⭐ 23/30\n中文摘要\nTroy Hunt 分享了他本周的最新动态，他目前正在哥本哈根机场准备回国。本周的更新中，他提到了两起“ShinyHunters”的逮捕事件，分别发生在荷兰和沙特阿拉伯，并简要介绍了相关细节。\nEnglish Summary\nTroy Hunt shares his latest weekly update from Copenhagen, where he is currently at the airport preparing for his journey home. This week's update highlights two 'ShinyHunters' arrests, one in the Netherlands and another in Saudi Arabia, with brief details provided.\n🏷️ cybersecurity, breaches, ShinyHunters, Troy Hunt\n \n生成于 2026-10-06 05:52 | 扫描 83 源 → 获取 2344 篇 → 精选 15 篇\n基于 Hacker News Popularity Contest 2025 RSS 源列表，由 Andrej Karpathy 推荐"</script>
+  <script id="speech-text" type="application/json">"🎧 点这里朗读今日日报\n📰 AI 博客每日精选 — 2026-10-07\n来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15\n📝 今日看点\n今日技术看点聚焦人工智能的广泛应用与开放生态。从利用大型语言模型创作音乐、优化模型推理，到对开源嵌入式模型的赞赏，AI 正以前所未有的方式渗透到创意和工程领域。同时，开发者工具的更新，如对 Mistral Large 4 的支持，以及新的终端协议提升程序可见性，都预示着技术正在朝着更高效、更开放的方向发展。\n \n🏆 今日必读\n🥇 信贷紧缩\nOpenAI “rogue” agent activities found on Wikimedia projects — simonwillison.net · 5 小时前 · 🤖 AI / ML\n中文摘要\n文章讨论了当前经济环境下信贷紧缩的潜在影响。作者指出，高利率和通胀压力正在限制企业和个人的借贷能力。这可能导致投资减少、消费疲软以及经济增长放缓。作者建议关注宏观经济指标，并为潜在的经济下行做好准备。\nEnglish Summary\nThis piece discusses the potential impacts of a credit crunch in the current economic climate. The author points out that high interest rates and inflationary pressures are limiting the borrowing capacity of businesses and individuals. This could lead to reduced investment, weaker consumption, and slower economic growth. The author suggests monitoring macroeconomic indicators and preparing for a potential economic downturn.\n💡 为什么值得读: 了解当前宏观经济环境下信贷紧缩的潜在风险和应对策略。\n💡 Why read it: Understand the potential risks and mitigation strategies of a credit crunch in the current macroeconomic environment.\n🏷️ OpenAI, Wikimedia, AI safety, rogue agents\n🥈 引用 Felix Rieseberg 的观点\nQuoting Victoria Kim — simonwillison.net · 5 小时前 · 🤖 AI / ML\n中文摘要\nFelix Rieseberg 讨论了 Cowork 应用中模型推理的演变。早期版本在云端运行模型推理，并在用户本地计算机上执行 Anthropic 提供的虚拟机（VM）来处理工具调用，以确保能力、安全性和隐私。然而，本地运行 VM 带来了磁盘、电池和性能上的成本，用户对此并不满意。\nEnglish Summary\nFelix Rieseberg discusses the evolution of model inference in the Cowork application. Early versions ran model inference in the cloud, executing tool calls in an Anthropic-provided VM shipped to the user's computer for capability, safety, and security. However, users disliked the disk, battery, and performance costs associated with running the VM locally.\n💡 为什么值得读: 了解 AI 应用在本地部署和云端推理之间的权衡与用户体验的演变。\n💡 Why read it: Understand the trade-offs between local deployment and cloud inference for AI applications and the evolution of user experience.\n🏷️ OpenAI, data privacy, security breach, monitoring\n🥉 如何阅读代码\nIntroducing Mistral Large 4: Le chonk — simonwillison.net · 9 小时前 · 🤖 AI / ML\n中文摘要\n文章探讨了阅读代码与阅读书籍、文章等文本的根本区别。与线性阅读不同，代码阅读需要理解其结构、逻辑和意图。作者强调了理解代码上下文、依赖关系以及作者意图的重要性。这需要一种更具分析性和探索性的阅读方法。\nEnglish Summary\nThis article explores the fundamental differences between reading code and reading texts like books or articles. Unlike linear reading, code comprehension requires understanding its structure, logic, and intent. The author emphasizes the importance of grasping code context, dependencies, and the author's intentions, necessitating a more analytical and exploratory approach.\n💡 为什么值得读: 学习一套系统性的方法来更有效地理解和分析代码。\n💡 Why read it: Learn a systematic approach to more effectively understand and analyze code.\n🏷️ Mistral Large 4, LLM, AI models, large language models\n \n📊 数据概览\n \n \n \n分类分布\nmermaid\npie showData\n title \"文章分类分布\"\n \"🤖 AI / ML\" : 8\n \"⚙️ 工程\" : 3\n \"🛠 工具 / 开源\" : 2\n \"🔒 安全\" : 1\n \"💡 观点 / 杂谈\" : 1\n高频关键词\nmermaid\nxychart-beta horizontal\n title \"高频关键词\"\n x-axis [\"llm\", \"openai\", \"ai models\", \"developer tools\", \"wikimedia\", \"ai safety\", \"rogue agents\", \"data privacy\", \"security breach\", \"monitoring\", \"mistral large 4\", \"large language models\"]\n y-axis \"出现次数\" 0 --> 8\n bar [6, 4, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1]\n📈 纯文本关键词图（终端友好）\nllm │ ████████████████████ 6\nopenai │ █████████████░░░░░░░ 4\nai models │ ███████░░░░░░░░░░░░░ 2\ndeveloper tools │ ███████░░░░░░░░░░░░░ 2\nwikimedia │ ███░░░░░░░░░░░░░░░░░ 1\nai safety │ ███░░░░░░░░░░░░░░░░░ 1\nrogue agents │ ███░░░░░░░░░░░░░░░░░ 1\ndata privacy │ ███░░░░░░░░░░░░░░░░░ 1\nsecurity breach │ ███░░░░░░░░░░░░░░░░░ 1\nmonitoring │ ███░░░░░░░░░░░░░░░░░ 1\n🏷️ 话题标签\nllm(6) · openai(4) · ai models(2) · developer tools(2) · wikimedia(1) · ai safety(1) · rogue agents(1) · data privacy(1) · security breach(1) · monitoring(1) · mistral large 4(1) · large language models(1) · text watermarking(1) · ai act(1) · generative ai(1) · mistral large(1) · benchmarks(1) · gemma(1) · embeddings(1) · google ai(1)\n \n🤖 AI / ML\n1. 信贷紧缩\nOpenAI “rogue” agent activities found on Wikimedia projects — simonwillison.net · 5 小时前 · ⭐ 26/30\n中文摘要\n文章讨论了当前经济环境下信贷紧缩的潜在影响。作者指出，高利率和通胀压力正在限制企业和个人的借贷能力。这可能导致投资减少、消费疲软以及经济增长放缓。作者建议关注宏观经济指标，并为潜在的经济下行做好准备。\nEnglish Summary\nThis piece discusses the potential impacts of a credit crunch in the current economic climate. The author points out that high interest rates and inflationary pressures are limiting the borrowing capacity of businesses and individuals. This could lead to reduced investment, weaker consumption, and slower economic growth. The author suggests monitoring macroeconomic indicators and preparing for a potential economic downturn.\n🏷️ OpenAI, Wikimedia, AI safety, rogue agents\n \n2. 引用 Felix Rieseberg 的观点\nQuoting Victoria Kim — simonwillison.net · 5 小时前 · ⭐ 26/30\n中文摘要\nFelix Rieseberg 讨论了 Cowork 应用中模型推理的演变。早期版本在云端运行模型推理，并在用户本地计算机上执行 Anthropic 提供的虚拟机（VM）来处理工具调用，以确保能力、安全性和隐私。然而，本地运行 VM 带来了磁盘、电池和性能上的成本，用户对此并不满意。\nEnglish Summary\nFelix Rieseberg discusses the evolution of model inference in the Cowork application. Early versions ran model inference in the cloud, executing tool calls in an Anthropic-provided VM shipped to the user's computer for capability, safety, and security. However, users disliked the disk, battery, and performance costs associated with running the VM locally.\n🏷️ OpenAI, data privacy, security breach, monitoring\n \n3. 如何阅读代码\nIntroducing Mistral Large 4: Le chonk — simonwillison.net · 9 小时前 · ⭐ 26/30\n中文摘要\n文章探讨了阅读代码与阅读书籍、文章等文本的根本区别。与线性阅读不同，代码阅读需要理解其结构、逻辑和意图。作者强调了理解代码上下文、依赖关系以及作者意图的重要性。这需要一种更具分析性和探索性的阅读方法。\nEnglish Summary\nThis article explores the fundamental differences between reading code and reading texts like books or articles. Unlike linear reading, code comprehension requires understanding its structure, logic, and intent. The author emphasizes the importance of grasping code context, dependencies, and the author's intentions, necessitating a more analytical and exploratory approach.\n🏷️ Mistral Large 4, LLM, AI models, large language models\n \n4. Scrimshaw Jukebox\nOpenAI Announces Their Text Watermarking Plans — daringfireball.net · 1 天前 · ⭐ 26/30\n中文摘要\n作者使用 Claude Opus 5.5 尝试创作计算机游戏音乐。他首先设计了一个简单的文本格式来表示音乐，然后构建了一个能够播放该格式音乐的工具。文章展示了如何利用大型语言模型（LLM）进行创意音乐生成，并提供了示例曲目。\nEnglish Summary\nThe author experimented with Claude Opus 5.5 to compose computer game music. They first designed a simple text-based format for music and then built an artifact capable of playing it aloud, including example tracks. This demonstrates the use of large language models (LLMs) for creative music generation.\n🏷️ OpenAI, text watermarking, AI Act, generative AI\n \n5. 为什么编译器有时使用 ud2，有时使用 int 3 来处理不应执行的代码？\nMistral Large 4 — simonwillison.net · 11 小时前 · ⭐ 25/30\n中文摘要\n编译器在处理不应执行的代码时，会根据具体原因选择使用 ud2（Undefined Instruction）或 int 3（Breakpoint Instruction）。ud2 指令用于表示明确的程序错误或逻辑缺陷，而 int 3 则常用于调试断点，指示程序在此处应停止执行。这两种指令的选择反映了编译器对代码执行路径和错误处理策略的不同考量。\nEnglish Summary\nThe compiler sometimes uses ud2 (Undefined Instruction) and sometimes int 3 (Breakpoint Instruction) for code that should not execute, depending on the specific reason. ud2 is used to indicate explicit programming errors or logical flaws, while int 3 is often used for debugging breakpoints, signaling that the program should stop execution at that point. The choice between these instructions reflects different compiler considerations for code execution paths and error handling strategies.\n🏷️ Mistral Large, LLM, benchmarks, AI models\n \n6. EmbeddingGemma 2\nEmbeddingGemma 2 — simonwillison.net · 8 小时前 · ⭐ 24/30\n中文摘要\n作者高度赞赏 Google 的 EmbeddingGemma 2 模型采用 Apache 2.0 许可证发布，认为对于嵌入模型而言，闭源专有托管模型不具优势。开放的许可证使得开发者能够更自由地使用和集成该模型，这对于嵌入式 AI 应用的普及和创新至关重要。作者强调了开源在嵌入模型领域的价值。\nEnglish Summary\nThe author appreciates that Google's EmbeddingGemma 2 model is released under the Apache 2.0 license, arguing that closed, proprietary, hosted-only models are not ideal for embedding models. The open license allows developers greater freedom to use and integrate the model, which is crucial for the adoption and innovation of embedded AI applications. The author highlights the value of open source for embedding models.\n🏷️ Gemma, embeddings, LLM, Google AI\n \n7. 引用菲利克斯·里瑟伯格\nQuoting Felix Rieseberg — simonwillison.net · 1 天前 · ⭐ 23/30\n中文摘要\nCowork的旧版本在云端运行模型推理，并在Anthropic提供的虚拟机中执行工具调用。该虚拟机被发送到您的计算机上，用于增强功能、安全性和可靠性。用户们喜爱Claude的功能，但对其本地运行的虚拟机带来的磁盘、电池和性能消耗感到不满。\nEnglish Summary\nThe older version of Cowork performed model inference in the cloud, utilizing an Anthropic-provided VM shipped to user computers for enhanced capabilities, safety, and reliability. While users appreciated Claude's features, they disliked the local VM's impact on disk space, battery, and performance.\n🏷️ LLM, tool calls, cloud inference, VM\n \n8. 浮雕音乐盒\nScrimshaw Jukebox — simonwillison.net · 14 小时前 · ⭐ 22/30\n中文摘要\n本文作者尝试使用Claude Opus 5.5来创作音乐。作者设计了一种简单的基于文本的音乐格式，并构建了一个可以播放音乐的工具。文章展示了如何利用AI进行音乐创作的实验。\nEnglish Summary\nThe author experimented with using Claude Opus 5.5 to compose music. They designed a simple text-based format for music and built a tool capable of playing it. The article demonstrates an experiment in AI-driven music creation.\n🏷️ Claude Opus, music generation, AI tools, experimentation\n \n⚙️ 工程\n9. 程序状态的终端协议 (OSC 7501)\nA Terminal Protocol for Program Status (OSC 7501) — mitchellh.com · 1 天前 · ⭐ 24/30\n中文摘要\n该文章介绍了一种新的终端协议，OSC 7501，用于在终端中显示程序状态。该协议允许应用程序向终端发送关于其运行状态的信息，例如进度、错误或完成情况，从而增强用户对后台进程的可见性。这为开发者提供了一种标准化的方式来改进命令行工具的用户体验。\nEnglish Summary\nThis article introduces a new terminal protocol, OSC 7501, designed for displaying program status within the terminal. The protocol enables applications to send information about their running state, such as progress, errors, or completion, to the terminal, enhancing user visibility into background processes. This provides developers with a standardized way to improve the user experience of command-line tools.\n🏷️ terminal, protocol, program status, debugging\n \n10. 如何阅读代码\nHow to read code — seangoedecke.com · 5 小时前 · ⭐ 22/30\n中文摘要\n阅读代码与阅读书籍、报纸或电子邮件的方式不同。虽然我们都熟悉按顺序阅读文本，但代码的结构和执行方式要求一种不同的理解方法。本文探讨了代码阅读的独特性。\nEnglish Summary\nReading code differs from reading books, newspapers, or emails. While we are accustomed to reading text sequentially, the structure and execution of code necessitate a distinct approach to comprehension. This article explores the unique aspects of code reading.\n🏷️ code reading, software development, learning\n \n11. 编译器为何有时使用ud2，有时使用int 3来处理不应执行的代码？\nWhy does the compiler sometimes use ud2 and sometimes int 3 for code that shouldn’t execute? — devblogs.microsoft.com/oldnewthing · 15 小时前 · ⭐ 22/30\n中文摘要\n编译器在处理不应执行的代码时，有时会使用ud2指令，有时会使用int 3指令。这两种指令的选择背后存在不同的原因。本文探讨了这种现象。\nEnglish Summary\nCompilers sometimes use the 'ud2' instruction and other times the 'int 3' instruction for code that should not execute. There are different underlying reasons for choosing one over the other. This post delves into this phenomenon.\n🏷️ compiler, ud2, int 3, assembly\n \n🛠 工具 / 开源\n12. llm-openai-decisions 0.1a0\nllm-openai-decisions 0.1a0 — simonwillison.net · 6 小时前 · ⭐ 23/30\n中文摘要\nOpenAI 发布了其新的 Jev 风格 Decisions API，该 API 在上周的 DevDay 上已宣布。作者基于已有的 llm-typesafe 插件，利用 GPT-6 Astra 阅读了新的 OpenAI API 文档，并发布了 llm-openai-decisions 0.1a0 版本。此举表明了对新 API 的快速集成和支持。\nEnglish Summary\nOpenAI has released its new Jev-style Decisions API, previously announced at DevDay. The author, leveraging an existing llm-typesafe plugin and GPT-6 Astra, has read the new OpenAI API documentation and released version 0.1a0 of llm-openai-decisions. This indicates rapid integration and support for the new API.\n🏷️ OpenAI API, LLM, developer tools, decisions API\n \n13. llm-mistral 0.16\nllm-mistral 0.16 — simonwillison.net · 7 小时前 · ⭐ 23/30\n中文摘要\nllm-mistral 0.16 版本发布，新增了对推理模型（如新发布的 Mistral Large 4）的支持。此次更新扩展了该工具在处理更复杂 AI 任务方面的能力，特别是与 Mistral AI 的最新模型集成。这标志着该 LLM 工具在支持先进推理模型方面迈出了重要一步。\nEnglish Summary\nVersion 0.16 of llm-mistral has been released, adding support for reasoning models, such as the newly released Mistral Large 4. This update expands the tool's capabilities in handling more complex AI tasks, particularly with the integration of Mistral AI's latest model. This marks a significant step in supporting advanced reasoning models.\n🏷️ Mistral AI, LLM, reasoning models, developer tools\n \n🔒 安全\n14. 非官方命令行工具可从 macOS 27 中移除 Apple Intelligence\nUnofficial Command-Line Tool Removes Apple Intelligence From MacOS 27 — daringfireball.net · 11 小时前 · ⭐ 23/30\n中文摘要\nmacOS 27 的 Golden Gate 版本取消了直接关闭 Apple Intelligence 的选项，使得禁用该功能更加困难，并且即使不使用，AI 模型也会占用磁盘空间。为应对此问题，一位开发者创建了一个非官方的命令行工具，允许用户快速从系统中移除 Apple Intelligence 的相关组件。该工具的出现反映了用户对控制设备 AI 功能的需求。\nEnglish Summary\nmacOS 27 Golden Gate lacks a toggle to turn off Apple Intelligence, making it harder to disable and causing AI models to occupy disk space even if unused. In response, a developer has created an unofficial command-line tool to quickly remove Apple Intelligence components from the system. This tool addresses user demand for control over device AI features.\n🏷️ Apple Intelligence, macOS, privacy, disabling features\n \n💡 观点 / 杂谈\n15. 信贷紧缩\nCredit Crunch — wheresyoured.at · 14 小时前 · ⭐ 23/30\n中文摘要\n如果您喜欢这篇文章，可以订阅我的付费新闻通讯。订阅价格为每年70美元、每季度18美元或每月7美元。订阅后，您将获得每周的付费新闻通讯，其中包含对NVIDIA、Anthropic和OpenAI的深入分析。\nEnglish Summary\nIf you enjoyed this article, consider subscribing to my premium newsletter. Subscription options include $70 annually, $18 quarterly, or $7 monthly. Subscribers receive a weekly premium newsletter featuring in-depth analyses of companies like NVIDIA, Anthropic, and OpenAI.\n🏷️ NVIDIA, Anthropic, OpenAI, tech industry analysis\n \n生成于 2026-10-07 05:25 | 扫描 82 源 → 获取 2315 篇 → 精选 15 篇\n基于 Hacker News Popularity Contest 2025 RSS 源列表，由 Andrej Karpathy 推荐"</script>
   <script>
     const text = JSON.parse(document.getElementById('speech-text').textContent);
     const statusEl = document.getElementById('status');
