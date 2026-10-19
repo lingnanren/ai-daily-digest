@@ -52,201 +52,201 @@
   <main class="shell">
     <article class="card">
       <p>🎧 <a href="https://lingnanren.github.io/ai-daily-digest/listen.html">点这里朗读今日日报</a></p>
-<h1>📰 AI 博客每日精选 — 2026-10-18</h1>
+<h1>📰 AI 博客每日精选 — 2026-10-19</h1>
 <blockquote>来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15</blockquote>
 <h2>📝 今日看点</h2>
-<p>今日技术看点聚焦AI的未来想象与现实挑战，以及软件开发与安全的持续演进。一方面，AI研究者对AI治愈癌症的狂热信念，以及Apple加强应用审核以打击不当内容，都反映了AI技术发展带来的伦理与安全考量。另一方面，C++ futures的深入探讨和微型Web应用的创新，则展示了开发者在提升代码效率和工具便捷性上的不懈努力。</p>
+<p>今日技术看点聚焦人工智能的快速演进与安全挑战。大语言模型（LLM）工具不断优化，提升了模拟和集成能力，但双因素认证等安全实践仍需审慎。同时，智能硬件的创新与延迟并存，折叠屏手机需求火爆，而苹果的智能家居产品则面临软件开发的瓶颈。此外，网络安全领域揭示了广告技术公司沦为间谍软件传播渠道的严峻现实。</p>
 <hr>
 <h2>🏆 今日必读</h2>
-<p>🥇 <strong>web-edit 0.1a2 发布：用于浏览和编辑文件的微型 Web 应用</strong></p>
-<p><a href="https://seangoedecke.com/writing-is-no-longer-proof-of-work/">Writing is no longer proof of work</a> — seangoedecke.com · 4 小时前 · 💡 观点 / 杂谈</p>
+<p>🥇 <strong>LLM-Echo 0.5 发布：更新模拟 token 使用计数以支持工具调用和系统提示</strong></p>
+<p><a href="https://seangoedecke.com/writing-is-no-longer-proof-of-work/">Writing is no longer proof of work</a> — seangoedecke.com · 1 天前 · 🤖 AI / ML</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Simon Willison 发布了 web-edit 的 0.1a2 版本，这是一个用于浏览和编辑文件夹内文件的微型 Web 应用。主要用于通过 Tailscale 在不同机器上编辑文件，新版本增加了对文本和图像数据复制到剪贴板的功能。此功能对于在笔记本电脑上通过手机运行 Pelican 提示尤为有用。</blockquote>
+<blockquote>LLM-Echo 0.5 发布，更新了其模拟 token 使用计数功能，以更准确地反映工具调用和系统提示对 token 的消耗。该插件提供了一个不实际调用 LLM 的“模型”，而是直接回显用户输入的提示。此次更新旨在提高调试 LLM 应用时对 token 使用量的估算精度，尤其是在涉及复杂交互场景下。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Simon Willison has released web-edit 0.1a2, a tiny web app for browsing and editing files within a folder. Primarily built for editing files across different machines via Tailscale, this new release adds a "copy to clipboard" option for both text and image data. This feature is particularly useful for running Pelican prompts on a laptop from a phone.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 了解一个用于跨设备文件编辑的实用小工具及其最新功能。</p>
-<p>💡 <strong>Why read it</strong>: Discover a practical, minimalist tool for cross-device file editing and its latest enhancements.</p>
-<p>🏷️ writing, proof of work, LLMs, AI</p>
-<p>🥈 <strong>高风险投资：风险资本正在扼杀自己</strong></p>
-<p><a href="https://martinalderson.com/posts/how-the-ai-boom-might-really-end/?utm_source=rss&amp;amp;amp;utm_medium=rss&amp;amp;amp;utm_campaign=feed">How the AI boom might really end: 5 scenarios</a> — martinalderson.com · 4 小时前 · 💡 观点 / 杂谈</p>
+<blockquote>LLM-Echo 0.5 has been released, updating its simulated token usage counts to better reflect the consumption from tool calls and system prompts. This plugin provides a "model" that echoes user prompts without actual LLM interaction. The update aims to improve the accuracy of token usage estimations during LLM application debugging, especially in scenarios involving complex interactions.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 了解 LLM 调试工具如何更精确地模拟 token 使用量，尤其是在处理工具调用和系统提示时。</p>
+<p>💡 <strong>Why read it</strong>: Understand how LLM debugging tools can more accurately simulate token usage, particularly when handling tool calls and system prompts.</p>
+<p>🏷️ writing, proof of work, LLMs, tech companies</p>
+<p>🥈 <strong>Una Watch TOTP：将双因素认证放在手腕上</strong></p>
+<p><a href="https://martinalderson.com/posts/how-the-ai-boom-might-really-end/?utm_source=rss&amp;amp;amp;utm_medium=rss&amp;amp;amp;utm_campaign=feed">How the AI boom might really end: 5 scenarios</a> — martinalderson.com · 1 天前 · 🤖 AI / ML</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>文章认为，大约十四年前政府的一项错误决策，使得科技公司和风险投资能够合法地欺骗数百万散户投资者。这种行为剥夺了投资者获取良好信息的机会，并虚假地推高了主要科技公司 IPO 的估值。作者认为这种模式正在自我毁灭。</blockquote>
+<blockquote>作者开发了一款名为 Una Watch TOTP 的手表应用，用于显示一次性密码（TOTP）以实现多因素认证（MFA）。尽管该应用提供了便捷性，但作者承认这是一种糟糕的安全实践，因为手表一旦丢失或被盗，一次性密码将暴露给窃贼。此外，应用中的密钥也可能被反编译获取。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>The article argues that a governmental mistake made about fourteen years ago enabled tech companies and venture capitalists to legally scam millions of retail investors. This practice deprived investors of good information and spuriously inflated the valuations of major tech IPOs, a model the author believes is self-destructive.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 深入剖析风险投资模式的弊端及其对市场和投资者的潜在危害。</p>
-<p>💡 <strong>Why read it</strong>: Gain insight into the detrimental aspects of the venture capital model and its potential harm to markets and investors.</p>
-<p>🏷️ AI boom, scenarios, investment, chip stocks</p>
-<p>🥉 <strong>C++ futures part 5: std::future 和 std::shared_future</strong></p>
-<p><a href="https://www.reuters.com/business/retail-consumer/openai-employee-who-left-apple-took-files-about-unreleased-device-openai-alleges-2026-10-14/">Whatever You Say Bounces Off Me and Sticks to You</a> — daringfireball.net · 3 小时前 · 🔒 安全</p>
+<blockquote>The author developed a watch app, Una Watch TOTP, to display Time-based One-Time Passwords (TOTP) for Multi-Factor Authentication (MFA). While convenient, the author acknowledges this poses a significant security risk, as stolen watches would expose one-time codes, and secrets could be extracted via decompilation.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 探讨将敏感的 MFA 代码直接显示在可穿戴设备上的安全隐患与便利性之间的权衡。</p>
+<p>💡 <strong>Why read it</strong>: Explore the trade-off between convenience and security when displaying sensitive MFA codes directly on a wearable device.</p>
+<p>🏷️ AI boom, scenarios, chip stocks, Anthropic</p>
+<p>🥉 <strong>Manton Reece 的“ Spitball”理论：解释 HomePod Wall-Mounted 版本与带低音炮底座版本价格相同的原因</strong></p>
+<p><a href="https://www.reuters.com/business/retail-consumer/openai-employee-who-left-apple-took-files-about-unreleased-device-openai-alleges-2026-10-14/">Whatever You Say Bounces Off Me and Sticks to You</a> — daringfireball.net · 1 天前 · 🤖 AI / ML</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>本文是 C++ futures 系列的第五部分，重点介绍了如何从 <code>std::future</code> 和 <code>std::shared_future</code> 中获取结果。<code>std::future</code> 提供了一种获取异步操作结果的机制，而 <code>std::shared_future</code> 则允许多个执行绪共享同一个结果。</blockquote>
+<blockquote>Manton Reece 提出理论，认为 Apple 将 HomePod Wall-Mounted 版本定价与带低音炮底座的版本相同，是为了阻止用户在不确定是否需要壁挂版本时仅因价格而购买。如果壁挂版本更便宜，可能会导致用户冲动购买后因安装不便而后悔。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This is the fifth part of the C++ futures series, focusing on how to retrieve results from <code>std::future</code> and <code>std::shared_future</code>. <code>std::future</code> provides a mechanism to obtain the result of an asynchronous operation, while <code>std::shared_future</code> allows multiple threads to share the same result.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 理解 C++ 中 <code>std::future</code> 和 <code>std::shared_future</code> 的结果获取机制，对于并发编程至关重要。</p>
-<p>💡 <strong>Why read it</strong>: Understanding the result retrieval mechanisms of <code>std::future</code> and <code>std::shared_future</code> in C++ is crucial for concurrent programming.</p>
-<p>🏷️ OpenAI, Apple, confidential information, data leak</p>
+<blockquote>Manton Reece theorizes that Apple prices the wall-mounted HomePod the same as the version with the subwoofer base to discourage users from buying it solely based on price if they are unsure of their need. A cheaper wall-mounted version might lead to impulse purchases followed by regret due to installation difficulties.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 理解 Apple 的产品定价策略如何通过价格信号来引导用户选择最适合其需求的产品。</p>
+<p>💡 <strong>Why read it</strong>: Understand how Apple's product pricing strategy uses price signals to guide users toward the most suitable product for their needs.</p>
+<p>🏷️ OpenAI, Apple, unreleased product, data leak</p>
 <hr>
 <h2>📊 数据概览</h2>
-<table><thead><tr><th>扫描源</th><th>抓取文章</th><th>时间范围</th><th>精选</th></tr></thead><tbody><tr><td>82/92</td><td>2512 篇 → 31 篇</td><td>48h</td><td><strong>15 篇</strong></td></tr></tbody></table>
+<table><thead><tr><th>扫描源</th><th>抓取文章</th><th>时间范围</th><th>精选</th></tr></thead><tbody><tr><td>82/92</td><td>2507 篇 → 28 篇</td><td>48h</td><td><strong>15 篇</strong></td></tr></tbody></table>
 <h3>分类分布</h3>
 <div class="code-wrap"><div class="code-title">mermaid</div><pre><code>pie showData
     title "文章分类分布"
-    "💡 观点 / 杂谈" : 4
-    "🔒 安全" : 4
+    "🤖 AI / ML" : 4
     "🛠 工具 / 开源" : 3
-    "🤖 AI / ML" : 2
+    "📝 其他" : 3
+    "🔒 安全" : 3
     "⚙️ 工程" : 2</code></pre></div>
 <h3>高频关键词</h3>
 <div class="code-wrap"><div class="code-title">mermaid</div><pre><code>xychart-beta horizontal
     title "高频关键词"
-    x-axis ["ai", "writing", "proof of work", "llms", "ai boom", "scenarios", "investment", "chip stocks", "openai", "apple", "confidential information", "data leak"]
-    y-axis "出现次数" 0 --&gt; 5
-    bar [3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]</code></pre></div>
+    x-axis ["apple", "homeview", "mfa", "llm", "release", "writing", "proof of work", "llms", "tech companies", "ai boom", "scenarios", "chip stocks"]
+    y-axis "出现次数" 0 --&gt; 7
+    bar [5, 3, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1]</code></pre></div>
 <div class="details">
 <p class="summary">📈 纯文本关键词图（终端友好）</p>
-<div class="code-wrap"><pre><code>ai            │ ████████████████████ 3
-writing       │ ███████░░░░░░░░░░░░░ 1
-proof of work │ ███████░░░░░░░░░░░░░ 1
-llms          │ ███████░░░░░░░░░░░░░ 1
-ai boom       │ ███████░░░░░░░░░░░░░ 1
-scenarios     │ ███████░░░░░░░░░░░░░ 1
-investment    │ ███████░░░░░░░░░░░░░ 1
-chip stocks   │ ███████░░░░░░░░░░░░░ 1
-openai        │ ███████░░░░░░░░░░░░░ 1
-apple         │ ███████░░░░░░░░░░░░░ 1</code></pre></div>
+<div class="code-wrap"><pre><code>apple          │ ████████████████████ 5
+homeview       │ ████████████░░░░░░░░ 3
+mfa            │ ████████░░░░░░░░░░░░ 2
+llm            │ ████████░░░░░░░░░░░░ 2
+release        │ ████████░░░░░░░░░░░░ 2
+writing        │ ████░░░░░░░░░░░░░░░░ 1
+proof of work  │ ████░░░░░░░░░░░░░░░░ 1
+llms           │ ████░░░░░░░░░░░░░░░░ 1
+tech companies │ ████░░░░░░░░░░░░░░░░ 1
+ai boom        │ ████░░░░░░░░░░░░░░░░ 1</code></pre></div>
 </div>
 <h3>🏷️ 话题标签</h3>
-<p><strong>ai</strong>(3) · <strong>writing</strong>(1) · <strong>proof of work</strong>(1) · llms(1) · ai boom(1) · scenarios(1) · investment(1) · chip stocks(1) · openai(1) · apple(1) · confidential information(1) · data leak(1) · nist curves(1) · cryptography(1) · backdoors(1) · nsa(1) · llm(1) · muse spark open(1) · mac(1) · spyware(1)</p>
-<hr>
-<h2>💡 观点 / 杂谈</h2>
-<h3>1. web-edit 0.1a2 发布：用于浏览和编辑文件的微型 Web 应用</h3>
-<p><a href="https://seangoedecke.com/writing-is-no-longer-proof-of-work/">Writing is no longer proof of work</a> — <strong>seangoedecke.com</strong> · 4 小时前 · ⭐ 26/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>Simon Willison 发布了 web-edit 的 0.1a2 版本，这是一个用于浏览和编辑文件夹内文件的微型 Web 应用。主要用于通过 Tailscale 在不同机器上编辑文件，新版本增加了对文本和图像数据复制到剪贴板的功能。此功能对于在笔记本电脑上通过手机运行 Pelican 提示尤为有用。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Simon Willison has released web-edit 0.1a2, a tiny web app for browsing and editing files within a folder. Primarily built for editing files across different machines via Tailscale, this new release adds a "copy to clipboard" option for both text and image data. This feature is particularly useful for running Pelican prompts on a laptop from a phone.</blockquote>
-<p>🏷️ writing, proof of work, LLMs, AI</p>
-<hr>
-<h3>2. 高风险投资：风险资本正在扼杀自己</h3>
-<p><a href="https://martinalderson.com/posts/how-the-ai-boom-might-really-end/?utm_source=rss&amp;amp;amp;utm_medium=rss&amp;amp;amp;utm_campaign=feed">How the AI boom might really end: 5 scenarios</a> — <strong>martinalderson.com</strong> · 4 小时前 · ⭐ 26/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>文章认为，大约十四年前政府的一项错误决策，使得科技公司和风险投资能够合法地欺骗数百万散户投资者。这种行为剥夺了投资者获取良好信息的机会，并虚假地推高了主要科技公司 IPO 的估值。作者认为这种模式正在自我毁灭。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>The article argues that a governmental mistake made about fourteen years ago enabled tech companies and venture capitalists to legally scam millions of retail investors. This practice deprived investors of good information and spuriously inflated the valuations of major tech IPOs, a model the author believes is self-destructive.</blockquote>
-<p>🏷️ AI boom, scenarios, investment, chip stocks</p>
-<hr>
-<h3>3. 高管：风险投资正在扼杀自己</h3>
-<p><a href="https://www.wheresyoured.at/premium-venture-capital-is-killing-itself/">Premium: Venture Capital Is Killing Itself</a> — <strong>wheresyoured.at</strong> · 1 天前 · ⭐ 22/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>文章探讨了大约十四年前政府的一项错误决策，该决策允许科技公司和风险投资机构合谋，通过虚假膨胀的估值和信息误导来欺骗数百万零售投资者。这种行为对科技行业的首次公开募股（IPO）产生了广泛影响。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>This article discusses a governmental mistake made about fourteen years ago that enabled tech companies and venture capitalists to conspire in legally scamming millions of retail investors. This was achieved by spuriously inflating valuations and depriving investors of good information, impacting major tech IPOs.</blockquote>
-<p>🏷️ Venture Capital, tech industry, investors, scam</p>
-<hr>
-<h3>4. ★ HomeView 想法与观察</h3>
-<p><a href="https://daringfireball.net/2026/10/homeview_thoughts_and_observations">★ HomeView Thoughts and Observations</a> — <strong>daringfireball.net</strong> · 10 小时前 · ⭐ 21/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>文章对苹果 HomeView 的必要性提出了质疑，认为其宣传视频未能充分解答“我们为什么需要这个？”的疑问。作者指出，用户需要主动认为自己需要它才会购买。即使已经设置了 HomeView，其使用频率可能不如手机或直接语音交互方便。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>The article questions the necessity of Apple's HomeView, stating that its promotional video fails to answer the question of 'Why do we need this?'. The author suggests users must actively desire it to purchase it, and even with a setup, its usage might be less frequent than using a phone or voice commands.</blockquote>
-<p>🏷️ Apple HomeView, smart home, product strategy, user experience</p>
-<hr>
-<h2>🔒 安全</h2>
-<h3>5. C++ futures part 5: std::future 和 std::shared_future</h3>
-<p><a href="https://www.reuters.com/business/retail-consumer/openai-employee-who-left-apple-took-files-about-unreleased-device-openai-alleges-2026-10-14/">Whatever You Say Bounces Off Me and Sticks to You</a> — <strong>daringfireball.net</strong> · 3 小时前 · ⭐ 25/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>本文是 C++ futures 系列的第五部分，重点介绍了如何从 <code>std::future</code> 和 <code>std::shared_future</code> 中获取结果。<code>std::future</code> 提供了一种获取异步操作结果的机制，而 <code>std::shared_future</code> 则允许多个执行绪共享同一个结果。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>This is the fifth part of the C++ futures series, focusing on how to retrieve results from <code>std::future</code> and <code>std::shared_future</code>. <code>std::future</code> provides a mechanism to obtain the result of an asynchronous operation, while <code>std::shared_future</code> allows multiple threads to share the same result.</blockquote>
-<p>🏷️ OpenAI, Apple, confidential information, data leak</p>
-<hr>
-<h3>6. HomeView 思考与观察</h3>
-<p><a href="https://www.johndcook.com/blog/2026/10/17/nist-curves-exonorated/">Cloud of suspicion lifted from NIST curves</a> — <strong>johndcook.com</strong> · 12 小时前 · ⭐ 25/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>文章对 Apple 的 HomeView 产品提出了质疑，认为其必要性不明，且用户可能不会频繁使用它，尤其是在已有手机或 HomePod 的情况下。作者强调，用户需要明确的需求才能购买此类产品。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>The article questions the necessity of Apple's HomeView product, suggesting users might not find frequent use for it, especially given the availability of smartphones or HomePods. The author emphasizes that users need a clear need to justify purchasing such a product.</blockquote>
-<p>🏷️ NIST curves, cryptography, backdoors, NSA</p>
-<hr>
-<h3>7. Pluralistic: 以色列广告科技公司曾是“雇佣间谍软件”的交付系统</h3>
-<p><a href="https://pluralistic.net/2026/10/17/mercenary-spyware/">Pluralistic: Israeli ad-tech company was a delivery system for "mercenary spyware" (17 Oct 2026)</a> — <strong>pluralistic.net</strong> · 17 小时前 · ⭐ 23/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>一家以色列广告科技公司被揭露曾是“雇佣间谍软件”的交付系统，并利用Google、Facebook等各大广告平台进行传播。文章还提及了其他一些链接内容，包括对象持久性、No-Fly列表与常识的冲突、以及一些科技和政治相关的事件。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>An Israeli ad-tech company has been revealed as a delivery system for 'mercenary spyware,' utilizing major ad platforms like Google and Facebook for distribution. The article also links to other content, including object permanence, conflicts between no-fly lists and common sense, and various tech and political events.</blockquote>
-<p>🏷️ spyware, ad-tech, mercenary, privacy</p>
-<hr>
-<h3>8. Apple：‘加强应用审核指南，打击非双方同意的亲密图像和‘诱骗式’应用’</h3>
-<p><a href="https://developer.apple.com/news/?id=vvzx6cul">Apple: ‘Strengthening App Review Guidelines Against Nonconsensual Intimate Imagery and Bait-And-Switch Apps’</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 23/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>Apple在其开发者新闻中宣布，将加强应用审核指南，禁止色情内容，包括生成真实人物未经同意的性暗示图像的“裸照化”应用。对于托管用户生成内容的应用程序，要求其过滤不当内容、提供举报机制并允许用户屏蔽不良账户。此举旨在提升App Store的安全性与用户体验。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Apple announced in its Developer News that it is strengthening App Review Guidelines to prohibit pornographic material, including 'nudification' apps that generate sexually explicit images of real individuals without their consent. Apps hosting user-generated content will be required to filter objectionable material, provide reporting mechanisms, and allow users to block abusive accounts, aiming to enhance App Store safety and user experience.</blockquote>
-<p>🏷️ App Store, guidelines, nonconsensual imagery, bait-and-switch</p>
-<hr>
-<h2>🛠 工具 / 开源</h2>
-<h3>9. 使用document​.currentScript进行内联渲染</h3>
-<p><a href="https://simonwillison.net/2026/Oct/17/document-currentscript/">Inline rendering with document​.currentScript</a> — <strong>simonwillison.net</strong> · 6 小时前 · ⭐ 22/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>Lean Rada介绍了一种利用<code>document.currentScript</code>属性的技巧，可以通过一个小的内联<code>script</code>元素在页面加载时实现自我替换。这种方法允许在HTML中直接嵌入动态内容，而无需额外的JavaScript文件或复杂的DOM操作，简化了前端开发。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Lean Rada describes a technique leveraging the <code>document.currentScript</code> property, allowing a small inline <code>script</code> element to replace itself upon page load. This method enables direct embedding of dynamic content within HTML, simplifying frontend development by avoiding the need for separate JavaScript files or complex DOM manipulations.</blockquote>
-<p>🏷️ JavaScript, document.currentScript, inline rendering, web development</p>
-<hr>
-<h3>10. web-edit 0.1a2 发布</h3>
-<p><a href="https://simonwillison.net/2026/Oct/17/web-edit/">web-edit 0.1a2</a> — <strong>simonwillison.net</strong> · 14 小时前 · ⭐ 22/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>web-edit 是一款用于浏览和编辑文件夹内文件的微型 Web 应用。开发者 Simon Willison 主要用它来通过 Tailscale 在不同机器上编辑文件。新版本 0.1a2 增加了文本和图像数据的“复制到剪贴板”选项。此功能是为了方便在手机上运行 Pelican 提示而添加的。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>web-edit is a tiny web app for browsing and editing files in a folder, primarily used for editing files across different machines via Tailscale. The new release 0.1a2 adds a 'copy to clipboard' option for both text and image data. This feature was added to facilitate running Pelican prompts from a phone.</blockquote>
-<p>🏷️ web-edit, file browsing, editing tool, open source</p>
-<hr>
-<h3>11. 本周包管理：2026年10月17日</h3>
-<p><a href="https://nesbitt.io/2026/10/17/this-week-in-package-management.html">This Week in Package Management: 17 October 2026</a> — <strong>nesbitt.io</strong> · 18 小时前 · ⭐ 21/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>本周包管理新闻汇总了来自整个包管理领域的最新发布、安全公告和相关文章。它为开发者和系统管理员提供了一个了解行业动态的窗口。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>This week's package management news summarizes releases, advisories, and articles from across the package management world. It serves as a window for developers and system administrators to stay updated on industry trends.</blockquote>
-<p>🏷️ package management, releases, advisories</p>
+<p><strong>apple</strong>(5) · <strong>homeview</strong>(3) · <strong>mfa</strong>(2) · llm(2) · release(2) · writing(1) · proof of work(1) · llms(1) · tech companies(1) · ai boom(1) · scenarios(1) · chip stocks(1) · anthropic(1) · openai(1) · unreleased product(1) · data leak(1) · software design(1) · requirements(1) · elegance(1) · trade-offs(1)</p>
 <hr>
 <h2>🤖 AI / ML</h2>
-<h3>12. 本周包管理：2026年10月17日</h3>
-<p><a href="https://x.com/finkd/status/2110778025629347999">Strange Times Make for Strange Bedfellows</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 24/30</p>
+<h3>1. LLM-Echo 0.5 发布：更新模拟 token 使用计数以支持工具调用和系统提示</h3>
+<p><a href="https://seangoedecke.com/writing-is-no-longer-proof-of-work/">Writing is no longer proof of work</a> — <strong>seangoedecke.com</strong> · 1 天前 · ⭐ 26/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>本周包管理周报汇总了来自整个包管理领域的最新发布、安全公告和相关文章。内容涵盖了不同包管理器的更新动态和行业信息。</blockquote>
+<blockquote>LLM-Echo 0.5 发布，更新了其模拟 token 使用计数功能，以更准确地反映工具调用和系统提示对 token 的消耗。该插件提供了一个不实际调用 LLM 的“模型”，而是直接回显用户输入的提示。此次更新旨在提高调试 LLM 应用时对 token 使用量的估算精度，尤其是在涉及复杂交互场景下。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This week's package management roundup compiles the latest releases, advisories, and articles from across the package management world. It covers updates and industry news from various package managers.</blockquote>
-<p>🏷️ AI, LLM, Muse Spark Open, Mac</p>
+<blockquote>LLM-Echo 0.5 has been released, updating its simulated token usage counts to better reflect the consumption from tool calls and system prompts. This plugin provides a "model" that echoes user prompts without actual LLM interaction. The update aims to improve the accuracy of token usage estimations during LLM application debugging, especially in scenarios involving complex interactions.</blockquote>
+<p>🏷️ writing, proof of work, LLMs, tech companies</p>
 <hr>
-<h3>13. Palantir首席技术官Shyam Sankar称，AI研究人员开始吸烟，因为他们坚信AI（很可能是Claude）将治愈癌症</h3>
-<p><a href="https://www.cbsnews.com/news/shyam-sankar-chief-technology-officer-palantir-face-the-nation-transcript-10-11-2026/">Shyam Sankar, CTO of Palantir, Says AI Researchers Have Started Smoking Because They’re Convinced AI (Claude, Probably) Is Going to Cure Cancer</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 23/30</p>
+<h3>2. Una Watch TOTP：将双因素认证放在手腕上</h3>
+<p><a href="https://martinalderson.com/posts/how-the-ai-boom-might-really-end/?utm_source=rss&amp;amp;amp;utm_medium=rss&amp;amp;amp;utm_campaign=feed">How the AI boom might really end: 5 scenarios</a> — <strong>martinalderson.com</strong> · 1 天前 · ⭐ 26/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Palantir首席技术官Shyam Sankar在CBS的《Face the Nation》节目中表示，许多硅谷的AI技术构建者将机器AI视为“神”。他分享了一个有趣的现象：许多AI研究人员开始吸烟，以此作为一种象征，暗示他们对AI（可能指Claude）能够解决重大问题（如癌症）抱有近乎宗教般的信念，并可能因此产生一种虚幻的慰藉感。</blockquote>
+<blockquote>作者开发了一款名为 Una Watch TOTP 的手表应用，用于显示一次性密码（TOTP）以实现多因素认证（MFA）。尽管该应用提供了便捷性，但作者承认这是一种糟糕的安全实践，因为手表一旦丢失或被盗，一次性密码将暴露给窃贼。此外，应用中的密钥也可能被反编译获取。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Shyam Sankar, CTO of Palantir, stated on CBS's 'Face the Nation' that many builders of AI technology in Silicon Valley view machine AI as a 'god.' He shared an anecdote that many AI researchers have started smoking as a symbolic act, reflecting a near-religious conviction that AI (possibly Claude) will solve major problems like cancer, perhaps offering a form of illusory solace.</blockquote>
-<p>🏷️ AI, cancer cure, researchers, optimism</p>
+<blockquote>The author developed a watch app, Una Watch TOTP, to display Time-based One-Time Passwords (TOTP) for Multi-Factor Authentication (MFA). While convenient, the author acknowledges this poses a significant security risk, as stolen watches would expose one-time codes, and secrets could be extracted via decompilation.</blockquote>
+<p>🏷️ AI boom, scenarios, chip stocks, Anthropic</p>
+<hr>
+<h3>3. Manton Reece 的“ Spitball”理论：解释 HomePod Wall-Mounted 版本与带低音炮底座版本价格相同的原因</h3>
+<p><a href="https://www.reuters.com/business/retail-consumer/openai-employee-who-left-apple-took-files-about-unreleased-device-openai-alleges-2026-10-14/">Whatever You Say Bounces Off Me and Sticks to You</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 25/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Manton Reece 提出理论，认为 Apple 将 HomePod Wall-Mounted 版本定价与带低音炮底座的版本相同，是为了阻止用户在不确定是否需要壁挂版本时仅因价格而购买。如果壁挂版本更便宜，可能会导致用户冲动购买后因安装不便而后悔。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Manton Reece theorizes that Apple prices the wall-mounted HomePod the same as the version with the subwoofer base to discourage users from buying it solely based on price if they are unsure of their need. A cheaper wall-mounted version might lead to impulse purchases followed by regret due to installation difficulties.</blockquote>
+<p>🏷️ OpenAI, Apple, unreleased product, data leak</p>
+<hr>
+<h3>4. Claim Chowder：关于HomeView拥有‘机器人旋转底座’的说法</h3>
+<p><a href="https://www.theinformation.com/articles/apple-developing-ai-wearable-pin">Claim Chowder: The Information on HomeView Having a ‘Robotic Swiveling Base’</a> — <strong>daringfireball.net</strong> · 6 小时前 · ⭐ 24/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>The Information最初错误报道称苹果正在开发一款带有机器人旋转底座的HomeView产品。实际上，苹果正在开发一系列AI驱动的设备，包括配备增强传感器的AirPods、安全摄像头、智能眼镜和AR眼镜，以及一款带有小型显示屏、扬声器和旋转底座的家庭产品。此报道纠正了早期关于HomeView具体功能的误解。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>The Information initially misreported that Apple was developing a HomeView product with a 'robotic swiveling base.' In reality, Apple is working on a portfolio of AI-powered devices, including AirPods with enhanced sensors, a security camera, smart glasses, AR glasses, and a home product featuring a small display, speakers, and a swiveling base. This clarifies earlier misconceptions about the specific features of Apple's home product.</blockquote>
+<p>🏷️ Apple, HomeView, AI, product rumors</p>
+<hr>
+<h2>🛠 工具 / 开源</h2>
+<h3>5. Apple 就 iPhone Duo 需求远超供应发布声明</h3>
+<p><a href="https://workos.com/?utm_source=daringfireball&amp;amp;amp;utm_medium=newsletter&amp;amp;amp;utm_campaign=q42026">WorkOS AuthKit</a> — <strong>daringfireball.net</strong> · 5 小时前 · ⭐ 24/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Apple 发布声明，表示首款折叠 iPhone 的预购需求“非同寻常地高”，导致原定 10 月 23 日的交付日期推迟至次年 1 月。美国运营商也面临类似的交付延迟。Apple 正在努力尽快将这款革命性产品交付给客户。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Apple has issued a statement acknowledging that pre-order demand for its first foldable iPhone, the iPhone Duo, has been "extraordinarily high," pushing delivery dates from October 23rd into late January. US mobile carriers are also experiencing similar delays. Apple is working to get the revolutionary product to customers as quickly as possible.</blockquote>
+<p>🏷️ authentication, SSO, MFA, WorkOS AuthKit</p>
+<hr>
+<h3>6. llm-tools-datasette 0.1.1</h3>
+<p><a href="https://simonwillison.net/2026/Oct/18/llm-tools-datasette/">llm-tools-datasette 0.1.1</a> — <strong>simonwillison.net</strong> · 4 小时前 · ⭐ 23/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>llm-tools-datasette 0.1.1 版本发布，修复了因LLM切换到httpx2而导致依赖httpx的插件失效的问题。此次更新解决了插件兼容性问题，确保了llm-tools-datasette能够与最新版本的LLM库正常协同工作。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>The release of llm-tools-datasette 0.1.1 addresses an issue where plugins relying on <code>httpx</code> broke after LLM switched to <code>httpx2</code>. This update fixes plugin compatibility, ensuring llm-tools-datasette functions correctly with the latest LLM library versions.</blockquote>
+<p>🏷️ LLM, Datasette, release, httpx2</p>
+<hr>
+<h3>7. llm-echo 0.5 版本发布</h3>
+<p><a href="https://simonwillison.net/2026/Oct/18/llm-echo/">llm-echo 0.5</a> — <strong>simonwillison.net</strong> · 4 小时前 · ⭐ 23/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>llm-echo 0.5 版本现已发布，该版本更新了模拟的 token 使用量计算，以更好地处理工具调用和系统提示。这个插件提供了一个不涉及实际 LLM 的“模型”，它只会重复接收到的提示。此次更新旨在改进调试和模拟 LLM 交互的体验。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>The new release of llm-echo 0.5 updates the simulated token usage counts to better handle tool calls and system prompts. This plugin provides a "model" that doesn't involve an actual LLM, simply echoing back the prompts it receives. The update aims to improve debugging and the experience of simulating LLM interactions.</blockquote>
+<p>🏷️ LLM, debug plugin, release, llm-echo</p>
+<hr>
+<h2>📝 其他</h2>
+<h3>8. Gurman谈HomeView：‘成品已在仓库里堆积了近一年’</h3>
+<p><a href="https://www.bloomberg.com/news/newsletters/2026-10-18/apple-homeview-with-robotic-arm-new-mac-ipad-mini-nov-6-release-iphone-duo?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5MjMzMjQwNiwiZXhwIjoxNzkyOTM3MjA2LCJhcnRpY2xlSWQiOiJUTjNXODFLR1pBSjQwMCIsImJjb25uZWN0SWQiOiJDNEVEQ0FFMUZBMDU0MEJFQTI0QTlGMjExQzFFOTA4MCJ9.eu94lgz5qU35YdXhWFRwjbVBeJEKzpwFqF-pzh_GPJU&amp;amp;amp;leadSource=article-gifting">Gurman on HomeView: ‘Finished Units Have Been Sitting Boxed Up in Warehouses for the Better Part of a Year’</a> — <strong>daringfireball.net</strong> · 6 小时前 · ⭐ 24/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>据Mark Gurman报道，由于缺乏可用的助理软件版本，苹果的HomeView产品未能实现其设想的体验，导致硬件已准备就绪但软件开发滞后。该产品已多次推迟发布，最终在2026年才亮相，但其设计（如厚边框和A18处理器）已显得过时。这反映了苹果在将复杂AI功能集成到硬件产品时遇到的挑战。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>According to Mark Gurman, Apple's HomeView product has been repeatedly postponed due to delays in its software, specifically the assistant functionality, leaving the hardware ready but the software unfinished. The product, unveiled in 2026 after multiple delays, features dated hardware like thick bezels and an A18 processor. This highlights Apple's challenges in integrating advanced AI features into hardware.</blockquote>
+<p>🏷️ Apple, HomeView, product delay, hardware software</p>
+<hr>
+<h3>9. Manton Reece 关于 HomeView 壁挂版与带低音炮底座版价格相同的推测</h3>
+<p><a href="https://www.manton.org/2026/10/17/in-john-grubers-initial-thoughts.html">Manton Reece’s Spitball Theory on Why the Wall-Mounted HomeView Costs the Same as the Version With the Subwoofer Base</a> — <strong>daringfireball.net</strong> · 8 小时前 · ⭐ 22/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Manton Reece 提出了一种关于 Apple HomeView 壁挂版和带低音炮底座版价格相同的原因推测。他认为 Apple 不希望用户轻易购买壁挂版，除非他们确定这是所需。如果壁挂版更便宜，可能会有人因价格而购买，但随后因安装麻烦而不满意。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Manton Reece speculates on why the wall-mounted version of Apple's HomeView costs the same as the version with the subwoofer base. He suggests Apple discourages casual purchase of the wall-mounted version unless users are certain. A lower price might lead to impulse buys followed by dissatisfaction due to installation complexity.</blockquote>
+<p>🏷️ Apple, HomeView, pricing strategy, product design</p>
+<hr>
+<h3>10. Apple 就 Duo 需求远超供应发布声明</h3>
+<p><a href="https://www.ft.com/content/7b236286-ca1d-4063-a728-7f968a638b8f">Apple Issues Statement on Duo Demand Far Outstripping Supply</a> — <strong>daringfireball.net</strong> · 8 小时前 · ⭐ 21/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Apple 发布声明，表示其首款折叠屏 iPhone Duo 的预购需求“非同寻常”。尽管最初承诺 10 月 23 日发货，但订单开放后不久，Apple 官网上的发货时间已推迟到次年一月。美国主要运营商的新订单发货时间也已推迟。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Apple has issued a statement acknowledging that demand for its first foldable iPhone, Duo, has been "extraordinary." Despite an initial promise of delivery by October 23rd, delivery times on Apple's website slipped to late January shortly after orders opened. Delivery times for new orders from major US carriers have also been pushed back.</blockquote>
+<p>🏷️ Apple, iPhone Duo, demand, supply chain</p>
+<hr>
+<h2>🔒 安全</h2>
+<h3>11. Pluralistic：以色列广告技术公司是“雇佣间谍软件”的交付系统</h3>
+<p><a href="https://pluralistic.net/2026/10/17/mercenary-spyware/">Pluralistic: Israeli ad-tech company was a delivery system for "mercenary spyware" (17 Oct 2026)</a> — <strong>pluralistic.net</strong> · 1 天前 · ⭐ 24/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>今日链接聚焦以色列一家广告技术公司，其被揭露为“雇佣间谍软件”的交付系统，并利用谷歌、Facebook等主流广告平台进行传播。文章还提及了其他一些值得关注的链接，涵盖了从科技产品到社会现象的广泛话题。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Today's links highlight an Israeli ad-tech company that served as a delivery system for 'mercenary spyware,' utilizing major ad platforms like Google and Facebook for distribution. The article also points to various other interesting links covering a broad range of topics from tech products to societal phenomena.</blockquote>
+<p>🏷️ spyware, ad-tech, mercenary spyware, Google</p>
+<hr>
+<h3>12. Una Watch TOTP - 手腕上的多因素认证！</h3>
+<p><a href="https://shkspr.mobi/blog/2026/10/una-watch-totp-mfa-on-your-wrist/">Una Watch TOTP - MFA on your wrist!</a> — <strong>shkspr.mobi</strong> · 16 小时前 · ⭐ 23/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>作者开发了一款手表应用，用于显示两步验证（TOTP）代码，以方便自己随时访问。然而，作者也承认这是一个糟糕的安全主意，因为一旦手表丢失或被盗，他人就能轻易获取验证码。更糟糕的是，如果有人反编译应用，甚至可能找到密钥。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>The author has developed a watch app to display two-factor authentication (TOTP) codes for easy personal access. However, the author acknowledges this is a terrible security idea, as stolen watches could grant access to the codes. Decompiling the app could even reveal the secret keys.</blockquote>
+<p>🏷️ MFA, watch, security risk</p>
+<hr>
+<h3>13. NIST 曲线的疑云散去</h3>
+<p><a href="https://www.johndcook.com/blog/2026/10/17/nist-curves-exonorated/">Cloud of suspicion lifted from NIST curves</a> — <strong>johndcook.com</strong> · 1 天前 · ⭐ 22/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>NIST 于 2000 年发布了一系列用于加密的椭圆曲线，这些曲线的种子由 NSA 提供。此前，密码学家怀疑 NSA 可能在这些曲线中植入了后门。然而，最近的研究表明，这些曲线的安全性得到了证实，消除了之前的担忧。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>NIST published a set of elliptic curves for cryptography in 2000, with seeds supplied by the NSA, leading to suspicions of backdoors. Recent research has now validated the security of these curves, lifting the cloud of suspicion. This development is significant for cryptographic security.</blockquote>
+<p>🏷️ NIST curves, cryptography, NSA, backdoor</p>
 <hr>
 <h2>⚙️ 工程</h2>
-<h3>14. 引用Addy Osmani、Morgan Westlee Lunt和Qing Wang的观点</h3>
-<p><a href="https://simonwillison.net/2026/Oct/16/code-review/">Quoting Addy Osmani, Morgan Westlee Lunt, and Qing Wang</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 23/30</p>
+<h3>14. NIST 曲线的疑云被拨开</h3>
+<p><a href="https://seangoedecke.com/what-requirements-dont-you-have/">What requirements don't you have?</a> — <strong>seangoedecke.com</strong> · 4 小时前 · ⭐ 24/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>文章引用了Anthropic关于代码审查的观点，认为“是否有人工阅读代码”是一个不精确的指标。更重要的是“这个改动可能出现什么问题，以及哪种检查（自动化或人工）是捕捉它的正确方式？”这种提问方式改变了审查发生的时间，从项目末端的“门禁”转变为类似写作时的“拼写检查”的持续过程。</blockquote>
+<blockquote>NIST 于 2000 年发布了一套用于密码学的椭圆曲线，其中一些曲线的种子由 NSA 提供，引发了关于后门存在的担忧。尽管 NSA 曾被证实曾在 Dual_EC_DRBG 随机数生成器中植入后门，但 Anthropic 的研究人员最近的研究似乎为 NIST 曲线洗清了嫌疑，表明它们可能并未被恶意篡改。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Quoting Anthropic's perspective on code review, the article suggests that 'did a human read the code?' is an imprecise proxy. A more pertinent question is 'what could go wrong with this change, and which check—automated or human—is the right one to catch it?' This reframing shifts review from an end-of-project gate to a continuous process, akin to spellcheck while writing.</blockquote>
-<p>🏷️ code review, software engineering, quality, automation</p>
+<blockquote>Concerns about backdoors in NIST's 2000 suite of cryptographic elliptic curves, seeded by the NSA, have been addressed. While the NSA previously inserted a backdoor in the Dual_EC_DRBG random number generator, recent research by Anthropic appears to have exonerated the NIST curves, suggesting they may not contain malicious modifications.</blockquote>
+<p>🏷️ software design, requirements, elegance, trade-offs</p>
 <hr>
-<h3>15. C++ futures 系列第五部分：std::future 和 std::shared_future</h3>
-<p><a href="https://devblogs.microsoft.com/oldnewthing/20261016-00/?p=112778/">C++ futures part 5: std::future and std::shared_future</a> — <strong>devblogs.microsoft.com/oldnewthing</strong> · 1 天前 · ⭐ 22/30</p>
+<h3>15. Intel 386于1985年10月17日发布</h3>
+<p><a href="https://dfarq.homeip.net/intel-386-released-october-17-1985/?utm_source=rss&amp;amp;#038;utm_medium=rss&amp;amp;#038;utm_campaign=intel-386-released-october-17-1985">Intel 386 released October 17, 1985</a> — <strong>dfarq.homeip.net</strong> · 1 天前 · ⭐ 24/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>本篇文章是 C++ futures 系列的第五部分，主要讲解如何从异步操作中获取结果。文章聚焦于 <code>std::future</code> 和 <code>std::shared_future</code> 这两个 C++ 标准库中的工具。它解释了如何使用它们来检索异步任务的返回值。</blockquote>
+<blockquote>1985年10月17日，英特尔发布了其386（又称80386或386DX）CPU。这款处理器被认为是计算机行业的一个分水岭，其革命性的设计和性能极大地改变了个人电脑的发展方向，堪称一项颠覆性产品。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This is the fifth part of the C++ futures series, focusing on retrieving results from asynchronous operations. The article delves into <code>std::future</code> and <code>std::shared_future</code>, explaining how to use these tools to get the return values of asynchronous tasks.</blockquote>
-<p>🏷️ C++, futures, std::future, programming</p>
+<blockquote>On October 17, 1985, Intel released its 386 CPU, also known as the 80386. This processor marked a significant turning point in the computer industry, with its groundbreaking design and performance fundamentally altering the trajectory of personal computing and earning its reputation as a disruptive product.</blockquote>
+<p>🏷️ Intel 386, CPU, computer industry, disruptive product</p>
 <hr>
-<p>*生成于 2026-10-18 04:02 | 扫描 82 源 → 获取 2512 篇 → 精选 15 篇* *基于 <a href="https://refactoringenglish.com/tools/hn-popularity/">Hacker News Popularity Contest 2025</a> RSS 源列表，由 <a href="https://x.com/karpathy">Andrej Karpathy</a> 推荐*</p>
+<p>*生成于 2026-10-19 04:11 | 扫描 82 源 → 获取 2507 篇 → 精选 15 篇* *基于 <a href="https://refactoringenglish.com/tools/hn-popularity/">Hacker News Popularity Contest 2025</a> RSS 源列表，由 <a href="https://x.com/karpathy">Andrej Karpathy</a> 推荐*</p>
     </article>
   </main>
-  <script id="speech-text" type="application/json">"🎧 点这里朗读今日日报\n📰 AI 博客每日精选 — 2026-10-18\n来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15\n📝 今日看点\n今日技术看点聚焦AI的未来想象与现实挑战，以及软件开发与安全的持续演进。一方面，AI研究者对AI治愈癌症的狂热信念，以及Apple加强应用审核以打击不当内容，都反映了AI技术发展带来的伦理与安全考量。另一方面，C++ futures的深入探讨和微型Web应用的创新，则展示了开发者在提升代码效率和工具便捷性上的不懈努力。\n \n🏆 今日必读\n🥇 web-edit 0.1a2 发布：用于浏览和编辑文件的微型 Web 应用\nWriting is no longer proof of work — seangoedecke.com · 4 小时前 · 💡 观点 / 杂谈\n中文摘要\nSimon Willison 发布了 web-edit 的 0.1a2 版本，这是一个用于浏览和编辑文件夹内文件的微型 Web 应用。主要用于通过 Tailscale 在不同机器上编辑文件，新版本增加了对文本和图像数据复制到剪贴板的功能。此功能对于在笔记本电脑上通过手机运行 Pelican 提示尤为有用。\nEnglish Summary\nSimon Willison has released web-edit 0.1a2, a tiny web app for browsing and editing files within a folder. Primarily built for editing files across different machines via Tailscale, this new release adds a \"copy to clipboard\" option for both text and image data. This feature is particularly useful for running Pelican prompts on a laptop from a phone.\n💡 为什么值得读: 了解一个用于跨设备文件编辑的实用小工具及其最新功能。\n💡 Why read it: Discover a practical, minimalist tool for cross-device file editing and its latest enhancements.\n🏷️ writing, proof of work, LLMs, AI\n🥈 高风险投资：风险资本正在扼杀自己\nHow the AI boom might really end: 5 scenarios — martinalderson.com · 4 小时前 · 💡 观点 / 杂谈\n中文摘要\n文章认为，大约十四年前政府的一项错误决策，使得科技公司和风险投资能够合法地欺骗数百万散户投资者。这种行为剥夺了投资者获取良好信息的机会，并虚假地推高了主要科技公司 IPO 的估值。作者认为这种模式正在自我毁灭。\nEnglish Summary\nThe article argues that a governmental mistake made about fourteen years ago enabled tech companies and venture capitalists to legally scam millions of retail investors. This practice deprived investors of good information and spuriously inflated the valuations of major tech IPOs, a model the author believes is self-destructive.\n💡 为什么值得读: 深入剖析风险投资模式的弊端及其对市场和投资者的潜在危害。\n💡 Why read it: Gain insight into the detrimental aspects of the venture capital model and its potential harm to markets and investors.\n🏷️ AI boom, scenarios, investment, chip stocks\n🥉 C++ futures part 5: std::future 和 std::sharedfuture\nWhatever You Say Bounces Off Me and Sticks to You — daringfireball.net · 3 小时前 · 🔒 安全\n中文摘要\n本文是 C++ futures 系列的第五部分，重点介绍了如何从 std::future 和 std::sharedfuture 中获取结果。std::future 提供了一种获取异步操作结果的机制，而 std::sharedfuture 则允许多个执行绪共享同一个结果。\nEnglish Summary\nThis is the fifth part of the C++ futures series, focusing on how to retrieve results from std::future and std::sharedfuture. std::future provides a mechanism to obtain the result of an asynchronous operation, while std::sharedfuture allows multiple threads to share the same result.\n💡 为什么值得读: 理解 C++ 中 std::future 和 std::sharedfuture 的结果获取机制，对于并发编程至关重要。\n💡 Why read it: Understanding the result retrieval mechanisms of std::future and std::sharedfuture in C++ is crucial for concurrent programming.\n🏷️ OpenAI, Apple, confidential information, data leak\n \n📊 数据概览\n \n \n \n分类分布\nmermaid\npie showData\n title \"文章分类分布\"\n \"💡 观点 / 杂谈\" : 4\n \"🔒 安全\" : 4\n \"🛠 工具 / 开源\" : 3\n \"🤖 AI / ML\" : 2\n \"⚙️ 工程\" : 2\n高频关键词\nmermaid\nxychart-beta horizontal\n title \"高频关键词\"\n x-axis [\"ai\", \"writing\", \"proof of work\", \"llms\", \"ai boom\", \"scenarios\", \"investment\", \"chip stocks\", \"openai\", \"apple\", \"confidential information\", \"data leak\"]\n y-axis \"出现次数\" 0 --> 5\n bar [3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]\n📈 纯文本关键词图（终端友好）\nai │ ████████████████████ 3\nwriting │ ███████░░░░░░░░░░░░░ 1\nproof of work │ ███████░░░░░░░░░░░░░ 1\nllms │ ███████░░░░░░░░░░░░░ 1\nai boom │ ███████░░░░░░░░░░░░░ 1\nscenarios │ ███████░░░░░░░░░░░░░ 1\ninvestment │ ███████░░░░░░░░░░░░░ 1\nchip stocks │ ███████░░░░░░░░░░░░░ 1\nopenai │ ███████░░░░░░░░░░░░░ 1\napple │ ███████░░░░░░░░░░░░░ 1\n🏷️ 话题标签\nai(3) · writing(1) · proof of work(1) · llms(1) · ai boom(1) · scenarios(1) · investment(1) · chip stocks(1) · openai(1) · apple(1) · confidential information(1) · data leak(1) · nist curves(1) · cryptography(1) · backdoors(1) · nsa(1) · llm(1) · muse spark open(1) · mac(1) · spyware(1)\n \n💡 观点 / 杂谈\n1. web-edit 0.1a2 发布：用于浏览和编辑文件的微型 Web 应用\nWriting is no longer proof of work — seangoedecke.com · 4 小时前 · ⭐ 26/30\n中文摘要\nSimon Willison 发布了 web-edit 的 0.1a2 版本，这是一个用于浏览和编辑文件夹内文件的微型 Web 应用。主要用于通过 Tailscale 在不同机器上编辑文件，新版本增加了对文本和图像数据复制到剪贴板的功能。此功能对于在笔记本电脑上通过手机运行 Pelican 提示尤为有用。\nEnglish Summary\nSimon Willison has released web-edit 0.1a2, a tiny web app for browsing and editing files within a folder. Primarily built for editing files across different machines via Tailscale, this new release adds a \"copy to clipboard\" option for both text and image data. This feature is particularly useful for running Pelican prompts on a laptop from a phone.\n🏷️ writing, proof of work, LLMs, AI\n \n2. 高风险投资：风险资本正在扼杀自己\nHow the AI boom might really end: 5 scenarios — martinalderson.com · 4 小时前 · ⭐ 26/30\n中文摘要\n文章认为，大约十四年前政府的一项错误决策，使得科技公司和风险投资能够合法地欺骗数百万散户投资者。这种行为剥夺了投资者获取良好信息的机会，并虚假地推高了主要科技公司 IPO 的估值。作者认为这种模式正在自我毁灭。\nEnglish Summary\nThe article argues that a governmental mistake made about fourteen years ago enabled tech companies and venture capitalists to legally scam millions of retail investors. This practice deprived investors of good information and spuriously inflated the valuations of major tech IPOs, a model the author believes is self-destructive.\n🏷️ AI boom, scenarios, investment, chip stocks\n \n3. 高管：风险投资正在扼杀自己\nPremium: Venture Capital Is Killing Itself — wheresyoured.at · 1 天前 · ⭐ 22/30\n中文摘要\n文章探讨了大约十四年前政府的一项错误决策，该决策允许科技公司和风险投资机构合谋，通过虚假膨胀的估值和信息误导来欺骗数百万零售投资者。这种行为对科技行业的首次公开募股（IPO）产生了广泛影响。\nEnglish Summary\nThis article discusses a governmental mistake made about fourteen years ago that enabled tech companies and venture capitalists to conspire in legally scamming millions of retail investors. This was achieved by spuriously inflating valuations and depriving investors of good information, impacting major tech IPOs.\n🏷️ Venture Capital, tech industry, investors, scam\n \n4. ★ HomeView 想法与观察\n★ HomeView Thoughts and Observations — daringfireball.net · 10 小时前 · ⭐ 21/30\n中文摘要\n文章对苹果 HomeView 的必要性提出了质疑，认为其宣传视频未能充分解答“我们为什么需要这个？”的疑问。作者指出，用户需要主动认为自己需要它才会购买。即使已经设置了 HomeView，其使用频率可能不如手机或直接语音交互方便。\nEnglish Summary\nThe article questions the necessity of Apple's HomeView, stating that its promotional video fails to answer the question of 'Why do we need this?'. The author suggests users must actively desire it to purchase it, and even with a setup, its usage might be less frequent than using a phone or voice commands.\n🏷️ Apple HomeView, smart home, product strategy, user experience\n \n🔒 安全\n5. C++ futures part 5: std::future 和 std::sharedfuture\nWhatever You Say Bounces Off Me and Sticks to You — daringfireball.net · 3 小时前 · ⭐ 25/30\n中文摘要\n本文是 C++ futures 系列的第五部分，重点介绍了如何从 std::future 和 std::sharedfuture 中获取结果。std::future 提供了一种获取异步操作结果的机制，而 std::sharedfuture 则允许多个执行绪共享同一个结果。\nEnglish Summary\nThis is the fifth part of the C++ futures series, focusing on how to retrieve results from std::future and std::sharedfuture. std::future provides a mechanism to obtain the result of an asynchronous operation, while std::sharedfuture allows multiple threads to share the same result.\n🏷️ OpenAI, Apple, confidential information, data leak\n \n6. HomeView 思考与观察\nCloud of suspicion lifted from NIST curves — johndcook.com · 12 小时前 · ⭐ 25/30\n中文摘要\n文章对 Apple 的 HomeView 产品提出了质疑，认为其必要性不明，且用户可能不会频繁使用它，尤其是在已有手机或 HomePod 的情况下。作者强调，用户需要明确的需求才能购买此类产品。\nEnglish Summary\nThe article questions the necessity of Apple's HomeView product, suggesting users might not find frequent use for it, especially given the availability of smartphones or HomePods. The author emphasizes that users need a clear need to justify purchasing such a product.\n🏷️ NIST curves, cryptography, backdoors, NSA\n \n7. Pluralistic: 以色列广告科技公司曾是“雇佣间谍软件”的交付系统\nPluralistic: Israeli ad-tech company was a delivery system for \"mercenary spyware\" (17 Oct 2026) — pluralistic.net · 17 小时前 · ⭐ 23/30\n中文摘要\n一家以色列广告科技公司被揭露曾是“雇佣间谍软件”的交付系统，并利用Google、Facebook等各大广告平台进行传播。文章还提及了其他一些链接内容，包括对象持久性、No-Fly列表与常识的冲突、以及一些科技和政治相关的事件。\nEnglish Summary\nAn Israeli ad-tech company has been revealed as a delivery system for 'mercenary spyware,' utilizing major ad platforms like Google and Facebook for distribution. The article also links to other content, including object permanence, conflicts between no-fly lists and common sense, and various tech and political events.\n🏷️ spyware, ad-tech, mercenary, privacy\n \n8. Apple：‘加强应用审核指南，打击非双方同意的亲密图像和‘诱骗式’应用’\nApple: ‘Strengthening App Review Guidelines Against Nonconsensual Intimate Imagery and Bait-And-Switch Apps’ — daringfireball.net · 1 天前 · ⭐ 23/30\n中文摘要\nApple在其开发者新闻中宣布，将加强应用审核指南，禁止色情内容，包括生成真实人物未经同意的性暗示图像的“裸照化”应用。对于托管用户生成内容的应用程序，要求其过滤不当内容、提供举报机制并允许用户屏蔽不良账户。此举旨在提升App Store的安全性与用户体验。\nEnglish Summary\nApple announced in its Developer News that it is strengthening App Review Guidelines to prohibit pornographic material, including 'nudification' apps that generate sexually explicit images of real individuals without their consent. Apps hosting user-generated content will be required to filter objectionable material, provide reporting mechanisms, and allow users to block abusive accounts, aiming to enhance App Store safety and user experience.\n🏷️ App Store, guidelines, nonconsensual imagery, bait-and-switch\n \n🛠 工具 / 开源\n9. 使用document​.currentScript进行内联渲染\nInline rendering with document​.currentScript — simonwillison.net · 6 小时前 · ⭐ 22/30\n中文摘要\nLean Rada介绍了一种利用document.currentScript属性的技巧，可以通过一个小的内联script元素在页面加载时实现自我替换。这种方法允许在HTML中直接嵌入动态内容，而无需额外的JavaScript文件或复杂的DOM操作，简化了前端开发。\nEnglish Summary\nLean Rada describes a technique leveraging the document.currentScript property, allowing a small inline script element to replace itself upon page load. This method enables direct embedding of dynamic content within HTML, simplifying frontend development by avoiding the need for separate JavaScript files or complex DOM manipulations.\n🏷️ JavaScript, document.currentScript, inline rendering, web development\n \n10. web-edit 0.1a2 发布\nweb-edit 0.1a2 — simonwillison.net · 14 小时前 · ⭐ 22/30\n中文摘要\nweb-edit 是一款用于浏览和编辑文件夹内文件的微型 Web 应用。开发者 Simon Willison 主要用它来通过 Tailscale 在不同机器上编辑文件。新版本 0.1a2 增加了文本和图像数据的“复制到剪贴板”选项。此功能是为了方便在手机上运行 Pelican 提示而添加的。\nEnglish Summary\nweb-edit is a tiny web app for browsing and editing files in a folder, primarily used for editing files across different machines via Tailscale. The new release 0.1a2 adds a 'copy to clipboard' option for both text and image data. This feature was added to facilitate running Pelican prompts from a phone.\n🏷️ web-edit, file browsing, editing tool, open source\n \n11. 本周包管理：2026年10月17日\nThis Week in Package Management: 17 October 2026 — nesbitt.io · 18 小时前 · ⭐ 21/30\n中文摘要\n本周包管理新闻汇总了来自整个包管理领域的最新发布、安全公告和相关文章。它为开发者和系统管理员提供了一个了解行业动态的窗口。\nEnglish Summary\nThis week's package management news summarizes releases, advisories, and articles from across the package management world. It serves as a window for developers and system administrators to stay updated on industry trends.\n🏷️ package management, releases, advisories\n \n🤖 AI / ML\n12. 本周包管理：2026年10月17日\nStrange Times Make for Strange Bedfellows — daringfireball.net · 1 天前 · ⭐ 24/30\n中文摘要\n本周包管理周报汇总了来自整个包管理领域的最新发布、安全公告和相关文章。内容涵盖了不同包管理器的更新动态和行业信息。\nEnglish Summary\nThis week's package management roundup compiles the latest releases, advisories, and articles from across the package management world. It covers updates and industry news from various package managers.\n🏷️ AI, LLM, Muse Spark Open, Mac\n \n13. Palantir首席技术官Shyam Sankar称，AI研究人员开始吸烟，因为他们坚信AI（很可能是Claude）将治愈癌症\nShyam Sankar, CTO of Palantir, Says AI Researchers Have Started Smoking Because They’re Convinced AI (Claude, Probably) Is Going to Cure Cancer — daringfireball.net · 1 天前 · ⭐ 23/30\n中文摘要\nPalantir首席技术官Shyam Sankar在CBS的《Face the Nation》节目中表示，许多硅谷的AI技术构建者将机器AI视为“神”。他分享了一个有趣的现象：许多AI研究人员开始吸烟，以此作为一种象征，暗示他们对AI（可能指Claude）能够解决重大问题（如癌症）抱有近乎宗教般的信念，并可能因此产生一种虚幻的慰藉感。\nEnglish Summary\nShyam Sankar, CTO of Palantir, stated on CBS's 'Face the Nation' that many builders of AI technology in Silicon Valley view machine AI as a 'god.' He shared an anecdote that many AI researchers have started smoking as a symbolic act, reflecting a near-religious conviction that AI (possibly Claude) will solve major problems like cancer, perhaps offering a form of illusory solace.\n🏷️ AI, cancer cure, researchers, optimism\n \n⚙️ 工程\n14. 引用Addy Osmani、Morgan Westlee Lunt和Qing Wang的观点\nQuoting Addy Osmani, Morgan Westlee Lunt, and Qing Wang — simonwillison.net · 1 天前 · ⭐ 23/30\n中文摘要\n文章引用了Anthropic关于代码审查的观点，认为“是否有人工阅读代码”是一个不精确的指标。更重要的是“这个改动可能出现什么问题，以及哪种检查（自动化或人工）是捕捉它的正确方式？”这种提问方式改变了审查发生的时间，从项目末端的“门禁”转变为类似写作时的“拼写检查”的持续过程。\nEnglish Summary\nQuoting Anthropic's perspective on code review, the article suggests that 'did a human read the code?' is an imprecise proxy. A more pertinent question is 'what could go wrong with this change, and which check—automated or human—is the right one to catch it?' This reframing shifts review from an end-of-project gate to a continuous process, akin to spellcheck while writing.\n🏷️ code review, software engineering, quality, automation\n \n15. C++ futures 系列第五部分：std::future 和 std::sharedfuture\nC++ futures part 5: std::future and std::sharedfuture — devblogs.microsoft.com/oldnewthing · 1 天前 · ⭐ 22/30\n中文摘要\n本篇文章是 C++ futures 系列的第五部分，主要讲解如何从异步操作中获取结果。文章聚焦于 std::future 和 std::sharedfuture 这两个 C++ 标准库中的工具。它解释了如何使用它们来检索异步任务的返回值。\nEnglish Summary\nThis is the fifth part of the C++ futures series, focusing on retrieving results from asynchronous operations. The article delves into std::future and std::sharedfuture, explaining how to use these tools to get the return values of asynchronous tasks.\n🏷️ C++, futures, std::future, programming\n \n生成于 2026-10-18 04:02 | 扫描 82 源 → 获取 2512 篇 → 精选 15 篇\n基于 Hacker News Popularity Contest 2025 RSS 源列表，由 Andrej Karpathy 推荐"</script>
+  <script id="speech-text" type="application/json">"🎧 点这里朗读今日日报\n📰 AI 博客每日精选 — 2026-10-19\n来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15\n📝 今日看点\n今日技术看点聚焦人工智能的快速演进与安全挑战。大语言模型（LLM）工具不断优化，提升了模拟和集成能力，但双因素认证等安全实践仍需审慎。同时，智能硬件的创新与延迟并存，折叠屏手机需求火爆，而苹果的智能家居产品则面临软件开发的瓶颈。此外，网络安全领域揭示了广告技术公司沦为间谍软件传播渠道的严峻现实。\n \n🏆 今日必读\n🥇 LLM-Echo 0.5 发布：更新模拟 token 使用计数以支持工具调用和系统提示\nWriting is no longer proof of work — seangoedecke.com · 1 天前 · 🤖 AI / ML\n中文摘要\nLLM-Echo 0.5 发布，更新了其模拟 token 使用计数功能，以更准确地反映工具调用和系统提示对 token 的消耗。该插件提供了一个不实际调用 LLM 的“模型”，而是直接回显用户输入的提示。此次更新旨在提高调试 LLM 应用时对 token 使用量的估算精度，尤其是在涉及复杂交互场景下。\nEnglish Summary\nLLM-Echo 0.5 has been released, updating its simulated token usage counts to better reflect the consumption from tool calls and system prompts. This plugin provides a \"model\" that echoes user prompts without actual LLM interaction. The update aims to improve the accuracy of token usage estimations during LLM application debugging, especially in scenarios involving complex interactions.\n💡 为什么值得读: 了解 LLM 调试工具如何更精确地模拟 token 使用量，尤其是在处理工具调用和系统提示时。\n💡 Why read it: Understand how LLM debugging tools can more accurately simulate token usage, particularly when handling tool calls and system prompts.\n🏷️ writing, proof of work, LLMs, tech companies\n🥈 Una Watch TOTP：将双因素认证放在手腕上\nHow the AI boom might really end: 5 scenarios — martinalderson.com · 1 天前 · 🤖 AI / ML\n中文摘要\n作者开发了一款名为 Una Watch TOTP 的手表应用，用于显示一次性密码（TOTP）以实现多因素认证（MFA）。尽管该应用提供了便捷性，但作者承认这是一种糟糕的安全实践，因为手表一旦丢失或被盗，一次性密码将暴露给窃贼。此外，应用中的密钥也可能被反编译获取。\nEnglish Summary\nThe author developed a watch app, Una Watch TOTP, to display Time-based One-Time Passwords (TOTP) for Multi-Factor Authentication (MFA). While convenient, the author acknowledges this poses a significant security risk, as stolen watches would expose one-time codes, and secrets could be extracted via decompilation.\n💡 为什么值得读: 探讨将敏感的 MFA 代码直接显示在可穿戴设备上的安全隐患与便利性之间的权衡。\n💡 Why read it: Explore the trade-off between convenience and security when displaying sensitive MFA codes directly on a wearable device.\n🏷️ AI boom, scenarios, chip stocks, Anthropic\n🥉 Manton Reece 的“ Spitball”理论：解释 HomePod Wall-Mounted 版本与带低音炮底座版本价格相同的原因\nWhatever You Say Bounces Off Me and Sticks to You — daringfireball.net · 1 天前 · 🤖 AI / ML\n中文摘要\nManton Reece 提出理论，认为 Apple 将 HomePod Wall-Mounted 版本定价与带低音炮底座的版本相同，是为了阻止用户在不确定是否需要壁挂版本时仅因价格而购买。如果壁挂版本更便宜，可能会导致用户冲动购买后因安装不便而后悔。\nEnglish Summary\nManton Reece theorizes that Apple prices the wall-mounted HomePod the same as the version with the subwoofer base to discourage users from buying it solely based on price if they are unsure of their need. A cheaper wall-mounted version might lead to impulse purchases followed by regret due to installation difficulties.\n💡 为什么值得读: 理解 Apple 的产品定价策略如何通过价格信号来引导用户选择最适合其需求的产品。\n💡 Why read it: Understand how Apple's product pricing strategy uses price signals to guide users toward the most suitable product for their needs.\n🏷️ OpenAI, Apple, unreleased product, data leak\n \n📊 数据概览\n \n \n \n分类分布\nmermaid\npie showData\n title \"文章分类分布\"\n \"🤖 AI / ML\" : 4\n \"🛠 工具 / 开源\" : 3\n \"📝 其他\" : 3\n \"🔒 安全\" : 3\n \"⚙️ 工程\" : 2\n高频关键词\nmermaid\nxychart-beta horizontal\n title \"高频关键词\"\n x-axis [\"apple\", \"homeview\", \"mfa\", \"llm\", \"release\", \"writing\", \"proof of work\", \"llms\", \"tech companies\", \"ai boom\", \"scenarios\", \"chip stocks\"]\n y-axis \"出现次数\" 0 --> 7\n bar [5, 3, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1]\n📈 纯文本关键词图（终端友好）\napple │ ████████████████████ 5\nhomeview │ ████████████░░░░░░░░ 3\nmfa │ ████████░░░░░░░░░░░░ 2\nllm │ ████████░░░░░░░░░░░░ 2\nrelease │ ████████░░░░░░░░░░░░ 2\nwriting │ ████░░░░░░░░░░░░░░░░ 1\nproof of work │ ████░░░░░░░░░░░░░░░░ 1\nllms │ ████░░░░░░░░░░░░░░░░ 1\ntech companies │ ████░░░░░░░░░░░░░░░░ 1\nai boom │ ████░░░░░░░░░░░░░░░░ 1\n🏷️ 话题标签\napple(5) · homeview(3) · mfa(2) · llm(2) · release(2) · writing(1) · proof of work(1) · llms(1) · tech companies(1) · ai boom(1) · scenarios(1) · chip stocks(1) · anthropic(1) · openai(1) · unreleased product(1) · data leak(1) · software design(1) · requirements(1) · elegance(1) · trade-offs(1)\n \n🤖 AI / ML\n1. LLM-Echo 0.5 发布：更新模拟 token 使用计数以支持工具调用和系统提示\nWriting is no longer proof of work — seangoedecke.com · 1 天前 · ⭐ 26/30\n中文摘要\nLLM-Echo 0.5 发布，更新了其模拟 token 使用计数功能，以更准确地反映工具调用和系统提示对 token 的消耗。该插件提供了一个不实际调用 LLM 的“模型”，而是直接回显用户输入的提示。此次更新旨在提高调试 LLM 应用时对 token 使用量的估算精度，尤其是在涉及复杂交互场景下。\nEnglish Summary\nLLM-Echo 0.5 has been released, updating its simulated token usage counts to better reflect the consumption from tool calls and system prompts. This plugin provides a \"model\" that echoes user prompts without actual LLM interaction. The update aims to improve the accuracy of token usage estimations during LLM application debugging, especially in scenarios involving complex interactions.\n🏷️ writing, proof of work, LLMs, tech companies\n \n2. Una Watch TOTP：将双因素认证放在手腕上\nHow the AI boom might really end: 5 scenarios — martinalderson.com · 1 天前 · ⭐ 26/30\n中文摘要\n作者开发了一款名为 Una Watch TOTP 的手表应用，用于显示一次性密码（TOTP）以实现多因素认证（MFA）。尽管该应用提供了便捷性，但作者承认这是一种糟糕的安全实践，因为手表一旦丢失或被盗，一次性密码将暴露给窃贼。此外，应用中的密钥也可能被反编译获取。\nEnglish Summary\nThe author developed a watch app, Una Watch TOTP, to display Time-based One-Time Passwords (TOTP) for Multi-Factor Authentication (MFA). While convenient, the author acknowledges this poses a significant security risk, as stolen watches would expose one-time codes, and secrets could be extracted via decompilation.\n🏷️ AI boom, scenarios, chip stocks, Anthropic\n \n3. Manton Reece 的“ Spitball”理论：解释 HomePod Wall-Mounted 版本与带低音炮底座版本价格相同的原因\nWhatever You Say Bounces Off Me and Sticks to You — daringfireball.net · 1 天前 · ⭐ 25/30\n中文摘要\nManton Reece 提出理论，认为 Apple 将 HomePod Wall-Mounted 版本定价与带低音炮底座的版本相同，是为了阻止用户在不确定是否需要壁挂版本时仅因价格而购买。如果壁挂版本更便宜，可能会导致用户冲动购买后因安装不便而后悔。\nEnglish Summary\nManton Reece theorizes that Apple prices the wall-mounted HomePod the same as the version with the subwoofer base to discourage users from buying it solely based on price if they are unsure of their need. A cheaper wall-mounted version might lead to impulse purchases followed by regret due to installation difficulties.\n🏷️ OpenAI, Apple, unreleased product, data leak\n \n4. Claim Chowder：关于HomeView拥有‘机器人旋转底座’的说法\nClaim Chowder: The Information on HomeView Having a ‘Robotic Swiveling Base’ — daringfireball.net · 6 小时前 · ⭐ 24/30\n中文摘要\nThe Information最初错误报道称苹果正在开发一款带有机器人旋转底座的HomeView产品。实际上，苹果正在开发一系列AI驱动的设备，包括配备增强传感器的AirPods、安全摄像头、智能眼镜和AR眼镜，以及一款带有小型显示屏、扬声器和旋转底座的家庭产品。此报道纠正了早期关于HomeView具体功能的误解。\nEnglish Summary\nThe Information initially misreported that Apple was developing a HomeView product with a 'robotic swiveling base.' In reality, Apple is working on a portfolio of AI-powered devices, including AirPods with enhanced sensors, a security camera, smart glasses, AR glasses, and a home product featuring a small display, speakers, and a swiveling base. This clarifies earlier misconceptions about the specific features of Apple's home product.\n🏷️ Apple, HomeView, AI, product rumors\n \n🛠 工具 / 开源\n5. Apple 就 iPhone Duo 需求远超供应发布声明\nWorkOS AuthKit — daringfireball.net · 5 小时前 · ⭐ 24/30\n中文摘要\nApple 发布声明，表示首款折叠 iPhone 的预购需求“非同寻常地高”，导致原定 10 月 23 日的交付日期推迟至次年 1 月。美国运营商也面临类似的交付延迟。Apple 正在努力尽快将这款革命性产品交付给客户。\nEnglish Summary\nApple has issued a statement acknowledging that pre-order demand for its first foldable iPhone, the iPhone Duo, has been \"extraordinarily high,\" pushing delivery dates from October 23rd into late January. US mobile carriers are also experiencing similar delays. Apple is working to get the revolutionary product to customers as quickly as possible.\n🏷️ authentication, SSO, MFA, WorkOS AuthKit\n \n6. llm-tools-datasette 0.1.1\nllm-tools-datasette 0.1.1 — simonwillison.net · 4 小时前 · ⭐ 23/30\n中文摘要\nllm-tools-datasette 0.1.1 版本发布，修复了因LLM切换到httpx2而导致依赖httpx的插件失效的问题。此次更新解决了插件兼容性问题，确保了llm-tools-datasette能够与最新版本的LLM库正常协同工作。\nEnglish Summary\nThe release of llm-tools-datasette 0.1.1 addresses an issue where plugins relying on httpx broke after LLM switched to httpx2. This update fixes plugin compatibility, ensuring llm-tools-datasette functions correctly with the latest LLM library versions.\n🏷️ LLM, Datasette, release, httpx2\n \n7. llm-echo 0.5 版本发布\nllm-echo 0.5 — simonwillison.net · 4 小时前 · ⭐ 23/30\n中文摘要\nllm-echo 0.5 版本现已发布，该版本更新了模拟的 token 使用量计算，以更好地处理工具调用和系统提示。这个插件提供了一个不涉及实际 LLM 的“模型”，它只会重复接收到的提示。此次更新旨在改进调试和模拟 LLM 交互的体验。\nEnglish Summary\nThe new release of llm-echo 0.5 updates the simulated token usage counts to better handle tool calls and system prompts. This plugin provides a \"model\" that doesn't involve an actual LLM, simply echoing back the prompts it receives. The update aims to improve debugging and the experience of simulating LLM interactions.\n🏷️ LLM, debug plugin, release, llm-echo\n \n📝 其他\n8. Gurman谈HomeView：‘成品已在仓库里堆积了近一年’\nGurman on HomeView: ‘Finished Units Have Been Sitting Boxed Up in Warehouses for the Better Part of a Year’ — daringfireball.net · 6 小时前 · ⭐ 24/30\n中文摘要\n据Mark Gurman报道，由于缺乏可用的助理软件版本，苹果的HomeView产品未能实现其设想的体验，导致硬件已准备就绪但软件开发滞后。该产品已多次推迟发布，最终在2026年才亮相，但其设计（如厚边框和A18处理器）已显得过时。这反映了苹果在将复杂AI功能集成到硬件产品时遇到的挑战。\nEnglish Summary\nAccording to Mark Gurman, Apple's HomeView product has been repeatedly postponed due to delays in its software, specifically the assistant functionality, leaving the hardware ready but the software unfinished. The product, unveiled in 2026 after multiple delays, features dated hardware like thick bezels and an A18 processor. This highlights Apple's challenges in integrating advanced AI features into hardware.\n🏷️ Apple, HomeView, product delay, hardware software\n \n9. Manton Reece 关于 HomeView 壁挂版与带低音炮底座版价格相同的推测\nManton Reece’s Spitball Theory on Why the Wall-Mounted HomeView Costs the Same as the Version With the Subwoofer Base — daringfireball.net · 8 小时前 · ⭐ 22/30\n中文摘要\nManton Reece 提出了一种关于 Apple HomeView 壁挂版和带低音炮底座版价格相同的原因推测。他认为 Apple 不希望用户轻易购买壁挂版，除非他们确定这是所需。如果壁挂版更便宜，可能会有人因价格而购买，但随后因安装麻烦而不满意。\nEnglish Summary\nManton Reece speculates on why the wall-mounted version of Apple's HomeView costs the same as the version with the subwoofer base. He suggests Apple discourages casual purchase of the wall-mounted version unless users are certain. A lower price might lead to impulse buys followed by dissatisfaction due to installation complexity.\n🏷️ Apple, HomeView, pricing strategy, product design\n \n10. Apple 就 Duo 需求远超供应发布声明\nApple Issues Statement on Duo Demand Far Outstripping Supply — daringfireball.net · 8 小时前 · ⭐ 21/30\n中文摘要\nApple 发布声明，表示其首款折叠屏 iPhone Duo 的预购需求“非同寻常”。尽管最初承诺 10 月 23 日发货，但订单开放后不久，Apple 官网上的发货时间已推迟到次年一月。美国主要运营商的新订单发货时间也已推迟。\nEnglish Summary\nApple has issued a statement acknowledging that demand for its first foldable iPhone, Duo, has been \"extraordinary.\" Despite an initial promise of delivery by October 23rd, delivery times on Apple's website slipped to late January shortly after orders opened. Delivery times for new orders from major US carriers have also been pushed back.\n🏷️ Apple, iPhone Duo, demand, supply chain\n \n🔒 安全\n11. Pluralistic：以色列广告技术公司是“雇佣间谍软件”的交付系统\nPluralistic: Israeli ad-tech company was a delivery system for \"mercenary spyware\" (17 Oct 2026) — pluralistic.net · 1 天前 · ⭐ 24/30\n中文摘要\n今日链接聚焦以色列一家广告技术公司，其被揭露为“雇佣间谍软件”的交付系统，并利用谷歌、Facebook等主流广告平台进行传播。文章还提及了其他一些值得关注的链接，涵盖了从科技产品到社会现象的广泛话题。\nEnglish Summary\nToday's links highlight an Israeli ad-tech company that served as a delivery system for 'mercenary spyware,' utilizing major ad platforms like Google and Facebook for distribution. The article also points to various other interesting links covering a broad range of topics from tech products to societal phenomena.\n🏷️ spyware, ad-tech, mercenary spyware, Google\n \n12. Una Watch TOTP - 手腕上的多因素认证！\nUna Watch TOTP - MFA on your wrist! — shkspr.mobi · 16 小时前 · ⭐ 23/30\n中文摘要\n作者开发了一款手表应用，用于显示两步验证（TOTP）代码，以方便自己随时访问。然而，作者也承认这是一个糟糕的安全主意，因为一旦手表丢失或被盗，他人就能轻易获取验证码。更糟糕的是，如果有人反编译应用，甚至可能找到密钥。\nEnglish Summary\nThe author has developed a watch app to display two-factor authentication (TOTP) codes for easy personal access. However, the author acknowledges this is a terrible security idea, as stolen watches could grant access to the codes. Decompiling the app could even reveal the secret keys.\n🏷️ MFA, watch, security risk\n \n13. NIST 曲线的疑云散去\nCloud of suspicion lifted from NIST curves — johndcook.com · 1 天前 · ⭐ 22/30\n中文摘要\nNIST 于 2000 年发布了一系列用于加密的椭圆曲线，这些曲线的种子由 NSA 提供。此前，密码学家怀疑 NSA 可能在这些曲线中植入了后门。然而，最近的研究表明，这些曲线的安全性得到了证实，消除了之前的担忧。\nEnglish Summary\nNIST published a set of elliptic curves for cryptography in 2000, with seeds supplied by the NSA, leading to suspicions of backdoors. Recent research has now validated the security of these curves, lifting the cloud of suspicion. This development is significant for cryptographic security.\n🏷️ NIST curves, cryptography, NSA, backdoor\n \n⚙️ 工程\n14. NIST 曲线的疑云被拨开\nWhat requirements don't you have? — seangoedecke.com · 4 小时前 · ⭐ 24/30\n中文摘要\nNIST 于 2000 年发布了一套用于密码学的椭圆曲线，其中一些曲线的种子由 NSA 提供，引发了关于后门存在的担忧。尽管 NSA 曾被证实曾在 DualECDRBG 随机数生成器中植入后门，但 Anthropic 的研究人员最近的研究似乎为 NIST 曲线洗清了嫌疑，表明它们可能并未被恶意篡改。\nEnglish Summary\nConcerns about backdoors in NIST's 2000 suite of cryptographic elliptic curves, seeded by the NSA, have been addressed. While the NSA previously inserted a backdoor in the DualECDRBG random number generator, recent research by Anthropic appears to have exonerated the NIST curves, suggesting they may not contain malicious modifications.\n🏷️ software design, requirements, elegance, trade-offs\n \n15. Intel 386于1985年10月17日发布\nIntel 386 released October 17, 1985 — dfarq.homeip.net · 1 天前 · ⭐ 24/30\n中文摘要\n1985年10月17日，英特尔发布了其386（又称80386或386DX）CPU。这款处理器被认为是计算机行业的一个分水岭，其革命性的设计和性能极大地改变了个人电脑的发展方向，堪称一项颠覆性产品。\nEnglish Summary\nOn October 17, 1985, Intel released its 386 CPU, also known as the 80386. This processor marked a significant turning point in the computer industry, with its groundbreaking design and performance fundamentally altering the trajectory of personal computing and earning its reputation as a disruptive product.\n🏷️ Intel 386, CPU, computer industry, disruptive product\n \n生成于 2026-10-19 04:11 | 扫描 82 源 → 获取 2507 篇 → 精选 15 篇\n基于 Hacker News Popularity Contest 2025 RSS 源列表，由 Andrej Karpathy 推荐"</script>
   <script>
     const text = JSON.parse(document.getElementById('speech-text').textContent);
     const statusEl = document.getElementById('status');
