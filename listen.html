@@ -52,203 +52,201 @@
   <main class="shell">
     <article class="card">
       <p>🎧 <a href="https://lingnanren.github.io/ai-daily-digest/listen.html">点这里朗读今日日报</a></p>
-<h1>📰 AI 博客每日精选 — 2026-10-23</h1>
+<h1>📰 AI 博客每日精选 — 2026-10-24</h1>
 <blockquote>来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15</blockquote>
 <h2>📝 今日看点</h2>
-<p>今日技术看点聚焦安全与性能的博弈。一方面，安全漏洞频发，从 Python 元数据块到 NGINX 堆溢出，再到椭圆曲线的潜在后门，都凸显了加强代码安全和依赖管理的紧迫性，Nix 等工具的引入提供了新的解决方案。另一方面，软件性能的瓶颈被重新审视，文章指出设计不佳才是根源，而非语言本身，这或许也解释了为何生成式 AI 的热潮下，仍有声音反思过去软件工程的不足。此外，苹果新设备优化和芯片技术的未来展望也为技术发展描绘了新的图景。</p>
+<p>今日技术看点聚焦折叠屏设备体验与AI安全挑战。苹果新款折叠手机Duo褒贬不一，其创新设计与昂贵价格引发热议，但应用优化和相机表现仍受关注。同时，AI安全领域警钟长鸣，eMudrha证书事件和Ruby语言漏洞凸显了弱密钥和内存安全问题的重要性，网络钓鱼的精准化也对用户隐私构成威胁。</p>
 <hr>
 <h2>🏆 今日必读</h2>
-<p>🥇 <strong>Python PEP 723 元数据块问题排查</strong></p>
-<p><a href="https://simonwillison.net/2026/Oct/21/php-security-release/">Today's PHP Security Release, and How We're Strengthening PHP Security</a> — simonwillison.net · 1 天前 · 🔒 安全</p>
+<p>🥇 <strong>Python 奇怪问题的解决方法</strong></p>
+<p><a href="https://seangoedecke.com/software-is-slow-because-of-bad-design-not-slow-languages/">Software is slow because of bad design, not slow languages</a> — seangoedecke.com · 1 天前 · ⚙️ 工程</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>一篇 Python 脚本在更新后出现“脚本包含多个 PEP 723 元数据块”的错误。作者怀疑这与近期安全更新有关，并分享了解决此问题的过程。通过分析错误信息和搜索相关文档，作者发现问题可能源于脚本中不恰当的元数据定义。最终，作者通过修改脚本的元数据结构解决了这一兼容性问题。</blockquote>
+<blockquote>作者遇到一个之前能正常运行的 Python 脚本突然报错的问题，错误信息为“The script contains multiple PEP 723 metadata blocks”。通过搜索发现，这可能与最近的系统更新有关，特别是对 PEP 723 元数据处理方式的改变。文章探讨了这一问题的可能原因，并提供了绕过或解决此问题的思路。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>A Python script encountered an error stating "The script contains multiple PEP 723 metadata blocks" after recent updates, suspected to be related to security patches. The author details the troubleshooting process, identifying the issue as an improper metadata definition within the script. By analyzing error messages and relevant documentation, the author resolved the compatibility problem by adjusting the script's metadata structure.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 分享了解决 Python 脚本因 PEP 723 元数据冲突而引发的实际问题及方法。</p>
-<p>💡 <strong>Why read it</strong>: Shares a practical solution for a Python script issue caused by PEP 723 metadata conflicts.</p>
-<p>🏷️ PHP, security, vulnerabilities, upgrade</p>
-<p>🥈 <strong>使用 Nix 管理脚本依赖</strong></p>
-<p><a href="https://nesbitt.io/2026/10/21/trust-stores-are-dependencies-too.html">Trust Stores Are Dependencies Too</a> — nesbitt.io · 1 天前 · 🔒 安全</p>
+<blockquote>A previously functional Python script began failing with the error "The script contains multiple PEP 723 metadata blocks." This issue is suspected to be related to recent system updates, particularly changes in how PEP 723 metadata is handled. The author explores potential causes and discusses workarounds for this problem.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 了解 Python 脚本因 PEP 723 元数据问题而失效的常见原因及解决方案。</p>
+<p>💡 <strong>Why read it</strong>: Understand common causes and solutions for Python scripts failing due to PEP 723 metadata issues.</p>
+<p>🏷️ software performance, design, programming languages, AI</p>
+<p>🥈 <strong>eMudrha 证书事件可能发生的原因分析</strong></p>
+<p><a href="https://simonwillison.net/2026/Oct/22/donating-agent-skills/">Donating Agent Skills to the Agentic AI Foundation</a> — simonwillison.net · 1 天前 · 🤖 AI / ML</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>文章介绍了如何在非 NixOS Linux 发行版上使用 Nix 来管理简单脚本的依赖，旨在让开发者更安心地编写和部署代码。作者首先以 Python 脚本为例，展示了 Nix 如何隔离和管理项目所需的库和工具。这种方法适用于任何语言的脚本，提供了一种跨平台、可复现的依赖管理方案。</blockquote>
+<blockquote>文章分析了 eMudrha 证书事件的可能原因，指出该公司曾使用数字 4, 56, 115, 155, 156, 230, 和 237 作为密钥。虽然具体细节尚未公开，但作者推测这些数字可能被用作弱加密密钥或用于生成证书的某些参数。这种不安全的密钥管理方式极有可能导致了此次证书安全事件。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This post demonstrates how to use Nix on non-NixOS Linux distributions to manage dependencies for simple scripts, aiming to provide developers with greater peace of mind. The author uses a Python script as an initial example to illustrate how Nix isolates and manages required libraries and tools. This approach is adaptable to scripts in any language, offering a cross-platform and reproducible dependency management solution.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 提供了一种在非 NixOS 环境下，利用 Nix 管理脚本依赖的实用方法。</p>
-<p>💡 <strong>Why read it</strong>: Presents a practical method for managing script dependencies using Nix in non-NixOS environments.</p>
-<p>🏷️ trust stores, CA bundles, dependencies, security</p>
-<p>🥉 <strong>Pluralistic: 协作互操作性是一项团队运动</strong></p>
-<p><a href="https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/">Widespread PHP Flaw May Cause Many Site Outages Today</a> — krebsonsecurity.com · 1 天前 · 🔒 安全</p>
+<blockquote>This post speculates on the potential causes of the eMudrha certificate debacle, noting that the company used numbers like 4, 56, 115, 155, 156, 230, and 237 as secret keys. While details are scarce, the author suggests these might have been weak encryption keys or parameters used in certificate generation, leading to the security incident.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 深入了解数字证书安全事件中，不安全的密钥管理如何导致严重后果。</p>
+<p>💡 <strong>Why read it</strong>: Gain insight into how insecure key management can lead to severe consequences in digital certificate security incidents.</p>
+<p>🏷️ AI agents, Anthropic, open source, community</p>
+<p>🥉 <strong>The Verge 对 Duo 的评测：‘苹果的折叠手机是一款混乱但昂贵的有趣设备’</strong></p>
+<p><a href="https://simonwillison.net/2026/Oct/22/armin-ronacher/">Quoting Armin Ronacher</a> — simonwillison.net · 1 天前 · 🤖 AI / ML</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>本文探讨了“协作互操作性”的概念，并指出仅仅依靠“Vibe-coded jailbreaks”无法解决根本问题。文章链接涵盖了从劳工威胁、数字版权到技术公司秘密会议等多个领域。作者强调，解决技术和数字领域的问题需要集体的努力，而非个体行为。</blockquote>
+<blockquote>The Verge 的评测指出，苹果的折叠手机（Duo）在交互设计上存在一些反直觉的方面，例如打开手机时需要本能地旋转，且最佳旋转方向与初始预期相反。尽管设备在旋转方向上存在不便，但评测认为它仍然是一款“混乱但昂贵的有趣设备”，并提到了其在特定配件（如 bumper case）下的 oddity。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This article discusses the concept of "adversarial interoperability" and argues that "vibe-coded jailbreaks" alone do not solve the underlying problems. The linked topics span various domains, including labor threats, digital rights, and secret tech meetings. The author emphasizes that addressing issues in technology and the digital realm requires collective effort rather than individual actions.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 从多个角度探讨了技术互操作性及解决数字领域问题的集体协作的重要性。</p>
-<p>💡 <strong>Why read it</strong>: Explores the importance of collaborative interoperability and collective action in solving digital domain issues from multiple perspectives.</p>
-<p>🏷️ PHP, vulnerabilities, outages, security exploit</p>
+<blockquote>The Verge's review of Apple's Duo folding phone highlights counter-intuitive interaction design, such as the instinctive need to rotate the device upon opening, with the optimal orientation being opposite to initial expectations. Despite this usability quirk, the review describes it as a 'messy, expensive good time,' noting oddities, especially with accessories like the bumper case.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 了解苹果折叠手机 Duo 在设计和用户体验上的独特之处及评测者的整体评价。</p>
+<p>💡 <strong>Why read it</strong>: Understand the unique design and user experience aspects of Apple's Duo folding phone and the reviewers' overall assessment.</p>
+<p>🏷️ AI, software engineering, technical debt</p>
 <hr>
 <h2>📊 数据概览</h2>
-<table><thead><tr><th>扫描源</th><th>抓取文章</th><th>时间范围</th><th>精选</th></tr></thead><tbody><tr><td>83/92</td><td>2537 篇 → 32 篇</td><td>48h</td><td><strong>15 篇</strong></td></tr></tbody></table>
+<table><thead><tr><th>扫描源</th><th>抓取文章</th><th>时间范围</th><th>精选</th></tr></thead><tbody><tr><td>83/92</td><td>2539 篇 → 31 篇</td><td>48h</td><td><strong>15 篇</strong></td></tr></tbody></table>
 <h3>分类分布</h3>
 <div class="code-wrap"><div class="code-title">mermaid</div><pre><code>pie showData
     title "文章分类分布"
-    "🔒 安全" : 6
-    "💡 观点 / 杂谈" : 3
-    "⚙️ 工程" : 2
-    "🛠 工具 / 开源" : 2
-    "🤖 AI / ML" : 1
-    "📝 其他" : 1</code></pre></div>
+    "🤖 AI / ML" : 4
+    "📝 其他" : 3
+    "🔒 安全" : 3
+    "🛠 工具 / 开源" : 3
+    "⚙️ 工程" : 2</code></pre></div>
 <h3>高频关键词</h3>
 <div class="code-wrap"><div class="code-title">mermaid</div><pre><code>xychart-beta horizontal
     title "高频关键词"
-    x-axis ["php", "security", "vulnerabilities", "upgrade", "dependencies", "iphone duo", "trust stores", "ca bundles", "outages", "security exploit", "security advisory", "rce"]
-    y-axis "出现次数" 0 --&gt; 5
-    bar [3, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1]</code></pre></div>
+    x-axis ["ai", "iphone duo", "microsoft duo", "folding phone", "product review", "software performance", "design", "programming languages", "ai agents", "anthropic", "open source", "community"]
+    y-axis "出现次数" 0 --&gt; 4
+    bar [2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1]</code></pre></div>
 <div class="details">
 <p class="summary">📈 纯文本关键词图（终端友好）</p>
-<div class="code-wrap"><pre><code>php              │ ████████████████████ 3
-security         │ █████████████░░░░░░░ 2
-vulnerabilities  │ █████████████░░░░░░░ 2
-upgrade          │ █████████████░░░░░░░ 2
-dependencies     │ █████████████░░░░░░░ 2
-iphone duo       │ █████████████░░░░░░░ 2
-trust stores     │ ███████░░░░░░░░░░░░░ 1
-ca bundles       │ ███████░░░░░░░░░░░░░ 1
-outages          │ ███████░░░░░░░░░░░░░ 1
-security exploit │ ███████░░░░░░░░░░░░░ 1</code></pre></div>
+<div class="code-wrap"><pre><code>ai                    │ ████████████████████ 2
+iphone duo            │ ████████████████████ 2
+microsoft duo         │ ████████████████████ 2
+folding phone         │ ████████████████████ 2
+product review        │ ████████████████████ 2
+software performance  │ ██████████░░░░░░░░░░ 1
+design                │ ██████████░░░░░░░░░░ 1
+programming languages │ ██████████░░░░░░░░░░ 1
+ai agents             │ ██████████░░░░░░░░░░ 1
+anthropic             │ ██████████░░░░░░░░░░ 1</code></pre></div>
 </div>
 <h3>🏷️ 话题标签</h3>
-<p><strong>php</strong>(3) · <strong>security</strong>(2) · <strong>vulnerabilities</strong>(2) · upgrade(2) · dependencies(2) · iphone duo(2) · trust stores(1) · ca bundles(1) · outages(1) · security exploit(1) · security advisory(1) · rce(1) · ai agents(1) · open source(1) · anthropic(1) · software design(1) · performance(1) · programming languages(1) · ai(1) · software development(1)</p>
-<hr>
-<h2>🔒 安全</h2>
-<h3>1. Python PEP 723 元数据块问题排查</h3>
-<p><a href="https://simonwillison.net/2026/Oct/21/php-security-release/">Today's PHP Security Release, and How We're Strengthening PHP Security</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 26/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>一篇 Python 脚本在更新后出现“脚本包含多个 PEP 723 元数据块”的错误。作者怀疑这与近期安全更新有关，并分享了解决此问题的过程。通过分析错误信息和搜索相关文档，作者发现问题可能源于脚本中不恰当的元数据定义。最终，作者通过修改脚本的元数据结构解决了这一兼容性问题。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>A Python script encountered an error stating "The script contains multiple PEP 723 metadata blocks" after recent updates, suspected to be related to security patches. The author details the troubleshooting process, identifying the issue as an improper metadata definition within the script. By analyzing error messages and relevant documentation, the author resolved the compatibility problem by adjusting the script's metadata structure.</blockquote>
-<p>🏷️ PHP, security, vulnerabilities, upgrade</p>
-<hr>
-<h3>2. 使用 Nix 管理脚本依赖</h3>
-<p><a href="https://nesbitt.io/2026/10/21/trust-stores-are-dependencies-too.html">Trust Stores Are Dependencies Too</a> — <strong>nesbitt.io</strong> · 1 天前 · ⭐ 26/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>文章介绍了如何在非 NixOS Linux 发行版上使用 Nix 来管理简单脚本的依赖，旨在让开发者更安心地编写和部署代码。作者首先以 Python 脚本为例，展示了 Nix 如何隔离和管理项目所需的库和工具。这种方法适用于任何语言的脚本，提供了一种跨平台、可复现的依赖管理方案。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>This post demonstrates how to use Nix on non-NixOS Linux distributions to manage dependencies for simple scripts, aiming to provide developers with greater peace of mind. The author uses a Python script as an initial example to illustrate how Nix isolates and manages required libraries and tools. This approach is adaptable to scripts in any language, offering a cross-platform and reproducible dependency management solution.</blockquote>
-<p>🏷️ trust stores, CA bundles, dependencies, security</p>
-<hr>
-<h3>3. Pluralistic: 协作互操作性是一项团队运动</h3>
-<p><a href="https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/">Widespread PHP Flaw May Cause Many Site Outages Today</a> — <strong>krebsonsecurity.com</strong> · 1 天前 · ⭐ 26/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>本文探讨了“协作互操作性”的概念，并指出仅仅依靠“Vibe-coded jailbreaks”无法解决根本问题。文章链接涵盖了从劳工威胁、数字版权到技术公司秘密会议等多个领域。作者强调，解决技术和数字领域的问题需要集体的努力，而非个体行为。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>This article discusses the concept of "adversarial interoperability" and argues that "vibe-coded jailbreaks" alone do not solve the underlying problems. The linked topics span various domains, including labor threats, digital rights, and secret tech meetings. The author emphasizes that addressing issues in technology and the digital realm requires collective effort rather than individual actions.</blockquote>
-<p>🏷️ PHP, vulnerabilities, outages, security exploit</p>
-<hr>
-<h3>4. Apple 重点介绍 50 多款已针对 iPhone Duo 优化的应用</h3>
-<p><a href="https://www.jeffgeerling.com/blog/2026/php-vulnerability-php2shell/">Upgrade your PHP installs immediately to protect against php2shell</a> — <strong>jeffgeerling.com</strong> · 1 天前 · ⭐ 26/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>Apple Newsroom 发布消息，强调 App Store 将推出针对 iPhone Duo 的新应用和游戏精选集，并提供“专为 iPhone Duo 设计”的标识。文章指出，这是 Apple 推出重大屏幕变革时常见的应用生态适配过程，并提及了自 iPhone X 发布以来的类似过渡。目前已有超过 50 款应用针对 iPhone Duo 进行了优化。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Apple Newsroom announced new editorial collections for iPhone Duo apps and games on the App Store, featuring a 'Made for iPhone Duo' badge. The article highlights this as a typical app ecosystem adaptation process following major screen changes, similar to the iPhone X transition. Over 50 apps have already been optimized for the iPhone Duo.</blockquote>
-<p>🏷️ PHP, security advisory, RCE, upgrade</p>
-<hr>
-<h3>5. “无法阻止这种情况发生”，这是唯一会定期发生这种情况的语言的用户所说的</h3>
-<p><a href="https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-93479/">"No way to prevent this" say users of only language where this regularly happens</a> — <strong>xeiaso.net</strong> · 1 天前 · ⭐ 23/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>在 NGINX 项目发布 CVE-2026-93479 后，站点可靠性工程师和系统管理员紧急修复了一个堆缓冲区溢出漏洞。该漏洞在特定条件下（如引用 regex map captures 或在字符串表达式中使用非缓存变量）可能导致 worker 重启甚至代码执行。这突显了内存安全问题在某些语言中是普遍存在的，且难以完全避免。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Following the release of CVE-2026-93479 for NGINX, site reliability engineers and system administrators scrambled to patch a heap buffer overflow vulnerability. This flaw, triggered under specific conditions involving regex map captures or non-cacheable variables in string expressions, can lead to worker restarts and potential code execution. It highlights the persistent and difficult-to-prevent memory safety issues in certain languages.</blockquote>
-<p>🏷️ NGINX, CVE, vulnerability, heap buffer overflow</p>
-<hr>
-<h3>6. 后门、无能和椭圆曲线</h3>
-<p><a href="https://www.johndcook.com/blog/2026/10/21/emudhra/">Backdoors, Incompetence, and Elliptic Curves</a> — <strong>johndcook.com</strong> · 1 天前 · ⭐ 23/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>NIST（美国国家标准与技术研究院）的椭圆曲线近期两次成为新闻焦点。一次是关于 NIST 曲线种子可能存在的后门问题，另一次是关于证书被破解的事件。文章探讨了这些事件背后的技术细节和潜在影响，特别是与 NSA（美国国家安全局）的关联。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>NIST (National Institute of Standards and Technology) elliptic curves have recently been in the news twice. One instance involved potential backdoors in NIST curve seeds, and the other concerned broken certificates. The article delves into the technical details and potential implications behind these events, particularly their connection to the NSA.</blockquote>
-<p>🏷️ elliptic curves, NIST, backdoors, certificates</p>
-<hr>
-<h2>💡 观点 / 杂谈</h2>
-<h3>7. 引用 Armin Ronacher 的观点</h3>
-<p><a href="https://simonwillison.net/2026/Oct/22/armin-ronacher/">Quoting Armin Ronacher</a> — <strong>simonwillison.net</strong> · 12 小时前 · ⭐ 24/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>Armin Ronacher 认为，尽管生成式 AI 很有趣，但过去 30 年间我们构建了太多糟糕的软件，现在正为此付出代价。这句话暗示了当前技术发展（包括 AI）可能是在弥补过去软件工程上的不足。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Armin Ronacher suggests that while generative AI is exciting, the vast amount of poorly built software over the past 30 years is now leading to consequences. This statement implies that current technological advancements, including AI, may be addressing deficiencies in past software engineering practices.</blockquote>
-<p>🏷️ AI, software development, technical debt</p>
-<hr>
-<h3>8. Pluralistic：对抗性互操作性是一项团队运动 (2026年10月21日)</h3>
-<p><a href="https://pluralistic.net/2026/10/21/brittle-individualism/">Pluralistic: Adversarial interoperability is a team sport (21 Oct 2026)</a> — <strong>pluralistic.net</strong> · 1 天前 · ⭐ 21/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>今日精选链接：对抗性互操作性是一项团队运动，强调了仅靠“氛围编码”的越狱方式无法解决根本问题。文章还提到了其他一些有趣的内容，包括令人愉悦的发现、物体恒存的概念以及与政治和技术相关的各种新闻和事件。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Today's links cover 'Adversarial interoperability is a team sport,' emphasizing that vibe-coded jailbreaks are fun but don't solve the core problem. The article also touches upon various other interesting topics, including delightful discoveries, the concept of object permanence, and news related to politics and technology.</blockquote>
-<p>🏷️ adversarial interoperability, copyright, interoperability</p>
-<hr>
-<h3>9. 我的 iPhone Duo 评测更新</h3>
-<p><a href="https://daringfireball.net/2026/10/the_iphone_duo">Updates to My iPhone Duo Review</a> — <strong>daringfireball.net</strong> · 9 小时前 · ⭐ 20/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>作者对昨晚发布的 iPhone Duo 评测进行了一些小的补充和修改。这些更新旨在让已阅读过评测的用户能够及时了解改动之处。作者特别指出了在相机部分进行的添加和澄清，并表示后续的任何修改都会添加到文章顶部。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>The author has made minor additions and changes to their iPhone Duo review published last night. These updates are highlighted so that readers who have already seen the review can be aware of the modifications. The author specifically points out additions and clarifications made to the camera section and will add further changes to the top of the article.</blockquote>
-<p>🏷️ iPhone Duo, review, camera</p>
-<hr>
-<h2>⚙️ 工程</h2>
-<h3>10. 软件运行缓慢是设计不佳所致，而非语言本身</h3>
-<p><a href="https://seangoedecke.com/software-is-slow-because-of-bad-design-not-slow-languages/">Software is slow because of bad design, not slow languages</a> — <strong>seangoedecke.com</strong> · 4 小时前 · ⭐ 24/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>文章认为，软件运行缓慢并非因为使用了 Python 等“慢”语言，而是由于糟糕的设计。即使将代码重写为 C 或 Rust 等“快”语言，大多数程序也无法获得显著的性能提升。语言之间的性能差异可能很大，但糟糕的设计是更普遍的瓶颈。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>The article argues that software slowness stems from poor design rather than the use of 'slow' languages like Python. Rewriting code in 'faster' languages such as C or Rust often yields no meaningful performance improvements for most programs. While language performance can vary significantly, bad design is identified as the more pervasive bottleneck.</blockquote>
-<p>🏷️ software design, performance, programming languages</p>
-<hr>
-<h3>11. 解决一个奇怪的 Python 问题</h3>
-<p><a href="https://www.johndcook.com/blog/2026/10/22/pep-723/">Working around a strange Python problem</a> — <strong>johndcook.com</strong> · 13 小时前 · ⭐ 21/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>一篇几天前还能正常运行的 Python 脚本，今天突然无法工作。作者怀疑这可能与近期安全漏洞更新系统有关。脚本报错信息显示存在多个 PEP 723 元数据块。作者对此进行了搜索和研究，并分享了解决方案。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>A Python script that previously worked fine suddenly stopped functioning. The author suspects this issue might be related to recent system updates addressing security vulnerabilities. The script encountered an error indicating multiple PEP 723 metadata blocks. The author researched this problem and is sharing their workaround.</blockquote>
-<p>🏷️ Python, debugging, PEP 723</p>
-<hr>
-<h2>🛠 工具 / 开源</h2>
-<h3>12. 使用 Nix 管理脚本依赖</h3>
-<p><a href="https://entropicthoughts.com/python-dependencies-with-nix">Script dependencies with Nix</a> — <strong>entropicthoughts.com</strong> · 1 天前 · ⭐ 21/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>本文介绍了一种在 NixOS 之外的其他 Linux 发行版上使用 Nix 来管理简单脚本依赖的方法，旨在让开发者更安心。作者将首先以 Python 脚本为例进行说明，然后展示如何将其应用于其他任何语言。这种方法对所有用户开放，不仅仅是那些愿意尝试 NixOS 的用户。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>This article explains a method for managing dependencies of simple scripts using Nix on Linux distributions other than NixOS, aiming to provide developers with greater peace of mind. The author will first demonstrate with a Python script and then show how it can be adapted for any other language. This approach is accessible to everyone, not just those willing to try NixOS.</blockquote>
-<p>🏷️ Nix, dependencies, scripting, NixOS</p>
-<hr>
-<h3>13. 苹果重点介绍 50 多款已针对 Duo 优化的 iPhone 应用</h3>
-<p><a href="https://www.apple.com/newsroom/2026/10/developers-bring-incredible-new-app-experiences-to-iphone-duo/">Apple Highlights 50+ iPhone Apps That Have Already Been Optimized for the Duo</a> — <strong>daringfireball.net</strong> · 9 小时前 · ⭐ 20/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>苹果新闻编辑室宣布，本周五将在 App Store 上线针对 iPhone Duo 应用和游戏的新编辑精选集。此外，全年还将陆续推出更多应用更新。针对 iPhone Duo 优化的应用将在商店的产品页面上显示“专为 iPhone Duo 设计”的徽章，方便用户识别。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Apple Newsroom announces that new editorial collections for iPhone Duo apps and games will launch on the App Store this Friday, with additional app updates rolling out throughout the year. Apps optimized for iPhone Duo will be easily identifiable by a 'Made for iPhone Duo' badge on their product pages across the storefront.</blockquote>
-<p>🏷️ iPhone Duo, app optimization, App Store</p>
+<p><strong>ai</strong>(2) · <strong>iphone duo</strong>(2) · <strong>microsoft duo</strong>(2) · folding phone(2) · product review(2) · software performance(1) · design(1) · programming languages(1) · ai agents(1) · anthropic(1) · open source(1) · community(1) · software engineering(1) · technical debt(1) · computer chips(1) · semiconductors(1) · future technology(1) · kimi ai(1) · llm(1) · model weights(1)</p>
 <hr>
 <h2>🤖 AI / ML</h2>
-<h3>14. 我的 iPhone Duo 评测更新</h3>
-<p><a href="https://simonwillison.net/2026/Oct/22/donating-agent-skills/">Donating Agent Skills to the Agentic AI Foundation</a> — <strong>simonwillison.net</strong> · 10 小时前 · ⭐ 25/30</p>
+<h3>1. eMudrha 证书事件可能发生的原因分析</h3>
+<p><a href="https://simonwillison.net/2026/Oct/22/donating-agent-skills/">Donating Agent Skills to the Agentic AI Foundation</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 26/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>作者对已发布的 iPhone Duo 评测进行了补充和修改，特别是在相机部分。更新内容包括对相机性能的详细描述，指出其虽不及 iPhone 18 Pro，但表现良好，并提供了 Duo 主摄像头（1×/2×）的详细技术规格。此次更新旨在为已阅读评测的读者提供更全面的信息。</blockquote>
+<blockquote>文章分析了 eMudrha 证书事件的可能原因，指出该公司曾使用数字 4, 56, 115, 155, 156, 230, 和 237 作为密钥。虽然具体细节尚未公开，但作者推测这些数字可能被用作弱加密密钥或用于生成证书的某些参数。这种不安全的密钥管理方式极有可能导致了此次证书安全事件。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>The author provides updates and changes to their iPhone Duo review, particularly elaborating on the camera. New details clarify that while the camera is not on par with the iPhone 18 Pro, it performs well, and the technical specifications for the Duo's main 1×/2× camera are provided. These additions aim to offer readers a more comprehensive understanding.</blockquote>
-<p>🏷️ AI agents, open source, Anthropic</p>
+<blockquote>This post speculates on the potential causes of the eMudrha certificate debacle, noting that the company used numbers like 4, 56, 115, 155, 156, 230, and 237 as secret keys. While details are scarce, the author suggests these might have been weak encryption keys or parameters used in certificate generation, leading to the security incident.</blockquote>
+<p>🏷️ AI agents, Anthropic, open source, community</p>
+<hr>
+<h3>2. The Verge 对 Duo 的评测：‘苹果的折叠手机是一款混乱但昂贵的有趣设备’</h3>
+<p><a href="https://simonwillison.net/2026/Oct/22/armin-ronacher/">Quoting Armin Ronacher</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 26/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>The Verge 的评测指出，苹果的折叠手机（Duo）在交互设计上存在一些反直觉的方面，例如打开手机时需要本能地旋转，且最佳旋转方向与初始预期相反。尽管设备在旋转方向上存在不便，但评测认为它仍然是一款“混乱但昂贵的有趣设备”，并提到了其在特定配件（如 bumper case）下的 oddity。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>The Verge's review of Apple's Duo folding phone highlights counter-intuitive interaction design, such as the instinctive need to rotate the device upon opening, with the optimal orientation being opposite to initial expectations. Despite this usability quirk, the review describes it as a 'messy, expensive good time,' noting oddities, especially with accessories like the bumper case.</blockquote>
+<p>🏷️ AI, software engineering, technical debt</p>
+<hr>
+<h3>3. 通过 Booking.com 和 Novotel 渠道的更多网络钓鱼信息</h3>
+<p><a href="https://simonwillison.net/2026/Oct/23/kimi-k31-pro/">Introducing Kimi K3.1 Pro</a> — <strong>simonwillison.net</strong> · 8 小时前 · ⭐ 24/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>作者在 Booking.com 上预订 Novotel 酒店后，通过 WhatsApp 收到了包含个人信息（姓名、电话、入住地点和日期）的网络钓鱼信息。尽管这些信息表明了钓鱼者对用户信息的掌握程度，但信息本身相对容易辨别，例如来自非官方的葡萄牙商业账户。文章分析了这些钓鱼信息的特点。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Following a hotel booking on Booking.com, the author received phishing messages via WhatsApp containing personal details like name, phone number, location, and dates of stay. While demonstrating the phishers' access to user data, the messages themselves were relatively inept, originating from unofficial Portuguese business accounts. The post analyzes the characteristics of these phishing attempts.</blockquote>
+<p>🏷️ Kimi AI, LLM, model weights</p>
+<hr>
+<h3>4. RMSNorm</h3>
+<p><a href="https://www.gilesthomas.com/2026/10/rmsnorm">RMSNorm</a> — <strong>gilesthomas.com</strong> · 9 小时前 · ⭐ 24/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>文章探讨了在大型语言模型 (LLMs) 中，归一化 (Normalization) 的重要性，并以 GPT-2 的代码为例。在 GPT-2 的 Transformer 块中，LayerNorm 被用于多头注意力模块之前和前馈网络 (FFN) 之前。文章暗示 RMSNorm 可能是 LayerNorm 的一种替代或改进方案，在 LLM 的架构中扮演着关键角色，影响着模型的训练稳定性和性能。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>This article discusses the importance of normalization in Large Language Models (LLMs), using GPT-2's code as an example. In GPT-2's Transformer blocks, LayerNorm is applied before the multi-head attention module and before the Feed-Forward Network (FFN). The text implies that RMSNorm might be an alternative or improvement to LayerNorm, playing a crucial role in LLM architectures and influencing model training stability and performance.</blockquote>
+<p>🏷️ RMSNorm, LLM architecture, LayerNorm</p>
 <hr>
 <h2>📝 其他</h2>
-<h3>15. 2045 年的计算机芯片将是什么样子？</h3>
-<p><a href="https://www.dwarkesh.com/p/intel-tour">What will computer chips look like in 2045?</a> — <strong>dwarkesh.com</strong> · 13 小时前 · ⭐ 23/30</p>
+<h3>5. Joanna Stern 对 Duo 的评测：‘优点、缺点和 Bug’</h3>
+<p><a href="https://www.dwarkesh.com/p/intel-tour">What will computer chips look like in 2045?</a> — <strong>dwarkesh.com</strong> · 1 天前 · ⭐ 25/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>本文作者参观了英特尔最先进的芯片制造工厂，并与公司领导层进行了交流，分享了对未来计算机芯片形态的见解。内容涵盖了对未来芯片技术发展趋势的观察和分析。</blockquote>
+<blockquote>Joanna Stern 的评测通过大量测试来评估 Duo 的耐用性和功能。她使用定制机器人进行了超过 32,000 次折叠/展开测试，并将其带到不同场景（游艇、酒吧）测试摄像头性能。评测强调了对 Face ID 的怀念，并暗示了设备在可靠性方面存在“Bug”。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>The author shares insights into the future of computer chips after touring Intel's most advanced fabrication plant and speaking with its leadership. The article offers observations and analysis on the development trends of future chip technology.</blockquote>
+<blockquote>Joanna Stern's review rigorously tests the Duo's durability and functionality, including over 32,000 fold/unfold cycles using a custom robot and camera performance tests in various environments. The review highlights a strong missing of Face ID and implies the device suffers from 'bugs' regarding reliability.</blockquote>
 <p>🏷️ computer chips, semiconductors, future technology</p>
 <hr>
-<p>*生成于 2026-10-23 04:17 | 扫描 83 源 → 获取 2537 篇 → 精选 15 篇* *基于 <a href="https://refactoringenglish.com/tools/hn-popularity/">Hacker News Popularity Contest 2025</a> RSS 源列表，由 <a href="https://x.com/karpathy">Andrej Karpathy</a> 推荐*</p>
+<h3>6. The Verge 对 Duo 的评测：‘苹果的折叠手机是一款混乱且昂贵的有趣产品’</h3>
+<p><a href="https://www.theverge.com/tech/1015028/iphone-duo-review">The Verge’s Duo Review: ‘Apple’s Folding Phone Is a Messy, Expensive Good Time’</a> — <strong>daringfireball.net</strong> · 11 小时前 · ⭐ 21/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>The Verge 的 Nilay Patel 和 Allison Johnson 对一款折叠手机进行了评测。他们指出，几乎每次打开手机都会不自觉地旋转它。虽然无论如何旋转都能工作，但顺时针旋转（摄像头朝上）效果更好。经过一周的测试，这种操作方式逐渐变得自然，但与最初的预期相反。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Nilay Patel and Allison Johnson from The Verge reviewed a foldable phone, noting that users instinctively rotate it almost every time they open it. While it functions regardless of orientation, rotating it counterclockwise so the cameras are on top is preferable. After a week of testing, this became more natural, though it's the opposite of initial expectations.</blockquote>
+<p>🏷️ Microsoft Duo, folding phone, product review</p>
+<hr>
+<h3>7. Joanna Stern 评测 Duo：‘优点、缺点和 Bug’</h3>
+<p><a href="https://www.youtube.com/watch?v=bxDTWuL9GxY">Joanna Stern Reviews the Duo: ‘The Good, the Bad, and the Buggy’</a> — <strong>daringfireball.net</strong> · 13 小时前 · ⭐ 21/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Joanna Stern 在一篇评测中详细介绍了 Duo 折叠手机。她使用定制机器人进行了超过 32,000 次的折叠测试，以检验铰链的耐用性。评测还包括了在游艇和酒吧等场景下的实际使用体验，并特别提到了她非常怀念 Face ID 功能。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>In her review, Joanna Stern provides a detailed look at the Duo foldable phone. She conducted over 32,000 folding tests using a custom robot to assess hinge durability. The review also covers real-world usage scenarios on a yacht and in a bar, and she specifically mentions missing the Face ID feature.</blockquote>
+<p>🏷️ Microsoft Duo, folding phone, product review</p>
+<hr>
+<h2>🔒 安全</h2>
+<h3>8. “无法阻止这种情况发生”，这是唯一会定期发生这种情况的语言的用户说的</h3>
+<p><a href="https://xeiaso.net/shitposts/no-way-to-prevent-this/memory-safety/CVE-2026-89078/">"No way to prevent this" say users of only language where this regularly happens</a> — <strong>xeiaso.net</strong> · 1 天前 · ⭐ 24/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>在 Ruby 项目发布 CVE-2026-89078 漏洞后，站点可靠性工程师和系统管理员紧急修复系统。该漏洞是一个双重释放（double free）问题，存在于 Ruby 的 Onigmo 正则表达式解析器中，当解析失败并发生交替（alternation）时触发，可能导致内存损坏和远程代码执行。文章暗示，这种内存安全问题在某些语言（如 Ruby）中反复出现，并且用户对此似乎无能为力。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Following the release of CVE-2026-89078 for the Ruby project, site reliability engineers and system administrators scrambled to patch their systems. The vulnerability is a double free issue in Ruby's Onigmo regular expression parser, triggered when parsing fails after an alternation, potentially leading to memory corruption and remote code execution. The article implies that such memory safety issues are recurrent in certain languages like Ruby, with users seemingly unable to prevent them.</blockquote>
+<p>🏷️ CVE, Ruby, vulnerability, patching</p>
+<hr>
+<h3>9. eMudrha 证书事件可能发生的原因分析</h3>
+<p><a href="https://www.johndcook.com/blog/2026/10/22/certificate-debacle/">How the eMudrha certificate debacle might have happened</a> — <strong>johndcook.com</strong> · 1 天前 · ⭐ 22/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>文章探讨了 eMudrha 证书事件的可能原因，并提及了与密码“4”相关的网络引用。作者指出，eMudrha 曾使用数字 4、56、115、155、156、230 和 237 作为密钥。文章试图深入分析这一安全漏洞是如何发生的，并解释了相关背景信息。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>This article explores potential reasons behind the eMudrha certificate incident, referencing online discussions about the password '4'. The author notes that eMudrha had used the numbers 4, 56, 115, 155, 156, 230, and 237 as secret keys. It delves into how this security breach might have occurred, providing relevant background context.</blockquote>
+<p>🏷️ eMudrha, certificate, security keys</p>
+<hr>
+<h3>10. 通过 Booking.com 和 Novotel 收到更多钓鱼信息</h3>
+<p><a href="https://shkspr.mobi/blog/2026/10/more-phishing-messages-via-booking-com-and-novotel/">More phishing messages via Booking.com and Novotel</a> — <strong>shkspr.mobi</strong> · 16 小时前 · ⭐ 21/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>作者在 Booking.com 上预订了 Novotel 酒店后，两天内通过 WhatsApp 收到了钓鱼信息。这些信息准确地包含了作者的姓名、电话号码、入住地点和日期。尽管信息相对拙劣，但作者仍对其进行了分析和展示。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>After booking a Novotel hotel on Booking.com, the author received phishing messages via WhatsApp within two days. These messages accurately contained the author's name, phone number, location, and dates of stay. Despite the messages being relatively inept, the author analyzed and presented them.</blockquote>
+<p>🏷️ phishing, Booking.com, WhatsApp, scam</p>
+<hr>
+<h2>🛠 工具 / 开源</h2>
+<h3>11. 苹果强调 50 多款已针对 iPhone Duo 优化的 iPhone 应用</h3>
+<p><a href="https://www.apple.com/newsroom/2026/10/developers-bring-incredible-new-app-experiences-to-iphone-duo/">Apple Highlights 50+ iPhone Apps That Have Already Been Optimized for the Duo</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 23/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>苹果公司在其新闻稿中强调，超过 50 款 iPhone 应用已针对新款 iPhone Duo 进行了优化。这些应用将在 App Store 上推出专门的编辑精选集，并带有“专为 iPhone Duo 设计”的徽章，方便用户识别。文章指出，这种应用生态的快速适配是苹果每次推出重大屏幕变革（如 iPhone X）时的典型现象，表明了开发者对新硬件平台的积极响应。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Apple highlights in its newsroom that over 50 iPhone apps have been optimized for the new iPhone Duo. These apps will feature dedicated editorial collections on the App Store and be identifiable with a 'Made for iPhone Duo' badge. The article notes that this rapid adaptation of the app ecosystem is typical of Apple's major screen changes, such as the iPhone X, demonstrating developers' proactive response to new hardware platforms.</blockquote>
+<p>🏷️ iPhone Duo, app optimization, App Store</p>
+<hr>
+<h3>12. 我的 iPhone Duo 评测更新</h3>
+<p><a href="https://daringfireball.net/2026/10/the_iphone_duo">Updates to My iPhone Duo Review</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 23/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>作者对已发布的 iPhone Duo 评测进行了几项更新和补充。主要更新内容包括对相机性能的进一步阐述，作者认为其相机表现出色，尽管不及 iPhone 18 Pro 的水平，但已属优秀。评测中还澄清了 Duo 主摄像头（1×/2×）的技术规格，并可能对其他方面进行了细微调整，以提供更全面的用户体验信息。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>The author has made several additions and changes to their previously published iPhone Duo review. Key updates include further clarification on the camera's performance, which is described as terrific, though not on par with the iPhone 18 Pro. The review also clarifies the technical specifications of the Duo's main 1×/2× camera and likely includes minor adjustments to other aspects to provide a more comprehensive user experience.</blockquote>
+<p>🏷️ iPhone Duo, review, updates, camera</p>
+<hr>
+<h3>13. Quick Study</h3>
+<p><a href="https://simonwillison.net/2026/Oct/23/quick-study-painter/">Quick Study</a> — <strong>simonwillison.net</strong> · 6 小时前 · ⭐ 22/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>文章介绍了名为“Quick Study”的工具，并提供了一个向 Claude Opus 5.5 High 发送的提示（prompt）。该提示要求工具创建一个能够打开照片并快速（几秒内）使用画布元素和模拟画笔绘制出照片版本的“artifact”。这展示了 AI 在图像处理和创意生成方面的能力，以及如何通过精确的提示来指导 AI 完成特定任务。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>This article introduces a tool called 'Quick Study' and presents a prompt sent to Claude Opus 5.5 High. The prompt instructs the tool to create an 'artifact' that opens a photo and rapidly (within seconds) paints a version of it using a canvas element and simulated paintbrush. This demonstrates AI's capabilities in image manipulation and creative generation, and how precise prompts can guide AI to perform specific tasks.</blockquote>
+<p>🏷️ AI tool, Claude Opus, prompt engineering</p>
+<hr>
+<h2>⚙️ 工程</h2>
+<h3>14. Python 奇怪问题的解决方法</h3>
+<p><a href="https://seangoedecke.com/software-is-slow-because-of-bad-design-not-slow-languages/">Software is slow because of bad design, not slow languages</a> — <strong>seangoedecke.com</strong> · 1 天前 · ⭐ 26/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>作者遇到一个之前能正常运行的 Python 脚本突然报错的问题，错误信息为“The script contains multiple PEP 723 metadata blocks”。通过搜索发现，这可能与最近的系统更新有关，特别是对 PEP 723 元数据处理方式的改变。文章探讨了这一问题的可能原因，并提供了绕过或解决此问题的思路。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>A previously functional Python script began failing with the error "The script contains multiple PEP 723 metadata blocks." This issue is suspected to be related to recent system updates, particularly changes in how PEP 723 metadata is handled. The author explores potential causes and discusses workarounds for this problem.</blockquote>
+<p>🏷️ software performance, design, programming languages, AI</p>
+<hr>
+<h3>15. 解决一个奇怪的 Python 问题</h3>
+<p><a href="https://www.johndcook.com/blog/2026/10/22/pep-723/">Working around a strange Python problem</a> — <strong>johndcook.com</strong> · 1 天前 · ⭐ 22/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>一篇之前能正常运行的 Python 脚本突然无法工作。作者怀疑这可能与近期安全漏洞更新系统有关。脚本报错提示包含多个 PEP 723 元数据块，作者对此进行了搜索和研究。文章记录了解决这一问题的过程和经验。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>A Python script that previously worked fine suddenly stopped functioning. The author suspects this issue might be related to recent system updates addressing security vulnerabilities. The script produced an error indicating multiple PEP 723 metadata blocks, prompting further investigation. This article details the process and lessons learned in resolving this peculiar Python problem.</blockquote>
+<p>🏷️ Python, PEP 723, metadata</p>
+<hr>
+<p>*生成于 2026-10-24 04:08 | 扫描 83 源 → 获取 2539 篇 → 精选 15 篇* *基于 <a href="https://refactoringenglish.com/tools/hn-popularity/">Hacker News Popularity Contest 2025</a> RSS 源列表，由 <a href="https://x.com/karpathy">Andrej Karpathy</a> 推荐*</p>
     </article>
   </main>
-  <script id="speech-text" type="application/json">"🎧 点这里朗读今日日报\n📰 AI 博客每日精选 — 2026-10-23\n来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15\n📝 今日看点\n今日技术看点聚焦安全与性能的博弈。一方面，安全漏洞频发，从 Python 元数据块到 NGINX 堆溢出，再到椭圆曲线的潜在后门，都凸显了加强代码安全和依赖管理的紧迫性，Nix 等工具的引入提供了新的解决方案。另一方面，软件性能的瓶颈被重新审视，文章指出设计不佳才是根源，而非语言本身，这或许也解释了为何生成式 AI 的热潮下，仍有声音反思过去软件工程的不足。此外，苹果新设备优化和芯片技术的未来展望也为技术发展描绘了新的图景。\n \n🏆 今日必读\n🥇 Python PEP 723 元数据块问题排查\nToday's PHP Security Release, and How We're Strengthening PHP Security — simonwillison.net · 1 天前 · 🔒 安全\n中文摘要\n一篇 Python 脚本在更新后出现“脚本包含多个 PEP 723 元数据块”的错误。作者怀疑这与近期安全更新有关，并分享了解决此问题的过程。通过分析错误信息和搜索相关文档，作者发现问题可能源于脚本中不恰当的元数据定义。最终，作者通过修改脚本的元数据结构解决了这一兼容性问题。\nEnglish Summary\nA Python script encountered an error stating \"The script contains multiple PEP 723 metadata blocks\" after recent updates, suspected to be related to security patches. The author details the troubleshooting process, identifying the issue as an improper metadata definition within the script. By analyzing error messages and relevant documentation, the author resolved the compatibility problem by adjusting the script's metadata structure.\n💡 为什么值得读: 分享了解决 Python 脚本因 PEP 723 元数据冲突而引发的实际问题及方法。\n💡 Why read it: Shares a practical solution for a Python script issue caused by PEP 723 metadata conflicts.\n🏷️ PHP, security, vulnerabilities, upgrade\n🥈 使用 Nix 管理脚本依赖\nTrust Stores Are Dependencies Too — nesbitt.io · 1 天前 · 🔒 安全\n中文摘要\n文章介绍了如何在非 NixOS Linux 发行版上使用 Nix 来管理简单脚本的依赖，旨在让开发者更安心地编写和部署代码。作者首先以 Python 脚本为例，展示了 Nix 如何隔离和管理项目所需的库和工具。这种方法适用于任何语言的脚本，提供了一种跨平台、可复现的依赖管理方案。\nEnglish Summary\nThis post demonstrates how to use Nix on non-NixOS Linux distributions to manage dependencies for simple scripts, aiming to provide developers with greater peace of mind. The author uses a Python script as an initial example to illustrate how Nix isolates and manages required libraries and tools. This approach is adaptable to scripts in any language, offering a cross-platform and reproducible dependency management solution.\n💡 为什么值得读: 提供了一种在非 NixOS 环境下，利用 Nix 管理脚本依赖的实用方法。\n💡 Why read it: Presents a practical method for managing script dependencies using Nix in non-NixOS environments.\n🏷️ trust stores, CA bundles, dependencies, security\n🥉 Pluralistic: 协作互操作性是一项团队运动\nWidespread PHP Flaw May Cause Many Site Outages Today — krebsonsecurity.com · 1 天前 · 🔒 安全\n中文摘要\n本文探讨了“协作互操作性”的概念，并指出仅仅依靠“Vibe-coded jailbreaks”无法解决根本问题。文章链接涵盖了从劳工威胁、数字版权到技术公司秘密会议等多个领域。作者强调，解决技术和数字领域的问题需要集体的努力，而非个体行为。\nEnglish Summary\nThis article discusses the concept of \"adversarial interoperability\" and argues that \"vibe-coded jailbreaks\" alone do not solve the underlying problems. The linked topics span various domains, including labor threats, digital rights, and secret tech meetings. The author emphasizes that addressing issues in technology and the digital realm requires collective effort rather than individual actions.\n💡 为什么值得读: 从多个角度探讨了技术互操作性及解决数字领域问题的集体协作的重要性。\n💡 Why read it: Explores the importance of collaborative interoperability and collective action in solving digital domain issues from multiple perspectives.\n🏷️ PHP, vulnerabilities, outages, security exploit\n \n📊 数据概览\n \n \n \n分类分布\nmermaid\npie showData\n title \"文章分类分布\"\n \"🔒 安全\" : 6\n \"💡 观点 / 杂谈\" : 3\n \"⚙️ 工程\" : 2\n \"🛠 工具 / 开源\" : 2\n \"🤖 AI / ML\" : 1\n \"📝 其他\" : 1\n高频关键词\nmermaid\nxychart-beta horizontal\n title \"高频关键词\"\n x-axis [\"php\", \"security\", \"vulnerabilities\", \"upgrade\", \"dependencies\", \"iphone duo\", \"trust stores\", \"ca bundles\", \"outages\", \"security exploit\", \"security advisory\", \"rce\"]\n y-axis \"出现次数\" 0 --> 5\n bar [3, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1]\n📈 纯文本关键词图（终端友好）\nphp │ ████████████████████ 3\nsecurity │ █████████████░░░░░░░ 2\nvulnerabilities │ █████████████░░░░░░░ 2\nupgrade │ █████████████░░░░░░░ 2\ndependencies │ █████████████░░░░░░░ 2\niphone duo │ █████████████░░░░░░░ 2\ntrust stores │ ███████░░░░░░░░░░░░░ 1\nca bundles │ ███████░░░░░░░░░░░░░ 1\noutages │ ███████░░░░░░░░░░░░░ 1\nsecurity exploit │ ███████░░░░░░░░░░░░░ 1\n🏷️ 话题标签\nphp(3) · security(2) · vulnerabilities(2) · upgrade(2) · dependencies(2) · iphone duo(2) · trust stores(1) · ca bundles(1) · outages(1) · security exploit(1) · security advisory(1) · rce(1) · ai agents(1) · open source(1) · anthropic(1) · software design(1) · performance(1) · programming languages(1) · ai(1) · software development(1)\n \n🔒 安全\n1. Python PEP 723 元数据块问题排查\nToday's PHP Security Release, and How We're Strengthening PHP Security — simonwillison.net · 1 天前 · ⭐ 26/30\n中文摘要\n一篇 Python 脚本在更新后出现“脚本包含多个 PEP 723 元数据块”的错误。作者怀疑这与近期安全更新有关，并分享了解决此问题的过程。通过分析错误信息和搜索相关文档，作者发现问题可能源于脚本中不恰当的元数据定义。最终，作者通过修改脚本的元数据结构解决了这一兼容性问题。\nEnglish Summary\nA Python script encountered an error stating \"The script contains multiple PEP 723 metadata blocks\" after recent updates, suspected to be related to security patches. The author details the troubleshooting process, identifying the issue as an improper metadata definition within the script. By analyzing error messages and relevant documentation, the author resolved the compatibility problem by adjusting the script's metadata structure.\n🏷️ PHP, security, vulnerabilities, upgrade\n \n2. 使用 Nix 管理脚本依赖\nTrust Stores Are Dependencies Too — nesbitt.io · 1 天前 · ⭐ 26/30\n中文摘要\n文章介绍了如何在非 NixOS Linux 发行版上使用 Nix 来管理简单脚本的依赖，旨在让开发者更安心地编写和部署代码。作者首先以 Python 脚本为例，展示了 Nix 如何隔离和管理项目所需的库和工具。这种方法适用于任何语言的脚本，提供了一种跨平台、可复现的依赖管理方案。\nEnglish Summary\nThis post demonstrates how to use Nix on non-NixOS Linux distributions to manage dependencies for simple scripts, aiming to provide developers with greater peace of mind. The author uses a Python script as an initial example to illustrate how Nix isolates and manages required libraries and tools. This approach is adaptable to scripts in any language, offering a cross-platform and reproducible dependency management solution.\n🏷️ trust stores, CA bundles, dependencies, security\n \n3. Pluralistic: 协作互操作性是一项团队运动\nWidespread PHP Flaw May Cause Many Site Outages Today — krebsonsecurity.com · 1 天前 · ⭐ 26/30\n中文摘要\n本文探讨了“协作互操作性”的概念，并指出仅仅依靠“Vibe-coded jailbreaks”无法解决根本问题。文章链接涵盖了从劳工威胁、数字版权到技术公司秘密会议等多个领域。作者强调，解决技术和数字领域的问题需要集体的努力，而非个体行为。\nEnglish Summary\nThis article discusses the concept of \"adversarial interoperability\" and argues that \"vibe-coded jailbreaks\" alone do not solve the underlying problems. The linked topics span various domains, including labor threats, digital rights, and secret tech meetings. The author emphasizes that addressing issues in technology and the digital realm requires collective effort rather than individual actions.\n🏷️ PHP, vulnerabilities, outages, security exploit\n \n4. Apple 重点介绍 50 多款已针对 iPhone Duo 优化的应用\nUpgrade your PHP installs immediately to protect against php2shell — jeffgeerling.com · 1 天前 · ⭐ 26/30\n中文摘要\nApple Newsroom 发布消息，强调 App Store 将推出针对 iPhone Duo 的新应用和游戏精选集，并提供“专为 iPhone Duo 设计”的标识。文章指出，这是 Apple 推出重大屏幕变革时常见的应用生态适配过程，并提及了自 iPhone X 发布以来的类似过渡。目前已有超过 50 款应用针对 iPhone Duo 进行了优化。\nEnglish Summary\nApple Newsroom announced new editorial collections for iPhone Duo apps and games on the App Store, featuring a 'Made for iPhone Duo' badge. The article highlights this as a typical app ecosystem adaptation process following major screen changes, similar to the iPhone X transition. Over 50 apps have already been optimized for the iPhone Duo.\n🏷️ PHP, security advisory, RCE, upgrade\n \n5. “无法阻止这种情况发生”，这是唯一会定期发生这种情况的语言的用户所说的\n\"No way to prevent this\" say users of only language where this regularly happens — xeiaso.net · 1 天前 · ⭐ 23/30\n中文摘要\n在 NGINX 项目发布 CVE-2026-93479 后，站点可靠性工程师和系统管理员紧急修复了一个堆缓冲区溢出漏洞。该漏洞在特定条件下（如引用 regex map captures 或在字符串表达式中使用非缓存变量）可能导致 worker 重启甚至代码执行。这突显了内存安全问题在某些语言中是普遍存在的，且难以完全避免。\nEnglish Summary\nFollowing the release of CVE-2026-93479 for NGINX, site reliability engineers and system administrators scrambled to patch a heap buffer overflow vulnerability. This flaw, triggered under specific conditions involving regex map captures or non-cacheable variables in string expressions, can lead to worker restarts and potential code execution. It highlights the persistent and difficult-to-prevent memory safety issues in certain languages.\n🏷️ NGINX, CVE, vulnerability, heap buffer overflow\n \n6. 后门、无能和椭圆曲线\nBackdoors, Incompetence, and Elliptic Curves — johndcook.com · 1 天前 · ⭐ 23/30\n中文摘要\nNIST（美国国家标准与技术研究院）的椭圆曲线近期两次成为新闻焦点。一次是关于 NIST 曲线种子可能存在的后门问题，另一次是关于证书被破解的事件。文章探讨了这些事件背后的技术细节和潜在影响，特别是与 NSA（美国国家安全局）的关联。\nEnglish Summary\nNIST (National Institute of Standards and Technology) elliptic curves have recently been in the news twice. One instance involved potential backdoors in NIST curve seeds, and the other concerned broken certificates. The article delves into the technical details and potential implications behind these events, particularly their connection to the NSA.\n🏷️ elliptic curves, NIST, backdoors, certificates\n \n💡 观点 / 杂谈\n7. 引用 Armin Ronacher 的观点\nQuoting Armin Ronacher — simonwillison.net · 12 小时前 · ⭐ 24/30\n中文摘要\nArmin Ronacher 认为，尽管生成式 AI 很有趣，但过去 30 年间我们构建了太多糟糕的软件，现在正为此付出代价。这句话暗示了当前技术发展（包括 AI）可能是在弥补过去软件工程上的不足。\nEnglish Summary\nArmin Ronacher suggests that while generative AI is exciting, the vast amount of poorly built software over the past 30 years is now leading to consequences. This statement implies that current technological advancements, including AI, may be addressing deficiencies in past software engineering practices.\n🏷️ AI, software development, technical debt\n \n8. Pluralistic：对抗性互操作性是一项团队运动 (2026年10月21日)\nPluralistic: Adversarial interoperability is a team sport (21 Oct 2026) — pluralistic.net · 1 天前 · ⭐ 21/30\n中文摘要\n今日精选链接：对抗性互操作性是一项团队运动，强调了仅靠“氛围编码”的越狱方式无法解决根本问题。文章还提到了其他一些有趣的内容，包括令人愉悦的发现、物体恒存的概念以及与政治和技术相关的各种新闻和事件。\nEnglish Summary\nToday's links cover 'Adversarial interoperability is a team sport,' emphasizing that vibe-coded jailbreaks are fun but don't solve the core problem. The article also touches upon various other interesting topics, including delightful discoveries, the concept of object permanence, and news related to politics and technology.\n🏷️ adversarial interoperability, copyright, interoperability\n \n9. 我的 iPhone Duo 评测更新\nUpdates to My iPhone Duo Review — daringfireball.net · 9 小时前 · ⭐ 20/30\n中文摘要\n作者对昨晚发布的 iPhone Duo 评测进行了一些小的补充和修改。这些更新旨在让已阅读过评测的用户能够及时了解改动之处。作者特别指出了在相机部分进行的添加和澄清，并表示后续的任何修改都会添加到文章顶部。\nEnglish Summary\nThe author has made minor additions and changes to their iPhone Duo review published last night. These updates are highlighted so that readers who have already seen the review can be aware of the modifications. The author specifically points out additions and clarifications made to the camera section and will add further changes to the top of the article.\n🏷️ iPhone Duo, review, camera\n \n⚙️ 工程\n10. 软件运行缓慢是设计不佳所致，而非语言本身\nSoftware is slow because of bad design, not slow languages — seangoedecke.com · 4 小时前 · ⭐ 24/30\n中文摘要\n文章认为，软件运行缓慢并非因为使用了 Python 等“慢”语言，而是由于糟糕的设计。即使将代码重写为 C 或 Rust 等“快”语言，大多数程序也无法获得显著的性能提升。语言之间的性能差异可能很大，但糟糕的设计是更普遍的瓶颈。\nEnglish Summary\nThe article argues that software slowness stems from poor design rather than the use of 'slow' languages like Python. Rewriting code in 'faster' languages such as C or Rust often yields no meaningful performance improvements for most programs. While language performance can vary significantly, bad design is identified as the more pervasive bottleneck.\n🏷️ software design, performance, programming languages\n \n11. 解决一个奇怪的 Python 问题\nWorking around a strange Python problem — johndcook.com · 13 小时前 · ⭐ 21/30\n中文摘要\n一篇几天前还能正常运行的 Python 脚本，今天突然无法工作。作者怀疑这可能与近期安全漏洞更新系统有关。脚本报错信息显示存在多个 PEP 723 元数据块。作者对此进行了搜索和研究，并分享了解决方案。\nEnglish Summary\nA Python script that previously worked fine suddenly stopped functioning. The author suspects this issue might be related to recent system updates addressing security vulnerabilities. The script encountered an error indicating multiple PEP 723 metadata blocks. The author researched this problem and is sharing their workaround.\n🏷️ Python, debugging, PEP 723\n \n🛠 工具 / 开源\n12. 使用 Nix 管理脚本依赖\nScript dependencies with Nix — entropicthoughts.com · 1 天前 · ⭐ 21/30\n中文摘要\n本文介绍了一种在 NixOS 之外的其他 Linux 发行版上使用 Nix 来管理简单脚本依赖的方法，旨在让开发者更安心。作者将首先以 Python 脚本为例进行说明，然后展示如何将其应用于其他任何语言。这种方法对所有用户开放，不仅仅是那些愿意尝试 NixOS 的用户。\nEnglish Summary\nThis article explains a method for managing dependencies of simple scripts using Nix on Linux distributions other than NixOS, aiming to provide developers with greater peace of mind. The author will first demonstrate with a Python script and then show how it can be adapted for any other language. This approach is accessible to everyone, not just those willing to try NixOS.\n🏷️ Nix, dependencies, scripting, NixOS\n \n13. 苹果重点介绍 50 多款已针对 Duo 优化的 iPhone 应用\nApple Highlights 50+ iPhone Apps That Have Already Been Optimized for the Duo — daringfireball.net · 9 小时前 · ⭐ 20/30\n中文摘要\n苹果新闻编辑室宣布，本周五将在 App Store 上线针对 iPhone Duo 应用和游戏的新编辑精选集。此外，全年还将陆续推出更多应用更新。针对 iPhone Duo 优化的应用将在商店的产品页面上显示“专为 iPhone Duo 设计”的徽章，方便用户识别。\nEnglish Summary\nApple Newsroom announces that new editorial collections for iPhone Duo apps and games will launch on the App Store this Friday, with additional app updates rolling out throughout the year. Apps optimized for iPhone Duo will be easily identifiable by a 'Made for iPhone Duo' badge on their product pages across the storefront.\n🏷️ iPhone Duo, app optimization, App Store\n \n🤖 AI / ML\n14. 我的 iPhone Duo 评测更新\nDonating Agent Skills to the Agentic AI Foundation — simonwillison.net · 10 小时前 · ⭐ 25/30\n中文摘要\n作者对已发布的 iPhone Duo 评测进行了补充和修改，特别是在相机部分。更新内容包括对相机性能的详细描述，指出其虽不及 iPhone 18 Pro，但表现良好，并提供了 Duo 主摄像头（1×/2×）的详细技术规格。此次更新旨在为已阅读评测的读者提供更全面的信息。\nEnglish Summary\nThe author provides updates and changes to their iPhone Duo review, particularly elaborating on the camera. New details clarify that while the camera is not on par with the iPhone 18 Pro, it performs well, and the technical specifications for the Duo's main 1×/2× camera are provided. These additions aim to offer readers a more comprehensive understanding.\n🏷️ AI agents, open source, Anthropic\n \n📝 其他\n15. 2045 年的计算机芯片将是什么样子？\nWhat will computer chips look like in 2045? — dwarkesh.com · 13 小时前 · ⭐ 23/30\n中文摘要\n本文作者参观了英特尔最先进的芯片制造工厂，并与公司领导层进行了交流，分享了对未来计算机芯片形态的见解。内容涵盖了对未来芯片技术发展趋势的观察和分析。\nEnglish Summary\nThe author shares insights into the future of computer chips after touring Intel's most advanced fabrication plant and speaking with its leadership. The article offers observations and analysis on the development trends of future chip technology.\n🏷️ computer chips, semiconductors, future technology\n \n生成于 2026-10-23 04:17 | 扫描 83 源 → 获取 2537 篇 → 精选 15 篇\n基于 Hacker News Popularity Contest 2025 RSS 源列表，由 Andrej Karpathy 推荐"</script>
+  <script id="speech-text" type="application/json">"🎧 点这里朗读今日日报\n📰 AI 博客每日精选 — 2026-10-24\n来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15\n📝 今日看点\n今日技术看点聚焦折叠屏设备体验与AI安全挑战。苹果新款折叠手机Duo褒贬不一，其创新设计与昂贵价格引发热议，但应用优化和相机表现仍受关注。同时，AI安全领域警钟长鸣，eMudrha证书事件和Ruby语言漏洞凸显了弱密钥和内存安全问题的重要性，网络钓鱼的精准化也对用户隐私构成威胁。\n \n🏆 今日必读\n🥇 Python 奇怪问题的解决方法\nSoftware is slow because of bad design, not slow languages — seangoedecke.com · 1 天前 · ⚙️ 工程\n中文摘要\n作者遇到一个之前能正常运行的 Python 脚本突然报错的问题，错误信息为“The script contains multiple PEP 723 metadata blocks”。通过搜索发现，这可能与最近的系统更新有关，特别是对 PEP 723 元数据处理方式的改变。文章探讨了这一问题的可能原因，并提供了绕过或解决此问题的思路。\nEnglish Summary\nA previously functional Python script began failing with the error \"The script contains multiple PEP 723 metadata blocks.\" This issue is suspected to be related to recent system updates, particularly changes in how PEP 723 metadata is handled. The author explores potential causes and discusses workarounds for this problem.\n💡 为什么值得读: 了解 Python 脚本因 PEP 723 元数据问题而失效的常见原因及解决方案。\n💡 Why read it: Understand common causes and solutions for Python scripts failing due to PEP 723 metadata issues.\n🏷️ software performance, design, programming languages, AI\n🥈 eMudrha 证书事件可能发生的原因分析\nDonating Agent Skills to the Agentic AI Foundation — simonwillison.net · 1 天前 · 🤖 AI / ML\n中文摘要\n文章分析了 eMudrha 证书事件的可能原因，指出该公司曾使用数字 4, 56, 115, 155, 156, 230, 和 237 作为密钥。虽然具体细节尚未公开，但作者推测这些数字可能被用作弱加密密钥或用于生成证书的某些参数。这种不安全的密钥管理方式极有可能导致了此次证书安全事件。\nEnglish Summary\nThis post speculates on the potential causes of the eMudrha certificate debacle, noting that the company used numbers like 4, 56, 115, 155, 156, 230, and 237 as secret keys. While details are scarce, the author suggests these might have been weak encryption keys or parameters used in certificate generation, leading to the security incident.\n💡 为什么值得读: 深入了解数字证书安全事件中，不安全的密钥管理如何导致严重后果。\n💡 Why read it: Gain insight into how insecure key management can lead to severe consequences in digital certificate security incidents.\n🏷️ AI agents, Anthropic, open source, community\n🥉 The Verge 对 Duo 的评测：‘苹果的折叠手机是一款混乱但昂贵的有趣设备’\nQuoting Armin Ronacher — simonwillison.net · 1 天前 · 🤖 AI / ML\n中文摘要\nThe Verge 的评测指出，苹果的折叠手机（Duo）在交互设计上存在一些反直觉的方面，例如打开手机时需要本能地旋转，且最佳旋转方向与初始预期相反。尽管设备在旋转方向上存在不便，但评测认为它仍然是一款“混乱但昂贵的有趣设备”，并提到了其在特定配件（如 bumper case）下的 oddity。\nEnglish Summary\nThe Verge's review of Apple's Duo folding phone highlights counter-intuitive interaction design, such as the instinctive need to rotate the device upon opening, with the optimal orientation being opposite to initial expectations. Despite this usability quirk, the review describes it as a 'messy, expensive good time,' noting oddities, especially with accessories like the bumper case.\n💡 为什么值得读: 了解苹果折叠手机 Duo 在设计和用户体验上的独特之处及评测者的整体评价。\n💡 Why read it: Understand the unique design and user experience aspects of Apple's Duo folding phone and the reviewers' overall assessment.\n🏷️ AI, software engineering, technical debt\n \n📊 数据概览\n \n \n \n分类分布\nmermaid\npie showData\n title \"文章分类分布\"\n \"🤖 AI / ML\" : 4\n \"📝 其他\" : 3\n \"🔒 安全\" : 3\n \"🛠 工具 / 开源\" : 3\n \"⚙️ 工程\" : 2\n高频关键词\nmermaid\nxychart-beta horizontal\n title \"高频关键词\"\n x-axis [\"ai\", \"iphone duo\", \"microsoft duo\", \"folding phone\", \"product review\", \"software performance\", \"design\", \"programming languages\", \"ai agents\", \"anthropic\", \"open source\", \"community\"]\n y-axis \"出现次数\" 0 --> 4\n bar [2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1]\n📈 纯文本关键词图（终端友好）\nai │ ████████████████████ 2\niphone duo │ ████████████████████ 2\nmicrosoft duo │ ████████████████████ 2\nfolding phone │ ████████████████████ 2\nproduct review │ ████████████████████ 2\nsoftware performance │ ██████████░░░░░░░░░░ 1\ndesign │ ██████████░░░░░░░░░░ 1\nprogramming languages │ ██████████░░░░░░░░░░ 1\nai agents │ ██████████░░░░░░░░░░ 1\nanthropic │ ██████████░░░░░░░░░░ 1\n🏷️ 话题标签\nai(2) · iphone duo(2) · microsoft duo(2) · folding phone(2) · product review(2) · software performance(1) · design(1) · programming languages(1) · ai agents(1) · anthropic(1) · open source(1) · community(1) · software engineering(1) · technical debt(1) · computer chips(1) · semiconductors(1) · future technology(1) · kimi ai(1) · llm(1) · model weights(1)\n \n🤖 AI / ML\n1. eMudrha 证书事件可能发生的原因分析\nDonating Agent Skills to the Agentic AI Foundation — simonwillison.net · 1 天前 · ⭐ 26/30\n中文摘要\n文章分析了 eMudrha 证书事件的可能原因，指出该公司曾使用数字 4, 56, 115, 155, 156, 230, 和 237 作为密钥。虽然具体细节尚未公开，但作者推测这些数字可能被用作弱加密密钥或用于生成证书的某些参数。这种不安全的密钥管理方式极有可能导致了此次证书安全事件。\nEnglish Summary\nThis post speculates on the potential causes of the eMudrha certificate debacle, noting that the company used numbers like 4, 56, 115, 155, 156, 230, and 237 as secret keys. While details are scarce, the author suggests these might have been weak encryption keys or parameters used in certificate generation, leading to the security incident.\n🏷️ AI agents, Anthropic, open source, community\n \n2. The Verge 对 Duo 的评测：‘苹果的折叠手机是一款混乱但昂贵的有趣设备’\nQuoting Armin Ronacher — simonwillison.net · 1 天前 · ⭐ 26/30\n中文摘要\nThe Verge 的评测指出，苹果的折叠手机（Duo）在交互设计上存在一些反直觉的方面，例如打开手机时需要本能地旋转，且最佳旋转方向与初始预期相反。尽管设备在旋转方向上存在不便，但评测认为它仍然是一款“混乱但昂贵的有趣设备”，并提到了其在特定配件（如 bumper case）下的 oddity。\nEnglish Summary\nThe Verge's review of Apple's Duo folding phone highlights counter-intuitive interaction design, such as the instinctive need to rotate the device upon opening, with the optimal orientation being opposite to initial expectations. Despite this usability quirk, the review describes it as a 'messy, expensive good time,' noting oddities, especially with accessories like the bumper case.\n🏷️ AI, software engineering, technical debt\n \n3. 通过 Booking.com 和 Novotel 渠道的更多网络钓鱼信息\nIntroducing Kimi K3.1 Pro — simonwillison.net · 8 小时前 · ⭐ 24/30\n中文摘要\n作者在 Booking.com 上预订 Novotel 酒店后，通过 WhatsApp 收到了包含个人信息（姓名、电话、入住地点和日期）的网络钓鱼信息。尽管这些信息表明了钓鱼者对用户信息的掌握程度，但信息本身相对容易辨别，例如来自非官方的葡萄牙商业账户。文章分析了这些钓鱼信息的特点。\nEnglish Summary\nFollowing a hotel booking on Booking.com, the author received phishing messages via WhatsApp containing personal details like name, phone number, location, and dates of stay. While demonstrating the phishers' access to user data, the messages themselves were relatively inept, originating from unofficial Portuguese business accounts. The post analyzes the characteristics of these phishing attempts.\n🏷️ Kimi AI, LLM, model weights\n \n4. RMSNorm\nRMSNorm — gilesthomas.com · 9 小时前 · ⭐ 24/30\n中文摘要\n文章探讨了在大型语言模型 (LLMs) 中，归一化 (Normalization) 的重要性，并以 GPT-2 的代码为例。在 GPT-2 的 Transformer 块中，LayerNorm 被用于多头注意力模块之前和前馈网络 (FFN) 之前。文章暗示 RMSNorm 可能是 LayerNorm 的一种替代或改进方案，在 LLM 的架构中扮演着关键角色，影响着模型的训练稳定性和性能。\nEnglish Summary\nThis article discusses the importance of normalization in Large Language Models (LLMs), using GPT-2's code as an example. In GPT-2's Transformer blocks, LayerNorm is applied before the multi-head attention module and before the Feed-Forward Network (FFN). The text implies that RMSNorm might be an alternative or improvement to LayerNorm, playing a crucial role in LLM architectures and influencing model training stability and performance.\n🏷️ RMSNorm, LLM architecture, LayerNorm\n \n📝 其他\n5. Joanna Stern 对 Duo 的评测：‘优点、缺点和 Bug’\nWhat will computer chips look like in 2045? — dwarkesh.com · 1 天前 · ⭐ 25/30\n中文摘要\nJoanna Stern 的评测通过大量测试来评估 Duo 的耐用性和功能。她使用定制机器人进行了超过 32,000 次折叠/展开测试，并将其带到不同场景（游艇、酒吧）测试摄像头性能。评测强调了对 Face ID 的怀念，并暗示了设备在可靠性方面存在“Bug”。\nEnglish Summary\nJoanna Stern's review rigorously tests the Duo's durability and functionality, including over 32,000 fold/unfold cycles using a custom robot and camera performance tests in various environments. The review highlights a strong missing of Face ID and implies the device suffers from 'bugs' regarding reliability.\n🏷️ computer chips, semiconductors, future technology\n \n6. The Verge 对 Duo 的评测：‘苹果的折叠手机是一款混乱且昂贵的有趣产品’\nThe Verge’s Duo Review: ‘Apple’s Folding Phone Is a Messy, Expensive Good Time’ — daringfireball.net · 11 小时前 · ⭐ 21/30\n中文摘要\nThe Verge 的 Nilay Patel 和 Allison Johnson 对一款折叠手机进行了评测。他们指出，几乎每次打开手机都会不自觉地旋转它。虽然无论如何旋转都能工作，但顺时针旋转（摄像头朝上）效果更好。经过一周的测试，这种操作方式逐渐变得自然，但与最初的预期相反。\nEnglish Summary\nNilay Patel and Allison Johnson from The Verge reviewed a foldable phone, noting that users instinctively rotate it almost every time they open it. While it functions regardless of orientation, rotating it counterclockwise so the cameras are on top is preferable. After a week of testing, this became more natural, though it's the opposite of initial expectations.\n🏷️ Microsoft Duo, folding phone, product review\n \n7. Joanna Stern 评测 Duo：‘优点、缺点和 Bug’\nJoanna Stern Reviews the Duo: ‘The Good, the Bad, and the Buggy’ — daringfireball.net · 13 小时前 · ⭐ 21/30\n中文摘要\nJoanna Stern 在一篇评测中详细介绍了 Duo 折叠手机。她使用定制机器人进行了超过 32,000 次的折叠测试，以检验铰链的耐用性。评测还包括了在游艇和酒吧等场景下的实际使用体验，并特别提到了她非常怀念 Face ID 功能。\nEnglish Summary\nIn her review, Joanna Stern provides a detailed look at the Duo foldable phone. She conducted over 32,000 folding tests using a custom robot to assess hinge durability. The review also covers real-world usage scenarios on a yacht and in a bar, and she specifically mentions missing the Face ID feature.\n🏷️ Microsoft Duo, folding phone, product review\n \n🔒 安全\n8. “无法阻止这种情况发生”，这是唯一会定期发生这种情况的语言的用户说的\n\"No way to prevent this\" say users of only language where this regularly happens — xeiaso.net · 1 天前 · ⭐ 24/30\n中文摘要\n在 Ruby 项目发布 CVE-2026-89078 漏洞后，站点可靠性工程师和系统管理员紧急修复系统。该漏洞是一个双重释放（double free）问题，存在于 Ruby 的 Onigmo 正则表达式解析器中，当解析失败并发生交替（alternation）时触发，可能导致内存损坏和远程代码执行。文章暗示，这种内存安全问题在某些语言（如 Ruby）中反复出现，并且用户对此似乎无能为力。\nEnglish Summary\nFollowing the release of CVE-2026-89078 for the Ruby project, site reliability engineers and system administrators scrambled to patch their systems. The vulnerability is a double free issue in Ruby's Onigmo regular expression parser, triggered when parsing fails after an alternation, potentially leading to memory corruption and remote code execution. The article implies that such memory safety issues are recurrent in certain languages like Ruby, with users seemingly unable to prevent them.\n🏷️ CVE, Ruby, vulnerability, patching\n \n9. eMudrha 证书事件可能发生的原因分析\nHow the eMudrha certificate debacle might have happened — johndcook.com · 1 天前 · ⭐ 22/30\n中文摘要\n文章探讨了 eMudrha 证书事件的可能原因，并提及了与密码“4”相关的网络引用。作者指出，eMudrha 曾使用数字 4、56、115、155、156、230 和 237 作为密钥。文章试图深入分析这一安全漏洞是如何发生的，并解释了相关背景信息。\nEnglish Summary\nThis article explores potential reasons behind the eMudrha certificate incident, referencing online discussions about the password '4'. The author notes that eMudrha had used the numbers 4, 56, 115, 155, 156, 230, and 237 as secret keys. It delves into how this security breach might have occurred, providing relevant background context.\n🏷️ eMudrha, certificate, security keys\n \n10. 通过 Booking.com 和 Novotel 收到更多钓鱼信息\nMore phishing messages via Booking.com and Novotel — shkspr.mobi · 16 小时前 · ⭐ 21/30\n中文摘要\n作者在 Booking.com 上预订了 Novotel 酒店后，两天内通过 WhatsApp 收到了钓鱼信息。这些信息准确地包含了作者的姓名、电话号码、入住地点和日期。尽管信息相对拙劣，但作者仍对其进行了分析和展示。\nEnglish Summary\nAfter booking a Novotel hotel on Booking.com, the author received phishing messages via WhatsApp within two days. These messages accurately contained the author's name, phone number, location, and dates of stay. Despite the messages being relatively inept, the author analyzed and presented them.\n🏷️ phishing, Booking.com, WhatsApp, scam\n \n🛠 工具 / 开源\n11. 苹果强调 50 多款已针对 iPhone Duo 优化的 iPhone 应用\nApple Highlights 50+ iPhone Apps That Have Already Been Optimized for the Duo — daringfireball.net · 1 天前 · ⭐ 23/30\n中文摘要\n苹果公司在其新闻稿中强调，超过 50 款 iPhone 应用已针对新款 iPhone Duo 进行了优化。这些应用将在 App Store 上推出专门的编辑精选集，并带有“专为 iPhone Duo 设计”的徽章，方便用户识别。文章指出，这种应用生态的快速适配是苹果每次推出重大屏幕变革（如 iPhone X）时的典型现象，表明了开发者对新硬件平台的积极响应。\nEnglish Summary\nApple highlights in its newsroom that over 50 iPhone apps have been optimized for the new iPhone Duo. These apps will feature dedicated editorial collections on the App Store and be identifiable with a 'Made for iPhone Duo' badge. The article notes that this rapid adaptation of the app ecosystem is typical of Apple's major screen changes, such as the iPhone X, demonstrating developers' proactive response to new hardware platforms.\n🏷️ iPhone Duo, app optimization, App Store\n \n12. 我的 iPhone Duo 评测更新\nUpdates to My iPhone Duo Review — daringfireball.net · 1 天前 · ⭐ 23/30\n中文摘要\n作者对已发布的 iPhone Duo 评测进行了几项更新和补充。主要更新内容包括对相机性能的进一步阐述，作者认为其相机表现出色，尽管不及 iPhone 18 Pro 的水平，但已属优秀。评测中还澄清了 Duo 主摄像头（1×/2×）的技术规格，并可能对其他方面进行了细微调整，以提供更全面的用户体验信息。\nEnglish Summary\nThe author has made several additions and changes to their previously published iPhone Duo review. Key updates include further clarification on the camera's performance, which is described as terrific, though not on par with the iPhone 18 Pro. The review also clarifies the technical specifications of the Duo's main 1×/2× camera and likely includes minor adjustments to other aspects to provide a more comprehensive user experience.\n🏷️ iPhone Duo, review, updates, camera\n \n13. Quick Study\nQuick Study — simonwillison.net · 6 小时前 · ⭐ 22/30\n中文摘要\n文章介绍了名为“Quick Study”的工具，并提供了一个向 Claude Opus 5.5 High 发送的提示（prompt）。该提示要求工具创建一个能够打开照片并快速（几秒内）使用画布元素和模拟画笔绘制出照片版本的“artifact”。这展示了 AI 在图像处理和创意生成方面的能力，以及如何通过精确的提示来指导 AI 完成特定任务。\nEnglish Summary\nThis article introduces a tool called 'Quick Study' and presents a prompt sent to Claude Opus 5.5 High. The prompt instructs the tool to create an 'artifact' that opens a photo and rapidly (within seconds) paints a version of it using a canvas element and simulated paintbrush. This demonstrates AI's capabilities in image manipulation and creative generation, and how precise prompts can guide AI to perform specific tasks.\n🏷️ AI tool, Claude Opus, prompt engineering\n \n⚙️ 工程\n14. Python 奇怪问题的解决方法\nSoftware is slow because of bad design, not slow languages — seangoedecke.com · 1 天前 · ⭐ 26/30\n中文摘要\n作者遇到一个之前能正常运行的 Python 脚本突然报错的问题，错误信息为“The script contains multiple PEP 723 metadata blocks”。通过搜索发现，这可能与最近的系统更新有关，特别是对 PEP 723 元数据处理方式的改变。文章探讨了这一问题的可能原因，并提供了绕过或解决此问题的思路。\nEnglish Summary\nA previously functional Python script began failing with the error \"The script contains multiple PEP 723 metadata blocks.\" This issue is suspected to be related to recent system updates, particularly changes in how PEP 723 metadata is handled. The author explores potential causes and discusses workarounds for this problem.\n🏷️ software performance, design, programming languages, AI\n \n15. 解决一个奇怪的 Python 问题\nWorking around a strange Python problem — johndcook.com · 1 天前 · ⭐ 22/30\n中文摘要\n一篇之前能正常运行的 Python 脚本突然无法工作。作者怀疑这可能与近期安全漏洞更新系统有关。脚本报错提示包含多个 PEP 723 元数据块，作者对此进行了搜索和研究。文章记录了解决这一问题的过程和经验。\nEnglish Summary\nA Python script that previously worked fine suddenly stopped functioning. The author suspects this issue might be related to recent system updates addressing security vulnerabilities. The script produced an error indicating multiple PEP 723 metadata blocks, prompting further investigation. This article details the process and lessons learned in resolving this peculiar Python problem.\n🏷️ Python, PEP 723, metadata\n \n生成于 2026-10-24 04:08 | 扫描 83 源 → 获取 2539 篇 → 精选 15 篇\n基于 Hacker News Popularity Contest 2025 RSS 源列表，由 Andrej Karpathy 推荐"</script>
   <script>
     const text = JSON.parse(document.getElementById('speech-text').textContent);
     const statusEl = document.getElementById('status');
