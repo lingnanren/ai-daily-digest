@@ -52,201 +52,203 @@
   <main class="shell">
     <article class="card">
       <p>🎧 <a href="https://lingnanren.github.io/ai-daily-digest/listen.html">点这里朗读今日日报</a></p>
-<h1>📰 AI 博客每日精选 — 2026-11-05</h1>
+<h1>📰 AI 博客每日精选 — 2026-11-06</h1>
 <blockquote>来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15</blockquote>
 <h2>📝 今日看点</h2>
-<p>今日技术看点聚焦AI的落地与挑战，以及软件工程的创新与安全。一方面，Datasette Agent 和 Datasette Apps 的更新预示着AI与数据工具的深度融合，而AI误操作对消费级应用的影响则敲响了警钟。另一方面，Safari浏览器引入垂直标签页等功能提升用户体验，同时安全领域也在探索确定性模拟测试与形式化方法的权衡。</p>
+<p>今日技术看点聚焦AI大模型应用与工程实践的挑战。从AI在触屏设备交互的局限性，到LLM工具的更新迭代，AI技术正加速渗透，但实际落地仍需克服用户体验和技术细节的障碍。同时，软件工程领域强调文档清晰度和源码控制的最新动态，预示着在复杂技术体系中，严谨的工程方法和清晰的沟通至关重要。</p>
 <hr>
 <h2>🏆 今日必读</h2>
-<p>🥇 <strong>Datasette Apps 0.3a0 发布：支持在 Datasette 中托管和编辑自定义 HTML 应用</strong></p>
-<p><a href="https://developer.apple.com/news/?id=gdk2umrf">Apple Begins Opening Siri AI to Developers</a> — daringfireball.net · 1 天前 · 🤖 AI / ML</p>
+<p>🥇 <strong>“演示效果极佳”：为什么触屏笔记本电脑不适合垂直使用</strong></p>
+<p><a href="https://www.dwarkesh.com/p/clocktower">The benchmark where AIs have to lie to win</a> — dwarkesh.com · 8 小时前 · 🤖 AI / ML</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Datasette Apps 0.3a0 版本发布，新增了在 Datasette 中托管和编辑自定义 HTML 应用的功能。这些应用可以通过手动创建，或更便捷地通过 Datasette Agent 使用 LLM 生成。新版本改进了与 Datasette Agent 的集成，允许在 Agent 的聊天消息中标记应用。</blockquote>
+<blockquote>文章探讨了触屏笔记本电脑在垂直屏幕使用时的固有局限性。尽管触屏交互在演示时能带来惊艳效果，但长时间使用会导致手臂疲劳，并且触摸表面不适合垂直方向操作。史蒂夫·乔布斯曾基于用户测试得出结论，触屏笔记本电脑不切实际，即使经过多年技术发展，这一根本性问题依然存在。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Datasette Apps 0.3a0 introduces support for hosting and editing custom HTML applications directly within Datasette. These applications can be built manually or more easily generated using LLMs via Datasette Agent. This release enhances the integration with Datasette Agent, enabling apps to be tagged within chat messages.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 了解如何在 Datasette 中集成和生成自定义 Web 应用，特别是利用 LLM 辅助开发。</p>
-<p>💡 <strong>Why read it</strong>: Learn how to integrate and generate custom web applications within Datasette, with a focus on LLM-assisted development.</p>
-<p>🏷️ Siri AI, developers, AI integration, Apple</p>
-<p>🥈 <strong>Datasette Agent 0.5a0 发布：引入“面板”功能，实现 Agent 与 Datasette 页面的并排交互</strong></p>
-<p><a href="https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/">Qwen 3.8 27B on my laptop can interpret model weights, too</a> — simonwillison.net · 1 天前 · 🤖 AI / ML</p>
+<blockquote>This post revisits the argument against touchscreen MacBooks, highlighting that while touch interfaces offer a great demo, they lead to user fatigue when used vertically for extended periods. Steve Jobs's early user testing revealed that touch surfaces are not suited for vertical orientation, a fundamental usability issue that persists despite technological advancements.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 深入剖析了触屏交互在垂直屏幕上的体验痛点，解释了为何这一设计理念即使在今天仍面临挑战。</p>
+<p>💡 <strong>Why read it</strong>: Explores the inherent usability challenges of vertical touch interfaces, explaining why this design concept still faces significant hurdles today.</p>
+<p>🏷️ AI, benchmarks, conspiracy, LLM</p>
+<p>🥈 <strong>理论上牢不可破：实验室测试与真实用户使用的差距</strong></p>
+<p><a href="https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/">Want to Rent an Internet Address at the White House?</a> — krebsonsecurity.com · 1 天前 · 🔒 安全</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Datasette Agent 0.5a0 版本重大更新，最显著的新功能是“面板”。该功能允许 Agent 聊天窗口与 Datasette 的页面（如表格或查询页面）并排显示，实现更紧密的交互。此功能与 datasette-apps 结合使用，可进一步提升应用开发效率。</blockquote>
+<blockquote>文章通过一个屏幕碎裂的iPhone Duo的例子，揭示了实验室测试与真实世界用户使用之间的巨大鸿沟。尽管设备通过了数千次机械开合测试，但在实际用户手中却可能轻易损坏。这表明，在设计和测试阶段，必须充分考虑用户非精细化的使用习惯，否则产品在理论上“牢不可破”，但在实践中却不堪一击。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Datasette Agent 0.5a0 is a significant release introducing the 'panel' feature, which allows the agent chat to open and sit alongside Datasette pages like tables or queries. This enables a more integrated user experience, especially when combined with datasette-apps.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 探索 Datasette Agent 的新“面板”功能，了解其如何提升与 Datasette 数据交互的效率。</p>
-<p>💡 <strong>Why read it</strong>: Explore the new 'panel' feature in Datasette Agent and how it enhances interactive data exploration within Datasette.</p>
-<p>🏷️ LLM, weights, programming, AI</p>
-<p>🥉 <strong>Hillel Wayne 加入 Antithesis 并发布新文章，探讨确定性模拟测试与形式化方法的权衡</strong></p>
-<p><a href="https://www.theverge.com/tech/1024588/brave-lawsuit-ai-scraping-new-york-times">The New York Times (et al.) Sues Brave for Copyright Infringement, Selling Scraped Content to AI Companies for Model Training</a> — daringfireball.net · 1 天前 · 🔒 安全</p>
+<blockquote>The article uses an example of a broken iPhone Duo screen to illustrate the significant gap between laboratory testing and real-world user behavior. Despite passing thousands of hinge tests, devices can still break easily in the hands of customers. This highlights the need to account for less delicate user habits during design and testing, as theoretical robustness doesn't always translate to practical durability.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 用生动案例揭示了产品在实验室测试通过后，仍可能因用户使用习惯而损坏的现实问题。</p>
+<p>💡 <strong>Why read it</strong>: Uses a vivid example to expose the reality of product failures due to user habits, even after passing laboratory tests.</p>
+<p>🏷️ White House, proxy services, security, residential IP</p>
+<p>🥉 <strong>存在分级但含义不明的事物</strong></p>
+<p><a href="https://seangoedecke.com/a-database-is-a-store-for-global-variables/">A database is a store for global variables</a> — seangoedecke.com · 6 小时前 · ⚙️ 工程</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Hillel Wayne 发布了他在 Antithesis 的首篇文章《Why Antithesis》，深入探讨了确定性模拟测试与形式化方法之间的相对优劣。文章指出，两者之间存在输入覆盖率与代码保真度之间的关键权衡。此外，作者还提及了年度 LFP 慈善折扣活动。</blockquote>
+<blockquote>本文指出，在技术文档中，当作者对某个功能非常熟悉时，容易出现描述不清的情况。即使事物存在明确的分级或排序，其具体含义和应用场景也可能对不熟悉该领域的读者来说变得模糊不清。这种“内部视角”的文档编写方式，往往会阻碍信息的有效传达。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Hillel Wayne's first blog post for Antithesis, 'Why Antithesis,' provides a 2000-word overview of the trade-offs between Deterministic Simulation Testing and Formal Methods, highlighting the essential balance between input coverage and code fidelity. The post also mentions an annual LFP charity discount.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 深入了解确定性模拟测试与形式化方法在软件验证中的核心权衡，以及作者的观点。</p>
-<p>💡 <strong>Why read it</strong>: Gain insights into the core trade-offs between deterministic simulation testing and formal methods in software verification, along with the author's perspective.</p>
-<p>🏷️ copyright, AI training, scraping, lawsuit</p>
+<blockquote>This post discusses how technical documentation can become unclear when written by individuals intimately familiar with a feature. Even when concepts are ranked or tiered, their precise meaning and application can be ambiguous to readers outside that specific domain. This 'insider perspective' in writing can hinder effective information transfer.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 警示了技术文档中因作者过于熟悉而可能产生的沟通障碍，强调了清晰表述的重要性。</p>
+<p>💡 <strong>Why read it</strong>: Warns about communication barriers in technical documentation arising from author familiarity, emphasizing the importance of clear articulation.</p>
+<p>🏷️ database, global variables, programming</p>
 <hr>
 <h2>📊 数据概览</h2>
-<table><thead><tr><th>扫描源</th><th>抓取文章</th><th>时间范围</th><th>精选</th></tr></thead><tbody><tr><td>84/92</td><td>2577 篇 → 34 篇</td><td>48h</td><td><strong>15 篇</strong></td></tr></tbody></table>
+<table><thead><tr><th>扫描源</th><th>抓取文章</th><th>时间范围</th><th>精选</th></tr></thead><tbody><tr><td>83/92</td><td>2568 篇 → 22 篇</td><td>48h</td><td><strong>15 篇</strong></td></tr></tbody></table>
 <h3>分类分布</h3>
 <div class="code-wrap"><div class="code-title">mermaid</div><pre><code>pie showData
     title "文章分类分布"
-    "🤖 AI / ML" : 5
+    "⚙️ 工程" : 4
     "💡 观点 / 杂谈" : 4
-    "🔒 安全" : 2
-    "⚙️ 工程" : 2
-    "🛠 工具 / 开源" : 2</code></pre></div>
+    "🛠 工具 / 开源" : 3
+    "🤖 AI / ML" : 2
+    "🔒 安全" : 1
+    "📝 其他" : 1</code></pre></div>
 <h3>高频关键词</h3>
 <div class="code-wrap"><div class="code-title">mermaid</div><pre><code>xychart-beta horizontal
     title "高频关键词"
-    x-axis ["llm", "release", "apple", "ai", "datasette", "siri ai", "developers", "ai integration", "weights", "programming", "copyright", "ai training"]
-    y-axis "出现次数" 0 --&gt; 6
-    bar [4, 4, 3, 2, 2, 1, 1, 1, 1, 1, 1, 1]</code></pre></div>
+    x-axis ["ai", "llm", "benchmarks", "conspiracy", "white house", "proxy services", "security", "residential ip", "database", "global variables", "programming", "receipts app"]
+    y-axis "出现次数" 0 --&gt; 4
+    bar [2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]</code></pre></div>
 <div class="details">
 <p class="summary">📈 纯文本关键词图（终端友好）</p>
-<div class="code-wrap"><pre><code>llm            │ ████████████████████ 4
-release        │ ████████████████████ 4
-apple          │ ███████████████░░░░░ 3
-ai             │ ██████████░░░░░░░░░░ 2
-datasette      │ ██████████░░░░░░░░░░ 2
-siri ai        │ █████░░░░░░░░░░░░░░░ 1
-developers     │ █████░░░░░░░░░░░░░░░ 1
-ai integration │ █████░░░░░░░░░░░░░░░ 1
-weights        │ █████░░░░░░░░░░░░░░░ 1
-programming    │ █████░░░░░░░░░░░░░░░ 1</code></pre></div>
+<div class="code-wrap"><pre><code>ai               │ ████████████████████ 2
+llm              │ ████████████████████ 2
+benchmarks       │ ██████████░░░░░░░░░░ 1
+conspiracy       │ ██████████░░░░░░░░░░ 1
+white house      │ ██████████░░░░░░░░░░ 1
+proxy services   │ ██████████░░░░░░░░░░ 1
+security         │ ██████████░░░░░░░░░░ 1
+residential ip   │ ██████████░░░░░░░░░░ 1
+database         │ ██████████░░░░░░░░░░ 1
+global variables │ ██████████░░░░░░░░░░ 1</code></pre></div>
 </div>
 <h3>🏷️ 话题标签</h3>
-<p><strong>llm</strong>(4) · <strong>release</strong>(4) · <strong>apple</strong>(3) · ai(2) · datasette(2) · siri ai(1) · developers(1) · ai integration(1) · weights(1) · programming(1) · copyright(1) · ai training(1) · scraping(1) · lawsuit(1) · white house(1) · proxy service(1) · residential proxy(1) · security(1) · ai agent(1) · fatfinger economy(1)</p>
-<hr>
-<h2>🤖 AI / ML</h2>
-<h3>1. Datasette Apps 0.3a0 发布：支持在 Datasette 中托管和编辑自定义 HTML 应用</h3>
-<p><a href="https://developer.apple.com/news/?id=gdk2umrf">Apple Begins Opening Siri AI to Developers</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 26/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>Datasette Apps 0.3a0 版本发布，新增了在 Datasette 中托管和编辑自定义 HTML 应用的功能。这些应用可以通过手动创建，或更便捷地通过 Datasette Agent 使用 LLM 生成。新版本改进了与 Datasette Agent 的集成，允许在 Agent 的聊天消息中标记应用。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Datasette Apps 0.3a0 introduces support for hosting and editing custom HTML applications directly within Datasette. These applications can be built manually or more easily generated using LLMs via Datasette Agent. This release enhances the integration with Datasette Agent, enabling apps to be tagged within chat messages.</blockquote>
-<p>🏷️ Siri AI, developers, AI integration, Apple</p>
-<hr>
-<h3>2. Datasette Agent 0.5a0 发布：引入“面板”功能，实现 Agent 与 Datasette 页面的并排交互</h3>
-<p><a href="https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/">Qwen 3.8 27B on my laptop can interpret model weights, too</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 26/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>Datasette Agent 0.5a0 版本重大更新，最显著的新功能是“面板”。该功能允许 Agent 聊天窗口与 Datasette 的页面（如表格或查询页面）并排显示，实现更紧密的交互。此功能与 datasette-apps 结合使用，可进一步提升应用开发效率。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Datasette Agent 0.5a0 is a significant release introducing the 'panel' feature, which allows the agent chat to open and sit alongside Datasette pages like tables or queries. This enables a more integrated user experience, especially when combined with datasette-apps.</blockquote>
-<p>🏷️ LLM, weights, programming, AI</p>
-<hr>
-<h3>3. 苹果新款 iPhone 发布时间表似乎奏效</h3>
-<p><a href="https://simonwillison.net/2026/Nov/4/datasette-llm/">datasette-llm 0.1a10</a> — <strong>simonwillison.net</strong> · 14 小时前 · ⭐ 23/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>根据 Horace Dediu 的分析，苹果新款 iPhone 的发布时间表策略取得了成功。尽管 iPhone 18 和 Duo 等新机型尚未在该季度发布，iPhone 销量仍实现了 17% 的惊人增长。苹果将常规 iPhone 18 的发布推迟到冬季末期，而 Pro 机型的强劲表现是关键。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Apple's new iPhone release schedule appears to be paying off, with iPhone sales growing an impressive 17% despite the absence of the iPhone 18 and Duo launches in the quarter. The strategy of postponing the regular iPhone 18 until late winter, coupled with strong sales of Pro models, has been effective.</blockquote>
-<p>🏷️ datasette, LLM, AI agent, release</p>
-<hr>
-<h3>4. AI 误操作经济影响到我的收据扫描应用</h3>
-<p><a href="https://pluralistic.net/2026/11/04/genius-scan-is-neither/">Pluralistic: The AI fatfinger economy has come for my receipts app (04 Nov 2026)</a> — <strong>pluralistic.net</strong> · 18 小时前 · ⭐ 23/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>作者的收据扫描应用（Genius Scan）已受到“AI 误操作经济”的影响，原本实用的按钮现在被无用的 AI 功能取代。文章还提及了其他一些近期事件和作者的近期活动，反映了 AI 技术在消费级应用中带来的负面体验和潜在问题。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>The author's receipt scanning app, Genius Scan, has been impacted by the 'AI fatfinger economy,' where previously useful buttons are now replaced by AI features. The article also touches on other recent events and the author's appearances, reflecting negative user experiences and potential issues arising from AI integration in consumer applications.</blockquote>
-<p>🏷️ AI, fatfinger economy, receipts app, automation</p>
-<hr>
-<h3>5. llm 0.37.1 版本发布</h3>
-<p><a href="https://simonwillison.net/2026/Nov/3/llm/">llm 0.37.1</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 23/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>llm 工具发布了 0.37.1 版本，这是一个包含 bug 修复的更新。该版本得到了 Steven Huang、Tao An、Arjan Mossel 和 XQ 等贡献者的支持。此次更新旨在提升 llm 工具的稳定性和用户体验。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>The 'llm' tool has released version 0.37.1, a bugfix release with contributions from Steven Huang, Tao An, Arjan Mossel, and XQ. This update aims to improve the stability and user experience of the tool.</blockquote>
-<p>🏷️ LLM, release, bugfix, command-line</p>
-<hr>
-<h2>💡 观点 / 杂谈</h2>
-<h3>6. 史蒂夫·乔布斯谈论“开放 vs. 封闭”论点是“烟幕弹”</h3>
-<p><a href="https://www.macworld.com/article/208438/jobs_transcript.html">Steve Jobs on His Final Quarterly Analyst Call: ‘We Think the Open Versus Closed Argument Is Just a Smokescreen’</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 23/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>在最后一次季度分析师电话会议上，史蒂夫·乔布斯认为“开放 vs. 封闭”的争论只是一个“烟幕弹”。他指出，即使开放系统不总是获胜，例如微软的“Plays For Sure”音乐策略，也说明了软件与硬件分离的 PC 模式（Android 也采用）并非绝对优势。乔布斯强调了苹果在产品整合上的独特策略。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>In his final quarterly analyst call, Steve Jobs argued that the 'open versus closed' debate is merely a 'smokescreen.' He pointed out that open systems don't always win, citing Microsoft's 'Plays For Sure' music strategy, which utilized the PC model of separating software from hardware (also used by Android), as an example. Jobs emphasized Apple's distinct approach to product integration.</blockquote>
-<p>🏷️ Steve Jobs, open vs closed, strategy, argument</p>
-<hr>
-<h3>7. 苹果分析师电话会议脚本化由来已久</h3>
-<p><a href="https://9to5mac.com/2026/11/03/apple-ceo-john-ternus-criticized-for-scripted-approach-to-first-earnings-call/">Apple’s Analyst Calls Have Been Scripted for Decades</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 23/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>苹果新任 CEO John Ternus 在首次财报电话会议上的表现被批评为过于脚本化，未能提供投资者期望的深入见解。文章认为，这种精心撰写的脚本化方式削弱了分析师会议的自由度和信息量，与人们期望的 CEO 风格形成反差。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Apple's new CEO John Ternus has been criticized for his overly scripted delivery during his first earnings call, failing to provide the deep insights investors hoped for. The article suggests this carefully written, scripted approach diminishes the spontaneity and informational value of analyst calls, contrasting with expectations for a CEO's communication style.</blockquote>
-<p>🏷️ Apple, analyst calls, scripted, leadership</p>
-<hr>
-<h3>8. 首篇博客文章发布：为什么选择 Antithesis</h3>
-<p><a href="https://buttondown.com/hillelwayne/archive/new-article-annual-lfp-charity-discount/">New Article, Annual LFP Charity Discount</a> — <strong>buttondown.com/hillelwayne</strong> · 1 天前 · ⭐ 22/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>作者发布了他在 Antithesis 的第一篇博客文章《为什么选择 Antithesis》。这篇文章长达 2000 字，深入探讨了确定性模拟测试与形式化方法之间的相对优劣。文章指出，在输入覆盖率和代码保真度之间存在着重要的权衡。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>The author has published their first blog post for Antithesis, titled 'Why Antithesis'. This 2000-word article provides an in-depth overview of the relative merits of Deterministic Simulation Testing compared to Formal Methods. It highlights an essential tradeoff between input coverage and code fidelity.</blockquote>
-<p>🏷️ Deterministic Simulation Testing, Formal Methods, software testing, Antithesis</p>
-<hr>
-<h3>9. 苹果新的 iPhone 发布计划似乎奏效</h3>
-<p><a href="https://x.com/asymco/status/2117379158087278697">Apple’s New iPhone Release Schedule Seems to Pay Off</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 22/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>分析师 Horace Dediu 指出，苹果 iPhone 销量实现了惊人的 17% 增长，尽管本季度未发布 iPhone 18、Duo 或新款 Air。iPhone Duo 的发布推迟到了第四季度，而新款 Air 去年销量不佳。苹果今年的主要策略是将常规 iPhone 18 的发布推迟到明年初。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Analyst Horace Dediu notes that Apple's iPhone sales achieved an impressive 17% growth, despite not launching the iPhone 18, Duo, or new Air this quarter. The iPhone Duo's release was postponed to Q4, and the new Air had poor sales last year. Apple's key strategy this year was delaying the regular iPhone 18 release until early next year.</blockquote>
-<p>🏷️ Apple, iPhone sales, schedule, performance</p>
-<hr>
-<h2>🔒 安全</h2>
-<h3>10. Hillel Wayne 加入 Antithesis 并发布新文章，探讨确定性模拟测试与形式化方法的权衡</h3>
-<p><a href="https://www.theverge.com/tech/1024588/brave-lawsuit-ai-scraping-new-york-times">The New York Times (et al.) Sues Brave for Copyright Infringement, Selling Scraped Content to AI Companies for Model Training</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 26/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>Hillel Wayne 发布了他在 Antithesis 的首篇文章《Why Antithesis》，深入探讨了确定性模拟测试与形式化方法之间的相对优劣。文章指出，两者之间存在输入覆盖率与代码保真度之间的关键权衡。此外，作者还提及了年度 LFP 慈善折扣活动。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Hillel Wayne's first blog post for Antithesis, 'Why Antithesis,' provides a 2000-word overview of the trade-offs between Deterministic Simulation Testing and Formal Methods, highlighting the essential balance between input coverage and code fidelity. The post also mentions an annual LFP charity discount.</blockquote>
-<p>🏷️ copyright, AI training, scraping, lawsuit</p>
-<hr>
-<h3>11. 如何在没有随机访问外部存储的情况下实现随机访问数据库？</h3>
-<p><a href="https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/">Want to Rent an Internet Address at the White House?</a> — <strong>krebsonsecurity.com</strong> · 1 小时前 · ⭐ 24/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>当缺乏随机访问的外部存储时，实现随机访问数据库的根本方法是将所有数据存储在内存中，并由程序自身进行管理。这种方式允许程序直接访问和操作数据，模拟了数据库的随机访问特性。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>To implement a random-access database without random-access external storage, the solution is to store all data in memory within your own program. This allows for direct data access and manipulation, effectively simulating random access capabilities.</blockquote>
-<p>🏷️ white house, proxy service, residential proxy, security</p>
+<p><strong>ai</strong>(2) · <strong>llm</strong>(2) · <strong>benchmarks</strong>(1) · conspiracy(1) · white house(1) · proxy services(1) · security(1) · residential ip(1) · database(1) · global variables(1) · programming(1) · receipts app(1) · fatfinger economy(1) · usability(1) · web browser(1) · applications(1) · power(1) · datasette-llm(1) · python(1) · release(1)</p>
 <hr>
 <h2>⚙️ 工程</h2>
-<h3>12. Safari 27.3 Beta 新增垂直标签页和自适应暗模式</h3>
-<p><a href="https://www.macrumors.com/2026/11/03/ios-27-3-safari/">Safari 27.3 Beta Adds Vertical Tabs and Adaptive Dark Mode</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 23/30</p>
+<h3>1. 存在分级但含义不明的事物</h3>
+<p><a href="https://seangoedecke.com/a-database-is-a-store-for-global-variables/">A database is a store for global variables</a> — <strong>seangoedecke.com</strong> · 6 小时前 · ⭐ 23/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>iOS 27.3、iPadOS 27.3 和 macOS Golden Gate 27.3 的 Safari 浏览器迎来重大更新，新增了垂直标签页布局，可替代传统的水平标签栏。此功能尤其适合 iPhone Duo 的大屏幕，但也适用于所有 iPhone、iPad 和 Mac 设备。垂直标签页默认显示图标以节省空间，并提供加宽选项。</blockquote>
+<blockquote>本文指出，在技术文档中，当作者对某个功能非常熟悉时，容易出现描述不清的情况。即使事物存在明确的分级或排序，其具体含义和应用场景也可能对不熟悉该领域的读者来说变得模糊不清。这种“内部视角”的文档编写方式，往往会阻碍信息的有效传达。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Safari in iOS 27.3, iPadOS 27.3, and macOS Golden Gate 27.3 is receiving major updates, including a new Vertical Tabs layout that can be used instead of the standard horizontal tab bar. This feature is well-suited for larger displays like the iPhone Duo but is available across all iPhones, iPads, and Macs. Vertical tabs default to icons to save space and offer an option to widen the bar.</blockquote>
-<p>🏷️ Safari, vertical tabs, dark mode, browser</p>
+<blockquote>This post discusses how technical documentation can become unclear when written by individuals intimately familiar with a feature. Even when concepts are ranked or tiered, their precise meaning and application can be ambiguous to readers outside that specific domain. This 'insider perspective' in writing can hinder effective information transfer.</blockquote>
+<p>🏷️ database, global variables, programming</p>
 <hr>
-<h3>13. 如何在没有随机访问外部存储的情况下实现随机访问数据库？</h3>
-<p><a href="https://devblogs.microsoft.com/oldnewthing/20261103-00/?p=112825/">How do you implement a random-access database when you don’t have random-access external storage?</a> — <strong>devblogs.microsoft.com/oldnewthing</strong> · 1 天前 · ⭐ 22/30</p>
+<h3>2. 本周源码控制：2026 年 11 月 4 日</h3>
+<p><a href="https://nesbitt.io/2026/11/04/this-week-in-source-control.html">This Week in Source Control: 4 November 2026</a> — <strong>nesbitt.io</strong> · 1 天前 · ⭐ 21/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>本文探讨了如何在缺乏随机访问外部存储的情况下实现随机访问数据库。文章指出，解决方案是将所有数据存储在内存中，并在程序内部进行管理。这种方法是实现高效数据访问的关键。</blockquote>
+<blockquote>本周源码控制通讯汇集了来自版本控制和代码托管平台（forges）的最新发布、安全公告和相关文章。该通讯旨在为开发者和技术人员提供一个集中的信息来源，帮助他们及时了解源码控制领域的动态和最佳实践。内容涵盖了 Git、GitHub、GitLab 等主流工具的更新信息，以及与软件开发流程相关的安全建议。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This article discusses how to implement a random-access database without random-access external storage. The solution proposed is to store all data in memory and manage it within the program itself. This approach is key to achieving efficient data access.</blockquote>
-<p>🏷️ database, in-memory, storage, implementation</p>
+<blockquote>This week's Source Control newsletter compiles the latest releases, advisories, and articles from across version control systems and forges. The newsletter aims to provide developers and technical professionals with a centralized source of information to keep them updated on the dynamics and best practices in the source control landscape. Content covers updates for mainstream tools like Git, GitHub, and GitLab, as well as security recommendations relevant to software development workflows.</blockquote>
+<p>🏷️ source control, version control, Git, CI/CD</p>
+<hr>
+<h3>3. 不应在创建后更改 Win32 静态控件的样式</h3>
+<p><a href="https://devblogs.microsoft.com/oldnewthing/20261105-00/?p=112835/">You shouldn’t change the style of a Win32 static control after it has been created</a> — <strong>devblogs.microsoft.com/oldnewthing</strong> · 15 小时前 · ⭐ 20/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>文章指出，在创建 Windows API（Win32）的静态控件（static control）后，不应尝试更改其样式。这是因为该控件的设计并未很好地处理样式在创建后被修改的情况。尝试这样做可能会导致不可预测的行为或功能失效。文章强调了在开发 Win32 应用程序时，应在控件创建时就确定其样式，避免后期修改带来的问题。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>This article states that one should not attempt to change the style of a Win32 static control after it has been created. This is because the control's design does not adequately handle style modifications post-creation, which can lead to unpredictable behavior or functional failures. The post emphasizes that when developing Win32 applications, styles should be determined at the time of control creation to avoid issues arising from later modifications.</blockquote>
+<p>🏷️ Win32, static control, Windows API</p>
+<hr>
+<h3>4. 存在排名但含义不明的事物</h3>
+<p><a href="https://devblogs.microsoft.com/oldnewthing/20261104-00/?p=112830/">There are things with ranks, but it’s not always clear what the ranks mean</a> — <strong>devblogs.microsoft.com/oldnewthing</strong> · 1 天前 · ⭐ 19/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>本文探讨了由熟悉功能的开发者撰写的文档中存在的问题。当作者对某个功能过于了解时，他们可能会假设读者也具备同等知识，导致文档中的排名或分类含义不清。这使得不熟悉该功能的读者难以理解。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>This article discusses a common issue with documentation written by developers who are intimately familiar with a feature. When authors know a feature too well, they may assume readers have the same level of understanding, leading to unclear rankings or classifications. This can make the documentation difficult for less experienced users to comprehend.</blockquote>
+<p>🏷️ documentation, software engineering, ranks, clarity</p>
+<hr>
+<h2>💡 观点 / 杂谈</h2>
+<h3>5. Micron Computers 的兴衰</h3>
+<p><a href="https://simonwillison.net/2026/Nov/5/paul-ford/">Quoting Paul Ford</a> — <strong>simonwillison.net</strong> · 12 小时前 · ⭐ 22/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Micron Computers 是内存芯片制造商美光科技（Micron Technology）进军个人电脑市场的一次中等规模的尝试。该业务于1995年首次推出，初期取得了显著成功，并在市场中存活至2008年11月6日。尽管美光科技在内存领域是巨头，但其PC业务的兴衰反映了在竞争激烈的消费电子市场中，即使是知名企业也面临挑战。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Micron Computers was a moderately successful venture by Micron Technology, a memory chip maker, to market PCs. Launched in 1995, the business initially performed well and remained in the market until November 6, 2008. The rise and fall of Micron Computers illustrate the challenges even established companies face in the competitive consumer electronics market.</blockquote>
+<p>🏷️ web browser, applications, power</p>
+<hr>
+<h3>6. Salon 停止出版</h3>
+<p><a href="https://www.salon.com/2026/11/05/goodbye-from-salon/">Salon Ceases Publication</a> — <strong>daringfireball.net</strong> · 8 小时前 · ⭐ 20/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>知名在线新闻网站 Salon 在运营 31 年后宣布停止出版。在一篇告别文章中，Salon 回顾了其在数字新闻领域的贡献，强调了其在报道新闻、传播思想、发声以及建立社区方面所扮演的角色。文章表达了对过去成就的自豪，并希望其留下的数字新闻遗产能够长久延续。然而，也有评论对网站存档的保存表示担忧。Salon 的关闭标志着一个时代的结束，也引发了对独立在线媒体生存挑战的思考。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>The prominent online news outlet Salon has announced its cessation of publication after 31 years of operation. In a farewell post, Salon reflected on its contributions to digital journalism, highlighting its role in reporting news, disseminating ideas, giving voice, and building a community. The article expresses pride in its past achievements and hopes its legacy in digital journalism will endure. However, some comments express concern about the preservation of the website's archives. Salon's closure marks the end of an era and prompts reflection on the challenges faced by independent online media.</blockquote>
+<p>🏷️ digital journalism, Salon, media</p>
+<hr>
+<h3>7. 史蒂夫·乔布斯解释为何不推出触屏 MacBook</h3>
+<p><a href="https://blog.jim-nielsen.com/2026/it-gives-great-demo/">“It Gives Great Demo”</a> — <strong>blog.jim-nielsen.com</strong> · 1 天前 · ⭐ 20/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>史蒂夫·乔布斯在一段著名视频中解释了苹果为何不推出触屏 MacBook。他指出，触屏不适合垂直屏幕，虽然演示效果好，但长时间使用会导致手臂疲劳。用户测试表明，触屏 MacBook 并非理想产品。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Steve Jobs famously explained why Apple never made touchscreen MacBooks. He argued that touch surfaces are not ideal for vertical screens, leading to arm fatigue after prolonged use. User testing confirmed that touchscreen MacBooks were not a practical product.</blockquote>
+<p>🏷️ Steve Jobs, touchscreen, user experience, MacBook</p>
+<hr>
+<h3>8. Micron Computers 的兴衰</h3>
+<p><a href="https://dfarq.homeip.net/micron-computers-rise-and-fall/?utm_source=rss&amp;amp;#038;utm_medium=rss&amp;amp;#038;utm_campaign=micron-computers-rise-and-fall">Micron Computers’ rise and fall</a> — <strong>dfarq.homeip.net</strong> · 18 小时前 · ⭐ 18/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Micron Computers 是内存芯片制造商 Micron Technology 进军个人电脑市场的尝试。该公司于 1995 年推出，初期取得了显著成功，并在市场上存活至 2008 年。尽管如此，Micron Computers 的PC业务最终未能长期维持。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Micron Computers was a moderately successful venture by Micron Technology, a maker of computer memory chips, to market PCs. Launched in 1995, the company initially thrived and survived in the market until November 6, 2008. Ultimately, the PC business did not endure.</blockquote>
+<p>🏷️ Micron Computers, PC market, history</p>
 <hr>
 <h2>🛠 工具 / 开源</h2>
-<h3>14. Datasette Apps 0.3a0 发布</h3>
-<p><a href="https://simonwillison.net/2026/Nov/4/datasette-apps/">datasette-apps 0.3a0</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 22/30</p>
+<h3>9. datasette-llm 0.1a10 发布</h3>
+<p><a href="https://simonwillison.net/2026/Nov/4/datasette-llm/">datasette-llm 0.1a10</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 22/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Datasette Apps 0.3a0 版本发布，该版本增强了在 Datasette 中托管和编辑自定义 HTML 应用程序的功能。用户可以通过 Datasette Agent 等工具更轻松地创建这些应用。新版本允许在 Datasette Agent 的聊天消息中标记应用，进一步提升了集成体验。</blockquote>
+<blockquote>datasette-llm 0.1a10 版本发布，修复了一个影响 agent.datasette.io 演示站点的 bug。该 bug 导致可用的大型语言模型（LLM）集合未能正确限制在配置文件中指定的模型。此次更新确保了模型选择的准确性，提升了该工具在实际应用中的可靠性。该版本还包含其他一些改进和 bug 修复。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Datasette Apps 0.3a0 has been released, enhancing the ability to host and edit custom HTML applications within Datasette. Users can more easily create these applications through tools like Datasette Agent. This new version improves integration by allowing apps to be tagged in Datasette Agent chat messages.</blockquote>
-<p>🏷️ Datasette, HTML applications, release, data visualization</p>
+<blockquote>The release of datasette-llm version 0.1a10 fixes a bug that affected the agent.datasette.io demo site, where the set of available Large Language Models (LLMs) was not correctly restricted to those specified in the configuration. This update ensures accurate model selection and improves the tool's reliability in practical applications. The release also includes other improvements and bug fixes.</blockquote>
+<p>🏷️ datasette-llm, LLM, Python, release</p>
 <hr>
-<h3>15. Datasette Agent 0.5a0 发布</h3>
-<p><a href="https://simonwillison.net/2026/Nov/3/datasette-agent/">datasette-agent 0.5a0</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 22/30</p>
+<h3>10. Meta 发布 Edits Mac 版本</h3>
+<p><a href="https://edits.instagram.com/blog/edits-desktop-video-editor/">Meta Releases Mac Version of Edits</a> — <strong>daringfireball.net</strong> · 9 小时前 · ⭐ 21/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Datasette Agent 0.5a0 版本是一个重要的更新，引入了名为“面板”的新功能。该功能允许代理聊天窗口与 Datasette 的页面（如表格或查询页面）并排显示。结合 datasette-apps，用户可以更高效地与数据交互。</blockquote>
+<blockquote>Meta 旗下的 Edits 应用现已推出 macOS 版本，旨在支持更复杂的视频编辑项目。新版桌面编辑器专为需要更大屏幕和鼠标键盘精确操作的用户设计，以提升创作体验。自推出一年多以来，Edits 已吸引了 5000 万用户，此次 Mac 版本的发布将进一步扩展其功能和用户群体。新版本在功能上与移动端保持一致，但提供了更专业的编辑环境。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Datasette Agent 0.5a0 is a significant release introducing a new feature called the 'panel'. This allows the agent's chat to open and sit alongside pages from Datasette, such as a table or query page. When combined with datasette-apps, it enhances user interaction with data.</blockquote>
-<p>🏷️ Datasette Agent, LLM, release, AI tools</p>
+<blockquote>Meta's Edits app has launched a macOS version, designed to support more complex video editing projects. The new desktop editor is tailored for users who benefit from a larger screen and the precision of a mouse and keyboard to enhance their creative workflow. In just over a year, Edits has garnered 50 million users, and the Mac release aims to further expand its functionality and user base. The desktop version offers a more professional editing environment while maintaining feature parity with its mobile counterpart.</blockquote>
+<p>🏷️ Meta, Edits, Mac, creators</p>
 <hr>
-<p>*生成于 2026-11-05 06:06 | 扫描 84 源 → 获取 2577 篇 → 精选 15 篇* *基于 <a href="https://refactoringenglish.com/tools/hn-popularity/">Hacker News Popularity Contest 2025</a> RSS 源列表，由 <a href="https://x.com/karpathy">Andrej Karpathy</a> 推荐*</p>
+<h3>11. Gadget Review: Tozo NC9 Pro 蓝牙耳机 ★★★★⯪</h3>
+<p><a href="https://shkspr.mobi/blog/2026/11/gadget-review-tozo-nc9-pro-bluetooth-headphones/">Gadget Review: Tozo NC9 Pro Bluetooth Headphones ★★★★⯪</a> — <strong>shkspr.mobi</strong> · 17 小时前 · ⭐ 18/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>评测文章重点介绍了 Tozo NC9 Pro 蓝牙耳机的充电盒，而非耳机本身。耳机在音质、降噪和电池续航方面表现中规中矩。然而，其充电盒的设计和功能却显得有些特别，是这款产品最引人注目的地方。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>This gadget review highlights the charging case of the Tozo NC9 Pro Bluetooth headphones as its most interesting feature. While the headphones offer standard good sound quality, excellent noise cancellation, and decent battery life, the charging case stands out as particularly noteworthy.</blockquote>
+<p>🏷️ headphones, Bluetooth, gadget review</p>
+<hr>
+<h2>🤖 AI / ML</h2>
+<h3>12. “演示效果极佳”：为什么触屏笔记本电脑不适合垂直使用</h3>
+<p><a href="https://www.dwarkesh.com/p/clocktower">The benchmark where AIs have to lie to win</a> — <strong>dwarkesh.com</strong> · 8 小时前 · ⭐ 27/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>文章探讨了触屏笔记本电脑在垂直屏幕使用时的固有局限性。尽管触屏交互在演示时能带来惊艳效果，但长时间使用会导致手臂疲劳，并且触摸表面不适合垂直方向操作。史蒂夫·乔布斯曾基于用户测试得出结论，触屏笔记本电脑不切实际，即使经过多年技术发展，这一根本性问题依然存在。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>This post revisits the argument against touchscreen MacBooks, highlighting that while touch interfaces offer a great demo, they lead to user fatigue when used vertically for extended periods. Steve Jobs's early user testing revealed that touch surfaces are not suited for vertical orientation, a fundamental usability issue that persists despite technological advancements.</blockquote>
+<p>🏷️ AI, benchmarks, conspiracy, LLM</p>
+<hr>
+<h3>13. 评测：Tozo NC9 Pro 蓝牙耳机</h3>
+<p><a href="https://pluralistic.net/2026/11/04/genius-scan-is-neither/">Pluralistic: The AI fatfinger economy has come for my receipts app (04 Nov 2026)</a> — <strong>pluralistic.net</strong> · 1 天前 · ⭐ 23/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Tozo NC9 Pro 蓝牙耳机在音质、降噪和续航方面表现标准，但其最引人注目的特点是充电盒。该充电盒设计独特，为用户提供了超出预期的体验。文章详细评测了这款耳机的各项性能，并特别强调了充电盒的创新之处。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>The Tozo NC9 Pro Bluetooth headphones offer standard performance in sound quality, noise cancellation, and battery life. However, their most notable feature is the charging case, which provides a unique and noteworthy user experience. The review details the headphones' capabilities while highlighting the innovation in the charging case design.</blockquote>
+<p>🏷️ AI, receipts app, fatfinger economy, usability</p>
+<hr>
+<h2>🔒 安全</h2>
+<h3>14. 理论上牢不可破：实验室测试与真实用户使用的差距</h3>
+<p><a href="https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/">Want to Rent an Internet Address at the White House?</a> — <strong>krebsonsecurity.com</strong> · 1 天前 · ⭐ 25/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>文章通过一个屏幕碎裂的iPhone Duo的例子，揭示了实验室测试与真实世界用户使用之间的巨大鸿沟。尽管设备通过了数千次机械开合测试，但在实际用户手中却可能轻易损坏。这表明，在设计和测试阶段，必须充分考虑用户非精细化的使用习惯，否则产品在理论上“牢不可破”，但在实践中却不堪一击。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>The article uses an example of a broken iPhone Duo screen to illustrate the significant gap between laboratory testing and real-world user behavior. Despite passing thousands of hinge tests, devices can still break easily in the hands of customers. This highlights the need to account for less delicate user habits during design and testing, as theoretical robustness doesn't always translate to practical durability.</blockquote>
+<p>🏷️ White House, proxy services, security, residential IP</p>
+<hr>
+<h2>📝 其他</h2>
+<h3>15. 理论上坚不可摧的 iPhone Duo 屏幕</h3>
+<p><a href="https://idiallo.com/byte-size/unbreakable-in-theory">It's unbreakable in theory</a> — <strong>idiallo.com</strong> · 9 小时前 · ⭐ 19/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>一张 iPhone Duo 手机在商店展示架上屏幕碎裂的照片引发了对产品耐用性的质疑。尽管苹果声称其铰链经过数千次机械测试且表现完好，但实际用户手中的手机却出现了屏幕损坏。这表明理论上的测试结果与实际使用情况可能存在巨大差异。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>A photo of a broken iPhone Duo screen on a store display has raised questions about product durability. Despite Apple's claims of successful hinge testing, the phone's screen was found cracked in a retail setting. This highlights a potential disconnect between theoretical testing and real-world usage.</blockquote>
+<p>🏷️ iPhone Duo, durability, hardware</p>
+<hr>
+<p>*生成于 2026-11-06 06:00 | 扫描 83 源 → 获取 2568 篇 → 精选 15 篇* *基于 <a href="https://refactoringenglish.com/tools/hn-popularity/">Hacker News Popularity Contest 2025</a> RSS 源列表，由 <a href="https://x.com/karpathy">Andrej Karpathy</a> 推荐*</p>
     </article>
   </main>
-  <script id="speech-text" type="application/json">"🎧 点这里朗读今日日报\n📰 AI 博客每日精选 — 2026-11-05\n来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15\n📝 今日看点\n今日技术看点聚焦AI的落地与挑战，以及软件工程的创新与安全。一方面，Datasette Agent 和 Datasette Apps 的更新预示着AI与数据工具的深度融合，而AI误操作对消费级应用的影响则敲响了警钟。另一方面，Safari浏览器引入垂直标签页等功能提升用户体验，同时安全领域也在探索确定性模拟测试与形式化方法的权衡。\n \n🏆 今日必读\n🥇 Datasette Apps 0.3a0 发布：支持在 Datasette 中托管和编辑自定义 HTML 应用\nApple Begins Opening Siri AI to Developers — daringfireball.net · 1 天前 · 🤖 AI / ML\n中文摘要\nDatasette Apps 0.3a0 版本发布，新增了在 Datasette 中托管和编辑自定义 HTML 应用的功能。这些应用可以通过手动创建，或更便捷地通过 Datasette Agent 使用 LLM 生成。新版本改进了与 Datasette Agent 的集成，允许在 Agent 的聊天消息中标记应用。\nEnglish Summary\nDatasette Apps 0.3a0 introduces support for hosting and editing custom HTML applications directly within Datasette. These applications can be built manually or more easily generated using LLMs via Datasette Agent. This release enhances the integration with Datasette Agent, enabling apps to be tagged within chat messages.\n💡 为什么值得读: 了解如何在 Datasette 中集成和生成自定义 Web 应用，特别是利用 LLM 辅助开发。\n💡 Why read it: Learn how to integrate and generate custom web applications within Datasette, with a focus on LLM-assisted development.\n🏷️ Siri AI, developers, AI integration, Apple\n🥈 Datasette Agent 0.5a0 发布：引入“面板”功能，实现 Agent 与 Datasette 页面的并排交互\nQwen 3.8 27B on my laptop can interpret model weights, too — simonwillison.net · 1 天前 · 🤖 AI / ML\n中文摘要\nDatasette Agent 0.5a0 版本重大更新，最显著的新功能是“面板”。该功能允许 Agent 聊天窗口与 Datasette 的页面（如表格或查询页面）并排显示，实现更紧密的交互。此功能与 datasette-apps 结合使用，可进一步提升应用开发效率。\nEnglish Summary\nDatasette Agent 0.5a0 is a significant release introducing the 'panel' feature, which allows the agent chat to open and sit alongside Datasette pages like tables or queries. This enables a more integrated user experience, especially when combined with datasette-apps.\n💡 为什么值得读: 探索 Datasette Agent 的新“面板”功能，了解其如何提升与 Datasette 数据交互的效率。\n💡 Why read it: Explore the new 'panel' feature in Datasette Agent and how it enhances interactive data exploration within Datasette.\n🏷️ LLM, weights, programming, AI\n🥉 Hillel Wayne 加入 Antithesis 并发布新文章，探讨确定性模拟测试与形式化方法的权衡\nThe New York Times (et al.) Sues Brave for Copyright Infringement, Selling Scraped Content to AI Companies for Model Training — daringfireball.net · 1 天前 · 🔒 安全\n中文摘要\nHillel Wayne 发布了他在 Antithesis 的首篇文章《Why Antithesis》，深入探讨了确定性模拟测试与形式化方法之间的相对优劣。文章指出，两者之间存在输入覆盖率与代码保真度之间的关键权衡。此外，作者还提及了年度 LFP 慈善折扣活动。\nEnglish Summary\nHillel Wayne's first blog post for Antithesis, 'Why Antithesis,' provides a 2000-word overview of the trade-offs between Deterministic Simulation Testing and Formal Methods, highlighting the essential balance between input coverage and code fidelity. The post also mentions an annual LFP charity discount.\n💡 为什么值得读: 深入了解确定性模拟测试与形式化方法在软件验证中的核心权衡，以及作者的观点。\n💡 Why read it: Gain insights into the core trade-offs between deterministic simulation testing and formal methods in software verification, along with the author's perspective.\n🏷️ copyright, AI training, scraping, lawsuit\n \n📊 数据概览\n \n \n \n分类分布\nmermaid\npie showData\n title \"文章分类分布\"\n \"🤖 AI / ML\" : 5\n \"💡 观点 / 杂谈\" : 4\n \"🔒 安全\" : 2\n \"⚙️ 工程\" : 2\n \"🛠 工具 / 开源\" : 2\n高频关键词\nmermaid\nxychart-beta horizontal\n title \"高频关键词\"\n x-axis [\"llm\", \"release\", \"apple\", \"ai\", \"datasette\", \"siri ai\", \"developers\", \"ai integration\", \"weights\", \"programming\", \"copyright\", \"ai training\"]\n y-axis \"出现次数\" 0 --> 6\n bar [4, 4, 3, 2, 2, 1, 1, 1, 1, 1, 1, 1]\n📈 纯文本关键词图（终端友好）\nllm │ ████████████████████ 4\nrelease │ ████████████████████ 4\napple │ ███████████████░░░░░ 3\nai │ ██████████░░░░░░░░░░ 2\ndatasette │ ██████████░░░░░░░░░░ 2\nsiri ai │ █████░░░░░░░░░░░░░░░ 1\ndevelopers │ █████░░░░░░░░░░░░░░░ 1\nai integration │ █████░░░░░░░░░░░░░░░ 1\nweights │ █████░░░░░░░░░░░░░░░ 1\nprogramming │ █████░░░░░░░░░░░░░░░ 1\n🏷️ 话题标签\nllm(4) · release(4) · apple(3) · ai(2) · datasette(2) · siri ai(1) · developers(1) · ai integration(1) · weights(1) · programming(1) · copyright(1) · ai training(1) · scraping(1) · lawsuit(1) · white house(1) · proxy service(1) · residential proxy(1) · security(1) · ai agent(1) · fatfinger economy(1)\n \n🤖 AI / ML\n1. Datasette Apps 0.3a0 发布：支持在 Datasette 中托管和编辑自定义 HTML 应用\nApple Begins Opening Siri AI to Developers — daringfireball.net · 1 天前 · ⭐ 26/30\n中文摘要\nDatasette Apps 0.3a0 版本发布，新增了在 Datasette 中托管和编辑自定义 HTML 应用的功能。这些应用可以通过手动创建，或更便捷地通过 Datasette Agent 使用 LLM 生成。新版本改进了与 Datasette Agent 的集成，允许在 Agent 的聊天消息中标记应用。\nEnglish Summary\nDatasette Apps 0.3a0 introduces support for hosting and editing custom HTML applications directly within Datasette. These applications can be built manually or more easily generated using LLMs via Datasette Agent. This release enhances the integration with Datasette Agent, enabling apps to be tagged within chat messages.\n🏷️ Siri AI, developers, AI integration, Apple\n \n2. Datasette Agent 0.5a0 发布：引入“面板”功能，实现 Agent 与 Datasette 页面的并排交互\nQwen 3.8 27B on my laptop can interpret model weights, too — simonwillison.net · 1 天前 · ⭐ 26/30\n中文摘要\nDatasette Agent 0.5a0 版本重大更新，最显著的新功能是“面板”。该功能允许 Agent 聊天窗口与 Datasette 的页面（如表格或查询页面）并排显示，实现更紧密的交互。此功能与 datasette-apps 结合使用，可进一步提升应用开发效率。\nEnglish Summary\nDatasette Agent 0.5a0 is a significant release introducing the 'panel' feature, which allows the agent chat to open and sit alongside Datasette pages like tables or queries. This enables a more integrated user experience, especially when combined with datasette-apps.\n🏷️ LLM, weights, programming, AI\n \n3. 苹果新款 iPhone 发布时间表似乎奏效\ndatasette-llm 0.1a10 — simonwillison.net · 14 小时前 · ⭐ 23/30\n中文摘要\n根据 Horace Dediu 的分析，苹果新款 iPhone 的发布时间表策略取得了成功。尽管 iPhone 18 和 Duo 等新机型尚未在该季度发布，iPhone 销量仍实现了 17% 的惊人增长。苹果将常规 iPhone 18 的发布推迟到冬季末期，而 Pro 机型的强劲表现是关键。\nEnglish Summary\nApple's new iPhone release schedule appears to be paying off, with iPhone sales growing an impressive 17% despite the absence of the iPhone 18 and Duo launches in the quarter. The strategy of postponing the regular iPhone 18 until late winter, coupled with strong sales of Pro models, has been effective.\n🏷️ datasette, LLM, AI agent, release\n \n4. AI 误操作经济影响到我的收据扫描应用\nPluralistic: The AI fatfinger economy has come for my receipts app (04 Nov 2026) — pluralistic.net · 18 小时前 · ⭐ 23/30\n中文摘要\n作者的收据扫描应用（Genius Scan）已受到“AI 误操作经济”的影响，原本实用的按钮现在被无用的 AI 功能取代。文章还提及了其他一些近期事件和作者的近期活动，反映了 AI 技术在消费级应用中带来的负面体验和潜在问题。\nEnglish Summary\nThe author's receipt scanning app, Genius Scan, has been impacted by the 'AI fatfinger economy,' where previously useful buttons are now replaced by AI features. The article also touches on other recent events and the author's appearances, reflecting negative user experiences and potential issues arising from AI integration in consumer applications.\n🏷️ AI, fatfinger economy, receipts app, automation\n \n5. llm 0.37.1 版本发布\nllm 0.37.1 — simonwillison.net · 1 天前 · ⭐ 23/30\n中文摘要\nllm 工具发布了 0.37.1 版本，这是一个包含 bug 修复的更新。该版本得到了 Steven Huang、Tao An、Arjan Mossel 和 XQ 等贡献者的支持。此次更新旨在提升 llm 工具的稳定性和用户体验。\nEnglish Summary\nThe 'llm' tool has released version 0.37.1, a bugfix release with contributions from Steven Huang, Tao An, Arjan Mossel, and XQ. This update aims to improve the stability and user experience of the tool.\n🏷️ LLM, release, bugfix, command-line\n \n💡 观点 / 杂谈\n6. 史蒂夫·乔布斯谈论“开放 vs. 封闭”论点是“烟幕弹”\nSteve Jobs on His Final Quarterly Analyst Call: ‘We Think the Open Versus Closed Argument Is Just a Smokescreen’ — daringfireball.net · 1 天前 · ⭐ 23/30\n中文摘要\n在最后一次季度分析师电话会议上，史蒂夫·乔布斯认为“开放 vs. 封闭”的争论只是一个“烟幕弹”。他指出，即使开放系统不总是获胜，例如微软的“Plays For Sure”音乐策略，也说明了软件与硬件分离的 PC 模式（Android 也采用）并非绝对优势。乔布斯强调了苹果在产品整合上的独特策略。\nEnglish Summary\nIn his final quarterly analyst call, Steve Jobs argued that the 'open versus closed' debate is merely a 'smokescreen.' He pointed out that open systems don't always win, citing Microsoft's 'Plays For Sure' music strategy, which utilized the PC model of separating software from hardware (also used by Android), as an example. Jobs emphasized Apple's distinct approach to product integration.\n🏷️ Steve Jobs, open vs closed, strategy, argument\n \n7. 苹果分析师电话会议脚本化由来已久\nApple’s Analyst Calls Have Been Scripted for Decades — daringfireball.net · 1 天前 · ⭐ 23/30\n中文摘要\n苹果新任 CEO John Ternus 在首次财报电话会议上的表现被批评为过于脚本化，未能提供投资者期望的深入见解。文章认为，这种精心撰写的脚本化方式削弱了分析师会议的自由度和信息量，与人们期望的 CEO 风格形成反差。\nEnglish Summary\nApple's new CEO John Ternus has been criticized for his overly scripted delivery during his first earnings call, failing to provide the deep insights investors hoped for. The article suggests this carefully written, scripted approach diminishes the spontaneity and informational value of analyst calls, contrasting with expectations for a CEO's communication style.\n🏷️ Apple, analyst calls, scripted, leadership\n \n8. 首篇博客文章发布：为什么选择 Antithesis\nNew Article, Annual LFP Charity Discount — buttondown.com/hillelwayne · 1 天前 · ⭐ 22/30\n中文摘要\n作者发布了他在 Antithesis 的第一篇博客文章《为什么选择 Antithesis》。这篇文章长达 2000 字，深入探讨了确定性模拟测试与形式化方法之间的相对优劣。文章指出，在输入覆盖率和代码保真度之间存在着重要的权衡。\nEnglish Summary\nThe author has published their first blog post for Antithesis, titled 'Why Antithesis'. This 2000-word article provides an in-depth overview of the relative merits of Deterministic Simulation Testing compared to Formal Methods. It highlights an essential tradeoff between input coverage and code fidelity.\n🏷️ Deterministic Simulation Testing, Formal Methods, software testing, Antithesis\n \n9. 苹果新的 iPhone 发布计划似乎奏效\nApple’s New iPhone Release Schedule Seems to Pay Off — daringfireball.net · 1 天前 · ⭐ 22/30\n中文摘要\n分析师 Horace Dediu 指出，苹果 iPhone 销量实现了惊人的 17% 增长，尽管本季度未发布 iPhone 18、Duo 或新款 Air。iPhone Duo 的发布推迟到了第四季度，而新款 Air 去年销量不佳。苹果今年的主要策略是将常规 iPhone 18 的发布推迟到明年初。\nEnglish Summary\nAnalyst Horace Dediu notes that Apple's iPhone sales achieved an impressive 17% growth, despite not launching the iPhone 18, Duo, or new Air this quarter. The iPhone Duo's release was postponed to Q4, and the new Air had poor sales last year. Apple's key strategy this year was delaying the regular iPhone 18 release until early next year.\n🏷️ Apple, iPhone sales, schedule, performance\n \n🔒 安全\n10. Hillel Wayne 加入 Antithesis 并发布新文章，探讨确定性模拟测试与形式化方法的权衡\nThe New York Times (et al.) Sues Brave for Copyright Infringement, Selling Scraped Content to AI Companies for Model Training — daringfireball.net · 1 天前 · ⭐ 26/30\n中文摘要\nHillel Wayne 发布了他在 Antithesis 的首篇文章《Why Antithesis》，深入探讨了确定性模拟测试与形式化方法之间的相对优劣。文章指出，两者之间存在输入覆盖率与代码保真度之间的关键权衡。此外，作者还提及了年度 LFP 慈善折扣活动。\nEnglish Summary\nHillel Wayne's first blog post for Antithesis, 'Why Antithesis,' provides a 2000-word overview of the trade-offs between Deterministic Simulation Testing and Formal Methods, highlighting the essential balance between input coverage and code fidelity. The post also mentions an annual LFP charity discount.\n🏷️ copyright, AI training, scraping, lawsuit\n \n11. 如何在没有随机访问外部存储的情况下实现随机访问数据库？\nWant to Rent an Internet Address at the White House? — krebsonsecurity.com · 1 小时前 · ⭐ 24/30\n中文摘要\n当缺乏随机访问的外部存储时，实现随机访问数据库的根本方法是将所有数据存储在内存中，并由程序自身进行管理。这种方式允许程序直接访问和操作数据，模拟了数据库的随机访问特性。\nEnglish Summary\nTo implement a random-access database without random-access external storage, the solution is to store all data in memory within your own program. This allows for direct data access and manipulation, effectively simulating random access capabilities.\n🏷️ white house, proxy service, residential proxy, security\n \n⚙️ 工程\n12. Safari 27.3 Beta 新增垂直标签页和自适应暗模式\nSafari 27.3 Beta Adds Vertical Tabs and Adaptive Dark Mode — daringfireball.net · 1 天前 · ⭐ 23/30\n中文摘要\niOS 27.3、iPadOS 27.3 和 macOS Golden Gate 27.3 的 Safari 浏览器迎来重大更新，新增了垂直标签页布局，可替代传统的水平标签栏。此功能尤其适合 iPhone Duo 的大屏幕，但也适用于所有 iPhone、iPad 和 Mac 设备。垂直标签页默认显示图标以节省空间，并提供加宽选项。\nEnglish Summary\nSafari in iOS 27.3, iPadOS 27.3, and macOS Golden Gate 27.3 is receiving major updates, including a new Vertical Tabs layout that can be used instead of the standard horizontal tab bar. This feature is well-suited for larger displays like the iPhone Duo but is available across all iPhones, iPads, and Macs. Vertical tabs default to icons to save space and offer an option to widen the bar.\n🏷️ Safari, vertical tabs, dark mode, browser\n \n13. 如何在没有随机访问外部存储的情况下实现随机访问数据库？\nHow do you implement a random-access database when you don’t have random-access external storage? — devblogs.microsoft.com/oldnewthing · 1 天前 · ⭐ 22/30\n中文摘要\n本文探讨了如何在缺乏随机访问外部存储的情况下实现随机访问数据库。文章指出，解决方案是将所有数据存储在内存中，并在程序内部进行管理。这种方法是实现高效数据访问的关键。\nEnglish Summary\nThis article discusses how to implement a random-access database without random-access external storage. The solution proposed is to store all data in memory and manage it within the program itself. This approach is key to achieving efficient data access.\n🏷️ database, in-memory, storage, implementation\n \n🛠 工具 / 开源\n14. Datasette Apps 0.3a0 发布\ndatasette-apps 0.3a0 — simonwillison.net · 1 天前 · ⭐ 22/30\n中文摘要\nDatasette Apps 0.3a0 版本发布，该版本增强了在 Datasette 中托管和编辑自定义 HTML 应用程序的功能。用户可以通过 Datasette Agent 等工具更轻松地创建这些应用。新版本允许在 Datasette Agent 的聊天消息中标记应用，进一步提升了集成体验。\nEnglish Summary\nDatasette Apps 0.3a0 has been released, enhancing the ability to host and edit custom HTML applications within Datasette. Users can more easily create these applications through tools like Datasette Agent. This new version improves integration by allowing apps to be tagged in Datasette Agent chat messages.\n🏷️ Datasette, HTML applications, release, data visualization\n \n15. Datasette Agent 0.5a0 发布\ndatasette-agent 0.5a0 — simonwillison.net · 1 天前 · ⭐ 22/30\n中文摘要\nDatasette Agent 0.5a0 版本是一个重要的更新，引入了名为“面板”的新功能。该功能允许代理聊天窗口与 Datasette 的页面（如表格或查询页面）并排显示。结合 datasette-apps，用户可以更高效地与数据交互。\nEnglish Summary\nDatasette Agent 0.5a0 is a significant release introducing a new feature called the 'panel'. This allows the agent's chat to open and sit alongside pages from Datasette, such as a table or query page. When combined with datasette-apps, it enhances user interaction with data.\n🏷️ Datasette Agent, LLM, release, AI tools\n \n生成于 2026-11-05 06:06 | 扫描 84 源 → 获取 2577 篇 → 精选 15 篇\n基于 Hacker News Popularity Contest 2025 RSS 源列表，由 Andrej Karpathy 推荐"</script>
+  <script id="speech-text" type="application/json">"🎧 点这里朗读今日日报\n📰 AI 博客每日精选 — 2026-11-06\n来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15\n📝 今日看点\n今日技术看点聚焦AI大模型应用与工程实践的挑战。从AI在触屏设备交互的局限性，到LLM工具的更新迭代，AI技术正加速渗透，但实际落地仍需克服用户体验和技术细节的障碍。同时，软件工程领域强调文档清晰度和源码控制的最新动态，预示着在复杂技术体系中，严谨的工程方法和清晰的沟通至关重要。\n \n🏆 今日必读\n🥇 “演示效果极佳”：为什么触屏笔记本电脑不适合垂直使用\nThe benchmark where AIs have to lie to win — dwarkesh.com · 8 小时前 · 🤖 AI / ML\n中文摘要\n文章探讨了触屏笔记本电脑在垂直屏幕使用时的固有局限性。尽管触屏交互在演示时能带来惊艳效果，但长时间使用会导致手臂疲劳，并且触摸表面不适合垂直方向操作。史蒂夫·乔布斯曾基于用户测试得出结论，触屏笔记本电脑不切实际，即使经过多年技术发展，这一根本性问题依然存在。\nEnglish Summary\nThis post revisits the argument against touchscreen MacBooks, highlighting that while touch interfaces offer a great demo, they lead to user fatigue when used vertically for extended periods. Steve Jobs's early user testing revealed that touch surfaces are not suited for vertical orientation, a fundamental usability issue that persists despite technological advancements.\n💡 为什么值得读: 深入剖析了触屏交互在垂直屏幕上的体验痛点，解释了为何这一设计理念即使在今天仍面临挑战。\n💡 Why read it: Explores the inherent usability challenges of vertical touch interfaces, explaining why this design concept still faces significant hurdles today.\n🏷️ AI, benchmarks, conspiracy, LLM\n🥈 理论上牢不可破：实验室测试与真实用户使用的差距\nWant to Rent an Internet Address at the White House? — krebsonsecurity.com · 1 天前 · 🔒 安全\n中文摘要\n文章通过一个屏幕碎裂的iPhone Duo的例子，揭示了实验室测试与真实世界用户使用之间的巨大鸿沟。尽管设备通过了数千次机械开合测试，但在实际用户手中却可能轻易损坏。这表明，在设计和测试阶段，必须充分考虑用户非精细化的使用习惯，否则产品在理论上“牢不可破”，但在实践中却不堪一击。\nEnglish Summary\nThe article uses an example of a broken iPhone Duo screen to illustrate the significant gap between laboratory testing and real-world user behavior. Despite passing thousands of hinge tests, devices can still break easily in the hands of customers. This highlights the need to account for less delicate user habits during design and testing, as theoretical robustness doesn't always translate to practical durability.\n💡 为什么值得读: 用生动案例揭示了产品在实验室测试通过后，仍可能因用户使用习惯而损坏的现实问题。\n💡 Why read it: Uses a vivid example to expose the reality of product failures due to user habits, even after passing laboratory tests.\n🏷️ White House, proxy services, security, residential IP\n🥉 存在分级但含义不明的事物\nA database is a store for global variables — seangoedecke.com · 6 小时前 · ⚙️ 工程\n中文摘要\n本文指出，在技术文档中，当作者对某个功能非常熟悉时，容易出现描述不清的情况。即使事物存在明确的分级或排序，其具体含义和应用场景也可能对不熟悉该领域的读者来说变得模糊不清。这种“内部视角”的文档编写方式，往往会阻碍信息的有效传达。\nEnglish Summary\nThis post discusses how technical documentation can become unclear when written by individuals intimately familiar with a feature. Even when concepts are ranked or tiered, their precise meaning and application can be ambiguous to readers outside that specific domain. This 'insider perspective' in writing can hinder effective information transfer.\n💡 为什么值得读: 警示了技术文档中因作者过于熟悉而可能产生的沟通障碍，强调了清晰表述的重要性。\n💡 Why read it: Warns about communication barriers in technical documentation arising from author familiarity, emphasizing the importance of clear articulation.\n🏷️ database, global variables, programming\n \n📊 数据概览\n \n \n \n分类分布\nmermaid\npie showData\n title \"文章分类分布\"\n \"⚙️ 工程\" : 4\n \"💡 观点 / 杂谈\" : 4\n \"🛠 工具 / 开源\" : 3\n \"🤖 AI / ML\" : 2\n \"🔒 安全\" : 1\n \"📝 其他\" : 1\n高频关键词\nmermaid\nxychart-beta horizontal\n title \"高频关键词\"\n x-axis [\"ai\", \"llm\", \"benchmarks\", \"conspiracy\", \"white house\", \"proxy services\", \"security\", \"residential ip\", \"database\", \"global variables\", \"programming\", \"receipts app\"]\n y-axis \"出现次数\" 0 --> 4\n bar [2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]\n📈 纯文本关键词图（终端友好）\nai │ ████████████████████ 2\nllm │ ████████████████████ 2\nbenchmarks │ ██████████░░░░░░░░░░ 1\nconspiracy │ ██████████░░░░░░░░░░ 1\nwhite house │ ██████████░░░░░░░░░░ 1\nproxy services │ ██████████░░░░░░░░░░ 1\nsecurity │ ██████████░░░░░░░░░░ 1\nresidential ip │ ██████████░░░░░░░░░░ 1\ndatabase │ ██████████░░░░░░░░░░ 1\nglobal variables │ ██████████░░░░░░░░░░ 1\n🏷️ 话题标签\nai(2) · llm(2) · benchmarks(1) · conspiracy(1) · white house(1) · proxy services(1) · security(1) · residential ip(1) · database(1) · global variables(1) · programming(1) · receipts app(1) · fatfinger economy(1) · usability(1) · web browser(1) · applications(1) · power(1) · datasette-llm(1) · python(1) · release(1)\n \n⚙️ 工程\n1. 存在分级但含义不明的事物\nA database is a store for global variables — seangoedecke.com · 6 小时前 · ⭐ 23/30\n中文摘要\n本文指出，在技术文档中，当作者对某个功能非常熟悉时，容易出现描述不清的情况。即使事物存在明确的分级或排序，其具体含义和应用场景也可能对不熟悉该领域的读者来说变得模糊不清。这种“内部视角”的文档编写方式，往往会阻碍信息的有效传达。\nEnglish Summary\nThis post discusses how technical documentation can become unclear when written by individuals intimately familiar with a feature. Even when concepts are ranked or tiered, their precise meaning and application can be ambiguous to readers outside that specific domain. This 'insider perspective' in writing can hinder effective information transfer.\n🏷️ database, global variables, programming\n \n2. 本周源码控制：2026 年 11 月 4 日\nThis Week in Source Control: 4 November 2026 — nesbitt.io · 1 天前 · ⭐ 21/30\n中文摘要\n本周源码控制通讯汇集了来自版本控制和代码托管平台（forges）的最新发布、安全公告和相关文章。该通讯旨在为开发者和技术人员提供一个集中的信息来源，帮助他们及时了解源码控制领域的动态和最佳实践。内容涵盖了 Git、GitHub、GitLab 等主流工具的更新信息，以及与软件开发流程相关的安全建议。\nEnglish Summary\nThis week's Source Control newsletter compiles the latest releases, advisories, and articles from across version control systems and forges. The newsletter aims to provide developers and technical professionals with a centralized source of information to keep them updated on the dynamics and best practices in the source control landscape. Content covers updates for mainstream tools like Git, GitHub, and GitLab, as well as security recommendations relevant to software development workflows.\n🏷️ source control, version control, Git, CI/CD\n \n3. 不应在创建后更改 Win32 静态控件的样式\nYou shouldn’t change the style of a Win32 static control after it has been created — devblogs.microsoft.com/oldnewthing · 15 小时前 · ⭐ 20/30\n中文摘要\n文章指出，在创建 Windows API（Win32）的静态控件（static control）后，不应尝试更改其样式。这是因为该控件的设计并未很好地处理样式在创建后被修改的情况。尝试这样做可能会导致不可预测的行为或功能失效。文章强调了在开发 Win32 应用程序时，应在控件创建时就确定其样式，避免后期修改带来的问题。\nEnglish Summary\nThis article states that one should not attempt to change the style of a Win32 static control after it has been created. This is because the control's design does not adequately handle style modifications post-creation, which can lead to unpredictable behavior or functional failures. The post emphasizes that when developing Win32 applications, styles should be determined at the time of control creation to avoid issues arising from later modifications.\n🏷️ Win32, static control, Windows API\n \n4. 存在排名但含义不明的事物\nThere are things with ranks, but it’s not always clear what the ranks mean — devblogs.microsoft.com/oldnewthing · 1 天前 · ⭐ 19/30\n中文摘要\n本文探讨了由熟悉功能的开发者撰写的文档中存在的问题。当作者对某个功能过于了解时，他们可能会假设读者也具备同等知识，导致文档中的排名或分类含义不清。这使得不熟悉该功能的读者难以理解。\nEnglish Summary\nThis article discusses a common issue with documentation written by developers who are intimately familiar with a feature. When authors know a feature too well, they may assume readers have the same level of understanding, leading to unclear rankings or classifications. This can make the documentation difficult for less experienced users to comprehend.\n🏷️ documentation, software engineering, ranks, clarity\n \n💡 观点 / 杂谈\n5. Micron Computers 的兴衰\nQuoting Paul Ford — simonwillison.net · 12 小时前 · ⭐ 22/30\n中文摘要\nMicron Computers 是内存芯片制造商美光科技（Micron Technology）进军个人电脑市场的一次中等规模的尝试。该业务于1995年首次推出，初期取得了显著成功，并在市场中存活至2008年11月6日。尽管美光科技在内存领域是巨头，但其PC业务的兴衰反映了在竞争激烈的消费电子市场中，即使是知名企业也面临挑战。\nEnglish Summary\nMicron Computers was a moderately successful venture by Micron Technology, a memory chip maker, to market PCs. Launched in 1995, the business initially performed well and remained in the market until November 6, 2008. The rise and fall of Micron Computers illustrate the challenges even established companies face in the competitive consumer electronics market.\n🏷️ web browser, applications, power\n \n6. Salon 停止出版\nSalon Ceases Publication — daringfireball.net · 8 小时前 · ⭐ 20/30\n中文摘要\n知名在线新闻网站 Salon 在运营 31 年后宣布停止出版。在一篇告别文章中，Salon 回顾了其在数字新闻领域的贡献，强调了其在报道新闻、传播思想、发声以及建立社区方面所扮演的角色。文章表达了对过去成就的自豪，并希望其留下的数字新闻遗产能够长久延续。然而，也有评论对网站存档的保存表示担忧。Salon 的关闭标志着一个时代的结束，也引发了对独立在线媒体生存挑战的思考。\nEnglish Summary\nThe prominent online news outlet Salon has announced its cessation of publication after 31 years of operation. In a farewell post, Salon reflected on its contributions to digital journalism, highlighting its role in reporting news, disseminating ideas, giving voice, and building a community. The article expresses pride in its past achievements and hopes its legacy in digital journalism will endure. However, some comments express concern about the preservation of the website's archives. Salon's closure marks the end of an era and prompts reflection on the challenges faced by independent online media.\n🏷️ digital journalism, Salon, media\n \n7. 史蒂夫·乔布斯解释为何不推出触屏 MacBook\n“It Gives Great Demo” — blog.jim-nielsen.com · 1 天前 · ⭐ 20/30\n中文摘要\n史蒂夫·乔布斯在一段著名视频中解释了苹果为何不推出触屏 MacBook。他指出，触屏不适合垂直屏幕，虽然演示效果好，但长时间使用会导致手臂疲劳。用户测试表明，触屏 MacBook 并非理想产品。\nEnglish Summary\nSteve Jobs famously explained why Apple never made touchscreen MacBooks. He argued that touch surfaces are not ideal for vertical screens, leading to arm fatigue after prolonged use. User testing confirmed that touchscreen MacBooks were not a practical product.\n🏷️ Steve Jobs, touchscreen, user experience, MacBook\n \n8. Micron Computers 的兴衰\nMicron Computers’ rise and fall — dfarq.homeip.net · 18 小时前 · ⭐ 18/30\n中文摘要\nMicron Computers 是内存芯片制造商 Micron Technology 进军个人电脑市场的尝试。该公司于 1995 年推出，初期取得了显著成功，并在市场上存活至 2008 年。尽管如此，Micron Computers 的PC业务最终未能长期维持。\nEnglish Summary\nMicron Computers was a moderately successful venture by Micron Technology, a maker of computer memory chips, to market PCs. Launched in 1995, the company initially thrived and survived in the market until November 6, 2008. Ultimately, the PC business did not endure.\n🏷️ Micron Computers, PC market, history\n \n🛠 工具 / 开源\n9. datasette-llm 0.1a10 发布\ndatasette-llm 0.1a10 — simonwillison.net · 1 天前 · ⭐ 22/30\n中文摘要\ndatasette-llm 0.1a10 版本发布，修复了一个影响 agent.datasette.io 演示站点的 bug。该 bug 导致可用的大型语言模型（LLM）集合未能正确限制在配置文件中指定的模型。此次更新确保了模型选择的准确性，提升了该工具在实际应用中的可靠性。该版本还包含其他一些改进和 bug 修复。\nEnglish Summary\nThe release of datasette-llm version 0.1a10 fixes a bug that affected the agent.datasette.io demo site, where the set of available Large Language Models (LLMs) was not correctly restricted to those specified in the configuration. This update ensures accurate model selection and improves the tool's reliability in practical applications. The release also includes other improvements and bug fixes.\n🏷️ datasette-llm, LLM, Python, release\n \n10. Meta 发布 Edits Mac 版本\nMeta Releases Mac Version of Edits — daringfireball.net · 9 小时前 · ⭐ 21/30\n中文摘要\nMeta 旗下的 Edits 应用现已推出 macOS 版本，旨在支持更复杂的视频编辑项目。新版桌面编辑器专为需要更大屏幕和鼠标键盘精确操作的用户设计，以提升创作体验。自推出一年多以来，Edits 已吸引了 5000 万用户，此次 Mac 版本的发布将进一步扩展其功能和用户群体。新版本在功能上与移动端保持一致，但提供了更专业的编辑环境。\nEnglish Summary\nMeta's Edits app has launched a macOS version, designed to support more complex video editing projects. The new desktop editor is tailored for users who benefit from a larger screen and the precision of a mouse and keyboard to enhance their creative workflow. In just over a year, Edits has garnered 50 million users, and the Mac release aims to further expand its functionality and user base. The desktop version offers a more professional editing environment while maintaining feature parity with its mobile counterpart.\n🏷️ Meta, Edits, Mac, creators\n \n11. Gadget Review: Tozo NC9 Pro 蓝牙耳机 ★★★★⯪\nGadget Review: Tozo NC9 Pro Bluetooth Headphones ★★★★⯪ — shkspr.mobi · 17 小时前 · ⭐ 18/30\n中文摘要\n评测文章重点介绍了 Tozo NC9 Pro 蓝牙耳机的充电盒，而非耳机本身。耳机在音质、降噪和电池续航方面表现中规中矩。然而，其充电盒的设计和功能却显得有些特别，是这款产品最引人注目的地方。\nEnglish Summary\nThis gadget review highlights the charging case of the Tozo NC9 Pro Bluetooth headphones as its most interesting feature. While the headphones offer standard good sound quality, excellent noise cancellation, and decent battery life, the charging case stands out as particularly noteworthy.\n🏷️ headphones, Bluetooth, gadget review\n \n🤖 AI / ML\n12. “演示效果极佳”：为什么触屏笔记本电脑不适合垂直使用\nThe benchmark where AIs have to lie to win — dwarkesh.com · 8 小时前 · ⭐ 27/30\n中文摘要\n文章探讨了触屏笔记本电脑在垂直屏幕使用时的固有局限性。尽管触屏交互在演示时能带来惊艳效果，但长时间使用会导致手臂疲劳，并且触摸表面不适合垂直方向操作。史蒂夫·乔布斯曾基于用户测试得出结论，触屏笔记本电脑不切实际，即使经过多年技术发展，这一根本性问题依然存在。\nEnglish Summary\nThis post revisits the argument against touchscreen MacBooks, highlighting that while touch interfaces offer a great demo, they lead to user fatigue when used vertically for extended periods. Steve Jobs's early user testing revealed that touch surfaces are not suited for vertical orientation, a fundamental usability issue that persists despite technological advancements.\n🏷️ AI, benchmarks, conspiracy, LLM\n \n13. 评测：Tozo NC9 Pro 蓝牙耳机\nPluralistic: The AI fatfinger economy has come for my receipts app (04 Nov 2026) — pluralistic.net · 1 天前 · ⭐ 23/30\n中文摘要\nTozo NC9 Pro 蓝牙耳机在音质、降噪和续航方面表现标准，但其最引人注目的特点是充电盒。该充电盒设计独特，为用户提供了超出预期的体验。文章详细评测了这款耳机的各项性能，并特别强调了充电盒的创新之处。\nEnglish Summary\nThe Tozo NC9 Pro Bluetooth headphones offer standard performance in sound quality, noise cancellation, and battery life. However, their most notable feature is the charging case, which provides a unique and noteworthy user experience. The review details the headphones' capabilities while highlighting the innovation in the charging case design.\n🏷️ AI, receipts app, fatfinger economy, usability\n \n🔒 安全\n14. 理论上牢不可破：实验室测试与真实用户使用的差距\nWant to Rent an Internet Address at the White House? — krebsonsecurity.com · 1 天前 · ⭐ 25/30\n中文摘要\n文章通过一个屏幕碎裂的iPhone Duo的例子，揭示了实验室测试与真实世界用户使用之间的巨大鸿沟。尽管设备通过了数千次机械开合测试，但在实际用户手中却可能轻易损坏。这表明，在设计和测试阶段，必须充分考虑用户非精细化的使用习惯，否则产品在理论上“牢不可破”，但在实践中却不堪一击。\nEnglish Summary\nThe article uses an example of a broken iPhone Duo screen to illustrate the significant gap between laboratory testing and real-world user behavior. Despite passing thousands of hinge tests, devices can still break easily in the hands of customers. This highlights the need to account for less delicate user habits during design and testing, as theoretical robustness doesn't always translate to practical durability.\n🏷️ White House, proxy services, security, residential IP\n \n📝 其他\n15. 理论上坚不可摧的 iPhone Duo 屏幕\nIt's unbreakable in theory — idiallo.com · 9 小时前 · ⭐ 19/30\n中文摘要\n一张 iPhone Duo 手机在商店展示架上屏幕碎裂的照片引发了对产品耐用性的质疑。尽管苹果声称其铰链经过数千次机械测试且表现完好，但实际用户手中的手机却出现了屏幕损坏。这表明理论上的测试结果与实际使用情况可能存在巨大差异。\nEnglish Summary\nA photo of a broken iPhone Duo screen on a store display has raised questions about product durability. Despite Apple's claims of successful hinge testing, the phone's screen was found cracked in a retail setting. This highlights a potential disconnect between theoretical testing and real-world usage.\n🏷️ iPhone Duo, durability, hardware\n \n生成于 2026-11-06 06:00 | 扫描 83 源 → 获取 2568 篇 → 精选 15 篇\n基于 Hacker News Popularity Contest 2025 RSS 源列表，由 Andrej Karpathy 推荐"</script>
   <script>
     const text = JSON.parse(document.getElementById('speech-text').textContent);
     const statusEl = document.getElementById('status');
