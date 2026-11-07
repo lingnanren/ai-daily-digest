@@ -52,203 +52,199 @@
   <main class="shell">
     <article class="card">
       <p>🎧 <a href="https://lingnanren.github.io/ai-daily-digest/listen.html">点这里朗读今日日报</a></p>
-<h1>📰 AI 博客每日精选 — 2026-11-06</h1>
+<h1>📰 AI 博客每日精选 — 2026-11-07</h1>
 <blockquote>来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15</blockquote>
 <h2>📝 今日看点</h2>
-<p>今日技术看点聚焦AI大模型应用与工程实践的挑战。从AI在触屏设备交互的局限性，到LLM工具的更新迭代，AI技术正加速渗透，但实际落地仍需克服用户体验和技术细节的障碍。同时，软件工程领域强调文档清晰度和源码控制的最新动态，预示着在复杂技术体系中，严谨的工程方法和清晰的沟通至关重要。</p>
+<p>今日技术看点聚焦于AI与工程领域的最新动态。AI方面，MacBook Pro的灯光设置和Ghostty终端模拟器库的更新展示了AI在软硬件集成和开发者工具上的持续演进。工程领域，Meta推出Mac版Instagram编辑器，以及关于Win32控件样式和数据库设计的深入探讨，揭示了平台优化和开发实践的最新思考。此外，对Web浏览器强大能力的重申，也预示着未来应用开发的新方向。</p>
 <hr>
 <h2>🏆 今日必读</h2>
-<p>🥇 <strong>“演示效果极佳”：为什么触屏笔记本电脑不适合垂直使用</strong></p>
-<p><a href="https://www.dwarkesh.com/p/clocktower">The benchmark where AIs have to lie to win</a> — dwarkesh.com · 8 小时前 · 🤖 AI / ML</p>
+<p>🥇 <strong>关于 MacBook Pro（带 ProLED XDR 显示屏）的苹果标志灯光设置</strong></p>
+<p><a href="https://simonwillison.net/2026/Nov/6/nilay-patel/">Quoting Nilay Patel</a> — simonwillison.net · 12 小时前 · 🤖 AI / ML</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>文章探讨了触屏笔记本电脑在垂直屏幕使用时的固有局限性。尽管触屏交互在演示时能带来惊艳效果，但长时间使用会导致手臂疲劳，并且触摸表面不适合垂直方向操作。史蒂夫·乔布斯曾基于用户测试得出结论，触屏笔记本电脑不切实际，即使经过多年技术发展，这一根本性问题依然存在。</blockquote>
+<blockquote>苹果官方支持文档提供了通过终端命令关闭 MacBook Pro（带 ProLED XDR 显示屏）苹果标志灯光的方法。用户可以通过在终端中输入特定命令 <code>sudo defaults write com.apple.CoreBrightness LEBacklightMode -int 0</code> 来实现此功能，以在所有光照条件下使苹果标志变暗。若要重新开启灯光，则需执行 <code>sudo defaults delete com.apple.CoreBrightness LEBacklightMo</code> 命令。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This post revisits the argument against touchscreen MacBooks, highlighting that while touch interfaces offer a great demo, they lead to user fatigue when used vertically for extended periods. Steve Jobs's early user testing revealed that touch surfaces are not suited for vertical orientation, a fundamental usability issue that persists despite technological advancements.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 深入剖析了触屏交互在垂直屏幕上的体验痛点，解释了为何这一设计理念即使在今天仍面临挑战。</p>
-<p>💡 <strong>Why read it</strong>: Explores the inherent usability challenges of vertical touch interfaces, explaining why this design concept still faces significant hurdles today.</p>
-<p>🏷️ AI, benchmarks, conspiracy, LLM</p>
-<p>🥈 <strong>理论上牢不可破：实验室测试与真实用户使用的差距</strong></p>
-<p><a href="https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/">Want to Rent an Internet Address at the White House?</a> — krebsonsecurity.com · 1 天前 · 🔒 安全</p>
+<blockquote>Apple Support provides instructions on how to disable the illuminated Apple logo on MacBook Pro models with ProLED XDR displays. Users can achieve this by executing a specific command in Terminal: <code>sudo defaults write com.apple.CoreBrightness LEBacklightMode -int 0</code> to turn off the illumination in all lighting conditions. To re-enable the logo illumination, the command <code>sudo defaults delete com.apple.CoreBrightness LEBacklightMo</code> should be used.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 了解如何通过终端控制 MacBook Pro 苹果标志的灯光，实现个性化设置。</p>
+<p>💡 <strong>Why read it</strong>: Learn how to control the illuminated Apple logo on MacBook Pro via Terminal for personalized settings.</p>
+<p>🏷️ AI, cost, data center, deep fake</p>
+<p>🥈 <strong>Meta 发布 Instagram Edits 的 Mac 版本桌面视频编辑器</strong></p>
+<p><a href="https://daringfireball.net/2026/11/touch_and_glow">★ Touch and Glow</a> — daringfireball.net · 9 小时前 · ⚙️ 工程</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>文章通过一个屏幕碎裂的iPhone Duo的例子，揭示了实验室测试与真实世界用户使用之间的巨大鸿沟。尽管设备通过了数千次机械开合测试，但在实际用户手中却可能轻易损坏。这表明，在设计和测试阶段，必须充分考虑用户非精细化的使用习惯，否则产品在理论上“牢不可破”，但在实践中却不堪一击。</blockquote>
+<blockquote>Meta 宣布推出 Instagram Edits 的首个桌面版本，现已支持 macOS。该桌面编辑器专为需要更复杂项目创作的创作者设计，利用大屏幕和鼠标键盘的精确操作来提升编辑体验。自推出一年多以来，Edits 已吸引了 5000 万用户。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>The article uses an example of a broken iPhone Duo screen to illustrate the significant gap between laboratory testing and real-world user behavior. Despite passing thousands of hinge tests, devices can still break easily in the hands of customers. This highlights the need to account for less delicate user habits during design and testing, as theoretical robustness doesn't always translate to practical durability.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 用生动案例揭示了产品在实验室测试通过后，仍可能因用户使用习惯而损坏的现实问题。</p>
-<p>💡 <strong>Why read it</strong>: Uses a vivid example to expose the reality of product failures due to user habits, even after passing laboratory tests.</p>
-<p>🏷️ White House, proxy services, security, residential IP</p>
-<p>🥉 <strong>存在分级但含义不明的事物</strong></p>
-<p><a href="https://seangoedecke.com/a-database-is-a-store-for-global-variables/">A database is a store for global variables</a> — seangoedecke.com · 6 小时前 · ⚙️ 工程</p>
+<blockquote>Meta has released the first desktop version of Instagram Edits, now available for macOS. This desktop editor is designed for more involved projects, leveraging a larger screen and the precision of a mouse and keyboard. Edits has already been used by 50 million people in just over a year.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: Instagram Edits 扩展至桌面端，为 Mac 用户提供更专业的视频编辑能力。</p>
+<p>💡 <strong>Why read it</strong>: Instagram Edits expands to desktop, offering more professional video editing capabilities for Mac users.</p>
+<p>🏷️ MacBook Pro, PROLED XDR, Apple event, Macintosh</p>
+<p>🥉 <strong>Libghostty 1.0 发布</strong></p>
+<p><a href="https://idiallo.com/byte-size/english-is-solved">Writing English is Solved</a> — idiallo.com · 21 小时前 · 🤖 AI / ML</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>本文指出，在技术文档中，当作者对某个功能非常熟悉时，容易出现描述不清的情况。即使事物存在明确的分级或排序，其具体含义和应用场景也可能对不熟悉该领域的读者来说变得模糊不清。这种“内部视角”的文档编写方式，往往会阻碍信息的有效传达。</blockquote>
+<blockquote>Libghostty 1.0 已发布，这是一个用于处理 Ghostty 终端模拟器输出的库。新版本带来了多项改进和新功能，旨在为开发者提供更强大、更灵活的工具来与 Ghostty 交互。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This post discusses how technical documentation can become unclear when written by individuals intimately familiar with a feature. Even when concepts are ranked or tiered, their precise meaning and application can be ambiguous to readers outside that specific domain. This 'insider perspective' in writing can hinder effective information transfer.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 警示了技术文档中因作者过于熟悉而可能产生的沟通障碍，强调了清晰表述的重要性。</p>
-<p>💡 <strong>Why read it</strong>: Warns about communication barriers in technical documentation arising from author familiarity, emphasizing the importance of clear articulation.</p>
-<p>🏷️ database, global variables, programming</p>
+<blockquote>Libghostty 1.0 has been released, a library designed for processing the output of the Ghostty terminal emulator. This new version introduces several improvements and new features, aiming to provide developers with a more powerful and flexible tool for interacting with Ghostty.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: Libghostty 1.0 的发布为开发者提供了与 Ghostty 终端模拟器交互的新工具和功能。</p>
+<p>💡 <strong>Why read it</strong>: The release of Libghostty 1.0 offers new tools and functionalities for developers interacting with the Ghostty terminal emulator.</p>
+<p>🏷️ AI writing, LLM, English language</p>
 <hr>
 <h2>📊 数据概览</h2>
-<table><thead><tr><th>扫描源</th><th>抓取文章</th><th>时间范围</th><th>精选</th></tr></thead><tbody><tr><td>83/92</td><td>2568 篇 → 22 篇</td><td>48h</td><td><strong>15 篇</strong></td></tr></tbody></table>
+<table><thead><tr><th>扫描源</th><th>抓取文章</th><th>时间范围</th><th>精选</th></tr></thead><tbody><tr><td>82/92</td><td>2545 篇 → 26 篇</td><td>48h</td><td><strong>15 篇</strong></td></tr></tbody></table>
 <h3>分类分布</h3>
 <div class="code-wrap"><div class="code-title">mermaid</div><pre><code>pie showData
     title "文章分类分布"
-    "⚙️ 工程" : 4
-    "💡 观点 / 杂谈" : 4
-    "🛠 工具 / 开源" : 3
-    "🤖 AI / ML" : 2
-    "🔒 安全" : 1
-    "📝 其他" : 1</code></pre></div>
+    "⚙️ 工程" : 6
+    "🤖 AI / ML" : 3
+    "💡 观点 / 杂谈" : 3
+    "🛠 工具 / 开源" : 3</code></pre></div>
 <h3>高频关键词</h3>
 <div class="code-wrap"><div class="code-title">mermaid</div><pre><code>xychart-beta horizontal
     title "高频关键词"
-    x-axis ["ai", "llm", "benchmarks", "conspiracy", "white house", "proxy services", "security", "residential ip", "database", "global variables", "programming", "receipts app"]
+    x-axis ["cost", "macbook pro", "ai", "data center", "deep fake", "proled xdr", "apple event", "macintosh", "ai writing", "llm", "english language", "ai benchmark"]
     y-axis "出现次数" 0 --&gt; 4
     bar [2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]</code></pre></div>
 <div class="details">
 <p class="summary">📈 纯文本关键词图（终端友好）</p>
-<div class="code-wrap"><pre><code>ai               │ ████████████████████ 2
-llm              │ ████████████████████ 2
-benchmarks       │ ██████████░░░░░░░░░░ 1
-conspiracy       │ ██████████░░░░░░░░░░ 1
-white house      │ ██████████░░░░░░░░░░ 1
-proxy services   │ ██████████░░░░░░░░░░ 1
-security         │ ██████████░░░░░░░░░░ 1
-residential ip   │ ██████████░░░░░░░░░░ 1
-database         │ ██████████░░░░░░░░░░ 1
-global variables │ ██████████░░░░░░░░░░ 1</code></pre></div>
+<div class="code-wrap"><pre><code>cost        │ ████████████████████ 2
+macbook pro │ ████████████████████ 2
+ai          │ ██████████░░░░░░░░░░ 1
+data center │ ██████████░░░░░░░░░░ 1
+deep fake   │ ██████████░░░░░░░░░░ 1
+proled xdr  │ ██████████░░░░░░░░░░ 1
+apple event │ ██████████░░░░░░░░░░ 1
+macintosh   │ ██████████░░░░░░░░░░ 1
+ai writing  │ ██████████░░░░░░░░░░ 1
+llm         │ ██████████░░░░░░░░░░ 1</code></pre></div>
 </div>
 <h3>🏷️ 话题标签</h3>
-<p><strong>ai</strong>(2) · <strong>llm</strong>(2) · <strong>benchmarks</strong>(1) · conspiracy(1) · white house(1) · proxy services(1) · security(1) · residential ip(1) · database(1) · global variables(1) · programming(1) · receipts app(1) · fatfinger economy(1) · usability(1) · web browser(1) · applications(1) · power(1) · datasette-llm(1) · python(1) · release(1)</p>
+<p><strong>cost</strong>(2) · <strong>macbook pro</strong>(2) · <strong>ai</strong>(1) · data center(1) · deep fake(1) · proled xdr(1) · apple event(1) · macintosh(1) · ai writing(1) · llm(1) · english language(1) · ai benchmark(1) · ai ethics(1) · deception(1) · atomicity(1) · hot-patches(1) · threads(1) · software engineering(1) · cda 230(1) · facebook(1)</p>
 <hr>
 <h2>⚙️ 工程</h2>
-<h3>1. 存在分级但含义不明的事物</h3>
-<p><a href="https://seangoedecke.com/a-database-is-a-store-for-global-variables/">A database is a store for global variables</a> — <strong>seangoedecke.com</strong> · 6 小时前 · ⭐ 23/30</p>
+<h3>1. Meta 发布 Instagram Edits 的 Mac 版本桌面视频编辑器</h3>
+<p><a href="https://daringfireball.net/2026/11/touch_and_glow">★ Touch and Glow</a> — <strong>daringfireball.net</strong> · 9 小时前 · ⭐ 26/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>本文指出，在技术文档中，当作者对某个功能非常熟悉时，容易出现描述不清的情况。即使事物存在明确的分级或排序，其具体含义和应用场景也可能对不熟悉该领域的读者来说变得模糊不清。这种“内部视角”的文档编写方式，往往会阻碍信息的有效传达。</blockquote>
+<blockquote>Meta 宣布推出 Instagram Edits 的首个桌面版本，现已支持 macOS。该桌面编辑器专为需要更复杂项目创作的创作者设计，利用大屏幕和鼠标键盘的精确操作来提升编辑体验。自推出一年多以来，Edits 已吸引了 5000 万用户。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This post discusses how technical documentation can become unclear when written by individuals intimately familiar with a feature. Even when concepts are ranked or tiered, their precise meaning and application can be ambiguous to readers outside that specific domain. This 'insider perspective' in writing can hinder effective information transfer.</blockquote>
-<p>🏷️ database, global variables, programming</p>
+<blockquote>Meta has released the first desktop version of Instagram Edits, now available for macOS. This desktop editor is designed for more involved projects, leveraging a larger screen and the precision of a mouse and keyboard. Edits has already been used by 50 million people in just over a year.</blockquote>
+<p>🏷️ MacBook Pro, PROLED XDR, Apple event, Macintosh</p>
 <hr>
-<h3>2. 本周源码控制：2026 年 11 月 4 日</h3>
-<p><a href="https://nesbitt.io/2026/11/04/this-week-in-source-control.html">This Week in Source Control: 4 November 2026</a> — <strong>nesbitt.io</strong> · 1 天前 · ⭐ 21/30</p>
+<h3>2. 不应在创建后更改 Win32 静态控件的样式</h3>
+<p><a href="https://devblogs.microsoft.com/oldnewthing/20261106-00/?p=112838/">Why are we all worked up about atomicity when applying hot-patches if we can just suspend all the threads?</a> — <strong>devblogs.microsoft.com/oldnewthing</strong> · 14 小时前 · ⭐ 25/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>本周源码控制通讯汇集了来自版本控制和代码托管平台（forges）的最新发布、安全公告和相关文章。该通讯旨在为开发者和技术人员提供一个集中的信息来源，帮助他们及时了解源码控制领域的动态和最佳实践。内容涵盖了 Git、GitHub、GitLab 等主流工具的更新信息，以及与软件开发流程相关的安全建议。</blockquote>
+<blockquote>在 Windows 开发中，不建议在创建 Win32 静态控件（Static Control）后更改其样式。这是因为控件的设计并未充分考虑这种动态样式修改的场景，可能导致不可预测的行为或渲染问题。开发者应在控件创建时就确定其样式。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This week's Source Control newsletter compiles the latest releases, advisories, and articles from across version control systems and forges. The newsletter aims to provide developers and technical professionals with a centralized source of information to keep them updated on the dynamics and best practices in the source control landscape. Content covers updates for mainstream tools like Git, GitHub, and GitLab, as well as security recommendations relevant to software development workflows.</blockquote>
-<p>🏷️ source control, version control, Git, CI/CD</p>
+<blockquote>In Win32 development, it is inadvisable to change the style of a static control after it has been created. The control is not designed to handle such dynamic style modifications effectively, which can lead to unpredictable behavior or rendering issues. Developers should set the desired style at the time of creation.</blockquote>
+<p>🏷️ atomicity, hot-patches, threads, software engineering</p>
 <hr>
-<h3>3. 不应在创建后更改 Win32 静态控件的样式</h3>
-<p><a href="https://devblogs.microsoft.com/oldnewthing/20261105-00/?p=112835/">You shouldn’t change the style of a Win32 static control after it has been created</a> — <strong>devblogs.microsoft.com/oldnewthing</strong> · 15 小时前 · ⭐ 20/30</p>
+<h3>3. 与设计师合作</h3>
+<p><a href="https://seangoedecke.com/working-with-designers/">Working with designers</a> — <strong>seangoedecke.com</strong> · 5 小时前 · ⭐ 23/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>文章指出，在创建 Windows API（Win32）的静态控件（static control）后，不应尝试更改其样式。这是因为该控件的设计并未很好地处理样式在创建后被修改的情况。尝试这样做可能会导致不可预测的行为或功能失效。文章强调了在开发 Win32 应用程序时，应在控件创建时就确定其样式，避免后期修改带来的问题。</blockquote>
+<blockquote>作者表达了对与设计师合作的喜爱，认为他们与工程师在文化上有所不同。然而，他也指出团队中拥有多于一名设计师可能会带来问题，并对设计系统持有复杂的负面看法。文章探讨了设计在工程团队中的角色和挑战。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This article states that one should not attempt to change the style of a Win32 static control after it has been created. This is because the control's design does not adequately handle style modifications post-creation, which can lead to unpredictable behavior or functional failures. The post emphasizes that when developing Win32 applications, styles should be determined at the time of control creation to avoid issues arising from later modifications.</blockquote>
-<p>🏷️ Win32, static control, Windows API</p>
+<blockquote>The author expresses a fondness for working with designers, partly because they are culturally different from engineers. However, he also notes that having more than one designer on a team can lead to trouble and holds complex negative thoughts about design systems. The article explores the role and challenges of design within engineering teams.</blockquote>
+<p>🏷️ designers, engineers, collaboration, design systems</p>
 <hr>
-<h3>4. 存在排名但含义不明的事物</h3>
-<p><a href="https://devblogs.microsoft.com/oldnewthing/20261104-00/?p=112830/">There are things with ranks, but it’s not always clear what the ranks mean</a> — <strong>devblogs.microsoft.com/oldnewthing</strong> · 1 天前 · ⭐ 19/30</p>
+<h3>4. 数据库是全局变量的存储</h3>
+<p><a href="https://seangoedecke.com/a-database-is-a-store-for-global-variables/">A database is a store for global variables</a> — <strong>seangoedecke.com</strong> · 1 天前 · ⭐ 23/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>本文探讨了由熟悉功能的开发者撰写的文档中存在的问题。当作者对某个功能过于了解时，他们可能会假设读者也具备同等知识，导致文档中的排名或分类含义不清。这使得不熟悉该功能的读者难以理解。</blockquote>
+<blockquote>文章提出，数据库本质上是全局变量的存储，尽管我们通常称之为“行”或“记录”。作者认为，这与“全局变量有害”的常见编程建议相悖，并探讨了数据库为何能成为这一规则的例外。文章分析了数据库作为全局状态管理的一种特殊形式。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This article discusses a common issue with documentation written by developers who are intimately familiar with a feature. When authors know a feature too well, they may assume readers have the same level of understanding, leading to unclear rankings or classifications. This can make the documentation difficult for less experienced users to comprehend.</blockquote>
-<p>🏷️ documentation, software engineering, ranks, clarity</p>
+<blockquote>The article proposes that databases are fundamentally stores for global variables, even though we commonly refer to them as 'rows' or 'records.' The author argues this contradicts the common programming advice that global variables are bad, and explores why databases might be an exception to this rule. It analyzes databases as a special form of global state management.</blockquote>
+<p>🏷️ database, global variables, programming concepts</p>
 <hr>
-<h2>💡 观点 / 杂谈</h2>
-<h3>5. Micron Computers 的兴衰</h3>
-<p><a href="https://simonwillison.net/2026/Nov/5/paul-ford/">Quoting Paul Ford</a> — <strong>simonwillison.net</strong> · 12 小时前 · ⭐ 22/30</p>
+<h3>5. Apple 支持：关于 MacBook Pro ProLED XDR 显示屏的背光 Apple Logo</h3>
+<p><a href="https://support.apple.com/en-us/149248">Apple Support: ‘About the Illuminated Apple Logo on MacBook Pro With PROLED XDR Display’</a> — <strong>daringfireball.net</strong> · 14 小时前 · ⭐ 22/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Micron Computers 是内存芯片制造商美光科技（Micron Technology）进军个人电脑市场的一次中等规模的尝试。该业务于1995年首次推出，初期取得了显著成功，并在市场中存活至2008年11月6日。尽管美光科技在内存领域是巨头，但其PC业务的兴衰反映了在竞争激烈的消费电子市场中，即使是知名企业也面临挑战。</blockquote>
+<blockquote>Apple 官方支持文章介绍了如何关闭 MacBook Pro ProLED XDR 显示屏上的背光 Apple Logo。用户可以通过终端使用特定命令来禁用 Logo 的背光功能，以在各种光线条件下使其变暗。文章提供了详细的操作步骤，包括如何找到终端以及输入的命令。同时，也说明了如何重新开启 Logo 的背光功能。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Micron Computers was a moderately successful venture by Micron Technology, a memory chip maker, to market PCs. Launched in 1995, the business initially performed well and remained in the market until November 6, 2008. The rise and fall of Micron Computers illustrate the challenges even established companies face in the competitive consumer electronics market.</blockquote>
-<p>🏷️ web browser, applications, power</p>
+<blockquote>Apple Support provides instructions on how to disable the illuminated Apple logo on MacBook Pro models with ProLED XDR displays. Users can turn off the logo's illumination via Terminal using a specific command to make it dark in all lighting conditions. The article details the steps, including locating Terminal and the exact command to enter. It also explains how to re-enable the logo illumination.</blockquote>
+<p>🏷️ Apple Support, MacBook Pro, illuminated logo, Terminal</p>
 <hr>
-<h3>6. Salon 停止出版</h3>
-<p><a href="https://www.salon.com/2026/11/05/goodbye-from-salon/">Salon Ceases Publication</a> — <strong>daringfireball.net</strong> · 8 小时前 · ⭐ 20/30</p>
+<h3>6. 不应在创建后更改 Win32 静态控件的样式</h3>
+<p><a href="https://devblogs.microsoft.com/oldnewthing/20261105-00/?p=112835/">You shouldn’t change the style of a Win32 static control after it has been created</a> — <strong>devblogs.microsoft.com/oldnewthing</strong> · 1 天前 · ⭐ 21/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>知名在线新闻网站 Salon 在运营 31 年后宣布停止出版。在一篇告别文章中，Salon 回顾了其在数字新闻领域的贡献，强调了其在报道新闻、传播思想、发声以及建立社区方面所扮演的角色。文章表达了对过去成就的自豪，并希望其留下的数字新闻遗产能够长久延续。然而，也有评论对网站存档的保存表示担忧。Salon 的关闭标志着一个时代的结束，也引发了对独立在线媒体生存挑战的思考。</blockquote>
+<blockquote>文章指出，在创建 Win32 静态控件后不应更改其样式，因为系统可能无法正确处理这种情况。这篇来自 The Old New Thing 的技术性文章，解释了在 Windows 编程中一个关于控件样式管理的注意事项。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>The prominent online news outlet Salon has announced its cessation of publication after 31 years of operation. In a farewell post, Salon reflected on its contributions to digital journalism, highlighting its role in reporting news, disseminating ideas, giving voice, and building a community. The article expresses pride in its past achievements and hopes its legacy in digital journalism will endure. However, some comments express concern about the preservation of the website's archives. Salon's closure marks the end of an era and prompts reflection on the challenges faced by independent online media.</blockquote>
-<p>🏷️ digital journalism, Salon, media</p>
-<hr>
-<h3>7. 史蒂夫·乔布斯解释为何不推出触屏 MacBook</h3>
-<p><a href="https://blog.jim-nielsen.com/2026/it-gives-great-demo/">“It Gives Great Demo”</a> — <strong>blog.jim-nielsen.com</strong> · 1 天前 · ⭐ 20/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>史蒂夫·乔布斯在一段著名视频中解释了苹果为何不推出触屏 MacBook。他指出，触屏不适合垂直屏幕，虽然演示效果好，但长时间使用会导致手臂疲劳。用户测试表明，触屏 MacBook 并非理想产品。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Steve Jobs famously explained why Apple never made touchscreen MacBooks. He argued that touch surfaces are not ideal for vertical screens, leading to arm fatigue after prolonged use. User testing confirmed that touchscreen MacBooks were not a practical product.</blockquote>
-<p>🏷️ Steve Jobs, touchscreen, user experience, MacBook</p>
-<hr>
-<h3>8. Micron Computers 的兴衰</h3>
-<p><a href="https://dfarq.homeip.net/micron-computers-rise-and-fall/?utm_source=rss&amp;amp;#038;utm_medium=rss&amp;amp;#038;utm_campaign=micron-computers-rise-and-fall">Micron Computers’ rise and fall</a> — <strong>dfarq.homeip.net</strong> · 18 小时前 · ⭐ 18/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>Micron Computers 是内存芯片制造商 Micron Technology 进军个人电脑市场的尝试。该公司于 1995 年推出，初期取得了显著成功，并在市场上存活至 2008 年。尽管如此，Micron Computers 的PC业务最终未能长期维持。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Micron Computers was a moderately successful venture by Micron Technology, a maker of computer memory chips, to market PCs. Launched in 1995, the company initially thrived and survived in the market until November 6, 2008. Ultimately, the PC business did not endure.</blockquote>
-<p>🏷️ Micron Computers, PC market, history</p>
-<hr>
-<h2>🛠 工具 / 开源</h2>
-<h3>9. datasette-llm 0.1a10 发布</h3>
-<p><a href="https://simonwillison.net/2026/Nov/4/datasette-llm/">datasette-llm 0.1a10</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 22/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>datasette-llm 0.1a10 版本发布，修复了一个影响 agent.datasette.io 演示站点的 bug。该 bug 导致可用的大型语言模型（LLM）集合未能正确限制在配置文件中指定的模型。此次更新确保了模型选择的准确性，提升了该工具在实际应用中的可靠性。该版本还包含其他一些改进和 bug 修复。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>The release of datasette-llm version 0.1a10 fixes a bug that affected the agent.datasette.io demo site, where the set of available Large Language Models (LLMs) was not correctly restricted to those specified in the configuration. This update ensures accurate model selection and improves the tool's reliability in practical applications. The release also includes other improvements and bug fixes.</blockquote>
-<p>🏷️ datasette-llm, LLM, Python, release</p>
-<hr>
-<h3>10. Meta 发布 Edits Mac 版本</h3>
-<p><a href="https://edits.instagram.com/blog/edits-desktop-video-editor/">Meta Releases Mac Version of Edits</a> — <strong>daringfireball.net</strong> · 9 小时前 · ⭐ 21/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>Meta 旗下的 Edits 应用现已推出 macOS 版本，旨在支持更复杂的视频编辑项目。新版桌面编辑器专为需要更大屏幕和鼠标键盘精确操作的用户设计，以提升创作体验。自推出一年多以来，Edits 已吸引了 5000 万用户，此次 Mac 版本的发布将进一步扩展其功能和用户群体。新版本在功能上与移动端保持一致，但提供了更专业的编辑环境。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Meta's Edits app has launched a macOS version, designed to support more complex video editing projects. The new desktop editor is tailored for users who benefit from a larger screen and the precision of a mouse and keyboard to enhance their creative workflow. In just over a year, Edits has garnered 50 million users, and the Mac release aims to further expand its functionality and user base. The desktop version offers a more professional editing environment while maintaining feature parity with its mobile counterpart.</blockquote>
-<p>🏷️ Meta, Edits, Mac, creators</p>
-<hr>
-<h3>11. Gadget Review: Tozo NC9 Pro 蓝牙耳机 ★★★★⯪</h3>
-<p><a href="https://shkspr.mobi/blog/2026/11/gadget-review-tozo-nc9-pro-bluetooth-headphones/">Gadget Review: Tozo NC9 Pro Bluetooth Headphones ★★★★⯪</a> — <strong>shkspr.mobi</strong> · 17 小时前 · ⭐ 18/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>评测文章重点介绍了 Tozo NC9 Pro 蓝牙耳机的充电盒，而非耳机本身。耳机在音质、降噪和电池续航方面表现中规中矩。然而，其充电盒的设计和功能却显得有些特别，是这款产品最引人注目的地方。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>This gadget review highlights the charging case of the Tozo NC9 Pro Bluetooth headphones as its most interesting feature. While the headphones offer standard good sound quality, excellent noise cancellation, and decent battery life, the charging case stands out as particularly noteworthy.</blockquote>
-<p>🏷️ headphones, Bluetooth, gadget review</p>
+<blockquote>This article explains that the style of a Win32 static control should not be changed after it has been created, as the system may not handle such cases properly. The post from The Old New Thing highlights a crucial point in Windows programming regarding control style management.</blockquote>
+<p>🏷️ Win32, static control, style, API</p>
 <hr>
 <h2>🤖 AI / ML</h2>
-<h3>12. “演示效果极佳”：为什么触屏笔记本电脑不适合垂直使用</h3>
-<p><a href="https://www.dwarkesh.com/p/clocktower">The benchmark where AIs have to lie to win</a> — <strong>dwarkesh.com</strong> · 8 小时前 · ⭐ 27/30</p>
+<h3>7. 关于 MacBook Pro（带 ProLED XDR 显示屏）的苹果标志灯光设置</h3>
+<p><a href="https://simonwillison.net/2026/Nov/6/nilay-patel/">Quoting Nilay Patel</a> — <strong>simonwillison.net</strong> · 12 小时前 · ⭐ 27/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>文章探讨了触屏笔记本电脑在垂直屏幕使用时的固有局限性。尽管触屏交互在演示时能带来惊艳效果，但长时间使用会导致手臂疲劳，并且触摸表面不适合垂直方向操作。史蒂夫·乔布斯曾基于用户测试得出结论，触屏笔记本电脑不切实际，即使经过多年技术发展，这一根本性问题依然存在。</blockquote>
+<blockquote>苹果官方支持文档提供了通过终端命令关闭 MacBook Pro（带 ProLED XDR 显示屏）苹果标志灯光的方法。用户可以通过在终端中输入特定命令 <code>sudo defaults write com.apple.CoreBrightness LEBacklightMode -int 0</code> 来实现此功能，以在所有光照条件下使苹果标志变暗。若要重新开启灯光，则需执行 <code>sudo defaults delete com.apple.CoreBrightness LEBacklightMo</code> 命令。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>This post revisits the argument against touchscreen MacBooks, highlighting that while touch interfaces offer a great demo, they lead to user fatigue when used vertically for extended periods. Steve Jobs's early user testing revealed that touch surfaces are not suited for vertical orientation, a fundamental usability issue that persists despite technological advancements.</blockquote>
-<p>🏷️ AI, benchmarks, conspiracy, LLM</p>
+<blockquote>Apple Support provides instructions on how to disable the illuminated Apple logo on MacBook Pro models with ProLED XDR displays. Users can achieve this by executing a specific command in Terminal: <code>sudo defaults write com.apple.CoreBrightness LEBacklightMode -int 0</code> to turn off the illumination in all lighting conditions. To re-enable the logo illumination, the command <code>sudo defaults delete com.apple.CoreBrightness LEBacklightMo</code> should be used.</blockquote>
+<p>🏷️ AI, cost, data center, deep fake</p>
 <hr>
-<h3>13. 评测：Tozo NC9 Pro 蓝牙耳机</h3>
-<p><a href="https://pluralistic.net/2026/11/04/genius-scan-is-neither/">Pluralistic: The AI fatfinger economy has come for my receipts app (04 Nov 2026)</a> — <strong>pluralistic.net</strong> · 1 天前 · ⭐ 23/30</p>
+<h3>8. Libghostty 1.0 发布</h3>
+<p><a href="https://idiallo.com/byte-size/english-is-solved">Writing English is Solved</a> — <strong>idiallo.com</strong> · 21 小时前 · ⭐ 26/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Tozo NC9 Pro 蓝牙耳机在音质、降噪和续航方面表现标准，但其最引人注目的特点是充电盒。该充电盒设计独特，为用户提供了超出预期的体验。文章详细评测了这款耳机的各项性能，并特别强调了充电盒的创新之处。</blockquote>
+<blockquote>Libghostty 1.0 已发布，这是一个用于处理 Ghostty 终端模拟器输出的库。新版本带来了多项改进和新功能，旨在为开发者提供更强大、更灵活的工具来与 Ghostty 交互。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>The Tozo NC9 Pro Bluetooth headphones offer standard performance in sound quality, noise cancellation, and battery life. However, their most notable feature is the charging case, which provides a unique and noteworthy user experience. The review details the headphones' capabilities while highlighting the innovation in the charging case design.</blockquote>
-<p>🏷️ AI, receipts app, fatfinger economy, usability</p>
+<blockquote>Libghostty 1.0 has been released, a library designed for processing the output of the Ghostty terminal emulator. This new version introduces several improvements and new features, aiming to provide developers with a more powerful and flexible tool for interacting with Ghostty.</blockquote>
+<p>🏷️ AI writing, LLM, English language</p>
 <hr>
-<h2>🔒 安全</h2>
-<h3>14. 理论上牢不可破：实验室测试与真实用户使用的差距</h3>
-<p><a href="https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/">Want to Rent an Internet Address at the White House?</a> — <strong>krebsonsecurity.com</strong> · 1 天前 · ⭐ 25/30</p>
+<h3>9. Salon 停止出版</h3>
+<p><a href="https://www.dwarkesh.com/p/clocktower">The benchmark where AIs have to lie to win</a> — <strong>dwarkesh.com</strong> · 1 天前 · ⭐ 26/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>文章通过一个屏幕碎裂的iPhone Duo的例子，揭示了实验室测试与真实世界用户使用之间的巨大鸿沟。尽管设备通过了数千次机械开合测试，但在实际用户手中却可能轻易损坏。这表明，在设计和测试阶段，必须充分考虑用户非精细化的使用习惯，否则产品在理论上“牢不可破”，但在实践中却不堪一击。</blockquote>
+<blockquote>拥有 31 年历史的数字新闻网站 Salon 宣布停止出版。在告别声明中，Salon 回顾了其在新闻报道、思想传播、声音汇聚和社区建设方面的贡献，并希望其作为数字新闻先驱的遗产能够长久延续。文章暗示了其档案可能难以保存。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>The article uses an example of a broken iPhone Duo screen to illustrate the significant gap between laboratory testing and real-world user behavior. Despite passing thousands of hinge tests, devices can still break easily in the hands of customers. This highlights the need to account for less delicate user habits during design and testing, as theoretical robustness doesn't always translate to practical durability.</blockquote>
-<p>🏷️ White House, proxy services, security, residential IP</p>
+<blockquote>Salon, a digital journalism publication with a 31-year history, has ceased publication. In its farewell post, Salon reflected on its contributions to journalism, ideas, voices, and community, hoping its legacy as a digital journalism pioneer will continue. There is speculation that its archives may not be preserved.</blockquote>
+<p>🏷️ AI benchmark, AI ethics, deception</p>
 <hr>
-<h2>📝 其他</h2>
-<h3>15. 理论上坚不可摧的 iPhone Duo 屏幕</h3>
-<p><a href="https://idiallo.com/byte-size/unbreakable-in-theory">It's unbreakable in theory</a> — <strong>idiallo.com</strong> · 9 小时前 · ⭐ 19/30</p>
+<h2>💡 观点 / 杂谈</h2>
+<h3>10. 没有 CDA 230，Facebook 将永远拥有互联网</h3>
+<p><a href="https://pluralistic.net/2026/11/05/see-you-in-court/">Pluralistic: Without CDA 230, Facebook will own the internet forever (05 Nov 2026)</a> — <strong>pluralistic.net</strong> · 1 天前 · ⭐ 24/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>一张 iPhone Duo 手机在商店展示架上屏幕碎裂的照片引发了对产品耐用性的质疑。尽管苹果声称其铰链经过数千次机械测试且表现完好，但实际用户手中的手机却出现了屏幕损坏。这表明理论上的测试结果与实际使用情况可能存在巨大差异。</blockquote>
+<blockquote>文章认为，如果废除《通信规范法案》（CDA）第 230 条，Facebook 将可能主宰互联网。小型、管理良好的在线社区在这种法律环境下将特别容易受到法律威胁。作者还列举了其他一些链接和活动信息。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>A photo of a broken iPhone Duo screen on a store display has raised questions about product durability. Despite Apple's claims of successful hinge testing, the phone's screen was found cracked in a retail setting. This highlights a potential disconnect between theoretical testing and real-world usage.</blockquote>
-<p>🏷️ iPhone Duo, durability, hardware</p>
+<blockquote>The article argues that without Section 230 of the Communications Decency Act (CDA), Facebook could potentially dominate the internet. Small, well-managed online communities would be particularly vulnerable to legal threats in such a scenario. The author also includes other links and event information.</blockquote>
+<p>🏷️ CDA 230, Facebook, internet, regulation</p>
 <hr>
-<p>*生成于 2026-11-06 06:00 | 扫描 83 源 → 获取 2568 篇 → 精选 15 篇* *基于 <a href="https://refactoringenglish.com/tools/hn-popularity/">Hacker News Popularity Contest 2025</a> RSS 源列表，由 <a href="https://x.com/karpathy">Andrej Karpathy</a> 推荐*</p>
+<h3>11. 引用 Paul Ford：Web 浏览器是强大的应用软件</h3>
+<p><a href="https://simonwillison.net/2026/Nov/5/paul-ford/">Quoting Paul Ford</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 23/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Paul Ford 认为，Web 浏览器是极其强大的应用软件，并且访问其强大功能的成本正在持续下降。这表明浏览器作为平台的能力正在不断增强，且其易用性也在不断提高。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Paul Ford states that the web browser is extremely powerful software for applications, and the cost of accessing this power is decreasing daily. This suggests that browsers are becoming increasingly capable platforms with improving accessibility.</blockquote>
+<p>🏷️ web browser, software, cost, power</p>
+<hr>
+<h3>12. Salon 停止出版</h3>
+<p><a href="https://www.salon.com/2026/11/05/goodbye-from-salon/">Salon Ceases Publication</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 21/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>知名在线杂志 Salon 在运营 31 年后宣布停止出版。在一篇告别文章中，Salon 回顾了其在数字新闻领域所做的贡献，强调了其在报道新闻、传播思想、汇聚声音和促进对话方面的历程。文章表达了对过往成就的自豪，并希望其留下的新闻遗产能够持续产生影响。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>After 31 years of operation, the online publication Salon has announced it is ceasing publication. In a farewell post, Salon reflected on its contributions to digital journalism, highlighting its journey in reporting news, disseminating ideas, amplifying voices, and fostering conversations. The piece expressed pride in its achievements and hope that its legacy will continue to matter.</blockquote>
+<p>🏷️ Salon, digital journalism, media industry</p>
+<hr>
+<h2>🛠 工具 / 开源</h2>
+<h3>13. 静态站点生成器很奇怪</h3>
+<p><a href="https://evanhahn.com/static-site-generators-are-weird/">Static site generators are weird</a> — <strong>evanhahn.com</strong> · 12 小时前 · ⭐ 22/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>作者喜爱静态网站的优势，如速度、低维护性、安全性和易用性，并认为静态站点生成器（SSG）极大地简化了这些网站的创建。然而，作者也认为大多数 SSG 的工作方式“很奇怪”，因为它们要求用户学习一套特定的方法和规则，例如如何处理配置和模板。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>The author appreciates the benefits of static sites, such as speed, low maintenance, security, and ease of use, and believes Static Site Generators (SSGs) greatly simplify their creation. However, the author also finds most SSGs 'weird' in their operation, as they require users to learn specific methodologies and rules, such as how to handle configuration and templates.</blockquote>
+<p>🏷️ static site generators, web development, performance, security</p>
+<hr>
+<h3>14. Meta 发布 Edits Mac 版本</h3>
+<p><a href="https://edits.instagram.com/blog/edits-desktop-video-editor/">Meta Releases Mac Version of Edits</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 22/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Meta 宣布推出其 Edits 应用的 macOS 版本，标志着该应用首次登陆桌面平台。Edits 旨在帮助用户将创意变为现实，已有超过 5000 万用户使用。新发布的 Mac 版本专为更复杂的项目设计，利用大屏幕和鼠标键盘的精确操作，为创作者提供更强大的编辑体验。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Meta has released a macOS version of its Edits app, bringing the platform to desktop for the first time. Edits helps users bring ideas to life, with over 50 million users already on board. The new Mac version is designed for more involved projects, leveraging a larger screen and the precision of a mouse and keyboard for a powerful creator experience.</blockquote>
+<p>🏷️ Meta, Edits, Mac app</p>
+<hr>
+<h3>15. Libghostty 1.0 发布</h3>
+<p><a href="https://mitchellh.com/writing/libghostty-1-0">Libghostty 1.0</a> — <strong>mitchellh.com</strong> · 1 天前 · ⭐ 21/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Libghostty 1.0 版本已正式发布。该版本带来了新的功能和改进。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Libghostty version 1.0 has been officially released. This version introduces new features and improvements.</blockquote>
+<p>🏷️ Libghostty, open source, developer tool</p>
+<hr>
+<p>*生成于 2026-11-07 05:32 | 扫描 82 源 → 获取 2545 篇 → 精选 15 篇* *基于 <a href="https://refactoringenglish.com/tools/hn-popularity/">Hacker News Popularity Contest 2025</a> RSS 源列表，由 <a href="https://x.com/karpathy">Andrej Karpathy</a> 推荐*</p>
     </article>
   </main>
-  <script id="speech-text" type="application/json">"🎧 点这里朗读今日日报\n📰 AI 博客每日精选 — 2026-11-06\n来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15\n📝 今日看点\n今日技术看点聚焦AI大模型应用与工程实践的挑战。从AI在触屏设备交互的局限性，到LLM工具的更新迭代，AI技术正加速渗透，但实际落地仍需克服用户体验和技术细节的障碍。同时，软件工程领域强调文档清晰度和源码控制的最新动态，预示着在复杂技术体系中，严谨的工程方法和清晰的沟通至关重要。\n \n🏆 今日必读\n🥇 “演示效果极佳”：为什么触屏笔记本电脑不适合垂直使用\nThe benchmark where AIs have to lie to win — dwarkesh.com · 8 小时前 · 🤖 AI / ML\n中文摘要\n文章探讨了触屏笔记本电脑在垂直屏幕使用时的固有局限性。尽管触屏交互在演示时能带来惊艳效果，但长时间使用会导致手臂疲劳，并且触摸表面不适合垂直方向操作。史蒂夫·乔布斯曾基于用户测试得出结论，触屏笔记本电脑不切实际，即使经过多年技术发展，这一根本性问题依然存在。\nEnglish Summary\nThis post revisits the argument against touchscreen MacBooks, highlighting that while touch interfaces offer a great demo, they lead to user fatigue when used vertically for extended periods. Steve Jobs's early user testing revealed that touch surfaces are not suited for vertical orientation, a fundamental usability issue that persists despite technological advancements.\n💡 为什么值得读: 深入剖析了触屏交互在垂直屏幕上的体验痛点，解释了为何这一设计理念即使在今天仍面临挑战。\n💡 Why read it: Explores the inherent usability challenges of vertical touch interfaces, explaining why this design concept still faces significant hurdles today.\n🏷️ AI, benchmarks, conspiracy, LLM\n🥈 理论上牢不可破：实验室测试与真实用户使用的差距\nWant to Rent an Internet Address at the White House? — krebsonsecurity.com · 1 天前 · 🔒 安全\n中文摘要\n文章通过一个屏幕碎裂的iPhone Duo的例子，揭示了实验室测试与真实世界用户使用之间的巨大鸿沟。尽管设备通过了数千次机械开合测试，但在实际用户手中却可能轻易损坏。这表明，在设计和测试阶段，必须充分考虑用户非精细化的使用习惯，否则产品在理论上“牢不可破”，但在实践中却不堪一击。\nEnglish Summary\nThe article uses an example of a broken iPhone Duo screen to illustrate the significant gap between laboratory testing and real-world user behavior. Despite passing thousands of hinge tests, devices can still break easily in the hands of customers. This highlights the need to account for less delicate user habits during design and testing, as theoretical robustness doesn't always translate to practical durability.\n💡 为什么值得读: 用生动案例揭示了产品在实验室测试通过后，仍可能因用户使用习惯而损坏的现实问题。\n💡 Why read it: Uses a vivid example to expose the reality of product failures due to user habits, even after passing laboratory tests.\n🏷️ White House, proxy services, security, residential IP\n🥉 存在分级但含义不明的事物\nA database is a store for global variables — seangoedecke.com · 6 小时前 · ⚙️ 工程\n中文摘要\n本文指出，在技术文档中，当作者对某个功能非常熟悉时，容易出现描述不清的情况。即使事物存在明确的分级或排序，其具体含义和应用场景也可能对不熟悉该领域的读者来说变得模糊不清。这种“内部视角”的文档编写方式，往往会阻碍信息的有效传达。\nEnglish Summary\nThis post discusses how technical documentation can become unclear when written by individuals intimately familiar with a feature. Even when concepts are ranked or tiered, their precise meaning and application can be ambiguous to readers outside that specific domain. This 'insider perspective' in writing can hinder effective information transfer.\n💡 为什么值得读: 警示了技术文档中因作者过于熟悉而可能产生的沟通障碍，强调了清晰表述的重要性。\n💡 Why read it: Warns about communication barriers in technical documentation arising from author familiarity, emphasizing the importance of clear articulation.\n🏷️ database, global variables, programming\n \n📊 数据概览\n \n \n \n分类分布\nmermaid\npie showData\n title \"文章分类分布\"\n \"⚙️ 工程\" : 4\n \"💡 观点 / 杂谈\" : 4\n \"🛠 工具 / 开源\" : 3\n \"🤖 AI / ML\" : 2\n \"🔒 安全\" : 1\n \"📝 其他\" : 1\n高频关键词\nmermaid\nxychart-beta horizontal\n title \"高频关键词\"\n x-axis [\"ai\", \"llm\", \"benchmarks\", \"conspiracy\", \"white house\", \"proxy services\", \"security\", \"residential ip\", \"database\", \"global variables\", \"programming\", \"receipts app\"]\n y-axis \"出现次数\" 0 --> 4\n bar [2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]\n📈 纯文本关键词图（终端友好）\nai │ ████████████████████ 2\nllm │ ████████████████████ 2\nbenchmarks │ ██████████░░░░░░░░░░ 1\nconspiracy │ ██████████░░░░░░░░░░ 1\nwhite house │ ██████████░░░░░░░░░░ 1\nproxy services │ ██████████░░░░░░░░░░ 1\nsecurity │ ██████████░░░░░░░░░░ 1\nresidential ip │ ██████████░░░░░░░░░░ 1\ndatabase │ ██████████░░░░░░░░░░ 1\nglobal variables │ ██████████░░░░░░░░░░ 1\n🏷️ 话题标签\nai(2) · llm(2) · benchmarks(1) · conspiracy(1) · white house(1) · proxy services(1) · security(1) · residential ip(1) · database(1) · global variables(1) · programming(1) · receipts app(1) · fatfinger economy(1) · usability(1) · web browser(1) · applications(1) · power(1) · datasette-llm(1) · python(1) · release(1)\n \n⚙️ 工程\n1. 存在分级但含义不明的事物\nA database is a store for global variables — seangoedecke.com · 6 小时前 · ⭐ 23/30\n中文摘要\n本文指出，在技术文档中，当作者对某个功能非常熟悉时，容易出现描述不清的情况。即使事物存在明确的分级或排序，其具体含义和应用场景也可能对不熟悉该领域的读者来说变得模糊不清。这种“内部视角”的文档编写方式，往往会阻碍信息的有效传达。\nEnglish Summary\nThis post discusses how technical documentation can become unclear when written by individuals intimately familiar with a feature. Even when concepts are ranked or tiered, their precise meaning and application can be ambiguous to readers outside that specific domain. This 'insider perspective' in writing can hinder effective information transfer.\n🏷️ database, global variables, programming\n \n2. 本周源码控制：2026 年 11 月 4 日\nThis Week in Source Control: 4 November 2026 — nesbitt.io · 1 天前 · ⭐ 21/30\n中文摘要\n本周源码控制通讯汇集了来自版本控制和代码托管平台（forges）的最新发布、安全公告和相关文章。该通讯旨在为开发者和技术人员提供一个集中的信息来源，帮助他们及时了解源码控制领域的动态和最佳实践。内容涵盖了 Git、GitHub、GitLab 等主流工具的更新信息，以及与软件开发流程相关的安全建议。\nEnglish Summary\nThis week's Source Control newsletter compiles the latest releases, advisories, and articles from across version control systems and forges. The newsletter aims to provide developers and technical professionals with a centralized source of information to keep them updated on the dynamics and best practices in the source control landscape. Content covers updates for mainstream tools like Git, GitHub, and GitLab, as well as security recommendations relevant to software development workflows.\n🏷️ source control, version control, Git, CI/CD\n \n3. 不应在创建后更改 Win32 静态控件的样式\nYou shouldn’t change the style of a Win32 static control after it has been created — devblogs.microsoft.com/oldnewthing · 15 小时前 · ⭐ 20/30\n中文摘要\n文章指出，在创建 Windows API（Win32）的静态控件（static control）后，不应尝试更改其样式。这是因为该控件的设计并未很好地处理样式在创建后被修改的情况。尝试这样做可能会导致不可预测的行为或功能失效。文章强调了在开发 Win32 应用程序时，应在控件创建时就确定其样式，避免后期修改带来的问题。\nEnglish Summary\nThis article states that one should not attempt to change the style of a Win32 static control after it has been created. This is because the control's design does not adequately handle style modifications post-creation, which can lead to unpredictable behavior or functional failures. The post emphasizes that when developing Win32 applications, styles should be determined at the time of control creation to avoid issues arising from later modifications.\n🏷️ Win32, static control, Windows API\n \n4. 存在排名但含义不明的事物\nThere are things with ranks, but it’s not always clear what the ranks mean — devblogs.microsoft.com/oldnewthing · 1 天前 · ⭐ 19/30\n中文摘要\n本文探讨了由熟悉功能的开发者撰写的文档中存在的问题。当作者对某个功能过于了解时，他们可能会假设读者也具备同等知识，导致文档中的排名或分类含义不清。这使得不熟悉该功能的读者难以理解。\nEnglish Summary\nThis article discusses a common issue with documentation written by developers who are intimately familiar with a feature. When authors know a feature too well, they may assume readers have the same level of understanding, leading to unclear rankings or classifications. This can make the documentation difficult for less experienced users to comprehend.\n🏷️ documentation, software engineering, ranks, clarity\n \n💡 观点 / 杂谈\n5. Micron Computers 的兴衰\nQuoting Paul Ford — simonwillison.net · 12 小时前 · ⭐ 22/30\n中文摘要\nMicron Computers 是内存芯片制造商美光科技（Micron Technology）进军个人电脑市场的一次中等规模的尝试。该业务于1995年首次推出，初期取得了显著成功，并在市场中存活至2008年11月6日。尽管美光科技在内存领域是巨头，但其PC业务的兴衰反映了在竞争激烈的消费电子市场中，即使是知名企业也面临挑战。\nEnglish Summary\nMicron Computers was a moderately successful venture by Micron Technology, a memory chip maker, to market PCs. Launched in 1995, the business initially performed well and remained in the market until November 6, 2008. The rise and fall of Micron Computers illustrate the challenges even established companies face in the competitive consumer electronics market.\n🏷️ web browser, applications, power\n \n6. Salon 停止出版\nSalon Ceases Publication — daringfireball.net · 8 小时前 · ⭐ 20/30\n中文摘要\n知名在线新闻网站 Salon 在运营 31 年后宣布停止出版。在一篇告别文章中，Salon 回顾了其在数字新闻领域的贡献，强调了其在报道新闻、传播思想、发声以及建立社区方面所扮演的角色。文章表达了对过去成就的自豪，并希望其留下的数字新闻遗产能够长久延续。然而，也有评论对网站存档的保存表示担忧。Salon 的关闭标志着一个时代的结束，也引发了对独立在线媒体生存挑战的思考。\nEnglish Summary\nThe prominent online news outlet Salon has announced its cessation of publication after 31 years of operation. In a farewell post, Salon reflected on its contributions to digital journalism, highlighting its role in reporting news, disseminating ideas, giving voice, and building a community. The article expresses pride in its past achievements and hopes its legacy in digital journalism will endure. However, some comments express concern about the preservation of the website's archives. Salon's closure marks the end of an era and prompts reflection on the challenges faced by independent online media.\n🏷️ digital journalism, Salon, media\n \n7. 史蒂夫·乔布斯解释为何不推出触屏 MacBook\n“It Gives Great Demo” — blog.jim-nielsen.com · 1 天前 · ⭐ 20/30\n中文摘要\n史蒂夫·乔布斯在一段著名视频中解释了苹果为何不推出触屏 MacBook。他指出，触屏不适合垂直屏幕，虽然演示效果好，但长时间使用会导致手臂疲劳。用户测试表明，触屏 MacBook 并非理想产品。\nEnglish Summary\nSteve Jobs famously explained why Apple never made touchscreen MacBooks. He argued that touch surfaces are not ideal for vertical screens, leading to arm fatigue after prolonged use. User testing confirmed that touchscreen MacBooks were not a practical product.\n🏷️ Steve Jobs, touchscreen, user experience, MacBook\n \n8. Micron Computers 的兴衰\nMicron Computers’ rise and fall — dfarq.homeip.net · 18 小时前 · ⭐ 18/30\n中文摘要\nMicron Computers 是内存芯片制造商 Micron Technology 进军个人电脑市场的尝试。该公司于 1995 年推出，初期取得了显著成功，并在市场上存活至 2008 年。尽管如此，Micron Computers 的PC业务最终未能长期维持。\nEnglish Summary\nMicron Computers was a moderately successful venture by Micron Technology, a maker of computer memory chips, to market PCs. Launched in 1995, the company initially thrived and survived in the market until November 6, 2008. Ultimately, the PC business did not endure.\n🏷️ Micron Computers, PC market, history\n \n🛠 工具 / 开源\n9. datasette-llm 0.1a10 发布\ndatasette-llm 0.1a10 — simonwillison.net · 1 天前 · ⭐ 22/30\n中文摘要\ndatasette-llm 0.1a10 版本发布，修复了一个影响 agent.datasette.io 演示站点的 bug。该 bug 导致可用的大型语言模型（LLM）集合未能正确限制在配置文件中指定的模型。此次更新确保了模型选择的准确性，提升了该工具在实际应用中的可靠性。该版本还包含其他一些改进和 bug 修复。\nEnglish Summary\nThe release of datasette-llm version 0.1a10 fixes a bug that affected the agent.datasette.io demo site, where the set of available Large Language Models (LLMs) was not correctly restricted to those specified in the configuration. This update ensures accurate model selection and improves the tool's reliability in practical applications. The release also includes other improvements and bug fixes.\n🏷️ datasette-llm, LLM, Python, release\n \n10. Meta 发布 Edits Mac 版本\nMeta Releases Mac Version of Edits — daringfireball.net · 9 小时前 · ⭐ 21/30\n中文摘要\nMeta 旗下的 Edits 应用现已推出 macOS 版本，旨在支持更复杂的视频编辑项目。新版桌面编辑器专为需要更大屏幕和鼠标键盘精确操作的用户设计，以提升创作体验。自推出一年多以来，Edits 已吸引了 5000 万用户，此次 Mac 版本的发布将进一步扩展其功能和用户群体。新版本在功能上与移动端保持一致，但提供了更专业的编辑环境。\nEnglish Summary\nMeta's Edits app has launched a macOS version, designed to support more complex video editing projects. The new desktop editor is tailored for users who benefit from a larger screen and the precision of a mouse and keyboard to enhance their creative workflow. In just over a year, Edits has garnered 50 million users, and the Mac release aims to further expand its functionality and user base. The desktop version offers a more professional editing environment while maintaining feature parity with its mobile counterpart.\n🏷️ Meta, Edits, Mac, creators\n \n11. Gadget Review: Tozo NC9 Pro 蓝牙耳机 ★★★★⯪\nGadget Review: Tozo NC9 Pro Bluetooth Headphones ★★★★⯪ — shkspr.mobi · 17 小时前 · ⭐ 18/30\n中文摘要\n评测文章重点介绍了 Tozo NC9 Pro 蓝牙耳机的充电盒，而非耳机本身。耳机在音质、降噪和电池续航方面表现中规中矩。然而，其充电盒的设计和功能却显得有些特别，是这款产品最引人注目的地方。\nEnglish Summary\nThis gadget review highlights the charging case of the Tozo NC9 Pro Bluetooth headphones as its most interesting feature. While the headphones offer standard good sound quality, excellent noise cancellation, and decent battery life, the charging case stands out as particularly noteworthy.\n🏷️ headphones, Bluetooth, gadget review\n \n🤖 AI / ML\n12. “演示效果极佳”：为什么触屏笔记本电脑不适合垂直使用\nThe benchmark where AIs have to lie to win — dwarkesh.com · 8 小时前 · ⭐ 27/30\n中文摘要\n文章探讨了触屏笔记本电脑在垂直屏幕使用时的固有局限性。尽管触屏交互在演示时能带来惊艳效果，但长时间使用会导致手臂疲劳，并且触摸表面不适合垂直方向操作。史蒂夫·乔布斯曾基于用户测试得出结论，触屏笔记本电脑不切实际，即使经过多年技术发展，这一根本性问题依然存在。\nEnglish Summary\nThis post revisits the argument against touchscreen MacBooks, highlighting that while touch interfaces offer a great demo, they lead to user fatigue when used vertically for extended periods. Steve Jobs's early user testing revealed that touch surfaces are not suited for vertical orientation, a fundamental usability issue that persists despite technological advancements.\n🏷️ AI, benchmarks, conspiracy, LLM\n \n13. 评测：Tozo NC9 Pro 蓝牙耳机\nPluralistic: The AI fatfinger economy has come for my receipts app (04 Nov 2026) — pluralistic.net · 1 天前 · ⭐ 23/30\n中文摘要\nTozo NC9 Pro 蓝牙耳机在音质、降噪和续航方面表现标准，但其最引人注目的特点是充电盒。该充电盒设计独特，为用户提供了超出预期的体验。文章详细评测了这款耳机的各项性能，并特别强调了充电盒的创新之处。\nEnglish Summary\nThe Tozo NC9 Pro Bluetooth headphones offer standard performance in sound quality, noise cancellation, and battery life. However, their most notable feature is the charging case, which provides a unique and noteworthy user experience. The review details the headphones' capabilities while highlighting the innovation in the charging case design.\n🏷️ AI, receipts app, fatfinger economy, usability\n \n🔒 安全\n14. 理论上牢不可破：实验室测试与真实用户使用的差距\nWant to Rent an Internet Address at the White House? — krebsonsecurity.com · 1 天前 · ⭐ 25/30\n中文摘要\n文章通过一个屏幕碎裂的iPhone Duo的例子，揭示了实验室测试与真实世界用户使用之间的巨大鸿沟。尽管设备通过了数千次机械开合测试，但在实际用户手中却可能轻易损坏。这表明，在设计和测试阶段，必须充分考虑用户非精细化的使用习惯，否则产品在理论上“牢不可破”，但在实践中却不堪一击。\nEnglish Summary\nThe article uses an example of a broken iPhone Duo screen to illustrate the significant gap between laboratory testing and real-world user behavior. Despite passing thousands of hinge tests, devices can still break easily in the hands of customers. This highlights the need to account for less delicate user habits during design and testing, as theoretical robustness doesn't always translate to practical durability.\n🏷️ White House, proxy services, security, residential IP\n \n📝 其他\n15. 理论上坚不可摧的 iPhone Duo 屏幕\nIt's unbreakable in theory — idiallo.com · 9 小时前 · ⭐ 19/30\n中文摘要\n一张 iPhone Duo 手机在商店展示架上屏幕碎裂的照片引发了对产品耐用性的质疑。尽管苹果声称其铰链经过数千次机械测试且表现完好，但实际用户手中的手机却出现了屏幕损坏。这表明理论上的测试结果与实际使用情况可能存在巨大差异。\nEnglish Summary\nA photo of a broken iPhone Duo screen on a store display has raised questions about product durability. Despite Apple's claims of successful hinge testing, the phone's screen was found cracked in a retail setting. This highlights a potential disconnect between theoretical testing and real-world usage.\n🏷️ iPhone Duo, durability, hardware\n \n生成于 2026-11-06 06:00 | 扫描 83 源 → 获取 2568 篇 → 精选 15 篇\n基于 Hacker News Popularity Contest 2025 RSS 源列表，由 Andrej Karpathy 推荐"</script>
+  <script id="speech-text" type="application/json">"🎧 点这里朗读今日日报\n📰 AI 博客每日精选 — 2026-11-07\n来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15\n📝 今日看点\n今日技术看点聚焦于AI与工程领域的最新动态。AI方面，MacBook Pro的灯光设置和Ghostty终端模拟器库的更新展示了AI在软硬件集成和开发者工具上的持续演进。工程领域，Meta推出Mac版Instagram编辑器，以及关于Win32控件样式和数据库设计的深入探讨，揭示了平台优化和开发实践的最新思考。此外，对Web浏览器强大能力的重申，也预示着未来应用开发的新方向。\n \n🏆 今日必读\n🥇 关于 MacBook Pro（带 ProLED XDR 显示屏）的苹果标志灯光设置\nQuoting Nilay Patel — simonwillison.net · 12 小时前 · 🤖 AI / ML\n中文摘要\n苹果官方支持文档提供了通过终端命令关闭 MacBook Pro（带 ProLED XDR 显示屏）苹果标志灯光的方法。用户可以通过在终端中输入特定命令 sudo defaults write com.apple.CoreBrightness LEBacklightMode -int 0 来实现此功能，以在所有光照条件下使苹果标志变暗。若要重新开启灯光，则需执行 sudo defaults delete com.apple.CoreBrightness LEBacklightMo 命令。\nEnglish Summary\nApple Support provides instructions on how to disable the illuminated Apple logo on MacBook Pro models with ProLED XDR displays. Users can achieve this by executing a specific command in Terminal: sudo defaults write com.apple.CoreBrightness LEBacklightMode -int 0 to turn off the illumination in all lighting conditions. To re-enable the logo illumination, the command sudo defaults delete com.apple.CoreBrightness LEBacklightMo should be used.\n💡 为什么值得读: 了解如何通过终端控制 MacBook Pro 苹果标志的灯光，实现个性化设置。\n💡 Why read it: Learn how to control the illuminated Apple logo on MacBook Pro via Terminal for personalized settings.\n🏷️ AI, cost, data center, deep fake\n🥈 Meta 发布 Instagram Edits 的 Mac 版本桌面视频编辑器\n★ Touch and Glow — daringfireball.net · 9 小时前 · ⚙️ 工程\n中文摘要\nMeta 宣布推出 Instagram Edits 的首个桌面版本，现已支持 macOS。该桌面编辑器专为需要更复杂项目创作的创作者设计，利用大屏幕和鼠标键盘的精确操作来提升编辑体验。自推出一年多以来，Edits 已吸引了 5000 万用户。\nEnglish Summary\nMeta has released the first desktop version of Instagram Edits, now available for macOS. This desktop editor is designed for more involved projects, leveraging a larger screen and the precision of a mouse and keyboard. Edits has already been used by 50 million people in just over a year.\n💡 为什么值得读: Instagram Edits 扩展至桌面端，为 Mac 用户提供更专业的视频编辑能力。\n💡 Why read it: Instagram Edits expands to desktop, offering more professional video editing capabilities for Mac users.\n🏷️ MacBook Pro, PROLED XDR, Apple event, Macintosh\n🥉 Libghostty 1.0 发布\nWriting English is Solved — idiallo.com · 21 小时前 · 🤖 AI / ML\n中文摘要\nLibghostty 1.0 已发布，这是一个用于处理 Ghostty 终端模拟器输出的库。新版本带来了多项改进和新功能，旨在为开发者提供更强大、更灵活的工具来与 Ghostty 交互。\nEnglish Summary\nLibghostty 1.0 has been released, a library designed for processing the output of the Ghostty terminal emulator. This new version introduces several improvements and new features, aiming to provide developers with a more powerful and flexible tool for interacting with Ghostty.\n💡 为什么值得读: Libghostty 1.0 的发布为开发者提供了与 Ghostty 终端模拟器交互的新工具和功能。\n💡 Why read it: The release of Libghostty 1.0 offers new tools and functionalities for developers interacting with the Ghostty terminal emulator.\n🏷️ AI writing, LLM, English language\n \n📊 数据概览\n \n \n \n分类分布\nmermaid\npie showData\n title \"文章分类分布\"\n \"⚙️ 工程\" : 6\n \"🤖 AI / ML\" : 3\n \"💡 观点 / 杂谈\" : 3\n \"🛠 工具 / 开源\" : 3\n高频关键词\nmermaid\nxychart-beta horizontal\n title \"高频关键词\"\n x-axis [\"cost\", \"macbook pro\", \"ai\", \"data center\", \"deep fake\", \"proled xdr\", \"apple event\", \"macintosh\", \"ai writing\", \"llm\", \"english language\", \"ai benchmark\"]\n y-axis \"出现次数\" 0 --> 4\n bar [2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]\n📈 纯文本关键词图（终端友好）\ncost │ ████████████████████ 2\nmacbook pro │ ████████████████████ 2\nai │ ██████████░░░░░░░░░░ 1\ndata center │ ██████████░░░░░░░░░░ 1\ndeep fake │ ██████████░░░░░░░░░░ 1\nproled xdr │ ██████████░░░░░░░░░░ 1\napple event │ ██████████░░░░░░░░░░ 1\nmacintosh │ ██████████░░░░░░░░░░ 1\nai writing │ ██████████░░░░░░░░░░ 1\nllm │ ██████████░░░░░░░░░░ 1\n🏷️ 话题标签\ncost(2) · macbook pro(2) · ai(1) · data center(1) · deep fake(1) · proled xdr(1) · apple event(1) · macintosh(1) · ai writing(1) · llm(1) · english language(1) · ai benchmark(1) · ai ethics(1) · deception(1) · atomicity(1) · hot-patches(1) · threads(1) · software engineering(1) · cda 230(1) · facebook(1)\n \n⚙️ 工程\n1. Meta 发布 Instagram Edits 的 Mac 版本桌面视频编辑器\n★ Touch and Glow — daringfireball.net · 9 小时前 · ⭐ 26/30\n中文摘要\nMeta 宣布推出 Instagram Edits 的首个桌面版本，现已支持 macOS。该桌面编辑器专为需要更复杂项目创作的创作者设计，利用大屏幕和鼠标键盘的精确操作来提升编辑体验。自推出一年多以来，Edits 已吸引了 5000 万用户。\nEnglish Summary\nMeta has released the first desktop version of Instagram Edits, now available for macOS. This desktop editor is designed for more involved projects, leveraging a larger screen and the precision of a mouse and keyboard. Edits has already been used by 50 million people in just over a year.\n🏷️ MacBook Pro, PROLED XDR, Apple event, Macintosh\n \n2. 不应在创建后更改 Win32 静态控件的样式\nWhy are we all worked up about atomicity when applying hot-patches if we can just suspend all the threads? — devblogs.microsoft.com/oldnewthing · 14 小时前 · ⭐ 25/30\n中文摘要\n在 Windows 开发中，不建议在创建 Win32 静态控件（Static Control）后更改其样式。这是因为控件的设计并未充分考虑这种动态样式修改的场景，可能导致不可预测的行为或渲染问题。开发者应在控件创建时就确定其样式。\nEnglish Summary\nIn Win32 development, it is inadvisable to change the style of a static control after it has been created. The control is not designed to handle such dynamic style modifications effectively, which can lead to unpredictable behavior or rendering issues. Developers should set the desired style at the time of creation.\n🏷️ atomicity, hot-patches, threads, software engineering\n \n3. 与设计师合作\nWorking with designers — seangoedecke.com · 5 小时前 · ⭐ 23/30\n中文摘要\n作者表达了对与设计师合作的喜爱，认为他们与工程师在文化上有所不同。然而，他也指出团队中拥有多于一名设计师可能会带来问题，并对设计系统持有复杂的负面看法。文章探讨了设计在工程团队中的角色和挑战。\nEnglish Summary\nThe author expresses a fondness for working with designers, partly because they are culturally different from engineers. However, he also notes that having more than one designer on a team can lead to trouble and holds complex negative thoughts about design systems. The article explores the role and challenges of design within engineering teams.\n🏷️ designers, engineers, collaboration, design systems\n \n4. 数据库是全局变量的存储\nA database is a store for global variables — seangoedecke.com · 1 天前 · ⭐ 23/30\n中文摘要\n文章提出，数据库本质上是全局变量的存储，尽管我们通常称之为“行”或“记录”。作者认为，这与“全局变量有害”的常见编程建议相悖，并探讨了数据库为何能成为这一规则的例外。文章分析了数据库作为全局状态管理的一种特殊形式。\nEnglish Summary\nThe article proposes that databases are fundamentally stores for global variables, even though we commonly refer to them as 'rows' or 'records.' The author argues this contradicts the common programming advice that global variables are bad, and explores why databases might be an exception to this rule. It analyzes databases as a special form of global state management.\n🏷️ database, global variables, programming concepts\n \n5. Apple 支持：关于 MacBook Pro ProLED XDR 显示屏的背光 Apple Logo\nApple Support: ‘About the Illuminated Apple Logo on MacBook Pro With PROLED XDR Display’ — daringfireball.net · 14 小时前 · ⭐ 22/30\n中文摘要\nApple 官方支持文章介绍了如何关闭 MacBook Pro ProLED XDR 显示屏上的背光 Apple Logo。用户可以通过终端使用特定命令来禁用 Logo 的背光功能，以在各种光线条件下使其变暗。文章提供了详细的操作步骤，包括如何找到终端以及输入的命令。同时，也说明了如何重新开启 Logo 的背光功能。\nEnglish Summary\nApple Support provides instructions on how to disable the illuminated Apple logo on MacBook Pro models with ProLED XDR displays. Users can turn off the logo's illumination via Terminal using a specific command to make it dark in all lighting conditions. The article details the steps, including locating Terminal and the exact command to enter. It also explains how to re-enable the logo illumination.\n🏷️ Apple Support, MacBook Pro, illuminated logo, Terminal\n \n6. 不应在创建后更改 Win32 静态控件的样式\nYou shouldn’t change the style of a Win32 static control after it has been created — devblogs.microsoft.com/oldnewthing · 1 天前 · ⭐ 21/30\n中文摘要\n文章指出，在创建 Win32 静态控件后不应更改其样式，因为系统可能无法正确处理这种情况。这篇来自 The Old New Thing 的技术性文章，解释了在 Windows 编程中一个关于控件样式管理的注意事项。\nEnglish Summary\nThis article explains that the style of a Win32 static control should not be changed after it has been created, as the system may not handle such cases properly. The post from The Old New Thing highlights a crucial point in Windows programming regarding control style management.\n🏷️ Win32, static control, style, API\n \n🤖 AI / ML\n7. 关于 MacBook Pro（带 ProLED XDR 显示屏）的苹果标志灯光设置\nQuoting Nilay Patel — simonwillison.net · 12 小时前 · ⭐ 27/30\n中文摘要\n苹果官方支持文档提供了通过终端命令关闭 MacBook Pro（带 ProLED XDR 显示屏）苹果标志灯光的方法。用户可以通过在终端中输入特定命令 sudo defaults write com.apple.CoreBrightness LEBacklightMode -int 0 来实现此功能，以在所有光照条件下使苹果标志变暗。若要重新开启灯光，则需执行 sudo defaults delete com.apple.CoreBrightness LEBacklightMo 命令。\nEnglish Summary\nApple Support provides instructions on how to disable the illuminated Apple logo on MacBook Pro models with ProLED XDR displays. Users can achieve this by executing a specific command in Terminal: sudo defaults write com.apple.CoreBrightness LEBacklightMode -int 0 to turn off the illumination in all lighting conditions. To re-enable the logo illumination, the command sudo defaults delete com.apple.CoreBrightness LEBacklightMo should be used.\n🏷️ AI, cost, data center, deep fake\n \n8. Libghostty 1.0 发布\nWriting English is Solved — idiallo.com · 21 小时前 · ⭐ 26/30\n中文摘要\nLibghostty 1.0 已发布，这是一个用于处理 Ghostty 终端模拟器输出的库。新版本带来了多项改进和新功能，旨在为开发者提供更强大、更灵活的工具来与 Ghostty 交互。\nEnglish Summary\nLibghostty 1.0 has been released, a library designed for processing the output of the Ghostty terminal emulator. This new version introduces several improvements and new features, aiming to provide developers with a more powerful and flexible tool for interacting with Ghostty.\n🏷️ AI writing, LLM, English language\n \n9. Salon 停止出版\nThe benchmark where AIs have to lie to win — dwarkesh.com · 1 天前 · ⭐ 26/30\n中文摘要\n拥有 31 年历史的数字新闻网站 Salon 宣布停止出版。在告别声明中，Salon 回顾了其在新闻报道、思想传播、声音汇聚和社区建设方面的贡献，并希望其作为数字新闻先驱的遗产能够长久延续。文章暗示了其档案可能难以保存。\nEnglish Summary\nSalon, a digital journalism publication with a 31-year history, has ceased publication. In its farewell post, Salon reflected on its contributions to journalism, ideas, voices, and community, hoping its legacy as a digital journalism pioneer will continue. There is speculation that its archives may not be preserved.\n🏷️ AI benchmark, AI ethics, deception\n \n💡 观点 / 杂谈\n10. 没有 CDA 230，Facebook 将永远拥有互联网\nPluralistic: Without CDA 230, Facebook will own the internet forever (05 Nov 2026) — pluralistic.net · 1 天前 · ⭐ 24/30\n中文摘要\n文章认为，如果废除《通信规范法案》（CDA）第 230 条，Facebook 将可能主宰互联网。小型、管理良好的在线社区在这种法律环境下将特别容易受到法律威胁。作者还列举了其他一些链接和活动信息。\nEnglish Summary\nThe article argues that without Section 230 of the Communications Decency Act (CDA), Facebook could potentially dominate the internet. Small, well-managed online communities would be particularly vulnerable to legal threats in such a scenario. The author also includes other links and event information.\n🏷️ CDA 230, Facebook, internet, regulation\n \n11. 引用 Paul Ford：Web 浏览器是强大的应用软件\nQuoting Paul Ford — simonwillison.net · 1 天前 · ⭐ 23/30\n中文摘要\nPaul Ford 认为，Web 浏览器是极其强大的应用软件，并且访问其强大功能的成本正在持续下降。这表明浏览器作为平台的能力正在不断增强，且其易用性也在不断提高。\nEnglish Summary\nPaul Ford states that the web browser is extremely powerful software for applications, and the cost of accessing this power is decreasing daily. This suggests that browsers are becoming increasingly capable platforms with improving accessibility.\n🏷️ web browser, software, cost, power\n \n12. Salon 停止出版\nSalon Ceases Publication — daringfireball.net · 1 天前 · ⭐ 21/30\n中文摘要\n知名在线杂志 Salon 在运营 31 年后宣布停止出版。在一篇告别文章中，Salon 回顾了其在数字新闻领域所做的贡献，强调了其在报道新闻、传播思想、汇聚声音和促进对话方面的历程。文章表达了对过往成就的自豪，并希望其留下的新闻遗产能够持续产生影响。\nEnglish Summary\nAfter 31 years of operation, the online publication Salon has announced it is ceasing publication. In a farewell post, Salon reflected on its contributions to digital journalism, highlighting its journey in reporting news, disseminating ideas, amplifying voices, and fostering conversations. The piece expressed pride in its achievements and hope that its legacy will continue to matter.\n🏷️ Salon, digital journalism, media industry\n \n🛠 工具 / 开源\n13. 静态站点生成器很奇怪\nStatic site generators are weird — evanhahn.com · 12 小时前 · ⭐ 22/30\n中文摘要\n作者喜爱静态网站的优势，如速度、低维护性、安全性和易用性，并认为静态站点生成器（SSG）极大地简化了这些网站的创建。然而，作者也认为大多数 SSG 的工作方式“很奇怪”，因为它们要求用户学习一套特定的方法和规则，例如如何处理配置和模板。\nEnglish Summary\nThe author appreciates the benefits of static sites, such as speed, low maintenance, security, and ease of use, and believes Static Site Generators (SSGs) greatly simplify their creation. However, the author also finds most SSGs 'weird' in their operation, as they require users to learn specific methodologies and rules, such as how to handle configuration and templates.\n🏷️ static site generators, web development, performance, security\n \n14. Meta 发布 Edits Mac 版本\nMeta Releases Mac Version of Edits — daringfireball.net · 1 天前 · ⭐ 22/30\n中文摘要\nMeta 宣布推出其 Edits 应用的 macOS 版本，标志着该应用首次登陆桌面平台。Edits 旨在帮助用户将创意变为现实，已有超过 5000 万用户使用。新发布的 Mac 版本专为更复杂的项目设计，利用大屏幕和鼠标键盘的精确操作，为创作者提供更强大的编辑体验。\nEnglish Summary\nMeta has released a macOS version of its Edits app, bringing the platform to desktop for the first time. Edits helps users bring ideas to life, with over 50 million users already on board. The new Mac version is designed for more involved projects, leveraging a larger screen and the precision of a mouse and keyboard for a powerful creator experience.\n🏷️ Meta, Edits, Mac app\n \n15. Libghostty 1.0 发布\nLibghostty 1.0 — mitchellh.com · 1 天前 · ⭐ 21/30\n中文摘要\nLibghostty 1.0 版本已正式发布。该版本带来了新的功能和改进。\nEnglish Summary\nLibghostty version 1.0 has been officially released. This version introduces new features and improvements.\n🏷️ Libghostty, open source, developer tool\n \n生成于 2026-11-07 05:32 | 扫描 82 源 → 获取 2545 篇 → 精选 15 篇\n基于 Hacker News Popularity Contest 2025 RSS 源列表，由 Andrej Karpathy 推荐"</script>
   <script>
     const text = JSON.parse(document.getElementById('speech-text').textContent);
     const statusEl = document.getElementById('status');
