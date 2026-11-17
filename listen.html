@@ -52,201 +52,199 @@
   <main class="shell">
     <article class="card">
       <p>🎧 <a href="https://lingnanren.github.io/ai-daily-digest/listen.html">点这里朗读今日日报</a></p>
-<h1>📰 AI 博客每日精选 — 2026-11-16</h1>
+<h1>📰 AI 博客每日精选 — 2026-11-17</h1>
 <blockquote>来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15</blockquote>
 <h2>📝 今日看点</h2>
-<p>今日技术看点聚焦AI与数据交互的融合，以及科技巨头的人才争夺。Datasette 系列工具的更新，特别是 Agent 和 LLM 插件，展示了AI在数据分析和应用中的潜力。同时，英伟达高管变动传闻和苹果硬件主管的潜在跳槽，预示着芯片行业和科技巨头间的人才流动与战略布局正暗流涌动。此外，运维领域对“摩擦”重要性的探讨，也为保障系统稳定提供了新视角。</p>
+<p>今日技术看点聚焦AI的颠覆性潜力与安全隐私的强化。一方面，AI正以前所未有的速度发展，有望在短期内颠覆政府运作，同时开源模型和智能体工具的进步，为用户提供了更安全、可控的AI应用方式。另一方面，macOS在隐私保护方面持续加码，引入更精细的权限控制，以应对日益增长的安全挑战。</p>
 <hr>
 <h2>🏆 今日必读</h2>
-<p>🥇 <strong>Datasette Apps 0.4a0 发布：支持链接和 URL Scheme</strong></p>
-<p><a href="https://borretti.me/article/taking-ai-seriously">Taking AI Seriously</a> — borretti.me · 1 天前 · 💡 观点 / 杂谈</p>
+<p>🥇 <strong>如何轻松使用私有、开源权重模型</strong></p>
+<p><a href="https://micahflee.com/heres-how-anyone-can-easily-use-private-open-weight-models/">Here's how anyone can easily use private, open weight models</a> — micahflee.com · 14 小时前 · 🤖 AI / ML</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Datasette Apps 0.4a0 版本现已发布，引入了对链接的支持，允许应用通过 URL fragments 与 Datasette 交互。该版本还报告了支持的 URL Schemes，增强了应用的可发现性和集成能力。Datasette Apps 是运行在 Datasette 内的沙盒化 HTML 和 JavaScript 应用，能够执行 SQL 查询，类似于 Claude Artifacts。</blockquote>
+<blockquote>尽管大型语言模型（LLM）存在争议，但它们功能强大且实用。然而，用户对OpenAI和Anthropic等公司的信任度不高，担心数据隐私问题。本文提供了一种解决方案，允许用户轻松运行私有、开源权重的LLM，从而在不依赖第三方服务的情况下享受LLM的强大能力。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Datasette Apps 0.4a0 introduces support for linking, allowing apps to utilize URL fragments for interaction. It also reports supported URL schemes, enhancing discoverability and integration. Datasette Apps are sandboxed HTML and JavaScript applications within Datasette capable of running SQL queries, akin to Claude Artifacts.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 了解如何在 Datasette 中构建和链接沙盒应用，以增强数据交互能力。</p>
-<p>💡 <strong>Why read it</strong>: Learn how to build and link sandboxed applications within Datasette for enhanced data interaction capabilities.</p>
-<p>🏷️ AI, ethics, responsibility</p>
-<p>🥈 <strong>Datasette Agent 0.6a0 发布：改进主页交互和表格/查询提及</strong></p>
-<p><a href="https://www.workos.com/airlock?utm_source=daringfireball&amp;amp;amp;utm_medium=newsletter&amp;amp;amp;utm_campaign=q42026">WorkOS: Let Agents Use Your Tools Without Giving Them Free Rein</a> — daringfireball.net · 14 小时前 · 🤖 AI / ML</p>
+<blockquote>Large Language Models (LLMs) are powerful and useful, but users are wary of trusting their data with companies like OpenAI and Anthropic. This article provides a solution for easily running private, open-weight LLMs, allowing users to leverage LLM capabilities without relying on third-party services.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 教你如何在不依赖大型科技公司的情况下，安全地运行和使用强大的开源AI模型。</p>
+<p>💡 <strong>Why read it</strong>: Learn how to securely run and utilize powerful open-source AI models without relying on big tech companies.</p>
+<p>🏷️ open-weight models, LLM, privacy, local AI</p>
+<p>🥈 <strong>WorkOS：让智能体在不失控的情况下使用你的工具</strong></p>
+<p><a href="https://www.workos.com/airlock?utm_source=daringfireball&amp;amp;amp;utm_medium=newsletter&amp;amp;amp;utm_campaign=q42026">WorkOS: Let Agents Use Your Tools Without Giving Them Free Rein</a> — daringfireball.net · 1 天前 · 🤖 AI / ML</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Datasette Agent 0.6a0 版本带来了一系列小修复和改进，最显著的是在 Datasette 主页直接集成了 Agent 提示输入框。新版本支持通过 hash-mentions 提及表格和查询，简化了用户与数据的交互方式。Datasette Agent 是一个 Datasette 插件，允许用户通过自然语言提问来查询数据。</blockquote>
+<blockquote>智能体（Agents）的任务在运行时才能确定，预设的角色分配往往不准确。WorkOS Airlock 允许为智能体设定明确的策略，每次调用都会根据其意图进行检查，无论是读取问题还是发送邮件。该系统能自动允许、拒绝或转交人工审批，并记录所有决策，确保智能体安全有效地执行任务。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Datasette Agent 0.6a0 includes accumulated small fixes, notably adding an agent prompt directly to the Datasette homepage. It now supports hash-mentions for tables and queries, simplifying user interaction. This plugin allows users to ask questions about their data using natural language.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 探索如何利用 Datasette Agent 插件通过自然语言与数据进行更直观的交互。</p>
-<p>💡 <strong>Why read it</strong>: Explore how to interact more intuitively with data using the Datasette Agent plugin through natural language queries.</p>
-<p>🏷️ AI agents, WorkOS, tool usage, intent</p>
-<p>🥉 <strong>Patrick McGee 评论 Nvidia 考虑挖角苹果硬件主管 Johny Srouji</strong></p>
-<p><a href="https://simonwillison.net/2026/Nov/15/datasette-maplibre/">datasette-maplibre 0.1a0</a> — simonwillison.net · 5 小时前 · 🛠 工具 / 开源</p>
+<blockquote>WorkOS Airlock enables agents to use your tools securely by checking every call against its intent, rather than relying on pre-assigned roles. Policies are set once, and each agent action is either allowed, denied, or sent for human approval, with all verdicts logged. This ensures agents perform tasks safely and effectively without overstepping boundaries.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 了解如何通过WorkOS Airlock安全地授权智能体访问和使用你的工具，避免数据泄露和误操作。</p>
+<p>💡 <strong>Why read it</strong>: Discover how WorkOS Airlock securely authorizes agents to access and use your tools, preventing data breaches and unintended actions.</p>
+<p>🏷️ AI agents, tools, WorkOS, permissions</p>
+<p>🥉 <strong>Apple支持文档：macOS 27.3 Beta 2中的新‘全盘访问’和‘系统与App保护覆盖’设置</strong></p>
+<p><a href="https://support.apple.com/en-us/149699">Apple Support Document on the New ‘Full Disk Access’ and ‘System &amp; App Protection Override’ Settings in MacOS 27.3 Beta 2</a> — daringfireball.net · 5 小时前 · 🔒 安全</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Patrick McGee 认为苹果硬件主管 Johny Srouji 是领导 Nvidia 的绝佳人选，并相信他会接受这一职位。他指出 Srouji 在苹果已达职业天花板，虽然不是 CEO 候选人，但他能力出众且野心勃勃，长期以来希望芯片设计能主导产品发布和时间表。</blockquote>
+<blockquote>macOS 27.3 Beta 2引入了新的“全盘访问”（Full Disk Access）和“系统与App保护覆盖”（System &amp; App Protection Override）设置，旨在提高用户对敏感权限授予的认知和控制。这些新设置旨在防止用户在不完全理解其含义的情况下授予过多权限，并为用户提供更精细的控制选项。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Patrick McGee believes Apple's hardware chief Johny Srouji would be an excellent choice to lead Nvidia and would accept the role. He suggests Srouji has hit a ceiling at Apple, is highly competent and ambitious, and has long desired chip designs to dictate product launch timelines.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 深入了解苹果硬件主管 Johny Srouji 可能加入 Nvidia 的潜在影响和原因。</p>
-<p>💡 <strong>Why read it</strong>: Gain insight into the potential implications and reasons behind Apple's hardware chief Johny Srouji potentially joining Nvidia.</p>
-<p>🏷️ Datasette, MapLibre, geospatial, plugin</p>
+<blockquote>macOS 27.3 Beta 2 introduces new 'Full Disk Access' and 'System &amp; App Protection Override' settings to enhance user awareness and control over sensitive permissions. These changes aim to prevent users from granting excessive access without fully understanding the implications, offering more granular control.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 了解macOS新隐私控制如何帮助用户更安全地管理应用程序的全盘访问权限。</p>
+<p>💡 <strong>Why read it</strong>: Understand how new macOS privacy controls help users manage application Full Disk Access permissions more securely.</p>
+<p>🏷️ macOS, privacy settings, full disk access, system protection</p>
 <hr>
 <h2>📊 数据概览</h2>
-<table><thead><tr><th>扫描源</th><th>抓取文章</th><th>时间范围</th><th>精选</th></tr></thead><tbody><tr><td>86/92</td><td>2621 篇 → 28 篇</td><td>48h</td><td><strong>15 篇</strong></td></tr></tbody></table>
+<table><thead><tr><th>扫描源</th><th>抓取文章</th><th>时间范围</th><th>精选</th></tr></thead><tbody><tr><td>80/92</td><td>2417 篇 → 32 篇</td><td>48h</td><td><strong>15 篇</strong></td></tr></tbody></table>
 <h3>分类分布</h3>
 <div class="code-wrap"><div class="code-title">mermaid</div><pre><code>pie showData
     title "文章分类分布"
-    "🛠 工具 / 开源" : 6
-    "💡 观点 / 杂谈" : 5
-    "🤖 AI / ML" : 2
-    "🔒 安全" : 1
-    "⚙️ 工程" : 1</code></pre></div>
+    "🤖 AI / ML" : 4
+    "🛠 工具 / 开源" : 4
+    "💡 观点 / 杂谈" : 4
+    "🔒 安全" : 3</code></pre></div>
 <h3>高频关键词</h3>
 <div class="code-wrap"><div class="code-title">mermaid</div><pre><code>xychart-beta horizontal
     title "高频关键词"
-    x-axis ["datasette", "plugins", "nvidia", "ai", "ethics", "responsibility", "ai agents", "workos", "tool usage", "intent", "maplibre", "geospatial"]
-    y-axis "出现次数" 0 --&gt; 9
-    bar [7, 4, 3, 2, 1, 1, 1, 1, 1, 1, 1, 1]</code></pre></div>
+    x-axis ["datasette", "nvidia", "llm", "macos", "full disk access", "release", "ai economy", "iphone duo", "face unlock", "open-weight models", "privacy", "local ai"]
+    y-axis "出现次数" 0 --&gt; 6
+    bar [4, 3, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1]</code></pre></div>
 <div class="details">
 <p class="summary">📈 纯文本关键词图（终端友好）</p>
-<div class="code-wrap"><pre><code>datasette      │ ████████████████████ 7
-plugins        │ ███████████░░░░░░░░░ 4
-nvidia         │ █████████░░░░░░░░░░░ 3
-ai             │ ██████░░░░░░░░░░░░░░ 2
-ethics         │ ███░░░░░░░░░░░░░░░░░ 1
-responsibility │ ███░░░░░░░░░░░░░░░░░ 1
-ai agents      │ ███░░░░░░░░░░░░░░░░░ 1
-workos         │ ███░░░░░░░░░░░░░░░░░ 1
-tool usage     │ ███░░░░░░░░░░░░░░░░░ 1
-intent         │ ███░░░░░░░░░░░░░░░░░ 1</code></pre></div>
+<div class="code-wrap"><pre><code>datasette          │ ████████████████████ 4
+nvidia             │ ███████████████░░░░░ 3
+llm                │ ██████████░░░░░░░░░░ 2
+macos              │ ██████████░░░░░░░░░░ 2
+full disk access   │ ██████████░░░░░░░░░░ 2
+release            │ ██████████░░░░░░░░░░ 2
+ai economy         │ ██████████░░░░░░░░░░ 2
+iphone duo         │ ██████████░░░░░░░░░░ 2
+face unlock        │ ██████████░░░░░░░░░░ 2
+open-weight models │ █████░░░░░░░░░░░░░░░ 1</code></pre></div>
 </div>
 <h3>🏷️ 话题标签</h3>
-<p><strong>datasette</strong>(7) · <strong>plugins</strong>(4) · <strong>nvidia</strong>(3) · ai(2) · ethics(1) · responsibility(1) · ai agents(1) · workos(1) · tool usage(1) · intent(1) · maplibre(1) · geospatial(1) · plugin(1) · release(1) · milestone(1) · claude fable(1) · security fix(1) · vulnerability(1) · jensen huang(1) · leadership(1)</p>
-<hr>
-<h2>🛠 工具 / 开源</h2>
-<h3>1. Patrick McGee 评论 Nvidia 考虑挖角苹果硬件主管 Johny Srouji</h3>
-<p><a href="https://simonwillison.net/2026/Nov/15/datasette-maplibre/">datasette-maplibre 0.1a0</a> — <strong>simonwillison.net</strong> · 5 小时前 · ⭐ 24/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>Patrick McGee 认为苹果硬件主管 Johny Srouji 是领导 Nvidia 的绝佳人选，并相信他会接受这一职位。他指出 Srouji 在苹果已达职业天花板，虽然不是 CEO 候选人，但他能力出众且野心勃勃，长期以来希望芯片设计能主导产品发布和时间表。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Patrick McGee believes Apple's hardware chief Johny Srouji would be an excellent choice to lead Nvidia and would accept the role. He suggests Srouji has hit a ceiling at Apple, is highly competent and ambitious, and has long desired chip designs to dictate product launch timelines.</blockquote>
-<p>🏷️ Datasette, MapLibre, geospatial, plugin</p>
-<hr>
-<h3>2. Datasette Vega 0.7 发布：更新图表插件以兼容最新 Datasette</h3>
-<p><a href="https://simonwillison.net/2026/Nov/15/datasette/">datasette 1.0a43</a> — <strong>simonwillison.net</strong> · 6 小时前 · ⭐ 24/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>Datasette Vega 插件迎来 0.7 版本更新，这是其最长时间未更新的插件，用于基于 Vega-Lite 渲染数据图表。此次更新主要是为了兼容最新的 Datasette alpha 版本，并进行了一些界面调整，使其能更好地与 Datasette 的其他组件协同工作。该插件上次发布是在 2018 年。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Datasette Vega 0.7 is a release for the longest-untouched plugin, which renders charts using Vega-Lite against data. The update primarily ensures compatibility with the latest Datasette alphas and includes cosmetic tweaks for better integration. The last release was in July 2018.</blockquote>
-<p>🏷️ Datasette, release, milestone, Claude Fable</p>
-<hr>
-<h3>3. 本周包管理：2026年11月14日</h3>
-<p><a href="https://nesbitt.io/2026/11/14/this-week-in-package-management.html">This Week in Package Management: 14 November 2026</a> — <strong>nesbitt.io</strong> · 1 天前 · ⭐ 23/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>本周包管理汇集了来自整个包管理领域的最新发布、安全公告和相关文章。内容涵盖了各种包管理器（如 npm, pip, apt 等）的更新动态和安全建议，为开发者和系统管理员提供了了解行业最新进展和维护系统安全的重要信息。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>This Week in Package Management on November 14, 2026, compiles the latest releases, advisories, and articles from across the package management world. It covers updates and security recommendations for various package managers (e.g., npm, pip, apt), providing essential information for developers and system administrators to stay informed about industry trends and maintain system security.</blockquote>
-<p>🏷️ package management, releases, advisories</p>
-<hr>
-<h3>4. Datasette Apps 0.4a0 发布</h3>
-<p><a href="https://simonwillison.net/2026/Nov/15/datasette-apps/">datasette-apps 0.4a0</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 22/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>Datasette Apps 是一种沙盒化的 HTML 和 JavaScript 应用，可以集成到 Datasette 中。这些应用能够运行 SQL 查询，处理你的数据。新版本 0.4a0 增加了对链接的支持，允许应用通过 URL 片段接收和使用信息。同时，它还报告了支持的 URL 方案，以便与 Datasette 更好地集成。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Datasette Apps are sandboxed HTML and JavaScript applications that integrate within Datasette. These applications can execute SQL queries against your data. The new version 0.4a0 introduces support for linking, allowing apps to receive and utilize information via URL fragments. It also reports supported URL schemes for better integration with Datasette.</blockquote>
-<p>🏷️ Datasette, plugins, sandboxed apps, SQL</p>
-<hr>
-<h3>5. Datasette Agent 0.6a0 发布</h3>
-<p><a href="https://simonwillison.net/2026/Nov/15/datasette-agent/">datasette-agent 0.6a0</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 22/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>Datasette Agent 是一个用于 Datasette 的插件，允许用户通过提问来查询数据。本次 0.6a0 版本包含了一些小的修复和改进。最显著的变化是，它现在直接在 Datasette 的主页上添加了一个代理提示输入框。这个输入框支持通过哈希提及表和查询来交互。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Datasette Agent is a plugin for Datasette that allows users to query data by asking questions. This 0.6a0 release includes several small fixes and improvements. Most notably, it now adds an agent prompt input box directly to the Datasette homepage. This input box supports interaction through hash mentions of tables and queries.</blockquote>
-<p>🏷️ Datasette, plugins, AI agent, data analysis</p>
-<hr>
-<h3>6. Datasette Vega 0.7 发布</h3>
-<p><a href="https://simonwillison.net/2026/Nov/14/datasette-vega/">datasette-vega 0.7</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 22/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>Datasette Vega 插件迎来了 0.7 版本更新，这是该插件自 2018 年 7 月以来首次更新。该插件用于根据表格或自定义查询中的数据渲染图表，支持 Vega-Lite。此次更新主要是为了兼容最新的 Datasette Alpha 版本，并进行了一些外观上的调整，以更好地与 Datasette 的新版本协同工作。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Datasette Vega plugin has received its 0.7 release, marking its first update since July 2018. This plugin is used for rendering charts based on data from tables or custom queries, supporting Vega-Lite. The update primarily aims to ensure compatibility with the latest Datasette alphas and includes cosmetic tweaks for better synergy with newer Datasette versions.</blockquote>
-<p>🏷️ Datasette, plugins, Vega-Lite, data visualization</p>
-<hr>
-<h2>💡 观点 / 杂谈</h2>
-<h3>7. Datasette Apps 0.4a0 发布：支持链接和 URL Scheme</h3>
-<p><a href="https://borretti.me/article/taking-ai-seriously">Taking AI Seriously</a> — <strong>borretti.me</strong> · 1 天前 · ⭐ 26/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>Datasette Apps 0.4a0 版本现已发布，引入了对链接的支持，允许应用通过 URL fragments 与 Datasette 交互。该版本还报告了支持的 URL Schemes，增强了应用的可发现性和集成能力。Datasette Apps 是运行在 Datasette 内的沙盒化 HTML 和 JavaScript 应用，能够执行 SQL 查询，类似于 Claude Artifacts。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Datasette Apps 0.4a0 introduces support for linking, allowing apps to utilize URL fragments for interaction. It also reports supported URL schemes, enhancing discoverability and integration. Datasette Apps are sandboxed HTML and JavaScript applications within Datasette capable of running SQL queries, akin to Claude Artifacts.</blockquote>
-<p>🏷️ AI, ethics, responsibility</p>
-<hr>
-<h3>8. 英伟达的下一步是什么？</h3>
-<p><a href="https://steveblank.com/2026/11/15/whats-next-for-nvidia/">What’s Next For Nvidia?</a> — <strong>steveblank.com</strong> · 7 小时前 · ⭐ 24/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>文章探讨了在创始人兼CEO黄仁勋辞职后，英伟达可能面临的挑战。历史上，许多由富有远见的创始人领导的公司在领导层更替后，创新能力会下降，公司往往依靠惯性和品牌效应维持一段时间。作者认为，英伟达面临着失去昔日辉煌的风险，并暗示了其未来发展的不确定性。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>This article discusses the potential challenges facing Nvidia following the resignation of its co-founder and CEO, Jensen Huang. Historically, many companies led by visionary founders experience a decline in innovation after leadership changes, often coasting on momentum and brand recognition. The author suggests Nvidia is at risk of losing its former glory, hinting at uncertainties in its future development.</blockquote>
-<p>🏷️ Nvidia, Jensen Huang, leadership, innovation</p>
-<hr>
-<h3>9. PCAST 军团</h3>
-<p><a href="https://www.whitehouse.gov/ostp/presidents-council-of-advisors-on-science-and-technology/">The Legion of PCAST</a> — <strong>daringfireball.net</strong> · 12 小时前 · ⭐ 24/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>文章提及了 David Sacks 在美国政府中担任的与人工智能相关的职位，特别是他在总统科学技术顾问委员会（PCAST）的联合主席身份。Sacks 此前曾是政府的“AI沙皇”，但其任期有限。文章将 Sacks 的角色置于当前围绕人工智能的潜在争议和市场泡沫的背景下，暗示了其在科技政策领域的影响力。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>The article mentions David Sacks' roles in the U.S. government related to artificial intelligence, particularly his co-chairmanship of the President's Council of Advisors on Science and Technology (PCAST). Sacks previously served as the administration's "AI czar" but had a limited term. The piece places Sacks' position within the context of current controversies and market bubbles surrounding AI, highlighting his influence in tech policy.</blockquote>
-<p>🏷️ AI, Nvidia, scandal, David Sacks</p>
-<hr>
-<h3>10. Patrick McGee 谈论 Johny Srouji 和 Nvidia</h3>
-<p><a href="https://x.com/patrickmcgee_/status/2120799867140550999">Patrick McGee on Johny Srouji and Nvidia</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 22/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>Patrick McGee，一位作者和播客主持人，在 X 平台上就 Nvidia 考虑聘请 Johny Srouji 一事发表了看法。他认为苹果硬件主管 Johny Srouji 是领导 Nvidia 的绝佳人选，并且相信他会接受这个职位。McGee 指出 Srouji 在苹果已达职业瓶颈，无法成为 CEO，但他能力出众且雄心勃勃，一直希望芯片设计能主导苹果的产品发布和时间表。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Patrick McGee, an author and podcast host, shared his thoughts on X regarding Nvidia's consideration of hiring Johny Srouji. He believes Apple's hardware chief, Johny Srouji, would be an excellent choice to lead Nvidia and that he would accept the position. McGee notes that Srouji has hit a ceiling at Apple and won't become CEO, but he is highly competent, ambitious, and has long desired chip designs to dictate Apple's product launches and timelines.</blockquote>
-<p>🏷️ Apple, Nvidia, Johny Srouji, tech leadership</p>
-<hr>
-<h3>11. Joanna Stern 评测 HomeView</h3>
-<p><a href="https://www.youtube.com/watch?v=yVTcVtLn2o4">Joanna Stern Reviews the HomeView</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 21/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>Joanna Stern 的 HomeView 评测被评价为“好得令人难以置信”，内容既有信息量又充满幽默感。除了主要的评测内容，她还制作了一个有趣的附加视频，非常符合作者的兴趣。评测被给予了高度评价。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Joanna Stern's review of HomeView is described as "so goddamn good," being both informative and hilarious. In addition to the main review, she also created a fun bonus reel that aligns well with the author's interests. The review has received high praise.</blockquote>
-<p>🏷️ HomeView, review, tech product</p>
+<p><strong>datasette</strong>(4) · <strong>nvidia</strong>(3) · <strong>llm</strong>(2) · macos(2) · full disk access(2) · release(2) · ai economy(2) · iphone duo(2) · face unlock(2) · open-weight models(1) · privacy(1) · local ai(1) · ai agents(1) · tools(1) · workos(1) · permissions(1) · privacy settings(1) · system protection(1) · privacy controls(1) · ui changes(1)</p>
 <hr>
 <h2>🤖 AI / ML</h2>
-<h3>12. Datasette Agent 0.6a0 发布：改进主页交互和表格/查询提及</h3>
-<p><a href="https://www.workos.com/airlock?utm_source=daringfireball&amp;amp;amp;utm_medium=newsletter&amp;amp;amp;utm_campaign=q42026">WorkOS: Let Agents Use Your Tools Without Giving Them Free Rein</a> — <strong>daringfireball.net</strong> · 14 小时前 · ⭐ 25/30</p>
+<h3>1. 如何轻松使用私有、开源权重模型</h3>
+<p><a href="https://micahflee.com/heres-how-anyone-can-easily-use-private-open-weight-models/">Here's how anyone can easily use private, open weight models</a> — <strong>micahflee.com</strong> · 14 小时前 · ⭐ 26/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Datasette Agent 0.6a0 版本带来了一系列小修复和改进，最显著的是在 Datasette 主页直接集成了 Agent 提示输入框。新版本支持通过 hash-mentions 提及表格和查询，简化了用户与数据的交互方式。Datasette Agent 是一个 Datasette 插件，允许用户通过自然语言提问来查询数据。</blockquote>
+<blockquote>尽管大型语言模型（LLM）存在争议，但它们功能强大且实用。然而，用户对OpenAI和Anthropic等公司的信任度不高，担心数据隐私问题。本文提供了一种解决方案，允许用户轻松运行私有、开源权重的LLM，从而在不依赖第三方服务的情况下享受LLM的强大能力。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Datasette Agent 0.6a0 includes accumulated small fixes, notably adding an agent prompt directly to the Datasette homepage. It now supports hash-mentions for tables and queries, simplifying user interaction. This plugin allows users to ask questions about their data using natural language.</blockquote>
-<p>🏷️ AI agents, WorkOS, tool usage, intent</p>
+<blockquote>Large Language Models (LLMs) are powerful and useful, but users are wary of trusting their data with companies like OpenAI and Anthropic. This article provides a solution for easily running private, open-weight LLMs, allowing users to leverage LLM capabilities without relying on third-party services.</blockquote>
+<p>🏷️ open-weight models, LLM, privacy, local AI</p>
 <hr>
-<h3>13. datasette-llm 0.1a11 发布</h3>
-<p><a href="https://simonwillison.net/2026/Nov/14/datasette-llm/">datasette-llm 0.1a11</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 23/30</p>
+<h3>2. WorkOS：让智能体在不失控的情况下使用你的工具</h3>
+<p><a href="https://www.workos.com/airlock?utm_source=daringfireball&amp;amp;amp;utm_medium=newsletter&amp;amp;amp;utm_campaign=q42026">WorkOS: Let Agents Use Your Tools Without Giving Them Free Rein</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 26/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>datasette-llm 0.1a11 发布，这是一个用于 Datasette 的中间插件，支持配置大型语言模型（LLMs）供其他 Datasette 插件使用。新版本增加了对 OpenAI 兼容端点的支持，这意味着 Datasette 可以配置为使用任何遵循 OpenAI 标准协议的 LLM 服务。这为用户提供了更大的灵活性，可以使用本地部署或第三方提供的 LLM。</blockquote>
+<blockquote>智能体（Agents）的任务在运行时才能确定，预设的角色分配往往不准确。WorkOS Airlock 允许为智能体设定明确的策略，每次调用都会根据其意图进行检查，无论是读取问题还是发送邮件。该系统能自动允许、拒绝或转交人工审批，并记录所有决策，确保智能体安全有效地执行任务。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>datasette-llm 0.1a11 is released, an intermediate plugin for Datasette that supports configuring Large Language Models (LLMs) for use with other Datasette plugins. This new version adds support for OpenAI-compatible endpoints, allowing Datasette to be configured to use any LLM service that adheres to the OpenAI pseudo-standard protocol. This offers users greater flexibility to utilize locally deployed or third-party LLMs.</blockquote>
-<p>🏷️ Datasette, LLM, plugins, AI integration</p>
+<blockquote>WorkOS Airlock enables agents to use your tools securely by checking every call against its intent, rather than relying on pre-assigned roles. Policies are set once, and each agent action is either allowed, denied, or sent for human approval, with all verdicts logged. This ensures agents perform tasks safely and effectively without overstepping boundaries.</blockquote>
+<p>🏷️ AI agents, tools, WorkOS, permissions</p>
+<hr>
+<h3>3. Paul Christiano：AI可能在12个月内发展到足以颠覆政府的程度</h3>
+<p><a href="https://www.dwarkesh.com/p/paul-christiano-2">Paul Christiano – We could be 12 months away from AIs that can overthrow the government</a> — <strong>dwarkesh.com</strong> · 13 小时前 · ⭐ 25/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Paul Christiano在采访中预测，AI技术可能在未来12个月内发展到能够颠覆政府的程度，并警告这将对人类社会造成难以恢复的影响。他认为，AI的快速发展带来了巨大的潜在风险。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Paul Christiano predicts that AI could advance to a level capable of overthrowing governments within 12 months, warning of potentially irrecoverable consequences for humanity. He highlights the significant risks associated with the rapid development of AI.</blockquote>
+<p>🏷️ AI safety, AGI, governance, existential risk</p>
+<hr>
+<h3>4. llm 0.37.3 发布</h3>
+<p><a href="https://simonwillison.net/2026/Nov/16/llm/">llm 0.37.3</a> — <strong>simonwillison.net</strong> · 7 小时前 · ⭐ 24/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>LLM 工具发布了 0.37.3 版本，这是一个主要为修复 Homebrew 包问题的错误修复版本。该问题源于 Homebrew 最近更新的 SQLite 版本 3.54.1 中包含的一个修复。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>LLM has released version 0.37.3, a bug fix release primarily addressing an issue with its Homebrew package. This problem stemmed from a fix included in the latest Homebrew version of SQLite, 3.54.1.</blockquote>
+<p>🏷️ LLM, bug fix, Homebrew, datasette</p>
+<hr>
+<h2>🛠 工具 / 开源</h2>
+<h3>5. datasette-maplibre 0.1a0 发布</h3>
+<p><a href="https://simonwillison.net/2026/Nov/15/datasette-maplibre/">datasette-maplibre 0.1a0</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 25/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Datasette 推出了一款新的地理空间插件 datasette-maplibre 0.1a0。该插件结合了 MapLibre GL 库和 OpenFreemap，一个免费的矢量地图服务器。这是 Datasette 地理空间插件领域的一项新进展。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Datasette has released datasette-maplibre 0.1a0, a new geospatial plugin. This plugin integrates the MapLibre GL library with OpenFreemap, a free vector map server, marking a new development in Datasette's geospatial plugin offerings.</blockquote>
+<p>🏷️ Datasette, plugin, geospatial, MapLibre</p>
+<hr>
+<h3>6. datasette 1.0a43 发布</h3>
+<p><a href="https://simonwillison.net/2026/Nov/15/datasette/">datasette 1.0a43</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 25/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Datasette 1.0a43 发布，标志着其 1.0 版本里程碑的进展。本次更新引入了输出渲染器的流式支持，并利用 Claude Fable 5.2 辅助开发，目前 1.0 版本里程碑已完成 53%。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Datasette 1.0a43 has been released, advancing its 1.0 milestone. This update introduces streaming support for output renderers and was developed with assistance from Claude Fable 5.2, with the 1.0 milestone now 53% complete.</blockquote>
+<p>🏷️ Datasette, release, milestone, Claude</p>
+<hr>
+<h3>7. 开发者持续优化iPhone Duo应用</h3>
+<p><a href="https://x.com/arinwaichulis/status/2122397676767522942">Developers Continue to Optimize iPhone Apps for the Duo</a> — <strong>daringfireball.net</strong> · 8 小时前 · ⭐ 23/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>苹果公司官员Greg Joswiak在X平台上宣布，已有超过20万款应用针对iPhone Duo进行了优化，这一数字在短短一周多时间内翻倍。尽管如此，作者在测试新版iPhone Duo时发现，苹果自家的Apple Store应用尚未进行Duo优化，这显得有些奇怪，因为该应用距离上次更新已有三个月。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Greg Joswiak announced on X that over 200,000 apps are now optimized for the iPhone Duo, a number that has doubled in just over a week. However, the author noted during testing that Apple's own Apple Store app, last updated three months ago, is still not Duo-optimized, which he finds odd.</blockquote>
+<p>🏷️ iPhone Duo, app optimization, face unlock, hardware</p>
+<hr>
+<h3>8. iOS 27.3 Beta 2新功能：“通过前置摄像头解锁”iPhone Duo</h3>
+<p><a href="https://www.macrumors.com/2026/11/16/iphone-duo-face-unlock/">‘Unlock With Front Camera’ — New Feature for iPhone Duo in iOS 27.3 Beta 2</a> — <strong>daringfireball.net</strong> · 12 小时前 · ⭐ 23/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>MacRumors报道，苹果在iOS 27.3 Beta 2版本中为iPhone Duo新增了通过前置摄像头解锁的选项，为用户提供了更多访问设备内容的方式。该面部识别解锁功能仅限于锁屏界面，而Apple Pay支付、输入密码等敏感操作仍需Touch ID或密码验证。此功能需要较新的Touch ID或密码。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>MacRumors reports that Apple has added an option to unlock the iPhone Duo using the front-facing camera in the iOS 27.3 Beta 2. This facial recognition feature is limited to the Lock Screen, while sensitive actions like Apple Pay purchases and password entries still require Touch ID or a passcode. The camera unlock requires a recent Touch ID or passcode.</blockquote>
+<p>🏷️ iPhone Duo, face unlock, iOS beta, biometrics</p>
+<hr>
+<h2>💡 观点 / 杂谈</h2>
+<h3>9. Ben Thompson 谈英伟达</h3>
+<p><a href="https://stratechery.com/2026/obituaries/">Ben Thompson on Nvidia</a> — <strong>daringfireball.net</strong> · 12 小时前 · ⭐ 24/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Ben Thompson 在 Stratechery 上分析了英伟达的“高风险业务”模式。他指出，英伟达利用其现金流和信用评级来支持购买其芯片的公司，这种模式被一些人视为“循环融资”，而另一些人则认为是通往AI盈利未来的必要桥梁。这种模式只有像英伟达这样规模的公司才能实现。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Ben Thompson at Stratechery analyzes Nvidia's 'Risky Business' model, where the company uses its cash flow and credit rating to backstop chip purchasers. While bears call it 'circular financing,' bulls see it as a bridge to a future where AI revenue pays down debt. This strategy is uniquely possible for a multi-trillion dollar company like Nvidia.</blockquote>
+<p>🏷️ Nvidia, AI economy, financing, semiconductors</p>
+<hr>
+<h3>10. 华尔街日报：英伟达为AI经济提供“无限支票”的日子即将结束</h3>
+<p><a href="https://www.wsj.com/tech/ai/nvidias-days-as-an-open-checkbook-for-the-ai-economy-are-numbered-90c7b388">WSJ: ‘Nvidia’s Days as an Open Checkbook for the AI Economy Are Numbered’</a> — <strong>daringfireball.net</strong> · 13 小时前 · ⭐ 24/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>《华尔街日报》报道称，英伟达在AI经济中的支持角色正在发生转变。在创始人兼CEO黄仁勋离任前，公司已开始调整其支持AI初创公司的策略。新任CEO上任后，预计这种收缩将更加明显，因为他此前对某些交易持谨慎态度。这可能意味着初创公司将难以再像过去那样依赖英伟达的资金和资源支持。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>The Wall Street Journal reports that Nvidia's role in backing the AI economy is shifting. Even before CEO Jensen Huang's departure, the company was laying the groundwork to reduce its support for AI startups. With a new finance chief at the helm who was reportedly wary of some past deals, startups can expect an even greater pullback. This suggests a move away from Nvidia acting as an 'open checkbook' for the AI sector.</blockquote>
+<p>🏷️ Nvidia, AI economy, finance, strategy</p>
+<hr>
+<h3>11. 我的尘土帝国</h3>
+<p><a href="https://geohot.github.io//blog/jekyll/update/2026/11/17/my-empire-of-dirt.html">My Empire of Dirt</a> — <strong>geohot.github.io</strong> · 15 小时前 · ⭐ 24/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>作者认为，在人工智能（AI）的未来发展中，像黄仁勋这样的个人领导者、供应商和客户都将变得不再重要。随着“自主研究机构”（RSI）的出现，未来的需求将完全由内部生成，代理（agents）之间会自行协作，将外部的参与者排除在外。这种观点预示着一个高度自主和内部循环的AI新时代。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>The author posits that in the future of AI, individuals like Jensen Huang, suppliers, and customers will become obsolete. With the advent of 'Autonomous Research Institutions' (ARIs), future demand will be internally generated, with agents collaborating amongst themselves and excluding external parties. This vision points towards a highly autonomous and self-contained AI era.</blockquote>
+<p>🏷️ future of AI, decentralization, automation, disruption</p>
+<hr>
+<h3>12. 英伟达的下一步是什么？</h3>
+<p><a href="https://steveblank.com/2026/11/15/whats-next-for-nvidia/">What’s Next For Nvidia?</a> — <strong>steveblank.com</strong> · 1 天前 · ⭐ 23/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Steve Blank的文章探讨了在创始人兼CEO黄仁勋辞职后，英伟达可能面临的挑战。文章指出，当一位富有远见的CEO离开公司时，创新往往会随之停止，公司可能依靠惯性和品牌优势度过一段时间，但很少能重拾昔日辉煌。这正是英伟达当前面临的危险。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Steve Blank's article discusses the challenges Nvidia might face following the resignation of its founder and CEO, Jensen Huang. The piece argues that when a visionary CEO departs, innovation often ceases, and companies may coast on momentum and brand, rarely regaining former glory. This is presented as the danger currently facing Nvidia.</blockquote>
+<p>🏷️ Nvidia, Jensen Huang, leadership, innovation</p>
 <hr>
 <h2>🔒 安全</h2>
-<h3>14. Joanna Stern 评测 HomeView 视频</h3>
-<p><a href="https://simonwillison.net/2026/Nov/15/datasette-2/">datasette 0.65.6</a> — <strong>simonwillison.net</strong> · 6 小时前 · ⭐ 24/30</p>
+<h3>13. Apple支持文档：macOS 27.3 Beta 2中的新‘全盘访问’和‘系统与App保护覆盖’设置</h3>
+<p><a href="https://support.apple.com/en-us/149699">Apple Support Document on the New ‘Full Disk Access’ and ‘System &amp; App Protection Override’ Settings in MacOS 27.3 Beta 2</a> — <strong>daringfireball.net</strong> · 5 小时前 · ⭐ 25/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Joanna Stern 的 HomeView 评测视频被高度评价为信息丰富且极其幽默。视频内容被认为非常出色，并附带了一个有趣的额外花絮短片。</blockquote>
+<blockquote>macOS 27.3 Beta 2引入了新的“全盘访问”（Full Disk Access）和“系统与App保护覆盖”（System &amp; App Protection Override）设置，旨在提高用户对敏感权限授予的认知和控制。这些新设置旨在防止用户在不完全理解其含义的情况下授予过多权限，并为用户提供更精细的控制选项。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Joanna Stern's review of HomeView is described as exceptionally good, both informative and hilarious. A fun bonus reel is also mentioned as being particularly appealing.</blockquote>
-<p>🏷️ Datasette, security fix, vulnerability</p>
+<blockquote>macOS 27.3 Beta 2 introduces new 'Full Disk Access' and 'System &amp; App Protection Override' settings to enhance user awareness and control over sensitive permissions. These changes aim to prevent users from granting excessive access without fully understanding the implications, offering more granular control.</blockquote>
+<p>🏷️ macOS, privacy settings, full disk access, system protection</p>
 <hr>
-<h2>⚙️ 工程</h2>
-<h3>15. 运维需要摩擦</h3>
-<p><a href="https://www.jeffgeerling.com/blog/2026/ops-needs-friction/">Ops needs friction</a> — <strong>jeffgeerling.com</strong> · 1 天前 · ⭐ 24/30</p>
+<h3>14. macOS Golden Gate 27.3b2 包含全盘访问的新隐私控制（及更多）</h3>
+<p><a href="https://9to5mac.com/2026/11/16/macos-27-3-includes-new-privacy-controls-for-full-disk-access-and-more/">MacOS Golden Gate 27.3b2 Includes New Privacy Controls for Full Disk Access (and More)</a> — <strong>daringfireball.net</strong> · 11 小时前 · ⭐ 25/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>在经历了微软和 FAA 的重大故障后，文章探讨了运维（Ops）中“摩擦”的重要性。作者认为，适度的摩擦（例如，需要人工审批的流程、额外的检查步骤）能够防止小错误演变成大规模故障。通过增加必要的阻碍，可以提高系统的稳定性和可靠性，避免因自动化过度而导致的潜在风险。</blockquote>
+<blockquote>macOS 27.3 开发者测试版 2 引入了对“全盘访问”权限授予界面的重大更新，以确保用户在授予应用此级别访问权限时必须进行明确操作。新版本将“设备控制和数据访问”统一为一个开关，并提供了更细致的权限管理选项。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Following major outages at Microsoft and the FAA, this article discusses the importance of "friction" in operations (Ops). The author argues that moderate friction, such as processes requiring human approval or extra checks, can prevent small errors from escalating into large-scale failures. By introducing necessary impediments, system stability and reliability can be enhanced, avoiding potential risks associated with excessive automation.</blockquote>
-<p>🏷️ outage, reliability, operations, system failures</p>
+<blockquote>macOS 27.3 Developer Beta 2 introduces significant updates to the Full Disk Access permission granting UI, requiring explicit user action for this extraordinary level of access. The update unifies 'Device Control and Data Access' into a single toggle and provides more granular permission management options.</blockquote>
+<p>🏷️ macOS, privacy controls, full disk access, UI changes</p>
 <hr>
-<p>*生成于 2026-11-16 05:52 | 扫描 86 源 → 获取 2621 篇 → 精选 15 篇* *基于 <a href="https://refactoringenglish.com/tools/hn-popularity/">Hacker News Popularity Contest 2025</a> RSS 源列表，由 <a href="https://x.com/karpathy">Andrej Karpathy</a> 推荐*</p>
+<h3>15. datasette 0.65.6 发布</h3>
+<p><a href="https://simonwillison.net/2026/Nov/15/datasette-2/">datasette 0.65.6</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 25/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Datasette 0.65.6 发布，主要包含一个从 1.0a43 版本回溯的轻微安全修复。该修复解决了在使用 <code>add_database</code> 并指定不同于名称的路由时，可能允许未授权用户下载数据库的问题。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Datasette 0.65.6 has been released, featuring a minor security fix backported from version 1.0a43. This fix addresses an issue where unauthorized users could potentially download databases registered with <code>add_database</code> using a route different from their name.</blockquote>
+<p>🏷️ Datasette, security fix, vulnerability, release</p>
+<hr>
+<p>*生成于 2026-11-17 07:30 | 扫描 80 源 → 获取 2417 篇 → 精选 15 篇* *基于 <a href="https://refactoringenglish.com/tools/hn-popularity/">Hacker News Popularity Contest 2025</a> RSS 源列表，由 <a href="https://x.com/karpathy">Andrej Karpathy</a> 推荐*</p>
     </article>
   </main>
-  <script id="speech-text" type="application/json">"🎧 点这里朗读今日日报\n📰 AI 博客每日精选 — 2026-11-16\n来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15\n📝 今日看点\n今日技术看点聚焦AI与数据交互的融合，以及科技巨头的人才争夺。Datasette 系列工具的更新，特别是 Agent 和 LLM 插件，展示了AI在数据分析和应用中的潜力。同时，英伟达高管变动传闻和苹果硬件主管的潜在跳槽，预示着芯片行业和科技巨头间的人才流动与战略布局正暗流涌动。此外，运维领域对“摩擦”重要性的探讨，也为保障系统稳定提供了新视角。\n \n🏆 今日必读\n🥇 Datasette Apps 0.4a0 发布：支持链接和 URL Scheme\nTaking AI Seriously — borretti.me · 1 天前 · 💡 观点 / 杂谈\n中文摘要\nDatasette Apps 0.4a0 版本现已发布，引入了对链接的支持，允许应用通过 URL fragments 与 Datasette 交互。该版本还报告了支持的 URL Schemes，增强了应用的可发现性和集成能力。Datasette Apps 是运行在 Datasette 内的沙盒化 HTML 和 JavaScript 应用，能够执行 SQL 查询，类似于 Claude Artifacts。\nEnglish Summary\nDatasette Apps 0.4a0 introduces support for linking, allowing apps to utilize URL fragments for interaction. It also reports supported URL schemes, enhancing discoverability and integration. Datasette Apps are sandboxed HTML and JavaScript applications within Datasette capable of running SQL queries, akin to Claude Artifacts.\n💡 为什么值得读: 了解如何在 Datasette 中构建和链接沙盒应用，以增强数据交互能力。\n💡 Why read it: Learn how to build and link sandboxed applications within Datasette for enhanced data interaction capabilities.\n🏷️ AI, ethics, responsibility\n🥈 Datasette Agent 0.6a0 发布：改进主页交互和表格/查询提及\nWorkOS: Let Agents Use Your Tools Without Giving Them Free Rein — daringfireball.net · 14 小时前 · 🤖 AI / ML\n中文摘要\nDatasette Agent 0.6a0 版本带来了一系列小修复和改进，最显著的是在 Datasette 主页直接集成了 Agent 提示输入框。新版本支持通过 hash-mentions 提及表格和查询，简化了用户与数据的交互方式。Datasette Agent 是一个 Datasette 插件，允许用户通过自然语言提问来查询数据。\nEnglish Summary\nDatasette Agent 0.6a0 includes accumulated small fixes, notably adding an agent prompt directly to the Datasette homepage. It now supports hash-mentions for tables and queries, simplifying user interaction. This plugin allows users to ask questions about their data using natural language.\n💡 为什么值得读: 探索如何利用 Datasette Agent 插件通过自然语言与数据进行更直观的交互。\n💡 Why read it: Explore how to interact more intuitively with data using the Datasette Agent plugin through natural language queries.\n🏷️ AI agents, WorkOS, tool usage, intent\n🥉 Patrick McGee 评论 Nvidia 考虑挖角苹果硬件主管 Johny Srouji\ndatasette-maplibre 0.1a0 — simonwillison.net · 5 小时前 · 🛠 工具 / 开源\n中文摘要\nPatrick McGee 认为苹果硬件主管 Johny Srouji 是领导 Nvidia 的绝佳人选，并相信他会接受这一职位。他指出 Srouji 在苹果已达职业天花板，虽然不是 CEO 候选人，但他能力出众且野心勃勃，长期以来希望芯片设计能主导产品发布和时间表。\nEnglish Summary\nPatrick McGee believes Apple's hardware chief Johny Srouji would be an excellent choice to lead Nvidia and would accept the role. He suggests Srouji has hit a ceiling at Apple, is highly competent and ambitious, and has long desired chip designs to dictate product launch timelines.\n💡 为什么值得读: 深入了解苹果硬件主管 Johny Srouji 可能加入 Nvidia 的潜在影响和原因。\n💡 Why read it: Gain insight into the potential implications and reasons behind Apple's hardware chief Johny Srouji potentially joining Nvidia.\n🏷️ Datasette, MapLibre, geospatial, plugin\n \n📊 数据概览\n \n \n \n分类分布\nmermaid\npie showData\n title \"文章分类分布\"\n \"🛠 工具 / 开源\" : 6\n \"💡 观点 / 杂谈\" : 5\n \"🤖 AI / ML\" : 2\n \"🔒 安全\" : 1\n \"⚙️ 工程\" : 1\n高频关键词\nmermaid\nxychart-beta horizontal\n title \"高频关键词\"\n x-axis [\"datasette\", \"plugins\", \"nvidia\", \"ai\", \"ethics\", \"responsibility\", \"ai agents\", \"workos\", \"tool usage\", \"intent\", \"maplibre\", \"geospatial\"]\n y-axis \"出现次数\" 0 --> 9\n bar [7, 4, 3, 2, 1, 1, 1, 1, 1, 1, 1, 1]\n📈 纯文本关键词图（终端友好）\ndatasette │ ████████████████████ 7\nplugins │ ███████████░░░░░░░░░ 4\nnvidia │ █████████░░░░░░░░░░░ 3\nai │ ██████░░░░░░░░░░░░░░ 2\nethics │ ███░░░░░░░░░░░░░░░░░ 1\nresponsibility │ ███░░░░░░░░░░░░░░░░░ 1\nai agents │ ███░░░░░░░░░░░░░░░░░ 1\nworkos │ ███░░░░░░░░░░░░░░░░░ 1\ntool usage │ ███░░░░░░░░░░░░░░░░░ 1\nintent │ ███░░░░░░░░░░░░░░░░░ 1\n🏷️ 话题标签\ndatasette(7) · plugins(4) · nvidia(3) · ai(2) · ethics(1) · responsibility(1) · ai agents(1) · workos(1) · tool usage(1) · intent(1) · maplibre(1) · geospatial(1) · plugin(1) · release(1) · milestone(1) · claude fable(1) · security fix(1) · vulnerability(1) · jensen huang(1) · leadership(1)\n \n🛠 工具 / 开源\n1. Patrick McGee 评论 Nvidia 考虑挖角苹果硬件主管 Johny Srouji\ndatasette-maplibre 0.1a0 — simonwillison.net · 5 小时前 · ⭐ 24/30\n中文摘要\nPatrick McGee 认为苹果硬件主管 Johny Srouji 是领导 Nvidia 的绝佳人选，并相信他会接受这一职位。他指出 Srouji 在苹果已达职业天花板，虽然不是 CEO 候选人，但他能力出众且野心勃勃，长期以来希望芯片设计能主导产品发布和时间表。\nEnglish Summary\nPatrick McGee believes Apple's hardware chief Johny Srouji would be an excellent choice to lead Nvidia and would accept the role. He suggests Srouji has hit a ceiling at Apple, is highly competent and ambitious, and has long desired chip designs to dictate product launch timelines.\n🏷️ Datasette, MapLibre, geospatial, plugin\n \n2. Datasette Vega 0.7 发布：更新图表插件以兼容最新 Datasette\ndatasette 1.0a43 — simonwillison.net · 6 小时前 · ⭐ 24/30\n中文摘要\nDatasette Vega 插件迎来 0.7 版本更新，这是其最长时间未更新的插件，用于基于 Vega-Lite 渲染数据图表。此次更新主要是为了兼容最新的 Datasette alpha 版本，并进行了一些界面调整，使其能更好地与 Datasette 的其他组件协同工作。该插件上次发布是在 2018 年。\nEnglish Summary\nDatasette Vega 0.7 is a release for the longest-untouched plugin, which renders charts using Vega-Lite against data. The update primarily ensures compatibility with the latest Datasette alphas and includes cosmetic tweaks for better integration. The last release was in July 2018.\n🏷️ Datasette, release, milestone, Claude Fable\n \n3. 本周包管理：2026年11月14日\nThis Week in Package Management: 14 November 2026 — nesbitt.io · 1 天前 · ⭐ 23/30\n中文摘要\n本周包管理汇集了来自整个包管理领域的最新发布、安全公告和相关文章。内容涵盖了各种包管理器（如 npm, pip, apt 等）的更新动态和安全建议，为开发者和系统管理员提供了了解行业最新进展和维护系统安全的重要信息。\nEnglish Summary\nThis Week in Package Management on November 14, 2026, compiles the latest releases, advisories, and articles from across the package management world. It covers updates and security recommendations for various package managers (e.g., npm, pip, apt), providing essential information for developers and system administrators to stay informed about industry trends and maintain system security.\n🏷️ package management, releases, advisories\n \n4. Datasette Apps 0.4a0 发布\ndatasette-apps 0.4a0 — simonwillison.net · 1 天前 · ⭐ 22/30\n中文摘要\nDatasette Apps 是一种沙盒化的 HTML 和 JavaScript 应用，可以集成到 Datasette 中。这些应用能够运行 SQL 查询，处理你的数据。新版本 0.4a0 增加了对链接的支持，允许应用通过 URL 片段接收和使用信息。同时，它还报告了支持的 URL 方案，以便与 Datasette 更好地集成。\nEnglish Summary\nDatasette Apps are sandboxed HTML and JavaScript applications that integrate within Datasette. These applications can execute SQL queries against your data. The new version 0.4a0 introduces support for linking, allowing apps to receive and utilize information via URL fragments. It also reports supported URL schemes for better integration with Datasette.\n🏷️ Datasette, plugins, sandboxed apps, SQL\n \n5. Datasette Agent 0.6a0 发布\ndatasette-agent 0.6a0 — simonwillison.net · 1 天前 · ⭐ 22/30\n中文摘要\nDatasette Agent 是一个用于 Datasette 的插件，允许用户通过提问来查询数据。本次 0.6a0 版本包含了一些小的修复和改进。最显著的变化是，它现在直接在 Datasette 的主页上添加了一个代理提示输入框。这个输入框支持通过哈希提及表和查询来交互。\nEnglish Summary\nDatasette Agent is a plugin for Datasette that allows users to query data by asking questions. This 0.6a0 release includes several small fixes and improvements. Most notably, it now adds an agent prompt input box directly to the Datasette homepage. This input box supports interaction through hash mentions of tables and queries.\n🏷️ Datasette, plugins, AI agent, data analysis\n \n6. Datasette Vega 0.7 发布\ndatasette-vega 0.7 — simonwillison.net · 1 天前 · ⭐ 22/30\n中文摘要\nDatasette Vega 插件迎来了 0.7 版本更新，这是该插件自 2018 年 7 月以来首次更新。该插件用于根据表格或自定义查询中的数据渲染图表，支持 Vega-Lite。此次更新主要是为了兼容最新的 Datasette Alpha 版本，并进行了一些外观上的调整，以更好地与 Datasette 的新版本协同工作。\nEnglish Summary\nDatasette Vega plugin has received its 0.7 release, marking its first update since July 2018. This plugin is used for rendering charts based on data from tables or custom queries, supporting Vega-Lite. The update primarily aims to ensure compatibility with the latest Datasette alphas and includes cosmetic tweaks for better synergy with newer Datasette versions.\n🏷️ Datasette, plugins, Vega-Lite, data visualization\n \n💡 观点 / 杂谈\n7. Datasette Apps 0.4a0 发布：支持链接和 URL Scheme\nTaking AI Seriously — borretti.me · 1 天前 · ⭐ 26/30\n中文摘要\nDatasette Apps 0.4a0 版本现已发布，引入了对链接的支持，允许应用通过 URL fragments 与 Datasette 交互。该版本还报告了支持的 URL Schemes，增强了应用的可发现性和集成能力。Datasette Apps 是运行在 Datasette 内的沙盒化 HTML 和 JavaScript 应用，能够执行 SQL 查询，类似于 Claude Artifacts。\nEnglish Summary\nDatasette Apps 0.4a0 introduces support for linking, allowing apps to utilize URL fragments for interaction. It also reports supported URL schemes, enhancing discoverability and integration. Datasette Apps are sandboxed HTML and JavaScript applications within Datasette capable of running SQL queries, akin to Claude Artifacts.\n🏷️ AI, ethics, responsibility\n \n8. 英伟达的下一步是什么？\nWhat’s Next For Nvidia? — steveblank.com · 7 小时前 · ⭐ 24/30\n中文摘要\n文章探讨了在创始人兼CEO黄仁勋辞职后，英伟达可能面临的挑战。历史上，许多由富有远见的创始人领导的公司在领导层更替后，创新能力会下降，公司往往依靠惯性和品牌效应维持一段时间。作者认为，英伟达面临着失去昔日辉煌的风险，并暗示了其未来发展的不确定性。\nEnglish Summary\nThis article discusses the potential challenges facing Nvidia following the resignation of its co-founder and CEO, Jensen Huang. Historically, many companies led by visionary founders experience a decline in innovation after leadership changes, often coasting on momentum and brand recognition. The author suggests Nvidia is at risk of losing its former glory, hinting at uncertainties in its future development.\n🏷️ Nvidia, Jensen Huang, leadership, innovation\n \n9. PCAST 军团\nThe Legion of PCAST — daringfireball.net · 12 小时前 · ⭐ 24/30\n中文摘要\n文章提及了 David Sacks 在美国政府中担任的与人工智能相关的职位，特别是他在总统科学技术顾问委员会（PCAST）的联合主席身份。Sacks 此前曾是政府的“AI沙皇”，但其任期有限。文章将 Sacks 的角色置于当前围绕人工智能的潜在争议和市场泡沫的背景下，暗示了其在科技政策领域的影响力。\nEnglish Summary\nThe article mentions David Sacks' roles in the U.S. government related to artificial intelligence, particularly his co-chairmanship of the President's Council of Advisors on Science and Technology (PCAST). Sacks previously served as the administration's \"AI czar\" but had a limited term. The piece places Sacks' position within the context of current controversies and market bubbles surrounding AI, highlighting his influence in tech policy.\n🏷️ AI, Nvidia, scandal, David Sacks\n \n10. Patrick McGee 谈论 Johny Srouji 和 Nvidia\nPatrick McGee on Johny Srouji and Nvidia — daringfireball.net · 1 天前 · ⭐ 22/30\n中文摘要\nPatrick McGee，一位作者和播客主持人，在 X 平台上就 Nvidia 考虑聘请 Johny Srouji 一事发表了看法。他认为苹果硬件主管 Johny Srouji 是领导 Nvidia 的绝佳人选，并且相信他会接受这个职位。McGee 指出 Srouji 在苹果已达职业瓶颈，无法成为 CEO，但他能力出众且雄心勃勃，一直希望芯片设计能主导苹果的产品发布和时间表。\nEnglish Summary\nPatrick McGee, an author and podcast host, shared his thoughts on X regarding Nvidia's consideration of hiring Johny Srouji. He believes Apple's hardware chief, Johny Srouji, would be an excellent choice to lead Nvidia and that he would accept the position. McGee notes that Srouji has hit a ceiling at Apple and won't become CEO, but he is highly competent, ambitious, and has long desired chip designs to dictate Apple's product launches and timelines.\n🏷️ Apple, Nvidia, Johny Srouji, tech leadership\n \n11. Joanna Stern 评测 HomeView\nJoanna Stern Reviews the HomeView — daringfireball.net · 1 天前 · ⭐ 21/30\n中文摘要\nJoanna Stern 的 HomeView 评测被评价为“好得令人难以置信”，内容既有信息量又充满幽默感。除了主要的评测内容，她还制作了一个有趣的附加视频，非常符合作者的兴趣。评测被给予了高度评价。\nEnglish Summary\nJoanna Stern's review of HomeView is described as \"so goddamn good,\" being both informative and hilarious. In addition to the main review, she also created a fun bonus reel that aligns well with the author's interests. The review has received high praise.\n🏷️ HomeView, review, tech product\n \n🤖 AI / ML\n12. Datasette Agent 0.6a0 发布：改进主页交互和表格/查询提及\nWorkOS: Let Agents Use Your Tools Without Giving Them Free Rein — daringfireball.net · 14 小时前 · ⭐ 25/30\n中文摘要\nDatasette Agent 0.6a0 版本带来了一系列小修复和改进，最显著的是在 Datasette 主页直接集成了 Agent 提示输入框。新版本支持通过 hash-mentions 提及表格和查询，简化了用户与数据的交互方式。Datasette Agent 是一个 Datasette 插件，允许用户通过自然语言提问来查询数据。\nEnglish Summary\nDatasette Agent 0.6a0 includes accumulated small fixes, notably adding an agent prompt directly to the Datasette homepage. It now supports hash-mentions for tables and queries, simplifying user interaction. This plugin allows users to ask questions about their data using natural language.\n🏷️ AI agents, WorkOS, tool usage, intent\n \n13. datasette-llm 0.1a11 发布\ndatasette-llm 0.1a11 — simonwillison.net · 1 天前 · ⭐ 23/30\n中文摘要\ndatasette-llm 0.1a11 发布，这是一个用于 Datasette 的中间插件，支持配置大型语言模型（LLMs）供其他 Datasette 插件使用。新版本增加了对 OpenAI 兼容端点的支持，这意味着 Datasette 可以配置为使用任何遵循 OpenAI 标准协议的 LLM 服务。这为用户提供了更大的灵活性，可以使用本地部署或第三方提供的 LLM。\nEnglish Summary\ndatasette-llm 0.1a11 is released, an intermediate plugin for Datasette that supports configuring Large Language Models (LLMs) for use with other Datasette plugins. This new version adds support for OpenAI-compatible endpoints, allowing Datasette to be configured to use any LLM service that adheres to the OpenAI pseudo-standard protocol. This offers users greater flexibility to utilize locally deployed or third-party LLMs.\n🏷️ Datasette, LLM, plugins, AI integration\n \n🔒 安全\n14. Joanna Stern 评测 HomeView 视频\ndatasette 0.65.6 — simonwillison.net · 6 小时前 · ⭐ 24/30\n中文摘要\nJoanna Stern 的 HomeView 评测视频被高度评价为信息丰富且极其幽默。视频内容被认为非常出色，并附带了一个有趣的额外花絮短片。\nEnglish Summary\nJoanna Stern's review of HomeView is described as exceptionally good, both informative and hilarious. A fun bonus reel is also mentioned as being particularly appealing.\n🏷️ Datasette, security fix, vulnerability\n \n⚙️ 工程\n15. 运维需要摩擦\nOps needs friction — jeffgeerling.com · 1 天前 · ⭐ 24/30\n中文摘要\n在经历了微软和 FAA 的重大故障后，文章探讨了运维（Ops）中“摩擦”的重要性。作者认为，适度的摩擦（例如，需要人工审批的流程、额外的检查步骤）能够防止小错误演变成大规模故障。通过增加必要的阻碍，可以提高系统的稳定性和可靠性，避免因自动化过度而导致的潜在风险。\nEnglish Summary\nFollowing major outages at Microsoft and the FAA, this article discusses the importance of \"friction\" in operations (Ops). The author argues that moderate friction, such as processes requiring human approval or extra checks, can prevent small errors from escalating into large-scale failures. By introducing necessary impediments, system stability and reliability can be enhanced, avoiding potential risks associated with excessive automation.\n🏷️ outage, reliability, operations, system failures\n \n生成于 2026-11-16 05:52 | 扫描 86 源 → 获取 2621 篇 → 精选 15 篇\n基于 Hacker News Popularity Contest 2025 RSS 源列表，由 Andrej Karpathy 推荐"</script>
+  <script id="speech-text" type="application/json">"🎧 点这里朗读今日日报\n📰 AI 博客每日精选 — 2026-11-17\n来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15\n📝 今日看点\n今日技术看点聚焦AI的颠覆性潜力与安全隐私的强化。一方面，AI正以前所未有的速度发展，有望在短期内颠覆政府运作，同时开源模型和智能体工具的进步，为用户提供了更安全、可控的AI应用方式。另一方面，macOS在隐私保护方面持续加码，引入更精细的权限控制，以应对日益增长的安全挑战。\n \n🏆 今日必读\n🥇 如何轻松使用私有、开源权重模型\nHere's how anyone can easily use private, open weight models — micahflee.com · 14 小时前 · 🤖 AI / ML\n中文摘要\n尽管大型语言模型（LLM）存在争议，但它们功能强大且实用。然而，用户对OpenAI和Anthropic等公司的信任度不高，担心数据隐私问题。本文提供了一种解决方案，允许用户轻松运行私有、开源权重的LLM，从而在不依赖第三方服务的情况下享受LLM的强大能力。\nEnglish Summary\nLarge Language Models (LLMs) are powerful and useful, but users are wary of trusting their data with companies like OpenAI and Anthropic. This article provides a solution for easily running private, open-weight LLMs, allowing users to leverage LLM capabilities without relying on third-party services.\n💡 为什么值得读: 教你如何在不依赖大型科技公司的情况下，安全地运行和使用强大的开源AI模型。\n💡 Why read it: Learn how to securely run and utilize powerful open-source AI models without relying on big tech companies.\n🏷️ open-weight models, LLM, privacy, local AI\n🥈 WorkOS：让智能体在不失控的情况下使用你的工具\nWorkOS: Let Agents Use Your Tools Without Giving Them Free Rein — daringfireball.net · 1 天前 · 🤖 AI / ML\n中文摘要\n智能体（Agents）的任务在运行时才能确定，预设的角色分配往往不准确。WorkOS Airlock 允许为智能体设定明确的策略，每次调用都会根据其意图进行检查，无论是读取问题还是发送邮件。该系统能自动允许、拒绝或转交人工审批，并记录所有决策，确保智能体安全有效地执行任务。\nEnglish Summary\nWorkOS Airlock enables agents to use your tools securely by checking every call against its intent, rather than relying on pre-assigned roles. Policies are set once, and each agent action is either allowed, denied, or sent for human approval, with all verdicts logged. This ensures agents perform tasks safely and effectively without overstepping boundaries.\n💡 为什么值得读: 了解如何通过WorkOS Airlock安全地授权智能体访问和使用你的工具，避免数据泄露和误操作。\n💡 Why read it: Discover how WorkOS Airlock securely authorizes agents to access and use your tools, preventing data breaches and unintended actions.\n🏷️ AI agents, tools, WorkOS, permissions\n🥉 Apple支持文档：macOS 27.3 Beta 2中的新‘全盘访问’和‘系统与App保护覆盖’设置\nApple Support Document on the New ‘Full Disk Access’ and ‘System & App Protection Override’ Settings in MacOS 27.3 Beta 2 — daringfireball.net · 5 小时前 · 🔒 安全\n中文摘要\nmacOS 27.3 Beta 2引入了新的“全盘访问”（Full Disk Access）和“系统与App保护覆盖”（System & App Protection Override）设置，旨在提高用户对敏感权限授予的认知和控制。这些新设置旨在防止用户在不完全理解其含义的情况下授予过多权限，并为用户提供更精细的控制选项。\nEnglish Summary\nmacOS 27.3 Beta 2 introduces new 'Full Disk Access' and 'System & App Protection Override' settings to enhance user awareness and control over sensitive permissions. These changes aim to prevent users from granting excessive access without fully understanding the implications, offering more granular control.\n💡 为什么值得读: 了解macOS新隐私控制如何帮助用户更安全地管理应用程序的全盘访问权限。\n💡 Why read it: Understand how new macOS privacy controls help users manage application Full Disk Access permissions more securely.\n🏷️ macOS, privacy settings, full disk access, system protection\n \n📊 数据概览\n \n \n \n分类分布\nmermaid\npie showData\n title \"文章分类分布\"\n \"🤖 AI / ML\" : 4\n \"🛠 工具 / 开源\" : 4\n \"💡 观点 / 杂谈\" : 4\n \"🔒 安全\" : 3\n高频关键词\nmermaid\nxychart-beta horizontal\n title \"高频关键词\"\n x-axis [\"datasette\", \"nvidia\", \"llm\", \"macos\", \"full disk access\", \"release\", \"ai economy\", \"iphone duo\", \"face unlock\", \"open-weight models\", \"privacy\", \"local ai\"]\n y-axis \"出现次数\" 0 --> 6\n bar [4, 3, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1]\n📈 纯文本关键词图（终端友好）\ndatasette │ ████████████████████ 4\nnvidia │ ███████████████░░░░░ 3\nllm │ ██████████░░░░░░░░░░ 2\nmacos │ ██████████░░░░░░░░░░ 2\nfull disk access │ ██████████░░░░░░░░░░ 2\nrelease │ ██████████░░░░░░░░░░ 2\nai economy │ ██████████░░░░░░░░░░ 2\niphone duo │ ██████████░░░░░░░░░░ 2\nface unlock │ ██████████░░░░░░░░░░ 2\nopen-weight models │ █████░░░░░░░░░░░░░░░ 1\n🏷️ 话题标签\ndatasette(4) · nvidia(3) · llm(2) · macos(2) · full disk access(2) · release(2) · ai economy(2) · iphone duo(2) · face unlock(2) · open-weight models(1) · privacy(1) · local ai(1) · ai agents(1) · tools(1) · workos(1) · permissions(1) · privacy settings(1) · system protection(1) · privacy controls(1) · ui changes(1)\n \n🤖 AI / ML\n1. 如何轻松使用私有、开源权重模型\nHere's how anyone can easily use private, open weight models — micahflee.com · 14 小时前 · ⭐ 26/30\n中文摘要\n尽管大型语言模型（LLM）存在争议，但它们功能强大且实用。然而，用户对OpenAI和Anthropic等公司的信任度不高，担心数据隐私问题。本文提供了一种解决方案，允许用户轻松运行私有、开源权重的LLM，从而在不依赖第三方服务的情况下享受LLM的强大能力。\nEnglish Summary\nLarge Language Models (LLMs) are powerful and useful, but users are wary of trusting their data with companies like OpenAI and Anthropic. This article provides a solution for easily running private, open-weight LLMs, allowing users to leverage LLM capabilities without relying on third-party services.\n🏷️ open-weight models, LLM, privacy, local AI\n \n2. WorkOS：让智能体在不失控的情况下使用你的工具\nWorkOS: Let Agents Use Your Tools Without Giving Them Free Rein — daringfireball.net · 1 天前 · ⭐ 26/30\n中文摘要\n智能体（Agents）的任务在运行时才能确定，预设的角色分配往往不准确。WorkOS Airlock 允许为智能体设定明确的策略，每次调用都会根据其意图进行检查，无论是读取问题还是发送邮件。该系统能自动允许、拒绝或转交人工审批，并记录所有决策，确保智能体安全有效地执行任务。\nEnglish Summary\nWorkOS Airlock enables agents to use your tools securely by checking every call against its intent, rather than relying on pre-assigned roles. Policies are set once, and each agent action is either allowed, denied, or sent for human approval, with all verdicts logged. This ensures agents perform tasks safely and effectively without overstepping boundaries.\n🏷️ AI agents, tools, WorkOS, permissions\n \n3. Paul Christiano：AI可能在12个月内发展到足以颠覆政府的程度\nPaul Christiano – We could be 12 months away from AIs that can overthrow the government — dwarkesh.com · 13 小时前 · ⭐ 25/30\n中文摘要\nPaul Christiano在采访中预测，AI技术可能在未来12个月内发展到能够颠覆政府的程度，并警告这将对人类社会造成难以恢复的影响。他认为，AI的快速发展带来了巨大的潜在风险。\nEnglish Summary\nPaul Christiano predicts that AI could advance to a level capable of overthrowing governments within 12 months, warning of potentially irrecoverable consequences for humanity. He highlights the significant risks associated with the rapid development of AI.\n🏷️ AI safety, AGI, governance, existential risk\n \n4. llm 0.37.3 发布\nllm 0.37.3 — simonwillison.net · 7 小时前 · ⭐ 24/30\n中文摘要\nLLM 工具发布了 0.37.3 版本，这是一个主要为修复 Homebrew 包问题的错误修复版本。该问题源于 Homebrew 最近更新的 SQLite 版本 3.54.1 中包含的一个修复。\nEnglish Summary\nLLM has released version 0.37.3, a bug fix release primarily addressing an issue with its Homebrew package. This problem stemmed from a fix included in the latest Homebrew version of SQLite, 3.54.1.\n🏷️ LLM, bug fix, Homebrew, datasette\n \n🛠 工具 / 开源\n5. datasette-maplibre 0.1a0 发布\ndatasette-maplibre 0.1a0 — simonwillison.net · 1 天前 · ⭐ 25/30\n中文摘要\nDatasette 推出了一款新的地理空间插件 datasette-maplibre 0.1a0。该插件结合了 MapLibre GL 库和 OpenFreemap，一个免费的矢量地图服务器。这是 Datasette 地理空间插件领域的一项新进展。\nEnglish Summary\nDatasette has released datasette-maplibre 0.1a0, a new geospatial plugin. This plugin integrates the MapLibre GL library with OpenFreemap, a free vector map server, marking a new development in Datasette's geospatial plugin offerings.\n🏷️ Datasette, plugin, geospatial, MapLibre\n \n6. datasette 1.0a43 发布\ndatasette 1.0a43 — simonwillison.net · 1 天前 · ⭐ 25/30\n中文摘要\nDatasette 1.0a43 发布，标志着其 1.0 版本里程碑的进展。本次更新引入了输出渲染器的流式支持，并利用 Claude Fable 5.2 辅助开发，目前 1.0 版本里程碑已完成 53%。\nEnglish Summary\nDatasette 1.0a43 has been released, advancing its 1.0 milestone. This update introduces streaming support for output renderers and was developed with assistance from Claude Fable 5.2, with the 1.0 milestone now 53% complete.\n🏷️ Datasette, release, milestone, Claude\n \n7. 开发者持续优化iPhone Duo应用\nDevelopers Continue to Optimize iPhone Apps for the Duo — daringfireball.net · 8 小时前 · ⭐ 23/30\n中文摘要\n苹果公司官员Greg Joswiak在X平台上宣布，已有超过20万款应用针对iPhone Duo进行了优化，这一数字在短短一周多时间内翻倍。尽管如此，作者在测试新版iPhone Duo时发现，苹果自家的Apple Store应用尚未进行Duo优化，这显得有些奇怪，因为该应用距离上次更新已有三个月。\nEnglish Summary\nGreg Joswiak announced on X that over 200,000 apps are now optimized for the iPhone Duo, a number that has doubled in just over a week. However, the author noted during testing that Apple's own Apple Store app, last updated three months ago, is still not Duo-optimized, which he finds odd.\n🏷️ iPhone Duo, app optimization, face unlock, hardware\n \n8. iOS 27.3 Beta 2新功能：“通过前置摄像头解锁”iPhone Duo\n‘Unlock With Front Camera’ — New Feature for iPhone Duo in iOS 27.3 Beta 2 — daringfireball.net · 12 小时前 · ⭐ 23/30\n中文摘要\nMacRumors报道，苹果在iOS 27.3 Beta 2版本中为iPhone Duo新增了通过前置摄像头解锁的选项，为用户提供了更多访问设备内容的方式。该面部识别解锁功能仅限于锁屏界面，而Apple Pay支付、输入密码等敏感操作仍需Touch ID或密码验证。此功能需要较新的Touch ID或密码。\nEnglish Summary\nMacRumors reports that Apple has added an option to unlock the iPhone Duo using the front-facing camera in the iOS 27.3 Beta 2. This facial recognition feature is limited to the Lock Screen, while sensitive actions like Apple Pay purchases and password entries still require Touch ID or a passcode. The camera unlock requires a recent Touch ID or passcode.\n🏷️ iPhone Duo, face unlock, iOS beta, biometrics\n \n💡 观点 / 杂谈\n9. Ben Thompson 谈英伟达\nBen Thompson on Nvidia — daringfireball.net · 12 小时前 · ⭐ 24/30\n中文摘要\nBen Thompson 在 Stratechery 上分析了英伟达的“高风险业务”模式。他指出，英伟达利用其现金流和信用评级来支持购买其芯片的公司，这种模式被一些人视为“循环融资”，而另一些人则认为是通往AI盈利未来的必要桥梁。这种模式只有像英伟达这样规模的公司才能实现。\nEnglish Summary\nBen Thompson at Stratechery analyzes Nvidia's 'Risky Business' model, where the company uses its cash flow and credit rating to backstop chip purchasers. While bears call it 'circular financing,' bulls see it as a bridge to a future where AI revenue pays down debt. This strategy is uniquely possible for a multi-trillion dollar company like Nvidia.\n🏷️ Nvidia, AI economy, financing, semiconductors\n \n10. 华尔街日报：英伟达为AI经济提供“无限支票”的日子即将结束\nWSJ: ‘Nvidia’s Days as an Open Checkbook for the AI Economy Are Numbered’ — daringfireball.net · 13 小时前 · ⭐ 24/30\n中文摘要\n《华尔街日报》报道称，英伟达在AI经济中的支持角色正在发生转变。在创始人兼CEO黄仁勋离任前，公司已开始调整其支持AI初创公司的策略。新任CEO上任后，预计这种收缩将更加明显，因为他此前对某些交易持谨慎态度。这可能意味着初创公司将难以再像过去那样依赖英伟达的资金和资源支持。\nEnglish Summary\nThe Wall Street Journal reports that Nvidia's role in backing the AI economy is shifting. Even before CEO Jensen Huang's departure, the company was laying the groundwork to reduce its support for AI startups. With a new finance chief at the helm who was reportedly wary of some past deals, startups can expect an even greater pullback. This suggests a move away from Nvidia acting as an 'open checkbook' for the AI sector.\n🏷️ Nvidia, AI economy, finance, strategy\n \n11. 我的尘土帝国\nMy Empire of Dirt — geohot.github.io · 15 小时前 · ⭐ 24/30\n中文摘要\n作者认为，在人工智能（AI）的未来发展中，像黄仁勋这样的个人领导者、供应商和客户都将变得不再重要。随着“自主研究机构”（RSI）的出现，未来的需求将完全由内部生成，代理（agents）之间会自行协作，将外部的参与者排除在外。这种观点预示着一个高度自主和内部循环的AI新时代。\nEnglish Summary\nThe author posits that in the future of AI, individuals like Jensen Huang, suppliers, and customers will become obsolete. With the advent of 'Autonomous Research Institutions' (ARIs), future demand will be internally generated, with agents collaborating amongst themselves and excluding external parties. This vision points towards a highly autonomous and self-contained AI era.\n🏷️ future of AI, decentralization, automation, disruption\n \n12. 英伟达的下一步是什么？\nWhat’s Next For Nvidia? — steveblank.com · 1 天前 · ⭐ 23/30\n中文摘要\nSteve Blank的文章探讨了在创始人兼CEO黄仁勋辞职后，英伟达可能面临的挑战。文章指出，当一位富有远见的CEO离开公司时，创新往往会随之停止，公司可能依靠惯性和品牌优势度过一段时间，但很少能重拾昔日辉煌。这正是英伟达当前面临的危险。\nEnglish Summary\nSteve Blank's article discusses the challenges Nvidia might face following the resignation of its founder and CEO, Jensen Huang. The piece argues that when a visionary CEO departs, innovation often ceases, and companies may coast on momentum and brand, rarely regaining former glory. This is presented as the danger currently facing Nvidia.\n🏷️ Nvidia, Jensen Huang, leadership, innovation\n \n🔒 安全\n13. Apple支持文档：macOS 27.3 Beta 2中的新‘全盘访问’和‘系统与App保护覆盖’设置\nApple Support Document on the New ‘Full Disk Access’ and ‘System & App Protection Override’ Settings in MacOS 27.3 Beta 2 — daringfireball.net · 5 小时前 · ⭐ 25/30\n中文摘要\nmacOS 27.3 Beta 2引入了新的“全盘访问”（Full Disk Access）和“系统与App保护覆盖”（System & App Protection Override）设置，旨在提高用户对敏感权限授予的认知和控制。这些新设置旨在防止用户在不完全理解其含义的情况下授予过多权限，并为用户提供更精细的控制选项。\nEnglish Summary\nmacOS 27.3 Beta 2 introduces new 'Full Disk Access' and 'System & App Protection Override' settings to enhance user awareness and control over sensitive permissions. These changes aim to prevent users from granting excessive access without fully understanding the implications, offering more granular control.\n🏷️ macOS, privacy settings, full disk access, system protection\n \n14. macOS Golden Gate 27.3b2 包含全盘访问的新隐私控制（及更多）\nMacOS Golden Gate 27.3b2 Includes New Privacy Controls for Full Disk Access (and More) — daringfireball.net · 11 小时前 · ⭐ 25/30\n中文摘要\nmacOS 27.3 开发者测试版 2 引入了对“全盘访问”权限授予界面的重大更新，以确保用户在授予应用此级别访问权限时必须进行明确操作。新版本将“设备控制和数据访问”统一为一个开关，并提供了更细致的权限管理选项。\nEnglish Summary\nmacOS 27.3 Developer Beta 2 introduces significant updates to the Full Disk Access permission granting UI, requiring explicit user action for this extraordinary level of access. The update unifies 'Device Control and Data Access' into a single toggle and provides more granular permission management options.\n🏷️ macOS, privacy controls, full disk access, UI changes\n \n15. datasette 0.65.6 发布\ndatasette 0.65.6 — simonwillison.net · 1 天前 · ⭐ 25/30\n中文摘要\nDatasette 0.65.6 发布，主要包含一个从 1.0a43 版本回溯的轻微安全修复。该修复解决了在使用 adddatabase 并指定不同于名称的路由时，可能允许未授权用户下载数据库的问题。\nEnglish Summary\nDatasette 0.65.6 has been released, featuring a minor security fix backported from version 1.0a43. This fix addresses an issue where unauthorized users could potentially download databases registered with adddatabase using a route different from their name.\n🏷️ Datasette, security fix, vulnerability, release\n \n生成于 2026-11-17 07:30 | 扫描 80 源 → 获取 2417 篇 → 精选 15 篇\n基于 Hacker News Popularity Contest 2025 RSS 源列表，由 Andrej Karpathy 推荐"</script>
   <script>
     const text = JSON.parse(document.getElementById('speech-text').textContent);
     const statusEl = document.getElementById('status');
