@@ -52,199 +52,201 @@
   <main class="shell">
     <article class="card">
       <p>🎧 <a href="https://lingnanren.github.io/ai-daily-digest/listen.html">点这里朗读今日日报</a></p>
-<h1>📰 AI 博客每日精选 — 2026-11-17</h1>
+<h1>📰 AI 博客每日精选 — 2026-11-18</h1>
 <blockquote>来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15</blockquote>
 <h2>📝 今日看点</h2>
-<p>今日技术看点聚焦AI的颠覆性潜力与安全隐私的强化。一方面，AI正以前所未有的速度发展，有望在短期内颠覆政府运作，同时开源模型和智能体工具的进步，为用户提供了更安全、可控的AI应用方式。另一方面，macOS在隐私保护方面持续加码，引入更精细的权限控制，以应对日益增长的安全挑战。</p>
+<p>今日技术看点聚焦AI领域新进展与安全挑战。一方面，AI应用正向浏览器端拓展，同时LLM工具持续优化，而为编码代理设计的沙箱技术则提升了AI代码执行的安全性。另一方面，苹果macOS在隐私控制方面加强了用户授权，而英伟达的AI市场地位则引发了关于其估值和未来策略的讨论。此外，网络安全警报显示，顶级网站正遭受利用Optimizely漏洞的恶意软件攻击。</p>
 <hr>
 <h2>🏆 今日必读</h2>
-<p>🥇 <strong>如何轻松使用私有、开源权重模型</strong></p>
-<p><a href="https://micahflee.com/heres-how-anyone-can-easily-use-private-open-weight-models/">Here's how anyone can easily use private, open weight models</a> — micahflee.com · 14 小时前 · 🤖 AI / ML</p>
+<p>🥇 <strong>在浏览器中运行完整的服务器端 Datasette Python 应用，借助 Service Workers 和 Pyodide</strong></p>
+<p><a href="https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/">GPT‑6.2 Astra and GPT‑6.2 Sol</a> — simonwillison.net · 8 小时前 · 🤖 AI / ML</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>尽管大型语言模型（LLM）存在争议，但它们功能强大且实用。然而，用户对OpenAI和Anthropic等公司的信任度不高，担心数据隐私问题。本文提供了一种解决方案，允许用户轻松运行私有、开源权重的LLM，从而在不依赖第三方服务的情况下享受LLM的强大能力。</blockquote>
+<blockquote>Datasette Lite 的重写版本现已发布，利用 Service Workers 和 Pyodide 将 Datasette Python 应用完全移植到浏览器中运行。新版本几乎与服务器端应用无异，允许用户在本地浏览器中执行所有 Datasette 功能。这通过精心设计的 URL 实现，无需服务器即可提供完整的 Datasette 体验。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Large Language Models (LLMs) are powerful and useful, but users are wary of trusting their data with companies like OpenAI and Anthropic. This article provides a solution for easily running private, open-weight LLMs, allowing users to leverage LLM capabilities without relying on third-party services.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 教你如何在不依赖大型科技公司的情况下，安全地运行和使用强大的开源AI模型。</p>
-<p>💡 <strong>Why read it</strong>: Learn how to securely run and utilize powerful open-source AI models without relying on big tech companies.</p>
-<p>🏷️ open-weight models, LLM, privacy, local AI</p>
-<p>🥈 <strong>WorkOS：让智能体在不失控的情况下使用你的工具</strong></p>
-<p><a href="https://www.workos.com/airlock?utm_source=daringfireball&amp;amp;amp;utm_medium=newsletter&amp;amp;amp;utm_campaign=q42026">WorkOS: Let Agents Use Your Tools Without Giving Them Free Rein</a> — daringfireball.net · 1 天前 · 🤖 AI / ML</p>
+<blockquote>A complete rewrite of Datasette Lite, running the Datasette Python application entirely in the browser using Service Workers and Pyodide, is now available. This new version is nearly indistinguishable from the server-side application, enabling users to perform all Datasette functionalities directly within their local browser. This is achieved through a carefully crafted URL, offering a full Datasette experience without requiring a server.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 了解如何利用 Service Workers 和 Pyodide 在浏览器中实现功能完整的 Python Web 应用，无需后端服务器。</p>
+<p>💡 <strong>Why read it</strong>: Learn how to achieve a fully functional Python web application in the browser using Service Workers and Pyodide, eliminating the need for a backend server.</p>
+<p>🏷️ OpenAI, GPT-6.2 Astra, GPT-6.2 Sol, frontier model</p>
+<p>🥈 <strong>llm 0.37.3 版本发布</strong></p>
+<p><a href="https://www.dwarkesh.com/p/paul-christiano-2">Paul Christiano – We could be 12 months away from AIs that can overthrow the government</a> — dwarkesh.com · 1 天前 · 🤖 AI / ML</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>智能体（Agents）的任务在运行时才能确定，预设的角色分配往往不准确。WorkOS Airlock 允许为智能体设定明确的策略，每次调用都会根据其意图进行检查，无论是读取问题还是发送邮件。该系统能自动允许、拒绝或转交人工审批，并记录所有决策，确保智能体安全有效地执行任务。</blockquote>
+<blockquote>llm 工具发布了 0.37.3 版本，主要是一个 bug 修复版本。此次更新解决了 Homebrew 包管理工具中出现的兼容性问题。该问题源于 Homebrew 最近更新的 SQLite 版本 3.54.1 中引入的一个修复。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>WorkOS Airlock enables agents to use your tools securely by checking every call against its intent, rather than relying on pre-assigned roles. Policies are set once, and each agent action is either allowed, denied, or sent for human approval, with all verdicts logged. This ensures agents perform tasks safely and effectively without overstepping boundaries.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 了解如何通过WorkOS Airlock安全地授权智能体访问和使用你的工具，避免数据泄露和误操作。</p>
-<p>💡 <strong>Why read it</strong>: Discover how WorkOS Airlock securely authorizes agents to access and use your tools, preventing data breaches and unintended actions.</p>
-<p>🏷️ AI agents, tools, WorkOS, permissions</p>
-<p>🥉 <strong>Apple支持文档：macOS 27.3 Beta 2中的新‘全盘访问’和‘系统与App保护覆盖’设置</strong></p>
-<p><a href="https://support.apple.com/en-us/149699">Apple Support Document on the New ‘Full Disk Access’ and ‘System &amp; App Protection Override’ Settings in MacOS 27.3 Beta 2</a> — daringfireball.net · 5 小时前 · 🔒 安全</p>
+<blockquote>The 'llm' tool has released version 0.37.3, primarily a bug fix release. This update addresses an issue with the most recent Homebrew package of the software. The problem arose due to a fix included in the latest SQLite version 3.54.1, which is now shipped by Homebrew.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 了解 llm 工具的最新 bug 修复，特别是与 Homebrew 和 SQLite 版本更新相关的兼容性问题。</p>
+<p>💡 <strong>Why read it</strong>: Stay updated on the latest bug fixes for the 'llm' tool, specifically concerning compatibility issues with Homebrew and updated SQLite versions.</p>
+<p>🏷️ AI, government, risk, future</p>
+<p>🥉 <strong>macOS 27.3 Beta 2 包含新的全盘访问隐私控制功能</strong></p>
+<p><a href="https://stratechery.com/2026/obituaries/">Ben Thompson on Nvidia</a> — daringfireball.net · 1 天前 · 💡 观点 / 杂谈</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>macOS 27.3 Beta 2引入了新的“全盘访问”（Full Disk Access）和“系统与App保护覆盖”（System &amp; App Protection Override）设置，旨在提高用户对敏感权限授予的认知和控制。这些新设置旨在防止用户在不完全理解其含义的情况下授予过多权限，并为用户提供更精细的控制选项。</blockquote>
+<blockquote>macOS 27.3 的开发者 Beta 2 版本引入了对全盘访问（Full Disk Access）的新隐私控制。此举旨在让用户更明确地授权应用程序访问敏感数据。新版本统一了“设备控制和数据访问”的切换选项，并提供了更精细的权限管理。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>macOS 27.3 Beta 2 introduces new 'Full Disk Access' and 'System &amp; App Protection Override' settings to enhance user awareness and control over sensitive permissions. These changes aim to prevent users from granting excessive access without fully understanding the implications, offering more granular control.</blockquote>
-<p>💡 <strong>为什么值得读</strong>: 了解macOS新隐私控制如何帮助用户更安全地管理应用程序的全盘访问权限。</p>
-<p>💡 <strong>Why read it</strong>: Understand how new macOS privacy controls help users manage application Full Disk Access permissions more securely.</p>
-<p>🏷️ macOS, privacy settings, full disk access, system protection</p>
+<blockquote>macOS 27.3 developer beta 2 introduces new privacy controls for Full Disk Access, aligning with Apple's announcement to provide more explicit user actions for granting this extensive access. The update unifies the 'Device Control and Data Access' toggle and offers more granular permission management.</blockquote>
+<p>💡 <strong>为什么值得读</strong>: 了解 macOS 在最新 beta 版本中如何增强用户对应用程序全盘访问权限的控制和透明度。</p>
+<p>💡 <strong>Why read it</strong>: Understand how macOS is enhancing user control and transparency over application Full Disk Access permissions in its latest beta release.</p>
+<p>🏷️ Nvidia, AI, Stratechery, investment</p>
 <hr>
 <h2>📊 数据概览</h2>
-<table><thead><tr><th>扫描源</th><th>抓取文章</th><th>时间范围</th><th>精选</th></tr></thead><tbody><tr><td>80/92</td><td>2417 篇 → 32 篇</td><td>48h</td><td><strong>15 篇</strong></td></tr></tbody></table>
+<table><thead><tr><th>扫描源</th><th>抓取文章</th><th>时间范围</th><th>精选</th></tr></thead><tbody><tr><td>81/92</td><td>2517 篇 → 35 篇</td><td>48h</td><td><strong>15 篇</strong></td></tr></tbody></table>
 <h3>分类分布</h3>
 <div class="code-wrap"><div class="code-title">mermaid</div><pre><code>pie showData
     title "文章分类分布"
-    "🤖 AI / ML" : 4
-    "🛠 工具 / 开源" : 4
+    "🤖 AI / ML" : 5
     "💡 观点 / 杂谈" : 4
-    "🔒 安全" : 3</code></pre></div>
+    "🔒 安全" : 3
+    "⚙️ 工程" : 2
+    "🛠 工具 / 开源" : 1</code></pre></div>
 <h3>高频关键词</h3>
 <div class="code-wrap"><div class="code-title">mermaid</div><pre><code>xychart-beta horizontal
     title "高频关键词"
-    x-axis ["datasette", "nvidia", "llm", "macos", "full disk access", "release", "ai economy", "iphone duo", "face unlock", "open-weight models", "privacy", "local ai"]
+    x-axis ["ai", "nvidia", "privacy", "future", "llm", "macos", "openai", "gpt-6.2 astra", "gpt-6.2 sol", "frontier model", "government", "risk"]
     y-axis "出现次数" 0 --&gt; 6
-    bar [4, 3, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1]</code></pre></div>
+    bar [4, 4, 3, 2, 2, 2, 1, 1, 1, 1, 1, 1]</code></pre></div>
 <div class="details">
 <p class="summary">📈 纯文本关键词图（终端友好）</p>
-<div class="code-wrap"><pre><code>datasette          │ ████████████████████ 4
-nvidia             │ ███████████████░░░░░ 3
-llm                │ ██████████░░░░░░░░░░ 2
-macos              │ ██████████░░░░░░░░░░ 2
-full disk access   │ ██████████░░░░░░░░░░ 2
-release            │ ██████████░░░░░░░░░░ 2
-ai economy         │ ██████████░░░░░░░░░░ 2
-iphone duo         │ ██████████░░░░░░░░░░ 2
-face unlock        │ ██████████░░░░░░░░░░ 2
-open-weight models │ █████░░░░░░░░░░░░░░░ 1</code></pre></div>
+<div class="code-wrap"><pre><code>ai             │ ████████████████████ 4
+nvidia         │ ████████████████████ 4
+privacy        │ ███████████████░░░░░ 3
+future         │ ██████████░░░░░░░░░░ 2
+llm            │ ██████████░░░░░░░░░░ 2
+macos          │ ██████████░░░░░░░░░░ 2
+openai         │ █████░░░░░░░░░░░░░░░ 1
+gpt-6.2 astra  │ █████░░░░░░░░░░░░░░░ 1
+gpt-6.2 sol    │ █████░░░░░░░░░░░░░░░ 1
+frontier model │ █████░░░░░░░░░░░░░░░ 1</code></pre></div>
 </div>
 <h3>🏷️ 话题标签</h3>
-<p><strong>datasette</strong>(4) · <strong>nvidia</strong>(3) · <strong>llm</strong>(2) · macos(2) · full disk access(2) · release(2) · ai economy(2) · iphone duo(2) · face unlock(2) · open-weight models(1) · privacy(1) · local ai(1) · ai agents(1) · tools(1) · workos(1) · permissions(1) · privacy settings(1) · system protection(1) · privacy controls(1) · ui changes(1)</p>
+<p><strong>ai</strong>(4) · <strong>nvidia</strong>(4) · <strong>privacy</strong>(3) · future(2) · llm(2) · macos(2) · openai(1) · gpt-6.2 astra(1) · gpt-6.2 sol(1) · frontier model(1) · government(1) · risk(1) · stratechery(1) · investment(1) · open weight models(1) · automation(1) · coding agents(1) · sandboxing(1) · local models(1) · safety(1)</p>
 <hr>
 <h2>🤖 AI / ML</h2>
-<h3>1. 如何轻松使用私有、开源权重模型</h3>
-<p><a href="https://micahflee.com/heres-how-anyone-can-easily-use-private-open-weight-models/">Here's how anyone can easily use private, open weight models</a> — <strong>micahflee.com</strong> · 14 小时前 · ⭐ 26/30</p>
+<h3>1. 在浏览器中运行完整的服务器端 Datasette Python 应用，借助 Service Workers 和 Pyodide</h3>
+<p><a href="https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/">GPT‑6.2 Astra and GPT‑6.2 Sol</a> — <strong>simonwillison.net</strong> · 8 小时前 · ⭐ 27/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>尽管大型语言模型（LLM）存在争议，但它们功能强大且实用。然而，用户对OpenAI和Anthropic等公司的信任度不高，担心数据隐私问题。本文提供了一种解决方案，允许用户轻松运行私有、开源权重的LLM，从而在不依赖第三方服务的情况下享受LLM的强大能力。</blockquote>
+<blockquote>Datasette Lite 的重写版本现已发布，利用 Service Workers 和 Pyodide 将 Datasette Python 应用完全移植到浏览器中运行。新版本几乎与服务器端应用无异，允许用户在本地浏览器中执行所有 Datasette 功能。这通过精心设计的 URL 实现，无需服务器即可提供完整的 Datasette 体验。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Large Language Models (LLMs) are powerful and useful, but users are wary of trusting their data with companies like OpenAI and Anthropic. This article provides a solution for easily running private, open-weight LLMs, allowing users to leverage LLM capabilities without relying on third-party services.</blockquote>
-<p>🏷️ open-weight models, LLM, privacy, local AI</p>
+<blockquote>A complete rewrite of Datasette Lite, running the Datasette Python application entirely in the browser using Service Workers and Pyodide, is now available. This new version is nearly indistinguishable from the server-side application, enabling users to perform all Datasette functionalities directly within their local browser. This is achieved through a carefully crafted URL, offering a full Datasette experience without requiring a server.</blockquote>
+<p>🏷️ OpenAI, GPT-6.2 Astra, GPT-6.2 Sol, frontier model</p>
 <hr>
-<h3>2. WorkOS：让智能体在不失控的情况下使用你的工具</h3>
-<p><a href="https://www.workos.com/airlock?utm_source=daringfireball&amp;amp;amp;utm_medium=newsletter&amp;amp;amp;utm_campaign=q42026">WorkOS: Let Agents Use Your Tools Without Giving Them Free Rein</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 26/30</p>
+<h3>2. llm 0.37.3 版本发布</h3>
+<p><a href="https://www.dwarkesh.com/p/paul-christiano-2">Paul Christiano – We could be 12 months away from AIs that can overthrow the government</a> — <strong>dwarkesh.com</strong> · 1 天前 · ⭐ 27/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>智能体（Agents）的任务在运行时才能确定，预设的角色分配往往不准确。WorkOS Airlock 允许为智能体设定明确的策略，每次调用都会根据其意图进行检查，无论是读取问题还是发送邮件。该系统能自动允许、拒绝或转交人工审批，并记录所有决策，确保智能体安全有效地执行任务。</blockquote>
+<blockquote>llm 工具发布了 0.37.3 版本，主要是一个 bug 修复版本。此次更新解决了 Homebrew 包管理工具中出现的兼容性问题。该问题源于 Homebrew 最近更新的 SQLite 版本 3.54.1 中引入的一个修复。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>WorkOS Airlock enables agents to use your tools securely by checking every call against its intent, rather than relying on pre-assigned roles. Policies are set once, and each agent action is either allowed, denied, or sent for human approval, with all verdicts logged. This ensures agents perform tasks safely and effectively without overstepping boundaries.</blockquote>
-<p>🏷️ AI agents, tools, WorkOS, permissions</p>
+<blockquote>The 'llm' tool has released version 0.37.3, primarily a bug fix release. This update addresses an issue with the most recent Homebrew package of the software. The problem arose due to a fix included in the latest SQLite version 3.54.1, which is now shipped by Homebrew.</blockquote>
+<p>🏷️ AI, government, risk, future</p>
 <hr>
-<h3>3. Paul Christiano：AI可能在12个月内发展到足以颠覆政府的程度</h3>
-<p><a href="https://www.dwarkesh.com/p/paul-christiano-2">Paul Christiano – We could be 12 months away from AIs that can overthrow the government</a> — <strong>dwarkesh.com</strong> · 13 小时前 · ⭐ 25/30</p>
+<h3>3. 如何让第二个程序显示一个对话框，就好像它是由第一个程序显示的？</h3>
+<p><a href="https://micahflee.com/heres-how-anyone-can-easily-use-private-open-weight-models/">Here's how anyone can easily use private, open weight models</a> — <strong>micahflee.com</strong> · 1 天前 · ⭐ 26/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Paul Christiano在采访中预测，AI技术可能在未来12个月内发展到能够颠覆政府的程度，并警告这将对人类社会造成难以恢复的影响。他认为，AI的快速发展带来了巨大的潜在风险。</blockquote>
+<blockquote>要实现一个程序请求另一个程序显示对话框，并使其看起来像是第一个程序发起的，关键在于显式地协调窗口管理。这需要两个程序之间进行明确的通信和状态同步，以模拟对话框的来源。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Paul Christiano predicts that AI could advance to a level capable of overthrowing governments within 12 months, warning of potentially irrecoverable consequences for humanity. He highlights the significant risks associated with the rapid development of AI.</blockquote>
-<p>🏷️ AI safety, AGI, governance, existential risk</p>
+<blockquote>To have a second program display a dialog box as if it were shown by a first program, the core requirement is to explicitly coordinate window management. This involves clear communication and state synchronization between the two programs to simulate the dialog's origin.</blockquote>
+<p>🏷️ LLM, open weight models, privacy, AI</p>
 <hr>
-<h3>4. llm 0.37.3 发布</h3>
-<p><a href="https://simonwillison.net/2026/Nov/16/llm/">llm 0.37.3</a> — <strong>simonwillison.net</strong> · 7 小时前 · ⭐ 24/30</p>
+<h3>4. 为编码代理设计的外部沙箱</h3>
+<p><a href="https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/">External sandboxes for coding agents</a> — <strong>simonwillison.net</strong> · 8 小时前 · ⭐ 25/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>LLM 工具发布了 0.37.3 版本，这是一个主要为修复 Homebrew 包问题的错误修复版本。该问题源于 Homebrew 最近更新的 SQLite 版本 3.54.1 中包含的一个修复。</blockquote>
+<blockquote>文章探讨了为 AI 编码代理设计更安全的代码执行沙箱方案。目标是降低在本地环境中运行模型时的风险，防止因错误或提示注入攻击导致机器受到损害。该项目与 AI 研究实验室 Prime Radiant 合作开发，旨在提升 AI 代理的安全性和可靠性。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>LLM has released version 0.37.3, a bug fix release primarily addressing an issue with its Homebrew package. This problem stemmed from a fix included in the latest Homebrew version of SQLite, 3.54.1.</blockquote>
-<p>🏷️ LLM, bug fix, Homebrew, datasette</p>
+<blockquote>This article explores the development of safer code execution sandboxes for AI coding agents. The goal is to mitigate risks when running models in local environments, preventing machine damage from errors or prompt injection attacks. Developed in collaboration with AI research lab Prime Radiant, the project aims to enhance the security and reliability of AI agents.</blockquote>
+<p>🏷️ coding agents, sandboxing, local models, safety</p>
 <hr>
-<h2>🛠 工具 / 开源</h2>
-<h3>5. datasette-maplibre 0.1a0 发布</h3>
-<p><a href="https://simonwillison.net/2026/Nov/15/datasette-maplibre/">datasette-maplibre 0.1a0</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 25/30</p>
+<h3>5. llm 0.37.3 版本发布</h3>
+<p><a href="https://simonwillison.net/2026/Nov/16/llm/">llm 0.37.3</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 24/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Datasette 推出了一款新的地理空间插件 datasette-maplibre 0.1a0。该插件结合了 MapLibre GL 库和 OpenFreemap，一个免费的矢量地图服务器。这是 Datasette 地理空间插件领域的一项新进展。</blockquote>
+<blockquote>这是 LLM 工具的 0.37.3 版本，主要是一个错误修复版本。此次更新主要是为了解决 Homebrew 包中出现的最新问题。Homebrew 最近更新了 SQLite 到 3.54.1 版本，其中包含一个修复，影响了 LLM 工具的正常运行。本次发布旨在确保工具在最新 Homebrew 环境下的稳定性。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Datasette has released datasette-maplibre 0.1a0, a new geospatial plugin. This plugin integrates the MapLibre GL library with OpenFreemap, a free vector map server, marking a new development in Datasette's geospatial plugin offerings.</blockquote>
-<p>🏷️ Datasette, plugin, geospatial, MapLibre</p>
-<hr>
-<h3>6. datasette 1.0a43 发布</h3>
-<p><a href="https://simonwillison.net/2026/Nov/15/datasette/">datasette 1.0a43</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 25/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>Datasette 1.0a43 发布，标志着其 1.0 版本里程碑的进展。本次更新引入了输出渲染器的流式支持，并利用 Claude Fable 5.2 辅助开发，目前 1.0 版本里程碑已完成 53%。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Datasette 1.0a43 has been released, advancing its 1.0 milestone. This update introduces streaming support for output renderers and was developed with assistance from Claude Fable 5.2, with the 1.0 milestone now 53% complete.</blockquote>
-<p>🏷️ Datasette, release, milestone, Claude</p>
-<hr>
-<h3>7. 开发者持续优化iPhone Duo应用</h3>
-<p><a href="https://x.com/arinwaichulis/status/2122397676767522942">Developers Continue to Optimize iPhone Apps for the Duo</a> — <strong>daringfireball.net</strong> · 8 小时前 · ⭐ 23/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>苹果公司官员Greg Joswiak在X平台上宣布，已有超过20万款应用针对iPhone Duo进行了优化，这一数字在短短一周多时间内翻倍。尽管如此，作者在测试新版iPhone Duo时发现，苹果自家的Apple Store应用尚未进行Duo优化，这显得有些奇怪，因为该应用距离上次更新已有三个月。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>Greg Joswiak announced on X that over 200,000 apps are now optimized for the iPhone Duo, a number that has doubled in just over a week. However, the author noted during testing that Apple's own Apple Store app, last updated three months ago, is still not Duo-optimized, which he finds odd.</blockquote>
-<p>🏷️ iPhone Duo, app optimization, face unlock, hardware</p>
-<hr>
-<h3>8. iOS 27.3 Beta 2新功能：“通过前置摄像头解锁”iPhone Duo</h3>
-<p><a href="https://www.macrumors.com/2026/11/16/iphone-duo-face-unlock/">‘Unlock With Front Camera’ — New Feature for iPhone Duo in iOS 27.3 Beta 2</a> — <strong>daringfireball.net</strong> · 12 小时前 · ⭐ 23/30</p>
-<p><strong>中文摘要</strong></p>
-<blockquote>MacRumors报道，苹果在iOS 27.3 Beta 2版本中为iPhone Duo新增了通过前置摄像头解锁的选项，为用户提供了更多访问设备内容的方式。该面部识别解锁功能仅限于锁屏界面，而Apple Pay支付、输入密码等敏感操作仍需Touch ID或密码验证。此功能需要较新的Touch ID或密码。</blockquote>
-<p><strong>English Summary</strong></p>
-<blockquote>MacRumors reports that Apple has added an option to unlock the iPhone Duo using the front-facing camera in the iOS 27.3 Beta 2. This facial recognition feature is limited to the Lock Screen, while sensitive actions like Apple Pay purchases and password entries still require Touch ID or a passcode. The camera unlock requires a recent Touch ID or passcode.</blockquote>
-<p>🏷️ iPhone Duo, face unlock, iOS beta, biometrics</p>
+<blockquote>This is version 0.37.3 of the LLM tool, primarily a bug fix release. The update addresses an issue with the latest Homebrew package. Homebrew recently updated SQLite to version 3.54.1, which included a fix that affected the LLM tool's operation. This release aims to ensure the tool's stability within the latest Homebrew environment.</blockquote>
+<p>🏷️ LLM, tool, release, bug fix</p>
 <hr>
 <h2>💡 观点 / 杂谈</h2>
-<h3>9. Ben Thompson 谈英伟达</h3>
-<p><a href="https://stratechery.com/2026/obituaries/">Ben Thompson on Nvidia</a> — <strong>daringfireball.net</strong> · 12 小时前 · ⭐ 24/30</p>
+<h3>6. macOS 27.3 Beta 2 包含新的全盘访问隐私控制功能</h3>
+<p><a href="https://stratechery.com/2026/obituaries/">Ben Thompson on Nvidia</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 26/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Ben Thompson 在 Stratechery 上分析了英伟达的“高风险业务”模式。他指出，英伟达利用其现金流和信用评级来支持购买其芯片的公司，这种模式被一些人视为“循环融资”，而另一些人则认为是通往AI盈利未来的必要桥梁。这种模式只有像英伟达这样规模的公司才能实现。</blockquote>
+<blockquote>macOS 27.3 的开发者 Beta 2 版本引入了对全盘访问（Full Disk Access）的新隐私控制。此举旨在让用户更明确地授权应用程序访问敏感数据。新版本统一了“设备控制和数据访问”的切换选项，并提供了更精细的权限管理。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Ben Thompson at Stratechery analyzes Nvidia's 'Risky Business' model, where the company uses its cash flow and credit rating to backstop chip purchasers. While bears call it 'circular financing,' bulls see it as a bridge to a future where AI revenue pays down debt. This strategy is uniquely possible for a multi-trillion dollar company like Nvidia.</blockquote>
-<p>🏷️ Nvidia, AI economy, financing, semiconductors</p>
+<blockquote>macOS 27.3 developer beta 2 introduces new privacy controls for Full Disk Access, aligning with Apple's announcement to provide more explicit user actions for granting this extensive access. The update unifies the 'Device Control and Data Access' toggle and offers more granular permission management.</blockquote>
+<p>🏷️ Nvidia, AI, Stratechery, investment</p>
 <hr>
-<h3>10. 华尔街日报：英伟达为AI经济提供“无限支票”的日子即将结束</h3>
-<p><a href="https://www.wsj.com/tech/ai/nvidias-days-as-an-open-checkbook-for-the-ai-economy-are-numbered-90c7b388">WSJ: ‘Nvidia’s Days as an Open Checkbook for the AI Economy Are Numbered’</a> — <strong>daringfireball.net</strong> · 13 小时前 · ⭐ 24/30</p>
+<h3>7. 超越 Linux：开源生态系统之旅</h3>
+<p><a href="https://geohot.github.io//blog/jekyll/update/2026/11/17/my-empire-of-dirt.html">My Empire of Dirt</a> — <strong>geohot.github.io</strong> · 1 天前 · ⭐ 26/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>《华尔街日报》报道称，英伟达在AI经济中的支持角色正在发生转变。在创始人兼CEO黄仁勋离任前，公司已开始调整其支持AI初创公司的策略。新任CEO上任后，预计这种收缩将更加明显，因为他此前对某些交易持谨慎态度。这可能意味着初创公司将难以再像过去那样依赖英伟达的资金和资源支持。</blockquote>
+<blockquote>本次演讲探讨了开源世界中除 Linux 之外的其他重要参与者，如 BSD 系列、illumos 等。演讲者在 Linux Day 2026 上分享了对这些不同开源系统的见解，强调了开源生态系统的多样性，并指出 Linux 并非唯一的选择。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>The Wall Street Journal reports that Nvidia's role in backing the AI economy is shifting. Even before CEO Jensen Huang's departure, the company was laying the groundwork to reduce its support for AI startups. With a new finance chief at the helm who was reportedly wary of some past deals, startups can expect an even greater pullback. This suggests a move away from Nvidia acting as an 'open checkbook' for the AI sector.</blockquote>
-<p>🏷️ Nvidia, AI economy, finance, strategy</p>
+<blockquote>This talk explores key players in the open-source world beyond Linux, including the BSD family and illumos. Presented at Linux Day 2026, the discussion highlights the diversity within the open-source ecosystem, emphasizing that Linux is not the sole path.</blockquote>
+<p>🏷️ AI, future, automation, Nvidia</p>
 <hr>
-<h3>11. 我的尘土帝国</h3>
-<p><a href="https://geohot.github.io//blog/jekyll/update/2026/11/17/my-empire-of-dirt.html">My Empire of Dirt</a> — <strong>geohot.github.io</strong> · 15 小时前 · ⭐ 24/30</p>
+<h3>8. 英伟达泡沫</h3>
+<p><a href="https://www.wheresyoured.at/the-nvidia-bubble/">The NVIDIA Bubble</a> — <strong>wheresyoured.at</strong> · 15 小时前 · ⭐ 25/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>作者认为，在人工智能（AI）的未来发展中，像黄仁勋这样的个人领导者、供应商和客户都将变得不再重要。随着“自主研究机构”（RSI）的出现，未来的需求将完全由内部生成，代理（agents）之间会自行协作，将外部的参与者排除在外。这种观点预示着一个高度自主和内部循环的AI新时代。</blockquote>
+<blockquote>文章分析了英伟达在 AI 领域的财务状况和市场地位，暗示其当前的高估值可能存在泡沫。通过深入探讨 AI 行业的财务细节，作者旨在揭示英伟达的真实价值和潜在风险。该内容可能面向对 AI 行业金融动态感兴趣的读者。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>The author posits that in the future of AI, individuals like Jensen Huang, suppliers, and customers will become obsolete. With the advent of 'Autonomous Research Institutions' (ARIs), future demand will be internally generated, with agents collaborating amongst themselves and excluding external parties. This vision points towards a highly autonomous and self-contained AI era.</blockquote>
-<p>🏷️ future of AI, decentralization, automation, disruption</p>
+<blockquote>This article analyzes Nvidia's financial situation and market position within the AI sector, suggesting its current high valuation may be a bubble. By delving into the financial intricacies of the AI industry, the author aims to reveal Nvidia's true value and potential risks. This content is likely aimed at readers interested in the financial dynamics of the AI industry.</blockquote>
+<p>🏷️ NVIDIA, AI bubble, finances, semiconductors</p>
 <hr>
-<h3>12. 英伟达的下一步是什么？</h3>
-<p><a href="https://steveblank.com/2026/11/15/whats-next-for-nvidia/">What’s Next For Nvidia?</a> — <strong>steveblank.com</strong> · 1 天前 · ⭐ 23/30</p>
+<h3>9. 华尔街日报：‘英伟达作为 AI 经济的开放支票簿的日子屈指可数’</h3>
+<p><a href="https://www.wsj.com/tech/ai/nvidias-days-as-an-open-checkbook-for-the-ai-economy-are-numbered-90c7b388">WSJ: ‘Nvidia’s Days as an Open Checkbook for the AI Economy Are Numbered’</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 25/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Steve Blank的文章探讨了在创始人兼CEO黄仁勋辞职后，英伟达可能面临的挑战。文章指出，当一位富有远见的CEO离开公司时，创新往往会随之停止，公司可能依靠惯性和品牌优势度过一段时间，但很少能重拾昔日辉煌。这正是英伟达当前面临的危险。</blockquote>
+<blockquote>《华尔街日报》报道称，英伟达正在逐步收紧其对 AI 经济的支持策略。在创始人离任后，新任财务主管对部分交易持谨慎态度，预计初创公司将面临英伟达支持的减少。此举标志着英伟达在 AI 领域扮演的“开放支票簿”角色的转变。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Steve Blank's article discusses the challenges Nvidia might face following the resignation of its founder and CEO, Jensen Huang. The piece argues that when a visionary CEO departs, innovation often ceases, and companies may coast on momentum and brand, rarely regaining former glory. This is presented as the danger currently facing Nvidia.</blockquote>
-<p>🏷️ Nvidia, Jensen Huang, leadership, innovation</p>
+<blockquote>The Wall Street Journal reports that Nvidia is gradually scaling back its support strategy for the AI economy. Following the founder's departure, the new finance chief is cautious about certain deals, and startups are expected to face reduced Nvidia backing. This marks a shift in Nvidia's role as an 'open checkbook' in the AI landscape.</blockquote>
+<p>🏷️ Nvidia, AI economy, finance, WSJ</p>
 <hr>
 <h2>🔒 安全</h2>
-<h3>13. Apple支持文档：macOS 27.3 Beta 2中的新‘全盘访问’和‘系统与App保护覆盖’设置</h3>
-<p><a href="https://support.apple.com/en-us/149699">Apple Support Document on the New ‘Full Disk Access’ and ‘System &amp; App Protection Override’ Settings in MacOS 27.3 Beta 2</a> — <strong>daringfireball.net</strong> · 5 小时前 · ⭐ 25/30</p>
+<h3>10. Apple 关于 macOS 27.3 Beta 2 中“全盘访问”和“系统与 App 防护覆盖”新设置的支持文档</h3>
+<p><a href="https://support.apple.com/en-us/149699">Apple Support Document on the New ‘Full Disk Access’ and ‘System &amp; App Protection Override’ Settings in MacOS 27.3 Beta 2</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 25/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>macOS 27.3 Beta 2引入了新的“全盘访问”（Full Disk Access）和“系统与App保护覆盖”（System &amp; App Protection Override）设置，旨在提高用户对敏感权限授予的认知和控制。这些新设置旨在防止用户在不完全理解其含义的情况下授予过多权限，并为用户提供更精细的控制选项。</blockquote>
+<blockquote>Apple 发布了关于 macOS 27.3 Beta 2 中新增的“全盘访问”和“系统与 App 防护覆盖”设置的支持文档。尽管一些用户可能觉得这些设置“吓人”，但 Apple 表示这些设置经过深思熟虑，旨在解决用户在授予过多应用全盘访问权限时可能未意识到的风险。文档详细解释了这些新权限的意图和假设。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>macOS 27.3 Beta 2 introduces new 'Full Disk Access' and 'System &amp; App Protection Override' settings to enhance user awareness and control over sensitive permissions. These changes aim to prevent users from granting excessive access without fully understanding the implications, offering more granular control.</blockquote>
-<p>🏷️ macOS, privacy settings, full disk access, system protection</p>
+<blockquote>Apple has released a support document detailing new settings in macOS 27.3 Beta 2: 'Full Disk Access' and 'System &amp; App Protection Override.' While some users may find these settings alarming, Apple states they were thoughtfully designed to address risks users might not realize when granting excessive Full Disk Access. The document elaborates on the intentions and assumptions behind these new permissions.</blockquote>
+<p>🏷️ macOS, permissions, security settings, privacy</p>
 <hr>
-<h3>14. macOS Golden Gate 27.3b2 包含全盘访问的新隐私控制（及更多）</h3>
-<p><a href="https://9to5mac.com/2026/11/16/macos-27-3-includes-new-privacy-controls-for-full-disk-access-and-more/">MacOS Golden Gate 27.3b2 Includes New Privacy Controls for Full Disk Access (and More)</a> — <strong>daringfireball.net</strong> · 11 小时前 · ⭐ 25/30</p>
+<h3>11. 攻击者利用 Optimizely 在顶级网站上进行恶意软件 A/B 测试</h3>
+<p><a href="https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites/">Attackers Used Optimizely to A/B Test Malware on Top Websites</a> — <strong>krebsonsecurity.com</strong> · 4 小时前 · ⭐ 24/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>macOS 27.3 开发者测试版 2 引入了对“全盘访问”权限授予界面的重大更新，以确保用户在授予应用此级别访问权限时必须进行明确操作。新版本将“设备控制和数据访问”统一为一个开关，并提供了更细致的权限管理选项。</blockquote>
+<blockquote>至少有 178 个顶级网站因 Optimizely 的安全漏洞，在过去 24 小时内向访问者传播了各种恶意软件。Optimizely 是一家帮助网站定制用户体验和测试新功能的公司。专家指出，数据窃取恶意软件被悄无声息地注入到 BBC、CNN、Equifax、Ledger 和 Zoom 等网站，这一事件因许多网站未能严格执行来源限制而加剧。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>macOS 27.3 Developer Beta 2 introduces significant updates to the Full Disk Access permission granting UI, requiring explicit user action for this extraordinary level of access. The update unifies 'Device Control and Data Access' into a single toggle and provides more granular permission management options.</blockquote>
-<p>🏷️ macOS, privacy controls, full disk access, UI changes</p>
+<blockquote>At least 178 top websites have unknowingly served various malware exploits to visitors over the past 24 hours due to a security vulnerability involving Optimizely, a company that helps websites customize user experiences and test new features. Experts state that data-stealing malicious software was silently injected into sites like the BBC, CNN, Equifax, Ledger, and Zoom, an incident exacerbated by the reality that few popular websites enforce strict rules on sources.</blockquote>
+<p>🏷️ malware, Optimizely, vulnerability, websites</p>
 <hr>
-<h3>15. datasette 0.65.6 发布</h3>
-<p><a href="https://simonwillison.net/2026/Nov/15/datasette-2/">datasette 0.65.6</a> — <strong>simonwillison.net</strong> · 1 天前 · ⭐ 25/30</p>
+<h3>12. macOS Golden Gate 27.3b2 引入新的全盘访问权限隐私控制（及更多）</h3>
+<p><a href="https://9to5mac.com/2026/11/16/macos-27-3-includes-new-privacy-controls-for-full-disk-access-and-more/">MacOS Golden Gate 27.3b2 Includes New Privacy Controls for Full Disk Access (and More)</a> — <strong>daringfireball.net</strong> · 1 天前 · ⭐ 24/30</p>
 <p><strong>中文摘要</strong></p>
-<blockquote>Datasette 0.65.6 发布，主要包含一个从 1.0a43 版本回溯的轻微安全修复。该修复解决了在使用 <code>add_database</code> 并指定不同于名称的路由时，可能允许未授权用户下载数据库的问题。</blockquote>
+<blockquote>macOS 27.3b2 开发者测试版引入了新的隐私控制功能，用于管理应用程序的全盘访问权限。此前的版本中，Apple 曾宣布将改进授予全盘访问权限的用户界面，以确保用户在授予此特殊权限时需要进行更明确的操作。新版本将这些控制措施付诸实践，为用户提供更精细的权限管理。</blockquote>
 <p><strong>English Summary</strong></p>
-<blockquote>Datasette 0.65.6 has been released, featuring a minor security fix backported from version 1.0a43. This fix addresses an issue where unauthorized users could potentially download databases registered with <code>add_database</code> using a route different from their name.</blockquote>
-<p>🏷️ Datasette, security fix, vulnerability, release</p>
+<blockquote>macOS 27.3b2 developer beta introduces new privacy controls for managing Full Disk Access permissions for applications. Previously announced by Apple, this update refines the UI for granting such extraordinary access, requiring more explicit user actions. These controls provide users with finer-grained permission management.</blockquote>
+<p>🏷️ macOS, privacy, Full Disk Access</p>
 <hr>
-<p>*生成于 2026-11-17 07:30 | 扫描 80 源 → 获取 2417 篇 → 精选 15 篇* *基于 <a href="https://refactoringenglish.com/tools/hn-popularity/">Hacker News Popularity Contest 2025</a> RSS 源列表，由 <a href="https://x.com/karpathy">Andrej Karpathy</a> 推荐*</p>
+<h2>⚙️ 工程</h2>
+<h3>13. 如何让第二个程序显示一个对话框，就好像它是由我的第一个程序显示的？</h3>
+<p><a href="https://devblogs.microsoft.com/oldnewthing/20261116-01/?p=112863/">How can I ask a second program to show a dialog box as if it were shown by my first program?</a> — <strong>devblogs.microsoft.com/oldnewthing</strong> · 1 天前 · ⭐ 23/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>要实现让一个程序显示另一个程序发起的对话框，需要显式地协调窗口管理。这涉及到复杂的窗口层级和所有权管理，以确保对话框能够正确地被视为由发起程序显示。文章指出，这种跨程序的对话框显示需要开发者进行细致的编程。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>To have one program display a dialog box initiated by another program, explicit coordination of window management is required. This involves managing window hierarchy and ownership to ensure the dialog appears as if launched by the originating program. The article notes that this cross-program dialog display necessitates careful programming by developers.</blockquote>
+<p>🏷️ Windows API, dialog box, program interaction, window management</p>
+<hr>
+<h3>14. 超越 Linux：开源生态系统之旅</h3>
+<p><a href="https://it-notes.dragas.net/2026/11/17/beyond-linux-a-journey-through-the-open-source-ecosystem/">Beyond Linux: A Journey Through the Open Source Ecosystem</a> — <strong>it-notes.dragas.net</strong> · 22 小时前 · ⭐ 22/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>本文是作者在 2026 年摩德纳 Linux Day 上的演讲稿，经过轻微改编以适应博客发布。演讲以意大利语进行，面向 Linux 用户。文章指出，Linux 是开源领域最知名的参与者之一，但并非唯一的选择。作者将带领读者踏上一段探索 BSD、illumos 等其他开源系统的旅程，展现更广阔的开源世界。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>This is the text of a talk given at Linux Day 2026 in Modena, lightly adapted for the blog. The talk, delivered in Italian to a Linux audience, explores paths beyond Linux in the open source ecosystem. It highlights that while Linux is well-known, it's not the only option, and guides readers through BSD, illumos, and other open source systems.</blockquote>
+<p>🏷️ open source, Linux, ecosystem, journey</p>
+<hr>
+<h2>🛠 工具 / 开源</h2>
+<h3>15. 在浏览器中运行完整的服务器端 Datasette Python 应用，借助 Service Workers 和 Pyodide</h3>
+<p><a href="https://simonwillison.net/2026/Nov/17/datasette-lite/">Running the full server-side Datasette Python app in the browser with service workers and Pyodide</a> — <strong>simonwillison.net</strong> · 14 小时前 · ⭐ 24/30</p>
+<p><strong>中文摘要</strong></p>
+<blockquote>Datasette Lite 是 Datasette Python 应用的浏览器版本，利用 WebAssembly 和 Pyodide 技术实现。作者发布了使用 Service Workers 重写的完整版本，使其功能几乎与服务器端应用无异。现在，通过精心构造的 URL，可以在 lite.datasette.io 上实现更多功能。这使得在浏览器中运行复杂的 Python 应用成为可能，极大地扩展了 Web 应用的能力。</blockquote>
+<p><strong>English Summary</strong></p>
+<blockquote>Datasette Lite is a browser-based port of the Datasette Python application, running via WebAssembly and Pyodide. A complete rewrite using service workers makes it nearly indistinguishable from the server-side version. This allows for enhanced functionality through crafted URLs on lite.datasette.io. It demonstrates the potential of running complex Python applications directly in the browser.</blockquote>
+<p>🏷️ Datasette Lite, Pyodide, WebAssembly, browser</p>
+<hr>
+<p>*生成于 2026-11-18 06:53 | 扫描 81 源 → 获取 2517 篇 → 精选 15 篇* *基于 <a href="https://refactoringenglish.com/tools/hn-popularity/">Hacker News Popularity Contest 2025</a> RSS 源列表，由 <a href="https://x.com/karpathy">Andrej Karpathy</a> 推荐*</p>
     </article>
   </main>
-  <script id="speech-text" type="application/json">"🎧 点这里朗读今日日报\n📰 AI 博客每日精选 — 2026-11-17\n来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15\n📝 今日看点\n今日技术看点聚焦AI的颠覆性潜力与安全隐私的强化。一方面，AI正以前所未有的速度发展，有望在短期内颠覆政府运作，同时开源模型和智能体工具的进步，为用户提供了更安全、可控的AI应用方式。另一方面，macOS在隐私保护方面持续加码，引入更精细的权限控制，以应对日益增长的安全挑战。\n \n🏆 今日必读\n🥇 如何轻松使用私有、开源权重模型\nHere's how anyone can easily use private, open weight models — micahflee.com · 14 小时前 · 🤖 AI / ML\n中文摘要\n尽管大型语言模型（LLM）存在争议，但它们功能强大且实用。然而，用户对OpenAI和Anthropic等公司的信任度不高，担心数据隐私问题。本文提供了一种解决方案，允许用户轻松运行私有、开源权重的LLM，从而在不依赖第三方服务的情况下享受LLM的强大能力。\nEnglish Summary\nLarge Language Models (LLMs) are powerful and useful, but users are wary of trusting their data with companies like OpenAI and Anthropic. This article provides a solution for easily running private, open-weight LLMs, allowing users to leverage LLM capabilities without relying on third-party services.\n💡 为什么值得读: 教你如何在不依赖大型科技公司的情况下，安全地运行和使用强大的开源AI模型。\n💡 Why read it: Learn how to securely run and utilize powerful open-source AI models without relying on big tech companies.\n🏷️ open-weight models, LLM, privacy, local AI\n🥈 WorkOS：让智能体在不失控的情况下使用你的工具\nWorkOS: Let Agents Use Your Tools Without Giving Them Free Rein — daringfireball.net · 1 天前 · 🤖 AI / ML\n中文摘要\n智能体（Agents）的任务在运行时才能确定，预设的角色分配往往不准确。WorkOS Airlock 允许为智能体设定明确的策略，每次调用都会根据其意图进行检查，无论是读取问题还是发送邮件。该系统能自动允许、拒绝或转交人工审批，并记录所有决策，确保智能体安全有效地执行任务。\nEnglish Summary\nWorkOS Airlock enables agents to use your tools securely by checking every call against its intent, rather than relying on pre-assigned roles. Policies are set once, and each agent action is either allowed, denied, or sent for human approval, with all verdicts logged. This ensures agents perform tasks safely and effectively without overstepping boundaries.\n💡 为什么值得读: 了解如何通过WorkOS Airlock安全地授权智能体访问和使用你的工具，避免数据泄露和误操作。\n💡 Why read it: Discover how WorkOS Airlock securely authorizes agents to access and use your tools, preventing data breaches and unintended actions.\n🏷️ AI agents, tools, WorkOS, permissions\n🥉 Apple支持文档：macOS 27.3 Beta 2中的新‘全盘访问’和‘系统与App保护覆盖’设置\nApple Support Document on the New ‘Full Disk Access’ and ‘System & App Protection Override’ Settings in MacOS 27.3 Beta 2 — daringfireball.net · 5 小时前 · 🔒 安全\n中文摘要\nmacOS 27.3 Beta 2引入了新的“全盘访问”（Full Disk Access）和“系统与App保护覆盖”（System & App Protection Override）设置，旨在提高用户对敏感权限授予的认知和控制。这些新设置旨在防止用户在不完全理解其含义的情况下授予过多权限，并为用户提供更精细的控制选项。\nEnglish Summary\nmacOS 27.3 Beta 2 introduces new 'Full Disk Access' and 'System & App Protection Override' settings to enhance user awareness and control over sensitive permissions. These changes aim to prevent users from granting excessive access without fully understanding the implications, offering more granular control.\n💡 为什么值得读: 了解macOS新隐私控制如何帮助用户更安全地管理应用程序的全盘访问权限。\n💡 Why read it: Understand how new macOS privacy controls help users manage application Full Disk Access permissions more securely.\n🏷️ macOS, privacy settings, full disk access, system protection\n \n📊 数据概览\n \n \n \n分类分布\nmermaid\npie showData\n title \"文章分类分布\"\n \"🤖 AI / ML\" : 4\n \"🛠 工具 / 开源\" : 4\n \"💡 观点 / 杂谈\" : 4\n \"🔒 安全\" : 3\n高频关键词\nmermaid\nxychart-beta horizontal\n title \"高频关键词\"\n x-axis [\"datasette\", \"nvidia\", \"llm\", \"macos\", \"full disk access\", \"release\", \"ai economy\", \"iphone duo\", \"face unlock\", \"open-weight models\", \"privacy\", \"local ai\"]\n y-axis \"出现次数\" 0 --> 6\n bar [4, 3, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1]\n📈 纯文本关键词图（终端友好）\ndatasette │ ████████████████████ 4\nnvidia │ ███████████████░░░░░ 3\nllm │ ██████████░░░░░░░░░░ 2\nmacos │ ██████████░░░░░░░░░░ 2\nfull disk access │ ██████████░░░░░░░░░░ 2\nrelease │ ██████████░░░░░░░░░░ 2\nai economy │ ██████████░░░░░░░░░░ 2\niphone duo │ ██████████░░░░░░░░░░ 2\nface unlock │ ██████████░░░░░░░░░░ 2\nopen-weight models │ █████░░░░░░░░░░░░░░░ 1\n🏷️ 话题标签\ndatasette(4) · nvidia(3) · llm(2) · macos(2) · full disk access(2) · release(2) · ai economy(2) · iphone duo(2) · face unlock(2) · open-weight models(1) · privacy(1) · local ai(1) · ai agents(1) · tools(1) · workos(1) · permissions(1) · privacy settings(1) · system protection(1) · privacy controls(1) · ui changes(1)\n \n🤖 AI / ML\n1. 如何轻松使用私有、开源权重模型\nHere's how anyone can easily use private, open weight models — micahflee.com · 14 小时前 · ⭐ 26/30\n中文摘要\n尽管大型语言模型（LLM）存在争议，但它们功能强大且实用。然而，用户对OpenAI和Anthropic等公司的信任度不高，担心数据隐私问题。本文提供了一种解决方案，允许用户轻松运行私有、开源权重的LLM，从而在不依赖第三方服务的情况下享受LLM的强大能力。\nEnglish Summary\nLarge Language Models (LLMs) are powerful and useful, but users are wary of trusting their data with companies like OpenAI and Anthropic. This article provides a solution for easily running private, open-weight LLMs, allowing users to leverage LLM capabilities without relying on third-party services.\n🏷️ open-weight models, LLM, privacy, local AI\n \n2. WorkOS：让智能体在不失控的情况下使用你的工具\nWorkOS: Let Agents Use Your Tools Without Giving Them Free Rein — daringfireball.net · 1 天前 · ⭐ 26/30\n中文摘要\n智能体（Agents）的任务在运行时才能确定，预设的角色分配往往不准确。WorkOS Airlock 允许为智能体设定明确的策略，每次调用都会根据其意图进行检查，无论是读取问题还是发送邮件。该系统能自动允许、拒绝或转交人工审批，并记录所有决策，确保智能体安全有效地执行任务。\nEnglish Summary\nWorkOS Airlock enables agents to use your tools securely by checking every call against its intent, rather than relying on pre-assigned roles. Policies are set once, and each agent action is either allowed, denied, or sent for human approval, with all verdicts logged. This ensures agents perform tasks safely and effectively without overstepping boundaries.\n🏷️ AI agents, tools, WorkOS, permissions\n \n3. Paul Christiano：AI可能在12个月内发展到足以颠覆政府的程度\nPaul Christiano – We could be 12 months away from AIs that can overthrow the government — dwarkesh.com · 13 小时前 · ⭐ 25/30\n中文摘要\nPaul Christiano在采访中预测，AI技术可能在未来12个月内发展到能够颠覆政府的程度，并警告这将对人类社会造成难以恢复的影响。他认为，AI的快速发展带来了巨大的潜在风险。\nEnglish Summary\nPaul Christiano predicts that AI could advance to a level capable of overthrowing governments within 12 months, warning of potentially irrecoverable consequences for humanity. He highlights the significant risks associated with the rapid development of AI.\n🏷️ AI safety, AGI, governance, existential risk\n \n4. llm 0.37.3 发布\nllm 0.37.3 — simonwillison.net · 7 小时前 · ⭐ 24/30\n中文摘要\nLLM 工具发布了 0.37.3 版本，这是一个主要为修复 Homebrew 包问题的错误修复版本。该问题源于 Homebrew 最近更新的 SQLite 版本 3.54.1 中包含的一个修复。\nEnglish Summary\nLLM has released version 0.37.3, a bug fix release primarily addressing an issue with its Homebrew package. This problem stemmed from a fix included in the latest Homebrew version of SQLite, 3.54.1.\n🏷️ LLM, bug fix, Homebrew, datasette\n \n🛠 工具 / 开源\n5. datasette-maplibre 0.1a0 发布\ndatasette-maplibre 0.1a0 — simonwillison.net · 1 天前 · ⭐ 25/30\n中文摘要\nDatasette 推出了一款新的地理空间插件 datasette-maplibre 0.1a0。该插件结合了 MapLibre GL 库和 OpenFreemap，一个免费的矢量地图服务器。这是 Datasette 地理空间插件领域的一项新进展。\nEnglish Summary\nDatasette has released datasette-maplibre 0.1a0, a new geospatial plugin. This plugin integrates the MapLibre GL library with OpenFreemap, a free vector map server, marking a new development in Datasette's geospatial plugin offerings.\n🏷️ Datasette, plugin, geospatial, MapLibre\n \n6. datasette 1.0a43 发布\ndatasette 1.0a43 — simonwillison.net · 1 天前 · ⭐ 25/30\n中文摘要\nDatasette 1.0a43 发布，标志着其 1.0 版本里程碑的进展。本次更新引入了输出渲染器的流式支持，并利用 Claude Fable 5.2 辅助开发，目前 1.0 版本里程碑已完成 53%。\nEnglish Summary\nDatasette 1.0a43 has been released, advancing its 1.0 milestone. This update introduces streaming support for output renderers and was developed with assistance from Claude Fable 5.2, with the 1.0 milestone now 53% complete.\n🏷️ Datasette, release, milestone, Claude\n \n7. 开发者持续优化iPhone Duo应用\nDevelopers Continue to Optimize iPhone Apps for the Duo — daringfireball.net · 8 小时前 · ⭐ 23/30\n中文摘要\n苹果公司官员Greg Joswiak在X平台上宣布，已有超过20万款应用针对iPhone Duo进行了优化，这一数字在短短一周多时间内翻倍。尽管如此，作者在测试新版iPhone Duo时发现，苹果自家的Apple Store应用尚未进行Duo优化，这显得有些奇怪，因为该应用距离上次更新已有三个月。\nEnglish Summary\nGreg Joswiak announced on X that over 200,000 apps are now optimized for the iPhone Duo, a number that has doubled in just over a week. However, the author noted during testing that Apple's own Apple Store app, last updated three months ago, is still not Duo-optimized, which he finds odd.\n🏷️ iPhone Duo, app optimization, face unlock, hardware\n \n8. iOS 27.3 Beta 2新功能：“通过前置摄像头解锁”iPhone Duo\n‘Unlock With Front Camera’ — New Feature for iPhone Duo in iOS 27.3 Beta 2 — daringfireball.net · 12 小时前 · ⭐ 23/30\n中文摘要\nMacRumors报道，苹果在iOS 27.3 Beta 2版本中为iPhone Duo新增了通过前置摄像头解锁的选项，为用户提供了更多访问设备内容的方式。该面部识别解锁功能仅限于锁屏界面，而Apple Pay支付、输入密码等敏感操作仍需Touch ID或密码验证。此功能需要较新的Touch ID或密码。\nEnglish Summary\nMacRumors reports that Apple has added an option to unlock the iPhone Duo using the front-facing camera in the iOS 27.3 Beta 2. This facial recognition feature is limited to the Lock Screen, while sensitive actions like Apple Pay purchases and password entries still require Touch ID or a passcode. The camera unlock requires a recent Touch ID or passcode.\n🏷️ iPhone Duo, face unlock, iOS beta, biometrics\n \n💡 观点 / 杂谈\n9. Ben Thompson 谈英伟达\nBen Thompson on Nvidia — daringfireball.net · 12 小时前 · ⭐ 24/30\n中文摘要\nBen Thompson 在 Stratechery 上分析了英伟达的“高风险业务”模式。他指出，英伟达利用其现金流和信用评级来支持购买其芯片的公司，这种模式被一些人视为“循环融资”，而另一些人则认为是通往AI盈利未来的必要桥梁。这种模式只有像英伟达这样规模的公司才能实现。\nEnglish Summary\nBen Thompson at Stratechery analyzes Nvidia's 'Risky Business' model, where the company uses its cash flow and credit rating to backstop chip purchasers. While bears call it 'circular financing,' bulls see it as a bridge to a future where AI revenue pays down debt. This strategy is uniquely possible for a multi-trillion dollar company like Nvidia.\n🏷️ Nvidia, AI economy, financing, semiconductors\n \n10. 华尔街日报：英伟达为AI经济提供“无限支票”的日子即将结束\nWSJ: ‘Nvidia’s Days as an Open Checkbook for the AI Economy Are Numbered’ — daringfireball.net · 13 小时前 · ⭐ 24/30\n中文摘要\n《华尔街日报》报道称，英伟达在AI经济中的支持角色正在发生转变。在创始人兼CEO黄仁勋离任前，公司已开始调整其支持AI初创公司的策略。新任CEO上任后，预计这种收缩将更加明显，因为他此前对某些交易持谨慎态度。这可能意味着初创公司将难以再像过去那样依赖英伟达的资金和资源支持。\nEnglish Summary\nThe Wall Street Journal reports that Nvidia's role in backing the AI economy is shifting. Even before CEO Jensen Huang's departure, the company was laying the groundwork to reduce its support for AI startups. With a new finance chief at the helm who was reportedly wary of some past deals, startups can expect an even greater pullback. This suggests a move away from Nvidia acting as an 'open checkbook' for the AI sector.\n🏷️ Nvidia, AI economy, finance, strategy\n \n11. 我的尘土帝国\nMy Empire of Dirt — geohot.github.io · 15 小时前 · ⭐ 24/30\n中文摘要\n作者认为，在人工智能（AI）的未来发展中，像黄仁勋这样的个人领导者、供应商和客户都将变得不再重要。随着“自主研究机构”（RSI）的出现，未来的需求将完全由内部生成，代理（agents）之间会自行协作，将外部的参与者排除在外。这种观点预示着一个高度自主和内部循环的AI新时代。\nEnglish Summary\nThe author posits that in the future of AI, individuals like Jensen Huang, suppliers, and customers will become obsolete. With the advent of 'Autonomous Research Institutions' (ARIs), future demand will be internally generated, with agents collaborating amongst themselves and excluding external parties. This vision points towards a highly autonomous and self-contained AI era.\n🏷️ future of AI, decentralization, automation, disruption\n \n12. 英伟达的下一步是什么？\nWhat’s Next For Nvidia? — steveblank.com · 1 天前 · ⭐ 23/30\n中文摘要\nSteve Blank的文章探讨了在创始人兼CEO黄仁勋辞职后，英伟达可能面临的挑战。文章指出，当一位富有远见的CEO离开公司时，创新往往会随之停止，公司可能依靠惯性和品牌优势度过一段时间，但很少能重拾昔日辉煌。这正是英伟达当前面临的危险。\nEnglish Summary\nSteve Blank's article discusses the challenges Nvidia might face following the resignation of its founder and CEO, Jensen Huang. The piece argues that when a visionary CEO departs, innovation often ceases, and companies may coast on momentum and brand, rarely regaining former glory. This is presented as the danger currently facing Nvidia.\n🏷️ Nvidia, Jensen Huang, leadership, innovation\n \n🔒 安全\n13. Apple支持文档：macOS 27.3 Beta 2中的新‘全盘访问’和‘系统与App保护覆盖’设置\nApple Support Document on the New ‘Full Disk Access’ and ‘System & App Protection Override’ Settings in MacOS 27.3 Beta 2 — daringfireball.net · 5 小时前 · ⭐ 25/30\n中文摘要\nmacOS 27.3 Beta 2引入了新的“全盘访问”（Full Disk Access）和“系统与App保护覆盖”（System & App Protection Override）设置，旨在提高用户对敏感权限授予的认知和控制。这些新设置旨在防止用户在不完全理解其含义的情况下授予过多权限，并为用户提供更精细的控制选项。\nEnglish Summary\nmacOS 27.3 Beta 2 introduces new 'Full Disk Access' and 'System & App Protection Override' settings to enhance user awareness and control over sensitive permissions. These changes aim to prevent users from granting excessive access without fully understanding the implications, offering more granular control.\n🏷️ macOS, privacy settings, full disk access, system protection\n \n14. macOS Golden Gate 27.3b2 包含全盘访问的新隐私控制（及更多）\nMacOS Golden Gate 27.3b2 Includes New Privacy Controls for Full Disk Access (and More) — daringfireball.net · 11 小时前 · ⭐ 25/30\n中文摘要\nmacOS 27.3 开发者测试版 2 引入了对“全盘访问”权限授予界面的重大更新，以确保用户在授予应用此级别访问权限时必须进行明确操作。新版本将“设备控制和数据访问”统一为一个开关，并提供了更细致的权限管理选项。\nEnglish Summary\nmacOS 27.3 Developer Beta 2 introduces significant updates to the Full Disk Access permission granting UI, requiring explicit user action for this extraordinary level of access. The update unifies 'Device Control and Data Access' into a single toggle and provides more granular permission management options.\n🏷️ macOS, privacy controls, full disk access, UI changes\n \n15. datasette 0.65.6 发布\ndatasette 0.65.6 — simonwillison.net · 1 天前 · ⭐ 25/30\n中文摘要\nDatasette 0.65.6 发布，主要包含一个从 1.0a43 版本回溯的轻微安全修复。该修复解决了在使用 adddatabase 并指定不同于名称的路由时，可能允许未授权用户下载数据库的问题。\nEnglish Summary\nDatasette 0.65.6 has been released, featuring a minor security fix backported from version 1.0a43. This fix addresses an issue where unauthorized users could potentially download databases registered with adddatabase using a route different from their name.\n🏷️ Datasette, security fix, vulnerability, release\n \n生成于 2026-11-17 07:30 | 扫描 80 源 → 获取 2417 篇 → 精选 15 篇\n基于 Hacker News Popularity Contest 2025 RSS 源列表，由 Andrej Karpathy 推荐"</script>
+  <script id="speech-text" type="application/json">"🎧 点这里朗读今日日报\n📰 AI 博客每日精选 — 2026-11-18\n来自 Karpathy 推荐的 92 个顶级技术博客，AI 精选 Top 15\n📝 今日看点\n今日技术看点聚焦AI领域新进展与安全挑战。一方面，AI应用正向浏览器端拓展，同时LLM工具持续优化，而为编码代理设计的沙箱技术则提升了AI代码执行的安全性。另一方面，苹果macOS在隐私控制方面加强了用户授权，而英伟达的AI市场地位则引发了关于其估值和未来策略的讨论。此外，网络安全警报显示，顶级网站正遭受利用Optimizely漏洞的恶意软件攻击。\n \n🏆 今日必读\n🥇 在浏览器中运行完整的服务器端 Datasette Python 应用，借助 Service Workers 和 Pyodide\nGPT‑6.2 Astra and GPT‑6.2 Sol — simonwillison.net · 8 小时前 · 🤖 AI / ML\n中文摘要\nDatasette Lite 的重写版本现已发布，利用 Service Workers 和 Pyodide 将 Datasette Python 应用完全移植到浏览器中运行。新版本几乎与服务器端应用无异，允许用户在本地浏览器中执行所有 Datasette 功能。这通过精心设计的 URL 实现，无需服务器即可提供完整的 Datasette 体验。\nEnglish Summary\nA complete rewrite of Datasette Lite, running the Datasette Python application entirely in the browser using Service Workers and Pyodide, is now available. This new version is nearly indistinguishable from the server-side application, enabling users to perform all Datasette functionalities directly within their local browser. This is achieved through a carefully crafted URL, offering a full Datasette experience without requiring a server.\n💡 为什么值得读: 了解如何利用 Service Workers 和 Pyodide 在浏览器中实现功能完整的 Python Web 应用，无需后端服务器。\n💡 Why read it: Learn how to achieve a fully functional Python web application in the browser using Service Workers and Pyodide, eliminating the need for a backend server.\n🏷️ OpenAI, GPT-6.2 Astra, GPT-6.2 Sol, frontier model\n🥈 llm 0.37.3 版本发布\nPaul Christiano – We could be 12 months away from AIs that can overthrow the government — dwarkesh.com · 1 天前 · 🤖 AI / ML\n中文摘要\nllm 工具发布了 0.37.3 版本，主要是一个 bug 修复版本。此次更新解决了 Homebrew 包管理工具中出现的兼容性问题。该问题源于 Homebrew 最近更新的 SQLite 版本 3.54.1 中引入的一个修复。\nEnglish Summary\nThe 'llm' tool has released version 0.37.3, primarily a bug fix release. This update addresses an issue with the most recent Homebrew package of the software. The problem arose due to a fix included in the latest SQLite version 3.54.1, which is now shipped by Homebrew.\n💡 为什么值得读: 了解 llm 工具的最新 bug 修复，特别是与 Homebrew 和 SQLite 版本更新相关的兼容性问题。\n💡 Why read it: Stay updated on the latest bug fixes for the 'llm' tool, specifically concerning compatibility issues with Homebrew and updated SQLite versions.\n🏷️ AI, government, risk, future\n🥉 macOS 27.3 Beta 2 包含新的全盘访问隐私控制功能\nBen Thompson on Nvidia — daringfireball.net · 1 天前 · 💡 观点 / 杂谈\n中文摘要\nmacOS 27.3 的开发者 Beta 2 版本引入了对全盘访问（Full Disk Access）的新隐私控制。此举旨在让用户更明确地授权应用程序访问敏感数据。新版本统一了“设备控制和数据访问”的切换选项，并提供了更精细的权限管理。\nEnglish Summary\nmacOS 27.3 developer beta 2 introduces new privacy controls for Full Disk Access, aligning with Apple's announcement to provide more explicit user actions for granting this extensive access. The update unifies the 'Device Control and Data Access' toggle and offers more granular permission management.\n💡 为什么值得读: 了解 macOS 在最新 beta 版本中如何增强用户对应用程序全盘访问权限的控制和透明度。\n💡 Why read it: Understand how macOS is enhancing user control and transparency over application Full Disk Access permissions in its latest beta release.\n🏷️ Nvidia, AI, Stratechery, investment\n \n📊 数据概览\n \n \n \n分类分布\nmermaid\npie showData\n title \"文章分类分布\"\n \"🤖 AI / ML\" : 5\n \"💡 观点 / 杂谈\" : 4\n \"🔒 安全\" : 3\n \"⚙️ 工程\" : 2\n \"🛠 工具 / 开源\" : 1\n高频关键词\nmermaid\nxychart-beta horizontal\n title \"高频关键词\"\n x-axis [\"ai\", \"nvidia\", \"privacy\", \"future\", \"llm\", \"macos\", \"openai\", \"gpt-6.2 astra\", \"gpt-6.2 sol\", \"frontier model\", \"government\", \"risk\"]\n y-axis \"出现次数\" 0 --> 6\n bar [4, 4, 3, 2, 2, 2, 1, 1, 1, 1, 1, 1]\n📈 纯文本关键词图（终端友好）\nai │ ████████████████████ 4\nnvidia │ ████████████████████ 4\nprivacy │ ███████████████░░░░░ 3\nfuture │ ██████████░░░░░░░░░░ 2\nllm │ ██████████░░░░░░░░░░ 2\nmacos │ ██████████░░░░░░░░░░ 2\nopenai │ █████░░░░░░░░░░░░░░░ 1\ngpt-6.2 astra │ █████░░░░░░░░░░░░░░░ 1\ngpt-6.2 sol │ █████░░░░░░░░░░░░░░░ 1\nfrontier model │ █████░░░░░░░░░░░░░░░ 1\n🏷️ 话题标签\nai(4) · nvidia(4) · privacy(3) · future(2) · llm(2) · macos(2) · openai(1) · gpt-6.2 astra(1) · gpt-6.2 sol(1) · frontier model(1) · government(1) · risk(1) · stratechery(1) · investment(1) · open weight models(1) · automation(1) · coding agents(1) · sandboxing(1) · local models(1) · safety(1)\n \n🤖 AI / ML\n1. 在浏览器中运行完整的服务器端 Datasette Python 应用，借助 Service Workers 和 Pyodide\nGPT‑6.2 Astra and GPT‑6.2 Sol — simonwillison.net · 8 小时前 · ⭐ 27/30\n中文摘要\nDatasette Lite 的重写版本现已发布，利用 Service Workers 和 Pyodide 将 Datasette Python 应用完全移植到浏览器中运行。新版本几乎与服务器端应用无异，允许用户在本地浏览器中执行所有 Datasette 功能。这通过精心设计的 URL 实现，无需服务器即可提供完整的 Datasette 体验。\nEnglish Summary\nA complete rewrite of Datasette Lite, running the Datasette Python application entirely in the browser using Service Workers and Pyodide, is now available. This new version is nearly indistinguishable from the server-side application, enabling users to perform all Datasette functionalities directly within their local browser. This is achieved through a carefully crafted URL, offering a full Datasette experience without requiring a server.\n🏷️ OpenAI, GPT-6.2 Astra, GPT-6.2 Sol, frontier model\n \n2. llm 0.37.3 版本发布\nPaul Christiano – We could be 12 months away from AIs that can overthrow the government — dwarkesh.com · 1 天前 · ⭐ 27/30\n中文摘要\nllm 工具发布了 0.37.3 版本，主要是一个 bug 修复版本。此次更新解决了 Homebrew 包管理工具中出现的兼容性问题。该问题源于 Homebrew 最近更新的 SQLite 版本 3.54.1 中引入的一个修复。\nEnglish Summary\nThe 'llm' tool has released version 0.37.3, primarily a bug fix release. This update addresses an issue with the most recent Homebrew package of the software. The problem arose due to a fix included in the latest SQLite version 3.54.1, which is now shipped by Homebrew.\n🏷️ AI, government, risk, future\n \n3. 如何让第二个程序显示一个对话框，就好像它是由第一个程序显示的？\nHere's how anyone can easily use private, open weight models — micahflee.com · 1 天前 · ⭐ 26/30\n中文摘要\n要实现一个程序请求另一个程序显示对话框，并使其看起来像是第一个程序发起的，关键在于显式地协调窗口管理。这需要两个程序之间进行明确的通信和状态同步，以模拟对话框的来源。\nEnglish Summary\nTo have a second program display a dialog box as if it were shown by a first program, the core requirement is to explicitly coordinate window management. This involves clear communication and state synchronization between the two programs to simulate the dialog's origin.\n🏷️ LLM, open weight models, privacy, AI\n \n4. 为编码代理设计的外部沙箱\nExternal sandboxes for coding agents — simonwillison.net · 8 小时前 · ⭐ 25/30\n中文摘要\n文章探讨了为 AI 编码代理设计更安全的代码执行沙箱方案。目标是降低在本地环境中运行模型时的风险，防止因错误或提示注入攻击导致机器受到损害。该项目与 AI 研究实验室 Prime Radiant 合作开发，旨在提升 AI 代理的安全性和可靠性。\nEnglish Summary\nThis article explores the development of safer code execution sandboxes for AI coding agents. The goal is to mitigate risks when running models in local environments, preventing machine damage from errors or prompt injection attacks. Developed in collaboration with AI research lab Prime Radiant, the project aims to enhance the security and reliability of AI agents.\n🏷️ coding agents, sandboxing, local models, safety\n \n5. llm 0.37.3 版本发布\nllm 0.37.3 — simonwillison.net · 1 天前 · ⭐ 24/30\n中文摘要\n这是 LLM 工具的 0.37.3 版本，主要是一个错误修复版本。此次更新主要是为了解决 Homebrew 包中出现的最新问题。Homebrew 最近更新了 SQLite 到 3.54.1 版本，其中包含一个修复，影响了 LLM 工具的正常运行。本次发布旨在确保工具在最新 Homebrew 环境下的稳定性。\nEnglish Summary\nThis is version 0.37.3 of the LLM tool, primarily a bug fix release. The update addresses an issue with the latest Homebrew package. Homebrew recently updated SQLite to version 3.54.1, which included a fix that affected the LLM tool's operation. This release aims to ensure the tool's stability within the latest Homebrew environment.\n🏷️ LLM, tool, release, bug fix\n \n💡 观点 / 杂谈\n6. macOS 27.3 Beta 2 包含新的全盘访问隐私控制功能\nBen Thompson on Nvidia — daringfireball.net · 1 天前 · ⭐ 26/30\n中文摘要\nmacOS 27.3 的开发者 Beta 2 版本引入了对全盘访问（Full Disk Access）的新隐私控制。此举旨在让用户更明确地授权应用程序访问敏感数据。新版本统一了“设备控制和数据访问”的切换选项，并提供了更精细的权限管理。\nEnglish Summary\nmacOS 27.3 developer beta 2 introduces new privacy controls for Full Disk Access, aligning with Apple's announcement to provide more explicit user actions for granting this extensive access. The update unifies the 'Device Control and Data Access' toggle and offers more granular permission management.\n🏷️ Nvidia, AI, Stratechery, investment\n \n7. 超越 Linux：开源生态系统之旅\nMy Empire of Dirt — geohot.github.io · 1 天前 · ⭐ 26/30\n中文摘要\n本次演讲探讨了开源世界中除 Linux 之外的其他重要参与者，如 BSD 系列、illumos 等。演讲者在 Linux Day 2026 上分享了对这些不同开源系统的见解，强调了开源生态系统的多样性，并指出 Linux 并非唯一的选择。\nEnglish Summary\nThis talk explores key players in the open-source world beyond Linux, including the BSD family and illumos. Presented at Linux Day 2026, the discussion highlights the diversity within the open-source ecosystem, emphasizing that Linux is not the sole path.\n🏷️ AI, future, automation, Nvidia\n \n8. 英伟达泡沫\nThe NVIDIA Bubble — wheresyoured.at · 15 小时前 · ⭐ 25/30\n中文摘要\n文章分析了英伟达在 AI 领域的财务状况和市场地位，暗示其当前的高估值可能存在泡沫。通过深入探讨 AI 行业的财务细节，作者旨在揭示英伟达的真实价值和潜在风险。该内容可能面向对 AI 行业金融动态感兴趣的读者。\nEnglish Summary\nThis article analyzes Nvidia's financial situation and market position within the AI sector, suggesting its current high valuation may be a bubble. By delving into the financial intricacies of the AI industry, the author aims to reveal Nvidia's true value and potential risks. This content is likely aimed at readers interested in the financial dynamics of the AI industry.\n🏷️ NVIDIA, AI bubble, finances, semiconductors\n \n9. 华尔街日报：‘英伟达作为 AI 经济的开放支票簿的日子屈指可数’\nWSJ: ‘Nvidia’s Days as an Open Checkbook for the AI Economy Are Numbered’ — daringfireball.net · 1 天前 · ⭐ 25/30\n中文摘要\n《华尔街日报》报道称，英伟达正在逐步收紧其对 AI 经济的支持策略。在创始人离任后，新任财务主管对部分交易持谨慎态度，预计初创公司将面临英伟达支持的减少。此举标志着英伟达在 AI 领域扮演的“开放支票簿”角色的转变。\nEnglish Summary\nThe Wall Street Journal reports that Nvidia is gradually scaling back its support strategy for the AI economy. Following the founder's departure, the new finance chief is cautious about certain deals, and startups are expected to face reduced Nvidia backing. This marks a shift in Nvidia's role as an 'open checkbook' in the AI landscape.\n🏷️ Nvidia, AI economy, finance, WSJ\n \n🔒 安全\n10. Apple 关于 macOS 27.3 Beta 2 中“全盘访问”和“系统与 App 防护覆盖”新设置的支持文档\nApple Support Document on the New ‘Full Disk Access’ and ‘System & App Protection Override’ Settings in MacOS 27.3 Beta 2 — daringfireball.net · 1 天前 · ⭐ 25/30\n中文摘要\nApple 发布了关于 macOS 27.3 Beta 2 中新增的“全盘访问”和“系统与 App 防护覆盖”设置的支持文档。尽管一些用户可能觉得这些设置“吓人”，但 Apple 表示这些设置经过深思熟虑，旨在解决用户在授予过多应用全盘访问权限时可能未意识到的风险。文档详细解释了这些新权限的意图和假设。\nEnglish Summary\nApple has released a support document detailing new settings in macOS 27.3 Beta 2: 'Full Disk Access' and 'System & App Protection Override.' While some users may find these settings alarming, Apple states they were thoughtfully designed to address risks users might not realize when granting excessive Full Disk Access. The document elaborates on the intentions and assumptions behind these new permissions.\n🏷️ macOS, permissions, security settings, privacy\n \n11. 攻击者利用 Optimizely 在顶级网站上进行恶意软件 A/B 测试\nAttackers Used Optimizely to A/B Test Malware on Top Websites — krebsonsecurity.com · 4 小时前 · ⭐ 24/30\n中文摘要\n至少有 178 个顶级网站因 Optimizely 的安全漏洞，在过去 24 小时内向访问者传播了各种恶意软件。Optimizely 是一家帮助网站定制用户体验和测试新功能的公司。专家指出，数据窃取恶意软件被悄无声息地注入到 BBC、CNN、Equifax、Ledger 和 Zoom 等网站，这一事件因许多网站未能严格执行来源限制而加剧。\nEnglish Summary\nAt least 178 top websites have unknowingly served various malware exploits to visitors over the past 24 hours due to a security vulnerability involving Optimizely, a company that helps websites customize user experiences and test new features. Experts state that data-stealing malicious software was silently injected into sites like the BBC, CNN, Equifax, Ledger, and Zoom, an incident exacerbated by the reality that few popular websites enforce strict rules on sources.\n🏷️ malware, Optimizely, vulnerability, websites\n \n12. macOS Golden Gate 27.3b2 引入新的全盘访问权限隐私控制（及更多）\nMacOS Golden Gate 27.3b2 Includes New Privacy Controls for Full Disk Access (and More) — daringfireball.net · 1 天前 · ⭐ 24/30\n中文摘要\nmacOS 27.3b2 开发者测试版引入了新的隐私控制功能，用于管理应用程序的全盘访问权限。此前的版本中，Apple 曾宣布将改进授予全盘访问权限的用户界面，以确保用户在授予此特殊权限时需要进行更明确的操作。新版本将这些控制措施付诸实践，为用户提供更精细的权限管理。\nEnglish Summary\nmacOS 27.3b2 developer beta introduces new privacy controls for managing Full Disk Access permissions for applications. Previously announced by Apple, this update refines the UI for granting such extraordinary access, requiring more explicit user actions. These controls provide users with finer-grained permission management.\n🏷️ macOS, privacy, Full Disk Access\n \n⚙️ 工程\n13. 如何让第二个程序显示一个对话框，就好像它是由我的第一个程序显示的？\nHow can I ask a second program to show a dialog box as if it were shown by my first program? — devblogs.microsoft.com/oldnewthing · 1 天前 · ⭐ 23/30\n中文摘要\n要实现让一个程序显示另一个程序发起的对话框，需要显式地协调窗口管理。这涉及到复杂的窗口层级和所有权管理，以确保对话框能够正确地被视为由发起程序显示。文章指出，这种跨程序的对话框显示需要开发者进行细致的编程。\nEnglish Summary\nTo have one program display a dialog box initiated by another program, explicit coordination of window management is required. This involves managing window hierarchy and ownership to ensure the dialog appears as if launched by the originating program. The article notes that this cross-program dialog display necessitates careful programming by developers.\n🏷️ Windows API, dialog box, program interaction, window management\n \n14. 超越 Linux：开源生态系统之旅\nBeyond Linux: A Journey Through the Open Source Ecosystem — it-notes.dragas.net · 22 小时前 · ⭐ 22/30\n中文摘要\n本文是作者在 2026 年摩德纳 Linux Day 上的演讲稿，经过轻微改编以适应博客发布。演讲以意大利语进行，面向 Linux 用户。文章指出，Linux 是开源领域最知名的参与者之一，但并非唯一的选择。作者将带领读者踏上一段探索 BSD、illumos 等其他开源系统的旅程，展现更广阔的开源世界。\nEnglish Summary\nThis is the text of a talk given at Linux Day 2026 in Modena, lightly adapted for the blog. The talk, delivered in Italian to a Linux audience, explores paths beyond Linux in the open source ecosystem. It highlights that while Linux is well-known, it's not the only option, and guides readers through BSD, illumos, and other open source systems.\n🏷️ open source, Linux, ecosystem, journey\n \n🛠 工具 / 开源\n15. 在浏览器中运行完整的服务器端 Datasette Python 应用，借助 Service Workers 和 Pyodide\nRunning the full server-side Datasette Python app in the browser with service workers and Pyodide — simonwillison.net · 14 小时前 · ⭐ 24/30\n中文摘要\nDatasette Lite 是 Datasette Python 应用的浏览器版本，利用 WebAssembly 和 Pyodide 技术实现。作者发布了使用 Service Workers 重写的完整版本，使其功能几乎与服务器端应用无异。现在，通过精心构造的 URL，可以在 lite.datasette.io 上实现更多功能。这使得在浏览器中运行复杂的 Python 应用成为可能，极大地扩展了 Web 应用的能力。\nEnglish Summary\nDatasette Lite is a browser-based port of the Datasette Python application, running via WebAssembly and Pyodide. A complete rewrite using service workers makes it nearly indistinguishable from the server-side version. This allows for enhanced functionality through crafted URLs on lite.datasette.io. It demonstrates the potential of running complex Python applications directly in the browser.\n🏷️ Datasette Lite, Pyodide, WebAssembly, browser\n \n生成于 2026-11-18 06:53 | 扫描 81 源 → 获取 2517 篇 → 精选 15 篇\n基于 Hacker News Popularity Contest 2025 RSS 源列表，由 Andrej Karpathy 推荐"</script>
   <script>
     const text = JSON.parse(document.getElementById('speech-text').textContent);
     const statusEl = document.getElementById('status');
